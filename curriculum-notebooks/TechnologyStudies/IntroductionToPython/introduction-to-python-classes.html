@@ -1,0 +1,803 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Python Classes &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Loops and Iteration in Python" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html" />
+    <link rel="prev" title="Python - introduction" href="introduction-to-python.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="../../../intro.html">Welcome to Callysto</a>
+  </li>
+  <li class="">
+    <a href="../../README.html">Curriculum Notebooks</a>
+  </li>
+  <li class="">
+    <a href="../../Arts/Arts.html">Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../Health/Health.html">Health Section</a>
+  </li>
+  <li class="">
+    <a href="../../Languages/Languages.html">Languages Section</a>
+  </li>
+  <li class="">
+    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
+  </li>
+  <li class="">
+    <a href="../../Science/Sciences.html">Sciences Section</a>
+  </li>
+  <li class="">
+    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
+  </li>
+  <li class="active">
+    <a href="../Technology.html">Technology Section</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../ComputerScienceSocrata/1-introduction-to-socrata-and-soda.html">Socrata and Soda</a>
+    </li>
+    <li class="">
+      <a href="../ComputerScienceSocrata/2-introduction-to-plotly.html">Plotly - introduction</a>
+    </li>
+    <li class="">
+      <a href="../ComputerScienceSocrata/3-joining-datasets.html">Joining Datasets</a>
+    </li>
+    <li class="">
+      <a href="../ComputerScienceSocrata/4-filtering-datasets.html">Filtering Datasets</a>
+    </li>
+    <li class="">
+      <a href="../IntroductionToDataStructures/introduction-to-data-structures.html">Lists and Dictionaries in Python</a>
+    </li>
+    <li class="">
+      <a href="introduction-to-python.html">Python - introduction</a>
+    </li>
+    <li class="active">
+      <a href="">Python Classes</a>
+    </li>
+    <li class="">
+      <a href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">Loops and Iteration in Python</a>
+    </li>
+  </ul>
+  </li>
+</ul>
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/TechnologyStudies/IntroductionToPython/introduction-to-python-classes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/TechnologyStudies/IntroductionToPython/introduction-to-python-classes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/IntroductionToPython/introduction-to-python-classes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#table-of-contents" class="nav-link">Table of Contents:</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#id1" class="nav-link">Python Classes</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#remark" class="nav-link">Remark:</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#getters-and-setters" class="nav-link">Getters and Setters:</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#practice-project" class="nav-link">Practice Project</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#extra-resources" class="nav-link">Extra Resources:</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#class-inheritance" class="nav-link">Class Inheritance</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id2" class="nav-link">Extra Resources:</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#a-word-on-object-oriented-programming-and-data" class="nav-link">A word on Object Oriented Programming and Data</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id3" class="nav-link">Extra Resources:</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#conclusion" class="nav-link">Conclusion</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=TechnologyStudies/IntroductionToPython/introduction-to-python-classes.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="section" id="python-classes">
+<h1>Python Classes<a class="headerlink" href="#python-classes" title="Permalink to this headline">¶</a></h1>
+<p>In this lesson, we are going to introduce a powerful programming language technique called Object-Oriented Programming, or OOP for short, using Python Classes. First, we will introduce Python classes, and then, we will provide the motivation for OOP and how Python Classes fit into OOP.</p>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents:<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Python_Classes">Python Classes</a> <br />
+<a class="reference external" href="#Getters_and_Setters">Getters and Setters</a> <br />
+<a class="reference external" href="#Practice_Project">Practice Project</a> <br />
+<a class="reference external" href="#Class_Inheritance">Class Inheritance</a> <br />
+<a class="reference external" href="#Intro_to_OOP">Introduction to Object Oriented Programming</a> <br />
+<a class="reference external" href="#Conclusion">Conclusion</a> <br /></p>
+<p>To run a cell, select the cell you wish to run, then either:</p>
+<ol class="simple">
+<li><p>Find the run button at the top of the page, and click it or,</p></li>
+<li><p>Hit shift+enter.</p></li>
+</ol>
+<p><a id='Python_Classes'></a></p>
+</div>
+<div class="section" id="id1">
+<h2>Python Classes<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>Python Class</strong> is a structure that can group together relevant variables and functions. The variables and functions in this structure are designed to be used only in the context of that class.</p>
+<p>To give more accurate terminology, the functions defined inside a class are called <strong>methods</strong> and the variables are called <strong>attributes</strong>.</p>
+<p>Sound familiar? We have already seen Python structures with methods, such as lists, dictionaries and strings. (See introduction to data structures in Python). If we wanted to access these methods, we used the dot operator. This is also true for Python classes. To use the actual functions, or methods, inside a Python class, we use the dot operator.</p>
+<p>As a matter of fact, classes make up the Python standard library, such as the string class, but are also a central programming technique used in Python, as well as C and C++.</p>
+<p>Now, we cannot actually do anything with our class just by defining it and adding attributes and methods. If we want to do some work, we have to define an <strong>instance</strong> of our class. To see what we mean, suppose we define a class called Person. This class has attributes that we would associate with a person, such as height, age, weight, gender, etc. The methods in the person class would be actions a person would do, such as Work(), DoHomework(), Eat(), etc.</p>
+<p>We cannot say, Person.Work(), as Person is a definition and not an instance. We would have to declare an instance of that class. Say Person Sally. Now, Sally is an instance of the Person class, and Sally can have <strong>unique values</strong>. If we were to create another instance of Person, such as Person Frank, the values of Frank and Sally’s attributes would be different.</p>
+<p>Notice that we declared Sally and Frank just as normal variables of type Person. Python classes allow you to create your own data types, with specified attributes and methods. This allows for a larger range of problem solving abilities, as well as more robust data handling and organization.</p>
+<div class="section" id="remark">
+<h3>Remark:<a class="headerlink" href="#remark" title="Permalink to this headline">¶</a></h3>
+<p>There are many languages that support classes such as C, C++ and Java. A major difference between Python classes and classes in C++ and Java is in the way data inside a class is handled and accessed.</p>
+<p>In C++ and Java, we are allowed to create what are know as private and public variables. Private variables are variables which cannot be accessed from outside the class. In order to access them, we need to create methods inside the class, which allows a user to modify the variables. These methods are explored later on in this notebook. We use private variables when there is sensitive data inside a class. We do not want a user to directly access the data, as it would threaten the integrity of the program or privacy of another user.</p>
+<p>In contrast, a public attribute is a attribute that can be accessed from outside the class. In general, all attributes in a Python class or instance are public – but it can be a good practice to treat them like they’re not.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## An example ##</span>
+
+<span class="c1">## The syntax for declaring a class is class Class_Name ##</span>
+<span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+    <span class="c1"># This first function here is called the initializer, or, if we are in C++, #</span>
+    <span class="c1"># the default constructor. It is reqiured in every class you make #</span>
+    <span class="c1"># This function will be called everytime a new instance is created #</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Salary</span><span class="p">,</span> <span class="n">Age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Name</span> <span class="o">=</span> <span class="n">Name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Salary</span> <span class="o">=</span> <span class="n">Salary</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Age</span> <span class="o">=</span> <span class="n">Age</span>
+        
+    <span class="c1"># Functions in a Python class are defined as normal. Self is always a required parameter #</span>
+    <span class="c1"># However, when we call these methods, we do not need to pass self explicitly #</span>
+    <span class="c1"># These functions allow the user to print variables inside a given instance of a class #</span>
+    <span class="k">def</span> <span class="nf">Display_Name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Employee Name:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Name</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">Display_Salary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Employee Salary:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Salary</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">Display_Employee_Age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Employee Age:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Age</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating a new instance #</span>
+<span class="c1"># To create a new instance of a class, simply declare it as a normal variable #</span>
+<span class="c1"># and pass your desired information to the initializer, note that self is not passed #</span>
+
+<span class="n">Emp1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s2">&quot;Frank&quot;</span><span class="p">,</span> <span class="mi">20000</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+<span class="n">Emp2</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s2">&quot;Sarah&quot;</span><span class="p">,</span> <span class="mi">40000</span><span class="p">,</span> <span class="mi">34</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Accessing class methods #</span>
+<span class="c1"># We can access the methods in the class employee using the dot operator #</span>
+<span class="c1"># Because these are two different instances, they will print two different values #</span>
+<span class="n">Emp1</span><span class="o">.</span><span class="n">Display_Name</span><span class="p">()</span>
+<span class="n">Emp2</span><span class="o">.</span><span class="n">Display_Name</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Employee Name: Frank
+Employee Name: Sarah
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Accessing Data inside the class #</span>
+<span class="c1"># In Python, it is possible to have access to the actual values inside the class using the dot operator #</span>
+<span class="c1"># This is not the case in other languages such as Java and C++ #</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Emp1</span><span class="o">.</span><span class="n">Employee_Name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Emp2</span><span class="o">.</span><span class="n">Employee_Name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Frank
+Sarah
+</pre></div>
+</div>
+</div>
+</div>
+<p><a id='Getters_and_Setters'></a></p>
+</div>
+<div class="section" id="getters-and-setters">
+<h3>Getters and Setters:<a class="headerlink" href="#getters-and-setters" title="Permalink to this headline">¶</a></h3>
+<p>In many cases, we will want to access or change the variables inside a class. This is where functions called <strong>Getters</strong> and <strong>Setters</strong> come into play. A getter is a class method which returns the value of a variable inside a class. A setter is a class method which allows a variable to be updated.</p>
+<p>We will illustrate with an example.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## Example with Getters and Setters ##</span>
+
+<span class="k">class</span> <span class="nc">Better_Employee</span><span class="p">:</span>
+    
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Salary</span><span class="p">,</span> <span class="n">Age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Name</span> <span class="o">=</span> <span class="n">Name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Salary</span> <span class="o">=</span> <span class="n">Salary</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Age</span> <span class="o">=</span> <span class="n">Age</span>
+        
+    <span class="c1"># These are the get functions, functions which allow values that are hidden in a class to be used outside of it #    </span>
+    <span class="k">def</span> <span class="nf">Get_Name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Name</span>
+    
+    <span class="k">def</span> <span class="nf">Get_Salary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Salary</span>
+    
+    <span class="k">def</span> <span class="nf">Get_Age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Age</span>
+    
+    <span class="c1"># These are the set functions, functions which allow the user to update values inside an instance #</span>
+    <span class="k">def</span> <span class="nf">Set_Name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Name</span> <span class="o">=</span> <span class="n">new_name</span>
+    
+    <span class="k">def</span> <span class="nf">Set_Salary</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_salary</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Salary</span> <span class="o">=</span> <span class="n">new_salary</span>
+    
+    <span class="k">def</span> <span class="nf">Set_Age</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">new_age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Employee_Age</span> <span class="o">=</span> <span class="n">new_age</span>
+
+    <span class="k">def</span> <span class="nf">Display_Name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Employee Name:&quot;</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">Get_Name</span><span class="p">())</span>
+    
+    <span class="k">def</span> <span class="nf">Display_Salary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Employee Salary:&quot;</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">Get_Salary</span><span class="p">())</span>
+        
+    <span class="k">def</span> <span class="nf">Display_Age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Employee Age:&quot;</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">Get_Age</span><span class="p">())</span>
+        
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now we create new instances #</span>
+
+<span class="n">Emp1</span> <span class="o">=</span> <span class="n">Better_Employee</span><span class="p">(</span><span class="s2">&quot;Frank&quot;</span><span class="p">,</span> <span class="mi">20000</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+<span class="n">Emp2</span> <span class="o">=</span> <span class="n">Better_Employee</span><span class="p">(</span><span class="s2">&quot;Sarah&quot;</span><span class="p">,</span> <span class="mi">40000</span><span class="p">,</span> <span class="mi">34</span><span class="p">)</span>
+
+<span class="n">Emp1</span><span class="o">.</span><span class="n">Display_Name</span><span class="p">()</span>
+<span class="n">Emp1</span><span class="o">.</span><span class="n">Display_Salary</span><span class="p">()</span>
+<span class="n">Emp1</span><span class="o">.</span><span class="n">Display_Age</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Emp1</span><span class="o">.</span><span class="n">Employee_Name</span><span class="p">)</span>
+
+<span class="n">Emp2</span><span class="o">.</span><span class="n">Display_Name</span><span class="p">()</span>
+<span class="n">Emp2</span><span class="o">.</span><span class="n">Display_Salary</span><span class="p">()</span>
+<span class="n">Emp2</span><span class="o">.</span><span class="n">Display_Age</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Employee Name: Frank
+Employee Salary: 20000
+Employee Age: 25
+Frank
+Employee Name: Sarah
+Employee Salary: 40000
+Employee Age: 34
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Suppose that everyone turns one year older and because of existing they get a 40000 dollar raise. #</span>
+<span class="c1"># Now, the current age and salary information in each class is outdated. Thus, we need to update #</span>
+<span class="c1"># the information in the class using setters #</span>
+
+<span class="c1"># These will update the age and salaries #</span>
+<span class="n">Emp1</span><span class="o">.</span><span class="n">Set_Age</span><span class="p">(</span><span class="mi">26</span><span class="p">)</span>
+<span class="n">Emp1</span><span class="o">.</span><span class="n">Set_Salary</span><span class="p">(</span><span class="mi">60000</span><span class="p">)</span>
+
+<span class="n">Emp2</span><span class="o">.</span><span class="n">Set_Age</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+<span class="n">Emp2</span><span class="o">.</span><span class="n">Set_Salary</span><span class="p">(</span><span class="mi">80000</span><span class="p">)</span>
+
+<span class="n">Emp1</span><span class="o">.</span><span class="n">Display_Salary</span><span class="p">()</span>
+<span class="n">Emp1</span><span class="o">.</span><span class="n">Display_Age</span><span class="p">()</span>
+
+<span class="n">Emp2</span><span class="o">.</span><span class="n">Display_Salary</span><span class="p">()</span>
+<span class="n">Emp2</span><span class="o">.</span><span class="n">Display_Age</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Employee Salary: 60000
+Employee Age: 26
+Employee Salary: 80000
+Employee Age: 35
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now suppose we want to use the values in the class elsewhere, such as another file. #</span>
+<span class="c1"># We can access those values by using the get functions. Note that these are not the original #</span>
+<span class="c1"># variables, just the values associated with them are returned. The original variables are #</span>
+<span class="c1"># unaccessable. #</span>
+
+<span class="n">Salary_To_Be_Used_Elsewhere</span> <span class="o">=</span> <span class="n">Emp2</span><span class="o">.</span><span class="n">Get_Salary</span><span class="p">()</span>
+<span class="n">Age_To_Be_Used_Elsewhere</span> <span class="o">=</span> <span class="n">Emp1</span><span class="o">.</span><span class="n">Get_Age</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Salary_To_Be_Used_Elsewhere</span><span class="p">)</span> <span class="c1"># Now we have access to values we extracted from the instance</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Age_To_Be_Used_Elsewhere</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>80000
+26
+</pre></div>
+</div>
+</div>
+</div>
+<p><a id='Practice_Project'></a></p>
+</div>
+<div class="section" id="practice-project">
+<h3>Practice Project<a class="headerlink" href="#practice-project" title="Permalink to this headline">¶</a></h3>
+<p>Make a Bank Account class with the following attributes:</p>
+<blockquote>
+<div><p>Name of owner <br />
+ID (Integer of your choice, greater than 0) <br />
+Total balance <br />
+Savings account balance <br />
+Checking account balance <br /></p>
+</div></blockquote>
+<p>And create the following methods:</p>
+<blockquote>
+<div><p>Deposit money into savings <br />
+Deposit money into checking account <br />
+Withdraw money from savings or checking <br />
+Get Total Balance <br />
+Get Owner Name <br />
+Set ID <br /></p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## Code Goes Here ##</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="extra-resources">
+<h3>Extra Resources:<a class="headerlink" href="#extra-resources" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://docs.python.org/3/tutorial/classes.html">Very detailed introduction to classes</a> <br />
+<a class="reference external" href="https://www.learnpython.org/en/Classes_and_Objects">Another introduction to classes</a><br />
+<a class="reference external" href="https://www.geeksforgeeks.org/object-oriented-programming-in-python-set-1-class-and-its-members/">First part in a series on classes</a><br />
+<a class="reference external" href="https://www.geeksforgeeks.org/object-oriented-programming-in-python-set-2-data-hiding-and-object-printing/">Second Part</a></p>
+<p><a id='Class_Inheritance'></a></p>
+</div>
+</div>
+<div class="section" id="class-inheritance">
+<h2>Class Inheritance<a class="headerlink" href="#class-inheritance" title="Permalink to this headline">¶</a></h2>
+<p>Suppose we create a class called Car, and a class called Truck, each with its own attributes and methods.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Car Class #</span>
+
+<span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+    
+    <span class="c1"># Attributes: #</span>
+    <span class="n">Car_Name</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
+    <span class="n">Model_Year</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Cost</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Max_Speed</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Horse_Power</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Torque</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">isStandard</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">Has_AC</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">Other</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
+    <span class="c1"># Has Methods: #</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Year</span><span class="p">,</span> <span class="n">Other_Stuff</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Car_Name</span> <span class="o">=</span> <span class="n">Name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Model_Year</span> <span class="o">=</span> <span class="n">Year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Other</span> <span class="o">=</span> <span class="n">Other_Stuff</span>
+        <span class="c1"># ... #</span>
+    <span class="k">def</span> <span class="nf">Get_Model_Year</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">Model_Year</span>
+    <span class="c1">#etc#</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Truck Class #</span>
+
+<span class="k">class</span> <span class="nc">Truck</span><span class="p">:</span>
+    
+    <span class="c1"># Attributes: #</span>
+    <span class="n">Truck_Name</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
+    <span class="n">Model_Year</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Cost</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Max_Speed</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Horse_Power</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Torque</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Towing_Capacity</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">isStandard</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">Has_AC</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">Other</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
+    <span class="c1"># etc #</span>
+    
+    <span class="c1"># Has Methods: #</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Year</span><span class="p">,</span> <span class="n">Other_Stuff</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Truck_Name</span> <span class="o">=</span> <span class="n">Name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Model_Year</span> <span class="o">=</span> <span class="n">Year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Other</span> <span class="o">=</span> <span class="n">Other_Stuff</span>
+        <span class="c1"># ... #</span>
+    <span class="k">def</span> <span class="nf">Get_Model_Year</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">Model_Year</span>
+    <span class="c1">#etc#</span>
+
+<span class="n">my_car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s2">&quot;Herbie&quot;</span><span class="p">,</span> <span class="mi">1969</span><span class="p">,</span> <span class="s2">&quot;A movie star that&#39;s also a car!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_car</span><span class="o">.</span><span class="n">Get_Model_Year</span><span class="p">())</span>
+
+<span class="n">my_truck</span> <span class="o">=</span> <span class="n">Truck</span><span class="p">(</span><span class="s2">&quot;Optimius Prime&quot;</span><span class="p">,</span> <span class="mi">1986</span><span class="p">,</span> <span class="s2">&quot;The animated one was DEFINITELY better.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_truck</span><span class="o">.</span><span class="n">Get_Model_Year</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>1969
+1986
+</pre></div>
+</div>
+</div>
+</div>
+<p>For the most part, these classes are identical, save for a few unique attributes. This is redundant! We have just done more work creating the same thing with a different name.</p>
+<p>So what can we do? Well, we can create what’s know as a <strong>generic class</strong>, a class that can describe both a car and a truck, as well as other vehicles. Call this class vehicle, with all the attributes a vehicle possesses.</p>
+<p>Then, when we go to create a class of something more specific, we can <strong>inherit</strong> attributes and methods from the vehicle class.
+This method is called <strong>Class Inheritance</strong>. Class inheritance allows us to make classes with the same implementation as another class. This removes redundant work and allows for more general classes.</p>
+<p>The class which we inherit from is called a <strong>base class</strong>. Classes which inherit from the base class are called <strong>derived classes</strong>. Base classes and derived classes can be called <strong>parent classes</strong> and <strong>child classes</strong> respectively.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Vehicle Class, carries all attributes associated with any vehicle #</span>
+
+<span class="k">class</span> <span class="nc">Vehicle</span><span class="p">:</span>
+    <span class="c1"># Attributes #</span>
+    <span class="n">Vehicle_Name</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
+    <span class="n">Model_Year</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Cost</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Max_Speed</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Other</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span>
+    <span class="c1"># etc #</span>
+    
+    <span class="c1"># Has Methods #</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Year</span><span class="p">,</span> <span class="n">Other_Stuff</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Vehicle_Name</span> <span class="o">=</span> <span class="n">Name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Model_Year</span> <span class="o">=</span> <span class="n">Year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Other</span> <span class="o">=</span> <span class="n">Other_Stuff</span>
+        <span class="c1"># ... #</span>
+        
+    <span class="k">def</span> <span class="nf">Display_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;</span><span class="si">%s</span><span class="s2">&#39; was built in </span><span class="si">%d</span><span class="s2">. Other information: &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span>
+              <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Vehicle_Name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Model_Year</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Other</span><span class="p">))</span>
+    <span class="c1"># etc #</span>
+
+<span class="c1"># Now, we can derive a more specific car class, without having to redefine most of our attributes ##</span>
+
+<span class="c1"># To inherit, we add an extra parameter to the class declaration #</span>
+
+<span class="k">class</span> <span class="nc">Car</span><span class="p">(</span><span class="n">Vehicle</span><span class="p">):</span>
+    <span class="c1"># Now we have access to the attributes and methods in the Vehicle class #</span>
+    <span class="c1"># In the class constructor, all attributes unique to the Vehicle Class will #</span>
+    <span class="c1"># be initiated in the vehicle class, and all unique attributes in the Car class #</span>
+    <span class="c1"># will be initiated in the car class #</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Year</span><span class="p">,</span> <span class="n">Can_Talk</span><span class="p">,</span> <span class="n">Other_Stuff</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">Name</span><span class="p">,</span> <span class="n">Year</span><span class="p">,</span> <span class="n">Other_Stuff</span><span class="p">)</span> <span class="c1"># The super() function passes things on to the parent class</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Can_Talk</span> <span class="o">=</span> <span class="n">Can_Talk</span>
+
+    <span class="k">def</span> <span class="nf">Display_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>             
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">Display_info</span><span class="p">()</span> <span class="c1"># Again, super passes things up to the parent class</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">Can_Talk</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It can talk!&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It can&#39;t talk.&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Truck</span><span class="p">(</span><span class="n">Vehicle</span><span class="p">):</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Year</span><span class="p">,</span> <span class="n">Carries_Cargo</span><span class="p">,</span> <span class="n">Other_Stuff</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">Name</span><span class="p">,</span> <span class="n">Year</span><span class="p">,</span> <span class="n">Other_Stuff</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Carries_Cargo</span> <span class="o">=</span> <span class="n">Carries_Cargo</span>
+
+    <span class="k">def</span> <span class="nf">Display_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>             
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">Display_info</span><span class="p">()</span> <span class="c1"># Again, super passes things up to the parent class</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">Carries_Cargo</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It can carry cargo!&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Don&#39;t ask it to carry cargo.&quot;</span><span class="p">)</span>
+
+<span class="n">my_car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s2">&quot;Herbie&quot;</span><span class="p">,</span> <span class="mi">1969</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;A movie star that&#39;s also a car!&quot;</span><span class="p">)</span>
+<span class="n">my_car</span><span class="o">.</span><span class="n">Display_info</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="n">another_car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s2">&quot;Kitt&quot;</span><span class="p">,</span> <span class="mi">1986</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;From the TV Smash hit &#39;Knight Rider&#39;&quot;</span><span class="p">)</span>
+<span class="n">another_car</span><span class="o">.</span><span class="n">Display_info</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="n">my_truck</span> <span class="o">=</span> <span class="n">Truck</span><span class="p">(</span><span class="s2">&quot;Optimius Prime&quot;</span><span class="p">,</span> <span class="mi">1986</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;The animated one was DEFINITELY better.&quot;</span><span class="p">)</span>
+<span class="n">my_truck</span><span class="o">.</span><span class="n">Display_info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;Herbie&#39; was built in 1969. Other information: &#39;A movie star that&#39;s also a car!&#39;
+It can&#39;t talk.
+
+&#39;Kitt&#39; was built in 1986. Other information: &#39;From the TV Smash hit &#39;Knight Rider&#39;&#39;
+It can talk!
+
+&#39;Optimius Prime&#39; was built in 1986. Other information: &#39;The animated one was DEFINITELY better.&#39;
+Don&#39;t ask it to carry cargo.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Extra Resources:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/understanding-class-inheritance-in-python-3">Introduction to class inheritance</a> <br />
+<a class="reference external" href="https://www.programiz.com/python-programming/inheritance">Another introduction</a><br />
+<a class="reference external" href="http://www.jesshamrick.com/2011/05/18/an-introduction-to-classes-and-inheritance-in-python/">Introduction to Python Classes and Inheritance</a><br />
+<a class="reference external" href="https://www.geeksforgeeks.org/oop-in-python-set-3-inheritance-examples-of-object-issubclass-and-super">Third Part in the series</a> <br /></p>
+<p><a id='Intro_to_OOP'></a></p>
+</div>
+</div>
+<div class="section" id="a-word-on-object-oriented-programming-and-data">
+<h2>A word on Object Oriented Programming and Data<a class="headerlink" href="#a-word-on-object-oriented-programming-and-data" title="Permalink to this headline">¶</a></h2>
+<p>So what exactly is Object Oriented Programming (Or OOP for short)? OOP is a programming method in which the primary building blocks used to create the program are objects, and the objects interact with each other through methods. Inside these objects are variables and functions that are related to each other in some way.</p>
+<p>OOP allows for better code organization, as we can group related functions and variables in one spot under one name.</p>
+<p>OOP also allows for what is called <strong>data abstraction</strong>. Data abstraction is a way of separating the way we have written the object, and the way a user interacts with said object.</p>
+<p>OOP allows for whats known as <strong>data encapsulation</strong>. Data encapsulation allows us to hide sensitive information from the user. If the user wants to change that information, they must go through the objects methods to do so, instead of modifying the value directly. Doing this will ensure that our data does not get unwanted values which cause the object to break in some way. A more extreme version of data encapsulation is <strong>data hiding</strong>. Data hiding occurs when the user can neither see nor access certain information through the objects methods. You would do something like this if the information is very sensitive or important for the program to function.</p>
+<p>For example, when we are working with strings, we have access to string functions and methods. However, as a user of these methods and functions, we don’t really need to know how these methods or functions work to use them. This is an example of data abstraction.</p>
+<p>If you wanted to access the constants in a string class, such as the ascii string, which is defined to be “abcdefghi…xyz”, we would have to explicitly state that we want to use it. We would have to say: string.ascii_lowercase. This is an example of data encapsulation. If we want to use a piece of information, we have to use the object to obtain it.</p>
+<div class="section" id="id3">
+<h3>Extra Resources:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://realpython.com/python3-object-oriented-programming/">Introduction to OOP and Inheritance</a> <br />
+<a class="reference external" href="https://www.tutorialspoint.com/python/python_classes_objects.htm">Another Introduction</a> <br />
+<a class="reference external" href="https://en.wikipedia.org/wiki/Object-oriented_programming">Wikipedia entry on OOP</a> <br />
+<a class="reference external" href="https://www.quora.com/What-are-the-disadvantages-of-object-oriented-programming-languages">Disadvantages of OOP</a></p>
+<p><a id='Conclusion'></a></p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>We have seen in this notebook how to construct and use classes in Python, as well as class inheritance. We expect that reader has a basic understanding of the following concepts:</p>
+<blockquote>
+<div><ol class="simple">
+<li><p>Basic classes and class syntax. <br /></p></li>
+<li><p>Accessing class attributes and class methods using the dot operator. &lt;br / &gt;</p></li>
+<li><p>Using getters and setters to modify attributes. <br /></p></li>
+<li><p>Class inheritance and the motivation for inheritance. <br /></p></li>
+<li><p>Syntax for creating an inherited class &lt;br/ &gt;</p></li>
+<li><p>Data abstraction and data hiding. <br /></p></li>
+</ol>
+</div></blockquote>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="introduction-to-python.html" title="previous page">Python - introduction</a>
+    <a class='right-next' id="next-link" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html" title="next page">Loops and Iteration in Python</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

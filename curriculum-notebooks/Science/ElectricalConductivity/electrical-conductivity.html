@@ -1,0 +1,493 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Electrical Conductivity &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Electricity Consumption Monitoring" href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html" />
+    <link rel="prev" title="Concentration and pH" href="../ConcentrationAndPH/concentration-and-ph.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="../../../intro.html">Welcome to Callysto</a>
+  </li>
+  <li class="">
+    <a href="../../README.html">Curriculum Notebooks</a>
+  </li>
+  <li class="">
+    <a href="../../Arts/Arts.html">Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../Health/Health.html">Health Section</a>
+  </li>
+  <li class="">
+    <a href="../../Languages/Languages.html">Languages Section</a>
+  </li>
+  <li class="">
+    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
+  </li>
+  <li class="active">
+    <a href="../Sciences.html">Sciences Section</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../BalancingChemicalEquations/balancing-chemical-equations.html">Chemical Equations: Writing and Balancing</a>
+    </li>
+    <li class="">
+      <a href="../ChemicalNomenclature/chemical-nomenclature.html">Chemical Nomenclature</a>
+    </li>
+    <li class="">
+      <a href="../ClassifyingChemicalReactions/classifying-chemical-reactions.html">Classifying Chemical Equations</a>
+    </li>
+    <li class="">
+      <a href="../ClimateChange/climate-change.html">Climate Change</a>
+    </li>
+    <li class="">
+      <a href="../Climatograph/climatograph.html">Climatograph</a>
+    </li>
+    <li class="">
+      <a href="../ConcentrationAndPH/concentration-and-ph.html">Concentration and pH</a>
+    </li>
+    <li class="active">
+      <a href="">Electrical Conductivity</a>
+    </li>
+    <li class="">
+      <a href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">Electricity Consumption Monitoring</a>
+    </li>
+    <li class="">
+      <a href="../ExploringSolarSystem/exploring-the-solar-system.html">Exploring the Solar System</a>
+    </li>
+    <li class="">
+      <a href="../HeatAndTemperature/heat-and-temperature.html">Heat and Temperature</a>
+    </li>
+    <li class="">
+      <a href="../LightOpticalSystems/light-optical-systems.html">Light and Optics</a>
+    </li>
+    <li class="">
+      <a href="../LightTransmission/transmission-of-light.html">Transmission of Light</a>
+    </li>
+    <li class="">
+      <a href="../MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">Methods used in Scientific Study of the Earth</a>
+    </li>
+    <li class="">
+      <a href="../NatureOfThermalEnergy/nature-of-thermal-energy.html">The Nature of Thermal Energy</a>
+    </li>
+    <li class="">
+      <a href="../NewtonsFirstLaw/newtons-first-law.html">Newton’s First Law</a>
+    </li>
+    <li class="">
+      <a href="../NewtonsSecondLaw/newtons-second-law.html">Newton’s Second Law</a>
+    </li>
+    <li class="">
+      <a href="../NewtonsThirdLaw/newtons-third-law.html">Newton’s Third Law</a>
+    </li>
+    <li class="">
+      <a href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">Half life calculations</a>
+    </li>
+    <li class="">
+      <a href="../NuclearDecay/nuclear-decay.html">Nuclear Decay - Half Life</a>
+    </li>
+    <li class="">
+      <a href="../ProjectileMotion/projectile-motion.html">Projectile Motion</a>
+    </li>
+    <li class="">
+      <a href="../RadiationAnimations/radiation-animations.html">Radiation: Alpha, Beta, and Gamma</a>
+    </li>
+    <li class="">
+      <a href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">Reflection of Light by Plane and Spherical Mirrors</a>
+    </li>
+    <li class="">
+      <a href="../ScienceLabReportTemplate/science-lab-report-template.html">Science Lab Report Template</a>
+    </li>
+    <li class="">
+      <a href="../SourcesOfEnergy/resources-and-recycling.html">Exploring Sources of Energy</a>
+    </li>
+    <li class="">
+      <a href="../SpecificAndLatentHeat/specific-and-latent-heat.html">Specific and Latent Heat</a>
+    </li>
+    <li class="">
+      <a href="../StaticAndKineticFriction/static-and-kinetic-friction.html">Static and Kinetic Friction</a>
+    </li>
+    <li class="">
+      <a href="../StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">Stoichiometry and Limiting Reactants</a>
+    </li>
+    <li class="">
+      <a href="../ThermalExpansion/thermal-expansion.html">Thermal Linear Expansion</a>
+    </li>
+    <li class="">
+      <a href="../UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">Uniform Motion and Uniformly Accelerated Motion</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
+  </li>
+  <li class="">
+    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
+  </li>
+</ul>
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Science/ElectricalConductivity/electrical-conductivity.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Science/ElectricalConductivity/electrical-conductivity.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/ElectricalConductivity/electrical-conductivity.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#background" class="nav-link">Background</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#the-question" class="nav-link">The Question</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#the-hypothesis" class="nav-link">The Hypothesis</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#materials-equipment" class="nav-link">Materials & Equipment</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#procedure" class="nav-link">Procedure</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#questions" class="nav-link">Questions</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#answers" class="nav-link">Answers</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#comparing-to-water-treatment-plants" class="nav-link">Comparing to Water Treatment Plants</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#id1" class="nav-link">Questions</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id2" class="nav-link">Answers</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+    </ul>
+</nav>
+
+
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/ElectricalConductivity/electrical-conductivity.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<img src="images/iStock-conductivity.jpg" width="500px" />
+<div class="section" id="electrical-conductivity">
+<h1>Electrical Conductivity<a class="headerlink" href="#electrical-conductivity" title="Permalink to this headline">¶</a></h1>
+<p>Based on LibreTexts library experiment titled “<a class="reference external" href="https://chem.libretexts.org/Bookshelves/Ancillary_Materials/Laboratory_Experiments/Wet_Lab_Experiments/General_Chemistry_Labs/Online_Chemistry_Lab_Manual/Chem_9_Experiments/07%3A_Electrical_Conductivity_of_Aqueous_Solutions_(Experiment)">Electical Conductivity of Aqueous Solutions</a>” published under a <a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-NonCommercial-ShareAlike license</a>.</p>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Electrical conductivity is based on the flow of electrons. Metals are good conductors of electricity because they allow electrons to flow through the entire piece of material. In comparison, distilled water is a very poor conductor of electricity since very little electricity flows through it. Dissolving ions in water changes this and allows electrons to travel through the solution. If the solution is able to conduct electricity, the current can be measured with a conductivity meter.</p>
+</div>
+<div class="section" id="the-question">
+<h2>The Question<a class="headerlink" href="#the-question" title="Permalink to this headline">¶</a></h2>
+<p>How does the conductivity of different solutions compare?</p>
+</div>
+<div class="section" id="the-hypothesis">
+<h2>The Hypothesis<a class="headerlink" href="#the-hypothesis" title="Permalink to this headline">¶</a></h2>
+<p>Enter your hypothesis by double clicking this text.</p>
+</div>
+<div class="section" id="materials-equipment">
+<h2>Materials &amp; Equipment<a class="headerlink" href="#materials-equipment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>conductivity meter</p></li>
+<li><p>wash bottle with distilled water</p></li>
+<li><p>large beaker for rinsing/waste</p></li>
+<li><p>sodium chloride</p></li>
+<li><p>sugar</p></li>
+<li><p>tissues</p></li>
+</ul>
+<p>Solutions:</p>
+<ul class="simple">
+<li><p>acetic acid (vinegar)</p></li>
+<li><p>tap water</p></li>
+</ul>
+</div>
+<div class="section" id="procedure">
+<h2>Procedure<a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Use a wash bottle with distilled water and a large beaker labeled “waste” to rinse the electrodes. Dry using a  tissue. When switched on, the meter should report 0 (or very close to it).</p></li>
+<li><p>Put 50 mL of distilled water into a beaker.</p></li>
+<li><p>Place the metal tips of your conductivity tester in the solution.</p></li>
+<li><p>Record the conductivity reading of the distilled water in the table below.</p></li>
+<li><p>Repeat steps 1-4 with samples of the other solutions. For example, take a spoonful of salt and dissolve it in water. After each conductivity measurement, empty the beaker and rinse it with distilled water.</p></li>
+<li><p>Clean up when done.</p></li>
+</ol>
+<p>Select the following code cell, then click the <code class="docutils literal notranslate"><span class="pre">▶Run</span></code> button to display a data table for recording your observations. If you get an error, then remove the <code class="docutils literal notranslate"><span class="pre">#</span></code> from the first line of code and run it again. Double-click on the <code class="docutils literal notranslate"><span class="pre">nan</span></code> values to put in your own observations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install qgrid --user --upgrade</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">qgrid</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Distilled Water&#39;</span><span class="p">,</span> <span class="s1">&#39;Tap Water&#39;</span><span class="p">,</span> <span class="s1">&#39;Salt Water&#39;</span><span class="p">,</span> <span class="s1">&#39;Vinegar&#39;</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Reading 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Reading 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Notes&#39;</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">data_entry_table</span> <span class="o">=</span> <span class="n">qgrid</span><span class="o">.</span><span class="n">QgridWidget</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">show_toolbar</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">data_entry_table</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>After you have recorded your observations in the table above, <code class="docutils literal notranslate"><span class="pre">▶Run</span></code> the next cell to save and display your data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data_entry_table</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;Average&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Reading 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">+</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Reading 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">))</span><span class="o">/</span><span class="mi">1</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Why must the conductivity electrodes and all the beakers be rinsed with distilled water after each conductivity test?</p></li>
+<li><p>Which solution conducted electricity the best? How can you tell?</p></li>
+<li><p>Why do you think different solutions conduct electricity differently?</p></li>
+</ol>
+<div class="section" id="answers">
+<h3>Answers<a class="headerlink" href="#answers" title="Permalink to this headline">¶</a></h3>
+<p><em>Double-click this cell to edit it and add your answers.</em></p>
+<ol class="simple">
+<li></li>
+<li></li>
+<li></li>
+</ol>
+</div>
+</div>
+<div class="section" id="comparing-to-water-treatment-plants">
+<h2>Comparing to Water Treatment Plants<a class="headerlink" href="#comparing-to-water-treatment-plants" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">▶Run</span></code> the next cell to download data from two water treatment plants, Rossdale and E.L. Smith, for the last week and graph the water conductivity as it compares to your data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rossdale</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">&#39;http://apps.epcor.ca/DailyWaterQuality/Default.aspx?zone=Rossdale&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">els</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">&#39;http://apps.epcor.ca/DailyWaterQuality/Default.aspx?zone=ELS&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="kn">import</span> <span class="nn">cufflinks</span> <span class="k">as</span> <span class="nn">cf</span>
+<span class="n">cf</span><span class="o">.</span><span class="n">go_offline</span><span class="p">()</span>
+<span class="n">combined_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">combined_data</span><span class="p">[</span><span class="s1">&#39;Rossdale&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rossdale</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+<span class="n">combined_data</span><span class="p">[</span><span class="s1">&#39;ELS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">els</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">combined_data</span><span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Average&#39;</span><span class="p">]</span>
+<span class="n">combined_data</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">yTitle</span><span class="o">=</span><span class="s1">&#39;Conductivity (yS/cm)&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Conductivity of Solutions Compared to Water Treatment Plant Data&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Questions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>How do your observations compare to the water treatment plant values?</p></li>
+<li><p>What does this say about the water leaving the these water treatment plants?</p></li>
+</ol>
+<div class="section" id="id2">
+<h3>Answers<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li></li>
+<li></li>
+</ol>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../ConcentrationAndPH/concentration-and-ph.html" title="previous page">Concentration and pH</a>
+    <a class='right-next' id="next-link" href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html" title="next page">Electricity Consumption Monitoring</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

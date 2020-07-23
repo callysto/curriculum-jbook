@@ -1,0 +1,1126 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fractions and Multiplication &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="../../../intro.html">Welcome to Callysto</a>
+  </li>
+  <li class="">
+    <a href="../../README.html">Curriculum Notebooks</a>
+  </li>
+  <li class="">
+    <a href="../../Arts/Arts.html">Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../Health/Health.html">Health Section</a>
+  </li>
+  <li class="">
+    <a href="../../Languages/Languages.html">Languages Section</a>
+  </li>
+  <li class="">
+    <a href="../Mathematics.html">Mathematics Section</a>
+  </li>
+  <li class="">
+    <a href="../../Science/Sciences.html">Sciences Section</a>
+  </li>
+  <li class="">
+    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
+  </li>
+  <li class="">
+    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
+  </li>
+</ul>
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Mathematics/FractionMultiplication/fraction-multiplication.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/FractionMultiplication/fraction-multiplication.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/FractionMultiplication/fraction-multiplication.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#visualizing-fraction-multiplication" class="nav-link">Visualizing Fraction Multiplication</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#introduction" class="nav-link">Introduction</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#procedure" class="nav-link">Procedure</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#interactive-visualization" class="nav-link">Interactive visualization</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#multiplying-a-fraction-by-an-integer" class="nav-link">Multiplying a fraction by an integer</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#conclusion" class="nav-link">Conclusion</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/FractionMultiplication/FractionMultiplication.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">uiButtons</span>
+<span class="o">%</span><span class="n">uiButtons</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">    <script>
+    document.getElementById('toggleButton').onclick = function () {
+        if (code_shown) {
+            $('div.input').hide('500');
+            $('#toggleButton').val('Show Code')
+        } else {
+            $('div.input').show('500');
+            $('#toggleButton').val('Hide Code')
+        }
+        code_shown = !code_shown
+    }
+
+    document.getElementById('init').onclick = function () {
+        runAll = document.getElementById('run_all_cells_below').childNodes[1]
+        console.log(runAll)
+        runAll.click()
+    }
+
+    $(document).ready(function () {
+        code_shown = true;
+        $('div.input').hide()
+    });
+</script>
+<input type="submit" id="toggleButton" value="Show Code">
+<input id="init" type="submit" value="Initialize">
+</div></div>
+</div>
+<div class="section" id="fractions-and-multiplication">
+<h1>Fractions and Multiplication<a class="headerlink" href="#fractions-and-multiplication" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="visualizing-fraction-multiplication">
+<h2>Visualizing Fraction Multiplication<a class="headerlink" href="#visualizing-fraction-multiplication" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>An important skill to have when it comes to fractions is knowing how to multiply them together.<br></p>
+<p>As we know, fractions are of the form <span class="math notranslate nohighlight">\(\frac{a}{b}\)</span> with <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> integers and <span class="math notranslate nohighlight">\(b\neq 0\)</span>. <br></p>
+<p>You can think of <span class="math notranslate nohighlight">\(\frac{a}{b}\)</span> as the number you get when you do <span class="math notranslate nohighlight">\(a\div b\)</span>. <br>
+If we think of a fraction as a division problem then it makes sense that it works well with multiplication.<br>
+Unlike addition, multiplying fractions is easy and straightforward. <br></p>
+<p>In this notebook we will look into two forms of fraction multiplication:</p>
+<ul class="simple">
+<li><p>multiplying two fractions together (e.g. <span class="math notranslate nohighlight">\(\dfrac{4}{7} \times \dfrac{2}{3}\)</span> )</p></li>
+<li><p>multiplying a fraction by an integer (e.g. <span class="math notranslate nohighlight">\(\dfrac{4}{7} \times 3\)</span> )</p></li>
+</ul>
+</div>
+<div class="section" id="procedure">
+<h2>Procedure<a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h2>
+<p>As mentioned earlier, multiplying two fractions together is simple.<br>
+Let’s say we want to multiply the fractions <span class="math notranslate nohighlight">\(\dfrac{4}{7}\)</span> and <span class="math notranslate nohighlight">\(\dfrac{2}{3}\)</span>.<br>
+All we have to do is multiply the numerators (top numbers) together, then multiply the denominators (bottom numbers) together. Let’s take a look:</p>
+<div class="math notranslate nohighlight">
+\[\frac{4}{7} \times \frac{2}{3}=\frac{4\times 2}{7\times 3}=\frac{8}{21}\]</div>
+<p>Let’s try another example. Take the fractions <span class="math notranslate nohighlight">\(\dfrac{3}{5}\)</span> and <span class="math notranslate nohighlight">\(\dfrac{2}{3}\)</span>. To multiply them we multiply the numerators together and the denominators together:</p>
+<div class="math notranslate nohighlight">
+\[\frac{3\times 2}{5\times 3}=\frac{6}{15}\]</div>
+<p>In this example, you might notice that the result is not in lowest terms: both 6 and 15 are divisible by 3, so we get <span class="math notranslate nohighlight">\(\dfrac{6}{15} = \dfrac25\)</span>. In a later notebook, we’ll focus on mechanics like this. For now, we want to focus on a visual understanding of the problem.</p>
+<p>Now that we know how to multiply two fractions, let’s think about what it actually means.<br>
+Recall that a fraction simply represents a part of something. We can think of multiplying fractions together as taking a part of another part. In other words <span class="math notranslate nohighlight">\(\dfrac{1}{2}\times\dfrac{1}{2}\)</span> is like saying <span class="math notranslate nohighlight">\(\dfrac{1}{2}\)</span> of <span class="math notranslate nohighlight">\(\dfrac{1}{2}\)</span> (one half <strong>of</strong> one half). If we have <span class="math notranslate nohighlight">\(\dfrac{1}{2}\)</span> of a pizza and we want <span class="math notranslate nohighlight">\(\dfrac{1}{2}\)</span> of that half what do we end up with?<br></p>
+<img src="./images/pizza.png" width="400px">
+<p>We get <span class="math notranslate nohighlight">\(\dfrac{1}{4}\)</span> because <span class="math notranslate nohighlight">\(\dfrac{1}{2}\times\dfrac{1}{2}=\dfrac{1}{4}\)</span>.<br></p>
+<p>Watch the video below to help us further visualize this concept.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
+&lt;div align=&quot;middle&quot;&gt;
+&lt;iframe id=&quot;vid1&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/hr_mTd-oJ-M&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt; 
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UC4a-Gbdw7vOaccHmFo40b9g&quot; target=&quot;_blank&quot;&gt;Click here&lt;/a&gt; for more videos by Khan Academy&lt;/p&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    $(function() {
+        var reachable = false;
+        var myFrame = $(&#39;#vid1&#39;);
+        var videoSrc = myFrame.attr(&quot;src&quot;);
+        myFrame.attr(&quot;src&quot;, videoSrc)
+        .on(&#39;load&#39;, function(){reachable = true;});
+        setTimeout(function() {
+            if(!reachable) {
+                var ifrm = myFrame[0];
+                ifrm = (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
+                ifrm.document.open();
+                ifrm.document.write(&#39;If the video does not start click &lt;a href=&quot;&#39; + videoSrc + &#39;&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;&#39;);
+                ifrm.document.close();
+            }
+        }, 2000)
+    });
+&lt;/script&gt;
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div align="middle">
+<iframe id="vid1" width="640" height="360" src="https://www.youtube.com/embed/hr_mTd-oJ-M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+<p><a href="https://www.youtube.com/channel/UC4a-Gbdw7vOaccHmFo40b9g" target="_blank">Click here</a> for more videos by Khan Academy</p>
+</div>
+<script>
+    $(function() {
+        var reachable = false;
+        var myFrame = $('#vid1');
+        var videoSrc = myFrame.attr("src");
+        myFrame.attr("src", videoSrc)
+        .on('load', function(){reachable = true;});
+        setTimeout(function() {
+            if(!reachable) {
+                var ifrm = myFrame[0];
+                ifrm = (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
+                ifrm.document.open();
+                ifrm.document.write('If the video does not start click <a href="' + videoSrc + '" target="_blank">here</a>');
+                ifrm.document.close();
+            }
+        }, 2000)
+    });
+</script>
+</div></div>
+</div>
+</div>
+<div class="section" id="interactive-visualization">
+<h2>Interactive visualization<a class="headerlink" href="#interactive-visualization" title="Permalink to this headline">¶</a></h2>
+<p>The widget below allows you to visualize fraction multiplication as shown in the video. To begin, enter a fraction in the boxes below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
+&lt;script src=&quot;./d3/d3.min.js&quot;&gt;&lt;/script&gt;
+&lt;!-- &lt;script src=&quot;https://d3js.org/d3.v3.min.js&quot;&gt;&lt;/script&gt; --&gt;
+&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]]}
+    });
+&lt;/script&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-1.10.2.js&quot;&gt;&lt;/script&gt;
+&lt;style&gt;
+    .fractionInput {
+          max-width: 40px;
+    }
+    
+    .fractionBar {
+          width: 40px;
+          height: 3px;
+          background-color: #000000;
+    }
+    
+    .ingredientsInput {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 40px;
+        /* float: right; */
+    }
+    
+    #speech {
+        margin: 50px;
+        font-size: 150%;
+    }
+    
+    li {
+        margin-bottom: 15px;
+    }
+&lt;/style&gt;
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script src="./d3/d3.min.js"></script>
+<!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+    .fractionInput {
+          max-width: 40px;
+    }
+
+    .fractionBar {
+          width: 40px;
+          height: 3px;
+          background-color: #000000;
+    }
+
+    .ingredientsInput {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 40px;
+        /* float: right; */
+    }
+
+    #speech {
+        margin: 50px;
+        font-size: 150%;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+</style>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionInputs&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin:20px&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">h1</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;leftInputFractionText&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; display: none&quot;</span><span class="o">&gt;&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;opperandInput&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; display: block&quot;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;oppNumerator&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin-bottom: -10px;&quot;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">hr</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;left&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionBar&quot;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;oppDenominator&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;1&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin-top: -10px;&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;continueBtn&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btn btn-primary buttons&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin: 30px&quot;</span><span class="o">&gt;</span><span class="n">Continue</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+
+  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;canvasDiv&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;clear: left&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">svg</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;500&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span> <span class="n">viewbox</span><span class="o">=</span><span class="s2">&quot;0 0 500 500&quot;</span> <span class="n">mlns</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;mainCanvas&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left&quot;</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">rect</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;mainBox&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;480&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;480&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;10&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;10&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;outline: solid #000000 3px; fill:#ffffff&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">rect</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;leftOpperand&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;480&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;10&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;10&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">rect</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;rightOpperand&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;480&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;10&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;10&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">svg</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">p</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;speech&quot;</span><span class="o">&gt;</span><span class="n">Enter</span> <span class="n">a</span> <span class="n">fraction</span> <span class="n">inside</span> <span class="n">the</span> <span class="n">boxes</span> <span class="n">provided</span> <span class="n">then</span> <span class="n">click</span> <span class="k">continue</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+    
+  <span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;clear: left; margin-left: 10px&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;resetFractionBoxBtn&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btn btn-primary buttons&quot;</span><span class="o">&gt;</span><span class="n">Reset</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div class="fractionInputs" style="margin:20px">
+    <h1 id="leftInputFractionText" style="float: left; display: none"></h1>
+    <div id="opperandInput" style="float: left; display: block">
+        <input type="text" class="fractionInput form-control form-control-sm" id="oppNumerator" placeholder="0" style="margin-bottom: -10px;">
+        <hr align="left" class="fractionBar">
+        <input type="text" class="fractionInput form-control form-control-sm" id="oppDenominator" placeholder="1" style="margin-top: -10px;">
+    </div>
+    <button type="button" id="continueBtn" class="btn btn-primary buttons" style="margin: 30px">Continue</button>
+
+  </div>
+
+  <div class="canvasDiv" style="clear: left">
+    <svg height="500" width="500" viewbox="0 0 500 500" mlns="http://www.w3.org/2000/svg" id="mainCanvas" style="float: left">
+      <rect id="mainBox" height="480" width="480" x="10" y="10" style="outline: solid #000000 3px; fill:#ffffff"></rect>
+      <rect id="leftOpperand" height="480" width="0" x="10" y="10"></rect>
+      <rect id="rightOpperand" height="0" width="480" x="10" y="10"></rect>
+    </svg>
+  </div>
+  <div>
+    <p id="speech">Enter a fraction inside the boxes provided then click continue.</p>
+  </div>
+
+  <div style="clear: left; margin-left: 10px">
+    <button type="button" id="resetFractionBoxBtn" class="btn btn-primary buttons">Reset</button>
+  </div>
+</div></div>
+</div>
+</div>
+<div class="section" id="multiplying-a-fraction-by-an-integer">
+<h2>Multiplying a fraction by an integer<a class="headerlink" href="#multiplying-a-fraction-by-an-integer" title="Permalink to this headline">¶</a></h2>
+<p>In this section we will talk about multiplying a fraction like <span class="math notranslate nohighlight">\(\dfrac{4}{7}\)</span>, with an integer such as <span class="math notranslate nohighlight">\(3\)</span>. A good example of when this could be useful is when you need to double a recipe. <br></p>
+<p>Doing multiplication of this form is simply a special case of multiplying two fractions together since any integer, such as <span class="math notranslate nohighlight">\(3\)</span> in this case, can be rewritten as <span class="math notranslate nohighlight">\(\dfrac{3}{1}\)</span>. On a calculator, try inputting any number divided by <span class="math notranslate nohighlight">\(1\)</span>, and you will always get back the original number. <br></p>
+<p>Let’s demonstrate this with an example. To multiply the fraction <span class="math notranslate nohighlight">\(\dfrac{4}{7}\)</span> and the integer <span class="math notranslate nohighlight">\(3\)</span>, remember that we can write <span class="math notranslate nohighlight">\(3\)</span> as <span class="math notranslate nohighlight">\(\dfrac31\)</span>. We get</p>
+<div class="math notranslate nohighlight">
+\[\frac{4}{7}\times\frac{3}{1} = \frac{4\times 3}{7\times 1}= \frac{12}{7} \]</div>
+<p><em>Note that <span class="math notranslate nohighlight">\(\dfrac{3}{1}\)</span> is an improper fraction. Improper fractions follow all the same rules for multiplication as proper fractions.</em></p>
+<p>The big take away from this is that the denominator does not change as it is simply multiplied by <span class="math notranslate nohighlight">\(1\)</span>. This means we did not change the <em>“whole”</em>, we only changed how many parts of the <em>“whole”</em> we have (the numerator). In effect all we did was triple our fraction, since our constant was 3. <br></p>
+<p>Let’s practice what we just learned with a recipe example. Below you will see the ingredient list for the famous <strong>Fresh Tomato and Basil Pasta Salad</strong> recipe. This recipe makes enough for 4 servings, but we would like to double the recipe in order to serve 8 people. Apply what we have learned so far to double the ingredients list for the <strong>tomato and basil pasta salad</strong> in order to make 8 servings.</p>
+<p>(Enter your answer in the provided boxes. Fractions should be written using the <em>forward slash</em> key “/” eg. 5/8. When your done click <em>check answer</em> to see if you are correct!)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ingredientsList&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Fresh</span> <span class="n">Tomato</span> <span class="ow">and</span> <span class="n">Basil</span> <span class="n">Pasta</span> <span class="n">Salad</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;./images/pastaSalad.jpg&quot;</span> <span class="n">width</span><span class="o">=</span><span class="mi">250</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; margin-right: 50px; box-shadow: 5px 6px 25px 3px grey&quot;</span><span class="o">&gt;</span>
+
+      <span class="o">&lt;</span><span class="n">ul</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;max-width: 700px; margin-bottom&quot;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="mi">3</span> <span class="n">medium</span> <span class="n">ripe</span> <span class="n">tomatoes</span><span class="p">,</span> <span class="n">chopped</span> <span class="o">--&gt;&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;tomatoes&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ingredientsInput&quot;</span><span class="o">&gt;&lt;/</span><span class="nb">input</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">tomatoes</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span> <span class="n">cup</span> <span class="n">thinly</span> <span class="n">sliced</span> <span class="n">fresh</span> <span class="n">basil</span> <span class="o">--&gt;&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;basil&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ingredientsInput&quot;</span><span class="o">&gt;&lt;/</span><span class="nb">input</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">cup</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="mi">2</span> <span class="n">Tbsp</span><span class="o">.</span> <span class="n">olive</span> <span class="n">oil</span> <span class="o">--&gt;&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;olivOil&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ingredientsInput&quot;</span><span class="o">&gt;&lt;/</span><span class="nb">input</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">Tbsp</span><span class="o">.&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="mi">1</span> <span class="n">clove</span> <span class="n">garlic</span><span class="p">,</span> <span class="n">minced</span> <span class="o">--&gt;&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;garlic&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ingredientsInput&quot;</span><span class="o">&gt;&lt;/</span><span class="nb">input</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">clove</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span> <span class="n">tsp</span><span class="o">.</span> <span class="n">salt</span> <span class="o">--&gt;&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;salt&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ingredientsInput&quot;</span><span class="o">&gt;&lt;/</span><span class="nb">input</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">tsp</span><span class="o">.&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span> <span class="n">tsp</span><span class="o">.</span> <span class="n">pepper</span> <span class="o">--&gt;&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;pepper&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ingredientsInput&quot;</span><span class="o">&gt;&lt;/</span><span class="nb">input</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">tsp</span><span class="o">.&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="mi">8</span> <span class="n">oz</span><span class="o">.</span> <span class="n">rotini</span> <span class="n">pasta</span> <span class="n">pasta</span><span class="p">,</span> <span class="n">uncooked</span> <span class="o">--&gt;&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;pasta&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ingredientsInput&quot;</span><span class="o">&gt;&lt;/</span><span class="nb">input</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">oz</span><span class="o">.&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="mi">3</span><span class="o">/</span><span class="mi">4</span> <span class="n">cup</span> <span class="n">Parmesan</span> <span class="n">Style</span> <span class="n">Grated</span> <span class="n">Topping</span> <span class="o">--&gt;&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;parmesan&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;ingredientsInput&quot;</span><span class="o">&gt;&lt;/</span><span class="nb">input</span><span class="o">&gt;&lt;</span><span class="n">label</span><span class="o">&gt;</span><span class="n">cup</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+      <span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;checkAnswerBtn&quot;</span><span class="o">&gt;</span><span class="n">Check</span> <span class="n">Answers</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;resetBtn&quot;</span><span class="o">&gt;</span><span class="n">Reset</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">h2</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;answerStatus&quot;</span><span class="o">&gt;&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div class="ingredientsList">
+    <h1>Fresh Tomato and Basil Pasta Salad</h1>
+    <img src="./images/pastaSalad.jpg" width=250 style="float: left; margin-right: 50px; box-shadow: 5px 6px 25px 3px grey">
+
+      <ul style="max-width: 700px; margin-bottom">
+        <li><label>3 medium ripe tomatoes, chopped --></label><input id="tomatoes" class="ingredientsInput"></input><label>tomatoes</label></li>
+        <li><label>1/3 cup thinly sliced fresh basil --></label><input id="basil" class="ingredientsInput"></input><label>cup</label></li>
+        <li><label>2 Tbsp. olive oil --></label><input id="olivOil" class="ingredientsInput"></input><label>Tbsp.</label></li>
+        <li><label>1 clove garlic, minced --></label><input id="garlic" class="ingredientsInput"></input><label>clove</label></li>
+        <li><label>1/2 tsp. salt --></label><input id="salt" class="ingredientsInput"></input><label>tsp.</label></li>
+        <li><label>1/4 tsp. pepper --></label><input id="pepper" class="ingredientsInput"></input><label>tsp.</label></li>
+        <li><label>8 oz. rotini pasta pasta, uncooked --></label><input id="pasta" class="ingredientsInput"></input><label>oz.</label></li>
+        <li><label>3/4 cup Parmesan Style Grated Topping --></label><input id="parmesan" class="ingredientsInput"></input><label>cup</label></li>
+      </ul>
+      <button type="button" id="checkAnswerBtn">Check Answers</button>
+      <button type="button" id="resetBtn">Reset</button>
+</div>
+<div>
+    <h2 id="answerStatus"></h2>
+</div>
+</div></div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Throughout this notebook we looked at how easy multiplying fractions together really is. We also looked at how to work with a fraction multiplied by a constant. Lets recap what we have learned:</p>
+<ul class="simple">
+<li><p>When multiplying two fractions together we multiply the numerators together and the denominators together: <span class="math notranslate nohighlight">\(\dfrac{a}{b}\times\dfrac{c}{d}=\dfrac{a \times c}{b \times d} = \dfrac{ac}{bd}\)</span></p></li>
+<li><p>A constant can always be rewritten as the constant over 1: <span class="math notranslate nohighlight">\(c = \dfrac{c}{1}\)</span></p></li>
+<li><p>Multiplying a fraction with a constant, multiply the numerator by the constant and keep the denominator the same: <span class="math notranslate nohighlight">\(\dfrac{a}{b}\times c=\dfrac{a\times c}{b}=\dfrac{ac}{b}\)</span></p></li>
+<li><p>Multiplying two fractions together is the same as saying <em>a part of a part</em>: <span class="math notranslate nohighlight">\(\dfrac{a}{b}\times\dfrac{c}{d}\)</span> is like saying <span class="math notranslate nohighlight">\(\dfrac{a}{b}\)</span> <strong>of</strong> <span class="math notranslate nohighlight">\(\dfrac{c}{d}\)</span> (The equation <span class="math notranslate nohighlight">\(\dfrac{3}{5}\times\dfrac{1}{4}\)</span> is the same as <em>three fifths <strong>of</strong> one quarter</em>)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
+&lt;script&gt;
+var leftOpperand = {
+    id: &#39;leftOpperand&#39;,
+    numerator: Number(0),
+    denominator: Number(0),
+    colour: &#39;#ff0066&#39;
+};
+
+var rightOpperand = {
+    id: &#39;rightOpperand&#39;,
+    numerator: Number(0),
+    denominator: Number(0),
+    colour: &#39;#0000ff&#39;
+};
+
+var currentState = 0;
+
+var getOpperandInput = function(numeratorInput, denominatorInput, opperand) {
+  opperand.numerator = document.getElementById(numeratorInput).value;
+  opperand.denominator = document.getElementById(denominatorInput).value;
+
+}
+
+var verticalDivide = function(xVal, lineNum) {
+    var i = xVal;
+    while(lineNum &gt; 0){
+      addLine(Number(i + 10), Number(i + 10), 10, Number(d3.select(&#39;#mainBox&#39;).attr(&#39;height&#39;)) + 10);
+      i += xVal;
+      lineNum --;
+    }
+};
+
+var horizontalDivide = function(xVal, lineNum) {
+    var i = Number(xVal);
+    while(lineNum &gt; 0){
+      addLine(10, Number(d3.select(&#39;#mainBox&#39;).attr(&#39;width&#39;)) + 10, Number(i + 10), Number(i +10));
+      i += xVal;
+      lineNum --;
+    }
+};
+
+var addLine = function (x1, x2, y1, y2,) {
+    var dashed = &#39;0,0&#39;;
+    var stroke = 2;
+
+    d3.select(&#39;#mainCanvas&#39;).append(&#39;line&#39;)
+        .attr(&#39;class&#39;, &#39;divLine &#39;)
+        .attr(&#39;x1&#39;, x1)
+        .attr(&#39;x2&#39;, x2)
+        .attr(&#39;y1&#39;, y1)
+        .attr(&#39;y2&#39;, y2)
+        .style(&#39;stroke&#39;, &#39;black&#39;)
+        .style(&#39;stroke-width&#39;, stroke);
+};
+
+var fillBox = function(box, width, height, colour, opacity) {
+    d3.select(&#39;#&#39; + box.id)
+    .style(&#39;fill&#39;, colour)
+    .style(&#39;opacity&#39;, opacity)
+    .transition().delay(function (d, i) {
+        return i * 300;
+      }).duration(500)
+        .attr(&#39;width&#39;, width)
+        .attr(&#39;height&#39;, height);
+};
+
+var changeOpacity = function(box, opacity) {
+    d3.select(&#39;#&#39; + box.id).transition().delay(function (d, i) {
+        return i * 300;
+      }).duration(500)
+        .style(&#39;opacity&#39;, opacity);
+
+    d3.selectAll(&#39;.divLine&#39;).transition().delay(function (d, i) {
+        return i * 100;
+      }).duration(200)
+    .style(&#39;opacity&#39;, opacity);
+};
+
+var resetInputs = function() {
+    d3.select(&#39;#continueBtn&#39;).attr(&#39;disabled&#39;, null);
+    d3.selectAll(&#39;.divLine&#39;).remove();
+    d3.select(&#39;#leftOpperand&#39;).attr(&#39;width&#39;, 0);
+    d3.select(&#39;#rightOpperand&#39;).attr(&#39;height&#39;, 0);
+    d3.select(&#39;#leftInputFractionText&#39;).text(&#39;&#39;).style(&#39;display&#39;, &#39;none&#39;);
+    clearInput(&#39;oppNumerator&#39;);
+    clearInput(&#39;oppDenominator&#39;);
+    leftOpperand.numerator = Number(0);
+    leftOpperand.denominator = Number(0);
+    rightOpperand.numerator = Number(0);
+    rightOpperand.denominator = Number(0);
+
+};
+
+var isValid = function(numerator, denominator) {
+  if (numerator &lt; 0 || numerator &gt; 12) {
+    return false;
+  }
+  if (denominator &lt;= 0 || denominator &gt; 12) {
+    return false;
+  }
+  return (numerator &lt; denominator);
+};
+
+var updateMathJax = function() {
+  MathJax.Hub.Queue([&quot;Typeset&quot;,MathJax.Hub]);
+};
+
+var showInputBox = function(inputId) {
+  d3.select(&#39;#&#39; + inputId).style(&#39;display&#39;, &#39;block&#39;);
+};
+
+var hideInputBox = function(inputId) {
+  d3.select(&#39;#&#39; + inputId).style(&#39;display&#39;, &#39;none&#39;);
+};
+
+var clearInput = function(inputId) {
+  document.getElementById(inputId).value = &#39;&#39;;
+}
+
+var stateControler = function(state) {
+  currentState = state;
+  setSpeech(state);
+
+  switch(state) {
+    case 0 :
+      resetInputs();
+      showInputBox(&#39;opperandInput&#39;);
+      break;
+    case 1 :
+      getOpperandInput(&#39;oppNumerator&#39;, &#39;oppDenominator&#39;, leftOpperand);
+      d3.select(&#39;#leftInputFractionText&#39;)
+        .text(&#39;$\\frac{&#39;+leftOpperand.numerator+&#39;}{&#39;+leftOpperand.denominator+&#39;} \\times$&#39;)
+        .style(&#39;display&#39;, &#39;block&#39;);
+      updateMathJax();
+      verticalDivide(Number(d3.select(&#39;#mainBox&#39;).attr(&#39;width&#39;)/leftOpperand.denominator), Number(leftOpperand.denominator - 1));
+      hideInputBox(&#39;opperandInput&#39;);
+      break;
+    case 2 :
+      fillBox(leftOpperand, Number(d3.select(&#39;#mainBox&#39;).attr(&#39;width&#39;)/leftOpperand.denominator) * leftOpperand.numerator, Number(d3.select(&#39;#mainBox&#39;).attr(&#39;height&#39;)), leftOpperand.colour, 1);
+      clearInput(&#39;oppNumerator&#39;);
+      clearInput(&#39;oppDenominator&#39;);
+      showInputBox(&#39;opperandInput&#39;);
+      break;
+    case 3 :
+      getOpperandInput(&#39;oppNumerator&#39;, &#39;oppDenominator&#39;, rightOpperand);
+      d3.select(&#39;#leftInputFractionText&#39;)
+        .text(&#39;$\\frac{&#39;+leftOpperand.numerator+&#39;}{&#39;+leftOpperand.denominator+&#39;} \\times$&#39; + &#39;$\\frac{&#39;+rightOpperand.numerator+&#39;}{&#39;+rightOpperand.denominator+&#39;}$&#39;);
+      updateMathJax();
+      changeOpacity(leftOpperand, 0);
+      horizontalDivide(Number(d3.select(&#39;#mainBox&#39;).attr(&#39;height&#39;)/rightOpperand.denominator), Number(rightOpperand.denominator - 1));
+      hideInputBox(&#39;opperandInput&#39;);
+      break;
+    case 4 :
+      fillBox(rightOpperand, Number(d3.select(&#39;#mainBox&#39;).attr(&#39;width&#39;)), Number(d3.select(&#39;#mainBox&#39;).attr(&#39;height&#39;)/rightOpperand.denominator) * rightOpperand.numerator, rightOpperand.colour, 0.5);
+      break;
+    case 5 :
+      changeOpacity(leftOpperand, 1);
+      d3.select(&#39;#continueBtn&#39;).attr(&#39;disabled&#39;, true);
+      break;
+    default:
+      console.log(&#39;not a valid of state, returning to state 0&#39;);
+      stateControler(0);
+  }
+};
+
+var speech = [
+    &quot;Enter a fraction in the boxes provided, then click continue.&quot;,
+    &quot;Great! Now we see that the square has been divided into rectangles of equal size. The number of rectangles is given by the denominator. Click continue when ready.&quot;,
+    &quot;Some of the equal parts have been filled in with pink. The numerator equals the number of pink rectangles. The ratio of the area in pink to the total area is our fraction. Enter another fraction to multiply then click continue.&quot;,
+    &quot;Let’s focus on the second fraction. The first one is temporarily hidden for clarity. As before, the number of rectangles we see equals the denominator. Click continue when ready.&quot;,
+    &quot;Now we have a blue section representing the numerator of the second fraction. Click continue to multiply these two fractions.&quot;,
+    &quot;Awesome! The first fraction is back and overlaid with the second fraction. The number of rectangles in the purple section is the numerator of our answer. Notice that this is the product of the numerators. The total number of rectangles is the denominator of the product, and this is just the product of the two denominators!&quot;
+];
+
+function setSpeech(state) {
+    d3.select(&#39;#speech&#39;).text(speech[state]);
+};
+
+document.getElementById(&#39;continueBtn&#39;).onclick = function() {
+  if(!isValid(Number(document.getElementById(&#39;oppNumerator&#39;).value), Number(document.getElementById(&#39;oppDenominator&#39;).value))){
+      alert(&#39;Make sure your factions are proper and the denominators less than or equal to 12&#39;);
+  }
+  else {
+    stateControler(currentState + 1);
+  }
+};
+
+document.getElementById(&#39;resetFractionBoxBtn&#39;).onclick = function() {
+  console.log(&quot;hello&quot;);
+  resetInputs();
+  stateControler(0);
+};
+&lt;/script&gt;
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+var leftOpperand = {
+    id: 'leftOpperand',
+    numerator: Number(0),
+    denominator: Number(0),
+    colour: '#ff0066'
+};
+
+var rightOpperand = {
+    id: 'rightOpperand',
+    numerator: Number(0),
+    denominator: Number(0),
+    colour: '#0000ff'
+};
+
+var currentState = 0;
+
+var getOpperandInput = function(numeratorInput, denominatorInput, opperand) {
+  opperand.numerator = document.getElementById(numeratorInput).value;
+  opperand.denominator = document.getElementById(denominatorInput).value;
+
+}
+
+var verticalDivide = function(xVal, lineNum) {
+    var i = xVal;
+    while(lineNum > 0){
+      addLine(Number(i + 10), Number(i + 10), 10, Number(d3.select('#mainBox').attr('height')) + 10);
+      i += xVal;
+      lineNum --;
+    }
+};
+
+var horizontalDivide = function(xVal, lineNum) {
+    var i = Number(xVal);
+    while(lineNum > 0){
+      addLine(10, Number(d3.select('#mainBox').attr('width')) + 10, Number(i + 10), Number(i +10));
+      i += xVal;
+      lineNum --;
+    }
+};
+
+var addLine = function (x1, x2, y1, y2,) {
+    var dashed = '0,0';
+    var stroke = 2;
+
+    d3.select('#mainCanvas').append('line')
+        .attr('class', 'divLine ')
+        .attr('x1', x1)
+        .attr('x2', x2)
+        .attr('y1', y1)
+        .attr('y2', y2)
+        .style('stroke', 'black')
+        .style('stroke-width', stroke);
+};
+
+var fillBox = function(box, width, height, colour, opacity) {
+    d3.select('#' + box.id)
+    .style('fill', colour)
+    .style('opacity', opacity)
+    .transition().delay(function (d, i) {
+        return i * 300;
+      }).duration(500)
+        .attr('width', width)
+        .attr('height', height);
+};
+
+var changeOpacity = function(box, opacity) {
+    d3.select('#' + box.id).transition().delay(function (d, i) {
+        return i * 300;
+      }).duration(500)
+        .style('opacity', opacity);
+
+    d3.selectAll('.divLine').transition().delay(function (d, i) {
+        return i * 100;
+      }).duration(200)
+    .style('opacity', opacity);
+};
+
+var resetInputs = function() {
+    d3.select('#continueBtn').attr('disabled', null);
+    d3.selectAll('.divLine').remove();
+    d3.select('#leftOpperand').attr('width', 0);
+    d3.select('#rightOpperand').attr('height', 0);
+    d3.select('#leftInputFractionText').text('').style('display', 'none');
+    clearInput('oppNumerator');
+    clearInput('oppDenominator');
+    leftOpperand.numerator = Number(0);
+    leftOpperand.denominator = Number(0);
+    rightOpperand.numerator = Number(0);
+    rightOpperand.denominator = Number(0);
+
+};
+
+var isValid = function(numerator, denominator) {
+  if (numerator < 0 || numerator > 12) {
+    return false;
+  }
+  if (denominator <= 0 || denominator > 12) {
+    return false;
+  }
+  return (numerator < denominator);
+};
+
+var updateMathJax = function() {
+  MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+};
+
+var showInputBox = function(inputId) {
+  d3.select('#' + inputId).style('display', 'block');
+};
+
+var hideInputBox = function(inputId) {
+  d3.select('#' + inputId).style('display', 'none');
+};
+
+var clearInput = function(inputId) {
+  document.getElementById(inputId).value = '';
+}
+
+var stateControler = function(state) {
+  currentState = state;
+  setSpeech(state);
+
+  switch(state) {
+    case 0 :
+      resetInputs();
+      showInputBox('opperandInput');
+      break;
+    case 1 :
+      getOpperandInput('oppNumerator', 'oppDenominator', leftOpperand);
+      d3.select('#leftInputFractionText')
+        .text('$\\frac{'+leftOpperand.numerator+'}{'+leftOpperand.denominator+'} \\times$')
+        .style('display', 'block');
+      updateMathJax();
+      verticalDivide(Number(d3.select('#mainBox').attr('width')/leftOpperand.denominator), Number(leftOpperand.denominator - 1));
+      hideInputBox('opperandInput');
+      break;
+    case 2 :
+      fillBox(leftOpperand, Number(d3.select('#mainBox').attr('width')/leftOpperand.denominator) * leftOpperand.numerator, Number(d3.select('#mainBox').attr('height')), leftOpperand.colour, 1);
+      clearInput('oppNumerator');
+      clearInput('oppDenominator');
+      showInputBox('opperandInput');
+      break;
+    case 3 :
+      getOpperandInput('oppNumerator', 'oppDenominator', rightOpperand);
+      d3.select('#leftInputFractionText')
+        .text('$\\frac{'+leftOpperand.numerator+'}{'+leftOpperand.denominator+'} \\times$' + '$\\frac{'+rightOpperand.numerator+'}{'+rightOpperand.denominator+'}$');
+      updateMathJax();
+      changeOpacity(leftOpperand, 0);
+      horizontalDivide(Number(d3.select('#mainBox').attr('height')/rightOpperand.denominator), Number(rightOpperand.denominator - 1));
+      hideInputBox('opperandInput');
+      break;
+    case 4 :
+      fillBox(rightOpperand, Number(d3.select('#mainBox').attr('width')), Number(d3.select('#mainBox').attr('height')/rightOpperand.denominator) * rightOpperand.numerator, rightOpperand.colour, 0.5);
+      break;
+    case 5 :
+      changeOpacity(leftOpperand, 1);
+      d3.select('#continueBtn').attr('disabled', true);
+      break;
+    default:
+      console.log('not a valid of state, returning to state 0');
+      stateControler(0);
+  }
+};
+
+var speech = [
+    "Enter a fraction in the boxes provided, then click continue.",
+    "Great! Now we see that the square has been divided into rectangles of equal size. The number of rectangles is given by the denominator. Click continue when ready.",
+    "Some of the equal parts have been filled in with pink. The numerator equals the number of pink rectangles. The ratio of the area in pink to the total area is our fraction. Enter another fraction to multiply then click continue.",
+    "Let’s focus on the second fraction. The first one is temporarily hidden for clarity. As before, the number of rectangles we see equals the denominator. Click continue when ready.",
+    "Now we have a blue section representing the numerator of the second fraction. Click continue to multiply these two fractions.",
+    "Awesome! The first fraction is back and overlaid with the second fraction. The number of rectangles in the purple section is the numerator of our answer. Notice that this is the product of the numerators. The total number of rectangles is the denominator of the product, and this is just the product of the two denominators!"
+];
+
+function setSpeech(state) {
+    d3.select('#speech').text(speech[state]);
+};
+
+document.getElementById('continueBtn').onclick = function() {
+  if(!isValid(Number(document.getElementById('oppNumerator').value), Number(document.getElementById('oppDenominator').value))){
+      alert('Make sure your factions are proper and the denominators less than or equal to 12');
+  }
+  else {
+    stateControler(currentState + 1);
+  }
+};
+
+document.getElementById('resetFractionBoxBtn').onclick = function() {
+  console.log("hello");
+  resetInputs();
+  stateControler(0);
+};
+</script>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
+&lt;script type=&quot;text/javascript&quot;&gt;
+      var x = 2; //Recipie multiplyer
+
+      getInput(&#39;checkAnswerBtn&#39;).onclick = function() {
+        if(checkAnswers()) {
+          d3.select(&#39;#answerStatus&#39;).text(&#39;Correct!! Good job.&#39;);
+        } else {
+          d3.select(&#39;#answerStatus&#39;).text(&#39;Not quite, keep trying!&#39;);        
+        }
+      };
+        
+        getInput(&#39;resetBtn&#39;).onclick = function() {
+        var inputs = document.getElementsByClassName(&#39;ingredientsInput&#39;);
+        for(var i = 0; i &lt; inputs.length; i++) {
+          inputs[i].value = &#39;&#39;;
+        }
+        d3.selectAll(&#39;.ingredientsInput&#39;).style(&#39;background-color&#39;, &#39;#ffffff&#39;);
+        d3.select(&#39;#answerStatus&#39;).text(&#39;&#39;);
+      };
+
+      function checkAnswers() {
+        var isCorrect = true;
+        if(!checkAnswer(&#39;tomatoes&#39;, x*3))
+          isCorrect = false;
+        if(!checkAnswer(&#39;basil&#39;, x*(1/3)))
+          isCorrect = false;
+        if(!checkAnswer(&#39;olivOil&#39;, x*2))
+          isCorrect = false;
+        if(!checkAnswer(&#39;garlic&#39;, x*1))
+          isCorrect = false;
+        if(!checkAnswer(&#39;salt&#39;, x*(1/2)))
+          isCorrect = false;
+        if(!checkAnswer(&#39;pepper&#39;, x*(1/4)))
+          isCorrect = false;
+        if(!checkAnswer(&#39;pasta&#39;, x*8))
+          isCorrect = false;
+        if(!checkAnswer(&#39;parmesan&#39;, x*(3/4)))
+          isCorrect = false;
+
+        return isCorrect;
+      };
+
+      function checkAnswer(id, ans) {
+        if(eval(getInput(id).value) === ans) {
+          return answerCorrect(id);
+        }
+        return answerIncorrect(id);
+      };
+
+      function answerCorrect(id) {
+        d3.select(&#39;#&#39; + id).style(&#39;background-color&#39;, &#39;#76D177&#39;);
+        return true;
+      }
+
+      function answerIncorrect(id) {
+        d3.select(&#39;#&#39; + id).style(&#39;background-color&#39;, &#39;#BB4646&#39;);
+        return false;
+      }
+
+      function getInput(id) {
+        return document.getElementById(id);
+      };
+&lt;/script&gt;
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script type="text/javascript">
+      var x = 2; //Recipie multiplyer
+
+      getInput('checkAnswerBtn').onclick = function() {
+        if(checkAnswers()) {
+          d3.select('#answerStatus').text('Correct!! Good job.');
+        } else {
+          d3.select('#answerStatus').text('Not quite, keep trying!');        
+        }
+      };
+
+        getInput('resetBtn').onclick = function() {
+        var inputs = document.getElementsByClassName('ingredientsInput');
+        for(var i = 0; i < inputs.length; i++) {
+          inputs[i].value = '';
+        }
+        d3.selectAll('.ingredientsInput').style('background-color', '#ffffff');
+        d3.select('#answerStatus').text('');
+      };
+
+      function checkAnswers() {
+        var isCorrect = true;
+        if(!checkAnswer('tomatoes', x*3))
+          isCorrect = false;
+        if(!checkAnswer('basil', x*(1/3)))
+          isCorrect = false;
+        if(!checkAnswer('olivOil', x*2))
+          isCorrect = false;
+        if(!checkAnswer('garlic', x*1))
+          isCorrect = false;
+        if(!checkAnswer('salt', x*(1/2)))
+          isCorrect = false;
+        if(!checkAnswer('pepper', x*(1/4)))
+          isCorrect = false;
+        if(!checkAnswer('pasta', x*8))
+          isCorrect = false;
+        if(!checkAnswer('parmesan', x*(3/4)))
+          isCorrect = false;
+
+        return isCorrect;
+      };
+
+      function checkAnswer(id, ans) {
+        if(eval(getInput(id).value) === ans) {
+          return answerCorrect(id);
+        }
+        return answerIncorrect(id);
+      };
+
+      function answerCorrect(id) {
+        d3.select('#' + id).style('background-color', '#76D177');
+        return true;
+      }
+
+      function answerIncorrect(id) {
+        d3.select('#' + id).style('background-color', '#BB4646');
+        return false;
+      }
+
+      function getInput(id) {
+        return document.getElementById(id);
+      };
+</script>
+</div></div>
+</div>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

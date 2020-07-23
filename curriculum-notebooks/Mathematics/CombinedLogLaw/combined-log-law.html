@@ -1,0 +1,1680 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Combined Log Law &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Instructions before you start" href="../CompareandOrderNumbers/compare-and-order-numbers.html" />
+    <link rel="prev" title="Central Tendancy: Mean, Median, and Mode" href="../CentralTendency/central-tendency.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="../../../intro.html">Welcome to Callysto</a>
+  </li>
+  <li class="">
+    <a href="../../README.html">Curriculum Notebooks</a>
+  </li>
+  <li class="">
+    <a href="../../Arts/Arts.html">Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../Health/Health.html">Health Section</a>
+  </li>
+  <li class="">
+    <a href="../../Languages/Languages.html">Languages Section</a>
+  </li>
+  <li class="active">
+    <a href="../Mathematics.html">Mathematics Section</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
+    </li>
+    <li class="">
+      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
+    </li>
+    <li class="">
+      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
+    </li>
+    <li class="">
+      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
+    </li>
+    <li class="">
+      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
+    </li>
+    <li class="">
+      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
+    </li>
+    <li class="">
+      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
+    </li>
+    <li class="active">
+      <a href="">Combined Log Law</a>
+    </li>
+    <li class="">
+      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
+    </li>
+    <li class="">
+      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
+    </li>
+    <li class="">
+      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
+    </li>
+    <li class="">
+      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
+    </li>
+    <li class="">
+      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
+    </li>
+    <li class="">
+      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
+    </li>
+    <li class="">
+      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
+    </li>
+    <li class="">
+      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
+    </li>
+    <li class="">
+      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
+    </li>
+    <li class="">
+      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
+    </li>
+    <li class="">
+      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
+    </li>
+    <li class="">
+      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
+    </li>
+    <li class="">
+      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
+    </li>
+    <li class="">
+      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
+    </li>
+    <li class="">
+      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
+    </li>
+    <li class="">
+      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
+    </li>
+    <li class="">
+      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
+    </li>
+    <li class="">
+      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
+    </li>
+    <li class="">
+      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
+    </li>
+    <li class="">
+      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
+    </li>
+    <li class="">
+      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
+    </li>
+    <li class="">
+      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
+    </li>
+    <li class="">
+      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
+    </li>
+    <li class="">
+      <a href="../Percentage/percentage.html">Percentages</a>
+    </li>
+    <li class="">
+      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
+    </li>
+    <li class="">
+      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
+    </li>
+    <li class="">
+      <a href="../PiDay/pi-day.html">Pi Day</a>
+    </li>
+    <li class="">
+      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
+    </li>
+    <li class="">
+      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
+    </li>
+    <li class="">
+      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
+    </li>
+    <li class="">
+      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
+    </li>
+    <li class="">
+      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
+    </li>
+    <li class="">
+      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
+    </li>
+    <li class="">
+      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
+    </li>
+    <li class="">
+      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
+    </li>
+    <li class="">
+      <a href="../TellingTime/telling-time.html">Telling Time</a>
+    </li>
+    <li class="">
+      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
+    </li>
+    <li class="">
+      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Transformations of Objects and Shapes: Exercises</a>
+    </li>
+    <li class="">
+      <a href="../Transformations/transformations-of-objects-and-shapes.html">Transformations: Positions and Motions of Objects and Shapes</a>
+    </li>
+    <li class="">
+      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="../../Science/Sciences.html">Sciences Section</a>
+  </li>
+  <li class="">
+    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
+  </li>
+  <li class="">
+    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
+  </li>
+</ul>
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Mathematics/CombinedLogLaw/combined-log-law.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/CombinedLogLaw/combined-log-law.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CombinedLogLaw/combined-log-law.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#introduction" class="nav-link">Introduction:</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#motivation" class="nav-link">Motivation:</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#base-for-logarithm" class="nav-link">Base for logarithm:</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#three-important-bases" class="nav-link">Three important bases:</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#examples" class="nav-link">Examples:</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#basics-of-logarithms-p" class="nav-link">Basics of Logarithms:<p></a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#logarithmic-laws-p" class="nav-link">Logarithmic Laws<p></a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#background-exponential-laws" class="nav-link">Background: Exponential Laws</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#span-style-color-blue-product-law" class="nav-link"><span style="color:blue"> Product Law</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#an-example" class="nav-link">An example</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#mathematical-proof" class="nav-link">Mathematical proof</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#graphical-demonstration" class="nav-link">Graphical Demonstration</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#results" class="nav-link">Results</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#span-style-color-blue-quotient-law" class="nav-link"><span style="color:blue"> Quotient Law</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id1" class="nav-link">An example</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id2" class="nav-link">Mathematical proof</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id3" class="nav-link">Graphical Demonstration</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#result" class="nav-link">Result</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#span-style-color-blue-power-law" class="nav-link"><span style="color:blue"> Power Law</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id4" class="nav-link">An example</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id5" class="nav-link">Mathematical Proof</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id6" class="nav-link">Graphical Demonstration</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id7" class="nav-link">Results</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#span-style-color-blue-change-of-base-rule" class="nav-link"><span style="color:blue"> Change of Base Rule</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id8" class="nav-link">An example</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id9" class="nav-link">Mathematical Proof</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#discussion" class="nav-link">Discussion</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#evidence" class="nav-link">Evidence</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id10" class="nav-link">Results</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#span-style-color-blue-examples" class="nav-link"><span style="color:blue"> Examples</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#simplify-the-following-equation-then-solve-for-x" class="nav-link">1. Simplify the following equation, then solve for x</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#log-x-3-log-x" class="nav-link">$ 3^{\log(x)}3^{\log(x)}$</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#text-simplify-the-expression-2-log-x-frac-log-z-2-3-log-y" class="nav-link">2. \text{Simplify the expression: } 2\log(x) - \frac{\log(z)}{2} + 3\log(y)</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#solve-for-x-2-x-2-2-x-2" class="nav-link">3.    Solve for x $ 2^{(x-2)}=2^x -2 $</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#conclusion" class="nav-link">Conclusion</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/CombinedLogLaw/combined-log-law.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<h1><center>Logarithmic Laws</center></h1><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">code_show=true; </span>
+<span class="s1">function code_toggle() {</span>
+<span class="s1"> if (code_show){</span>
+<span class="s1"> $(&#39;div.input&#39;).hide();</span>
+<span class="s1"> } else {</span>
+<span class="s1"> $(&#39;div.input&#39;).show();</span>
+<span class="s1"> }</span>
+<span class="s1"> code_show = !code_show</span>
+<span class="s1">} </span>
+<span class="s1">$( document ).ready(code_toggle);</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Click here to toggle on/off the raw code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+code_show=true; 
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script>
+<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form></div></div>
+</div>
+<div class="section" id="combined-log-law">
+<h1>Combined Log Law<a class="headerlink" href="#combined-log-law" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Logarithms are the inverse operation to exponentials. They are useful because they change the arithmetic operations of multiplication, division, and powers into addition, subtraction, and products. While modern calculators can do all these operations quickly, for us mere humans logarithms can be useful for doing quick approximations in our heads.</p>
+</div>
+<div class="section" id="motivation">
+<h2>Motivation:<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>Going about our day, we often run into powers of ten, when we see kilograms of food in a grocery store (1000 grams), megawatts of power from an electrical generator (1,000,000 watts) or gigabytes of memory in our computer (1,000,000,000 bytes). It is the <strong>power</strong> of ten that is important, and the logarithm captures this idea with the formulas
+<span class="math notranslate nohighlight">\($ \log(10) = 1\)</span>$
+<span class="math notranslate nohighlight">\($ \log(1000) = 3\)</span>$
+<span class="math notranslate nohighlight">\($ \log(1,000,000) = 6\)</span>$
+<span class="math notranslate nohighlight">\($ \log(1,000,000,000) = 9.\)</span>$</p>
+<p>The logarithm of a number <span class="math notranslate nohighlight">\(x\)</span> is defined as the power <span class="math notranslate nohighlight">\(n\)</span> it takes so that <span class="math notranslate nohighlight">\($x = 10^n.\)</span>$ So, for instance, since <span class="math notranslate nohighlight">\(1000 = 10^3\)</span>, we know that <span class="math notranslate nohighlight">\(\log(1000) = 3,\)</span> as indicated in the list above.</p>
+<p>For numbers that aren’t integer powers of 10, the logarithm is still defined by the above formula, where <span class="math notranslate nohighlight">\(n\)</span> can be any real number solving <span class="math notranslate nohighlight">\(x = 10^n\)</span>. For instance, you might guess that <span class="math notranslate nohighlight">\(\log(5000)\)</span> is somewhere between 3 and 4, since the number 5000 is halfway between <span class="math notranslate nohighlight">\(10^3 = 1000\)</span> and <span class="math notranslate nohighlight">\(10^4 = 10,000\)</span>. You might even guess that <span class="math notranslate nohighlight">\(\log(5000) = 3.5\)</span>, which is not a bad approximation: in fact, a calculator shows that
+<span class="math notranslate nohighlight">\($\log(5000) = 3.69897...,\)</span>$
+which is the same as saying
+<span class="math notranslate nohighlight">\($5000 = 10^{3.69897...}.\)</span>$</p>
+<p>We can also take logarithms of small numbers, like this:
+<span class="math notranslate nohighlight">\($\log(0.01) = \log\left(\frac{1}{100}\right) = \log(10^{-2}) = -2.\)</span>$</p>
+<p>But you cannot take logarithms of negative numbers. (Unless you are willing to learn about something called complex numbers!)</p>
+</div>
+<div class="section" id="base-for-logarithm">
+<h2>Base for logarithm:<a class="headerlink" href="#base-for-logarithm" title="Permalink to this headline">¶</a></h2>
+<p>In the examples above, we worked with powers of ten, so ten is called the <strong>base</strong> for the logarithm.</p>
+<p>We can work with other bases. For instance, with computers we often work with power of two. A KB of memory is actually <span class="math notranslate nohighlight">\(1024 = 2^{10}\)</span> bytes.</p>
+<p>If you aren’t sure about this, multiply out
+<span class="math notranslate nohighlight">\(2\times 2 \times 2 \times \ldots \times 2\)</span> with ten 2’s, to see you get <span class="math notranslate nohighlight">\(1024= 2^{10}.\)</span></p>
+<p>A MB of memory is <span class="math notranslate nohighlight">\(1,048,576 = 2^{20}\)</span> bytes, or just over a million bytes. A GB is <span class="math notranslate nohighlight">\(1073741824 = 2^{30}\)</span> bytes, or just over a billion bytes. (It’s a funny coincidence that <span class="math notranslate nohighlight">\(10^3 \approx 2^{10}\)</span> so that kilo =1000 is about the same as Kilo = 1024.)</p>
+<p>We write this down in logarithm form, adding a subscript to keep track of the base. So
+<span class="math notranslate nohighlight">\($ \log_2(1024) = 10\)</span>$
+<span class="math notranslate nohighlight">\($ \log_2(1048576) = 20\)</span>$
+<span class="math notranslate nohighlight">\($ \log_2(1073741824) = 30.\)</span>$</p>
+<p>In general, the number <span class="math notranslate nohighlight">\(\log_2(x)\)</span> is defined as the solution to
+<span class="math notranslate nohighlight">\($x = 2^n.\)</span>$</p>
+<p>Logarithms can be defined with any number <span class="math notranslate nohighlight">\(B\)</span> as a base, provided <span class="math notranslate nohighlight">\(B\)</span> is positive and not equal to one. The function is then written as <span class="math notranslate nohighlight">\(\log_B(x).\)</span></p>
+</div>
+<div class="section" id="three-important-bases">
+<h2>Three important bases:<a class="headerlink" href="#three-important-bases" title="Permalink to this headline">¶</a></h2>
+<p>In practice, there are only three log functions that occur in most of math and science:
+<span class="math notranslate nohighlight">\($\log_2(x), \log_{10}(x), \mbox{ and } \log_e(x),\)</span>$
+which have bases 2, 10 and <span class="math notranslate nohighlight">\(e\)</span>, respectively, where <span class="math notranslate nohighlight">\(e = 2.71...\)</span> is the natural exponential that occurs in calculus.</p>
+<p>The base ten logarithm <span class="math notranslate nohighlight">\(\log_{10}(x)\)</span> occurs so often that it is sometimes abbreviated as <span class="math notranslate nohighlight">\(\log(x)\)</span>, as we did in the first section of this notebook.</p>
+<p>The base <span class="math notranslate nohighlight">\(e\)</span> logarithm is called the natural log, written <span class="math notranslate nohighlight">\(\ln(x)\)</span>. The natural logarithm arises in calculus,
+where it is often denoted simply as <span class="math notranslate nohighlight">\(\log x\)</span>. So one must pay attention to the context when the base is unspecified!</p>
+</div>
+<div class="section" id="examples">
+<h2>Examples:<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>{1} Can we find <span class="math notranslate nohighlight">\(\log_2(4000)\)</span> approximately, without using a calculator?</p></li>
+</ul>
+<p>Sure. Here’s one way. We know that <span class="math notranslate nohighlight">\(4 = 2^2\)</span>, and that <span class="math notranslate nohighlight">\(1000 \approx 2^{10}\)</span>. So <span class="math notranslate nohighlight">\(4000 \approx 2^2 \times 2^{10} = 2^{12}\)</span>.
+So we conclude
+<span class="math notranslate nohighlight">\($ \log_2(4000) \approx 12.\)</span>$</p>
+<p>A quick check with a calculator shows <span class="math notranslate nohighlight">\(\log_2(4000) = 11.96578...\)</span> so that was a pretty good approximation!</p>
+<ul class="simple">
+<li><p>{2} Can we find <span class="math notranslate nohighlight">\(\log(\pi)\)</span> approximately?</p></li>
+</ul>
+<p>Well, our friends the ancient Egyptians thought that <span class="math notranslate nohighlight">\(\pi\)</span> was the square root of 10. It’s not, but that’s a pretty good approximation. So we have
+<span class="math notranslate nohighlight">\($\log(\pi) \approx \log(10^{1/2}) = 1/2.\)</span>$
+In fact, a check with a calculator shows <span class="math notranslate nohighlight">\(\log(\pi) = 0.49715...\)</span>, so again we have a pretty good approximation.</p>
+</div>
+<div class="section" id="basics-of-logarithms-p">
+<h2>Basics of Logarithms:<p><a class="headerlink" href="#basics-of-logarithms-p" title="Permalink to this headline">¶</a></h2>
+<p>Even though logarithms can seem very complicated, we can look at the basic relationship between logarithms and exponentials in order to simplify these expressions to furture enhance our understandings. Before looking deeper in these relationships, we will first identify the main components of a logarithmic function. Logarithms are written in the following form:<p>
+<span class="math notranslate nohighlight">\(\log_B(x)=m\)</span> where B is the base of the logarithm. <p>
+Given a number <span class="math notranslate nohighlight">\(x\)</span>, we define <span class="math notranslate nohighlight">\(\log_B(x)=m\)</span> as the solution to the  exponential relationship
+<span class="math notranslate nohighlight">\($x=B^m.\)</span>$</p>
+</div>
+<div class="section" id="logarithmic-laws-p">
+<h2>Logarithmic Laws<p><a class="headerlink" href="#logarithmic-laws-p" title="Permalink to this headline">¶</a></h2>
+<p>There are 4 main logarithmic laws which help show the relationship between exponential and logarithmic functions.</p>
+<ul class="simple">
+<li><p>Product Law: <span class="math notranslate nohighlight">\(\log_{B}(x \times y)=\log_{B}(x)+\log_{B}(y)\)</span></p></li>
+<li><p>Quotient Law: <span class="math notranslate nohighlight">\(\log_{B}( x \div y) =\log_{B}(x)-\log_{B}(y)\)</span></p></li>
+<li><p>Power Law: <span class="math notranslate nohighlight">\(\log_{B}(x^p)=p\times \log_B(x)\)</span></p></li>
+<li><p>Changing Base Rule: <span class="math notranslate nohighlight">\(\log_{B}(x)=\frac{\log_C(x)}{\log_C(B)}\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="background-exponential-laws">
+<h2>Background: Exponential Laws<a class="headerlink" href="#background-exponential-laws" title="Permalink to this headline">¶</a></h2>
+<p>Since logarithms are closely related with exponents, we will be using exponential laws when deriving logarithmic laws. Exponential Laws state:</p>
+<ul class="simple">
+<li><p>$B^m \times B^n=B^{m+n} \quad (1) $</p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{B^m}{B^n}=B^{m-n} \quad \quad \; \;\;\,(2)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((B^m)^n=B^{mn} \quad \quad \,(3)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((BC)^m=B^m C^m \quad  \,(4)\)</span></p></li>
+</ul>
+<p>We will be referring to these laws throughout the program using the number in the brackets above.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">clear_output</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">log</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.gridspec</span> <span class="k">as</span> <span class="nn">gridspec</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">fixed</span><span class="p">,</span> <span class="n">interact_manual</span><span class="p">,</span><span class="n">IntSlider</span><span class="p">,</span> <span class="n">Output</span><span class="p">,</span> <span class="n">VBox</span><span class="p">,</span> <span class="n">HBox</span><span class="p">,</span> <span class="n">Label</span>
+<span class="kn">from</span> <span class="nn">abc</span> <span class="k">import</span> <span class="n">ABCMeta</span><span class="p">,</span> <span class="n">abstractmethod</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Logarithm</span><span class="p">:</span>
+    <span class="c1">#############################################</span>
+    <span class="c1">#     Description: stores all functions that will be using as shortcuts when graphing functions.</span>
+    <span class="c1">#############################################</span>
+    
+    <span class="nd">@staticmethod</span>
+    <span class="c1">#A static method is contains an object that does not change.</span>
+    <span class="c1">#In this case, the functions are created to pass in arguments and should not change.</span>
+    <span class="k">def</span> <span class="nf">log</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+        <span class="c1">#########################################</span>
+        <span class="c1">#   Function: y= log(mx)</span>
+        <span class="c1">#   </span>
+        <span class="c1">#   @Args:</span>
+        <span class="c1">#   m: constant inside the logarithm</span>
+        <span class="c1">#   b: base of the logarithm</span>
+        <span class="c1">#   x: vector with all of the x-coordinates</span>
+        <span class="c1">#</span>
+        <span class="c1">#   @Returns:</span>
+        <span class="c1">#   y: y-coordinates of the graph based on the x-coordinates and function</span>
+        <span class="c1">#</span>
+        <span class="c1">#########################################</span>
+        <span class="n">i</span><span class="o">=</span><span class="n">x</span><span class="o">*</span><span class="n">m</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">log</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">i</span><span class="p">]</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">log_exp</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+        <span class="c1">#########################################</span>
+        <span class="c1">#   Function: y=log((mx)^r)</span>
+        <span class="c1">#   </span>
+        <span class="c1">#   @Args:</span>
+        <span class="c1">#   m: constant inside the logarithm</span>
+        <span class="c1">#   b: base of the logarithm</span>
+        <span class="c1">#   x: vector with all of the x-coordinates</span>
+        <span class="c1">#   r: exponent within the logarith</span>
+        <span class="c1">#</span>
+        <span class="c1">#   @Returns:</span>
+        <span class="c1">#   y: y-coordinates of the graph based on the x-coordinates and function</span>
+        <span class="c1">#</span>
+        <span class="c1">#########################################</span>
+        <span class="n">x</span><span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">m</span><span class="p">)</span><span class="o">**</span><span class="n">r</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">log</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">constant_x_log</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+        <span class="c1">#########################################</span>
+        <span class="c1">#   Function: y=r*log(mx)</span>
+        <span class="c1">#   </span>
+        <span class="c1">#   @Args:</span>
+        <span class="c1">#   r: constant multiplied by the logarithm</span>
+        <span class="c1">#   m: constant inside the logarithm</span>
+        <span class="c1">#   b: base of the logarithm</span>
+        <span class="c1">#   x: vector with all of the x-coordinates</span>
+        <span class="c1">#</span>
+        <span class="c1">#   @Returns:</span>
+        <span class="c1">#   y: y-coordinates of the graph based on the x-coordinates and function</span>
+        <span class="c1">#</span>
+        <span class="c1">#########################################</span>
+        <span class="n">x</span><span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="n">m</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">r</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">division_of_logs</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+        <span class="c1">#########################################</span>
+        <span class="c1">#   Function: y=log_m(nx)/log_b(nx)</span>
+        <span class="c1">#   </span>
+        <span class="c1">#   @Args:</span>
+        <span class="c1">#   m: base of logarithm in the numerator</span>
+        <span class="c1">#   b: base of logarithm in the denominator</span>
+        <span class="c1">#   n: constant inside each logarithm</span>
+        <span class="c1">#   x: vector with all of the x-coordinates</span>
+        <span class="c1">#</span>
+        <span class="c1">#   @Returns:</span>
+        <span class="c1">#   y: y-coordinates of the graph based on the x-coordinates and function</span>
+        <span class="c1">#</span>
+        <span class="c1">#########################################</span>
+        <span class="n">y1</span><span class="o">=</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">y2</span><span class="o">=</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">y</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#########################################</span>
+<span class="c1"># Variables:</span>
+<span class="c1"># base - Value of the base of the logarithms</span>
+<span class="c1">#      - Over the coarse of the program, we will set the base to be 10.</span>
+<span class="c1"># x    - The range of numbers that are shown on the x-axis for the graphical proofs</span>
+<span class="c1">#########################################</span>
+
+<span class="n">base</span><span class="o">=</span><span class="mi">10</span>
+<span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="span-style-color-blue-product-law">
+<h2><span style="color:blue"> Product Law<a class="headerlink" href="#span-style-color-blue-product-law" title="Permalink to this headline">¶</a></h2>
+<p>The first law we are looking at is the Product Law. This is used when finding the sum of two logarithmic functions with the same base. The law states that</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_{B}(xy)=\log_{B}x+\log_{B}y\)</span>.</p></li>
+</ul>
+<div class="section" id="an-example">
+<h3>An example<a class="headerlink" href="#an-example" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log(100\times 1000) = \log(100) + \log(1000)\)</span> or equivalently</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log(100,000) = 5 = 2 + 3.\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="mathematical-proof">
+<h3>Mathematical proof<a class="headerlink" href="#mathematical-proof" title="Permalink to this headline">¶</a></h3>
+<p>We will look at the mathematical proof. It may look complicated, however, it can simply be broken down. First we fix quantities <span class="math notranslate nohighlight">\(x,y\)</span> and then define</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(p=\log_B x\)</span> and  <span class="math notranslate nohighlight">\(q=\log_B y\)</span>.</p></li>
+</ul>
+<p>The equivalent exponential forms are</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B^p=x\)</span> and <span class="math notranslate nohighlight">\(B^q=y\)</span>.</p></li>
+</ul>
+<p>We take the product of these two equations to obtain</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B^p \times B^q=x \times y\)</span>,</p></li>
+</ul>
+<p>and from the Exponential Law (1), we can get the equivalent expression</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B^{p+q}=x \times y\)</span>.</p></li>
+</ul>
+<p>We  apply log to both sides</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_B(B^{p+q})=\log_B(x \times y),\)</span></p></li>
+</ul>
+<p>and then by the definition of a logarithm, we have</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(p+q=\log_B(x \times y)\)</span>.</p></li>
+</ul>
+<p>Since we know $ p=\log_B x$ and $ q=\log_B y$, we obtain</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_{B}x+\log_{B}y = \log_{B}(x \times y).\)</span></p></li>
+</ul>
+<p>That completes the mathematical proof of the product law.</p>
+</div>
+<div class="section" id="graphical-demonstration">
+<h3>Graphical Demonstration<a class="headerlink" href="#graphical-demonstration" title="Permalink to this headline">¶</a></h3>
+<p>As we know, the product law states: <span class="math notranslate nohighlight">\(\log_{B}x+\log_{B}y = \log_{B}(x \times y).\)</span></p>
+<p>To go about this, we introduce a parameter <span class="math notranslate nohighlight">\(t\)</span> that allows us to trace the graph of the logarithm function. We also introduce two constant integers, <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>We let <span class="math notranslate nohighlight">\(x=mt\)</span> and <span class="math notranslate nohighlight">\(y=nt\)</span> and set the base <span class="math notranslate nohighlight">\(B\)</span> to 10, abbreviating <span class="math notranslate nohighlight">\(\log_{10}(x)\)</span> as <span class="math notranslate nohighlight">\(\log(x)\)</span>.</p>
+<p>For these values of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>, the product law becomes
+<span class="math notranslate nohighlight">\(\log(mt)+\log(nt) = \log(mnt^2)\)</span></p>
+<p>For the graphical demonstration, we graph the three terms in the above equation separately with respect to <span class="math notranslate nohighlight">\(t\)</span>. When looking at a <span class="math notranslate nohighlight">\(t\)</span> value, the sum of the corresponding values of the functions on the left side of the equation should be equivalent to the function on the right side of the equation, thus providing a demonstration of the Product Law.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="k">class</span> <span class="nc">ProductLaw</span><span class="p">():</span>
+    <span class="c1"># Create 2x2 sub plots</span>
+    <span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    
+    <span class="n">axis</span><span class="o">=</span><span class="mi">5</span>
+    <span class="n">x</span><span class="o">=</span><span class="mi">6</span>
+    <span class="n">y</span><span class="o">=</span><span class="mi">3</span>
+    
+    <span class="n">x_axis_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;$t$&#39;</span><span class="p">,</span>
+        <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+    <span class="p">)</span>       
+
+    <span class="n">x_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">x</span><span class="p">,</span>
+        <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;$m$&#39;</span><span class="p">,</span>
+        <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+    <span class="p">)</span>            
+
+    <span class="n">y_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+        <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;$n$&#39;</span><span class="p">,</span>
+        <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+    <span class="p">)</span>   
+    
+    <span class="k">def</span> <span class="nf">create_graph</span><span class="p">():</span>
+
+        <span class="c1">#########################################</span>
+        <span class="c1"># Description: generates a graph in order to prove Product Law</span>
+        <span class="c1">#</span>
+        <span class="c1"># @Args: Inputs are for the variables shown in ProductLaw</span>
+        <span class="c1">#        x-coordinate: based on a sliding bar in range 1-10</span>
+        <span class="c1">#        M constant: based on a sliding bar in range 1-10</span>
+        <span class="c1">#        N constant: based on a sliding bar in range 1-10</span>
+        <span class="c1">#</span>
+        <span class="c1"># @Return: graph for graphical proof as well as the y-coordinate corresponding to the graphed points</span>
+        <span class="c1">#</span>
+        <span class="c1">#########################################</span>
+        
+        <span class="c1">#Plot the 3 log functions from the left and right side of the Product Law</span>
+        <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="c1"># row 0, col 0</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-b&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(x)$&#39;</span><span class="p">)</span>
+        <span class="n">p1</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="s1">&#39;ob&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p1</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Left side of Product law&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log_</span><span class="si">{B}</span><span class="s1">(mt)$&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+        <span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-g&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(y)$&#39;</span><span class="p">)</span>
+        <span class="n">p2</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="o">*</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="s1">&#39;og&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p2</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log_</span><span class="si">{B}</span><span class="s1">(nt)$&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$t$&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+        <span class="n">ax3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">gs</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;-r&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(xy)$&#39;</span><span class="p">)</span>
+        <span class="n">p3</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="o">*</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span><span class="n">base</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p3</span><span class="p">,</span><span class="s1">&#39;or&#39;</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p3</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p3</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Right side of Product Law&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log_</span><span class="si">{B}</span><span class="s1">(mnt^2)$&#39;</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$t$&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;When $m$=</span><span class="si">{1:1d}</span><span class="s1"> and $n$=</span><span class="si">{2:1d}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="p">)))</span>
+
+        <span class="c1">#Display the value of the points to prove that the law is valid</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;From the marked y-coordinates on the graph above, the points at log(</span><span class="si">{0:1d}</span><span class="s1">$t$), log(</span><span class="si">{1:1d}</span><span class="s1">$t$) and log(</span><span class="si">{2:1d}</span><span class="s1">$t^2$) are at </span><span class="si">{3:1.3f}</span><span class="s1">, </span><span class="si">{4:1.3f}</span><span class="s1"> and </span><span class="si">{5:1.3f}</span><span class="s1"> repectively&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0:1.3f}</span><span class="s1">+</span><span class="si">{1:1.3f}</span><span class="s1">=</span><span class="si">{2:1.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">p1</span><span class="o">+</span><span class="n">p2</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0:1.3f}</span><span class="s1">=</span><span class="si">{1:1.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p3</span><span class="p">,</span><span class="n">p3</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;This means that the left side of the equation equals the right side&#39;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;thus&#39;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\log_</span><span class="si">{B}</span><span class="s1">x+\log_</span><span class="si">{B}</span><span class="s1">y = \log_</span><span class="si">{B}</span><span class="s1">(x \times y)$&#39;</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">clear_display</span><span class="p">():</span>  
+        <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x_bar</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y_bar</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x_axis_bar</span><span class="p">)</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">create_graph</span><span class="p">()</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">observe</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">observe</span><span class="p">():</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">x_axis_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">xv</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">x_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x_barv</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">y_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y_barv</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        <span class="c1">#ProductLaw.clear_display()</span>
+        
+    <span class="k">def</span> <span class="nf">xv</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">x_barv</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">y_barv</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">ProductLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span> 
+
+<span class="n">ProductLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+
+
+
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "c63864fb77fa4025a126220e31e5fa60"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "ec7f64bc3a34462aa70a102d1cacfff6"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "041d4712fc8d40c8b10f8569da33e653"}
+</script><img alt="../../../_images/combined-log-law_15_3.png" src="../../../_images/combined-log-law_15_3.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[When $m$=6 and $n$=3\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[From the marked y-coordinates on the graph above, the points at log(6$t$), log(3$t$) and log(18$t^2$) are at 1.477, 1.176 and 2.653 repectively\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[1.477+1.176=2.653\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[2.653=2.653\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[This means that the left side of the equation equals the right side\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[thus\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\log_{B}x+\log_{B}y = \log_{B}(x \times y)\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="results">
+<h3>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h3>
+<p>In the mathematical proof, we used the relationship between logarithms and exponents in order to derive the Product Law. Based on the values recorded during the graphical proof, we see that the left-hand side of the law is equivalent to sum of the two functions on the right-hand side.</p>
+</div>
+</div>
+<div class="section" id="span-style-color-blue-quotient-law">
+<h2><span style="color:blue"> Quotient Law<a class="headerlink" href="#span-style-color-blue-quotient-law" title="Permalink to this headline">¶</a></h2>
+<p>The next law we will be looking at is the Quotient Law. This is used when finding the difference of two logarithmic functions. The law states that</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_{B}(x \div y)=\log_{B}x -\log_{B}y\)</span>.</p></li>
+</ul>
+<div class="section" id="id1">
+<h3>An example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log(1000 \div 100) = \log(1000) - \log(100)\)</span> or equivalently</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log(10) = 1 = 3 -2.\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h3>Mathematical proof<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Let’s create a proof of the Quotient law.</p>
+<p>First, fix quantities <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> and define the values</p>
+<ul class="simple">
+<li><p>$ p = \log_B x$ and $ q = \log_B y.$</p></li>
+</ul>
+<p>The equivalent exponential forms are</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B^p= x\)</span> and <span class="math notranslate nohighlight">\(B^q = y\)</span>.</p></li>
+</ul>
+<p>Divide these two equations to obtain: <br /></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B^p \div B^q = x \div y.\)</span></p></li>
+</ul>
+<p>Using Exponential Law (2), the above equation is equivalent to: <br /></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B^{p-q}=x \div y.\)</span></p></li>
+</ul>
+<p>Taking logs, we have</p>
+<ul class="simple">
+<li><p>$\log_{B}(B^{p-q}) = \log_B(x\div y) $ which becomes</p></li>
+<li><p><span class="math notranslate nohighlight">\(p - q = \log_{B}(x \div y).\)</span></p></li>
+</ul>
+<p>Recalling our definition of m,n this becomes</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_B x - \log_B y = \log_B(x\div y),\)</span></p></li>
+</ul>
+<p>which completes the proof of the Quotient Law.</p>
+</div>
+<div class="section" id="id3">
+<h3>Graphical Demonstration<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>As we know, the Quotient Law states: <span class="math notranslate nohighlight">\(\log_{B}x+\log_{B}y = \log_{B}(x \times y).\)</span></p>
+<p>To go about this, we introduce a parameter <span class="math notranslate nohighlight">\(t\)</span> that allows us to trace the graph of the logarithm function. We will also introduce two constant integers, <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>We let <span class="math notranslate nohighlight">\(x=mt\)</span> and <span class="math notranslate nohighlight">\(y=nt\)</span> and set the base <span class="math notranslate nohighlight">\(B\)</span> to 10, abbreviating <span class="math notranslate nohighlight">\(\log_{10}(x)\)</span> as <span class="math notranslate nohighlight">\(\log(x)\)</span>.</p>
+<p>For these values of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>, the product law becomes</p>
+<p><span class="math notranslate nohighlight">\(\log(mt)-\log(nt) = \log\left(\frac{mt}{nt}\right)\)</span></p>
+<p>which reduces to:</p>
+<p><span class="math notranslate nohighlight">\(\log(mt)-\log(nt) = \log\left(\frac{m}{n}\right)\)</span></p>
+<p>For the graphical demonstration, we will graph the three terms in the above equation separately with respect to <span class="math notranslate nohighlight">\(t\)</span>. When looking at a <span class="math notranslate nohighlight">\(t\)</span> value, the difference of the corresponding values of the functions on the left side of the equation should be equivalent to the function on the right side of the equation, thus providing a demonstration of the Quotient Law.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">QuotientLaw</span><span class="p">():</span>
+   
+    <span class="c1"># Create 2x2 sub plots</span>
+    <span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    
+    <span class="n">axis</span><span class="o">=</span><span class="mi">5</span>
+    <span class="n">x</span><span class="o">=</span><span class="mi">6</span>
+    <span class="n">y</span><span class="o">=</span><span class="mi">3</span>
+    <span class="n">x_axis_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+        <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+    <span class="p">)</span>       
+
+    <span class="n">x_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">x</span><span class="p">,</span>
+        <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;$m$&#39;</span><span class="p">,</span>
+        <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+    <span class="p">)</span>            
+
+    <span class="n">y_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>
+        <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;$n$&#39;</span><span class="p">,</span>
+        <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+    <span class="p">)</span>  
+    <span class="k">def</span> <span class="nf">create_graph</span><span class="p">():</span>
+
+        <span class="c1">#########################################</span>
+        <span class="c1"># Description: generates a graph in order to prove Quotient Law</span>
+        <span class="c1">#</span>
+        <span class="c1"># @Args: Inputs are for the variables shown in Quotient Law</span>
+        <span class="c1">#        x-coordinate: based on a sliding bar in range 1-10</span>
+        <span class="c1">#        M constant: based on a sliding bar in range 1-10</span>
+        <span class="c1">#        N constant: based on a sliding bar in range 1-10</span>
+        <span class="c1">#</span>
+        <span class="c1"># @Return: graph for graphical proof as well as the y-coordinate corresponding to the graphed points</span>
+        <span class="c1">#</span>
+        <span class="c1">#########################################</span>
+        
+        <span class="n">y_value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="o">/</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="o">/</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+        
+        <span class="c1">#Plot the 3 log functions from the left and right side of the Product Law</span>
+        <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="c1"># row 0, col 0</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-b&#39;</span><span class="p">)</span>
+        <span class="n">p1</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="s1">&#39;ob&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p1</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Left side of Quotient Law&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log(m)$&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+        <span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-g&#39;</span><span class="p">)</span>
+        <span class="n">p2</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="o">*</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="s1">&#39;og&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p2</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log(n)$&#39;</span><span class="p">)</span>
+
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+        <span class="n">ax3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">gs</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">y_value</span><span class="p">),</span><span class="s1">&#39;-r&#39;</span><span class="p">)</span>
+        <span class="n">p3</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="o">/</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p3</span><span class="p">,</span><span class="s1">&#39;or&#39;</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p3</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p3</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Right side of Quotient Law&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\log(\frac</span><span class="si">{m}{n}</span><span class="s1">)$&#39;</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;When $m$=</span><span class="si">{1:2.0f}</span><span class="s1"> and $n$=</span><span class="si">{2:2.0f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;The y-coordinates at log(</span><span class="si">{0:1.0f}</span><span class="s1">$t$), log(</span><span class="si">{1:1.0f}</span><span class="s1">$t$) and log(</span><span class="si">{2:1.0f}</span><span class="s1">) are at </span><span class="si">{3:1.3f}</span><span class="s1">, </span><span class="si">{4:1.3f}</span><span class="s1"> and </span><span class="si">{5:1.3f}</span><span class="s1"> repectively&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="o">/</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0:1.3f}</span><span class="s1">-</span><span class="si">{1:1.3f}</span><span class="s1">=</span><span class="si">{2:1.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">p3</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;thus&#39;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\log(m) - \log(n) = \log(\frac</span><span class="si">{m}{n}</span><span class="s1">)$&#39;</span><span class="p">))</span>
+    
+    <span class="k">def</span> <span class="nf">clear_display</span><span class="p">():</span>
+        <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x_bar</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y_bar</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x_axis_bar</span><span class="p">)</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">create_graph</span><span class="p">()</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">observe</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">observe</span><span class="p">():</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x_axis_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x_value</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">xv</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">yv</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">x_value</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">xv</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">yv</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">QuotientLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+
+<span class="n">QuotientLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "16338932b7934d919fdeb799814e9b63"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "43f4cafe3f884ad39a2fdfd078aeb558"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "c71bd72fd6d24d7aa2f57e3bb0c31a1f"}
+</script><img alt="../../../_images/combined-log-law_18_3.png" src="../../../_images/combined-log-law_18_3.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[When $m$= 6 and $n$= 3\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[The y-coordinates at log(6$t$), log(3$t$) and log(2) are at 1.477, 1.176 and 0.301 repectively\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[1.477-1.176=0.301\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[thus\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\log(m) - \log(n) = \log(\frac{m}{n})\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="result">
+<h3>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h3>
+<p>In the mathematical proof, we  used the relationship between logarithms and exponents as well as exponential laws in order to derive the Quotient Law. When we look at the graphical demonstration, we see that the functions on the right hand side both resemble very similar curves. On the left hand side of the law, we can see that the function remains as a constant number. We also see that the left-hand side of the law is equivalent to the difference to the two functions on the right-hand side.</p>
+</div>
+</div>
+<div class="section" id="span-style-color-blue-power-law">
+<h2><span style="color:blue"> Power Law<a class="headerlink" href="#span-style-color-blue-power-law" title="Permalink to this headline">¶</a></h2>
+<p>The next law we will look at is power law. This is used in the case when there is an exponential power inside the logarithmic function. The law states that</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_{B}(x^p)=p \times \log_B(x)\)</span>.</p></li>
+</ul>
+<div class="section" id="id4">
+<h3>An example<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>$\log(1000^2) = 2\log(1000) $ or equivalently</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log(1,000,000) = 6 = 2 \times 3.\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>Mathematical Proof<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>First we fix quantities <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(p\)</span> then define</p>
+<ul class="simple">
+<li><p>$ m = \log_B (x^p).$</p></li>
+</ul>
+<p>The equivalent exponential form is</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B^m=x^p\)</span>.</p></li>
+</ul>
+<p>Bring each side of the equation to the power of <span class="math notranslate nohighlight">\(1/p\)</span> to obtain</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\((B^m)^{\frac{1}{p}}=(x^p)^{\frac{1}{p}}.\)</span></p></li>
+</ul>
+<p>By using Exponential Law (3), we can multiply the exponents to the one inside the brackets to get</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B^{\frac{m}{p}}= x.\)</span></p></li>
+</ul>
+<p>Apply the log function to both sides to get</p>
+<ul class="simple">
+<li><p>$\log_B(B^{\frac{m}{p}})=\log_B(x) $, resulting in</p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{m}{p} = \log_B(x).\)</span></p></li>
+</ul>
+<p>Multiply by <span class="math notranslate nohighlight">\(p\)</span> to obtain</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(m = p \times log_B(x),\)</span> and recalling the definition of m, we have</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log_B(x^p) = p \times \log_B(x).\)</span></p></li>
+</ul>
+<p>This completes the proof.</p>
+</div>
+<div class="section" id="id6">
+<h3>Graphical Demonstration<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>In this case, there is one function on each the left and right hand sides of the law. For this reason 2 functions will be graphed. Since they are theoretically be equivalent to each other, we can expect that the functions will be identical on the graph. If this is seen on the graph, we can validate Power Law.</p>
+<p>As we know, the power Law states: <span class="math notranslate nohighlight">\(\log_B(x^p) = p \times \log_B(x).\)</span></p>
+<p>To go about this, we introduce a parameter <span class="math notranslate nohighlight">\(t\)</span> that allows us to trace the graph of the logarithm function. We will also introduce a constant interger, <span class="math notranslate nohighlight">\(m\)</span>.</p>
+<p>We let <span class="math notranslate nohighlight">\(x=mt\)</span> and set the base <span class="math notranslate nohighlight">\(B\)</span> to 10, abbreviating <span class="math notranslate nohighlight">\(\log{10}(x)\)</span> as <span class="math notranslate nohighlight">\(\log(x)\)</span>.</p>
+<p>For these values of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>, the product law becomes</p>
+<p><span class="math notranslate nohighlight">\(\log_B(mt^p) = p \times \log_B(mt)\)</span></p>
+<p>For the graphical demonstration, we will graph the three terms in the above equation separately with respect to <span class="math notranslate nohighlight">\(t\)</span>. When looking at a <span class="math notranslate nohighlight">\(t\)</span> value, the function on the left side of the equation should be equivalent to the function on the right side of the equation, thus providing a demonstration of the power law.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PowerLaw</span><span class="p">():</span>
+    <span class="c1"># Create 2x2 sub plots</span>
+    <span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">axis</span><span class="o">=</span><span class="mi">5</span>
+    <span class="n">x</span><span class="o">=</span><span class="mi">6</span>
+    <span class="n">p</span><span class="o">=</span><span class="mi">2</span>
+    
+    <span class="n">x_axis_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+        <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+    <span class="p">)</span>       
+
+    <span class="n">x_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">x</span><span class="p">,</span>
+        <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;$m$&#39;</span><span class="p">,</span>
+        <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+    <span class="p">)</span>            
+
+
+    <span class="n">p_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">p</span><span class="p">,</span>
+        <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;$p$&#39;</span><span class="p">,</span>
+        <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+        <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+    <span class="p">)</span> 
+
+    <span class="k">def</span> <span class="nf">create_graph</span><span class="p">():</span>
+
+        <span class="c1">#########################################</span>
+        <span class="c1"># Description: generates a graph in order to prove Power Law</span>
+        <span class="c1">#</span>
+        <span class="c1"># @Args: Inputs are for the variables shown in Power Law</span>
+        <span class="c1">#        x-coordinate: based on a sliding bar in range 1-10</span>
+        <span class="c1">#        M constant: based on a sliding bar in range 1-10</span>
+        <span class="c1">#        N constant: based on a sliding bar in range 1-10</span>
+        <span class="c1">#        R exponential constant: based on a sliding bar in range 1-10</span>
+        <span class="c1">#</span>
+        <span class="c1"># @Return: graph for graphical proof as well as the y-coordinate corresponding to the graphed points</span>
+        <span class="c1">#</span>
+        <span class="c1">#########################################</span>
+
+        <span class="c1">#Plot the 3 log functions from the left and right side of the Product Law</span>
+        <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># row 0, col 0</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log_exp</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="p">,</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-g&#39;</span><span class="p">)</span>
+        <span class="n">p1</span><span class="o">=</span><span class="n">log</span><span class="p">((</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">)</span><span class="o">**</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="s1">&#39;ob&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p1</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Right side of Power law&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(Mx)$&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+        <span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">constant_x_log</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="p">,</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-b&#39;</span><span class="p">)</span>
+        <span class="n">p2</span><span class="o">=</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="s1">&#39;og&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p2</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(Nx)$&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Left side of Power Law&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;at $m$=</span><span class="si">{0:1d}</span><span class="s1"> and $p$=</span><span class="si">{1:1d}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;We can see that the y-coordinates are labeled on the graph. At the points log($</span><span class="si">{0:1d}</span><span class="s1">^</span><span class="si">{1:1d}</span><span class="s1">x$) and </span><span class="si">{2:1d}</span><span class="s1"> $\times$ log(</span><span class="si">{3:1d}</span><span class="s1">$x$) the y-coordinates are </span><span class="si">{4:1.3f}</span><span class="s1"> and </span><span class="si">{5:1.3f}</span><span class="s1"> repectively&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="p">,</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="p">,</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0:1.3f}</span><span class="s1">=</span><span class="si">{1:1.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">)))</span>
+
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;thus&#39;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\log_</span><span class="si">{B}</span><span class="s1">(x^p)=p \times \log_B(x)$&#39;</span><span class="p">))</span>
+        
+    <span class="k">def</span> <span class="nf">clear_display</span><span class="p">():</span>
+        <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x_bar</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p_bar</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x_axis_bar</span><span class="p">)</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">create_graph</span><span class="p">()</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">observe</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">observe</span><span class="p">():</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">x_axis_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x_value</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">x_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">xv</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">p_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">pv</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">x_value</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">xv</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+        
+        
+    <span class="k">def</span> <span class="nf">pv</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">PowerLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+
+
+
+<span class="n">PowerLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "d087f36981504aeb881d5ce827b35858"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "ef2a2adf85db4d5fba055a8aa2a7407e"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "6ceebd7659364984b980ccf6dcad1b76"}
+</script><img alt="../../../_images/combined-log-law_21_3.png" src="../../../_images/combined-log-law_21_3.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[at $m$=6 and $p$=2\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[We can see that the y-coordinates are labeled on the graph. At the points log($6^2x$) and 2 $\times$ log(6$x$) the y-coordinates are 2.954 and 2.954 repectively\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[2.954=2.954\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[thus\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\log_{B}(x^p)=p \times \log_B(x)\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Results<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>The Mathematical proof shows that by first converting the logarithmic functions into exponents then using the exponential laws we can derive the power Law. When looking at the graph, we see that the function on the left-hand side are equavalent to the right-hand side.</p>
+</div>
+</div>
+<div class="section" id="span-style-color-blue-change-of-base-rule">
+<h2><span style="color:blue"> Change of Base Rule<a class="headerlink" href="#span-style-color-blue-change-of-base-rule" title="Permalink to this headline">¶</a></h2>
+<p>This rule is useful for changing the base of a logarithmic function which can be useful for proofs or comparing certain functions. The law states that: <br />
+<span class="math notranslate nohighlight">\(\log_{B}(x)=\frac{\log_C(x)}{\log_C(B)}\)</span></p>
+<div class="section" id="id8">
+<h3>An example<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_8(64) = \frac{\log_2(64)}{\log_2(8)}\)</span> or equivalently</p></li>
+<li><p><span class="math notranslate nohighlight">\(2 = \frac{6}{3}.\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>Mathematical Proof<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>First we need to define a variable. In this case, we will use x.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\text{Let }x=\log_{B}(M)\)</span></p></li>
+</ul>
+<p>When converting this to exponents by using basic logarithmic properties, we get:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(B^x=M\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\text{Next, is to apply } \log_N \text{ to both sides of the equation}\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_N(B^x)=\log_N(M)\)</span></p></li>
+</ul>
+<p>By Power Law (see above) this can be simplified to:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x\log_N(B)=\log_N(M)\)</span></p></li>
+</ul>
+<p>Isolating for x:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x=\frac{\log_N(M)}{\log_N(B)}\)</span></p></li>
+</ul>
+<p>After inputing the x value we defined earlier, we get:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_{B}(M)=\frac{\log_N(M)}{\log_N(B)}\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="discussion">
+<h3>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h3>
+<p>The change of base law says that</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_B(x) = \frac{\log_C(x)}{\log_C(B)}.\)</span></p></li>
+</ul>
+<p>Another way to write this is</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_B(x) = \log_C(x)\times \log_B(C)).\)</span> (Can you see why?)</p></li>
+</ul>
+<p>The point is, the two functions <span class="math notranslate nohighlight">\(\log_B(x), \log_C(x)\)</span> are related by a proportionality constant, so we can write
+<span class="math notranslate nohighlight">\($ \log_B(x) = k\cdot \log_C(x).\)</span>$</p>
+<p>For instance, the two functions <span class="math notranslate nohighlight">\(\log_2(x)\)</span> and <span class="math notranslate nohighlight">\(\log_{10}(x)\)</span> are the same, up to some constant <span class="math notranslate nohighlight">\(k\)</span>. Perhaps you can explain why this constant is approximately <span class="math notranslate nohighlight">\(10/3\)</span>. That is
+<span class="math notranslate nohighlight">\($\log_2(x) \approx \frac{10}{3} \log_{10}(x).\)</span>$</p>
+<p>Equivalently,
+<span class="math notranslate nohighlight">\($\log_{10}(x) \approx 0.3 \log_{2}(x).\)</span>$</p>
+<p>(Hint: this has something to do with our discussion of kilos in the first section of this notebook.)</p>
+</div>
+<div class="section" id="evidence">
+<h3>Evidence<a class="headerlink" href="#evidence" title="Permalink to this headline">¶</a></h3>
+<p>As it is hard to graph this function, as there is no good place to put <span class="math notranslate nohighlight">\(x\)</span>, this function with be proved through evidence. We will plug numbers into each side of the equation to calculate the values obtained on each side of the law. Notice that changing the new base value has no affect on the final value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangeOfBase</span><span class="p">():</span>
+    
+    <span class="c1">#First set random variables</span>
+    <span class="n">M</span><span class="o">=</span><span class="mi">5</span>
+    <span class="n">base</span><span class="o">=</span><span class="mi">10</span>
+    <span class="n">new_base</span><span class="o">=</span><span class="mi">5</span>
+
+    <span class="k">def</span> <span class="nf">create_graph</span><span class="p">():</span>
+
+        <span class="c1">#########################################</span>
+        <span class="c1"># Description: Plugs in numbers to prove Change of Base Rules</span>
+        <span class="c1">#</span>
+        <span class="c1"># @Args: Inputs are for the variables shown in Power Law</span>
+        <span class="c1">#        M constant: based on a sliding bar in range 1-10</span>
+        <span class="c1">#        base: based on a sliding bar in range 1-10</span>
+        <span class="c1">#        new base: based on a sliding bar in range 1-10 </span>
+        <span class="c1">#</span>
+        <span class="c1"># @Return: The corresponding value of each side of the equation which result after plugging in the numbers.</span>
+        <span class="c1">#########################################</span>
+   
+        
+    
+        <span class="n">p1</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">M</span><span class="p">,</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">base</span><span class="p">)</span>
+        <span class="n">p2</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">M</span><span class="p">,</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">new_base</span><span class="p">)</span><span class="o">/</span> <span class="n">log</span><span class="p">(</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">base</span><span class="p">,</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">new_base</span><span class="p">)</span>
+
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;On the left hand side $\log_B(M)$ = </span><span class="si">{0:1.3f}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p1</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;On the right hand side is $\log_C(M) \div \log_C(B)$ = </span><span class="si">{0:1.3f}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p2</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0:1.3f}</span><span class="s1"> = </span><span class="si">{1:1.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;thus&#39;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\log_</span><span class="si">{B}</span><span class="s1">(M) = \frac{\log_C(M)}{\log_C(B)}$&#39;</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">clear_display</span><span class="p">():</span>
+        <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>   
+        <span class="n">display</span><span class="p">(</span><span class="n">m_box</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">base_box</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">new_base_box</span><span class="p">)</span>
+        <span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">create_graph</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">xv</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">axis</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">Mv</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">M</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">Basev</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">base</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+        
+    <span class="k">def</span> <span class="nf">New_basev</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">new_base</span><span class="o">=</span><span class="n">value</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span>
+        <span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>      
+
+<span class="n">M_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">M</span><span class="p">,</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+    <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+<span class="p">)</span>
+
+<span class="n">m_box</span> <span class="o">=</span> <span class="n">HBox</span><span class="p">([</span><span class="n">Label</span><span class="p">(</span><span class="s1">&#39;M value&#39;</span><span class="p">),</span> <span class="n">M_bar</span><span class="p">])</span>
+
+<span class="n">base_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">base</span><span class="p">,</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+    <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+<span class="p">)</span>
+
+<span class="n">base_box</span> <span class="o">=</span> <span class="n">HBox</span><span class="p">([</span><span class="n">Label</span><span class="p">(</span><span class="s1">&#39;Original base value&#39;</span><span class="p">),</span> <span class="n">base_bar</span><span class="p">])</span>
+
+<span class="n">new_base_bar</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">new_base</span><span class="p">,</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+    <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+<span class="p">)</span>
+
+<span class="n">new_base_box</span> <span class="o">=</span> <span class="n">HBox</span><span class="p">([</span><span class="n">Label</span><span class="p">(</span><span class="s1">&#39;New base value&#39;</span><span class="p">),</span> <span class="n">new_base_bar</span><span class="p">])</span>
+
+<span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
+<span class="n">M_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">Mv</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">base_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">Basev</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">new_base_bar</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">ChangeOfBase</span><span class="o">.</span><span class="n">New_basev</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "5f858cb6cfc2444782572ebd03a3b0be"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "2b4311469f974ec4975b06ec69b493a1"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "7414d8036c5441b5a0659e6c249b9c84"}
+</script><div class="output text_latex math notranslate nohighlight">
+\[On the left hand side $\log_B(M)$ = 0.699.\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[On the right hand side is $\log_C(M) \div \log_C(B)$ = 0.699.\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[0.699 = 0.699\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[thus\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\log_{B}(M) = \frac{\log_C(M)}{\log_C(B)}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Results<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>The mathematical proof uses the relationship between logarithms and exponents in order to change the value of the base and thus derive the rule. When plugging numbers into the rule, we can see that the left hand side of the equation is always equal to the right hand side, regardless of the numbers that are plugged in. By these 2 proofs, we can confirm the changing base rule.</p>
+</div>
+</div>
+<div class="section" id="span-style-color-blue-examples">
+<h2><span style="color:blue"> Examples<a class="headerlink" href="#span-style-color-blue-examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="simplify-the-following-equation-then-solve-for-x">
+<h3>1. Simplify the following equation, then solve for <span class="math notranslate nohighlight">\(x\)</span><a class="headerlink" href="#simplify-the-following-equation-then-solve-for-x" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="log-x-3-log-x">
+<h3>$ 3^{\log(x)}3^{\log(x)}$<a class="headerlink" href="#log-x-3-log-x" title="Permalink to this headline">¶</a></h3>
+<p>Using Exponential Law (1), we can get:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(3^{\log(x)+\log(x)}\)</span></p></li>
+</ul>
+<p>This is simplified to:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(3^{2\log(x)}\)</span></p></li>
+</ul>
+<p>Using Power law, we know <span class="math notranslate nohighlight">\(2\log(x)=\log(x^2)\)</span>. From this identity, we simplify the expression to:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(3^{\log(x^2)}\)</span></p></li>
+</ul>
+<p>To solve for <span class="math notranslate nohighlight">\(x\)</span>, we need to first note that <span class="math notranslate nohighlight">\(3 = 10^{\log 3}.\)</span> So we can continue with</p>
+<ul class="simple">
+<li><p>$ 3^{\log(x^2)} = 10^{\log 3 \log x^2} = 10^{\log x^{2\log 3}} = x^{2\log 3} = x^{\log(9)}.$</p></li>
+</ul>
+<p>Thus, we can say:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x^{\log(9)} \approx x^{.954}\)</span> </p></p></li>
+</ul>
+</div>
+<div class="section" id="text-simplify-the-expression-2-log-x-frac-log-z-2-3-log-y">
+<h3>2. <span class="math notranslate nohighlight">\(\text{Simplify the expression: } 2\log(x) - \frac{\log(z)}{2} + 3\log(y)\)</span><a class="headerlink" href="#text-simplify-the-expression-2-log-x-frac-log-z-2-3-log-y" title="Permalink to this headline">¶</a></h3>
+<p>Next, we will apply Power Law on each term. While keeping in mind that <span class="math notranslate nohighlight">\(z^{\frac{1}{2}}=\sqrt{z}\)</span>, we can simplify this equation to:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log\left(x^2\right) - \log(\sqrt{z})+\log(y^3)\)</span></p></li>
+</ul>
+<p>We can apply both Quotient and Product Law to this equation. This will result in the final simplified form of:</p>
+<div id='page' style='width: 100px'>
+<p style="border:2px; border-style:solid; border-color:#000000;"> $\quad \log(\frac{x^2y^3}{\sqrt{z}})$ <p />
+</div>
+</div>
+<div class="section" id="solve-for-x-2-x-2-2-x-2">
+<h3>3.    Solve for x $ 2^{(x-2)}=2^x -2 $<a class="headerlink" href="#solve-for-x-2-x-2-2-x-2" title="Permalink to this headline">¶</a></h3>
+<p>Using Exponent Law (2) reguarding the division of exponents, we can come up with the equivalent equation:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\frac{2^x}{2^2}=2^x-2\)</span></p></li>
+</ul>
+<p>The next step is to complete simple algebra. We can put all of the <span class="math notranslate nohighlight">\(2^x\)</span> terms on the same side to isolate for x.</p>
+<p>The intermediate step is:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(2^x=4(2^x-2)\)</span><br>
+When we put all of the <span class="math notranslate nohighlight">\(2^x\)</span> terms on the same side, we get:</p></li>
+<li><p><span class="math notranslate nohighlight">\(-3(2^x)=-8\)</span></p></li>
+</ul>
+<p>which becomes:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(2^x = \frac{8}{3}\)</span></p></li>
+</ul>
+<p>Since we know, <span class="math notranslate nohighlight">\(\log_2(2)=1\)</span>, we can apply <span class="math notranslate nohighlight">\(\log_2\)</span> onto both sides. We get:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log_2(2^x)=\log_2\left(\frac{8}{3}\right)\)</span></p></li>
+</ul>
+<p>Using Power Law, <span class="math notranslate nohighlight">\(\log_2(2^x)\)</span> is equivalent to $ x\log_22$ where <span class="math notranslate nohighlight">\(\log_22 = 1\)</span>. Thus:</p>
+<div id='page' style='width: 100px'>
+<p style="border:2px; border-style:solid; border-color:#000000;"> $x= \log_2\left(\frac{8}{3}\right)$ <p />
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>When analysing each of the 5 functions in mathematical  and graphical ways, that each of these 5 laws can be proven and validated. This creates shortcuts to make it easier to simplify and analyze more complex functions.</p>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"3439e1c935fd4e279824111ba6802a0c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "da342ccae63d40838f92f881c5e5339c": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "041d4712fc8d40c8b10f8569da33e653": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$t$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_3439e1c935fd4e279824111ba6802a0c", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_da342ccae63d40838f92f881c5e5339c", "value": 5}}, "d80eb8f091ed48eb861eddb8cfb65130": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4417dea8cf354b1c8ef70fe27d836c7c": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "c63864fb77fa4025a126220e31e5fa60": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$m$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_d80eb8f091ed48eb861eddb8cfb65130", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_4417dea8cf354b1c8ef70fe27d836c7c", "value": 6}}, "b112287282914fa691b3b95cfa30eb7a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b19b5a47ec8e41fab1a200ceea2e2a12": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "ec7f64bc3a34462aa70a102d1cacfff6": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$n$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_b112287282914fa691b3b95cfa30eb7a", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_b19b5a47ec8e41fab1a200ceea2e2a12", "value": 3}}, "c43c4f4ed7d445d5807c6dbcc745fbe9": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7ec1b02ce00a45e28f184a4458c99edd": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "c71bd72fd6d24d7aa2f57e3bb0c31a1f": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "x", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_c43c4f4ed7d445d5807c6dbcc745fbe9", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_7ec1b02ce00a45e28f184a4458c99edd", "value": 5}}, "f49b69868cef4eb585882d7177d289f0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9cf045d31eee4a70a25df84f7bd6b3fb": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "16338932b7934d919fdeb799814e9b63": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$m$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f49b69868cef4eb585882d7177d289f0", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_9cf045d31eee4a70a25df84f7bd6b3fb", "value": 6}}, "99cfe4334e3743648f8f901028f0b334": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "af506c0c7331457da2d1f00f918ec593": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "43f4cafe3f884ad39a2fdfd078aeb558": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$n$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_99cfe4334e3743648f8f901028f0b334", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_af506c0c7331457da2d1f00f918ec593", "value": 3}}, "f41420f1fba44cde8aa3ec36f6e88426": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b683c03878e94788b2136342f60f5d4f": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "6ceebd7659364984b980ccf6dcad1b76": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "x", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f41420f1fba44cde8aa3ec36f6e88426", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_b683c03878e94788b2136342f60f5d4f", "value": 5}}, "cc69ef3ca72645158da5cf705db2fd9b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7445c72836034492a0285188c99738e7": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "d087f36981504aeb881d5ce827b35858": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$m$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_cc69ef3ca72645158da5cf705db2fd9b", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_7445c72836034492a0285188c99738e7", "value": 6}}, "9cedca2b0c1545a98cc0f0a5119b8b43": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "359dbbbe5a6246b7bcab31b14004ce0f": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "ef2a2adf85db4d5fba055a8aa2a7407e": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$p$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_9cedca2b0c1545a98cc0f0a5119b8b43", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_359dbbbe5a6246b7bcab31b14004ce0f", "value": 2}}, "3c53810f609c4eabab4d06e99fb98c11": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "df95d0d9436a406486848df83e942e48": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "3e5d692bab4b4c83a23bed1d202e3dde": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_3c53810f609c4eabab4d06e99fb98c11", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_df95d0d9436a406486848df83e942e48", "value": 5}}, "68381a6597d944bd93216193d0fd3cc8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e5a74113acec4586830fc813c7f69e71": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "a01f21184ff34c12977be8dc01a82ec0": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_68381a6597d944bd93216193d0fd3cc8", "placeholder": "\u200b", "style": "IPY_MODEL_e5a74113acec4586830fc813c7f69e71", "value": "M value"}}, "c41457d21ec2416b91c146953c561b27": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5f858cb6cfc2444782572ebd03a3b0be": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_a01f21184ff34c12977be8dc01a82ec0", "IPY_MODEL_3e5d692bab4b4c83a23bed1d202e3dde"], "layout": "IPY_MODEL_c41457d21ec2416b91c146953c561b27"}}, "16eb82e2690745eeb4fd728de6589fe4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e71cc05d6be545089b3fb0e70fb40f17": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "6e22fce182ea4a6da7c6b42aa4680a77": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_16eb82e2690745eeb4fd728de6589fe4", "max": 10, "min": 2, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_e71cc05d6be545089b3fb0e70fb40f17", "value": 10}}, "ec0b7b2ca6db470f88b4bfe25a7666df": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "be4da214d9d14125a97cfec5df86f046": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "89245a003a1948278228ae8bc898a3a7": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_ec0b7b2ca6db470f88b4bfe25a7666df", "placeholder": "\u200b", "style": "IPY_MODEL_be4da214d9d14125a97cfec5df86f046", "value": "Original base value"}}, "98484d0d9c984955a1610f5db75c7fc4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2b4311469f974ec4975b06ec69b493a1": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_89245a003a1948278228ae8bc898a3a7", "IPY_MODEL_6e22fce182ea4a6da7c6b42aa4680a77"], "layout": "IPY_MODEL_98484d0d9c984955a1610f5db75c7fc4"}}, "c8c03b6edd984f968ee909a1875972a4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c678bda04ecc44708ce51a8709949e48": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "ff6c6cc8f0cd4c6aafbfb060d01c917b": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_c8c03b6edd984f968ee909a1875972a4", "max": 10, "min": 2, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_c678bda04ecc44708ce51a8709949e48", "value": 5}}, "1251576ee92341f48e07948688f08b2d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d40163791576464b8452f86edc116dac": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "6839c8328b6c47c0b23b61be8a1a2f28": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_1251576ee92341f48e07948688f08b2d", "placeholder": "\u200b", "style": "IPY_MODEL_d40163791576464b8452f86edc116dac", "value": "New base value"}}, "5d4b8ab971c8464dbf59327e95d8797c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7414d8036c5441b5a0659e6c249b9c84": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_6839c8328b6c47c0b23b61be8a1a2f28", "IPY_MODEL_ff6c6cc8f0cd4c6aafbfb060d01c917b"], "layout": "IPY_MODEL_5d4b8ab971c8464dbf59327e95d8797c"}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../CentralTendency/central-tendency.html" title="previous page">Central Tendancy: Mean, Median, and Mode</a>
+    <a class='right-next' id="next-link" href="../CompareandOrderNumbers/compare-and-order-numbers.html" title="next page">Instructions before you start</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

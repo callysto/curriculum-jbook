@@ -1,0 +1,1412 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Interpret and Assess the Odds &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Interpreting Statistical Data" href="../InterpretingStatisticalData/interpreting-statistical-data.html" />
+    <link rel="prev" title="Inductive Reasoning and Deductive Reasoning" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="../../../intro.html">Welcome to Callysto</a>
+  </li>
+  <li class="">
+    <a href="../../README.html">Curriculum Notebooks</a>
+  </li>
+  <li class="">
+    <a href="../../Arts/Arts.html">Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../Health/Health.html">Health Section</a>
+  </li>
+  <li class="">
+    <a href="../../Languages/Languages.html">Languages Section</a>
+  </li>
+  <li class="active">
+    <a href="../Mathematics.html">Mathematics Section</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
+    </li>
+    <li class="">
+      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
+    </li>
+    <li class="">
+      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
+    </li>
+    <li class="">
+      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
+    </li>
+    <li class="">
+      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
+    </li>
+    <li class="">
+      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
+    </li>
+    <li class="">
+      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
+    </li>
+    <li class="">
+      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
+    </li>
+    <li class="">
+      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
+    </li>
+    <li class="">
+      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
+    </li>
+    <li class="">
+      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
+    </li>
+    <li class="">
+      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
+    </li>
+    <li class="">
+      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
+    </li>
+    <li class="">
+      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
+    </li>
+    <li class="">
+      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
+    </li>
+    <li class="">
+      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
+    </li>
+    <li class="">
+      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
+    </li>
+    <li class="">
+      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
+    </li>
+    <li class="">
+      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
+    </li>
+    <li class="">
+      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
+    </li>
+    <li class="">
+      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
+    </li>
+    <li class="">
+      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
+    </li>
+    <li class="active">
+      <a href="">Interpret and Assess the Odds</a>
+    </li>
+    <li class="">
+      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
+    </li>
+    <li class="">
+      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
+    </li>
+    <li class="">
+      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
+    </li>
+    <li class="">
+      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
+    </li>
+    <li class="">
+      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
+    </li>
+    <li class="">
+      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
+    </li>
+    <li class="">
+      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
+    </li>
+    <li class="">
+      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
+    </li>
+    <li class="">
+      <a href="../Percentage/percentage.html">Percentages</a>
+    </li>
+    <li class="">
+      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
+    </li>
+    <li class="">
+      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
+    </li>
+    <li class="">
+      <a href="../PiDay/pi-day.html">Pi Day</a>
+    </li>
+    <li class="">
+      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
+    </li>
+    <li class="">
+      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
+    </li>
+    <li class="">
+      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
+    </li>
+    <li class="">
+      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
+    </li>
+    <li class="">
+      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
+    </li>
+    <li class="">
+      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
+    </li>
+    <li class="">
+      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
+    </li>
+    <li class="">
+      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
+    </li>
+    <li class="">
+      <a href="../TellingTime/telling-time.html">Telling Time</a>
+    </li>
+    <li class="">
+      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
+    </li>
+    <li class="">
+      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
+    </li>
+    <li class="">
+      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
+    </li>
+    <li class="">
+      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="../../Science/Sciences.html">Sciences Section</a>
+  </li>
+  <li class="">
+    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
+  </li>
+  <li class="">
+    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
+  </li>
+</ul>
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Mathematics/InterpretAndAssessOdds/interpret-and-assess-odds.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/InterpretAndAssessOdds/interpret-and-assess-odds.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/InterpretAndAssessOdds/interpret-and-assess-odds.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#" class="nav-link">Interpret and Assess the Odds</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#and-the-validity-of-a-probability-statement" class="nav-link">and the validity of a probability statement</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#probability-and-odds" class="nav-link">Probability and Odds</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#different-types-of-odds" class="nav-link">Different types of Odds</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#dependent-vs-independent-events" class="nav-link">Dependent vs. Independent Events</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#converting-between-odds-and-probability" class="nav-link">Converting between Odds and Probability</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#center-bayesian-vs-frequentist-reasoning-center" class="nav-link"><center> Bayesian vs. Frequentist Reasoning </center></a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#dartboard-exercise" class="nav-link">Dartboard Exercise</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#making-decisions-based-on-odds-probability" class="nav-link">Making Decisions Based on Odds & Probability</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#conclusion" class="nav-link">Conclusion</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+    </ul>
+</nav>
+
+
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/InterpretAndAssessOdds/interpret-and-assess-odds.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">clear_output</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">Javascript</span><span class="p">,</span> <span class="n">clear_output</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">FloatSlider</span><span class="p">,</span> <span class="n">IntSlider</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">Layout</span><span class="p">,</span> <span class="n">ButtonStyle</span><span class="p">,</span> <span class="n">HBox</span>
+<span class="kn">from</span> <span class="nn">traitlets</span> <span class="k">import</span> <span class="n">traitlets</span>
+
+
+<span class="kn">import</span> <span class="nn">plotly</span> <span class="k">as</span> <span class="nn">py</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">plotly.offline</span> <span class="k">import</span> <span class="n">download_plotlyjs</span><span class="p">,</span> <span class="n">init_notebook_mode</span><span class="p">,</span> <span class="n">plot</span><span class="p">,</span> <span class="n">iplot</span>
+<span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">connected</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">  function code_toggle() {</span>
+<span class="s1">    if (code_shown){</span>
+<span class="s1">      $(&#39;div.input&#39;).hide(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)</span>
+<span class="s1">    } else {</span>
+<span class="s1">      $(&#39;div.input&#39;).show(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)</span>
+<span class="s1">    }</span>
+<span class="s1">    code_shown = !code_shown</span>
+<span class="s1">  }</span>
+<span class="s1">  </span>
+<span class="s1">  $( document ).ready(function(){</span>
+<span class="s1">    code_shown=false;</span>
+<span class="s1">    $(&#39;div.input&#39;).hide()</span>
+<span class="s1">  });</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-latest.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+</div><div class="output text_html"><script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Function: executes next cell on button widget click event </span>
+
+<span class="k">def</span> <span class="nf">run_cells</span><span class="p">(</span><span class="n">ev</span><span class="p">):</span>
+    
+    <span class="n">display</span><span class="p">(</span><span class="n">Javascript</span><span class="p">(</span><span class="s1">&#39;IPython.notebook.execute_cell_range(IPython.notebook.get_selected_index()+1,IPython.notebook.get_selected_index()+2)&#39;</span><span class="p">))</span>
+    <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="interpret-and-assess-the-odds">
+<h1>Interpret and Assess the Odds<a class="headerlink" href="#interpret-and-assess-the-odds" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="and-the-validity-of-a-probability-statement">
+<h2>and the validity of a probability statement<a class="headerlink" href="#and-the-validity-of-a-probability-statement" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>In this Jupyter Notebook, you will be looking at examples of probabilistic statements that we encounter in our daily lives and some errors in our judgment that can arise when we try to reason with probabilistic statements. We will be looking at:</p>
+<ul class="simple">
+<li><p>Examples of statements of probability and odds.</p></li>
+<li><p>Expressing odds as a probability and vice versa.</p></li>
+<li><p>Determining the probability of, or the odds on and against, an outcome in a situation.</p></li>
+<li><p>Explain, using examples, how decisions may be based on probability or odds and on subjective judgments.</p></li>
+<li><p>Solving a contextual problem that involves odds or probability.</p></li>
+</ul>
+</div>
+<div class="section" id="probability-and-odds">
+<h2>Probability and Odds<a class="headerlink" href="#probability-and-odds" title="Permalink to this headline">¶</a></h2>
+<p>Let’s begin with some definitions. Having a clear understanding of these definitions will help with the rest of the notebook, as these concepts will be used often.</p>
+<div class="alert alert-warning">
+<font color="black"><b>Event:</b> 
+An outcome of an experiment. These are the outcomes that are possible. 
+</div>
+<p>For example, when rolling a die, the possible events are the die landing on the numbers <span class="math notranslate nohighlight">\(1-6\)</span>.</p>
+<div class="alert alert-warning">
+<font color="black"><b>Probability:</b> 
+The likelihood that an event will occur. In a very large amount of trials, it is the fraction of times you expect the event to happen. This is expressed as a number between $0$ and $1$, with $1$ being $100$% likelihood.  
+</div>
+<p>For example, after a large number of coin flips you would expect a properly weighted coin to land on heads half of the time. Therefore the probability of said event is <span class="math notranslate nohighlight">\(0.5\)</span>.</p>
+<div class="alert alert-warning">
+<font color="black"><b>Odds:</b> 
+The odds of an event $X$ is expressed as a ratio $X$ to $Y$. This the ratio between the probability that the event will occur and the probability that it will not occur. 
+</div>
+<p>For example, what are the odds of rolling a <span class="math notranslate nohighlight">\(1\)</span> for a fair die?</p>
+<p>Well, the probability of rolling a <span class="math notranslate nohighlight">\(1\)</span> is <span class="math notranslate nohighlight">\((\frac{1}{6})\)</span> and the probability of not rolling a <span class="math notranslate nohighlight">\(1\)</span> is <span class="math notranslate nohighlight">\(1-(\frac{1}{6}) = (\frac{5}{6})\)</span> . Therefore the odds are: <br>
+<br></p>
+<center>$\frac{1}{6}:\frac{5}{6} = 1:5$</center>
+<p><strong>Note</strong>: You would express the probability of an event <em>not</em> happening as: <span class="math notranslate nohighlight">\(1-p\)</span>, where <span class="math notranslate nohighlight">\(p\)</span> is the probability of the event occurring. It will be useful to think in the negative case sometimes.</p>
+<div class="section" id="different-types-of-odds">
+<h3>Different types of Odds<a class="headerlink" href="#different-types-of-odds" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-warning">
+<font color="black"><b>Odds Against:</b> 
+This happens when the probability of the event not happening are higher than the event happening. Odds against are expressed with the larger number first.
+</div>
+<p>For example, the odds against rolling a 1 on a fair dice are 5:1.</p>
+<div class="alert alert-warning">
+<font color="black"><b>Odds-on:</b> 
+These are the opposite of odds against, (i.e. The probability of the event happening are greater than it not happening).
+</div>
+<p>For example, the odds for rolling an even number or a 1 on a fair dice is 4:2</p>
+<div class="alert alert-warning">
+<font color="black"><b>Even Odds:</b> 
+This occurs when the probability of an event happening is equal to that of the event not happening. 
+</div>
+<p>For example, tossing a fair coin as an even odds of landing on heads or tails.</p>
+</div>
+<div class="section" id="dependent-vs-independent-events">
+<h3>Dependent vs. Independent Events<a class="headerlink" href="#dependent-vs-independent-events" title="Permalink to this headline">¶</a></h3>
+<div class="alert alert-warning">
+<font color="black"><b>Independent Events:</b> 
+Events that, if they occurs, do not influence the likelihood of any other event happening.  
+</div>
+<p>For example, tossing a coin. The fact that one coin toss lands on heads does not affect the probability of the next coin toss.</p>
+<div class="alert alert-warning">
+<font color="black"><b>Dependent Events:</b> 
+Events that, if they occurs, change the future probability of the other events happening. 
+</div>
+<p>The most classic example is pulling cards at random from a deck of cards. If you take a card out and don’t put it back in, then there are fewer cards in the deck. If you pulled an <em>ace of spades</em> from a standard deck of cards, with probability <span class="math notranslate nohighlight">\((\frac{1}{52})\)</span>, the probability of pulling an <em>ace of hearts</em> is now <span class="math notranslate nohighlight">\((\frac{1}{51})\)</span>. The first event of pulling a card at random <em>and not replacing it</em> influenced the probability of the next card being pulled. When evaluating probabilities, it is important to consider whether the events are <em>dependent or independent</em>.</p>
+<p>Let’s try some true or false questions on what you have learned about odds and probability so far!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#trueFalseQuestion1 stores the true or false question that is being asked:</span>
+<span class="n">trueFalseQuestion1</span> <span class="o">=</span> <span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;The probability of rolling an even number on a fair die is $</span><span class="se">\\</span><span class="s1">frac</span><span class="si">{1}{2}</span><span class="s1">$.&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion1</span><span class="p">)</span>
+
+<span class="c1">#a1 is the input button widget for true and false.</span>
+<span class="n">a1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;True&#39;</span><span class="p">,</span> <span class="s1">&#39;False&#39;</span><span class="p">],</span>
+    <span class="n">value</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span>
+
+<span class="c1">#bt1 is a button labeled &quot;Check Answer&quot;.</span>
+<span class="n">bt1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answers&quot;</span><span class="p">,</span> 
+                    <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                    <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                    <span class="p">)</span>
+
+<span class="c1">#Check if answer is correct.</span>
+<span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="c1">#If the answer is correct:</span>
+    <span class="k">if</span> <span class="n">a1</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;True&#39;</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion1</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ True&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Correct! A die has equal parts odd and even numbers.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">()</span>
+    
+    <span class="c1">#Otherwise:</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion1</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">bt1</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Not quite, please try again.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Remember, a die is made up of equal part odd and even numbers.&quot;</span><span class="p">))</span>
+
+<span class="n">bt1</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_answer</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">bt1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[The probability of rolling an even number on a fair die is $\frac{1}{2}$.\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "00b8417c4fcb4a73849a8a1fec7ccf83"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "736fd74222df4bff9c495bb435f12a15"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#trueFalseQuestion2 stores the true or false question that is being asked:</span>
+<span class="n">trueFalseQuestion2</span> <span class="o">=</span> <span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;The odds of rolling an even number are $2:1$.&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion2</span><span class="p">)</span>
+
+<span class="c1">#a2 is the input button widget for true and false.</span>
+<span class="n">a2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;True&#39;</span><span class="p">,</span> <span class="s1">&#39;False&#39;</span><span class="p">],</span>
+    <span class="n">value</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">a2</span><span class="p">)</span>
+
+<span class="c1">#bt2 is a button labeled &quot;Check Answer&quot;.</span>
+<span class="n">bt2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answers&quot;</span><span class="p">,</span> 
+                    <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                    <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                    <span class="p">)</span>
+
+<span class="c1">#Check if answer is correct.</span>
+<span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="c1">#If the answer is correct:</span>
+    <span class="k">if</span> <span class="n">a2</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;False&#39;</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion2</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ False&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Correct! A die has equal parts odd and even numbers.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">()</span>
+    
+    <span class="c1">#Otherwise:</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion2</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">a2</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">bt2</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Not quite, please try again.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Remember, a dece is made up of equal part odd and even numbers.&quot;</span><span class="p">))</span>
+
+<span class="n">bt2</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_answer</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">bt2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[The odds of rolling an even number are $2:1$.\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "ecc8bb68fe5d44cb9eaa812c21fb0271"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "bd4647d759e943f0b1ba4fe256bd6965"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#trueFalseQuestion3 stores the true or false question that is being asked:</span>
+<span class="n">trueFalseQuestion3</span> <span class="o">=</span> <span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;The odds against rolling a $4$ are $1:5$.&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion3</span><span class="p">)</span>
+
+<span class="c1">#a3 is the input button widget for true and false.</span>
+<span class="n">a3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;True&#39;</span><span class="p">,</span> <span class="s1">&#39;False&#39;</span><span class="p">],</span>
+    <span class="n">value</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">a3</span><span class="p">)</span>
+
+<span class="c1">#bt3 is a button labeled &quot;Check Answer&quot;.</span>
+<span class="n">bt3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answers&quot;</span><span class="p">,</span> 
+                    <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                    <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                    <span class="p">)</span>
+
+<span class="c1">#Check if answer is correct.</span>
+<span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="c1">#If the answer is correct:</span>
+    <span class="k">if</span> <span class="n">a3</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;False&#39;</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion3</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ False&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Correct! The odds against rolling any number once is 5 : 1.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">()</span>
+    
+    <span class="c1">#Otherwise:</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion3</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">a3</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">bt3</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Not quite, please try again.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Remember, the odds against has the larger number in the front.&quot;</span><span class="p">))</span>
+
+<span class="n">bt3</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_answer</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">bt3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[The odds against rolling a $4$ are $1:5$.\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "d4d32c01c2dd42c3a785075a88483d69"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "fceb8178643e45768c1cd07d54c38b2f"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#trueFalseQuestion4 stores the true or false question that is being asked:</span>
+<span class="n">trueFalseQuestion4</span> <span class="o">=</span> <span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;The odds of rolling an uneven number are $1:1$.&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion4</span><span class="p">)</span>
+
+<span class="c1">#a4 is the input button widget for true and false.</span>
+<span class="n">a4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;True&#39;</span><span class="p">,</span> <span class="s1">&#39;False&#39;</span><span class="p">],</span>
+    <span class="n">value</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">a4</span><span class="p">)</span>
+
+<span class="c1">#bt4 is a button labeled &quot;Check Answer&quot;.</span>
+<span class="n">bt4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answers&quot;</span><span class="p">,</span> 
+                    <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                    <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                    <span class="p">)</span>
+
+<span class="c1">#Check if answer is correct.</span>
+<span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="c1">#If the answer is correct:</span>
+    <span class="k">if</span> <span class="n">a4</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;True&#39;</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion4</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ True&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Correct! A die has equal parts odd and even numbers.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">()</span>
+    
+    <span class="c1">#Otherwise:</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion4</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">a4</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">bt4</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Not quite, please try again.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Remember, dice are usually made up of equal part odd and even numbers.&quot;</span><span class="p">))</span>
+
+<span class="n">bt4</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_answer</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">bt4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[The odds of rolling an uneven number are $1:1$.\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "5966212863b440a0a02f537f0e33c353"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "2b6c4bd53a514fabbf7e084f791eb056"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#trueFalseQuestion5 stores the true or false question that is being asked:</span>
+<span class="n">trueFalseQuestion5</span> <span class="o">=</span> <span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;The probability of not rolling a $5$ is $</span><span class="se">\\</span><span class="s1">frac</span><span class="si">{5}{6}</span><span class="s1">$.&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion5</span><span class="p">)</span>
+
+<span class="c1">#a5 is the input button widget for true and false.</span>
+<span class="n">a5</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;True&#39;</span><span class="p">,</span> <span class="s1">&#39;False&#39;</span><span class="p">],</span>
+    <span class="n">value</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">a5</span><span class="p">)</span>
+
+<span class="c1">#bt5 is a button labeled &quot;Check Answer&quot;.</span>
+<span class="n">bt5</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answers&quot;</span><span class="p">,</span> 
+                    <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                    <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                    <span class="p">)</span>
+
+<span class="c1">#Check if answer is correct.</span>
+<span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="c1">#If the answer is correct:</span>
+    <span class="k">if</span> <span class="n">a5</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;True&#39;</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion5</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ True&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Correct! The probability of not rolling a $5 = 1 - ({1</span><span class="se">\\</span><span class="s2">over6}) = {5</span><span class="se">\\</span><span class="s2">over6}.$&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">()</span>
+    
+    <span class="c1">#Otherwise:</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion5</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">a5</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">bt5</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Not quite, please try again.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\;$ Remember, the odds of not rolling a number $n = 1 - P(\textrm{Rolling }n).$&quot;</span><span class="p">))</span>
+
+<span class="n">bt5</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_answer</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">bt5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[The probability of not rolling a $5$ is $\frac{5}{6}$.\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "fa9cb5e5697448fc94d3d713b1fceb33"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "f6ecf138a4dd442588541b487156d57c"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#trueFalseQuestion6 stores the true or false question that is being asked:</span>
+<span class="n">trueFalseQuestion6</span> <span class="o">=</span> <span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;The probability of rolling a $7$ on a regular die is $1$.&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion6</span><span class="p">)</span>
+
+<span class="c1">#a6 is the input button widget for true and false.</span>
+<span class="n">a6</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;True&#39;</span><span class="p">,</span> <span class="s1">&#39;False&#39;</span><span class="p">],</span>
+    <span class="n">value</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">a6</span><span class="p">)</span>
+
+<span class="c1">#bt5 is a button labeled &quot;Check Answer&quot;.</span>
+<span class="n">bt6</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answers&quot;</span><span class="p">,</span> 
+                    <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                    <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                    <span class="p">)</span>
+
+<span class="c1">#Check if answer is correct.</span>
+<span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="c1">#If the answer is correct:</span>
+    <span class="k">if</span> <span class="n">a6</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;False&#39;</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion6</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ False&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Correct! A regular die only has numbers between $1$ and $6$. So, the probability</span><span class="se">\</span>
+<span class="s2">        of rolling a 7 is 0.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">()</span>
+    
+    <span class="c1">#Otherwise:</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">trueFalseQuestion6</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">a6</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">bt6</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Not quite, please try again.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\;$ Remember, a regular die only goes from $1$ to $6$.&quot;</span><span class="p">))</span>
+
+<span class="n">bt6</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_answer</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">bt6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[The probability of rolling a $7$ on a regular die is $1$.\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "9d2d7f5f0e0644079397dc0ca50845ad"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "b51fffa9e9314d7f9a4afcca341596e4"}
+</script></div>
+</div>
+<p><strong>Wording</strong> plays a crucial role in evaluating these statements. This last exercise demonstrated that there are many ways to phrase these questions. It is important to pay attention to the structure of these statements when evaluating and assessing them.</p>
+</div>
+</div>
+<div class="section" id="converting-between-odds-and-probability">
+<h2>Converting between Odds and Probability<a class="headerlink" href="#converting-between-odds-and-probability" title="Permalink to this headline">¶</a></h2>
+<p>Now that we understand what odds and probabilities mean, we can look at how they are related. We can also look at how we can express one as the other.</p>
+<p>To describe odds in favour of an event <span class="math notranslate nohighlight">\(E\)</span>, we have to think about what we are writing a ratio of. We are writing the ratio of <span class="math notranslate nohighlight">\(E\)</span> happening versus that of <span class="math notranslate nohighlight">\(E\)</span> not happening. This we write as <span class="math notranslate nohighlight">\(P(E)\)</span> and <span class="math notranslate nohighlight">\(1-P(E)\)</span> respectively.</p>
+<p>We can write this as an equation:</p>
+<p>$$\text{Odds for the event <span class="math notranslate nohighlight">\(E\)</span> occurring} = {P(E) \over 1-P(E)}$$</p>
+<p>As a ratio, we would write this as <span class="math notranslate nohighlight">\(P(E):1-P(E).\)</span></p>
+<p>If the odds are <span class="math notranslate nohighlight">\(r:s\)</span> in favour of an event <span class="math notranslate nohighlight">\(E\)</span>, we write this as:
+$$\text{Odds for the event <span class="math notranslate nohighlight">\(E\)</span> occurring} = \displaystyle { ({r \over s}) \over {1 + ({r \over s}) } }.$$</p>
+<p>However, if the odds are against the event <span class="math notranslate nohighlight">\(E\)</span> occurring, we would write the equation:</p>
+<p>$$\text{Odds against the event <span class="math notranslate nohighlight">\(E\)</span> occurring} = {1-P(E) \over P(E)}$$</p>
+<p>As a ratio, we would write this as <span class="math notranslate nohighlight">\(1-P(E):P(E).\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#question is the question the user is asked.</span>
+<span class="n">question</span> <span class="o">=</span> <span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;If the odds against an event happening are $N:1$, where $N$ is a natural number, what is the </span><span class="se">\</span>
+<span class="s1">probability of the event happening? (Let $p$ be the probability of the event occurring)&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+
+<span class="c1">#Steps for the answer:</span>
+<span class="n">prob_button</span><span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Show Answer&quot;</span><span class="p">,</span> 
+                            <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                            <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                            <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">prob_button</span><span class="p">)</span>
+
+<span class="c1">#If &quot;Show Answer&quot; is clicked:</span>
+<span class="k">def</span> <span class="nf">prob_answer</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ The formula we need here is $N = {1-p </span><span class="se">\\</span><span class="s2">over p}$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Why? This is because odds against is the reciprocal ratio of odds on.&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Rearrange the formula: $Np + p = 1$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Isolate for the value you&#39;re looking for: $p(1+N) = 1$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ $</span><span class="se">\\</span><span class="s2">Rightarrow p = {1 </span><span class="se">\\</span><span class="s2">over N+1}$&quot;</span><span class="p">))</span>
+    <span class="k">return</span>
+
+<span class="n">prob_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">prob_answer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[If the odds against an event happening are $N:1$, where $N$ is a natural number, what is the probability of the event happening? (Let $p$ be the probability of the event occurring)\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "21fcc97e4dc44d56ba5690ce2946cc22"}
+</script></div>
+</div>
+<p>Check to make sure this works for the dice roll!</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="center-bayesian-vs-frequentist-reasoning-center">
+<h1><center> Bayesian vs. Frequentist Reasoning </center><a class="headerlink" href="#center-bayesian-vs-frequentist-reasoning-center" title="Permalink to this headline">¶</a></h1>
+<p>These two schools of thinking are the foundation of modern probability theory. Since you are not taking a course in probability theory, we won’t delve too deep into these subjects. Still, learning their basic principles will help you check the validity of statements about odds and probability.</p>
+<div class="alert alert-warning">
+<font color="black"><b>Frequentist School:</b> 
+Focuses on large amounts of data to assess probabilities. 
+</div>
+<div class="alert alert-warning">
+<font color="black"><b>Bayesian School:</b> 
+The Bayesian approach was named after the 18th century Reverend Thomas Bayes. It employs the use of conditional probabilities. They look at large amounts of data but also want to consider the conditional probabilities. These are the likelihoods of a certain event occurring in the first place.
+</div>
+<p>It’s easiest to understand their differences through an example:</p>
+<blockquote>
+<div><p>Say you have a bird feeder hung from a stand which keeps track of how many and what type of birds come to feed. At some point, it is noted that 2 Emperor Penguins have come to feed. If there were <span class="math notranslate nohighlight">\(N\)</span> birds over 1 day:</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><em>The Frequentist</em> would say that there is a <span class="math notranslate nohighlight">\(\frac{2}{N}\)</span> probability that an Emperor Penguin will fly up to the bird feeder in a day.</p></li>
+<li><p><em>The Bayesian</em>, with their conditional probabilities, disagrees. The Bayesian knows the percentage of all the birds in Canada that are Emperor Penguins. This percentage happens to be very small (some might say <span class="math notranslate nohighlight">\(0\)</span>). So, the Bayesian says this is an incredibly rare event.
+<br /><br />
+By considering a prior probability, the Bayesian drew a more educated conclusion.</p></li>
+</ul>
+<p>Before you decide which approach is better to use, we must note a couple very important points:</p>
+<ul class="simple">
+<li><p>What if the conditional probabilities are incorrect? Where did the Bayesian get their data from? What were the methods used? Were they biased? The Bayesian can sometimes unknowingly introduce biases with their prior knowledge. This may make the interpretation of the probability values somewhat subjective.</p></li>
+<li><p>The Frequentist would rely only on the data collected. This means they would remain as unbiased as possible.</p></li>
+</ul>
+<p>It is crucial to understand the pros and cons of each school of thought. Using one approach or the other can be useful based on the context of the problem and data set.</p>
+<div class="section" id="dartboard-exercise">
+<h2>Dartboard Exercise<a class="headerlink" href="#dartboard-exercise" title="Permalink to this headline">¶</a></h2>
+<p>Let’s do a bit more of an applied exercise for the concepts you have learned thus far. Consider the dartboard simulation below. If a dart is thrown at random, what are the odds on it hitting inside the green circle?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># import matplotlib.pyplot as plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">circle_centerx</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">circle_centery</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">circle_radius</span><span class="o">=</span><span class="mf">0.5</span>
+
+<span class="n">darts_number</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">submit_button3</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Throw&#39;</span><span class="p">,</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">reset_button3</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Restart&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">warning3</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">on_button_submit3_clicked</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">circle_centerx</span><span class="p">,</span><span class="n">circle_centery</span><span class="p">,</span><span class="n">circle_radius</span>
+    <span class="n">x_green</span><span class="o">=</span><span class="p">[]</span>
+    <span class="n">y_green</span><span class="o">=</span><span class="p">[]</span>
+    <span class="n">x_inside</span><span class="o">=</span><span class="p">[]</span>
+    <span class="n">y_inside</span><span class="o">=</span><span class="p">[]</span>
+    <span class="n">x_outside</span><span class="o">=</span><span class="p">[]</span>
+    <span class="n">y_outside</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">if</span> <span class="n">darts_number</span><span class="o">.</span><span class="n">value</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">darts_number</span><span class="o">.</span><span class="n">value</span><span class="o">&gt;</span><span class="mi">100000</span><span class="p">:</span>
+            <span class="n">darts_number</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="mi">100000</span>
+        <span class="n">warning3</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">darts_number</span><span class="o">.</span><span class="n">value</span><span class="p">):</span>
+            <span class="n">x</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="mi">2</span>
+            <span class="n">y</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="mi">2</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">circle_centerx</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="p">(</span><span class="n">y</span><span class="o">-</span><span class="n">circle_centery</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">&lt;</span><span class="n">circle_radius</span><span class="o">**</span><span class="mi">2</span><span class="p">:</span>
+                <span class="n">x_green</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+                <span class="n">y_green</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">circle_centerx</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="p">(</span><span class="n">y</span><span class="o">-</span><span class="n">circle_centery</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">&lt;</span><span class="p">(</span><span class="n">circle_radius</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">:</span>
+                <span class="n">x_inside</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+                <span class="n">y_inside</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">x_outside</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+                <span class="n">y_outside</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+        <span class="n">circle1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Circle</span><span class="p">((</span><span class="n">circle_centerx</span><span class="p">,</span> <span class="n">circle_centery</span><span class="p">),</span> <span class="n">circle_radius</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">circle2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Circle</span><span class="p">((</span><span class="n">circle_centerx</span><span class="p">,</span> <span class="n">circle_centery</span><span class="p">),</span> <span class="n">circle_radius</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span> 
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_green</span><span class="p">,</span><span class="n">y_green</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_inside</span><span class="p">,</span><span class="n">y_inside</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_outside</span><span class="p">,</span><span class="n">y_outside</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+        
+        <span class="n">ax</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">circle2</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">circle1</span><span class="p">)</span>
+        
+
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> 
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> 
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="c1">###################b.disabled=True</span>
+        <span class="n">darts_number</span><span class="o">.</span><span class="n">disabled</span><span class="o">=</span><span class="kc">True</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Number of  darts inside the green circle: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x_green</span><span class="p">))))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Number of  darts that hit the dart board: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x_green</span><span class="p">)</span><span class="o">+</span><span class="nb">len</span><span class="p">(</span><span class="n">x_inside</span><span class="p">))))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Total number of darts thrown: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">darts_number</span><span class="o">.</span><span class="n">value</span><span class="p">)))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">reset_button3</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">warning3</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;Please enter number greater than zero&quot;</span>
+    
+<span class="n">submit_button3</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_button_submit3_clicked</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">restart_cell</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Javascript</span><span class="p">(</span><span class="s1">&#39;IPython.notebook.execute_cell_range(IPython.notebook.get_selected_index(), IPython.notebook.get_selected_index()+1)&#39;</span><span class="p">))</span>
+
+<span class="n">reset_button3</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">restart_cell</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**Number of darts to throw** (up to 100000):&quot;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">darts_number</span><span class="p">,</span><span class="n">submit_button3</span><span class="p">]))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">warning3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;IPython.core.display.Markdown object&gt;
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "562a1a0222df4d7baf49048fa1b2ee76"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "ff8791ef7c284f9d8a55b2da9fc8cc24"}
+</script></div>
+</div>
+<p><em>Approach to solving this problem</em>: We need to understand how to calculate a probability in this context. We must calculate the areas of the inner and outer circles, calculate the probability, and then the odds!</p>
+<p><em>For our current problem</em>: Take <span class="math notranslate nohighlight">\(r_1=1\)</span> to be the radius of the inner (green) circle and <span class="math notranslate nohighlight">\(r_2=2\)</span> as the radius of the dartboard (the outer circle). Calculate the probability of a dart thrown at random will land within the inner circle. For now we will ignore the darts that do not hit the dart board.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Dartboard exercise part 1 answer</span>
+<span class="n">dboard1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answer&quot;</span><span class="p">,</span> 
+                         <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s2">&quot;60px&quot;</span><span class="p">),</span>
+                         <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                        <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">dboard1</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">check_dboard1</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ The area of the inner circle is given by: $\pi (r_1)^2$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ The area of the dartboard is given by: $\pi (r_2)^2$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ The ratio of the areas is given by: $</span><span class="se">\\</span><span class="s2">frac{\pi (r_1)^2}{\pi (r_2)^2}$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Simplifying and substituting in values we obtain: $</span><span class="se">\\</span><span class="s2">frac{(r_1)^2}{(r_2)^2}=</span><span class="se">\\</span><span class="s2">frac{1^2}{2^2}=</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{4}</span><span class="s2">$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Thus the probability of darts that hit the dartboard </span><span class="se">\</span>
+<span class="s2">                  landing in the inner circle is $</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{4}</span><span class="s2">$&quot;</span><span class="p">))</span>
+    
+    <span class="k">return</span>
+
+<span class="n">dboard1</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_dboard1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "252b6b4652a545799054e40614b9be15"}
+</script></div>
+</div>
+<p>Now, what are the odds against landing in the inner cirle?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#dartboard exercise part 2</span>
+
+<span class="n">dboard2_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answer&quot;</span><span class="p">,</span> 
+                                <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                                <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                               <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">dboard2_button</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">check_dboard2</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ The probability of landing in the inner circle is $(</span><span class="se">\\</span><span class="s2">frac{\pi}</span><span class="si">{4}</span><span class="s2">)$, </span><span class="se">\</span>
+<span class="s2">                  therefore the probability of not landing in the inner circle is $1-(</span><span class="se">\\</span><span class="s2">frac{\pi}</span><span class="si">{4}</span><span class="s2">) </span><span class="se">\</span>
+<span class="s2">                  = (</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{3}{4}</span><span class="s2">)$.&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ As explained above, we take the ratio $(</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{3}{4}</span><span class="s2">):(</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{4}</span><span class="s2">)$.&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Thus the odds against landing in the inner circle are $3:1$. </span><span class="se">\</span>
+<span class="s2">                  Again ignoring the darts that missed the dartboard.&quot;</span><span class="p">))</span>
+    
+    <span class="k">return</span>
+<span class="n">dboard2_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_dboard2</span><span class="p">)</span>
+                            
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "e093b38feacd4a1f937ffb5b2bddfe1a"}
+</script></div>
+</div>
+<p>Now, let’s try some more difficult questions with the dartboard. These may take a bit more time to work through. If you would like to review some more material, please go through the rest of the notebook and then come back to these! Try taking the time to solve the questions on paper before pressing the “Show Answer” button. While it may be tempting, it is always more rewarding to attempt to solve it yourself.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">question1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Question #1&quot;</span><span class="p">,</span> 
+                           <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                           <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                          <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question1</span><span class="p">)</span>
+
+<span class="n">q1answer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Show Answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">q1check</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;If we consider all of the darts, what is the probability of not hitting the dartboard?&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">q1answer</span><span class="p">)</span>
+    <span class="k">return</span>
+<span class="n">question1</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">q1check</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">q1ans</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;If we consider all of the darts, what is the probability of not hitting the dartboard?&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ We start with the area of the square, $A_s = (b)(h) = (2)(2) = 4$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ The area of the dartboard is $A_d = \pi (r_2)^2 = \pi (1)^2 = \pi$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Thus the probability of hitting the dartboard is $</span><span class="se">\\</span><span class="s2">frac{\pi}</span><span class="si">{4}</span><span class="s2">$ </span><span class="se">\</span>
+<span class="s2">                  and the probability of not hitting the dartboard is $1-</span><span class="se">\\</span><span class="s2">frac{\pi}</span><span class="si">{4}</span><span class="s2"> </span><span class="se">\\</span><span class="s2">approx 0.215$.&quot;</span><span class="p">))</span>
+    <span class="k">return</span>
+
+<span class="n">q1answer</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">q1ans</span><span class="p">)</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "5e55ceaa50814fb295b63d131e9da11a"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">question2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Question #2&quot;</span><span class="p">,</span> 
+                           <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                           <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                          <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question2</span><span class="p">)</span>
+
+<span class="n">q2answer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Show Answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">q2check</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the probability of hitting the inner circle twice in a row?&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">q2answer</span><span class="p">)</span>
+    <span class="k">return</span>
+<span class="n">question2</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">q2check</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">q2ans</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the probability of hitting the inner circle twice in a row?&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ First off, we note that the two events are independent of </span><span class="se">\</span>
+<span class="s2">                  one another. The probability of each is $</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{4}</span><span class="s2">$&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Finally, we multiply these two probabilities together. This gives us the </span><span class="se">\</span>
+<span class="s2">                  probability of these events happening in succession to get </span><span class="se">\</span>
+<span class="s2">                  $ </span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{4}</span><span class="s2"> </span><span class="se">\\</span><span class="s2">times </span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{4}</span><span class="s2"> = </span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{16}</span><span class="s2">$.&quot;</span><span class="p">))</span>
+    <span class="k">return</span>
+
+<span class="n">q2answer</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">q2ans</span><span class="p">)</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "bb5265bb115047468b06274740375745"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">question3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Question #3&quot;</span><span class="p">,</span> 
+                           <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span> <span class="o">=</span> <span class="s1">&#39;25%&#39;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s1">&#39;60px&#39;</span><span class="p">),</span>
+                           <span class="n">button_style</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+                          <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question3</span><span class="p">)</span>
+
+<span class="n">q3answer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Show Answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">q3check</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the probability of hitting the outer circle and then the outer circle?&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">q3answer</span><span class="p">)</span>
+    <span class="k">return</span>
+<span class="n">question3</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">q3check</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">q3ans</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$What is the probability of hitting the outer circle and then the outer circle?&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Again the two events are independent of one another. We have to calculate the </span><span class="se">\</span>
+<span class="s2">                  probability of each event.&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ The probability of hitting the inner circle is $</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{4}</span><span class="s2">$ and </span><span class="se">\</span>
+<span class="s2">                  the probability of hitting the outer circle but not the inner circle is </span><span class="se">\</span>
+<span class="s2">                  $</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{3}{4}</span><span class="s2">-</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{4}</span><span class="s2">=</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{2}</span><span class="s2">$.&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$\;$ Finally we multiply the two probabilities together. This gives us the </span><span class="se">\</span>
+<span class="s2">                  probability of these events happening in succession to get </span><span class="se">\</span>
+<span class="s2">                  $</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{2}</span><span class="s2"> </span><span class="se">\\</span><span class="s2">times </span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{4}</span><span class="s2"> = </span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}{8}</span><span class="s2">$.&quot;</span><span class="p">))</span>
+
+    
+    <span class="k">return</span>
+
+<span class="n">q3answer</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">q3ans</span><span class="p">)</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "e516cdf523804322ac4239b8497ddbbf"}
+</script></div>
+</div>
+<p>This dartboard example can also be used to see the different ways of assessing validity.</p>
+<p>Use the frequentist approach to determine the probability of landing in the inner circle or on a certain number. Remember that the frequentist assumes no prior knowledge about the dartboard. They must collect data. Note where the random throws lands. Keep track of both the number of throws, <span class="math notranslate nohighlight">\(N\)</span>, and the number of times, <span class="math notranslate nohighlight">\(m\)</span>, they land on the red circle. How many throws until <span class="math notranslate nohighlight">\(\frac{m}{N} \approx \frac{1}{4}\)</span>?</p>
+<p>Remember, the frequentist approach relies on large data sets! See if there is a convergence towards <span class="math notranslate nohighlight">\(\frac{1}{4}\)</span> after 20 throws.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="making-decisions-based-on-odds-probability">
+<h2>Making Decisions Based on Odds &amp; Probability<a class="headerlink" href="#making-decisions-based-on-odds-probability" title="Permalink to this headline">¶</a></h2>
+<p>One topic we may hear in the news that uses odds and probability is that of lottery winners. According to the CBC, approximately a quarter of all Canadians play the lottery weekly. We can buy a ticket and choose three sets of seven numbers for $5.00. Now, how do we calculate the odds of winning?</p>
+<p>Consider <a class="reference external" href="http://lotto.bclc.com/lotto-max-and-extra/prizes-and-odds.html">Lotto Max</a>. In this lottery game, the player selects 7 distinct numbers from 1 to 49. We can count the number of ways to do this by using the  <em>Choose Function</em> (Also known as the <a class="reference external" href="https://en.wikipedia.org/wiki/Binomial_coefficient">Binomial Coefficients</a>). This gives us the number of ways to choose <span class="math notranslate nohighlight">\(k\)</span> non-ordered elements from a fixed set of <span class="math notranslate nohighlight">\(n\)</span> elements, which we write as follows:</p>
+<div class="math notranslate nohighlight">
+\[{n \choose k} = {n! \over {k!(n-k)!}}\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(k\)</span> are both positive integers and <span class="math notranslate nohighlight">\(n!\)</span> means <span class="math notranslate nohighlight">\(n\cdot(n-1)\cdot(n-2)\cdots 3\cdot 2\cdot 1\)</span>, (Some positive integer <span class="math notranslate nohighlight">\(n\)</span> multiplied by every positive integer less than it). Now, back to the lottery.</p>
+<p>We have <span class="math notranslate nohighlight">\(k=7\)</span> numbers to choose from a total of <span class="math notranslate nohighlight">\(n=49\)</span> numbers. The number of ways to do this is given by:</p>
+<div class="math notranslate nohighlight">
+\[{49 \choose 7} = {49! \over {7!(49-7)!}} = {49! \over {7!42!}} = {49\cdot 48\cdot 47\cdot 46\cdot 45\cdot 44\cdot 43\cdot 42! \over {7!42!}} = {49\cdot 48\cdot 47\cdot 46\cdot 45\cdot 44\cdot 43 \over {7\cdot6\cdot5\cdot4\cdot3\cdot2\cdot 1}} = 85,900,584\]</div>
+<p>To win the lottery, we must hold a winning ticket, where one of the sets of numbers we chose matches all 7 of the winning numbers. Note that there is exactly one set of winning numbers.</p>
+<p>Since a $5.00 ticket allows us to choose three sets of seven numbers, our chances of winning are slightly better. This is assuming that we don’t choose exactly the same seven numbers for two or three of our sets.</p>
+<p>So, we have three of the possible <span class="math notranslate nohighlight">\(85,900,584\)</span> seven number configurations. This makes the odds for holding a winning ticket as <span class="math notranslate nohighlight">\(3:85,900,584\)</span>, (Or <span class="math notranslate nohighlight">\(1:28,633,528\)</span>).</p>
+<p><strong>Exploration:</strong> Every ticket comes with three sets of seven numbers we can choose from. We saw that the odds of having a winning ticket is <span class="math notranslate nohighlight">\(3:85,900,584\)</span>, (Or <span class="math notranslate nohighlight">\(1:28,633,528\)</span> simplified). If we had only one set of seven numbers to choose from in a single ticket, the odds of winning would be much lower: <span class="math notranslate nohighlight">\(1:85,900,584\)</span>. So, in comparing having one set of numbers to having three sets of numbers, our chances seem to have improved.</p>
+<p><strong>Exploration Question 1:</strong> Would buying more tickets improve our chances of winning?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">decision_q1_ctr</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Exercise 2 widgets</span>
+
+<span class="n">decision_q1_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Save &amp; View Answer&quot;</span><span class="p">,</span> \
+                                    <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;50%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">decision_q1_text</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Textarea</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Enter your answer here.&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> \
+                                    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">,</span> <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;50%&#39;</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="s1">&#39;250px&#39;</span><span class="p">)</span>  <span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">decision_q1_text</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">decision_q1_button</span><span class="p">)</span>
+
+<span class="n">decision_q1_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span> <span class="n">run_cells</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "2ac8b0757bca4bf7bb6f1d4194d75286"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "4cce3feed55b40068813e21692081bed"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">decision_q1_ctr</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1"># Explanation to display in markdown format</span>
+
+<span class="n">exp_q1_line1</span> <span class="o">=</span> <span class="s2">&quot;Would buying more tickets improve our chances of winning? **Yes.**&quot;</span>
+<span class="n">exp_q1_line2</span> <span class="o">=</span> <span class="s2">&quot;From a technical perspective, buying more tickets would improve our chance of winning. </span><span class="se">\</span>
+<span class="s2">For example, if we buy two tickets, we now have a $6:89,900,584$ chance of winning. That is </span><span class="se">\</span>
+<span class="s2">approximately a $1$ out of $14,983,430$ chance.&quot;</span>
+<span class="n">exp_q1_line3</span> <span class="o">=</span> <span class="s2">&quot;Let $n$ be the number of tickets. Then every $n$ tickets gives us $3n$ sets of seven </span><span class="se">\</span>
+<span class="s2">numbers to choose from. We can see that as we increase $n$, the fraction ${89,900,584 \over 3n}$ becomes </span><span class="se">\</span>
+<span class="s2">smaller. This makes our chances of winning approximately $1$ out of ${89,900,584 \over 3n}.$ For instance, </span><span class="se">\</span>
+<span class="s2">if we buy $n=7$ tickets, then our chance of winning is approximately 1 out of ${89,900,594 \over 21}$. </span><span class="se">\</span>
+<span class="s2">That is, approximately a $1$ out of $4,280,980$ chance.&quot;</span>
+
+<span class="c1"># Executes when user saves answer</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">decision_q1_ctr</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">decision_q1_button</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">user_decision_q1_text</span> <span class="o">=</span> <span class="n">decision_q1_text</span><span class="o">.</span><span class="n">value</span>
+    
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**You wrote: **&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">user_decision_q1_text</span><span class="p">))</span>
+    
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**Explanation: **&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">exp_q1_line1</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">exp_q1_line2</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">exp_q1_line3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Exploration Question 2.</strong> Would this be a sound financial strategy?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">decision_q2_ctr</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Exercise 2 widgets</span>
+
+<span class="n">decision_q2_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Save &amp; View Answer&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;50%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">decision_q2_text</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Textarea</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Enter your answer here.&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">,</span> <span class="n">layout</span> <span class="o">=</span> <span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;50%&#39;</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="s1">&#39;250px&#39;</span><span class="p">)</span>  <span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">decision_q2_text</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">decision_q2_button</span><span class="p">)</span>
+
+<span class="n">decision_q2_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span> <span class="n">run_cells</span> <span class="p">)</span>
+
+<span class="n">decision_q1_ctr</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "3e0e719b579a40c9af544fb3ecc69026"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "af85170f48b244dfa0fdc3fb6f85f302"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">decision_q2_ctr</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1"># Explanation to display in markdown format</span>
+
+<span class="n">exp_q2_line1</span> <span class="o">=</span> <span class="s2">&quot;Would this be a sound financial strategy? **No.**&quot;</span>
+<span class="n">exp_q2_line2</span> <span class="o">=</span> <span class="s2">&quot;While it would technically increase your chances, buying more tickets would not be a good</span><span class="se">\</span>
+<span class="s2">financial strategy. For example, if we bought 1000 tickets, we would have a $1000:89,900,584$ chance of winning. </span><span class="se">\</span>
+<span class="s2">That is approximately a $1$ out of $29,967$ chance.&quot;</span>
+<span class="n">exp_q2_line3</span> <span class="o">=</span> <span class="s2">&quot;So, the odds of you winning if you bought 1000 tickets are still not great. Plus, for every $n$ </span><span class="se">\</span>
+<span class="s2">tickets you buy, you pay $5n$ dollars. That means that you would have spent $5000 dollars to get 1000 tickets. &quot;</span>
+
+<span class="c1"># Executes when user saves answer</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">decision_q2_ctr</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">decision_q2_button</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">user_decision_q2_text</span> <span class="o">=</span> <span class="n">decision_q2_text</span><span class="o">.</span><span class="n">value</span>
+    
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**You wrote: **&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">user_decision_q2_text</span><span class="p">))</span>
+
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**Explanation: **&quot;</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">exp_q2_line1</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">exp_q2_line2</span><span class="p">))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">exp_q2_line3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>In this Jupyter Notebook by Callysto, you learned about assessing the validity of odds and probability statements. We first outlined the concepts of:</p>
+<ul class="simple">
+<li><p><em>Events</em>,</p></li>
+<li><p><em>Probability</em>,</p></li>
+<li><p>And <em>Odds</em>.</p></li>
+</ul>
+<p>Thereafter, we defined some commonly used types of odds:</p>
+<ul class="simple">
+<li><p><em>Odds on</em>,</p></li>
+<li><p><em>Odds against</em>,</p></li>
+<li><p>And <em>Even odds</em>.</p></li>
+</ul>
+<p>We learnt the differences between <em>Dependent</em> and <em>Independent events</em>. We also elucidated the perspectives of Bayesian and Frequentist reasoning. These two schools of thought, along with an understanding of the concepts outlined throughout this Notebook, will give the reader a necessary toolset to interpret and assess the validity of odds and probability statements.</p>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"dec91a82fdf44e46a0ffac29f5318883": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3f094f4a68fd476994aa2827fe6bfe0d": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "00b8417c4fcb4a73849a8a1fec7ccf83": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["True", "False"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_dec91a82fdf44e46a0ffac29f5318883", "style": "IPY_MODEL_3f094f4a68fd476994aa2827fe6bfe0d"}}, "493cd4125a1b4cf59903026158260874": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "847762d4fede4f6aaaae6f7d4a37ead0": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "736fd74222df4bff9c495bb435f12a15": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check Answers", "disabled": false, "icon": "", "layout": "IPY_MODEL_493cd4125a1b4cf59903026158260874", "style": "IPY_MODEL_847762d4fede4f6aaaae6f7d4a37ead0", "tooltip": ""}}, "debf463e65e148b485894e1d993989a0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f82b8456ebe7446e8f49f213b58c495b": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "ecc8bb68fe5d44cb9eaa812c21fb0271": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["True", "False"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_debf463e65e148b485894e1d993989a0", "style": "IPY_MODEL_f82b8456ebe7446e8f49f213b58c495b"}}, "9ede685c8ddb465ca3cb7a9ef48895aa": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "9495ff7f57444132a3bac6c8b57959e4": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "bd4647d759e943f0b1ba4fe256bd6965": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check Answers", "disabled": false, "icon": "", "layout": "IPY_MODEL_9ede685c8ddb465ca3cb7a9ef48895aa", "style": "IPY_MODEL_9495ff7f57444132a3bac6c8b57959e4", "tooltip": ""}}, "babfc4a24d544a72a265a689dc3385e4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c22f282bdcca4a689801c82525d24983": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "d4d32c01c2dd42c3a785075a88483d69": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["True", "False"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_babfc4a24d544a72a265a689dc3385e4", "style": "IPY_MODEL_c22f282bdcca4a689801c82525d24983"}}, "80d5340187aa44a9bced405f3bf4356c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "8f74a98248aa4e34b92adcc03d18794c": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "fceb8178643e45768c1cd07d54c38b2f": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check Answers", "disabled": false, "icon": "", "layout": "IPY_MODEL_80d5340187aa44a9bced405f3bf4356c", "style": "IPY_MODEL_8f74a98248aa4e34b92adcc03d18794c", "tooltip": ""}}, "7c70f5137b9d46e3bad669ffcaa274b6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "19dd73cfed4d462e824607fe0802a82a": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "5966212863b440a0a02f537f0e33c353": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["True", "False"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_7c70f5137b9d46e3bad669ffcaa274b6", "style": "IPY_MODEL_19dd73cfed4d462e824607fe0802a82a"}}, "50778c76d20c412a89d6c2070ea33282": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "f7dea064d1c640dc92f057b647d6d9f5": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "2b6c4bd53a514fabbf7e084f791eb056": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check Answers", "disabled": false, "icon": "", "layout": "IPY_MODEL_50778c76d20c412a89d6c2070ea33282", "style": "IPY_MODEL_f7dea064d1c640dc92f057b647d6d9f5", "tooltip": ""}}, "3b6322da06fb421caf9f9529f68bc60d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "28f4671675ac40a9b2a4c65cbb3bc5a9": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "fa9cb5e5697448fc94d3d713b1fceb33": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["True", "False"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_3b6322da06fb421caf9f9529f68bc60d", "style": "IPY_MODEL_28f4671675ac40a9b2a4c65cbb3bc5a9"}}, "99528c8f6ab14ebabcd1aaab0878c950": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "5826bbc735bb4042800ea7469414b1dc": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "f6ecf138a4dd442588541b487156d57c": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check Answers", "disabled": false, "icon": "", "layout": "IPY_MODEL_99528c8f6ab14ebabcd1aaab0878c950", "style": "IPY_MODEL_5826bbc735bb4042800ea7469414b1dc", "tooltip": ""}}, "0a05247a955342ffbb877d4d244ad02c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8b42b6c3321d49a994b3798bc1cc4bc8": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "9d2d7f5f0e0644079397dc0ca50845ad": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["True", "False"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_0a05247a955342ffbb877d4d244ad02c", "style": "IPY_MODEL_8b42b6c3321d49a994b3798bc1cc4bc8"}}, "c7f54ba9cd8f46e68ba8541fd81d8351": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "fa29a2f5783847a1a73f6dd64e272408": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "b51fffa9e9314d7f9a4afcca341596e4": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check Answers", "disabled": false, "icon": "", "layout": "IPY_MODEL_c7f54ba9cd8f46e68ba8541fd81d8351", "style": "IPY_MODEL_fa29a2f5783847a1a73f6dd64e272408", "tooltip": ""}}, "18e0c35565854c6bbe2d9e050ab3984a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "7b7cee0aeebd42fd8b1067352ea632c4": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "21fcc97e4dc44d56ba5690ce2946cc22": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Show Answer", "disabled": false, "icon": "", "layout": "IPY_MODEL_18e0c35565854c6bbe2d9e050ab3984a", "style": "IPY_MODEL_7b7cee0aeebd42fd8b1067352ea632c4", "tooltip": ""}}, "7044fdadd32647149030cf35a25f07d0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d6b224eea61c4732bc4e7e9c71c1c1ed": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "a8406a90d55746cea3ad1accc8e8fad2": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_7044fdadd32647149030cf35a25f07d0", "step": 1, "style": "IPY_MODEL_d6b224eea61c4732bc4e7e9c71c1c1ed", "value": 0}}, "8a2b343adef448cb902bcbbd8c8874a6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d7dc1ed32ba6478cb2be09fdee339aa2": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "3ab2ded57d514d47bb9ef509cc7350ef": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Throw", "disabled": false, "icon": "", "layout": "IPY_MODEL_8a2b343adef448cb902bcbbd8c8874a6", "style": "IPY_MODEL_d7dc1ed32ba6478cb2be09fdee339aa2", "tooltip": ""}}, "db6615b013d349cda98a7d34ff4ac089": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d338765dcee44f60bc774df8cb2675df": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "c4299c9899b6492b99f7b686cc642e29": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "Restart", "disabled": false, "icon": "", "layout": "IPY_MODEL_db6615b013d349cda98a7d34ff4ac089", "style": "IPY_MODEL_d338765dcee44f60bc774df8cb2675df", "tooltip": ""}}, "88c474b0896d4f8e950687749e3d6069": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "96c454a2c20d4a3b94c020919b641750": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "ff8791ef7c284f9d8a55b2da9fc8cc24": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_88c474b0896d4f8e950687749e3d6069", "placeholder": "\u200b", "style": "IPY_MODEL_96c454a2c20d4a3b94c020919b641750", "value": " "}}, "79cc7c05d30244f7be86faf5296356d3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "562a1a0222df4d7baf49048fa1b2ee76": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_a8406a90d55746cea3ad1accc8e8fad2", "IPY_MODEL_3ab2ded57d514d47bb9ef509cc7350ef"], "layout": "IPY_MODEL_79cc7c05d30244f7be86faf5296356d3"}}, "befc2e0deb7a4eaea6e85b57a36086f4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "d9882bebc3334d0e9e08085ea7d43b0c": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "252b6b4652a545799054e40614b9be15": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check Answer", "disabled": false, "icon": "", "layout": "IPY_MODEL_befc2e0deb7a4eaea6e85b57a36086f4", "style": "IPY_MODEL_d9882bebc3334d0e9e08085ea7d43b0c", "tooltip": ""}}, "4a64dff761dc4b3c97dfbaac863f5c33": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "59d991dcaac64842b987fdd99cce8a3b": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "e093b38feacd4a1f937ffb5b2bddfe1a": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check Answer", "disabled": false, "icon": "", "layout": "IPY_MODEL_4a64dff761dc4b3c97dfbaac863f5c33", "style": "IPY_MODEL_59d991dcaac64842b987fdd99cce8a3b", "tooltip": ""}}, "a2e4a1ea84fb4e10a62cf2fe31477ea8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "406aec26beb34ba9bfe25a5473e13e5d": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "5e55ceaa50814fb295b63d131e9da11a": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Question #1", "disabled": false, "icon": "", "layout": "IPY_MODEL_a2e4a1ea84fb4e10a62cf2fe31477ea8", "style": "IPY_MODEL_406aec26beb34ba9bfe25a5473e13e5d", "tooltip": ""}}, "e8d3acafe3fa40dba54c1568afaac9f6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "80865fbca6034fab95cd2d86406b6412": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "d6f82332c8d3428ba3039c8adfceb54d": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "Show Answer", "disabled": false, "icon": "", "layout": "IPY_MODEL_e8d3acafe3fa40dba54c1568afaac9f6", "style": "IPY_MODEL_80865fbca6034fab95cd2d86406b6412", "tooltip": ""}}, "16fe2b044b4d44958cc613a5c512e3c2": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "f27630f6ace4458494d0f009699d07c3": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "bb5265bb115047468b06274740375745": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Question #2", "disabled": false, "icon": "", "layout": "IPY_MODEL_16fe2b044b4d44958cc613a5c512e3c2", "style": "IPY_MODEL_f27630f6ace4458494d0f009699d07c3", "tooltip": ""}}, "05e3d8763c904d08962d51231c17a616": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9610b93adc624ab5b62e726af0a8d01d": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "b44b46b83e794a5e8eb8dd85732c72b5": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "Show Answer", "disabled": false, "icon": "", "layout": "IPY_MODEL_05e3d8763c904d08962d51231c17a616", "style": "IPY_MODEL_9610b93adc624ab5b62e726af0a8d01d", "tooltip": ""}}, "647499703e8842a8889e6ee1c4b05867": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "25%"}}, "541376deb1b740769e6d869331a2322a": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "e516cdf523804322ac4239b8497ddbbf": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Question #3", "disabled": false, "icon": "", "layout": "IPY_MODEL_647499703e8842a8889e6ee1c4b05867", "style": "IPY_MODEL_541376deb1b740769e6d869331a2322a", "tooltip": ""}}, "27e11764f9304498b7fefb23ee0f2655": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2eb6749e9a1e41c7adb1a2e190b324ed": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "07d1d6f0f6e748bea3928b26e2e156c8": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "Show Answer", "disabled": false, "icon": "", "layout": "IPY_MODEL_27e11764f9304498b7fefb23ee0f2655", "style": "IPY_MODEL_2eb6749e9a1e41c7adb1a2e190b324ed", "tooltip": ""}}, "30ea4a48d3f04731af5cc827e0eda560": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "50%"}}, "26f0eb32374d4df2b1e4d8505a3157ec": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "4cce3feed55b40068813e21692081bed": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Save & View Answer", "disabled": false, "icon": "", "layout": "IPY_MODEL_30ea4a48d3f04731af5cc827e0eda560", "style": "IPY_MODEL_26f0eb32374d4df2b1e4d8505a3157ec", "tooltip": ""}}, "0e9c2fe62aee4facb8b1d7a3dfca8b23": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "250px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "50%"}}, "a9f0188215934ec9a0fc84106a57db4e": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "2ac8b0757bca4bf7bb6f1d4194d75286": {"model_name": "TextareaModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextareaModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextareaView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_0e9c2fe62aee4facb8b1d7a3dfca8b23", "placeholder": "Enter your answer here.", "rows": null, "style": "IPY_MODEL_a9f0188215934ec9a0fc84106a57db4e", "value": ""}}, "c740af4b7b684de89c5214527c77f191": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "50%"}}, "85b71d4796224916b4d9e7beae30128b": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "af85170f48b244dfa0fdc3fb6f85f302": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Save & View Answer", "disabled": false, "icon": "", "layout": "IPY_MODEL_c740af4b7b684de89c5214527c77f191", "style": "IPY_MODEL_85b71d4796224916b4d9e7beae30128b", "tooltip": ""}}, "b0143192b11847f5a6300916bd7edaa6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "250px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "50%"}}, "999eb23cf7dd456ea852586e115a8dc5": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "3e0e719b579a40c9af544fb3ecc69026": {"model_name": "TextareaModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextareaModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextareaView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_b0143192b11847f5a6300916bd7edaa6", "placeholder": "Enter your answer here.", "rows": null, "style": "IPY_MODEL_999eb23cf7dd456ea852586e115a8dc5", "value": ""}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html" title="previous page">Inductive Reasoning and Deductive Reasoning</a>
+    <a class='right-next' id="next-link" href="../InterpretingStatisticalData/interpreting-statistical-data.html" title="next page">Interpreting Statistical Data</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>
