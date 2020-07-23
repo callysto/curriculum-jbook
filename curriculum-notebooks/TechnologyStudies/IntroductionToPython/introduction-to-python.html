@@ -1,0 +1,796 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Python - introduction &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Python Classes" href="introduction-to-python-classes.html" />
+    <link rel="prev" title="Lists and Dictionaries in Python" href="../IntroductionToDataStructures/introduction-to-data-structures.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="../../../intro.html">Welcome to Callysto</a>
+  </li>
+  <li class="">
+    <a href="../../README.html">Curriculum Notebooks</a>
+  </li>
+  <li class="">
+    <a href="../../Arts/Arts.html">Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
+  </li>
+  <li class="">
+    <a href="../../Health/Health.html">Health Section</a>
+  </li>
+  <li class="">
+    <a href="../../Languages/Languages.html">Languages Section</a>
+  </li>
+  <li class="">
+    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
+  </li>
+  <li class="">
+    <a href="../../Science/Sciences.html">Sciences Section</a>
+  </li>
+  <li class="">
+    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
+  </li>
+  <li class="active">
+    <a href="../Technology.html">Technology Section</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../ComputerScienceSocrata/1-introduction-to-socrata-and-soda.html">Socrata and Soda</a>
+    </li>
+    <li class="">
+      <a href="../ComputerScienceSocrata/2-introduction-to-plotly.html">Plotly - introduction</a>
+    </li>
+    <li class="">
+      <a href="../ComputerScienceSocrata/3-joining-datasets.html">Joining Datasets</a>
+    </li>
+    <li class="">
+      <a href="../ComputerScienceSocrata/4-filtering-datasets.html">Filtering Datasets</a>
+    </li>
+    <li class="">
+      <a href="../IntroductionToDataStructures/introduction-to-data-structures.html">Lists and Dictionaries in Python</a>
+    </li>
+    <li class="active">
+      <a href="">Python - introduction</a>
+    </li>
+    <li class="">
+      <a href="introduction-to-python-classes.html">Python Classes</a>
+    </li>
+    <li class="">
+      <a href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">Loops and Iteration in Python</a>
+    </li>
+  </ul>
+  </li>
+</ul>
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/TechnologyStudies/IntroductionToPython/introduction-to-python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/TechnologyStudies/IntroductionToPython/introduction-to-python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/IntroductionToPython/introduction-to-python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#basic-python-programming" class="nav-link">Basic: Python Programming</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#variables-and-input-reading" class="nav-link">Variables and Input Reading</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#variables" class="nav-link">Variables</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#reading-input-from-the-keyboard" class="nav-link">Reading Input from the Keyboard</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#creating-your-first-algorithm" class="nav-link">Creating Your First Algorithm</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#example-1" class="nav-link">Example 1</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#solution" class="nav-link">Solution</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#algorithm" class="nav-link">Algorithm</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#testing" class="nav-link">Testing</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#revised-program" class="nav-link">Revised Program</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#example-2" class="nav-link">Example 2</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id1" class="nav-link">Solution</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#id2" class="nav-link">Algorithm</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#id3" class="nav-link">Testing</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#id4" class="nav-link">Revised Program</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#exercise-1" class="nav-link">Exercise 1</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#exercise-2" class="nav-link">Exercise 2</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#exercise-3" class="nav-link">Exercise 3</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#conclusion" class="nav-link">Conclusion</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=TechnologyStudies/IntroductionToPython/introduction-to-python.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="section" id="python-introduction">
+<h1>Python - introduction<a class="headerlink" href="#python-introduction" title="Permalink to this headline">¶</a></h1>
+<p>Programming is a process that instructs the computer to perform a task. Let’s think you have a task to write 1 to 1000. It will take a lot of time if you want to write this using pen and paper. But you can easily do it by writing a few lines of a program. Programming will make your life simple in complex work. There are so many programming languages have been demonstrated so far. Python is one of them, which is widely used and the most popular one. In fact, Python becomes the No. 1 programming language in 2017 based on <a class="reference external" href="https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages">IEEE Spectrum</a>, and is used to build many popular websites like Youtube and Instagram. In this notebook, we will learn this python language to solve simple real-life sequential algorithm-based problems using the input-process-output (IPO) approach. The sequential algorithm performs it’s each part of task sequentially, which is easy to implement in Python programming language. Each part of IPO approach will help us to learn the introductory Python programming knowledge. Thus, this notebook will give the user introductory level Python programming knowledge.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">base64</span>
+
+<span class="n">hide_me</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">code_show=true; </span>
+<span class="s1">function code_toggle() {</span>
+<span class="s1">  if (code_show) {</span>
+<span class="s1">    $(&#39;div.input&#39;).each(function(id) {</span>
+<span class="s1">      el = $(this).find(&#39;.cm-variable:first&#39;);</span>
+<span class="s1">      if (id == 0 || el.text() == &#39;hide_me&#39;) {</span>
+<span class="s1">        $(this).hide();</span>
+<span class="s1">      }</span>
+<span class="s1">    });</span>
+<span class="s1">    $(&#39;div.output_prompt&#39;).css(&#39;opacity&#39;, 0);</span>
+<span class="s1">  } else {</span>
+<span class="s1">    $(&#39;div.input&#39;).each(function(id) {</span>
+<span class="s1">      $(this).show();</span>
+<span class="s1">    });</span>
+<span class="s1">    $(&#39;div.output_prompt&#39;).css(&#39;opacity&#39;, 1);</span>
+<span class="s1">  }</span>
+<span class="s1">  code_show = !code_show</span>
+<span class="s1">} </span>
+<span class="s1">$( document ).ready(code_toggle);</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input style=&quot;opacity:0&quot; type=&quot;submit&quot; value=&quot;Click here to toggle on/off the raw code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="basic-python-programming">
+<h2>Basic: Python Programming<a class="headerlink" href="#basic-python-programming" title="Permalink to this headline">¶</a></h2>
+<p>A tradition in computer science for your first program is to write a program which outputs a simple phrase: <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">World!</span></code>. To complete this tradition, input the following into the cell below:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can run the above cell with either pressing <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Enter</span></code> or by selecting the cell and clicking <code class="docutils literal notranslate"><span class="pre">Run</span></code> at the top”, which will give the output: <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">World!</span></code>. Here we have used the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement, which can output a sentence enclosed within quotations to the screen.</p>
+<div class="section" id="variables-and-input-reading">
+<h3>Variables and Input Reading<a class="headerlink" href="#variables-and-input-reading" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="variables">
+<h4>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h4>
+<p>Let’s think, you have a pen and a pencil. Now, you want to find the total of these two items. You can do this thing like <code class="docutils literal notranslate"><span class="pre">print(1</span> <span class="pre">+</span> <span class="pre">1)</span></code>. This line of the program will execute <span class="math notranslate nohighlight">\(2\)</span>. Let’s see this by running the following section:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Instead of using <code class="docutils literal notranslate"><span class="pre">print(1</span> <span class="pre">+</span> <span class="pre">1)</span></code>, you can give them a proper name such as <code class="docutils literal notranslate"><span class="pre">pen</span></code> and <code class="docutils literal notranslate"><span class="pre">pencil</span></code>. These <code class="docutils literal notranslate"><span class="pre">pen</span></code> and <code class="docutils literal notranslate"><span class="pre">pencil</span></code> are known as <strong>variables</strong>. This is Python’s way of “remembering” a value. Variables can be numbers like integers or decimals  (for a computer, decimals are known as “floating point numbers”), or even words and characters, which are known as “strings”. Let’s write a program to find the total amount of your pen and pencil using variable concept.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pen</span> <span class="o">=</span><span class="mi">1</span>
+
+<span class="n">pencil</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="n">pen</span> <span class="o">+</span> <span class="n">pencil</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="reading-input-from-the-keyboard">
+<h4>Reading Input from the Keyboard<a class="headerlink" href="#reading-input-from-the-keyboard" title="Permalink to this headline">¶</a></h4>
+<p>Almost in all programs, we need to read some values from the user as the <strong>input</strong>, and store them in some variables, so that we can use them later. The input function always returns ‘<em>string</em>’ which is a sequence of characters or words. Let’s see the following example of taking an input variable as string type:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">variable</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Prompt message&quot;</span><span class="p">)</span>
+
+<span class="n">color</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Your favourite color:&quot;</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>From the above expression, <code class="docutils literal notranslate"><span class="pre">color</span></code> input variable can be any string such as <code class="docutils literal notranslate"><span class="pre">Red</span></code>.</p>
+<p>Let’s try the above input function in the cell below, you can run it with either pressing <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Enter</span></code> or by selecting the cell and clicking <code class="docutils literal notranslate"><span class="pre">Run</span></code> at the top”.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#NBVAL_SKIP</span>
+
+<span class="n">color</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;your favourite color: &quot;</span><span class="p">)</span>
+
+<span class="n">wish</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Wish message of your friend&#39;s birthday: &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In the below cell, you can create your own input function based on the above example.</p>
+<p>We can also take any ‘<em>numerical</em>’ input from the <strong>input</strong> function. But we have to initialize it before the input function. There are various types of numerical input. Here we will familiar with <code class="docutils literal notranslate"><span class="pre">integer</span></code> and <code class="docutils literal notranslate"><span class="pre">float</span></code> numbers. Integer is a whole number, and it can be positive, negative and zero. But integer can not be the fractional number. Float defines the number which has decimal point. We can take an integer and float input number by writing ‘<code class="docutils literal notranslate"><span class="pre">int</span></code>’ and ‘<code class="docutils literal notranslate"><span class="pre">float</span></code>’ just before the <code class="docutils literal notranslate"><span class="pre">input</span></code> function respectively. Float number will also work in case of the whole number, but integer number will not take float number. Let’s see a couple of example of taking input using integer and float:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">price</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Price of your pen: &quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>From the above expression, <code class="docutils literal notranslate"><span class="pre">price</span></code> input variable can be any whole number such as <span class="math notranslate nohighlight">\(4\)</span>. But it can not be any decimal point number such as <span class="math notranslate nohighlight">\(4.5\)</span>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Price of your pen: &quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>From the above expression. <code class="docutils literal notranslate"><span class="pre">price</span></code> variable will be decimal point number such as <span class="math notranslate nohighlight">\(4.5\)</span>. But, it will also work in case of whole number such as <span class="math notranslate nohighlight">\(4\)</span>.</p>
+<p>We have to decide the type of numerical input type based on our goal. Let’s run the cell below as we did earlier to check the above examples:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#NBVAL_SKIP</span>
+
+<span class="n">price</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Price of your pen: &quot;</span><span class="p">))</span>
+
+<span class="n">price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Price of your pen: &quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="creating-your-first-algorithm">
+<h2>Creating Your First Algorithm<a class="headerlink" href="#creating-your-first-algorithm" title="Permalink to this headline">¶</a></h2>
+<p>An algorithm is a set of operations or steps to be performed to solve a problem or a task. Everything can be written as an algorithm, for example, let’s write a simple algorithm of our daily morning life:</p>
+<ol class="simple">
+<li><p>Wake up from sleep</p></li>
+<li><p>Brush your teeth</p></li>
+<li><p>Take a shower</p></li>
+<li><p>Take the breakfast</p></li>
+<li><p>Get into the car or bus for school</p></li>
+</ol>
+<p>Let’s write another simple algorithm to call to your friend:</p>
+<ol class="simple">
+<li><p>Take your mobile phone</p></li>
+<li><p>Go to your contact list</p></li>
+<li><p>Search your friend’s name</p></li>
+<li><p>Call your friend</p></li>
+</ol>
+<p>These two algorithms are the simple examples that we follow in our real life. In computing, programmers write the set of instructions of an algorithm that instructs computer to perform that task.</p>
+<p>A sequential algorithm performs the set of operations sequentially from start to finish. Sequential algorithm is easy to understand and implement. We will familiar with the basic level of python programming from this notebook using this sequential algorithm.</p>
+<p>The input/process/output (IPO) approach is widely used to solve a computing problem. We will also use this approach to solve the sequential algorithm computing problem using the python programming. This IPO approach will also help us to learn the introductory Python knowledge. Let’s see the following points and it will give you the clear idea:</p>
+<ul class="simple">
+<li><p>Input part will teach us how to take input for a problem.</p></li>
+<li><p>Process part will teach us to perform any arithmetic operations.</p></li>
+<li><p>Output part will help to display the output on the computer screen.</p></li>
+</ul>
+<p>Let’s try to understand each part of a IPO approach.</p>
+<ol class="simple">
+<li><p><strong>Input</strong> is pre-existing data of the algorithm, which has been provided by an external system. In this notebook, pre-existing data will be variable and external system will be you or reader.</p></li>
+<li><p><strong>Process</strong> is the most important in this IPO approach. In another way, we can say that it is the heart of the algorithm. It takes the input and performs some logical operations based on the goal of the algorithm to transform it to the next output stage. Here, logical operation will be arithmetic operations based on the output of the algorithm.</p></li>
+<li><p><strong>Output</strong> is the result of the algorithm which has been obtained by processing the input.</p></li>
+</ol>
+<p>In a sequential algorithm, operations have been performed sequentially. So, processing occurs only when all input required data are available and output occurs only after appropriate processing has occurred. Let’s see the following example that will give you a clear idea of input, process, and output (IPO) approach of a sequential algorithm:</p>
+<div class="section" id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
+<p><em><strong>Write an algorithm or program that will take numbers from you/user, and show the average of these three number.</strong></em></p>
+</div>
+<div class="section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<p>To solve this algorithm or program, we first have to define the input, process and output. Let’s see the following points to define them for this computing problem:</p>
+<ul>
+<li><p>The goal of this algorithm is to compute the average of three numbers. So, we have to take these three numbers, which will act as <strong>input</strong> of the algorithm.</p></li>
+<li><p>Now, we have to find the process part of the algorithm. To find that we have to think how you will get the average from these three numbers. We have to perform following arithmetic operation to get the output, which will act as <strong>process</strong> part of the algorithm.</p>
+<p>\begin{equation}
+\text{avg} = \frac{\text{num1} + \text{num2} + \text{num3}}{3}
+\end{equation}</p>
+</li>
+<li><p>Finally, we will get the average of these three numbers at the <strong>output</strong> stage from the process part.</p></li>
+</ul>
+<p>From the above explanation we can say that to define the input and process we can ask the following questions:</p>
+<ul class="simple">
+<li><p><em>Input</em>: <strong>What do we need to obtain the output?</strong></p></li>
+<li><p><em>Process</em>: <strong>How will we obtain the output from the input?</strong></p></li>
+</ul>
+<div class="section" id="algorithm">
+<h4>Algorithm<a class="headerlink" href="#algorithm" title="Permalink to this headline">¶</a></h4>
+<p>Let’s see the algorithm and IPO part of this problem by running the following cell:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># This Part is not related to reader. But reader will run this part by select this cell and press &quot;ctrl + enter&quot; to watch the video</span>
+
+<span class="n">hide_me</span>
+
+<span class="n">video</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;avg-flowchart.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">encoded</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">video</span><span class="p">)</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;&lt;video alt=&quot;test&quot; controls&gt;</span>
+<span class="s1">                &lt;source src=&quot;data:video/mp4;base64,</span><span class="si">{0}</span><span class="s1">&quot; type=&quot;video/mp4&quot; /&gt;</span>
+<span class="s1">             &lt;/video&gt;&#39;&#39;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">encoded</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#NBVAL_SKIP</span>
+
+<span class="c1">#</span>
+<span class="c1"># Compute the average</span>
+<span class="c1">#</span>
+
+<span class="c1"># Read the input value from user : 3 numbers</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your number 1: &quot;</span><span class="p">))</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your number 2: &quot;</span><span class="p">))</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your number 3: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Compute the avaerage of the numbers : Processing</span>
+<span class="n">avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span> <span class="o">+</span> <span class="n">num3</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span>
+
+<span class="c1"># Display the result : Output</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The average of the numbers:&quot;</span><span class="p">,</span> <span class="n">avg</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="testing">
+<h4>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h4>
+<p>Testing is an important part of programming. Testing is performed to check whether the program is running expectedly or not. Let’s test the above program using the following test cases:</p>
+<ol class="simple">
+<li><p>Case 1: <strong>Input</strong> = (0, 5, 7) —–&gt; <strong>Output</strong> = 4</p></li>
+<li><p>Case 2: <strong>Input</strong> = (0, -2, 5)—–&gt; <strong>Output</strong> = 1</p></li>
+</ol>
+<p>Input = (1.5,  , ) —–&gt; Error will be shown after taking the first number as input. It will be shown as <strong><code class="docutils literal notranslate"><span class="pre">ValueError:</span> <span class="pre">invalid</span> <span class="pre">literal</span> <span class="pre">for</span> <span class="pre">int()</span> <span class="pre">with</span> <span class="pre">base</span> <span class="pre">10:</span> <span class="pre">'1.5'</span></code></strong>. It will also indicate the line of the program that we are getting this error by showing an arrow in that line. In that line, we take integer as input and which is a whole number. But we are giving input <span class="math notranslate nohighlight">\(1.5\)</span> which is a decimal point float number, not a whole number. That’s why this value error is showing.</p>
+</div>
+<div class="section" id="revised-program">
+<h4>Revised Program<a class="headerlink" href="#revised-program" title="Permalink to this headline">¶</a></h4>
+<p>We can protect ourselves from this <strong><code class="docutils literal notranslate"><span class="pre">&quot;ValueError&quot;</span></code></strong> by building in some protection into the input statements. So, we will take the input as a float number. This will allow us to take both whole, decimal point, and negative numbers. Now let’s see the revised program of this algorithm below:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#NBVAL_SKIP</span>
+
+<span class="c1">#</span>
+<span class="c1"># Compute the average</span>
+<span class="c1">#</span>
+
+<span class="c1"># Read the input value from user : 3 number</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your number 1: &quot;</span><span class="p">))</span>  <span class="c1">#Change occurs</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your number 2: &quot;</span><span class="p">))</span>  <span class="c1">#Change occurs</span>
+<span class="n">num3</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your number 3: &quot;</span><span class="p">))</span>  <span class="c1">#Change occurs</span>
+
+<span class="c1"># Compute the avaerage of the numbers : Processing</span>
+<span class="n">avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span> <span class="o">+</span> <span class="n">num3</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span>
+
+<span class="c1"># Display the result : Output</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The average of the numbers:&quot;</span><span class="p">,</span> <span class="n">avg</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s think another problem as read the three numbers and display these numbers in the output.</p>
+<p><strong>Is the above problem can be solved using the IPO approach?</strong></p>
+<p>Let’s use the technique that we set earlier to obtain the input and process part.</p>
+<p><em>Input</em>: <em>What do we need to obtain the output?</em></p>
+<p>We need three numbers from user to obtain the output. So, these three numbers will act as input.</p>
+<p><em>Process</em>: <em>How will we obtain the output from the input?</em></p>
+<p>Our goal is to display the three numbers that you get from the input. But we do not have to perform any operation from input to get the output. So, this problem does not have any process part.</p>
+<p>The above problem can not be solved using IPO approach as it does not have any process part. But this is a sequential algorithm. So, we have to decide by yourself that it can be solved using the IPO approach or not based on the problem. Let’s take a look at a more practical real-world example of a sequential algorithm that can be solved using the IPO approach.</p>
+</div>
+</div>
+<div class="section" id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
+<p><em><strong>Write an algorithm or program that will read seconds and then displays the equivalent hours, minutes remaining seconds.</strong></em></p>
+</div>
+<div class="section" id="id1">
+<h3>Solution<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Let’s compute the input and process part using the technique that we used earlier for this problem:</p>
+<ul class="simple">
+<li><p>Input: Number of seconds.</p></li>
+<li><p>Process: Arithmetic operations.</p></li>
+<li><p>Output: Equivalent hour, minute and remaining seconds.</p></li>
+</ul>
+<div class="section" id="id2">
+<h4>Algorithm<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>Let’s run the below cell to see the input, process and output of this problem:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># This Part is not related to reader. But reader will run this part by select this cell and press &quot;ctrl + enter&quot; to watch the video</span>
+
+<span class="n">hide_me</span>
+
+<span class="n">video</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;time-flowchart.mp4&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">encoded</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">video</span><span class="p">)</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;&lt;video alt=&quot;test&quot; controls&gt;</span>
+<span class="s1">                &lt;source src=&quot;data:video/mp4;base64,</span><span class="si">{0}</span><span class="s1">&quot; type=&quot;video/mp4&quot; /&gt;</span>
+<span class="s1">             &lt;/video&gt;&#39;&#39;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">encoded</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#NBVAL_SKIP</span>
+
+<span class="c1">#</span>
+<span class="c1"># Time conversion : Seconds to equivalent hours, minutes and remaining seconds</span>
+<span class="c1">#</span>
+
+<span class="c1"># Read the seconds from user : Input</span>
+<span class="n">second</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the time in seconds: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Compute the hours: Processing</span>
+<span class="n">hour</span> <span class="o">=</span> <span class="n">second</span><span class="o">/</span><span class="mi">3600</span>
+<span class="n">second</span> <span class="o">=</span> <span class="n">second</span> <span class="o">-</span> <span class="p">(</span><span class="n">hour</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">)</span>
+
+<span class="c1"># Compute the minutes and remaining seconds: Processing</span>
+<span class="n">minute</span> <span class="o">=</span> <span class="n">second</span><span class="o">/</span><span class="mi">60</span>
+<span class="n">second</span> <span class="o">=</span> <span class="n">second</span> <span class="o">-</span> <span class="p">(</span><span class="n">minute</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Display the result of Hours, Minutes and Seconds : Output</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Equivalent Time:&quot;</span><span class="p">,</span> <span class="n">hour</span> <span class="p">,</span> <span class="s2">&quot;hours&quot;</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="s2">&quot;minutes&quot;</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="s2">&quot;seconds&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Testing<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Let’s test the above program using the following test cases:</p>
+<ol class="simple">
+<li><p>Case 1: <strong>Input</strong> = (3600) —–&gt; <strong>Output</strong> = 1 hours 0 minutes 0 seconds</p></li>
+<li><p>case 2: <strong>Input</strong> = (3620) —–&gt; <strong>Output</strong> = 1.005555 hours 0 minutes 0 seconds, But the output should be 1 hours 0 minutes 20 seconds</p></li>
+<li><p>Case 3: <strong>Input</strong> = (3690) —–&gt; <strong>Output</strong> = 1.025 hours 7.57912e-15 minutes 0 seconds, But the output should be 1 hours 1 minutes 30 seconds</p></li>
+</ol>
+<p>Case 1 and 2 are not giving the expected outcomes. But no error is showing on the screen. As the goal of the program is to convert the seconds into hours, minutes and seconds. So, hour and minute cannot be decimal point float number. Let’s see the following lines of the program:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">hour</span> <span class="o">=</span> <span class="n">second</span><span class="o">/</span><span class="mi">3600</span>
+<span class="n">minute</span> <span class="o">=</span> <span class="n">second</span><span class="o">/</span><span class="mi">60</span>
+</pre></div>
+</div>
+<p>In these two lines, we have not indicated the type of the hour and minute variables. So, the program will take them as a float variable by default from the division. But hour variable will be a whole number, not a decimal point number as remaining second from hour variable will go to calculate the minute. Same thing for the minute variable. So, these two variables (i.e. hour and minute) will be the integer type. We have to indicate it in the above lines of the program.</p>
+<div class="section" id="id4">
+<h4>Revised Program<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#NBVAL_SKIP</span>
+
+<span class="c1">#</span>
+<span class="c1"># Time conversion : Seconds to equivalent hours, minutes and remaining seconds</span>
+<span class="c1">#</span>
+
+<span class="c1"># Read the seconds from user : Input</span>
+<span class="n">second</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the time in seconds: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Compute the hours: Processing</span>
+<span class="n">hour</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">second</span><span class="o">/</span><span class="mi">3600</span><span class="p">)</span>         <span class="c1"># Change occurs</span>
+<span class="n">second</span> <span class="o">=</span> <span class="n">second</span> <span class="o">-</span> <span class="p">(</span><span class="n">hour</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">)</span>
+
+<span class="c1"># Compute the minutes and remaining seconds: Processing</span>
+<span class="n">minute</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">second</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>        <span class="c1"># Change occur</span>
+<span class="n">second</span> <span class="o">=</span> <span class="n">second</span> <span class="o">-</span> <span class="p">(</span><span class="n">minute</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Display the result of Hours, Minutes and Seconds : Output</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Equivalent Time:&quot;</span><span class="p">,</span> <span class="n">hour</span> <span class="p">,</span> <span class="s2">&quot;hours&quot;</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="s2">&quot;minutes&quot;</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="s2">&quot;seconds&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The above two examples give you the clear idea of solving algorithm using the IPO approach of python programming. Let’s try to solve following exercises from the knowledge of above examples. The python programs of the exercises are also given. It will be better if you solve these exercises by hiding the python programs. You can easily hide the program by clicking the first cell of this notebook and press ‘<code class="docutils literal notranslate"><span class="pre">ctrl</span> <span class="pre">+</span> <span class="pre">enter</span></code>’. Finally, check the output from the test cases. If you are not getting expected output, you can check the given program by doing the same thing at the first cell that you did earlier. Try to find out program error by comparing the given program.</p>
+</div>
+</div>
+<div class="section" id="exercise-1">
+<h3>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h3>
+<p><em><strong>Write a program that will calculate total cost of a restaurant bill. The program will read initial cost of the bill. Tax rate is <span class="math notranslate nohighlight">\(10\%\)</span>, and tip is <span class="math notranslate nohighlight">\(5\%\)</span> of the initial cost (without tax). The program displays the output as tax, tip and overall cost of the meal.</strong></em></p>
+<p>Test the program by taking the following inputs:</p>
+<ol class="simple">
+<li><p>Case 1: <strong>Input</strong> = initial cost: 120 —-&gt; <strong>Output</strong> = Tax amount: <span class="math notranslate nohighlight">\(12\)</span>, Tip amount: <span class="math notranslate nohighlight">\(6\)</span>, Overall Cost: <span class="math notranslate nohighlight">\(138\)</span></p></li>
+<li><p>Case 2: <strong>Input</strong> = initial cost: 150.5 —-&gt; <strong>Output</strong> = Tax amount: <span class="math notranslate nohighlight">\(15.05\)</span>, Tip amount: <span class="math notranslate nohighlight">\(7.525\)</span>, Overall Cost: <span class="math notranslate nohighlight">\(173.075\)</span></p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#NBVAL_SKIP</span>
+
+<span class="c1"># Hide this part when you are solving the exercise</span>
+<span class="c1"># Hide Technique: Click the first cell and press &#39;ctrl + enter&#39; or Select the first cell and press &#39;Run&#39; at the top</span>
+
+<span class="c1">#</span>
+<span class="c1"># Restaurant bill : Compute the overall cost, tax and tip amount</span>
+<span class="c1">#</span>
+
+<span class="n">TAX_RATE</span> <span class="o">=</span> <span class="o">.</span><span class="mi">1</span>
+<span class="n">TIP_RATE</span> <span class="o">=</span> <span class="o">.</span><span class="mi">05</span>
+
+<span class="c1"># Read the seconds from user : Input</span>
+<span class="n">initial_cost</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the initial cost: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Compute the tax, tip and total: Processing</span>
+<span class="n">tax</span> <span class="o">=</span> <span class="n">initial_cost</span> <span class="o">*</span> <span class="n">TAX_RATE</span>         
+<span class="n">tip</span> <span class="o">=</span> <span class="n">initial_cost</span> <span class="o">*</span> <span class="n">TIP_RATE</span>
+<span class="n">overall_cost</span> <span class="o">=</span> <span class="n">initial_cost</span> <span class="o">+</span> <span class="n">tax</span> <span class="o">+</span> <span class="n">tip</span>
+
+<span class="c1"># Display the result of tax, tip and overall cost : Output</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tax amount:&quot;</span><span class="p">,</span> <span class="n">tax</span> <span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Tip amount:&quot;</span><span class="p">,</span> <span class="n">tip</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Overall Cost:&quot;</span><span class="p">,</span> <span class="n">overall_cost</span><span class="p">)</span> <span class="c1"># \n will display the output in a new line</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-2">
+<h3>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h3>
+<p><em><strong>Write a program that will take a two digit number and display the sum of its two digits.</strong></em></p>
+<p>Test the program using the following inputs:</p>
+<ol class="simple">
+<li><p>Case 1: <strong>Input</strong> = number: 10 —–&gt; <strong>Output</strong> = Tens digit: 1, Ones digit: 0, Sum: 1</p></li>
+<li><p>Case 2: <strong>Input</strong> = number: 15 —–&gt; <strong>Output</strong> = Tens digit: 1, Ones digit: 5, Sum: 6</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#NBVAL_SKIP</span>
+
+<span class="c1"># Hide this part when you are solving the exercise</span>
+<span class="c1"># Hide Technique: Click the first cell and press &#39;ctrl + enter&#39; or Select the first cell and press &#39;Run&#39; at the top</span>
+
+<span class="c1">#</span>
+<span class="c1"># Adding the digits of a two digit number</span>
+<span class="c1">#</span>
+
+<span class="c1"># Read the number from user : Input</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the number: &quot;</span><span class="p">))</span>
+
+<span class="c1"># Compute the tens, ones and add them: Processing</span>
+<span class="n">tens</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>         
+<span class="n">ones</span> <span class="o">=</span> <span class="n">num</span> <span class="o">-</span> <span class="p">(</span><span class="n">tens</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">add</span> <span class="o">=</span> <span class="n">tens</span> <span class="o">+</span> <span class="n">ones</span>
+
+<span class="c1"># Display the result of Hours, Minutes and Seconds : Output</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tens digit:&quot;</span><span class="p">,</span> <span class="n">tens</span> <span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Ones digit:&quot;</span><span class="p">,</span> <span class="n">ones</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sum: &quot;</span><span class="p">,</span> <span class="n">add</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you have to see the python program to solve the above two exercises then try to solve the below real-world problem and check the result of your program with given test case result. The python program is not given for the below problem.</p>
+</div>
+<div class="section" id="exercise-3">
+<h3>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h3>
+<p><em><strong>Let’s think you are filling an application form for a part-time job. In the application form, you have to fill the height in feet and inches. But you know your height in centimeters. Let’s write a program to convert your height from centimeters to feet and inches.</strong></em></p>
+<p><strong>Hint</strong>: 1 foot = 12 inches and 1 inch = 2.54 centimetres</p>
+<p>Test the program using the following inputs:</p>
+<ol class="simple">
+<li><p>Case 1: <strong>Input</strong> = centimetres: 183 —–&gt; <strong>Output</strong> = Feet: 6, Inches: 0.0472</p></li>
+<li><p>Case 2: <strong>Input</strong> = centimetres: 182 —–&gt; <strong>Output</strong> = Feet: 5, Inches: 11.6535</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>This is an introductory level of python notebook. First, we introduced some fundamental knowledge of python programming as printing a statement using <code class="docutils literal notranslate"><span class="pre">print</span></code> command, familiar with various forms (i.e. string, integer, float) of variables, and how to a take various forms of variables as input from the user using <code class="docutils literal notranslate"><span class="pre">input</span></code> function. Then we familiarized with the sequential algorithm and the IPO approach to solve the algorithm. Each part of IPO approach was also discussed. Finally, we introduced two simple and real-life examples of the sequential algorithm using the IPO approach and solved them using the introductory knowledge of python programming that we learned earlier in this notebook. In those examples, we showed the technique to select the input and process unit, test cases to check the Python program, error from program, and revised program to overcome the error. We also introduced three exercises for practice purpose. The Python programs were also provided for the first two exercises for learning purposes. Various test cases are provided for each exercise to test the output. This notebook will help the user learning the introductory level python programming skill by solving sequential algorithms using the IPO approach.</p>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../IntroductionToDataStructures/introduction-to-data-structures.html" title="previous page">Lists and Dictionaries in Python</a>
+    <a class='right-next' id="next-link" href="introduction-to-python-classes.html" title="next page">Python Classes</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>
