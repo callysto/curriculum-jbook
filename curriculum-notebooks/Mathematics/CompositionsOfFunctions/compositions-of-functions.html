@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,16 +23,24 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Counting triangles" href="../CountingTriangles/counting-triangles.html" />
-    <link rel="prev" title="Instructions before you start" href="../CompareandOrderNumbers/compare-and-order-numbers.html" />
+    <link rel="prev" title="Compare and order numbers" href="../CompareandOrderNumbers/compare-and-order-numbers.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="active">
-      <a href="">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,90 +471,100 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CompositionsOfFunctions/compositions-of-functions.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CompositionsOfFunctions/compositions-of-functions.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/CompositionsOfFunctions/compositions-of-functions.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
-
-<nav id="bd-toc-nav">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compositions-of-univariate-functions">
+   Compositions of Univariate Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#digression-basic-python">
+   Digression: Basic Python
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#imports">
+     Imports
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plotting">
+     Plotting
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#question">
+     Question:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-complicated-examples">
+   More Complicated Examples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-digression">
+     Python Digression
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#back-to-the-math">
+     Back to the Math
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#" class="nav-link">Compositions of Functions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#compositions-of-univariate-functions" class="nav-link">Compositions of Univariate Functions</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#digression-basic-python" class="nav-link">Digression: Basic Python</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#imports" class="nav-link">Imports</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#plotting" class="nav-link">Plotting</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#question" class="nav-link">Question:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#more-complicated-examples" class="nav-link">More Complicated Examples</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#python-digression" class="nav-link">Python Digression</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#back-to-the-math" class="nav-link">Back to the Math</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#exercise" class="nav-link">Exercise</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#operations-of-functions" class="nav-link">Operations of Functions</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#real-life-examples" class="nav-link">Real Life Examples</a>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercise">
+       Exercise
+      </a>
+     </li>
     </ul>
-</nav>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#operations-of-functions">
+   Operations of Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#real-life-examples">
+   Real Life Examples
+  </a>
+ </li>
+</ul>
 
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -413,39 +579,47 @@
 <div class="section" id="compositions-of-univariate-functions">
 <h2>Compositions of Univariate Functions<a class="headerlink" href="#compositions-of-univariate-functions" title="Permalink to this headline">¶</a></h2>
 <p>Compositions of functions sound a lot worse than they are. The most basic way to describe them is as a “function of a function”. As with most mathematical language, that description isn’t particularily enlightening. So, let’s start with an example, an example so simple it risks annoying a pedantic mathematician. Which is how we know that it is an excellent example. Suppose you have two functions <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> defined as follows</p>
-<p>\begin{equation}
-f(x) = x
-\end{equation}</p>
-<p>and
-\begin{equation}
-g(x) = 1
-\end{equation}</p>
-<p>While keeping these simple functions in mind, let’s work our way through a few definitions. A composition of functions defined as</p>
-<p>\begin{equation}
-f \circ g = f[g(x)]
-\end{equation}</p>
-<p>where this is read as <span class="math notranslate nohighlight">\(f\)</span> of <span class="math notranslate nohighlight">\(g\)</span> of <span class="math notranslate nohighlight">\(x\)</span>. This notation is telling us to write <span class="math notranslate nohighlight">\(f(x)\)</span> as a function of <span class="math notranslate nohighlight">\(g(x)\)</span>, so rather than a function of a variable, it’s becoming a function of a function. With the functions above however, this works out to be exactly the same as putting a number into your function, which we see as follows</p>
-<p>\begin{equation}
-f[g(x)] = \underset{\substack{\downarrow \ \text{Inserted g(x) at x}}}{g(x)} = 1
-\end{equation}</p>
-<p>Great, so a composition of functions reduces to the case of inserting a constant in for your variable. But what about if you had more complex functions? Well, consider the functions
-\begin{equation}
-f(x) = x + 5
-\end{equation}</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a2d1b7ed-2cf0-4a3f-bbe9-09a3de1c5ffb">
+<span class="eqno">(1)<a class="headerlink" href="#equation-a2d1b7ed-2cf0-4a3f-bbe9-09a3de1c5ffb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+ f(x) = x
+\end{equation}\]</div>
 <p>and</p>
-<p>\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1bf3f12a-0194-404e-bb76-89784330a1cb">
+<span class="eqno">(2)<a class="headerlink" href="#equation-1bf3f12a-0194-404e-bb76-89784330a1cb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+g(x) = 1
+\end{equation}\]</div>
+<p>While keeping these simple functions in mind, let’s work our way through a few definitions. A composition of functions defined as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-16c48450-de7d-4ad9-8ef8-98e6cdf6590b">
+<span class="eqno">(3)<a class="headerlink" href="#equation-16c48450-de7d-4ad9-8ef8-98e6cdf6590b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+ f \circ g = f[g(x)]
+\end{equation}\]</div>
+<p>where this is read as <span class="math notranslate nohighlight">\(f\)</span> of <span class="math notranslate nohighlight">\(g\)</span> of <span class="math notranslate nohighlight">\(x\)</span>. This notation is telling us to write <span class="math notranslate nohighlight">\(f(x)\)</span> as a function of <span class="math notranslate nohighlight">\(g(x)\)</span>, so rather than a function of a variable, it’s becoming a function of a function. With the functions above however, this works out to be exactly the same as putting a number into your function, which we see as follows</p>
+<div class="amsmath math notranslate nohighlight" id="equation-03ad97cf-949d-494f-99ce-ac91bc02c20f">
+<span class="eqno">(4)<a class="headerlink" href="#equation-03ad97cf-949d-494f-99ce-ac91bc02c20f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f[g(x)] = \underset{\substack{\downarrow \\ \text{Inserted g(x) at x}}}{g(x)} = 1
+\end{equation}\]</div>
+<p>Great, so a composition of functions reduces to the case of inserting a constant in for your variable. But what about if you had more complex functions? Well, consider the functions</p>
+<div class="amsmath math notranslate nohighlight" id="equation-224f06f2-0c01-47b9-9980-b2288467fe04">
+<span class="eqno">(5)<a class="headerlink" href="#equation-224f06f2-0c01-47b9-9980-b2288467fe04" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+ f(x) = x + 5
+\end{equation}\]</div>
+<p>and</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1dc95dad-3c36-4d17-b34b-8816070c227a">
+<span class="eqno">(6)<a class="headerlink" href="#equation-1dc95dad-3c36-4d17-b34b-8816070c227a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g(x) = x^2 -4
-\end{equation}</p>
+\end{equation}\]</div>
 <p>How will we write <span class="math notranslate nohighlight">\(f \circ g\)</span> with these functions? It’s actually just as simple as putting numbers in for the variables like we saw above, except this time, we’ll put the definitions of functions in for each variable.</p>
-<p>\begin{equation}
-f[g(x)] =\underset{\substack{\downarrow \ \text{Inserted g(x) at x}}}{g(x)} +
-\overset{\substack{\text{Constants just hang out} \ \uparrow} }{5} =
+<div class="amsmath math notranslate nohighlight" id="equation-445d5242-61bb-4bf8-9760-e5ae4c9c6aff">
+<span class="eqno">(7)<a class="headerlink" href="#equation-445d5242-61bb-4bf8-9760-e5ae4c9c6aff" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f[g(x)] =\underset{\substack{\downarrow \\ \text{Inserted g(x) at x}}}{g(x)} + 
+\overset{\substack{\text{Constants just hang out} \\ \uparrow} }{5} = 
 \underbrace{x^2 - 4}_\text{Insert definition of g(x) for x} + 5 = x^2 + 1
-\end{equation}</p>
+\end{equation}\]</div>
 <p>or going the other direction</p>
-<p>\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5c46173c-11d6-4edd-b91e-a562a050496f">
+<span class="eqno">(8)<a class="headerlink" href="#equation-5c46173c-11d6-4edd-b91e-a562a050496f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
-\end{equation}</p>
+\end{equation}\]</div>
 <p>where this applies to any composition of functions. To put it simply, if you have a composition of functions all you need to do is place the “inner” function everywhere you see the variable in the “outer” function exactly as you’d put a number into the formula.</p>
 <p>Python provides us with some great tools in order to graph these functions easily. If you have some knowledge of Python you can easily skip this explanation and move right on to the next cell. If not, we’re going to take a moment to understand what the code you’re about to see does. First up, let’s go over the first bit of code you’re going to see.</p>
 </div>
@@ -456,16 +630,16 @@ g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
 <p>At the beginning of most Python programs you’re more than likely to see a few (or many) <code class="docutils literal notranslate"><span class="pre">import</span></code> statements. The purpose of these is to bring in other pieces of code, that either you or someone else have written, in order to keep your current program more manageable. For example, the set of import statements we’re going to use to plot our functions look like this. Select the code cell below then press the <code class="docutils literal notranslate"><span class="pre">▶Run</span></code> button in the toolbar.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#import matplotlib</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import matplotlib</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Libraries succesfully imported.&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Libraries succesfully imported.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Libraries succesfully imported.
 </pre></div>
 </div>
 </div>
@@ -483,13 +657,13 @@ g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
 <p>After required modules have been imported into our script, we’re ready to get started creating graphs. First up, we need to define a number of points which to plot. It is an unfortunate fact that our computer doesn’t know that any variable <span class="math notranslate nohighlight">\(x\)</span> is continuous, so we have to create some discrete data with which to plot our functions. We can do that in Python using numpy as follows (Click the next cell and press control and enter at the same time on your keyboard.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x = &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>x =  [-3.  -1.5  0.   1.5  3. ]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x =  [-3.  -1.5  0.   1.5  3. ]
 </pre></div>
 </div>
 </div>
@@ -497,13 +671,13 @@ g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
 <p>This creates a <strong>list</strong> of numbers called <code class="docutils literal notranslate"><span class="pre">x</span></code> which consists of 5 numbers evenly spaced in the range <span class="math notranslate nohighlight">\([-3,3]\)</span> that we’ll use to plot our functions. The <code class="docutils literal notranslate"><span class="pre">print</span></code> function is a standard Python function that simply displays our variables to the screen as either numbers or characters. In order to plot our functions, we type the following. Note that we’ve increased the number of points in <code class="docutils literal notranslate"><span class="pre">x</span></code> to create a smoother plot. Feel free to change the number <code class="docutils literal notranslate"><span class="pre">500</span></code> to something smaller and observe how the plot changes.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$g(x) = x^2 -4$&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f0fdbb0bc90&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f30943c4810&gt;]
 </pre></div>
 </div>
 <img alt="../../../_images/compositions-of-functions_6_1.png" src="../../../_images/compositions-of-functions_6_1.png" />
@@ -513,7 +687,7 @@ g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
 <p>Now, that graph is missing a lot of the important things like axis labels and a legend. We can add those like this</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$g(x) = x^2 -4$&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$g(x) = x^2 -4$&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$x$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;$f(x)$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
@@ -529,7 +703,7 @@ g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
 <p>where the <code class="docutils literal notranslate"><span class="pre">plt.</span></code> calls are still calling functions from <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> however this time we’re creating x-axis labels with <code class="docutils literal notranslate"><span class="pre">plt.xlabel</span></code> and y-axis labels with <code class="docutils literal notranslate"><span class="pre">plt.ylabel</span></code>. Finally <code class="docutils literal notranslate"><span class="pre">plt.legend()</span></code> creates the legend for our plot and <code class="docutils literal notranslate"><span class="pre">plt.show()</span></code> displays the plot of our functions. We can also do this all in one cell, rather than breaking it up, as shown below, as well as adding an additional function to plot.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$g(x) = x^2 -4$&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="mi">5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span> <span class="s1">&#39;$f(x) = x + 5$&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$x$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
@@ -553,7 +727,7 @@ g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Anything in a line of code after a pound sign isn&#39;t run, and is known as a comment.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Anything in a line of code after a pound sign isn&#39;t run, and is known as a comment.</span>
 
 <span class="c1"># First let&#39;s plot our original functions again</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$g(x) = x^2 -4$&#39;</span><span class="p">)</span>
@@ -580,30 +754,35 @@ g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
 </div>
 <div class="section" id="more-complicated-examples">
 <h2>More Complicated Examples<a class="headerlink" href="#more-complicated-examples" title="Permalink to this headline">¶</a></h2>
-<p>This can also be applied to more complicated compositions of functions. For example, can you have a function of function functions? Absolutely! Like anything in math, you can do whatever you want provided you have the patience to work through it. But just as an example, what if we had three functions, say <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(g(x)\)</span> and <span class="math notranslate nohighlight">\(h(x)\)</span> which are defined as follows
-\begin{equation}
-f(x) = 6\sqrt{x^2 + 1}
-\end{equation}</p>
-<p>\begin{equation}
+<p>This can also be applied to more complicated compositions of functions. For example, can you have a function of function functions? Absolutely! Like anything in math, you can do whatever you want provided you have the patience to work through it. But just as an example, what if we had three functions, say <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(g(x)\)</span> and <span class="math notranslate nohighlight">\(h(x)\)</span> which are defined as follows</p>
+<div class="amsmath math notranslate nohighlight" id="equation-481af8ef-2542-48d6-9aa4-b8e80681ea43">
+<span class="eqno">(9)<a class="headerlink" href="#equation-481af8ef-2542-48d6-9aa4-b8e80681ea43" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+ f(x) = 6\sqrt{x^2 + 1}
+ \end{equation}\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-4088f171-4650-4463-bde2-47b2e63f9fe9">
+<span class="eqno">(10)<a class="headerlink" href="#equation-4088f171-4650-4463-bde2-47b2e63f9fe9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g(x) = 3\sin(\pi x - a)
-\end{equation}</p>
-<p>\begin{equation}
+\end{equation}\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-913fc7f8-9556-4c43-911c-b5742b3b2ede">
+<span class="eqno">(11)<a class="headerlink" href="#equation-913fc7f8-9556-4c43-911c-b5742b3b2ede" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 h(x) = x^3 + x^2
-\end{equation}</p>
+\end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(a\)</span> is an arbitrary numerical constant. How would we go about writing <span class="math notranslate nohighlight">\(f \circ g \circ h\)</span> (<span class="math notranslate nohighlight">\(f\)</span> of <span class="math notranslate nohighlight">\(g\)</span> of <span class="math notranslate nohighlight">\(h\)</span>)? It certainly looks intimidating, but I promise you it looks a lot worse than it actually is. Let’s follow our typical PEDMAS rules, in this case, we start with the only thing we have: parenthesis! And, because we have two sets, we start with the inner most set. In this case, let’s solve the smaller problem of <span class="math notranslate nohighlight">\(g[h(x)]\)</span> where we’ll do the same as above, and simply shove <span class="math notranslate nohighlight">\(h(x)\)</span> anywhere we see an <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\(g(x)\)</span>. This is outlined below, however we’ve dropped some of the explaination with the algebra, but, we’re doing absolutely nothing different from what we saw in the previous examples.</p>
-<p>\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-308169d7-bab6-4a01-9fcf-3a8fb670a003">
+<span class="eqno">(12)<a class="headerlink" href="#equation-308169d7-bab6-4a01-9fcf-3a8fb670a003" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g[h(x)] = \sin(\pi h(x) - a) = \sin(\pi(x^3 + x^2) - a)
-\end{equation}</p>
+\end{equation}\]</div>
 <p>where we notice that the constant term <span class="math notranslate nohighlight">\(a\)</span> simply comes along for the ride. We’re half way done! Now that we have an expression for <span class="math notranslate nohighlight">\(g[h(x)]\)</span>, we can now easily find our complete expression of <span class="math notranslate nohighlight">\(f[g[h(x)]]\)</span> in the <em>exact</em> same way we have been doing.</p>
-<p>\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-eb886b6d-8c59-4bae-9a18-8e6aac2cc0e1">
+<span class="eqno">(13)<a class="headerlink" href="#equation-eb886b6d-8c59-4bae-9a18-8e6aac2cc0e1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f\circ g \circ\ h= f[g[h(x)]] = \sqrt{g^2[h(x)] + 1} = 6\sqrt{\sin^2[\pi (x^3 + x^2) - a] + 1}
-\end{equation}</p>
+\end{equation}\]</div>
 <p>Where that’s a pretty ugly function, but the process of coming to it was not nearly as horrible as that expression looks.</p>
 <p>Where we just have to remember our one rule for compositions of univariate functions: shove the inner function anywhere you see the variable in the outer function, exactly as you would shove a number into a formula, and follow PEDMAS rules.</p>
 <p>Let’s take a look at how these functions and their compositions look graphically</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s start by taking a look at our basic functions</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s start by taking a look at our basic functions</span>
 
 <span class="c1"># here np.sqrt is the square root function. </span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">6</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$f(x) = 6\sqrt{x^2+1}$&#39;</span><span class="p">)</span>
@@ -625,20 +804,21 @@ f\circ g \circ\ h= f[g[h(x)]] = \sqrt{g^2[h(x)] + 1} = 6\sqrt{\sin^2[\pi (x^3 + 
 <div class="section" id="python-digression">
 <h3>Python Digression<a class="headerlink" href="#python-digression" title="Permalink to this headline">¶</a></h3>
 <p>In order to define a function in Python we use a key word known as <code class="docutils literal notranslate"><span class="pre">def</span></code>, which for us stands for “define a function”. Let’s work through the steps we would go through in order to define the function</p>
-<p>\begin{equation}
-f(x) = 6\sqrt{x^2 + 1}
-\end{equation}</p>
+<div class="amsmath math notranslate nohighlight" id="equation-529f423b-6071-4789-8da7-1b56f67a1ad6">
+<span class="eqno">(14)<a class="headerlink" href="#equation-529f423b-6071-4789-8da7-1b56f67a1ad6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f(x) = 6\sqrt{x^2 + 1} 
+\end{equation}\]</div>
 <p>in Python. We can do this using the following snippet of code</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> 
     <span class="k">return</span> <span class="mi">6</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;f(12) =&quot;</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>f(12) = 72.24956747275377
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>f(12) = 72.24956747275377
 </pre></div>
 </div>
 </div>
@@ -646,7 +826,7 @@ f(x) = 6\sqrt{x^2 + 1}
 <p>where here we’ve used the Python keyword <code class="docutils literal notranslate"><span class="pre">def</span></code> and given the function we’re defining a name “<code class="docutils literal notranslate"><span class="pre">f</span></code>”. We’ve also told Python that our function named <code class="docutils literal notranslate"><span class="pre">f</span></code> takes one variable as input which we’ve called “<code class="docutils literal notranslate"><span class="pre">x</span></code>”. We also have used keyword <code class="docutils literal notranslate"><span class="pre">return</span></code>, which for us can be though of as an equals sign: we pass a number in to <code class="docutils literal notranslate"><span class="pre">f</span></code> and the function will return what <code class="docutils literal notranslate"><span class="pre">f</span></code> is equal to at that number. Another important thing to notice is that <code class="docutils literal notranslate"><span class="pre">return</span></code> is indented relative to <code class="docutils literal notranslate"><span class="pre">def</span></code>. This is how Python knows that <code class="docutils literal notranslate"><span class="pre">return</span></code> and the statement after are part of the function. Every time you write a function, any code inside it will have to be consistently indented. The choice of function and variable names are completely arbitrary. A function defined like</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type</span><span class="p">(</span><span class="n">A_Really_Long_Variable_Name</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type</span><span class="p">(</span><span class="n">A_Really_Long_Variable_Name</span><span class="p">):</span>
     <span class="k">return</span> <span class="mi">6</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">A_Really_Long_Variable_Name</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type(12) =&quot;</span> <span class="p">,</span> 
@@ -655,7 +835,7 @@ f(x) = 6\sqrt{x^2 + 1}
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type(12) = 72.24956747275377
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type(12) = 72.24956747275377
 </pre></div>
 </div>
 </div>
@@ -664,7 +844,7 @@ f(x) = 6\sqrt{x^2 + 1}
 <p>Another important fact about functions is that the value we pass this function need not be named <code class="docutils literal notranslate"><span class="pre">x</span></code>. We can pass it a number we’ve named <code class="docutils literal notranslate"><span class="pre">NickNackPattyWack</span></code> if we wanted to, it will behave the same. Shown explicitly below with a simple example where the functions take a value as input, and return that value divided by ten.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># note: you must always define a function before you use it.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># note: you must always define a function before you use it.</span>
 
 <span class="c1"># Check out how this function is written differently but behaves the same.</span>
 <span class="c1"># Also pay attention to the consistent indentation within the function</span>
@@ -690,7 +870,7 @@ f(x) = 6\sqrt{x^2 + 1}
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>The results are below
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The results are below
 f( 4 ) = 0.4
 f( 4 ) = 0.4
 A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type( 4 ) = 0.4
@@ -704,7 +884,7 @@ A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type( 4 ) = 0.4
 <p>Now that we’ve gone over defining functions, let’s define the functions we’ve specified earlier in this notebook.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="mi">6</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># Note here we&#39;ve given our function an extra argument &#39;a&#39;</span>
@@ -723,7 +903,7 @@ A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type( 4 ) = 0.4
 <p>Great! Let’s see if these still look the same if we plot them before moving on to seeing how their compositions look</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check out how convenient it is to not type our the expression every time!</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check out how convenient it is to not type our the expression every time!</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;$f(x) = 6\sqrt{x^2+1}$&#39;</span><span class="p">)</span>
 
 <span class="c1"># Also note that we&#39;re setting the value of &#39;a&#39; equal to 1 for this plot. </span>
@@ -749,13 +929,13 @@ A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type( 4 ) = 0.4
 <p>Now that we can make graphs in a more laz… efficient way, let’s see what the compositions of these functions look like graphically. There’s a handy feature about compositions of functions that behave the same way mathematically in Python as they would if you were to solve the composition by hand. For example, with the Python functions we have defined above, all we need to do to find <span class="math notranslate nohighlight">\(f[h(x)]\)</span> where <span class="math notranslate nohighlight">\(x=1\)</span> for example is</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;f[h(x)] =&quot;</span><span class="p">,</span><span class="n">f</span><span class="p">(</span><span class="n">h</span><span class="p">(</span><span class="n">number</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>f[h(x)] = 13.416407864998739
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>f[h(x)] = 13.416407864998739
 </pre></div>
 </div>
 </div>
@@ -763,7 +943,7 @@ A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type( 4 ) = 0.4
 <p>Where this follows traditional PEDMAS like rules. Essentially the value of <span class="math notranslate nohighlight">\(h(x)\)</span> gets passed in as the variable to <span class="math notranslate nohighlight">\(f(x)\)</span> and then it evaluates that new expression at <code class="docutils literal notranslate"><span class="pre">Number</span> <span class="pre">=</span> <span class="pre">1</span></code>. This evaluates to the same answer that you would get should you have done the algebra yourself. Let’s take a look at how these compositions of functions look like. However we have decreased the range of the function to show from [-3,3] to [-1.5,1.5].</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Look how much easier this is than typing the functions out every time!</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Look how much easier this is than typing the functions out every time!</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;$g[h(x),1]= \sin(\pi(x^3 + x^2) - a)$&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$x$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Value of Functions of $x$&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
@@ -781,7 +961,7 @@ A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type( 4 ) = 0.4
 <p>That function is beginning to look pretty complicated, which is unsurprising considering the non-linearity of the functions we have chosen to combine. However, look how simple that was to plot in Python. Rather than having to solve the composition of functions ourselves, we told Python, we took advantage of Python functions and let the computer to do it for us! Convenient! Let’s take a look at how these compositions of functions looking graphically.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$g[h(x),1]$&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$g[h(x),1]$&#39;</span><span class="p">)</span>
 
 <span class="c1"># We don&#39;t need to explicitly state &#39;a=1&#39;, we can put the value in the correct argument location </span>
 
@@ -822,39 +1002,45 @@ A_Really_Bad_Name_For_A_Function_That_Takes_Forever_To_Type( 4 ) = 0.4
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="operations-of-functions">
-<h1>Operations of Functions<a class="headerlink" href="#operations-of-functions" title="Permalink to this headline">¶</a></h1>
+<h2>Operations of Functions<a class="headerlink" href="#operations-of-functions" title="Permalink to this headline">¶</a></h2>
 <p>Operations of functions, for practical purposes, mostly a mathematical short hand. It’s easier to see and avoid your mistakes by writing as little possible, so operations of functions are simply a small abstraction which prevents you from having to write as many things down, and reducing the chance of making a silly mistake.</p>
 <p>Suppose you want to add two functions together, with as little writing as possible. Well, let’s introduce the notation of function operations! Suppose we have two functions</p>
-<p>\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-46368951-208c-400d-adb3-a336d5e7e0b6">
+<span class="eqno">(15)<a class="headerlink" href="#equation-46368951-208c-400d-adb3-a336d5e7e0b6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(x) = x^2
-\end{equation}</p>
+\end{equation}\]</div>
 <p>and</p>
-<p>\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-23e19cf9-7b14-4afc-b941-722067ae483b">
+<span class="eqno">(16)<a class="headerlink" href="#equation-23e19cf9-7b14-4afc-b941-722067ae483b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g(x) = 2x + 10
-\end{equation}</p>
+\end{equation}\]</div>
 <p>How would we add those together? Certainly we <em>could</em> write</p>
-<p>\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3a63ec54-2fa3-44f7-99e5-906753c5a109">
+<span class="eqno">(17)<a class="headerlink" href="#equation-3a63ec54-2fa3-44f7-99e5-906753c5a109" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(x) + g(x) = x^2 + 2x + 10
-\end{equation}</p>
+\end{equation}\]</div>
 <p>but what if those functions were gigantic? In this case we have the following short-hand notation:</p>
-<p>\begin{equation}
-(f + g)(x) = f(x) + g(x) = x^2 + 2x + 10
-\end{equation}</p>
-<p>similarly for subtraction:
-\begin{equation}
-(f - g)(x) = f(x) - g(x) = x^2 -2x - 10
-\end{equation}</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e5b0592a-843f-463f-a85c-8aea4d915c77">
+<span class="eqno">(18)<a class="headerlink" href="#equation-e5b0592a-843f-463f-a85c-8aea4d915c77" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+(f + g)(x) = f(x) + g(x) = x^2 + 2x + 10 
+\end{equation}\]</div>
+<p>similarly for subtraction:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-fccf46b7-ccb3-4f4c-af2c-54042962f083">
+<span class="eqno">(19)<a class="headerlink" href="#equation-fccf46b7-ccb3-4f4c-af2c-54042962f083" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+(f - g)(x) = f(x) - g(x) = x^2 -2x - 10 
+\end{equation}\]</div>
 <p>I know what you’re thinking: addition and subtraction are great, but I’m a bit of a mathematical sauvant, and I would also like to multiply and divide functions. We’ll I’ve got news for you kiddo: we’ve got a short-hand for that too.</p>
-<p>Multiplication:
-\begin{equation}
+<p>Multiplication:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-5e1d2d37-e815-4da7-9600-fa38fd9a7fd5">
+<span class="eqno">(20)<a class="headerlink" href="#equation-5e1d2d37-e815-4da7-9600-fa38fd9a7fd5" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 (f \times g)(x) = f(x)g(x) = x^2(2x + 10)
-\end{equation}</p>
-<p>Division:
-\begin{equation}
+\end{equation}\]</div>
+<p>Division:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-305b5d06-b423-458d-b6e5-085b212e68c1">
+<span class="eqno">(21)<a class="headerlink" href="#equation-305b5d06-b423-458d-b6e5-085b212e68c1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)} = \frac{x^2}{2x + 10}
-\end{equation}</p>
+\end{equation}\]</div>
 <p>This shorthand behaves exactly like regular math, but you “map” your variable back onto the function afterwards, certainly you could even stop writing the variable completely. Of course, a natural question now arises: how is this useful? Suppose you have three functions</p>
 <p>\begin{aligned}
 f(x) = &amp; x^2 \sin^2(x) + x^2 \
@@ -864,7 +1050,7 @@ h(x) = &amp; x^2\cos^2 + x^2
 <p>First, let’s define them in Python so we can observe how these functions behave</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mf">2.</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mf">2.</span> <span class="o">+</span> <span class="mf">1.</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -890,9 +1076,10 @@ h(x) = &amp; x^2\cos^2 + x^2
 </div>
 </div>
 <p>Where those functions seem to be pretty well behaved. However, what if we wanted to find an expression for</p>
-<p>\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b29b3a48-a146-4723-b937-7b084a428f2e">
+<span class="eqno">(22)<a class="headerlink" href="#equation-b29b3a48-a146-4723-b937-7b084a428f2e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 y=\frac{f(x)g(x) + h(x)g(x)}{g(x) \left([f(x) + 1]^2 + [h(x) +1]^2 - f^2(x) - h^2(x) - 2\right)^2}
-\end{equation}</p>
+\end{equation}\]</div>
 <p>where that looks pretty intimidating, I certainly wouldn’t want to put the definitions of my functions into the expression for <span class="math notranslate nohighlight">\(y\)</span>. But, let’s use operations of functions to see if we can simplify that expression before we evaluate it.</p>
 <p>\begin{aligned}
 &amp;\text{Factor the numerator} \
@@ -914,7 +1101,7 @@ y&amp;= \frac{1}{12x^2}
 <p>While we still had to do a little algebra, by using operations of functions we saved ourselves a considerable amount of time working through that simplification, and in fact found that our solution didn’t depend on <span class="math notranslate nohighlight">\(g(x)\)</span> at all! Although that looks all too convenient, let’s test if this lines up using Python to double check our expression. First, let’s define a helper function to handle that nasty composition of functions.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">comp</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">comp</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">numerator</span> <span class="o">=</span> <span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
     <span class="n">denominator</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mf">1.</span><span class="p">)</span><span class="o">**</span><span class="mf">2.</span> <span class="o">+</span> <span class="p">(</span><span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mf">1.</span> <span class="p">)</span><span class="o">**</span><span class="mf">2.</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mf">2.</span> <span class="o">-</span> <span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mf">2.</span> <span class="o">-</span> <span class="mf">2.</span>
     <span class="n">denominator</span> <span class="o">=</span> <span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">denominator</span><span class="o">**</span><span class="mf">2.</span>
@@ -940,7 +1127,7 @@ y&amp;= \frac{1}{12x^2}
 <p>Where that looks pretty exact! But, if Python is happy to use our unsimplified functions, why bother with all that algebra in the first place? Well, let’s take a look at how long it takes to make that calculation using each function. Run the cell below to time how long it takes each function to calculate a number. Note this cell takes some time to run.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the time library</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the time library</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
 <span class="c1"># create empty lists we&#39;ll use for plotting</span>
@@ -977,7 +1164,7 @@ y&amp;= \frac{1}{12x^2}
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Number of Points Calculated&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Number of Points Calculated&#39;)
 </pre></div>
 </div>
 <img alt="../../../_images/compositions-of-functions_37_1.png" src="../../../_images/compositions-of-functions_37_1.png" />
@@ -986,11 +1173,11 @@ y&amp;= \frac{1}{12x^2}
 <p>Where we see that the unsimplified function is about <em>fifty times</em> slower than our simplified version. This is very important in many computations because you don’t want to spend too long waiting for an answer. So even though your computer will calculate the value of a composition of functions, knowing how to simplify those functions by hand is still incredibly important.</p>
 </div>
 <div class="section" id="conclusion">
-<h1>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h1>
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
 <p>In summary, operations of functions come down to making a substitution: rather than manipulating the variables individually, we manipulate the entire function first to see if we can make things easier on ourselves. We can also use those compositions of functions to visualize them well in Python and observe their complex behaviour. While a lot of the time they look complicated, the process deriving the composition of functions is not very difficult.</p>
 </div>
 <div class="section" id="real-life-examples">
-<h1>Real Life Examples<a class="headerlink" href="#real-life-examples" title="Permalink to this headline">¶</a></h1>
+<h2>Real Life Examples<a class="headerlink" href="#real-life-examples" title="Permalink to this headline">¶</a></h2>
 <p>Compositions of functions are used everyday in physics and engineering. Have you ever made a substitution in your analysis? Well, then you’ve been using compositions of functions! Let’s work through an example. For example, let’s say we wanted to calculate the kinetic energy of an object undergoing uniform circular motion. I state without proof that the formula for kinetic energy is</p>
 <p><span class="math notranslate nohighlight">\(T(v) = \frac{1}{2} m v^2.\)</span></p>
 <p>Where <span class="math notranslate nohighlight">\(T\)</span> is the kinetic energy, <span class="math notranslate nohighlight">\(v\)</span> is the <em>velocity</em> of the object, and <span class="math notranslate nohighlight">\(m\)</span> is its mass. For circular motion the formula for velocity is</p>
@@ -1000,7 +1187,27 @@ y&amp;= \frac{1}{12x^2}
 <p>Essentially, if you ever hear the phrase “make a substitution” you should be thinking “composition of functions”.</p>
 <p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
 </div>
+</div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/CompositionsOfFunctions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -1010,7 +1217,7 @@ y&amp;= \frac{1}{12x^2}
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../CompareandOrderNumbers/compare-and-order-numbers.html" title="previous page">Instructions before you start</a>
+    <a class='left-prev' id="prev-link" href="../CompareandOrderNumbers/compare-and-order-numbers.html" title="previous page">Compare and order numbers</a>
     <a class='right-next' id="next-link" href="../CountingTriangles/counting-triangles.html" title="next page">Counting triangles</a>
 
     </div>

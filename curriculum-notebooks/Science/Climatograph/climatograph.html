@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Concentration and pH" href="../ConcentrationAndPH/concentration-and-ph.html" />
@@ -65,128 +73,213 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="active">
-    <a href="../Sciences.html">Sciences Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../BalancingChemicalEquations/balancing-chemical-equations.html">Chemical Equations: Writing and Balancing</a>
-    </li>
-    <li class="">
-      <a href="../ChemicalNomenclature/chemical-nomenclature.html">Chemical Nomenclature</a>
-    </li>
-    <li class="">
-      <a href="../ClassifyingChemicalReactions/classifying-chemical-reactions.html">Classifying Chemical Equations</a>
-    </li>
-    <li class="">
-      <a href="../ClimateChange/climate-change.html">Climate Change</a>
-    </li>
-    <li class="active">
-      <a href="">Climatograph</a>
-    </li>
-    <li class="">
-      <a href="../ConcentrationAndPH/concentration-and-ph.html">Concentration and pH</a>
-    </li>
-    <li class="">
-      <a href="../ElectricalConductivity/electrical-conductivity.html">Electrical Conductivity</a>
-    </li>
-    <li class="">
-      <a href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">Electricity Consumption Monitoring</a>
-    </li>
-    <li class="">
-      <a href="../ExploringSolarSystem/exploring-the-solar-system.html">Exploring the Solar System</a>
-    </li>
-    <li class="">
-      <a href="../HeatAndTemperature/heat-and-temperature.html">Heat and Temperature</a>
-    </li>
-    <li class="">
-      <a href="../LightOpticalSystems/light-optical-systems.html">Light and Optics</a>
-    </li>
-    <li class="">
-      <a href="../LightTransmission/transmission-of-light.html">Transmission of Light</a>
-    </li>
-    <li class="">
-      <a href="../MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">Methods used in Scientific Study of the Earth</a>
-    </li>
-    <li class="">
-      <a href="../NatureOfThermalEnergy/nature-of-thermal-energy.html">The Nature of Thermal Energy</a>
-    </li>
-    <li class="">
-      <a href="../NewtonsFirstLaw/newtons-first-law.html">Newton’s First Law</a>
-    </li>
-    <li class="">
-      <a href="../NewtonsSecondLaw/newtons-second-law.html">Newton’s Second Law</a>
-    </li>
-    <li class="">
-      <a href="../NewtonsThirdLaw/newtons-third-law.html">Newton’s Third Law</a>
-    </li>
-    <li class="">
-      <a href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">Half life calculations</a>
-    </li>
-    <li class="">
-      <a href="../NuclearDecay/nuclear-decay.html">Nuclear Decay - Half Life</a>
-    </li>
-    <li class="">
-      <a href="../ProjectileMotion/projectile-motion.html">Projectile Motion</a>
-    </li>
-    <li class="">
-      <a href="../RadiationAnimations/radiation-animations.html">Radiation: Alpha, Beta, and Gamma</a>
-    </li>
-    <li class="">
-      <a href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">Reflection of Light by Plane and Spherical Mirrors</a>
-    </li>
-    <li class="">
-      <a href="../ScienceLabReportTemplate/science-lab-report-template.html">Science Lab Report Template</a>
-    </li>
-    <li class="">
-      <a href="../SourcesOfEnergy/resources-and-recycling.html">Exploring Sources of Energy</a>
-    </li>
-    <li class="">
-      <a href="../SpecificAndLatentHeat/specific-and-latent-heat.html">Specific and Latent Heat</a>
-    </li>
-    <li class="">
-      <a href="../StaticAndKineticFriction/static-and-kinetic-friction.html">Static and Kinetic Friction</a>
-    </li>
-    <li class="">
-      <a href="../StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">Stoichiometry and Limiting Reactants</a>
-    </li>
-    <li class="">
-      <a href="../ThermalExpansion/thermal-expansion.html">Thermal Linear Expansion</a>
-    </li>
-    <li class="">
-      <a href="../UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">Uniform Motion and Uniformly Accelerated Motion</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Sciences.html">
+   Sciences Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BalancingChemicalEquations/balancing-chemical-equations.html">
+     Chemical Equations: Writing and Balancing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ChemicalNomenclature/chemical-nomenclature.html">
+     Chemical Nomenclature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClassifyingChemicalReactions/classifying-chemical-reactions.html">
+     Classifying Chemical Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClimateChange/climate-change.html">
+     Climate Change
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Climatograph
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html">
+     Concentration and pH
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
+     Acids and Bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricalConductivity/electrical-conductivity.html">
+     Electrical Conductivity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">
+     Electricity Consumption Monitoring
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ExploringSolarSystem/exploring-the-solar-system.html">
+     Exploring the Solar System
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HeatAndTemperature/heat-and-temperature.html">
+     Heat and Temperature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LightOpticalSystems/light-optical-systems.html">
+     Light and Optics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LightTransmission/transmission-of-light.html">
+     Transmission of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">
+     Methods used in Scientific Study of the Earth
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NatureOfThermalEnergy/nature-of-thermal-energy.html">
+     The Nature of Thermal Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsFirstLaw/newtons-first-law.html">
+     Newton’s First Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsSecondLaw/newtons-second-law.html">
+     Newton’s Second Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsThirdLaw/newtons-third-law.html">
+     Newton’s Third Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">
+     Half life calculations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NuclearDecay/nuclear-decay.html">
+     Nuclear Decay - Half Life
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProjectileMotion/projectile-motion.html">
+     Projectile Motion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RadiationAnimations/radiation-animations.html">
+     Nuclear Radiation: Alpha, Beta, and Gamma
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">
+     Reflection of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ScienceLabReportTemplate/science-lab-report-template.html">
+     Science Lab Report Template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SourcesOfEnergy/resources-and-recycling.html">
+     Sources of Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SpecificAndLatentHeat/specific-and-latent-heat.html">
+     Specific and Latent Heat
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StaticAndKineticFriction/static-and-kinetic-friction.html">
+     Static and Kinetic Friction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">
+     Stoichiometry and Limiting Reactants
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ThermalExpansion/thermal-expansion.html">
+     Thermal Linear Expansion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">
+     Uniform Motion and Uniformly Accelerated Motion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -258,48 +351,56 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/Climatograph/climatograph.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/Climatograph/climatograph.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Science/Climatograph/climatograph.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graph">
+   Graph
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#climateograph-for-a-single-year">
+     Climateograph for a Single Year
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#animated-climatograph">
+     Animated Climatograph
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#data" class="nav-link">Data</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#graph" class="nav-link">Graph</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#climateograph-for-a-single-year" class="nav-link">Climateograph for a Single Year</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#animated-climatograph" class="nav-link">Animated Climatograph</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -316,18 +417,18 @@
 <p>Select the next cell and click the <code class="docutils literal notranslate"><span class="pre">▶Run</span></code> button to import the code libraries that we will use.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install geopy
-import pandas as pd
-import plotly.graph_objs as go
-import numpy as np
-from geopy.geocoders import Nominatim
-geolocator = Nominatim(user_agent=&#39;Callysto Climatograph&#39;)
-print(&#39;Libraries successfully imported.&#39;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install geopy
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">geopy.geocoders</span> <span class="k">import</span> <span class="n">Nominatim</span>
+<span class="n">geolocator</span> <span class="o">=</span> <span class="n">Nominatim</span><span class="p">(</span><span class="n">user_agent</span><span class="o">=</span><span class="s1">&#39;Callysto Climatograph&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Libraries successfully imported.&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: geopy in /home/mikel/anaconda3/lib/python3.7/site-packages (2.0.0)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: geopy in /home/mikel/anaconda3/lib/python3.7/site-packages (2.0.0)
 Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /home/mikel/anaconda3/lib/python3.7/site-packages (from geopy) (1.50)
 Libraries successfully imported.
 </pre></div>
@@ -341,7 +442,7 @@ Libraries successfully imported.
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell to get and show the data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">location</span> <span class="o">=</span> <span class="s1">&#39;Calgary, AB&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">location</span> <span class="o">=</span> <span class="s1">&#39;Calgary, AB&#39;</span>
 
 <span class="n">coordinates</span> <span class="o">=</span> <span class="n">geolocator</span><span class="o">.</span><span class="n">geocode</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
 <span class="n">latitude</span> <span class="o">=</span> <span class="n">coordinates</span><span class="o">.</span><span class="n">latitude</span>  <span class="c1"># if geolocator isn&#39;t working, you can manually set the lat and long here</span>
@@ -464,7 +565,7 @@ Libraries successfully imported.
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to make a graph.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trace1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">climate_data</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span><span class="n">y</span><span class="o">=</span><span class="n">climate_data</span><span class="p">[</span><span class="s1">&#39;Precipitation (mm)&#39;</span><span class="p">],</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Precipitation&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">trace1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">climate_data</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span><span class="n">y</span><span class="o">=</span><span class="n">climate_data</span><span class="p">[</span><span class="s1">&#39;Precipitation (mm)&#39;</span><span class="p">],</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Precipitation&#39;</span><span class="p">)</span>
 <span class="n">trace2</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">climate_data</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span><span class="n">y</span><span class="o">=</span><span class="n">climate_data</span><span class="p">[</span><span class="s1">&#39;Temperature (°C)&#39;</span><span class="p">],</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Average Temperature (°C)&#39;</span><span class="p">,</span><span class="n">yaxis</span><span class="o">=</span><span class="s1">&#39;y2&#39;</span><span class="p">)</span>
 <span class="n">layout</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span>
     <span class="n">title</span><span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Climatograph for &#39;</span><span class="o">+</span><span class="n">location</span><span class="o">+</span><span class="s1">&#39; (&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;,&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">longitude</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;)&#39;</span><span class="p">),</span>
@@ -602,7 +703,7 @@ if (outputEl) {{
 <p>Run the following code if you’d prefer a single-year climatograph.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">location</span> <span class="o">=</span> <span class="s1">&#39;Calgary, AB&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">location</span> <span class="o">=</span> <span class="s1">&#39;Calgary, AB&#39;</span>
 <span class="n">year</span> <span class="o">=</span> <span class="mi">2016</span>
 <span class="c1"># year can be any between 1901 and 2016</span>
 
@@ -689,7 +790,7 @@ if (outputEl) {{
 <p>If you are interested in <a class="reference external" href="https://plot.ly/python/animations/">animating graphs</a> over time, the following two code cells might be a good place to start.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 <span class="n">max_rainfall</span> <span class="o">=</span> <span class="n">df_precipitation_all</span><span class="p">[</span><span class="s1">&#39;Rainfall - (MM)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">df_precipitation_all</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; Average&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39; Statistics&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Rainfall - (MM)&#39;</span><span class="p">,</span> <span class="n">animation_frame</span><span class="o">=</span><span class="s1">&#39; Year&#39;</span><span class="p">,</span> <span class="n">range_y</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">max_rainfall</span><span class="p">])</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -745,7 +846,7 @@ if (outputEl) {{
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">max_temperature</span> <span class="o">=</span> <span class="n">df_temperature_all</span><span class="p">[</span><span class="s1">&#39;Temperature - (Celsius)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">max_temperature</span> <span class="o">=</span> <span class="n">df_temperature_all</span><span class="p">[</span><span class="s1">&#39;Temperature - (Celsius)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
 <span class="n">min_temperature</span> <span class="o">=</span> <span class="n">df_temperature_all</span><span class="p">[</span><span class="s1">&#39;Temperature - (Celsius)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">df_temperature_all</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; Average&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39; Statistics&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Temperature - (Celsius)&#39;</span><span class="p">,</span> <span class="n">animation_frame</span><span class="o">=</span><span class="s1">&#39; Year&#39;</span><span class="p">,</span> <span class="n">range_y</span><span class="o">=</span><span class="p">[</span><span class="n">min_temperature</span><span class="p">,</span><span class="n">max_temperature</span><span class="p">])</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -804,6 +905,25 @@ if (outputEl) {{
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Science/Climatograph"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

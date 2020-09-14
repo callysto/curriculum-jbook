@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CALM - Moving Out 3" href="CALM-moving-out-3.html" />
@@ -65,71 +73,113 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="active">
-    <a href="../Health.html">Health Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="CALM-moving-out.html">CALM - Moving Out Project</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-1.html">CALM - Moving Out 1</a>
-    </li>
-    <li class="active">
-      <a href="">CALM - Moving Out 2</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-3.html">CALM - Moving Out 3</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-4.html">CALM - Moving Out 4</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-5.html">CALM - Moving Out 5</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-6.html">CALM - Moving Out 6</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-7.html">CALM - Moving Out 7</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-9.html">CALM - Moving Out 9</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-8.html">CALM - Moving Out 8</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Health.html">
+   Health Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out.html">
+     CALM - Moving Out Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-1.html">
+     CALM - Moving Out 1
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     CALM - Moving Out 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-3.html">
+     CALM - Moving Out 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-4.html">
+     CALM - Moving Out 4
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-5.html">
+     CALM - Moving Out 5
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-6.html">
+     CALM - Moving Out 6
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-7.html">
+     CALM - Moving Out 7
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-9.html">
+     CALM - Moving Out 9
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-8.html">
+     CALM - Moving Out 8
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -201,86 +251,103 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-2.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-2.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Health/CALM/CALM-moving-out-2.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
-
-<nav id="bd-toc-nav">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2-income">
+   Part 2 - Income
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#paycheque-definitions">
+     Paycheque Definitions
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#part-2-income" class="nav-link">Part 2 - Income</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#paycheque-definitions" class="nav-link">Paycheque Definitions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#gross-income-pay-earnings" class="nav-link">Gross Income (pay/earnings)</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#net-income-pay-earnings" class="nav-link">Net income (pay/earnings)</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#cpp-canada-pension-plan" class="nav-link">CPP - Canada Pension Plan</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#income-tax" class="nav-link">Income Tax</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#ltd" class="nav-link">LTD</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#union-dues" class="nav-link">Union Dues</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#bonds" class="nav-link">Bonds</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#advance-earnings" class="nav-link">Advance Earnings</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#overtime-earnings" class="nav-link">Overtime Earnings</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#calculating-net-income" class="nav-link">Calculating Net Income</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#graphing-income" class="nav-link">Graphing Income</a>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gross-income-pay-earnings">
+       Gross Income (pay/earnings)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#net-income-pay-earnings">
+       Net income (pay/earnings)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cpp-canada-pension-plan">
+       CPP - Canada Pension Plan
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#income-tax">
+       Income Tax
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ltd">
+       LTD
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#union-dues">
+       Union Dues
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bonds">
+       Bonds
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#advance-earnings">
+       Advance Earnings
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#overtime-earnings">
+       Overtime Earnings
+      </a>
+     </li>
     </ul>
-</nav>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calculating-net-income">
+     Calculating Net Income
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graphing-income">
+   Graphing Income
+  </a>
+ </li>
+</ul>
 
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -339,7 +406,7 @@
 <p>📗Click on the code cell below, then click the <code class="docutils literal notranslate"><span class="pre">Run</span></code> button on the toolbar to calculate your net income. You may also change some values in the code to see how the results change.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️</span>
 <span class="n">wagePerHour</span> <span class="o">=</span> <span class="mi">15</span>  <span class="c1"># this is your wage in $/hour</span>
 <span class="n">hoursPerDay</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="n">workdaysPerMonth</span> <span class="o">=</span> <span class="mi">21</span>
@@ -357,12 +424,12 @@
 
 <span class="n">netIncome</span> <span class="o">=</span> <span class="n">grossIncome</span> <span class="o">-</span> <span class="n">deductions</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Your net income is $&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">netIncome</span><span class="p">),</span> <span class="s1">&#39;per month.&#39;</span><span class="p">)</span>
-<span class="o">%</span><span class="n">store</span> <span class="n">netIncome</span>        <span class="c1"># store that value in memory for later notebooks</span>
+<span class="o">%</span><span class="k">store</span> netIncome        # store that value in memory for later notebooks
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Your gross income is $ 2520 per month.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your gross income is $ 2520 per month.
 $ 821.02  will be taken off your paycheck.
 Your net income is $ 1698.98 per month.
 Stored &#39;netIncome&#39; (float)
@@ -378,7 +445,7 @@ Stored &#39;netIncome&#39; (float)
 We can also look at how your net income (take-home pay) changes based on your hourly wage. We will use <a class="reference external" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html">2019 taxation rates</a> as well as <a class="reference external" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html">EI</a> and <a class="reference external" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html">CPP</a> rates. <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell below (without editing it) to generate a graph.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#📗</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#📗</span>
 <span class="k">def</span> <span class="nf">calculateFederalTax</span><span class="p">(</span><span class="n">income</span><span class="p">):</span>
     <span class="n">taxBrackets</span> <span class="o">=</span> <span class="p">[</span><span class="mi">47630</span><span class="p">,</span> <span class="mi">95259</span><span class="p">,</span> <span class="mi">147667</span><span class="p">,</span> <span class="mi">210371</span><span class="p">]</span>
     <span class="n">taxRates</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="mi">15</span><span class="p">,</span> <span class="o">.</span><span class="mi">205</span><span class="p">,</span> <span class="o">.</span><span class="mi">26</span><span class="p">,</span> <span class="o">.</span><span class="mi">29</span><span class="p">,</span> <span class="o">.</span><span class="mi">33</span><span class="p">]</span>
@@ -535,20 +602,20 @@ var n,a=t("./lib/build-log"),i=t("./lib/epsilon"),o=t("./lib/intersecter"),s=t("
 </div><div class="output text_html"><div>
 
 
-            <div id="9fdca70c-c0e8-4580-936e-c47d120be488" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="22d3c30a-301a-45cf-8936-54236b4f373f" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
 
-                if (document.getElementById("9fdca70c-c0e8-4580-936e-c47d120be488")) {
+                if (document.getElementById("22d3c30a-301a-45cf-8936-54236b4f373f")) {
                     Plotly.newPlot(
-                        '9fdca70c-c0e8-4580-936e-c47d120be488',
+                        '22d3c30a-301a-45cf-8936-54236b4f373f',
                         [{"name": "Gross Income", "type": "scatter", "x": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149], "y": [28800, 30720, 32640, 34560, 36480, 38400, 40320, 42240, 44160, 46080, 48000, 49920, 51840, 53760, 55680, 57600, 59520, 61440, 63360, 65280, 67200, 69120, 71040, 72960, 74880, 76800, 78720, 80640, 82560, 84480, 86400, 88320, 90240, 92160, 94080, 96000, 97920, 99840, 101760, 103680, 105600, 107520, 109440, 111360, 113280, 115200, 117120, 119040, 120960, 122880, 124800, 126720, 128640, 130560, 132480, 134400, 136320, 138240, 140160, 142080, 144000, 145920, 147840, 149760, 151680, 153600, 155520, 157440, 159360, 161280, 163200, 165120, 167040, 168960, 170880, 172800, 174720, 176640, 178560, 180480, 182400, 184320, 186240, 188160, 190080, 192000, 193920, 195840, 197760, 199680, 201600, 203520, 205440, 207360, 209280, 211200, 213120, 215040, 216960, 218880, 220800, 222720, 224640, 226560, 228480, 230400, 232320, 234240, 236160, 238080, 240000, 241920, 243840, 245760, 247680, 249600, 251520, 253440, 255360, 257280, 259200, 261120, 263040, 264960, 266880, 268800, 270720, 272640, 274560, 276480, 278400, 280320, 282240, 284160, 286080]}, {"name": "Net Income", "type": "scatter", "x": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149], "y": [19664.64, 20975.616, 22286.592, 23597.568, 24908.544, 26219.52, 27530.496, 28841.472, 30152.448, 31463.424, 32754.05, 33959.426, 35164.801999999996, 36380.87, 37708.130000000005, 39042.53, 40376.93, 41711.33, 43045.729999999996, 44380.13, 45714.53, 47048.93, 48383.33, 49717.729999999996, 51052.13, 52386.53, 53720.93, 55055.33, 56389.729999999996, 57724.13, 59058.53, 60392.93, 61727.33, 63061.729999999996, 64396.13, 63070.125, 64298.925, 65527.725, 66756.525, 67985.32500000001, 69214.125, 70442.92499999999, 71671.725, 72900.525, 74129.32500000001, 75358.125, 76586.92499999999, 77815.725, 79044.525, 80273.32500000001, 81502.125, 82730.92499999999, 83959.725, 85188.525, 86392.125, 87582.525, 88772.92499999999, 89963.325, 91153.725, 92344.125, 93534.525, 94724.92499999999, 90670.89, 91803.69, 92936.48999999999, 94069.29000000001, 95202.09, 96334.89, 94824.32999999999, 95937.93, 97051.53, 98165.13, 99278.73000000001, 100392.33, 101505.93000000001, 102619.53, 103733.13, 104846.73000000001, 105960.33, 107073.93000000001, 108187.53, 109301.13, 110414.73000000001, 111528.33, 112641.93000000001, 113755.53, 114869.13, 115982.73000000001, 117096.33, 118209.93000000001, 119323.53, 120437.13, 121550.73000000001, 122664.33, 123777.93, 118841.24, 119858.84000000001, 120876.44, 121894.04000000001, 122911.64000000001, 123929.24, 124946.84000000001, 125964.44, 126982.04000000001, 127999.64000000001, 129017.23999999999, 130034.84000000001, 131052.44, 132070.04, 133087.64, 134105.24, 135122.84000000003, 136140.44, 137158.04, 138175.64, 139193.24, 140210.84000000003, 141228.44, 142246.04, 143263.64, 144281.24, 145298.84000000003, 146316.44, 147334.04, 148351.64, 149369.24, 150386.84000000003, 151404.44, 152422.04, 153439.64, 154457.24, 155474.84000000003, 156492.44, 157510.04, 158527.64]}],
                         {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Net Income vs Hourly Wage"}, "xaxis": {"title": {"text": "Hourly Wage"}}, "yaxis": {"title": {"text": "Income"}}},
                         {"responsive": true}
                     ).then(function(){
 
-var gd = document.getElementById('9fdca70c-c0e8-4580-936e-c47d120be488');
+var gd = document.getElementById('22d3c30a-301a-45cf-8936-54236b4f373f');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -582,6 +649,25 @@ if (outputEl) {{
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Health/CALM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

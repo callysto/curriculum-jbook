@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,15 +23,23 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Instructions before you start" href="../CompareandOrderNumbers/compare-and-order-numbers.html" />
+    <link rel="next" title="Compare and order numbers" href="../CompareandOrderNumbers/compare-and-order-numbers.html" />
     <link rel="prev" title="Central Tendancy: Mean, Median, and Mode" href="../CentralTendency/central-tendency.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="active">
-      <a href="">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Transformations of Objects and Shapes: Exercises</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Transformations: Positions and Motions of Objects and Shapes</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,180 +471,244 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CombinedLogLaw/combined-log-law.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CombinedLogLaw/combined-log-law.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/CombinedLogLaw/combined-log-law.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#motivation">
+   Motivation:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#base-for-logarithm">
+   Base for logarithm:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#three-important-bases">
+   Three important bases:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#examples">
+   Examples:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basics-of-logarithms-p">
+   Basics of Logarithms:
+   <p>
+   </p>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#logarithmic-laws-p">
+   Logarithmic Laws
+   <p>
+   </p>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background-exponential-laws">
+   Background: Exponential Laws
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-blue-product-law">
+   <span style="color:blue">
+    Product Law
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#an-example">
+     An example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mathematical-proof">
+     Mathematical proof
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#graphical-demonstration">
+     Graphical Demonstration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#results">
+     Results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-blue-quotient-law">
+   <span style="color:blue">
+    Quotient Law
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     An example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Mathematical proof
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Graphical Demonstration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#result">
+     Result
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-blue-power-law">
+   <span style="color:blue">
+    Power Law
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     An example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Mathematical Proof
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Graphical Demonstration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-blue-change-of-base-rule">
+   <span style="color:blue">
+    Change of Base Rule
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     An example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Mathematical Proof
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#discussion">
+     Discussion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#evidence">
+     Evidence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-blue-examples">
+   <span style="color:blue">
+    Examples
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simplify-the-following-equation-then-solve-for-x">
+     1. Simplify the following equation, then solve for
+     <span class="math notranslate nohighlight">
+      \(x\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#log-x-3-log-x">
+     <span class="math notranslate nohighlight">
+      \( 3^{\log(x)}3^{\log(x)}\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#text-simplify-the-expression-2-log-x-frac-log-z-2-3-log-y">
+     2.
+     <span class="math notranslate nohighlight">
+      \(\text{Simplify the expression: } 2\log(x) - \frac{\log(z)}{2} + 3\log(y)\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solve-for-x-2-x-2-2-x-2">
+     3.    Solve for x
+     <span class="math notranslate nohighlight">
+      \( 2^{(x-2)}=2^x -2 \)
+     </span>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#introduction" class="nav-link">Introduction:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#motivation" class="nav-link">Motivation:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#base-for-logarithm" class="nav-link">Base for logarithm:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#three-important-bases" class="nav-link">Three important bases:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#examples" class="nav-link">Examples:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#basics-of-logarithms-p" class="nav-link">Basics of Logarithms:<p></a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#logarithmic-laws-p" class="nav-link">Logarithmic Laws<p></a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#background-exponential-laws" class="nav-link">Background: Exponential Laws</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#span-style-color-blue-product-law" class="nav-link"><span style="color:blue"> Product Law</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#an-example" class="nav-link">An example</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#mathematical-proof" class="nav-link">Mathematical proof</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#graphical-demonstration" class="nav-link">Graphical Demonstration</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#results" class="nav-link">Results</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#span-style-color-blue-quotient-law" class="nav-link"><span style="color:blue"> Quotient Law</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id1" class="nav-link">An example</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id2" class="nav-link">Mathematical proof</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id3" class="nav-link">Graphical Demonstration</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#result" class="nav-link">Result</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#span-style-color-blue-power-law" class="nav-link"><span style="color:blue"> Power Law</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id4" class="nav-link">An example</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id5" class="nav-link">Mathematical Proof</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id6" class="nav-link">Graphical Demonstration</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id7" class="nav-link">Results</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#span-style-color-blue-change-of-base-rule" class="nav-link"><span style="color:blue"> Change of Base Rule</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id8" class="nav-link">An example</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id9" class="nav-link">Mathematical Proof</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#discussion" class="nav-link">Discussion</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#evidence" class="nav-link">Evidence</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id10" class="nav-link">Results</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#span-style-color-blue-examples" class="nav-link"><span style="color:blue"> Examples</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#simplify-the-following-equation-then-solve-for-x" class="nav-link">1. Simplify the following equation, then solve for x</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#log-x-3-log-x" class="nav-link">$ 3^{\log(x)}3^{\log(x)}$</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#text-simplify-the-expression-2-log-x-frac-log-z-2-3-log-y" class="nav-link">2. \text{Simplify the expression: } 2\log(x) - \frac{\log(z)}{2} + 3\log(y)</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#solve-for-x-2-x-2-2-x-2" class="nav-link">3.    Solve for x $ 2^{(x-2)}=2^x -2 $</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -498,40 +718,54 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/CombinedLogLaw/combined-log-law.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<h1><center>Logarithmic Laws</center></h1><div class="cell docutils container">
+<h1><center>Logarithmic Laws</center></h1><div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%html
 
-<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
-<span class="s1">code_show=true; </span>
-<span class="s1">function code_toggle() {</span>
-<span class="s1"> if (code_show){</span>
-<span class="s1"> $(&#39;div.input&#39;).hide();</span>
-<span class="s1"> } else {</span>
-<span class="s1"> $(&#39;div.input&#39;).show();</span>
-<span class="s1"> }</span>
-<span class="s1"> code_show = !code_show</span>
-<span class="s1">} </span>
-<span class="s1">$( document ).ready(code_toggle);</span>
-<span class="s1">&lt;/script&gt;</span>
-<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Click here to toggle on/off the raw code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+&lt;script&gt;
+  function code_toggle() {
+    if (code_shown){
+      $(&#39;div.input&#39;).hide(&#39;500&#39;);
+      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)
+    } else {
+      $(&#39;div.input&#39;).show(&#39;500&#39;);
+      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $(&#39;div.input&#39;).hide()
+  });
+&lt;/script&gt;
+&lt;p&gt; Code is hidden for ease of viewing. Click the Show/Hide button to see. &lt;/&gt;
+&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
+<div class="output text_html">
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
 </script>
-<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form></div></div>
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+</div></div>
 </div>
 <div class="section" id="combined-log-law">
 <h1>Combined Log Law<a class="headerlink" href="#combined-log-law" title="Permalink to this headline">¶</a></h1>
@@ -541,18 +775,39 @@ $( document ).ready(code_toggle);
 </div>
 <div class="section" id="motivation">
 <h2>Motivation:<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
-<p>Going about our day, we often run into powers of ten, when we see kilograms of food in a grocery store (1000 grams), megawatts of power from an electrical generator (1,000,000 watts) or gigabytes of memory in our computer (1,000,000,000 bytes). It is the <strong>power</strong> of ten that is important, and the logarithm captures this idea with the formulas
-<span class="math notranslate nohighlight">\($ \log(10) = 1\)</span>$
-<span class="math notranslate nohighlight">\($ \log(1000) = 3\)</span>$
-<span class="math notranslate nohighlight">\($ \log(1,000,000) = 6\)</span>$
-<span class="math notranslate nohighlight">\($ \log(1,000,000,000) = 9.\)</span>$</p>
-<p>The logarithm of a number <span class="math notranslate nohighlight">\(x\)</span> is defined as the power <span class="math notranslate nohighlight">\(n\)</span> it takes so that <span class="math notranslate nohighlight">\($x = 10^n.\)</span>$ So, for instance, since <span class="math notranslate nohighlight">\(1000 = 10^3\)</span>, we know that <span class="math notranslate nohighlight">\(\log(1000) = 3,\)</span> as indicated in the list above.</p>
-<p>For numbers that aren’t integer powers of 10, the logarithm is still defined by the above formula, where <span class="math notranslate nohighlight">\(n\)</span> can be any real number solving <span class="math notranslate nohighlight">\(x = 10^n\)</span>. For instance, you might guess that <span class="math notranslate nohighlight">\(\log(5000)\)</span> is somewhere between 3 and 4, since the number 5000 is halfway between <span class="math notranslate nohighlight">\(10^3 = 1000\)</span> and <span class="math notranslate nohighlight">\(10^4 = 10,000\)</span>. You might even guess that <span class="math notranslate nohighlight">\(\log(5000) = 3.5\)</span>, which is not a bad approximation: in fact, a calculator shows that
-<span class="math notranslate nohighlight">\($\log(5000) = 3.69897...,\)</span>$
-which is the same as saying
-<span class="math notranslate nohighlight">\($5000 = 10^{3.69897...}.\)</span>$</p>
-<p>We can also take logarithms of small numbers, like this:
-<span class="math notranslate nohighlight">\($\log(0.01) = \log\left(\frac{1}{100}\right) = \log(10^{-2}) = -2.\)</span>$</p>
+<p>Going about our day, we often run into powers of ten, when we see kilograms of food in a grocery store (1000 grams), megawatts of power from an electrical generator (1,000,000 watts) or gigabytes of memory in our computer (1,000,000,000 bytes). It is the <strong>power</strong> of ten that is important, and the logarithm captures this idea with the formulas</p>
+<div class="math notranslate nohighlight">
+\[ 
+\log(10) = 1
+\]</div>
+<div class="math notranslate nohighlight">
+\[ 
+\log(1000) = 3
+\]</div>
+<div class="math notranslate nohighlight">
+\[ 
+\log(1,000,000) = 
+6\]</div>
+<div class="math notranslate nohighlight">
+\[ 
+\log(1,000,000,000) = 9.
+\]</div>
+<p>The logarithm of a number <span class="math notranslate nohighlight">\(x\)</span> is defined as the power <span class="math notranslate nohighlight">\(n\)</span> it takes so that <span class="math notranslate nohighlight">\(x = 10^n.\)</span> So, for instance, since <span class="math notranslate nohighlight">\(1000 = 10^3\)</span>, we know that <span class="math notranslate nohighlight">\(\log(1000) = 3,\)</span> as indicated in the list above.</p>
+<p>For numbers that aren’t integer powers of 10, the logarithm is still defined by the above formula, where <span class="math notranslate nohighlight">\(n\)</span> can be any real number solving <span class="math notranslate nohighlight">\(x = 10^n\)</span>. For instance, you might guess that <span class="math notranslate nohighlight">\(\log(5000)\)</span> is somewhere between 3 and 4, since the number 5000 is halfway between <span class="math notranslate nohighlight">\(10^3 = 1000\)</span> and <span class="math notranslate nohighlight">\(10^4 = 10,000\)</span>. You might even guess that <span class="math notranslate nohighlight">\(\log(5000) = 3.5\)</span>, which is not a bad approximation: in fact, a calculator shows that</p>
+<div class="math notranslate nohighlight">
+\[
+\log(5000) = 3.69897...,
+\]</div>
+<p>which is the same as saying</p>
+<div class="math notranslate nohighlight">
+\[
+5000 = 10^{3.69897...}.
+\]</div>
+<p>We can also take logarithms of small numbers, like this:</p>
+<div class="math notranslate nohighlight">
+\[
+\log(0.01) = \log\left(\frac{1}{100}\right) = \log(10^{-2}) = -2.
+\]</div>
 <p>But you cannot take logarithms of negative numbers. (Unless you are willing to learn about something called complex numbers!)</p>
 </div>
 <div class="section" id="base-for-logarithm">
@@ -561,20 +816,36 @@ which is the same as saying
 <p>We can work with other bases. For instance, with computers we often work with power of two. A KB of memory is actually <span class="math notranslate nohighlight">\(1024 = 2^{10}\)</span> bytes.</p>
 <p>If you aren’t sure about this, multiply out
 <span class="math notranslate nohighlight">\(2\times 2 \times 2 \times \ldots \times 2\)</span> with ten 2’s, to see you get <span class="math notranslate nohighlight">\(1024= 2^{10}.\)</span></p>
-<p>A MB of memory is <span class="math notranslate nohighlight">\(1,048,576 = 2^{20}\)</span> bytes, or just over a million bytes. A GB is <span class="math notranslate nohighlight">\(1073741824 = 2^{30}\)</span> bytes, or just over a billion bytes. (It’s a funny coincidence that <span class="math notranslate nohighlight">\(10^3 \approx 2^{10}\)</span> so that kilo =1000 is about the same as Kilo = 1024.)</p>
-<p>We write this down in logarithm form, adding a subscript to keep track of the base. So
-<span class="math notranslate nohighlight">\($ \log_2(1024) = 10\)</span>$
-<span class="math notranslate nohighlight">\($ \log_2(1048576) = 20\)</span>$
-<span class="math notranslate nohighlight">\($ \log_2(1073741824) = 30.\)</span>$</p>
-<p>In general, the number <span class="math notranslate nohighlight">\(\log_2(x)\)</span> is defined as the solution to
-<span class="math notranslate nohighlight">\($x = 2^n.\)</span>$</p>
+<p>A MB of memory is <span class="math notranslate nohighlight">\(1,048,576 = 2^{20}\)</span> bytes, or just over a million bytes. A GB is <span class="math notranslate nohighlight">\(1073741824 = 2^{30}\)</span> bytes, or just over a billion bytes.</p>
+<p>It’s a funny coincidence that <span class="math notranslate nohighlight">\(10^3 \approx 2^{10}\)</span> so that kilo =1000 is about the same as Kilo = 1024.</p>
+<p>We write this down in logarithm form, adding a subscript to keep track of the base. So</p>
+<div class="math notranslate nohighlight">
+\[ 
+\log_2(1024) = 10
+\]</div>
+<div class="math notranslate nohighlight">
+\[ 
+\log_2(1048576) = 20
+\]</div>
+<div class="math notranslate nohighlight">
+\[ 
+\log_2(1073741824) = 30.
+\]</div>
+<p>In general, the number <span class="math notranslate nohighlight">\(\log_2(x)\)</span> is defined as the solution to</p>
+<div class="math notranslate nohighlight">
+\[
+x = 2^n.
+\]</div>
 <p>Logarithms can be defined with any number <span class="math notranslate nohighlight">\(B\)</span> as a base, provided <span class="math notranslate nohighlight">\(B\)</span> is positive and not equal to one. The function is then written as <span class="math notranslate nohighlight">\(\log_B(x).\)</span></p>
 </div>
 <div class="section" id="three-important-bases">
 <h2>Three important bases:<a class="headerlink" href="#three-important-bases" title="Permalink to this headline">¶</a></h2>
-<p>In practice, there are only three log functions that occur in most of math and science:
-<span class="math notranslate nohighlight">\($\log_2(x), \log_{10}(x), \mbox{ and } \log_e(x),\)</span>$
-which have bases 2, 10 and <span class="math notranslate nohighlight">\(e\)</span>, respectively, where <span class="math notranslate nohighlight">\(e = 2.71...\)</span> is the natural exponential that occurs in calculus.</p>
+<p>In practice, there are only three log functions that occur in most of math and science:</p>
+<div class="math notranslate nohighlight">
+\[
+\log_2(x), \log_{10}(x), \mbox{ and } \log_e(x),
+\]</div>
+<p>which have bases 2, 10 and <span class="math notranslate nohighlight">\(e\)</span>, respectively, where <span class="math notranslate nohighlight">\(e = 2.71...\)</span> is the natural exponential that occurs in calculus.</p>
 <p>The base ten logarithm <span class="math notranslate nohighlight">\(\log_{10}(x)\)</span> occurs so often that it is sometimes abbreviated as <span class="math notranslate nohighlight">\(\log(x)\)</span>, as we did in the first section of this notebook.</p>
 <p>The base <span class="math notranslate nohighlight">\(e\)</span> logarithm is called the natural log, written <span class="math notranslate nohighlight">\(\ln(x)\)</span>. The natural logarithm arises in calculus,
 where it is often denoted simply as <span class="math notranslate nohighlight">\(\log x\)</span>. So one must pay attention to the context when the base is unspecified!</p>
@@ -585,22 +856,31 @@ where it is often denoted simply as <span class="math notranslate nohighlight">\
 <li><p>{1} Can we find <span class="math notranslate nohighlight">\(\log_2(4000)\)</span> approximately, without using a calculator?</p></li>
 </ul>
 <p>Sure. Here’s one way. We know that <span class="math notranslate nohighlight">\(4 = 2^2\)</span>, and that <span class="math notranslate nohighlight">\(1000 \approx 2^{10}\)</span>. So <span class="math notranslate nohighlight">\(4000 \approx 2^2 \times 2^{10} = 2^{12}\)</span>.
-So we conclude
-<span class="math notranslate nohighlight">\($ \log_2(4000) \approx 12.\)</span>$</p>
+So we conclude</p>
+<div class="math notranslate nohighlight">
+\[ 
+\log_2(4000) \approx 12.
+\]</div>
 <p>A quick check with a calculator shows <span class="math notranslate nohighlight">\(\log_2(4000) = 11.96578...\)</span> so that was a pretty good approximation!</p>
 <ul class="simple">
 <li><p>{2} Can we find <span class="math notranslate nohighlight">\(\log(\pi)\)</span> approximately?</p></li>
 </ul>
-<p>Well, our friends the ancient Egyptians thought that <span class="math notranslate nohighlight">\(\pi\)</span> was the square root of 10. It’s not, but that’s a pretty good approximation. So we have
-<span class="math notranslate nohighlight">\($\log(\pi) \approx \log(10^{1/2}) = 1/2.\)</span>$
-In fact, a check with a calculator shows <span class="math notranslate nohighlight">\(\log(\pi) = 0.49715...\)</span>, so again we have a pretty good approximation.</p>
+<p>Well, our friends the ancient Egyptians thought that <span class="math notranslate nohighlight">\(\pi\)</span> was the square root of 10. It’s not, but that’s a pretty good approximation. So we have</p>
+<div class="math notranslate nohighlight">
+\[
+\log(\pi) \approx \log(10^{1/2}) = 1/2.
+\]</div>
+<p>In fact, a check with a calculator shows <span class="math notranslate nohighlight">\(\log(\pi) = 0.49715...\)</span>, so again we have a pretty good approximation.</p>
 </div>
 <div class="section" id="basics-of-logarithms-p">
 <h2>Basics of Logarithms:<p><a class="headerlink" href="#basics-of-logarithms-p" title="Permalink to this headline">¶</a></h2>
 <p>Even though logarithms can seem very complicated, we can look at the basic relationship between logarithms and exponentials in order to simplify these expressions to furture enhance our understandings. Before looking deeper in these relationships, we will first identify the main components of a logarithmic function. Logarithms are written in the following form:<p>
 <span class="math notranslate nohighlight">\(\log_B(x)=m\)</span> where B is the base of the logarithm. <p>
-Given a number <span class="math notranslate nohighlight">\(x\)</span>, we define <span class="math notranslate nohighlight">\(\log_B(x)=m\)</span> as the solution to the  exponential relationship
-<span class="math notranslate nohighlight">\($x=B^m.\)</span>$</p>
+Given a number <span class="math notranslate nohighlight">\(x\)</span>, we define <span class="math notranslate nohighlight">\(\log_B(x)=m\)</span> as the solution to the  exponential relationship</p>
+<div class="math notranslate nohighlight">
+\[
+x=B^m.
+\]</div>
 </div>
 <div class="section" id="logarithmic-laws-p">
 <h2>Logarithmic Laws<p><a class="headerlink" href="#logarithmic-laws-p" title="Permalink to this headline">¶</a></h2>
@@ -616,19 +896,19 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <h2>Background: Exponential Laws<a class="headerlink" href="#background-exponential-laws" title="Permalink to this headline">¶</a></h2>
 <p>Since logarithms are closely related with exponents, we will be using exponential laws when deriving logarithmic laws. Exponential Laws state:</p>
 <ul class="simple">
-<li><p>$B^m \times B^n=B^{m+n} \quad (1) $</p></li>
+<li><p><span class="math notranslate nohighlight">\(B^m \times B^n=B^{m+n} \quad (1) \)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\frac{B^m}{B^n}=B^{m-n} \quad \quad \; \;\;\,(2)\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\((B^m)^n=B^{mn} \quad \quad \,(3)\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\((BC)^m=B^m C^m \quad  \,(4)\)</span></p></li>
 </ul>
 <p>We will be referring to these laws throughout the program using the number in the brackets above.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">clear_output</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">clear_output</span>
 <span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">log</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">matplotlib.gridspec</span> <span class="k">as</span> <span class="nn">gridspec</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">fixed</span><span class="p">,</span> <span class="n">interact_manual</span><span class="p">,</span><span class="n">IntSlider</span><span class="p">,</span> <span class="n">Output</span><span class="p">,</span> <span class="n">VBox</span><span class="p">,</span> <span class="n">HBox</span><span class="p">,</span> <span class="n">Label</span>
@@ -637,9 +917,9 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Logarithm</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Logarithm</span><span class="p">:</span>
     <span class="c1">#############################################</span>
     <span class="c1">#     Description: stores all functions that will be using as shortcuts when graphing functions.</span>
     <span class="c1">#############################################</span>
@@ -722,9 +1002,9 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#########################################</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#########################################</span>
 <span class="c1"># Variables:</span>
 <span class="c1"># base - Value of the base of the logarithms</span>
 <span class="c1">#      - Over the coarse of the program, we will set the base to be 10.</span>
@@ -777,7 +1057,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(p+q=\log_B(x \times y)\)</span>.</p></li>
 </ul>
-<p>Since we know $ p=\log_B x$ and $ q=\log_B y$, we obtain</p>
+<p>Since we know <span class="math notranslate nohighlight">\( p=\log_B x\)</span> and <span class="math notranslate nohighlight">\( q=\log_B y\)</span>, we obtain</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\log_{B}x+\log_{B}y = \log_{B}(x \times y).\)</span></p></li>
 </ul>
@@ -791,10 +1071,9 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <p>For these values of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>, the product law becomes
 <span class="math notranslate nohighlight">\(\log(mt)+\log(nt) = \log(mnt^2)\)</span></p>
 <p>For the graphical demonstration, we graph the three terms in the above equation separately with respect to <span class="math notranslate nohighlight">\(t\)</span>. When looking at a <span class="math notranslate nohighlight">\(t\)</span> value, the sum of the corresponding values of the functions on the left side of the equation should be equivalent to the function on the right side of the equation, thus providing a demonstration of the Product Law.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-<span class="k">class</span> <span class="nc">ProductLaw</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ProductLaw</span><span class="p">():</span>
     <span class="c1"># Create 2x2 sub plots</span>
     <span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     
@@ -860,7 +1139,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
         <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-b&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(x)$&#39;</span><span class="p">)</span>
         <span class="n">p1</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
         <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="s1">&#39;ob&#39;</span><span class="p">)</span>
-        <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p1</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">p1</span>,xy=(ProductLaw.axis,p1),xytext=(-10,-20),textcoords=&#39;offset points&#39;)
         <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Left side of Product law&#39;</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log_</span><span class="si">{B}</span><span class="s1">(mt)$&#39;</span><span class="p">)</span>
         <span class="n">ax1</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
@@ -870,7 +1149,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
         <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-g&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(y)$&#39;</span><span class="p">)</span>
         <span class="n">p2</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="o">*</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="s1">&#39;og&#39;</span><span class="p">)</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p2</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">p2</span>,xy=(ProductLaw.axis,p2),xytext=(-10,-20),textcoords=&#39;offset points&#39;)
         <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log_</span><span class="si">{B}</span><span class="s1">(nt)$&#39;</span><span class="p">)</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$t$&#39;</span><span class="p">)</span>
@@ -880,7 +1159,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
         <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span><span class="s1">&#39;-r&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(xy)$&#39;</span><span class="p">)</span>
         <span class="n">p3</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">y</span><span class="o">*</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span><span class="n">base</span><span class="p">)</span>
         <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p3</span><span class="p">,</span><span class="s1">&#39;or&#39;</span><span class="p">)</span>
-        <span class="n">ax3</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p3</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">ProductLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p3</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">p3</span>,xy=(ProductLaw.axis,p3),xytext=(-10,-20),textcoords=&#39;offset points&#39;)
         <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Right side of Product Law&#39;</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log_</span><span class="si">{B}</span><span class="s1">(mnt^2)$&#39;</span><span class="p">)</span>
         <span class="n">ax3</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
@@ -925,19 +1204,16 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
         <span class="n">ProductLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span> 
 
 <span class="n">ProductLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
-
-
-
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "c63864fb77fa4025a126220e31e5fa60"}
+{"version_major": 2, "version_minor": 0, "model_id": "83862d1b8e6f4ee69d7d0040db29f7a7"}
 </script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "ec7f64bc3a34462aa70a102d1cacfff6"}
+{"version_major": 2, "version_minor": 0, "model_id": "0bc872eac568411d99b56ca5079198f2"}
 </script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "041d4712fc8d40c8b10f8569da33e653"}
+{"version_major": 2, "version_minor": 0, "model_id": "4c1581b41b494747b5c2071f15befe69"}
 </script><img alt="../../../_images/combined-log-law_15_3.png" src="../../../_images/combined-log-law_15_3.png" />
 <div class="output text_latex math notranslate nohighlight">
 \[When $m$=6 and $n$=3\]</div>
@@ -979,7 +1255,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <p>Let’s create a proof of the Quotient law.</p>
 <p>First, fix quantities <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> and define the values</p>
 <ul class="simple">
-<li><p>$ p = \log_B x$ and $ q = \log_B y.$</p></li>
+<li><p><span class="math notranslate nohighlight">\( p = \log_B x\)</span> and <span class="math notranslate nohighlight">\( q = \log_B y.\)</span></p></li>
 </ul>
 <p>The equivalent exponential forms are</p>
 <ul class="simple">
@@ -995,7 +1271,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 </ul>
 <p>Taking logs, we have</p>
 <ul class="simple">
-<li><p>$\log_{B}(B^{p-q}) = \log_B(x\div y) $ which becomes</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log_{B}(B^{p-q}) = \log_B(x\div y) \)</span> which becomes</p></li>
 <li><p><span class="math notranslate nohighlight">\(p - q = \log_{B}(x \div y).\)</span></p></li>
 </ul>
 <p>Recalling our definition of m,n this becomes</p>
@@ -1014,9 +1290,9 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <p>which reduces to:</p>
 <p><span class="math notranslate nohighlight">\(\log(mt)-\log(nt) = \log\left(\frac{m}{n}\right)\)</span></p>
 <p>For the graphical demonstration, we will graph the three terms in the above equation separately with respect to <span class="math notranslate nohighlight">\(t\)</span>. When looking at a <span class="math notranslate nohighlight">\(t\)</span> value, the difference of the corresponding values of the functions on the left side of the equation should be equivalent to the function on the right side of the equation, thus providing a demonstration of the Quotient Law.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">QuotientLaw</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">QuotientLaw</span><span class="p">():</span>
    
     <span class="c1"># Create 2x2 sub plots</span>
     <span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -1083,7 +1359,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
         <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-b&#39;</span><span class="p">)</span>
         <span class="n">p1</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
         <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="s1">&#39;ob&#39;</span><span class="p">)</span>
-        <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p1</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">p1</span>,xy=(QuotientLaw.axis,p1),xytext=(-10,-20),textcoords=&#39;offset points&#39;)
         <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Left side of Quotient Law&#39;</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log(m)$&#39;</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
@@ -1092,7 +1368,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
         <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-g&#39;</span><span class="p">)</span>
         <span class="n">p2</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="o">*</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="s1">&#39;og&#39;</span><span class="p">)</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p2</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">p2</span>,xy=(QuotientLaw.axis,p2),xytext=(-10,-20),textcoords=&#39;offset points&#39;)
         <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\log(n)$&#39;</span><span class="p">)</span>
 
         <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
@@ -1102,7 +1378,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
         <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">y_value</span><span class="p">),</span><span class="s1">&#39;-r&#39;</span><span class="p">)</span>
         <span class="n">p3</span><span class="o">=</span><span class="n">log</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">x</span><span class="o">/</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">y</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
         <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p3</span><span class="p">,</span><span class="s1">&#39;or&#39;</span><span class="p">)</span>
-        <span class="n">ax3</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p3</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">QuotientLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p3</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">p3</span>,xy=(QuotientLaw.axis,p3),xytext=(-10,-20),textcoords=&#39;offset points&#39;)
         <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Right side of Quotient Law&#39;</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\log(\frac</span><span class="si">{m}{n}</span><span class="s1">)$&#39;</span><span class="p">)</span>
         <span class="n">ax3</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
@@ -1147,11 +1423,11 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "16338932b7934d919fdeb799814e9b63"}
+{"version_major": 2, "version_minor": 0, "model_id": "8ddc990fd1244fe3a80e213db91f070e"}
 </script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "43f4cafe3f884ad39a2fdfd078aeb558"}
+{"version_major": 2, "version_minor": 0, "model_id": "793a291dab9849029101a9aa204f011b"}
 </script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "c71bd72fd6d24d7aa2f57e3bb0c31a1f"}
+{"version_major": 2, "version_minor": 0, "model_id": "54427b0bb1dd4626a5800846580147cb"}
 </script><img alt="../../../_images/combined-log-law_18_3.png" src="../../../_images/combined-log-law_18_3.png" />
 <div class="output text_latex math notranslate nohighlight">
 \[When $m$= 6 and $n$= 3\]</div>
@@ -1180,7 +1456,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <div class="section" id="id4">
 <h3>An example<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>$\log(1000^2) = 2\log(1000) $ or equivalently</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log(1000^2) = 2\log(1000) \)</span> or equivalently</p></li>
 <li><p><span class="math notranslate nohighlight">\(\log(1,000,000) = 6 = 2 \times 3.\)</span></p></li>
 </ul>
 </div>
@@ -1188,7 +1464,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <h3>Mathematical Proof<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>First we fix quantities <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(p\)</span> then define</p>
 <ul class="simple">
-<li><p>$ m = \log_B (x^p).$</p></li>
+<li><p><span class="math notranslate nohighlight">\( m = \log_B (x^p).\)</span></p></li>
 </ul>
 <p>The equivalent exponential form is</p>
 <ul class="simple">
@@ -1204,7 +1480,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 </ul>
 <p>Apply the log function to both sides to get</p>
 <ul class="simple">
-<li><p>$\log_B(B^{\frac{m}{p}})=\log_B(x) $, resulting in</p></li>
+<li><p><span class="math notranslate nohighlight">\(\log_B(B^{\frac{m}{p}})=\log_B(x) \)</span>, resulting in</p></li>
 <li><p><span class="math notranslate nohighlight">\(\frac{m}{p} = \log_B(x).\)</span></p></li>
 </ul>
 <p>Multiply by <span class="math notranslate nohighlight">\(p\)</span> to obtain</p>
@@ -1223,9 +1499,9 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <p>For these values of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>, the product law becomes</p>
 <p><span class="math notranslate nohighlight">\(\log_B(mt^p) = p \times \log_B(mt)\)</span></p>
 <p>For the graphical demonstration, we will graph the three terms in the above equation separately with respect to <span class="math notranslate nohighlight">\(t\)</span>. When looking at a <span class="math notranslate nohighlight">\(t\)</span> value, the function on the left side of the equation should be equivalent to the function on the right side of the equation, thus providing a demonstration of the power law.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PowerLaw</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PowerLaw</span><span class="p">():</span>
     <span class="c1"># Create 2x2 sub plots</span>
     <span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
@@ -1293,7 +1569,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
         <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">log_exp</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="p">,</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-g&#39;</span><span class="p">)</span>
         <span class="n">p1</span><span class="o">=</span><span class="n">log</span><span class="p">((</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">)</span><span class="o">**</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
         <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="s1">&#39;ob&#39;</span><span class="p">)</span>
-        <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p1</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p1</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">p1</span>,xy=(PowerLaw.axis,p1),xytext=(-10,-20),textcoords=&#39;offset points&#39;)
         <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Right side of Power law&#39;</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(Mx)$&#39;</span><span class="p">)</span>
         <span class="n">ax1</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
@@ -1304,7 +1580,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
         <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Logarithm</span><span class="o">.</span><span class="n">constant_x_log</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="p">,</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="p">,</span><span class="n">base</span><span class="p">,</span><span class="n">x</span><span class="p">),</span><span class="s1">&#39;-b&#39;</span><span class="p">)</span>
         <span class="n">p2</span><span class="o">=</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">p</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">x</span><span class="o">*</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">base</span><span class="p">)</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="s1">&#39;og&#39;</span><span class="p">)</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="n">p2</span><span class="p">,</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">PowerLaw</span><span class="o">.</span><span class="n">axis</span><span class="p">,</span><span class="n">p2</span><span class="p">),</span><span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">20</span><span class="p">),</span><span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">p2</span>,xy=(PowerLaw.axis,p2),xytext=(-10,-20),textcoords=&#39;offset points&#39;)
         <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$y=\log_</span><span class="si">{B}</span><span class="s1">(Nx)$&#39;</span><span class="p">)</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_label_position</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Left side of Power Law&#39;</span><span class="p">)</span>
@@ -1348,17 +1624,16 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 
 
 <span class="n">PowerLaw</span><span class="o">.</span><span class="n">clear_display</span><span class="p">()</span>
-
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "d087f36981504aeb881d5ce827b35858"}
+{"version_major": 2, "version_minor": 0, "model_id": "8ae54091680d4445ab39943084ac140e"}
 </script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "ef2a2adf85db4d5fba055a8aa2a7407e"}
+{"version_major": 2, "version_minor": 0, "model_id": "882deac03472481cb14b4a7276a8b551"}
 </script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "6ceebd7659364984b980ccf6dcad1b76"}
+{"version_major": 2, "version_minor": 0, "model_id": "d9a4f749dc3d4ebe9cc7b06b73dfd226"}
 </script><img alt="../../../_images/combined-log-law_21_3.png" src="../../../_images/combined-log-law_21_3.png" />
 <div class="output text_latex math notranslate nohighlight">
 \[at $m$=6 and $p$=2\]</div>
@@ -1426,20 +1701,23 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\log_B(x) = \log_C(x)\times \log_B(C)).\)</span> (Can you see why?)</p></li>
 </ul>
-<p>The point is, the two functions <span class="math notranslate nohighlight">\(\log_B(x), \log_C(x)\)</span> are related by a proportionality constant, so we can write
-<span class="math notranslate nohighlight">\($ \log_B(x) = k\cdot \log_C(x).\)</span>$</p>
-<p>For instance, the two functions <span class="math notranslate nohighlight">\(\log_2(x)\)</span> and <span class="math notranslate nohighlight">\(\log_{10}(x)\)</span> are the same, up to some constant <span class="math notranslate nohighlight">\(k\)</span>. Perhaps you can explain why this constant is approximately <span class="math notranslate nohighlight">\(10/3\)</span>. That is
-<span class="math notranslate nohighlight">\($\log_2(x) \approx \frac{10}{3} \log_{10}(x).\)</span>$</p>
-<p>Equivalently,
-<span class="math notranslate nohighlight">\($\log_{10}(x) \approx 0.3 \log_{2}(x).\)</span>$</p>
+<p>The point is, the two functions <span class="math notranslate nohighlight">\(\log_B(x), \log_C(x)\)</span> are related by a proportionality constant, so we can write</p>
+<div class="math notranslate nohighlight">
+\[ \log_B(x) = k\cdot \log_C(x).\]</div>
+<p>For instance, the two functions <span class="math notranslate nohighlight">\(\log_2(x)\)</span> and <span class="math notranslate nohighlight">\(\log_{10}(x)\)</span> are the same, up to some constant <span class="math notranslate nohighlight">\(k\)</span>. Perhaps you can explain why this constant is approximately <span class="math notranslate nohighlight">\(10/3\)</span>. That is</p>
+<div class="math notranslate nohighlight">
+\[\log_2(x) \approx \frac{10}{3} \log_{10}(x).\]</div>
+<p>Equivalently,</p>
+<div class="math notranslate nohighlight">
+\[\log_{10}(x) \approx 0.3 \log_{2}(x).\]</div>
 <p>(Hint: this has something to do with our discussion of kilos in the first section of this notebook.)</p>
 </div>
 <div class="section" id="evidence">
 <h3>Evidence<a class="headerlink" href="#evidence" title="Permalink to this headline">¶</a></h3>
 <p>As it is hard to graph this function, as there is no good place to put <span class="math notranslate nohighlight">\(x\)</span>, this function with be proved through evidence. We will plug numbers into each side of the equation to calculate the values obtained on each side of the law. Notice that changing the new base value has no affect on the final value.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangeOfBase</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangeOfBase</span><span class="p">():</span>
     
     <span class="c1">#First set random variables</span>
     <span class="n">M</span><span class="o">=</span><span class="mi">5</span>
@@ -1544,11 +1822,11 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "5f858cb6cfc2444782572ebd03a3b0be"}
+{"version_major": 2, "version_minor": 0, "model_id": "12396655596c47d7a61211a89cc0eaeb"}
 </script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "2b4311469f974ec4975b06ec69b493a1"}
+{"version_major": 2, "version_minor": 0, "model_id": "3f0fd119cd95493daf8e97b20a70b33a"}
 </script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "7414d8036c5441b5a0659e6c249b9c84"}
+{"version_major": 2, "version_minor": 0, "model_id": "5336f907f00a476387c145b1d5522d83"}
 </script><div class="output text_latex math notranslate nohighlight">
 \[On the left hand side $\log_B(M)$ = 0.699.\]</div>
 <div class="output text_latex math notranslate nohighlight">
@@ -1573,7 +1851,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 <h3>1. Simplify the following equation, then solve for <span class="math notranslate nohighlight">\(x\)</span><a class="headerlink" href="#simplify-the-following-equation-then-solve-for-x" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="log-x-3-log-x">
-<h3>$ 3^{\log(x)}3^{\log(x)}$<a class="headerlink" href="#log-x-3-log-x" title="Permalink to this headline">¶</a></h3>
+<h3><span class="math notranslate nohighlight">\( 3^{\log(x)}3^{\log(x)}\)</span><a class="headerlink" href="#log-x-3-log-x" title="Permalink to this headline">¶</a></h3>
 <p>Using Exponential Law (1), we can get:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(3^{\log(x)+\log(x)}\)</span></p></li>
@@ -1588,7 +1866,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 </ul>
 <p>To solve for <span class="math notranslate nohighlight">\(x\)</span>, we need to first note that <span class="math notranslate nohighlight">\(3 = 10^{\log 3}.\)</span> So we can continue with</p>
 <ul class="simple">
-<li><p>$ 3^{\log(x^2)} = 10^{\log 3 \log x^2} = 10^{\log x^{2\log 3}} = x^{2\log 3} = x^{\log(9)}.$</p></li>
+<li><p><span class="math notranslate nohighlight">\( 3^{\log(x^2)} = 10^{\log 3 \log x^2} = 10^{\log x^{2\log 3}} = x^{2\log 3} = x^{\log(9)}.\)</span></p></li>
 </ul>
 <p>Thus, we can say:</p>
 <ul class="simple">
@@ -1607,7 +1885,7 @@ Given a number <span class="math notranslate nohighlight">\(x\)</span>, we defin
 </div>
 </div>
 <div class="section" id="solve-for-x-2-x-2-2-x-2">
-<h3>3.    Solve for x $ 2^{(x-2)}=2^x -2 $<a class="headerlink" href="#solve-for-x-2-x-2-2-x-2" title="Permalink to this headline">¶</a></h3>
+<h3>3.    Solve for x <span class="math notranslate nohighlight">\( 2^{(x-2)}=2^x -2 \)</span><a class="headerlink" href="#solve-for-x-2-x-2-2-x-2" title="Permalink to this headline">¶</a></h3>
 <p>Using Exponent Law (2) reguarding the division of exponents, we can come up with the equivalent equation:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\frac{2^x}{2^2}=2^x-2\)</span></p></li>
@@ -1627,7 +1905,7 @@ When we put all of the <span class="math notranslate nohighlight">\(2^x\)</span>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\log_2(2^x)=\log_2\left(\frac{8}{3}\right)\)</span></p></li>
 </ul>
-<p>Using Power Law, <span class="math notranslate nohighlight">\(\log_2(2^x)\)</span> is equivalent to $ x\log_22$ where <span class="math notranslate nohighlight">\(\log_22 = 1\)</span>. Thus:</p>
+<p>Using Power Law, <span class="math notranslate nohighlight">\(\log_2(2^x)\)</span> is equivalent to <span class="math notranslate nohighlight">\( x\log_22\)</span> where <span class="math notranslate nohighlight">\(\log_22 = 1\)</span>. Thus:</p>
 <div id='page' style='width: 100px'>
 <p style="border:2px; border-style:solid; border-color:#000000;"> $x= \log_2\left(\frac{8}{3}\right)$ <p />
 </div>
@@ -1641,10 +1919,29 @@ When we put all of the <span class="math notranslate nohighlight">\(2^x\)</span>
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"3439e1c935fd4e279824111ba6802a0c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "da342ccae63d40838f92f881c5e5339c": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "041d4712fc8d40c8b10f8569da33e653": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$t$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_3439e1c935fd4e279824111ba6802a0c", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_da342ccae63d40838f92f881c5e5339c", "value": 5}}, "d80eb8f091ed48eb861eddb8cfb65130": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4417dea8cf354b1c8ef70fe27d836c7c": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "c63864fb77fa4025a126220e31e5fa60": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$m$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_d80eb8f091ed48eb861eddb8cfb65130", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_4417dea8cf354b1c8ef70fe27d836c7c", "value": 6}}, "b112287282914fa691b3b95cfa30eb7a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b19b5a47ec8e41fab1a200ceea2e2a12": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "ec7f64bc3a34462aa70a102d1cacfff6": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$n$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_b112287282914fa691b3b95cfa30eb7a", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_b19b5a47ec8e41fab1a200ceea2e2a12", "value": 3}}, "c43c4f4ed7d445d5807c6dbcc745fbe9": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7ec1b02ce00a45e28f184a4458c99edd": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "c71bd72fd6d24d7aa2f57e3bb0c31a1f": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "x", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_c43c4f4ed7d445d5807c6dbcc745fbe9", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_7ec1b02ce00a45e28f184a4458c99edd", "value": 5}}, "f49b69868cef4eb585882d7177d289f0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9cf045d31eee4a70a25df84f7bd6b3fb": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "16338932b7934d919fdeb799814e9b63": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$m$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f49b69868cef4eb585882d7177d289f0", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_9cf045d31eee4a70a25df84f7bd6b3fb", "value": 6}}, "99cfe4334e3743648f8f901028f0b334": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "af506c0c7331457da2d1f00f918ec593": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "43f4cafe3f884ad39a2fdfd078aeb558": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$n$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_99cfe4334e3743648f8f901028f0b334", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_af506c0c7331457da2d1f00f918ec593", "value": 3}}, "f41420f1fba44cde8aa3ec36f6e88426": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b683c03878e94788b2136342f60f5d4f": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "6ceebd7659364984b980ccf6dcad1b76": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "x", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f41420f1fba44cde8aa3ec36f6e88426", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_b683c03878e94788b2136342f60f5d4f", "value": 5}}, "cc69ef3ca72645158da5cf705db2fd9b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7445c72836034492a0285188c99738e7": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "d087f36981504aeb881d5ce827b35858": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$m$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_cc69ef3ca72645158da5cf705db2fd9b", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_7445c72836034492a0285188c99738e7", "value": 6}}, "9cedca2b0c1545a98cc0f0a5119b8b43": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "359dbbbe5a6246b7bcab31b14004ce0f": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "ef2a2adf85db4d5fba055a8aa2a7407e": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$p$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_9cedca2b0c1545a98cc0f0a5119b8b43", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_359dbbbe5a6246b7bcab31b14004ce0f", "value": 2}}, "3c53810f609c4eabab4d06e99fb98c11": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "df95d0d9436a406486848df83e942e48": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "3e5d692bab4b4c83a23bed1d202e3dde": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_3c53810f609c4eabab4d06e99fb98c11", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_df95d0d9436a406486848df83e942e48", "value": 5}}, "68381a6597d944bd93216193d0fd3cc8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e5a74113acec4586830fc813c7f69e71": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "a01f21184ff34c12977be8dc01a82ec0": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_68381a6597d944bd93216193d0fd3cc8", "placeholder": "\u200b", "style": "IPY_MODEL_e5a74113acec4586830fc813c7f69e71", "value": "M value"}}, "c41457d21ec2416b91c146953c561b27": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5f858cb6cfc2444782572ebd03a3b0be": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_a01f21184ff34c12977be8dc01a82ec0", "IPY_MODEL_3e5d692bab4b4c83a23bed1d202e3dde"], "layout": "IPY_MODEL_c41457d21ec2416b91c146953c561b27"}}, "16eb82e2690745eeb4fd728de6589fe4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e71cc05d6be545089b3fb0e70fb40f17": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "6e22fce182ea4a6da7c6b42aa4680a77": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_16eb82e2690745eeb4fd728de6589fe4", "max": 10, "min": 2, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_e71cc05d6be545089b3fb0e70fb40f17", "value": 10}}, "ec0b7b2ca6db470f88b4bfe25a7666df": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "be4da214d9d14125a97cfec5df86f046": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "89245a003a1948278228ae8bc898a3a7": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_ec0b7b2ca6db470f88b4bfe25a7666df", "placeholder": "\u200b", "style": "IPY_MODEL_be4da214d9d14125a97cfec5df86f046", "value": "Original base value"}}, "98484d0d9c984955a1610f5db75c7fc4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2b4311469f974ec4975b06ec69b493a1": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_89245a003a1948278228ae8bc898a3a7", "IPY_MODEL_6e22fce182ea4a6da7c6b42aa4680a77"], "layout": "IPY_MODEL_98484d0d9c984955a1610f5db75c7fc4"}}, "c8c03b6edd984f968ee909a1875972a4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c678bda04ecc44708ce51a8709949e48": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "ff6c6cc8f0cd4c6aafbfb060d01c917b": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_c8c03b6edd984f968ee909a1875972a4", "max": 10, "min": 2, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_c678bda04ecc44708ce51a8709949e48", "value": 5}}, "1251576ee92341f48e07948688f08b2d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d40163791576464b8452f86edc116dac": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "6839c8328b6c47c0b23b61be8a1a2f28": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_1251576ee92341f48e07948688f08b2d", "placeholder": "\u200b", "style": "IPY_MODEL_d40163791576464b8452f86edc116dac", "value": "New base value"}}, "5d4b8ab971c8464dbf59327e95d8797c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7414d8036c5441b5a0659e6c249b9c84": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_6839c8328b6c47c0b23b61be8a1a2f28", "IPY_MODEL_ff6c6cc8f0cd4c6aafbfb060d01c917b"], "layout": "IPY_MODEL_5d4b8ab971c8464dbf59327e95d8797c"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"fc3ae01580ba49b19b1b5c76e640c396": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a2fc9ebe898f462b878c9bbcb463e02c": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "4c1581b41b494747b5c2071f15befe69": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$t$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_fc3ae01580ba49b19b1b5c76e640c396", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_a2fc9ebe898f462b878c9bbcb463e02c", "value": 5}}, "378e512fc21041b093d2bc3b3e4dbab6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "749142a2ba544d14969c951744cb1546": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "83862d1b8e6f4ee69d7d0040db29f7a7": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$m$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_378e512fc21041b093d2bc3b3e4dbab6", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_749142a2ba544d14969c951744cb1546", "value": 6}}, "0355466f0c454ebcaac92509a0d4012c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5bb3c0a5cb0a4fff8728ee7808c43ad1": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "0bc872eac568411d99b56ca5079198f2": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$n$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_0355466f0c454ebcaac92509a0d4012c", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_5bb3c0a5cb0a4fff8728ee7808c43ad1", "value": 3}}, "22a46cd367e842b6b18df94cd296acb4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f3e2f1bd239a45308fc35e80684399fb": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "54427b0bb1dd4626a5800846580147cb": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "x", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_22a46cd367e842b6b18df94cd296acb4", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_f3e2f1bd239a45308fc35e80684399fb", "value": 5}}, "098faddb54ae40dab47cdf9636f54586": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8862007d803a49738abeba19ad50d1cc": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "8ddc990fd1244fe3a80e213db91f070e": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$m$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_098faddb54ae40dab47cdf9636f54586", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_8862007d803a49738abeba19ad50d1cc", "value": 6}}, "6a31cc1d47154ad29f882d37ecf2a36f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5353b3ee4a094b7caaf412e7cadcf053": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "793a291dab9849029101a9aa204f011b": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$n$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_6a31cc1d47154ad29f882d37ecf2a36f", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_5353b3ee4a094b7caaf412e7cadcf053", "value": 3}}, "a28c4a0b584541759ff41299446c1e46": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e35ecd520ced404daa52009923b42bf2": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "d9a4f749dc3d4ebe9cc7b06b73dfd226": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "x", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_a28c4a0b584541759ff41299446c1e46", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_e35ecd520ced404daa52009923b42bf2", "value": 5}}, "e75c9174262e468ca6ec402e98a819b0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "662b0fe669a8400abdd599b361277eb2": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "8ae54091680d4445ab39943084ac140e": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$m$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_e75c9174262e468ca6ec402e98a819b0", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_662b0fe669a8400abdd599b361277eb2", "value": 6}}, "785c074a9ffb4bfb8139f3b371370934": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "dc3f46fb3570486d9130f959fd33390c": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "882deac03472481cb14b4a7276a8b551": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "$p$", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_785c074a9ffb4bfb8139f3b371370934", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_dc3f46fb3570486d9130f959fd33390c", "value": 2}}, "01f00412692c4d8cbb8eb7b4ce83a926": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "6fda97ea20d147158ea03a3c78d86d7b": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "e1fcdd63fe044da1807072bd168af364": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_01f00412692c4d8cbb8eb7b4ce83a926", "max": 10, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_6fda97ea20d147158ea03a3c78d86d7b", "value": 5}}, "e506cdb9c4934a85a70eec95badf8e2d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "323c6f487da54464b28a177a6169ea3a": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "f5d7ce29ae8f4fb99464fb63bc3f4e7b": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_e506cdb9c4934a85a70eec95badf8e2d", "placeholder": "\u200b", "style": "IPY_MODEL_323c6f487da54464b28a177a6169ea3a", "value": "M value"}}, "4f4cd3434caf4eff92198726caaee01c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "12396655596c47d7a61211a89cc0eaeb": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_f5d7ce29ae8f4fb99464fb63bc3f4e7b", "IPY_MODEL_e1fcdd63fe044da1807072bd168af364"], "layout": "IPY_MODEL_4f4cd3434caf4eff92198726caaee01c"}}, "34b359a929a04624973cad8d6d32a3b2": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "07f09783d3964a8aab081b2eb2700d9b": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "6ac7e1596e004beba35c24388112251f": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_34b359a929a04624973cad8d6d32a3b2", "max": 10, "min": 2, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_07f09783d3964a8aab081b2eb2700d9b", "value": 10}}, "ca7d98111be94249836398f788d73b40": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f05af555f9a641e9bc65d2b8788235b4": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "90055a9bc7f54070896be4aa56703b9a": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_ca7d98111be94249836398f788d73b40", "placeholder": "\u200b", "style": "IPY_MODEL_f05af555f9a641e9bc65d2b8788235b4", "value": "Original base value"}}, "ddc7abfa63d84612915effa70f2b4d34": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3f0fd119cd95493daf8e97b20a70b33a": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_90055a9bc7f54070896be4aa56703b9a", "IPY_MODEL_6ac7e1596e004beba35c24388112251f"], "layout": "IPY_MODEL_ddc7abfa63d84612915effa70f2b4d34"}}, "5052400d30a14c1ebe2654094633869d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1dfd5cc93ff74f9c80120a61de202cab": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "cd8bf8f18e1249a4bfe0e3b4e53139af": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_5052400d30a14c1ebe2654094633869d", "max": 10, "min": 2, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_1dfd5cc93ff74f9c80120a61de202cab", "value": 5}}, "10d88069804a491c8c5bd732079f9fb5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "aceb882acd894860ab32be38f4aa28ae": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "6ae008cfc31d41529f346b8fdfd0461a": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_10d88069804a491c8c5bd732079f9fb5", "placeholder": "\u200b", "style": "IPY_MODEL_aceb882acd894860ab32be38f4aa28ae", "value": "New base value"}}, "221a0afc8c9240fa9c8d9fac7bb0863c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5336f907f00a476387c145b1d5522d83": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_6ae008cfc31d41529f346b8fdfd0461a", "IPY_MODEL_cd8bf8f18e1249a4bfe0e3b4e53139af"], "layout": "IPY_MODEL_221a0afc8c9240fa9c8d9fac7bb0863c"}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/CombinedLogLaw"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -1655,7 +1952,7 @@ When we put all of the <span class="math notranslate nohighlight">\(2^x\)</span>
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../CentralTendency/central-tendency.html" title="previous page">Central Tendancy: Mean, Median, and Mode</a>
-    <a class='right-next' id="next-link" href="../CompareandOrderNumbers/compare-and-order-numbers.html" title="next page">Instructions before you start</a>
+    <a class='right-next' id="next-link" href="../CompareandOrderNumbers/compare-and-order-numbers.html" title="next page">Compare and order numbers</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Fractions: Multiplication and Division" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html" />
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="active">
-      <a href="">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,82 +471,98 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/MultiplesAndFactors/multiples-and-factors.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/MultiplesAndFactors/multiples-and-factors.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/MultiplesAndFactors/multiples-and-factors.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiples">
+   Multiples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiples-practice-problem">
+     Multiples Practice Problem
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lowest-common-multiple">
+     Lowest Common Multiple
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lcm-practice-problem-1">
+     LCM Practice Problem 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lcm-practice-problem-2">
+     LCM Practice Problem 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#factors">
+   Factors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#factors-practice-problem-1">
+     Factors Practice Problem 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#factors-practice-problem-2">
+     Factors Practice Problem 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#factors-practice-problem-3">
+     Factors Practice Problem 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#greatest-common-factor">
+     Greatest Common Factor
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gcf-practice-problem">
+     GCF Practice Problem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#multiples" class="nav-link">Multiples</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#multiples-practice-problem" class="nav-link">Multiples Practice Problem</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#lowest-common-multiple" class="nav-link">Lowest Common Multiple</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#lcm-practice-problem-1" class="nav-link">LCM Practice Problem 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#lcm-practice-problem-2" class="nav-link">LCM Practice Problem 2</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#factors" class="nav-link">Factors</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#factors-practice-problem-1" class="nav-link">Factors Practice Problem 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#factors-practice-problem-2" class="nav-link">Factors Practice Problem 2</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#factors-practice-problem-3" class="nav-link">Factors Practice Problem 3</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#greatest-common-factor" class="nav-link">Greatest Common Factor</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#gcf-practice-problem" class="nav-link">GCF Practice Problem</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#summary" class="nav-link">Summary</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -409,7 +581,7 @@
 <p>Let’s write some Python code to find multiples of a number. <code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to see what happens. <code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to see what happens.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">3</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">howManyMultiples</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">howManyMultiples</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span> <span class="c1"># we need the +1 because range doesn&#39;t include the last integer</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">number</span> <span class="o">*</span> <span class="n">n</span><span class="p">)</span>
@@ -417,7 +589,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>3
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 6
 9
 12
@@ -429,7 +601,7 @@
 <p>That code printed the first five multiples of three, let’s add a statement about that.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">3</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">howManyMultiples</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The first&#39;</span><span class="p">,</span><span class="n">howManyMultiples</span><span class="p">,</span><span class="s1">&#39;of&#39;</span><span class="p">,</span><span class="n">number</span><span class="p">,</span><span class="s1">&#39;are:&#39;</span><span class="p">)</span>
@@ -439,7 +611,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>The first 5 of 3 are:
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The first 5 of 3 are:
 3
 6
 9
@@ -458,7 +630,7 @@
 <p>We can also write some code to find the <strong>lowest common multiple</strong> of two numbers.  Feel free to change the values of the variables <code class="docutils literal notranslate"><span class="pre">number1</span></code> and <code class="docutils literal notranslate"><span class="pre">number2</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number1</span> <span class="o">=</span> <span class="mi">7</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number1</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">number2</span> <span class="o">=</span> <span class="mi">9</span>
 
 <span class="c1"># figure out which of the two numbers is larger and store it in the variable lcm</span>
@@ -477,7 +649,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>The lowest common multiple of 7 and 9 is 63
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The lowest common multiple of 7 and 9 is 63
 </pre></div>
 </div>
 </div>
@@ -495,13 +667,13 @@
 <div class="section" id="factors">
 <h2>Factors<a class="headerlink" href="#factors" title="Permalink to this headline">¶</a></h2>
 <p><strong>Factors</strong> of a number can be multiplied to form that number.</p>
-<p>For example, the factors of 6 are 1, 2, 3, and 6 (<span class="math notranslate nohighlight">\(1 \times 6 = 6\)</span> and $ 2 \times 3 = 6$).</p>
+<p>For example, the factors of 6 are 1, 2, 3, and 6 (<span class="math notranslate nohighlight">\(1 \times 6 = 6\)</span> and <span class="math notranslate nohighlight">\( 2 \times 3 = 6\)</span>).</p>
 <p>A number is <strong>prime</strong> if it has just two factors (1 and itself). A number with more than two factors is a <strong>composite</strong> number.</p>
 <p>Let’s write some code to find the factors of the number 6.</p>
 <p>To design our algorithm, we’ll divide 6 by each number from 1 to 6, <strong>if</strong> the remainder is 0 <strong>then</strong> 6 is divisible by that number.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">6</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">6</span>
 <span class="n">factors</span> <span class="o">=</span> <span class="p">[]</span>                              <span class="c1"># create an empty list where we will store the factors</span>
 <span class="k">for</span> <span class="n">factor</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">number</span><span class="p">):</span>           <span class="c1"># start a loop at 1 and go until we reach the number we stored at the beginning</span>
     <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="n">factor</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>              <span class="c1"># if the remainder of that division is 0 then...</span>
@@ -512,7 +684,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>The factors of  6 are [1, 2, 3, 6]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The factors of  6 are [1, 2, 3, 6]
 </pre></div>
 </div>
 </div>
@@ -520,7 +692,7 @@
 <p>If we want to see each factor as it is found, which might be useful for numbers with a lot of factors, we can add a print statement inside the loop.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">1000</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">1000</span>
 <span class="n">factors</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">factor</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">number</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="n">factor</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -532,7 +704,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>1
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
 2
 4
 5
@@ -556,7 +728,7 @@ The factors of  1000 are [1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250,
 <p>Let’s add a little more code to check if the number is prime or composite (remember that a prime number only has two factors).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">1000</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">1000</span>
 <span class="n">factors</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">factor</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">number</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="n">factor</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -573,7 +745,7 @@ The factors of  1000 are [1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>The factors of  1000 are [1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500, 1000]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The factors of  1000 are [1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500, 1000]
 1000 is a composite number with 16 factors.
 </pre></div>
 </div>
@@ -597,7 +769,7 @@ The factors of  1000 are [1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250,
 <p>There is a module in the <a class="reference external" href="https://docs.python.org/3/library/math.html">Python math library</a> called <code class="docutils literal notranslate"><span class="pre">gcd</span></code> that can calculate the greatest common factor of two numbers.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">gcd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">gcd</span>
 <span class="n">number1</span> <span class="o">=</span> <span class="mi">6</span>
 <span class="n">number2</span> <span class="o">=</span> <span class="mi">9</span>
 <span class="n">greatest_common_factor</span> <span class="o">=</span> <span class="n">gcd</span><span class="p">(</span><span class="n">number1</span><span class="p">,</span> <span class="n">number2</span><span class="p">)</span>
@@ -606,7 +778,7 @@ The factors of  1000 are [1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>The greatest common factor of 6 and 9 is 3
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The greatest common factor of 6 and 9 is 3
 </pre></div>
 </div>
 </div>
@@ -624,6 +796,25 @@ The factors of  1000 are [1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250,
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/MultiplesAndFactors"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

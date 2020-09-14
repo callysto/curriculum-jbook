@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,15 +23,23 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Reflection of Light by Plane and Spherical Mirrors" href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html" />
+    <link rel="next" title="Reflection of Light" href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html" />
     <link rel="prev" title="Projectile Motion" href="../ProjectileMotion/projectile-motion.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,128 +73,213 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="active">
-    <a href="../Sciences.html">Sciences Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../BalancingChemicalEquations/balancing-chemical-equations.html">Chemical Equations: Writing and Balancing</a>
-    </li>
-    <li class="">
-      <a href="../ChemicalNomenclature/chemical-nomenclature.html">Chemical Nomenclature</a>
-    </li>
-    <li class="">
-      <a href="../ClassifyingChemicalReactions/classifying-chemical-reactions.html">Classifying Chemical Equations</a>
-    </li>
-    <li class="">
-      <a href="../ClimateChange/climate-change.html">Climate Change</a>
-    </li>
-    <li class="">
-      <a href="../Climatograph/climatograph.html">Climatograph</a>
-    </li>
-    <li class="">
-      <a href="../ConcentrationAndPH/concentration-and-ph.html">Concentration and pH</a>
-    </li>
-    <li class="">
-      <a href="../ElectricalConductivity/electrical-conductivity.html">Electrical Conductivity</a>
-    </li>
-    <li class="">
-      <a href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">Electricity Consumption Monitoring</a>
-    </li>
-    <li class="">
-      <a href="../ExploringSolarSystem/exploring-the-solar-system.html">Exploring the Solar System</a>
-    </li>
-    <li class="">
-      <a href="../HeatAndTemperature/heat-and-temperature.html">Heat and Temperature</a>
-    </li>
-    <li class="">
-      <a href="../LightOpticalSystems/light-optical-systems.html">Light and Optics</a>
-    </li>
-    <li class="">
-      <a href="../LightTransmission/transmission-of-light.html">Transmission of Light</a>
-    </li>
-    <li class="">
-      <a href="../MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">Methods used in Scientific Study of the Earth</a>
-    </li>
-    <li class="">
-      <a href="../NatureOfThermalEnergy/nature-of-thermal-energy.html">The Nature of Thermal Energy</a>
-    </li>
-    <li class="">
-      <a href="../NewtonsFirstLaw/newtons-first-law.html">Newton’s First Law</a>
-    </li>
-    <li class="">
-      <a href="../NewtonsSecondLaw/newtons-second-law.html">Newton’s Second Law</a>
-    </li>
-    <li class="">
-      <a href="../NewtonsThirdLaw/newtons-third-law.html">Newton’s Third Law</a>
-    </li>
-    <li class="">
-      <a href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">Half life calculations</a>
-    </li>
-    <li class="">
-      <a href="../NuclearDecay/nuclear-decay.html">Nuclear Decay - Half Life</a>
-    </li>
-    <li class="">
-      <a href="../ProjectileMotion/projectile-motion.html">Projectile Motion</a>
-    </li>
-    <li class="active">
-      <a href="">Nuclear Radiation: Alpha, Beta, and Gamma</a>
-    </li>
-    <li class="">
-      <a href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">Reflection of Light by Plane and Spherical Mirrors</a>
-    </li>
-    <li class="">
-      <a href="../ScienceLabReportTemplate/science-lab-report-template.html">Science Lab Report Template</a>
-    </li>
-    <li class="">
-      <a href="../SourcesOfEnergy/resources-and-recycling.html">Sources of Energy</a>
-    </li>
-    <li class="">
-      <a href="../SpecificAndLatentHeat/specific-and-latent-heat.html">Specific and Latent Heat</a>
-    </li>
-    <li class="">
-      <a href="../StaticAndKineticFriction/static-and-kinetic-friction.html">Static and Kinetic Friction</a>
-    </li>
-    <li class="">
-      <a href="../StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">Stoichiometry and Limiting Reactants</a>
-    </li>
-    <li class="">
-      <a href="../ThermalExpansion/thermal-expansion.html">Thermal Linear Expansion</a>
-    </li>
-    <li class="">
-      <a href="../UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">Uniform Motion and Uniformly Accelerated Motion</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Sciences.html">
+   Sciences Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BalancingChemicalEquations/balancing-chemical-equations.html">
+     Chemical Equations: Writing and Balancing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ChemicalNomenclature/chemical-nomenclature.html">
+     Chemical Nomenclature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClassifyingChemicalReactions/classifying-chemical-reactions.html">
+     Classifying Chemical Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClimateChange/climate-change.html">
+     Climate Change
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Climatograph/climatograph.html">
+     Climatograph
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html">
+     Concentration and pH
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
+     Acids and Bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricalConductivity/electrical-conductivity.html">
+     Electrical Conductivity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">
+     Electricity Consumption Monitoring
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ExploringSolarSystem/exploring-the-solar-system.html">
+     Exploring the Solar System
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HeatAndTemperature/heat-and-temperature.html">
+     Heat and Temperature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LightOpticalSystems/light-optical-systems.html">
+     Light and Optics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LightTransmission/transmission-of-light.html">
+     Transmission of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">
+     Methods used in Scientific Study of the Earth
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NatureOfThermalEnergy/nature-of-thermal-energy.html">
+     The Nature of Thermal Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsFirstLaw/newtons-first-law.html">
+     Newton’s First Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsSecondLaw/newtons-second-law.html">
+     Newton’s Second Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsThirdLaw/newtons-third-law.html">
+     Newton’s Third Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">
+     Half life calculations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NuclearDecay/nuclear-decay.html">
+     Nuclear Decay - Half Life
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProjectileMotion/projectile-motion.html">
+     Projectile Motion
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Nuclear Radiation: Alpha, Beta, and Gamma
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">
+     Reflection of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ScienceLabReportTemplate/science-lab-report-template.html">
+     Science Lab Report Template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SourcesOfEnergy/resources-and-recycling.html">
+     Sources of Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SpecificAndLatentHeat/specific-and-latent-heat.html">
+     Specific and Latent Heat
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StaticAndKineticFriction/static-and-kinetic-friction.html">
+     Static and Kinetic Friction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">
+     Stoichiometry and Limiting Reactants
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ThermalExpansion/thermal-expansion.html">
+     Thermal Linear Expansion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">
+     Uniform Motion and Uniformly Accelerated Motion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -258,136 +351,182 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/RadiationAnimations/radiation-animations.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/RadiationAnimations/radiation-animations.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Science/RadiationAnimations/radiation-animations.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
-
-<nav id="bd-toc-nav">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wave-radiation">
+     Wave Radiation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#particle-radiation">
+     Particle Radiation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dangers-of-radiation">
+   Dangers of Radiation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alpha-alpha-radiation">
+   Alpha (
+   <span class="math notranslate nohighlight">
+    \(\alpha\)
+   </span>
+   ) Radiation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creation">
+     Creation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#physical-properties">
+     Physical Properties
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#biological-effects">
+     Biological Effects
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#beta-beta-radiation">
+   Beta (
+   <span class="math notranslate nohighlight">
+    \(\beta\)
+   </span>
+   ) Radiation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Creation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beta-decay">
+     <span class="math notranslate nohighlight">
+      \(\beta^-\)
+     </span>
+     Decay
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     <span class="math notranslate nohighlight">
+      \(\beta^+\)
+     </span>
+     Decay
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Physical Properties
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Biological Effects
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gamma-gamma-radiation">
+   Gamma (
+   <span class="math notranslate nohighlight">
+    \(\gamma\)
+   </span>
+   ) Radiation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Creation
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#introduction" class="nav-link">Introduction</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#background" class="nav-link">Background</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#wave-radiation" class="nav-link">Wave Radiation</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#particle-radiation" class="nav-link">Particle Radiation</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#dangers-of-radiation" class="nav-link">Dangers of Radiation</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#alpha-alpha-radiation" class="nav-link">Alpha (\alpha) Radiation</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#creation" class="nav-link">Creation</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#physical-properties" class="nav-link">Physical Properties</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#biological-effects" class="nav-link">Biological Effects</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#beta-beta-radiation" class="nav-link">Beta (\beta) Radiation</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id1" class="nav-link">Creation</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#beta-decay" class="nav-link">\beta^- Decay</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id2" class="nav-link">\beta^+ Decay</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id3" class="nav-link">Physical Properties</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id4" class="nav-link">Biological Effects</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#gamma-gamma-radiation" class="nav-link">Gamma (\gamma) Radiation</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id5" class="nav-link">Creation</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#particle-collisions" class="nav-link">Particle Collisions</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#annihilation-reactions" class="nav-link">Annihilation Reactions</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#particle-acceleration" class="nav-link">Particle Acceleration</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id6" class="nav-link">Physical Properties</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id7" class="nav-link">Biological Effects</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#exercises" class="nav-link">Exercises</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#particle-collisions">
+       Particle Collisions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#annihilation-reactions">
+       Annihilation Reactions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#particle-acceleration">
+       Particle Acceleration
+      </a>
+     </li>
     </ul>
-</nav>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Physical Properties
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Biological Effects
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
 
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -399,7 +538,7 @@
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/RadiatonAnimations/radiation-animations.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">plotly</span> <span class="k">as</span> <span class="nn">py</span>
 <span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -410,7 +549,7 @@
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span>
 
 <span class="n">py</span><span class="o">.</span><span class="n">offline</span><span class="o">.</span><span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">connected</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="n">font</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span> <span class="p">:</span> <span class="s1">&#39;sans-serif&#39;</span><span class="p">,</span>
         <span class="s1">&#39;weight&#39;</span> <span class="p">:</span> <span class="s1">&#39;normal&#39;</span><span class="p">,</span>
@@ -601,7 +740,7 @@ require(['plotly'], function(Plotly) {
 </div>
 <div class="section" id="nuclear-radiation-alpha-beta-and-gamma">
 <h1>Nuclear Radiation: Alpha, Beta, and Gamma<a class="headerlink" href="#nuclear-radiation-alpha-beta-and-gamma" title="Permalink to this headline">¶</a></h1>
-<img src="https://media.giphy.com/media/3bvICesX0yIfu/giphy.gif" alt="Drawing" style="width: 750px;"/>
+<img alt="Drawing" src="https://media.giphy.com/media/3bvICesX0yIfu/giphy.gif" />
 <center>Gif from [Giphy](https://giphy.com/gifs/hypnotic-3bvICesX0yIfu), June 20th, 2018.</center>
 <p>Figure 1: Here we see a sample of uranium undergoing radioactive decay inside a cloud chamber. The lines shooting out from the sample are made by fast moving charged particles ejected by the uranium. A cloud chamber such as this allows us to see how radiation can interact with its surroundings. Check out <a class="reference external" href="https://www.sciencealert.com/watch-uranium-emits-radiation-inside-cloud-chamber">this link</a> for more info on cloud chambers.</p>
 <div class="section" id="introduction">
@@ -616,14 +755,12 @@ require(['plotly'], function(Plotly) {
 <div class="section" id="wave-radiation">
 <h3>Wave Radiation<a class="headerlink" href="#wave-radiation" title="Permalink to this headline">¶</a></h3>
 <p>All wave type radiation is classified as EMR. Electromagnetic radiation can be described as an interplay between electric and magnetic fields, with each oscillating along planes that are perpendicular to one another. Take a look at the gif below for a better visualization of this phenomenon:</p>
-<img src="http://www.ariel.ac.il/sites/cezar/ariel/ANIMATIONS/images/wave_movie.gif" alt="Drawing" style="width: 500px;"/>
-<center>Image from http://www.ariel.ac.il/sites/cezar/ariel/ANIMATIONS/physics3.html</center>
-<center> Figure 2: As the name suggests, electromagnetic waves consist of both electric and magnetic fields that propagate perpendicularly to one another. </center>
+<img alt="Drawing" src="http://www.ariel.ac.il/sites/cezar/ariel/ANIMATIONS/images/wave_movie.gif" />
 <p>These waves are usually generated through interactions between subatomic particles within an atom. For example, visible light can be created when an electron changes energy levels within an atom. When an electron moves from a higher energy orbital to a lower energy orbital, the difference in energy is released as electromagnetic radiation. Take a look at the animation below that demonstrates how visible light can be generated within a hydrogen atom.</p>
 <p>Click on the hydrogen atom to run the animation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hydrogen_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hydrogen_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">class TextBox {</span>
 <span class="s2">  PVector location;</span>
 <span class="s2">  PVector velocity;</span>
@@ -1224,9 +1361,7 @@ void draw() {
 <p>The term <strong>radioactive decay</strong> refers to the process whereby a large atomic nucleus breaks down into a smaller, more stable nucleus. Radioactive decay occurs when the forces holding the nucleus together (the strong and weak nuclear forces) become overwhelmed by the forces pulling it apart. When this happens, the nucleus will eject one or many particles in order to become smaller, and more stable.</p>
 <p>Reactions such as <strong>nuclear fission</strong> and <strong>nuclear fusion</strong> can also create particle radiation. <strong>Nuclear fission</strong> is a type of nuclear reaction wherein the nucleus of an atom is forcibly split into two smaller nuclei, and <strong>nuclear fusion</strong> is the reverse: two smaller nuclei combine to form one larger nucleus. These processes require extreme conditions, vast amounts of energy, and can produce many different types of particle and wave radiation as a byproduct.  We won’t go into much more detail about these processes, but here is a link to information on fission and fusion if you are interested: https://nuclear.duke-energy.com/2013/01/30/fission-vs-fusion-whats-the-difference.</p>
 <p>In either case, whether it be a nuclear reaction or radioactive decay, one or many subatomic particles (protons, neutrons, electrons, neutrinos etc.) may be sent flying away from an atom at a high velocity. By recognizing the particles that have been ejected, and by measuring the energy that they carry, scientists are able to determine the source of the radiation and the processes that caused it.</p>
-<img src="http://static.messynessychic.com/wp-content/uploads/2017/01/neil-degrasse-tyson-super-k-.jpg" alt="Drawing" style="width: 750px;"/>
-<center>Image from http://www.messynessychic.com/2017/01/13/journey-to-the-centre-of-the-earth-in-a-rubber-dingy</center>
-<center> Figure 4: Here we see Dr. Neil deGrasse Tyson inside the Super-Kamiokande Neutrino Detector in Japan. This incredibly sensitive device recognizes neutrino radiation coming from across the universe, and measures their energy and trajectory to provide information on the objects that have sent them to us. </center>
+<img alt="Drawing" src="http://static.messynessychic.com/wp-content/uploads/2017/01/neil-degrasse-tyson-super-k-.jpg" />
 </div>
 </div>
 <div class="section" id="dangers-of-radiation">
@@ -1246,7 +1381,7 @@ void draw() {
 <p>Click on the nucleus to run the animation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alpha_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alpha_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">class AlphaMover extends Mover {</span>
 <span class="s2">  AlphaMover(float x_loc, float y_loc, float x_vel, float y_vel) {</span>
 <span class="s2">    super(x_loc, y_loc, x_vel, y_vel);</span>
@@ -1705,9 +1840,7 @@ If it is carrying a sufficient amount of energy, an alpha particle can ionize an
 <h3>Biological Effects<a class="headerlink" href="#biological-effects" title="Permalink to this headline">¶</a></h3>
 <p>Due to its low penetration, alpha radiation has very little effect on biological matter when it originates from an external source. Most alpha particles will be stopped by thin clothing, or even dead skin cells. However, alpha radiation can become dangerous when it is contained within the body. The most common example of this is radon decay.
 The radioactive decay of heavy elements is a natural process that is constantly occuring in the Earth’s crust. In the decay of uranium, a chain of elements are produced that eventually result in the formation of lead.</p>
-<img src="http://nuclearsafety.gc.ca/images/fact-sheet-images/20120727-fs-fi-uranium-238-f1-eng.gif" alt="Drawing" style="width: 750px;"/>
-<center>Image from http://nuclearsafety.gc.ca/eng/resources/fact-sheets/polonium-210.cfm</center>
-<center> Figure 6: This is the radioactive decay chain of Uranium-238, the most common isotope of uranium found in nature. As the element decays towards lead, different forms of radiation are produced. The rate at which this radiation is produced is determined by the half-life of each element. </center>
+<img alt="Drawing" src="http://nuclearsafety.gc.ca/images/fact-sheet-images/20120727-fs-fi-uranium-238-f1-eng.gif" />
 <p>During this process, a colourless, odourless gas called radon-222 is produced. Radon-222 has a relatively short half-life, meaning it is constantly decaying into polonium-218, and releasing alpha particles. When radon-222 is inhaled in high doses, the interaction between alpha particles and atoms of your body can lead to increased risk of lung cancer.</p>
 </div>
 </div>
@@ -1726,7 +1859,7 @@ Like alpha decay, beta decay is also the result of an unstable nucleus breaking 
 <p>Click on the nucleus below to run the animation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">beta_minus_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">beta_minus_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">//for beta- decay, releases electron and anti neutrino</span>
 <span class="s2">//large number of neutrinos, neurtino changes into a proton</span>
 
@@ -2212,7 +2345,7 @@ void draw() {
 <p>Click on the nucleus below to run the animation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">beta_plus_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">beta_plus_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">//for beta+ decay, releases positrion and neutrino</span>
 <span class="s2">//large number of protons, proton changes into a neutrino</span>
 
@@ -2704,9 +2837,8 @@ void draw() {
 <h3>Biological Effects<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Like alpha particles, beta radiation has the potential to ionize the atoms they contact. Due to its penetrative power, beta radiation can cause external burns, tissue damage, and acute radiation poisoning. Some of the most common beta emitters are carbon-14, and yttrium-90.</p>
 <p>You may be familiar with the process known as radiocarbon dating: the method through which we can determine the age of organic matter. Radiocarbon dating measures the amount of carbon-14 in a dead organic sample, and compares this amount to the expected amount present while the sample was still alive. Carbon-14 is constantly decaying and emitting beta particles at a rate governed by it’s half-life of 5,730 years, so the difference between the original amount present in a living sample and the measured amount tells us exactly how long it has been since the sample died.</p>
-<img src="http://1.bp.blogspot.com/-q1KfOPVR0r8/VgHUXZrQ4bI/AAAAAAAACCc/O8N0eel3MsY/s1600/c14_3.jpg" alt="Drawing" style="width: 500px;"/>
-<center>Image from http://geologylearn.blogspot.com/2015/09/carbon-dating.html</center>
-<center> Figure 9: Radiocarbon dating is the method that allows us to determine the age of fossils. </center><p>Yttrium-90 is another example of a useful beta emitter. Yttrium-90 is used to treat cancer patients via radiation therapy. This procedure involves bombarding acute areas of cancerous tumors with beta radiation, in hopes that the destructive nature of the radiation will eradicate the tumor. The side effects of this therapy are congruent with the symptoms of radiation poisoning, but it is often effective in improving the patients quality of life.</p>
+<img alt="Drawing" src="http://1.bp.blogspot.com/-q1KfOPVR0r8/VgHUXZrQ4bI/AAAAAAAACCc/O8N0eel3MsY/s1600/c14_3.jpg" />
+<p>Yttrium-90 is another example of a useful beta emitter. Yttrium-90 is used to treat cancer patients via radiation therapy. This procedure involves bombarding acute areas of cancerous tumors with beta radiation, in hopes that the destructive nature of the radiation will eradicate the tumor. The side effects of this therapy are congruent with the symptoms of radiation poisoning, but it is often effective in improving the patients quality of life.</p>
 </div>
 </div>
 <div class="section" id="gamma-gamma-radiation">
@@ -2725,7 +2857,7 @@ Out in the universe, there are objects that are capable of producing gamma rays 
 <p>Click on the animation below to create an annihilation reaction.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">annihilation_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">annihilation_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">//annihilation reaction</span>
 
 <span class="s2">//for beta- decay, releases electron and anti neutrino</span>
@@ -3112,7 +3244,7 @@ void draw() {
 <p>Click on the animation below to demonstrate bremsstrahlung radiation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bremsstra_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bremsstra_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">//this animation shows how the decceleration of a particle can produce gamma rays</span>
 
 <span class="s2">// need a large stationary charge -- proton</span>
@@ -3526,9 +3658,7 @@ void draw() {
 <div class="section" id="id6">
 <h3>Physical Properties<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>Gamma rays carry the most energy out of all types of EMR. Any photon carrying approximately 100 keV of energy or more is considered to be a gamma ray. As gamma rays carry no mass or charge, they have a penetrating power significantly higher than alpha or beta particles. Take a look at the image below to see a comparison between the three.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Alfa_beta_gamma_radiation_penetration.svg/800px-Alfa_beta_gamma_radiation_penetration.svg.png" alt="radiation penetration">
-<center>Image from https://en.wikipedia.org/wiki/File:Alfa_beta_gamma_radiation_penetration.svg</center>
-<center> Figure 12: Gamma rays have a very high penetrative power, although the likelihood of it being blocked increases with both the thickness and density of the material. </center>
+<img alt="radiation penetration" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Alfa_beta_gamma_radiation_penetration.svg/800px-Alfa_beta_gamma_radiation_penetration.svg.png" />
 </div>
 <div class="section" id="id7">
 <h3>Biological Effects<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
@@ -3540,7 +3670,7 @@ void draw() {
 <p>Test your knowledge of radiation with the following questions.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">q_1</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">q_1</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="s2">&quot;Radiation has the potential to ionize atoms.&quot;</span><span class="p">:</span>
         <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Correct!&quot;</span><span class="p">))</span>
         <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Ionized atoms within biological cells can cause damage to the cell itself.&quot;</span><span class="p">))</span>
@@ -3562,12 +3692,12 @@ void draw() {
 <div class="output text_latex math notranslate nohighlight">
 \[What is it that makes radiation dangerous?\]</div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "5f2a2558260d40e882303ef6f0746007"}
+{"version_major": 2, "version_minor": 0, "model_id": "8cbb29e0a5bf4c0db6bf924501ce1371"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">q_2</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">q_2</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="n">a3</span><span class="p">:</span>
         <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Good stuff!&quot;</span><span class="p">))</span>
         <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Gamma radiation has no mass or charge, and can therefore go a long way before interacting with matter.&quot;</span><span class="p">))</span>
@@ -3589,12 +3719,12 @@ void draw() {
 <div class="output text_latex math notranslate nohighlight">
 \[Which type of radiation has the highest penetrative power?\]</div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "0df4a78bfa96495f90881a35f1820586"}
+{"version_major": 2, "version_minor": 0, "model_id": "ef7513000eec492e9cdf43801986da37"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">q_3</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">q_3</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="n">a1</span><span class="p">:</span>
         <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Right on!&quot;</span><span class="p">))</span>
         <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;In beta minus decay, a neutron changes into a proton, ejecting an electron and an antineutrino.&quot;</span><span class="p">))</span>
@@ -3616,12 +3746,12 @@ void draw() {
 <div class="output text_latex math notranslate nohighlight">
 \[Which type of beta decay involves the conversion of a neutron into a proton?\]</div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "c6dc5ebed125424ea0e4d5a2d5647b62"}
+{"version_major": 2, "version_minor": 0, "model_id": "5d5607e3b80d4f12b9080f2415da00d6"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">q_4</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">q_4</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="n">a3</span><span class="p">:</span>
         <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Excellent!&quot;</span><span class="p">))</span>
         <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;A helium-4 nucleus is the exact same: two protons and two neutrons.&quot;</span><span class="p">))</span>
@@ -3644,7 +3774,7 @@ void draw() {
 <div class="output text_latex math notranslate nohighlight">
 \[An alpha particle is identical to what type of nucleus?\]</div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "9c90232b1b924ac08f1a4202931c5811"}
+{"version_major": 2, "version_minor": 0, "model_id": "5de98f00effe4648ae386928b6f1dcba"}
 </script></div>
 </div>
 </div>
@@ -3652,9 +3782,7 @@ void draw() {
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
 <p>Upon their discovery, Ernest Rutherford named these three types of radiation according to the first three letters of the greek alphabet. He chose the names based on their respective penetrative power, with alpha being the weakest, then beta, followed by gamma.</p>
 <p>Different forms of radiation can be both a useful tool, and a potential hazard. In any case, analyzing the properties of radiation allows us to determine the circumstances of its creation, and we use this information to learn about the objects that form it. There are fields of astronomy that are tailored to the analysis of specific forms of radiation, such as gamma, infrared, and radio, that unveil entirely new perspectives on various objects in the universe.</p>
-<img src="http://cdn.eso.org/images/screen/eso1205d.jpg" alt="Drawing" style="width: 750px;"/>
-<center>Image from https://www.eso.org/public/images/eso1205d</center>
-<center> Figure 13: Above are two images of the Helix Nebula. The one on the left is an image captured using infrared light, while the one on the right is captured in visible light. </center>
+<img alt="Drawing" src="http://cdn.eso.org/images/screen/eso1205d.jpg" />
 <p>On the other hand, radiation can be used to cause widespread devastation. There are many areas in the world that are still unsafe due to the residual radiation caused by nuclear weapons, or nuclear waste. Therefore, it is important that the world becomes aware of the dangers associated with radiation.</p>
 <p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
 </div>
@@ -3662,10 +3790,29 @@ void draw() {
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"f74347086b5b4642a1ff86474a45ce6c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e913769121bb417792dbe31cbc3c9f2d": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "5fde4302d9fe4018b0c43e1317e2d8f8": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": [" ", "Radiation is not biodegradable.", "Radiation has the potential to ionize atoms.", "Radiation removes oxygen from the atmosphere."], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Choose One:", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_f74347086b5b4642a1ff86474a45ce6c", "style": "IPY_MODEL_e913769121bb417792dbe31cbc3c9f2d"}}, "d3b0df64e1494f54a7b9d73975636b66": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5f2a2558260d40e882303ef6f0746007": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_5fde4302d9fe4018b0c43e1317e2d8f8", "IPY_MODEL_7e4be3ec7137404187600531e86fa0f2"], "layout": "IPY_MODEL_d3b0df64e1494f54a7b9d73975636b66"}}, "c0d61ea5c4b74dbaaeaaea29e29f9e97": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7e4be3ec7137404187600531e86fa0f2": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_c0d61ea5c4b74dbaaeaaea29e29f9e97", "msg_id": "", "outputs": []}}, "a6fdd39ff57a454fb5290c0b73f6b2fe": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d1ab651f324d42be92a39ca106791d92": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "32da5adcc64c45ab9a1376eeb7cd500c": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": [" ", "Alpha radiation", "Beta radiation", "Gamma radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Choose One:", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_a6fdd39ff57a454fb5290c0b73f6b2fe", "style": "IPY_MODEL_d1ab651f324d42be92a39ca106791d92"}}, "e65fe6c092684ca491620a67c92ade1a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0df4a78bfa96495f90881a35f1820586": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_32da5adcc64c45ab9a1376eeb7cd500c", "IPY_MODEL_2a0d07faec274bd4b0c011f4ac94a12f"], "layout": "IPY_MODEL_e65fe6c092684ca491620a67c92ade1a"}}, "3789bd9b67864fad88fb9e4bcd748e2e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2a0d07faec274bd4b0c011f4ac94a12f": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_3789bd9b67864fad88fb9e4bcd748e2e", "msg_id": "", "outputs": []}}, "bfbf416d3a7e4140bc08083a1f988702": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7b525ca24b4d46468384cbb429c0c8c9": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "09d0d80709c54aaaa222cc12bdda8b33": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": [" ", "Beta minus", "Beta plus"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Choose One:", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_bfbf416d3a7e4140bc08083a1f988702", "style": "IPY_MODEL_7b525ca24b4d46468384cbb429c0c8c9"}}, "2b196c276f004eca910de9685274e940": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c6dc5ebed125424ea0e4d5a2d5647b62": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_09d0d80709c54aaaa222cc12bdda8b33", "IPY_MODEL_4d94b6f8f78f415d9aba04b56c5836e9"], "layout": "IPY_MODEL_2b196c276f004eca910de9685274e940"}}, "869d400e3ac445698bc42f4ae900f442": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4d94b6f8f78f415d9aba04b56c5836e9": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_869d400e3ac445698bc42f4ae900f442", "msg_id": "", "outputs": []}}, "8ba97797acd042c596e6901e696b4654": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d5c73e6ab1c34965822321bbdd121b57": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "4f43b5fbf16e4cc18bec9d4c55897658": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": [" ", "Lithium", "Carbon-14", "Helium-4", "Hydrogen"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Choose One:", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_8ba97797acd042c596e6901e696b4654", "style": "IPY_MODEL_d5c73e6ab1c34965822321bbdd121b57"}}, "6f61dcf93d894b0f882ab55b6eb352b0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9c90232b1b924ac08f1a4202931c5811": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_4f43b5fbf16e4cc18bec9d4c55897658", "IPY_MODEL_8e0e97a205ba460eaac4278413393a48"], "layout": "IPY_MODEL_6f61dcf93d894b0f882ab55b6eb352b0"}}, "240442e9d73b41f482db0e897a2f3808": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8e0e97a205ba460eaac4278413393a48": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_240442e9d73b41f482db0e897a2f3808", "msg_id": "", "outputs": []}}}, "version_major": 2, "version_minor": 0}
+{"state": {"ab55257357164690a5c362fec0123281": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d174f6a63e78439ab69ddeb69596d3eb": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "940ff5408dad4b0d8cd5580190f17df2": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": [" ", "Radiation is not biodegradable.", "Radiation has the potential to ionize atoms.", "Radiation removes oxygen from the atmosphere."], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Choose One:", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_ab55257357164690a5c362fec0123281", "style": "IPY_MODEL_d174f6a63e78439ab69ddeb69596d3eb"}}, "e078c8ccf64549ae8c4d46481bb186d4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8cbb29e0a5bf4c0db6bf924501ce1371": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_940ff5408dad4b0d8cd5580190f17df2", "IPY_MODEL_f0a1b9653ac04a028f061578cfb9edd9"], "layout": "IPY_MODEL_e078c8ccf64549ae8c4d46481bb186d4"}}, "4d00330f1616436fba5a6e0a144eacef": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f0a1b9653ac04a028f061578cfb9edd9": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_4d00330f1616436fba5a6e0a144eacef", "msg_id": "", "outputs": []}}, "c47eb3b3999145a2be5f0f2bf7299ca1": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2e685518f7394909ae5ba1d747bee6b9": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "10fa819797d544d9b2e24f486a76953b": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": [" ", "Alpha radiation", "Beta radiation", "Gamma radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Choose One:", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_c47eb3b3999145a2be5f0f2bf7299ca1", "style": "IPY_MODEL_2e685518f7394909ae5ba1d747bee6b9"}}, "61145c1b5102484d90f075e05c55220f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "ef7513000eec492e9cdf43801986da37": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_10fa819797d544d9b2e24f486a76953b", "IPY_MODEL_58e17bcd6a924c6ba8f7bba4ab6dcc9b"], "layout": "IPY_MODEL_61145c1b5102484d90f075e05c55220f"}}, "4353fc627a594e56818297a81e05ced4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "58e17bcd6a924c6ba8f7bba4ab6dcc9b": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_4353fc627a594e56818297a81e05ced4", "msg_id": "", "outputs": []}}, "9412aa605a7442d8b2b204972c3fe40a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8f8ef8b55931433fa5881fa967e9f74c": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "8742761a15154049b723b9575cfb0511": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": [" ", "Beta minus", "Beta plus"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Choose One:", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_9412aa605a7442d8b2b204972c3fe40a", "style": "IPY_MODEL_8f8ef8b55931433fa5881fa967e9f74c"}}, "ff44c5ca890e4ff18452a811201b5402": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5d5607e3b80d4f12b9080f2415da00d6": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_8742761a15154049b723b9575cfb0511", "IPY_MODEL_14c123653def4db097f2a473ce98331c"], "layout": "IPY_MODEL_ff44c5ca890e4ff18452a811201b5402"}}, "4791ad0107aa4036bd9b57fcfade68e5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "14c123653def4db097f2a473ce98331c": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_4791ad0107aa4036bd9b57fcfade68e5", "msg_id": "", "outputs": []}}, "d0786c23a4e443238b2f8ba2f152e782": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "179d8ea467c7442aa518811b4d13c7e6": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "ef4bb76393db4cd490b13b61840dfeec": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": [" ", "Lithium", "Carbon-14", "Helium-4", "Hydrogen"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Choose One:", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_d0786c23a4e443238b2f8ba2f152e782", "style": "IPY_MODEL_179d8ea467c7442aa518811b4d13c7e6"}}, "46923971a7f8444aaa5cb6b076d6e390": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5de98f00effe4648ae386928b6f1dcba": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_ef4bb76393db4cd490b13b61840dfeec", "IPY_MODEL_77ed1cb348b64bf08d100738fbce222e"], "layout": "IPY_MODEL_46923971a7f8444aaa5cb6b076d6e390"}}, "40bea3e5c1c043aebed1d266ec348388": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "77ed1cb348b64bf08d100738fbce222e": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_40bea3e5c1c043aebed1d266ec348388", "msg_id": "", "outputs": []}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Science/RadiationAnimations"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -3676,7 +3823,7 @@ void draw() {
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../ProjectileMotion/projectile-motion.html" title="previous page">Projectile Motion</a>
-    <a class='right-next' id="next-link" href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html" title="next page">Reflection of Light by Plane and Spherical Mirrors</a>
+    <a class='right-next' id="next-link" href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html" title="next page">Reflection of Light</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

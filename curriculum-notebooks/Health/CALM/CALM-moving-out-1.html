@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CALM - Moving Out 2" href="CALM-moving-out-2.html" />
@@ -65,71 +73,113 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="active">
-    <a href="../Health.html">Health Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="CALM-moving-out.html">CALM - Moving Out Project</a>
-    </li>
-    <li class="active">
-      <a href="">CALM - Moving Out 1</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-2.html">CALM - Moving Out 2</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-3.html">CALM - Moving Out 3</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-4.html">CALM - Moving Out 4</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-5.html">CALM - Moving Out 5</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-6.html">CALM - Moving Out 6</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-7.html">CALM - Moving Out 7</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-9.html">CALM - Moving Out 9</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-8.html">CALM - Moving Out 8</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Health.html">
+   Health Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out.html">
+     CALM - Moving Out Project
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     CALM - Moving Out 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-2.html">
+     CALM - Moving Out 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-3.html">
+     CALM - Moving Out 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-4.html">
+     CALM - Moving Out 4
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-5.html">
+     CALM - Moving Out 5
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-6.html">
+     CALM - Moving Out 6
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-7.html">
+     CALM - Moving Out 7
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-9.html">
+     CALM - Moving Out 9
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-8.html">
+     CALM - Moving Out 8
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -201,38 +251,44 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-1.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-1.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Health/CALM/CALM-moving-out-1.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#technology">
+   Technology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-1-personal-profile">
+   Part 1 - Personal Profile
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#technology" class="nav-link">Technology</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#part-1-personal-profile" class="nav-link">Part 1 - Personal Profile</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -256,7 +312,7 @@
 <p>Cells that contain a pencil emoji (✏️) are ones you should edit. Cells with a book emoji (e.g. 📘) are for you to read (or <code class="docutils literal notranslate"><span class="pre">Run</span></code>) without editing.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#📘This is a code cell.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#📘This is a code cell.</span>
 <span class="c1"># Run the code by selecting this cell then clicking on the  ►Run  button in the toolbar at the top.</span>
 
 <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
@@ -264,14 +320,14 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>5
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#📘This is another code cell for you to run.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#📘This is another code cell for you to run.</span>
 <span class="c1"># Every line that starts with a  #  character is ignored when the computer runs the code</span>
 
 <span class="n">firstNumber</span> <span class="o">=</span> <span class="mi">2</span>
@@ -282,7 +338,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>6
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
 </pre></div>
 </div>
 </div>
@@ -295,7 +351,7 @@
 <p>📘Complete these questions based on what your hope of plan to do with your life. Once you have answered all of the questions in the code cell below, run the cell using the <code class="docutils literal notranslate"><span class="pre">Run</span></code> button on the tool bar and it will store your answers in a text file.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_1.txt
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_1.txt
 ✏️
 My name is 
 1. I will move out of my family home at the age of 
@@ -325,7 +381,7 @@ My name is
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_1.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_1.txt
 </pre></div>
 </div>
 </div>
@@ -333,7 +389,7 @@ My name is
 <p>📘<code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to check that your answers have been stored in a file.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#📘 Run this cell to check that your file contains your answers.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#📘 Run this cell to check that your file contains your answers.</span>
 <span class="c1"># If you get an error, make sure you have run the code cell above.</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;moving_out_1.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
@@ -341,7 +397,7 @@ My name is
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>✏️
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>✏️
 My name is 
 1. I will move out of my family home at the age of 
 2. My educational path will be 
@@ -366,7 +422,6 @@ My name is
     1. 
     2. 
     3. 
-
 </pre></div>
 </div>
 </div>
@@ -376,6 +431,25 @@ My name is
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Health/CALM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

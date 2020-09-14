@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
 
@@ -63,39 +71,61 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -167,34 +197,39 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/COVID-19/world-cases/COVID-19-world-cases-sunburst.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/COVID-19/world-cases/COVID-19-world-cases-sunburst.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Science/COVID-19/world-cases/COVID-19-world-cases-sunburst.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizing-live-data-from-around-the-world">
+   Visualizing live data from around the world
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#visualizing-live-data-from-around-the-world" class="nav-link">Visualizing live data from around the world</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -220,72 +255,66 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install pycountry_convert 
-!pip install requests 
-!pip install pandas 
-!pip install plotly 
-import requests as r
-import pandas as pd
-# Need to remove this if we upgrade to pandas 1.0.1 
-from pandas.io.json import json_normalize
-import pycountry_convert as pc
-import plotly.offline as offline 
-import plotly.graph_objs as go
-print(&quot;Success!&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install pycountry_convert 
+<span class="o">!</span>pip install requests 
+<span class="o">!</span>pip install pandas 
+<span class="o">!</span>pip install plotly 
+<span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">r</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="c1"># Need to remove this if we upgrade to pandas 1.0.1 </span>
+<span class="kn">from</span> <span class="nn">pandas.io.json</span> <span class="k">import</span> <span class="n">json_normalize</span>
+<span class="kn">import</span> <span class="nn">pycountry_convert</span> <span class="k">as</span> <span class="nn">pc</span>
+<span class="kn">import</span> <span class="nn">plotly.offline</span> <span class="k">as</span> <span class="nn">offline</span> 
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Success!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pycountry_convert in /home/mikel/anaconda3/lib/python3.7/site-packages (0.7.2)
-</pre></div>
-</div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pytest-cov&gt;=2.5.1 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (2.10.0)
-Requirement already satisfied: pycountry&gt;=16.11.27.1 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (20.7.2)
-Requirement already satisfied: repoze.lru&gt;=0.7 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (0.7)
-Requirement already satisfied: wheel&gt;=0.30.0 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (0.33.6)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pycountry_convert in /home/mikel/anaconda3/lib/python3.7/site-packages (0.7.2)
 Requirement already satisfied: pprintpp&gt;=0.3.0 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (0.4.0)
+Requirement already satisfied: pytest-cov&gt;=2.5.1 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (2.10.0)
 Requirement already satisfied: pytest&gt;=3.4.0 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (5.2.1)
+Requirement already satisfied: pycountry&gt;=16.11.27.1 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (20.7.2)
 Requirement already satisfied: pytest-mock&gt;=1.6.3 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (3.1.1)
+Requirement already satisfied: wheel&gt;=0.30.0 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (0.33.6)
+Requirement already satisfied: repoze.lru&gt;=0.7 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pycountry_convert) (0.7)
 Requirement already satisfied: coverage&gt;=4.4 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest-cov&gt;=2.5.1-&gt;pycountry_convert) (5.1)
 Requirement already satisfied: py&gt;=1.5.0 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest&gt;=3.4.0-&gt;pycountry_convert) (1.8.0)
 Requirement already satisfied: packaging in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest&gt;=3.4.0-&gt;pycountry_convert) (19.2)
 Requirement already satisfied: attrs&gt;=17.4.0 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest&gt;=3.4.0-&gt;pycountry_convert) (19.2.0)
-Requirement already satisfied: more-itertools&gt;=4.0.0 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest&gt;=3.4.0-&gt;pycountry_convert) (7.2.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: more-itertools&gt;=4.0.0 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest&gt;=3.4.0-&gt;pycountry_convert) (7.2.0)
 Requirement already satisfied: atomicwrites&gt;=1.0 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest&gt;=3.4.0-&gt;pycountry_convert) (1.3.0)
 Requirement already satisfied: pluggy&lt;1.0,&gt;=0.12 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest&gt;=3.4.0-&gt;pycountry_convert) (0.13.0)
 Requirement already satisfied: wcwidth in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest&gt;=3.4.0-&gt;pycountry_convert) (0.1.7)
 Requirement already satisfied: importlib-metadata&gt;=0.12 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pytest&gt;=3.4.0-&gt;pycountry_convert) (0.23)
-</pre></div>
-</div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pyparsing&gt;=2.0.2 in /home/mikel/anaconda3/lib/python3.7/site-packages (from packaging-&gt;pytest&gt;=3.4.0-&gt;pycountry_convert) (2.4.2)
+Requirement already satisfied: pyparsing&gt;=2.0.2 in /home/mikel/anaconda3/lib/python3.7/site-packages (from packaging-&gt;pytest&gt;=3.4.0-&gt;pycountry_convert) (2.4.2)
 Requirement already satisfied: six in /home/mikel/anaconda3/lib/python3.7/site-packages (from packaging-&gt;pytest&gt;=3.4.0-&gt;pycountry_convert) (1.12.0)
 Requirement already satisfied: zipp&gt;=0.5 in /home/mikel/anaconda3/lib/python3.7/site-packages (from importlib-metadata&gt;=0.12-&gt;pytest&gt;=3.4.0-&gt;pycountry_convert) (0.6.0)
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: requests in /home/mikel/anaconda3/lib/python3.7/site-packages (2.22.0)
-</pre></div>
-</div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in /home/mikel/anaconda3/lib/python3.7/site-packages (from requests) (1.24.2)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /home/mikel/anaconda3/lib/python3.7/site-packages (from requests) (2019.9.11)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: requests in /home/mikel/anaconda3/lib/python3.7/site-packages (2.22.0)
 Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /home/mikel/anaconda3/lib/python3.7/site-packages (from requests) (3.0.4)
 Requirement already satisfied: idna&lt;2.9,&gt;=2.5 in /home/mikel/anaconda3/lib/python3.7/site-packages (from requests) (2.8)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /home/mikel/anaconda3/lib/python3.7/site-packages (from requests) (2019.9.11)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in /home/mikel/anaconda3/lib/python3.7/site-packages (from requests) (1.24.2)
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pandas in /home/mikel/anaconda3/lib/python3.7/site-packages (0.25.1)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pandas in /home/mikel/anaconda3/lib/python3.7/site-packages (0.25.1)
+Requirement already satisfied: pytz&gt;=2017.2 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pandas) (2019.3)
 Requirement already satisfied: numpy&gt;=1.13.3 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pandas) (1.17.2)
 Requirement already satisfied: python-dateutil&gt;=2.6.1 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pandas) (2.8.0)
-</pre></div>
-</div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pytz&gt;=2017.2 in /home/mikel/anaconda3/lib/python3.7/site-packages (from pandas) (2019.3)
 Requirement already satisfied: six&gt;=1.5 in /home/mikel/anaconda3/lib/python3.7/site-packages (from python-dateutil&gt;=2.6.1-&gt;pandas) (1.12.0)
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: plotly in /home/mikel/anaconda3/lib/python3.7/site-packages (4.8.2)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: plotly in /home/mikel/anaconda3/lib/python3.7/site-packages (4.8.2)
 Requirement already satisfied: six in /home/mikel/anaconda3/lib/python3.7/site-packages (from plotly) (1.12.0)
 Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/python3.7/site-packages (from plotly) (1.3.3)
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Success!
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Success!
 </pre></div>
 </div>
 </div>
@@ -294,7 +323,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
 <p>Run the cell below to download the number of confirmed cases, the number of deaths and the latest updates.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the latest data</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the latest data</span>
 <span class="c1"># Confirmed</span>
 <span class="k">try</span><span class="p">:</span>
     <span class="n">API_response_confirmed</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://covid19api.herokuapp.com/confirmed&quot;</span><span class="p">)</span>
@@ -324,7 +353,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Data downloaded
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data downloaded
 </pre></div>
 </div>
 </div>
@@ -332,7 +361,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
 <p>COVID-19 confirmed cases (first five entries)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">confirmed_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">confirmed_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -366,16 +395,16 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <th>history.1/24/20</th>
       <th>history.1/25/20</th>
       <th>...</th>
-      <th>history.7/2/20</th>
-      <th>history.7/20/20</th>
-      <th>history.7/21/20</th>
-      <th>history.7/3/20</th>
-      <th>history.7/4/20</th>
-      <th>history.7/5/20</th>
-      <th>history.7/6/20</th>
-      <th>history.7/7/20</th>
-      <th>history.7/8/20</th>
-      <th>history.7/9/20</th>
+      <th>history.9/11/20</th>
+      <th>history.9/12/20</th>
+      <th>history.9/2/20</th>
+      <th>history.9/3/20</th>
+      <th>history.9/4/20</th>
+      <th>history.9/5/20</th>
+      <th>history.9/6/20</th>
+      <th>history.9/7/20</th>
+      <th>history.9/8/20</th>
+      <th>history.9/9/20</th>
     </tr>
   </thead>
   <tbody>
@@ -383,7 +412,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>Afghanistan</td>
       <td>AF</td>
-      <td>35615</td>
+      <td>38641</td>
       <td>nan</td>
       <td>33.93911</td>
       <td>67.709953</td>
@@ -392,22 +421,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>32022</td>
-      <td>35526</td>
-      <td>35615</td>
-      <td>32324</td>
-      <td>32672</td>
-      <td>32951</td>
-      <td>33190</td>
-      <td>33384</td>
-      <td>33594</td>
-      <td>33908</td>
+      <td>38606</td>
+      <td>38641</td>
+      <td>38243</td>
+      <td>38288</td>
+      <td>38304</td>
+      <td>38324</td>
+      <td>38398</td>
+      <td>38494</td>
+      <td>38520</td>
+      <td>38544</td>
     </tr>
     <tr>
       <td>1</td>
       <td>Albania</td>
       <td>AL</td>
-      <td>4290</td>
+      <td>11185</td>
       <td>nan</td>
       <td>41.15330</td>
       <td>20.168300</td>
@@ -416,22 +445,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>2662</td>
-      <td>4171</td>
-      <td>4290</td>
-      <td>2752</td>
-      <td>2819</td>
-      <td>2893</td>
-      <td>2964</td>
-      <td>3038</td>
-      <td>3106</td>
-      <td>3188</td>
+      <td>11021</td>
+      <td>11185</td>
+      <td>9728</td>
+      <td>9844</td>
+      <td>9967</td>
+      <td>10102</td>
+      <td>10255</td>
+      <td>10406</td>
+      <td>10553</td>
+      <td>10704</td>
     </tr>
     <tr>
       <td>2</td>
       <td>Algeria</td>
       <td>DZ</td>
-      <td>24278</td>
+      <td>48007</td>
       <td>nan</td>
       <td>28.03390</td>
       <td>1.659600</td>
@@ -440,22 +469,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>14657</td>
-      <td>23691</td>
-      <td>24278</td>
-      <td>15070</td>
-      <td>15500</td>
-      <td>15941</td>
-      <td>16404</td>
-      <td>16879</td>
-      <td>17348</td>
-      <td>17808</td>
+      <td>47752</td>
+      <td>48007</td>
+      <td>45158</td>
+      <td>45469</td>
+      <td>45773</td>
+      <td>46071</td>
+      <td>46364</td>
+      <td>46653</td>
+      <td>46938</td>
+      <td>47216</td>
     </tr>
     <tr>
       <td>3</td>
       <td>Andorra</td>
       <td>AD</td>
-      <td>884</td>
+      <td>1344</td>
       <td>nan</td>
       <td>42.50630</td>
       <td>1.521800</td>
@@ -464,22 +493,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>855</td>
-      <td>884</td>
-      <td>884</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
+      <td>1344</td>
+      <td>1344</td>
+      <td>1199</td>
+      <td>1199</td>
+      <td>1215</td>
+      <td>1215</td>
+      <td>1215</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1301</td>
     </tr>
     <tr>
       <td>4</td>
       <td>Angola</td>
       <td>AO</td>
-      <td>779</td>
+      <td>3335</td>
       <td>nan</td>
       <td>-11.20270</td>
       <td>17.873900</td>
@@ -488,26 +517,26 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>315</td>
-      <td>749</td>
-      <td>779</td>
-      <td>328</td>
-      <td>346</td>
-      <td>346</td>
-      <td>346</td>
-      <td>386</td>
-      <td>386</td>
-      <td>396</td>
+      <td>3279</td>
+      <td>3335</td>
+      <td>2777</td>
+      <td>2805</td>
+      <td>2876</td>
+      <td>2935</td>
+      <td>2965</td>
+      <td>2981</td>
+      <td>3033</td>
+      <td>3092</td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 188 columns</p>
+<p>5 rows × 241 columns</p>
 </div></div></div>
 </div>
 <p>Confirmed deaths as a result of COVID-19 (first five entries)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">death_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">death_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -541,16 +570,16 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <th>history.1/24/20</th>
       <th>history.1/25/20</th>
       <th>...</th>
-      <th>history.7/2/20</th>
-      <th>history.7/20/20</th>
-      <th>history.7/21/20</th>
-      <th>history.7/3/20</th>
-      <th>history.7/4/20</th>
-      <th>history.7/5/20</th>
-      <th>history.7/6/20</th>
-      <th>history.7/7/20</th>
-      <th>history.7/8/20</th>
-      <th>history.7/9/20</th>
+      <th>history.9/11/20</th>
+      <th>history.9/12/20</th>
+      <th>history.9/2/20</th>
+      <th>history.9/3/20</th>
+      <th>history.9/4/20</th>
+      <th>history.9/5/20</th>
+      <th>history.9/6/20</th>
+      <th>history.9/7/20</th>
+      <th>history.9/8/20</th>
+      <th>history.9/9/20</th>
     </tr>
   </thead>
   <tbody>
@@ -558,7 +587,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>Afghanistan</td>
       <td>AF</td>
-      <td>1186</td>
+      <td>1420</td>
       <td>nan</td>
       <td>33.93911</td>
       <td>67.709953</td>
@@ -567,22 +596,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>807</td>
-      <td>1185</td>
-      <td>1186</td>
-      <td>819</td>
-      <td>826</td>
-      <td>864</td>
-      <td>898</td>
-      <td>920</td>
-      <td>936</td>
-      <td>957</td>
+      <td>1420</td>
+      <td>1420</td>
+      <td>1409</td>
+      <td>1409</td>
+      <td>1409</td>
+      <td>1409</td>
+      <td>1412</td>
+      <td>1415</td>
+      <td>1418</td>
+      <td>1420</td>
     </tr>
     <tr>
       <td>1</td>
       <td>Albania</td>
       <td>AL</td>
-      <td>117</td>
+      <td>330</td>
       <td>nan</td>
       <td>41.15330</td>
       <td>20.168300</td>
@@ -591,22 +620,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>69</td>
-      <td>113</td>
-      <td>117</td>
-      <td>72</td>
-      <td>74</td>
-      <td>76</td>
-      <td>79</td>
-      <td>81</td>
-      <td>83</td>
-      <td>83</td>
+      <td>327</td>
+      <td>330</td>
+      <td>296</td>
+      <td>301</td>
+      <td>306</td>
+      <td>312</td>
+      <td>316</td>
+      <td>319</td>
+      <td>321</td>
+      <td>322</td>
     </tr>
     <tr>
       <td>2</td>
       <td>Algeria</td>
       <td>DZ</td>
-      <td>1100</td>
+      <td>1605</td>
       <td>nan</td>
       <td>28.03390</td>
       <td>1.659600</td>
@@ -615,22 +644,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>928</td>
-      <td>1087</td>
-      <td>1100</td>
-      <td>937</td>
-      <td>946</td>
-      <td>952</td>
-      <td>959</td>
-      <td>968</td>
-      <td>978</td>
-      <td>988</td>
+      <td>1599</td>
+      <td>1605</td>
+      <td>1523</td>
+      <td>1529</td>
+      <td>1539</td>
+      <td>1549</td>
+      <td>1556</td>
+      <td>1562</td>
+      <td>1571</td>
+      <td>1581</td>
     </tr>
     <tr>
       <td>3</td>
       <td>Andorra</td>
       <td>AD</td>
-      <td>52</td>
+      <td>53</td>
       <td>nan</td>
       <td>42.50630</td>
       <td>1.521800</td>
@@ -639,22 +668,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
     </tr>
     <tr>
       <td>4</td>
       <td>Angola</td>
       <td>AO</td>
-      <td>30</td>
+      <td>132</td>
       <td>nan</td>
       <td>-11.20270</td>
       <td>17.873900</td>
@@ -663,26 +692,26 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>17</td>
-      <td>29</td>
-      <td>30</td>
-      <td>18</td>
-      <td>19</td>
-      <td>19</td>
-      <td>19</td>
-      <td>21</td>
-      <td>21</td>
-      <td>22</td>
+      <td>131</td>
+      <td>132</td>
+      <td>112</td>
+      <td>113</td>
+      <td>115</td>
+      <td>117</td>
+      <td>117</td>
+      <td>120</td>
+      <td>124</td>
+      <td>126</td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 188 columns</p>
+<p>5 rows × 241 columns</p>
 </div></div></div>
 </div>
 <p>Let’s assign a continent code to our tables. Run the cell below to do so.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Assign continent codes for sunburst plot</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Assign continent codes for sunburst plot</span>
 <span class="n">cont_codes</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">confirmed_df</span><span class="p">[</span><span class="s2">&quot;country_code&quot;</span><span class="p">]:</span>
     <span class="k">try</span><span class="p">:</span>
@@ -698,7 +727,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Continent codes appended.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Continent codes appended.
 </pre></div>
 </div>
 </div>
@@ -706,7 +735,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
 <p>COVID-19 confirmed cases (first five entries)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">confirmed_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">confirmed_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -740,15 +769,15 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <th>history.1/24/20</th>
       <th>history.1/25/20</th>
       <th>...</th>
-      <th>history.7/20/20</th>
-      <th>history.7/21/20</th>
-      <th>history.7/3/20</th>
-      <th>history.7/4/20</th>
-      <th>history.7/5/20</th>
-      <th>history.7/6/20</th>
-      <th>history.7/7/20</th>
-      <th>history.7/8/20</th>
-      <th>history.7/9/20</th>
+      <th>history.9/12/20</th>
+      <th>history.9/2/20</th>
+      <th>history.9/3/20</th>
+      <th>history.9/4/20</th>
+      <th>history.9/5/20</th>
+      <th>history.9/6/20</th>
+      <th>history.9/7/20</th>
+      <th>history.9/8/20</th>
+      <th>history.9/9/20</th>
       <th>continent code</th>
     </tr>
   </thead>
@@ -757,7 +786,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>Afghanistan</td>
       <td>AF</td>
-      <td>35615</td>
+      <td>38641</td>
       <td>nan</td>
       <td>33.93911</td>
       <td>67.709953</td>
@@ -766,22 +795,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>35526</td>
-      <td>35615</td>
-      <td>32324</td>
-      <td>32672</td>
-      <td>32951</td>
-      <td>33190</td>
-      <td>33384</td>
-      <td>33594</td>
-      <td>33908</td>
+      <td>38641</td>
+      <td>38243</td>
+      <td>38288</td>
+      <td>38304</td>
+      <td>38324</td>
+      <td>38398</td>
+      <td>38494</td>
+      <td>38520</td>
+      <td>38544</td>
       <td>AS</td>
     </tr>
     <tr>
       <td>1</td>
       <td>Albania</td>
       <td>AL</td>
-      <td>4290</td>
+      <td>11185</td>
       <td>nan</td>
       <td>41.15330</td>
       <td>20.168300</td>
@@ -790,22 +819,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>4171</td>
-      <td>4290</td>
-      <td>2752</td>
-      <td>2819</td>
-      <td>2893</td>
-      <td>2964</td>
-      <td>3038</td>
-      <td>3106</td>
-      <td>3188</td>
+      <td>11185</td>
+      <td>9728</td>
+      <td>9844</td>
+      <td>9967</td>
+      <td>10102</td>
+      <td>10255</td>
+      <td>10406</td>
+      <td>10553</td>
+      <td>10704</td>
       <td>EU</td>
     </tr>
     <tr>
       <td>2</td>
       <td>Algeria</td>
       <td>DZ</td>
-      <td>24278</td>
+      <td>48007</td>
       <td>nan</td>
       <td>28.03390</td>
       <td>1.659600</td>
@@ -814,22 +843,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>23691</td>
-      <td>24278</td>
-      <td>15070</td>
-      <td>15500</td>
-      <td>15941</td>
-      <td>16404</td>
-      <td>16879</td>
-      <td>17348</td>
-      <td>17808</td>
+      <td>48007</td>
+      <td>45158</td>
+      <td>45469</td>
+      <td>45773</td>
+      <td>46071</td>
+      <td>46364</td>
+      <td>46653</td>
+      <td>46938</td>
+      <td>47216</td>
       <td>AF</td>
     </tr>
     <tr>
       <td>3</td>
       <td>Andorra</td>
       <td>AD</td>
-      <td>884</td>
+      <td>1344</td>
       <td>nan</td>
       <td>42.50630</td>
       <td>1.521800</td>
@@ -838,22 +867,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>884</td>
-      <td>884</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
-      <td>855</td>
+      <td>1344</td>
+      <td>1199</td>
+      <td>1199</td>
+      <td>1215</td>
+      <td>1215</td>
+      <td>1215</td>
+      <td>1261</td>
+      <td>1261</td>
+      <td>1301</td>
       <td>EU</td>
     </tr>
     <tr>
       <td>4</td>
       <td>Angola</td>
       <td>AO</td>
-      <td>779</td>
+      <td>3335</td>
       <td>nan</td>
       <td>-11.20270</td>
       <td>17.873900</td>
@@ -862,26 +891,26 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>749</td>
-      <td>779</td>
-      <td>328</td>
-      <td>346</td>
-      <td>346</td>
-      <td>346</td>
-      <td>386</td>
-      <td>386</td>
-      <td>396</td>
+      <td>3335</td>
+      <td>2777</td>
+      <td>2805</td>
+      <td>2876</td>
+      <td>2935</td>
+      <td>2965</td>
+      <td>2981</td>
+      <td>3033</td>
+      <td>3092</td>
       <td>AF</td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 189 columns</p>
+<p>5 rows × 242 columns</p>
 </div></div></div>
 </div>
 <p>Confirmed deaths as a result of COVID-19 (first five entries)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">death_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">death_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -915,15 +944,15 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <th>history.1/24/20</th>
       <th>history.1/25/20</th>
       <th>...</th>
-      <th>history.7/20/20</th>
-      <th>history.7/21/20</th>
-      <th>history.7/3/20</th>
-      <th>history.7/4/20</th>
-      <th>history.7/5/20</th>
-      <th>history.7/6/20</th>
-      <th>history.7/7/20</th>
-      <th>history.7/8/20</th>
-      <th>history.7/9/20</th>
+      <th>history.9/12/20</th>
+      <th>history.9/2/20</th>
+      <th>history.9/3/20</th>
+      <th>history.9/4/20</th>
+      <th>history.9/5/20</th>
+      <th>history.9/6/20</th>
+      <th>history.9/7/20</th>
+      <th>history.9/8/20</th>
+      <th>history.9/9/20</th>
       <th>continent code</th>
     </tr>
   </thead>
@@ -932,7 +961,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>Afghanistan</td>
       <td>AF</td>
-      <td>1186</td>
+      <td>1420</td>
       <td>nan</td>
       <td>33.93911</td>
       <td>67.709953</td>
@@ -941,22 +970,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>1185</td>
-      <td>1186</td>
-      <td>819</td>
-      <td>826</td>
-      <td>864</td>
-      <td>898</td>
-      <td>920</td>
-      <td>936</td>
-      <td>957</td>
+      <td>1420</td>
+      <td>1409</td>
+      <td>1409</td>
+      <td>1409</td>
+      <td>1409</td>
+      <td>1412</td>
+      <td>1415</td>
+      <td>1418</td>
+      <td>1420</td>
       <td>AS</td>
     </tr>
     <tr>
       <td>1</td>
       <td>Albania</td>
       <td>AL</td>
-      <td>117</td>
+      <td>330</td>
       <td>nan</td>
       <td>41.15330</td>
       <td>20.168300</td>
@@ -965,22 +994,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>113</td>
-      <td>117</td>
-      <td>72</td>
-      <td>74</td>
-      <td>76</td>
-      <td>79</td>
-      <td>81</td>
-      <td>83</td>
-      <td>83</td>
+      <td>330</td>
+      <td>296</td>
+      <td>301</td>
+      <td>306</td>
+      <td>312</td>
+      <td>316</td>
+      <td>319</td>
+      <td>321</td>
+      <td>322</td>
       <td>EU</td>
     </tr>
     <tr>
       <td>2</td>
       <td>Algeria</td>
       <td>DZ</td>
-      <td>1100</td>
+      <td>1605</td>
       <td>nan</td>
       <td>28.03390</td>
       <td>1.659600</td>
@@ -989,22 +1018,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>1087</td>
-      <td>1100</td>
-      <td>937</td>
-      <td>946</td>
-      <td>952</td>
-      <td>959</td>
-      <td>968</td>
-      <td>978</td>
-      <td>988</td>
+      <td>1605</td>
+      <td>1523</td>
+      <td>1529</td>
+      <td>1539</td>
+      <td>1549</td>
+      <td>1556</td>
+      <td>1562</td>
+      <td>1571</td>
+      <td>1581</td>
       <td>AF</td>
     </tr>
     <tr>
       <td>3</td>
       <td>Andorra</td>
       <td>AD</td>
-      <td>52</td>
+      <td>53</td>
       <td>nan</td>
       <td>42.50630</td>
       <td>1.521800</td>
@@ -1013,22 +1042,22 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
+      <td>53</td>
       <td>EU</td>
     </tr>
     <tr>
       <td>4</td>
       <td>Angola</td>
       <td>AO</td>
-      <td>30</td>
+      <td>132</td>
       <td>nan</td>
       <td>-11.20270</td>
       <td>17.873900</td>
@@ -1037,20 +1066,20 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>29</td>
-      <td>30</td>
-      <td>18</td>
-      <td>19</td>
-      <td>19</td>
-      <td>19</td>
-      <td>21</td>
-      <td>21</td>
-      <td>22</td>
+      <td>132</td>
+      <td>112</td>
+      <td>113</td>
+      <td>115</td>
+      <td>117</td>
+      <td>117</td>
+      <td>120</td>
+      <td>124</td>
+      <td>126</td>
       <td>AF</td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 189 columns</p>
+<p>5 rows × 242 columns</p>
 </div></div></div>
 </div>
 <p>Time to visualize!</p>
@@ -1058,7 +1087,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
 <p>We will need to manipulate our data a bit to create a plot. It may look like overwhelming at first, but don’t worry - we separated each step.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build sub DataFrame for each</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build sub DataFrame for each</span>
 <span class="n">conf_df</span> <span class="o">=</span> <span class="n">confirmed_df</span><span class="p">[[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span><span class="s1">&#39;continent code&#39;</span><span class="p">,</span><span class="s1">&#39;latest&#39;</span><span class="p">]]</span>
 <span class="n">deat_df</span> <span class="o">=</span> <span class="n">death_df</span><span class="p">[[</span><span class="s1">&#39;country&#39;</span><span class="p">,</span><span class="s1">&#39;continent code&#39;</span><span class="p">,</span><span class="s1">&#39;latest&#39;</span><span class="p">]]</span>
 
@@ -1097,7 +1126,7 @@ Requirement already satisfied: retrying&gt;=1.3.3 in /home/mikel/anaconda3/lib/p
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Data manipulated
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data manipulated
 </pre></div>
 </div>
 </div>
@@ -1116,7 +1145,7 @@ TL and XX contain various items not recognized by Python - the Diamond Princess 
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Sunburst plot</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Sunburst plot</span>
 <span class="n">last_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s1">&#39;today&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">date</span><span class="p">()</span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">offline</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span>
     <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;sunburst&#39;</span><span class="p">,</span> <span class="n">hoverinfo</span><span class="o">=</span><span class="s1">&#39;values&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">all_levels</span><span class="p">)],</span>
@@ -1202,20 +1231,20 @@ var n,a=t("./lib/build-log"),i=t("./lib/epsilon"),o=t("./lib/intersecter"),s=t("
 </div><div class="output text_html"><div>
 
 
-            <div id="d7f6f1a1-4306-4833-91c2-303e9e58baec" class="plotly-graph-div" style="height:800px; width:800px;"></div>
+            <div id="d9c1a464-7738-49f6-941c-0b3db79e648d" class="plotly-graph-div" style="height:800px; width:800px;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
 
-                if (document.getElementById("d7f6f1a1-4306-4833-91c2-303e9e58baec")) {
+                if (document.getElementById("d9c1a464-7738-49f6-941c-0b3db79e648d")) {
                     Plotly.newPlot(
-                        'd7f6f1a1-4306-4833-91c2-303e9e58baec',
-                        [{"hoverinfo": "values", "labels": ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Australia", "Australia", "Australia", "Australia", "Australia", "Australia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Central African Republic", "Chad", "Chile", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "Colombia", "Congo (Brazzaville)", "Congo (Kinshasa)", "Costa Rica", "Cote d'Ivoire", "Croatia", "Diamond Princess", "Cuba", "Cyprus", "Czechia", "Denmark", "Denmark", "Denmark", "Djibouti", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "France", "France", "France", "France", "France", "France", "France", "France", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Guatemala", "Guinea", "Guyana", "Haiti", "Holy See", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Korea, South", "Kuwait", "Kyrgyzstan", "Latvia", "Lebanon", "Liberia", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Maldives", "Malta", "Mauritania", "Mauritius", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Namibia", "Nepal", "Netherlands", "Netherlands", "Netherlands", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Lucia", "Saint Vincent and the Grenadines", "San Marino", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Singapore", "Slovakia", "Slovenia", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Taiwan*", "Tanzania", "Thailand", "Togo", "Trinidad and Tobago", "Tunisia", "Turkey", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "Uruguay", "US", "Uzbekistan", "Venezuela", "Vietnam", "Zambia", "Zimbabwe", "Canada", "Dominica", "Grenada", "Mozambique", "Syria", "Timor-Leste", "Belize", "Laos", "Libya", "West Bank and Gaza", "Guinea-Bissau", "Mali", "Saint Kitts and Nevis", "Canada", "Canada", "Kosovo", "Burma", "United Kingdom", "United Kingdom", "United Kingdom", "MS Zaandam", "Botswana", "Burundi", "Sierra Leone", "Netherlands", "Malawi", "United Kingdom", "France", "South Sudan", "Western Sahara", "Sao Tome and Principe", "Yemen", "Comoros", "Tajikistan", "Lesotho", "AF", "AS", "EH", "EU", "NA", "OC", "SA", "TL", "VA", "XX", "World"], "parents": ["AS", "EU", "AF", "EU", "AF", "NA", "SA", "AS", "OC", "OC", "OC", "OC", "OC", "OC", "OC", "OC", "EU", "AS", "XX", "AS", "AS", "NA", "EU", "EU", "AF", "AS", "SA", "EU", "SA", "AS", "EU", "AF", "XX", "AS", "AF", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "AF", "AF", "SA", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "SA", "AF", "AF", "NA", "AF", "EU", "XX", "NA", "AS", "EU", "EU", "EU", "EU", "AF", "NA", "SA", "AF", "NA", "AF", "AF", "EU", "XX", "AF", "OC", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "AF", "AF", "AS", "EU", "AF", "EU", "NA", "AF", "SA", "NA", "VA", "NA", "EU", "EU", "AS", "AS", "AS", "AS", "EU", "AS", "EU", "NA", "AS", "AS", "AS", "AF", "AS", "AS", "AS", "EU", "AS", "AF", "EU", "EU", "EU", "AF", "AS", "AS", "EU", "AF", "AF", "NA", "EU", "EU", "AS", "EU", "AF", "AF", "AS", "EU", "EU", "EU", "EU", "OC", "NA", "AF", "AF", "EU", "EU", "AS", "AS", "NA", "OC", "SA", "SA", "AS", "EU", "EU", "AS", "EU", "EU", "AF", "NA", "NA", "EU", "AS", "AF", "EU", "AF", "AS", "EU", "EU", "AF", "AF", "EU", "AS", "AF", "SA", "EU", "EU", "AS", "AF", "AS", "AF", "NA", "AF", "AS", "AF", "EU", "AS", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "SA", "NA", "AS", "XX", "AS", "AF", "AF", "NA", "NA", "NA", "AF", "XX", "TL", "NA", "XX", "AF", "XX", "AF", "AF", "NA", "NA", "NA", "XX", "XX", "EU", "EU", "EU", "XX", "AF", "AF", "AF", "EU", "AF", "EU", "EU", "AF", "EH", "AF", "AS", "AF", "AS", "AF", "World", "World", "World", "World", "World", "World", "World", "World", "World", "World", ""], "text": ["Conf 35,615", "Conf 4,290", "Conf 24,278", "Conf 884", "Conf 779", "Conf 76", "Conf 136,118", "Conf 35,254", "Conf 113", "Conf 3,614", "Conf 31", "Conf 1,073", "Conf 444", "Conf 229", "Conf 6,739", "Conf 651", "Conf 19,827", "Conf 28,242", "Conf 194", "Conf 37,316", "Conf 210,510", "Conf 106", "Conf 66,348", "Conf 64,258", "Conf 1,602", "Conf 92", "Conf 62,357", "Conf 8,787", "Conf 2,159,654", "Conf 141", "Conf 9,254", "Conf 1,065", "Conf 2,107", "Conf 197", "Conf 16,522", "Conf 9,728", "Conf 3,328", "Conf 13", "Conf 366", "Conf 170", "Conf 263", "Conf 1,067", "Conf 39,718", "Conf 36", "Conf 57,796", "Conf 970", "Conf 4,561", "Conf 889", "Conf 334,683", "Conf 991", "Conf 929", "Conf 583", "Conf 364", "Conf 167", "Conf 1,661", "Conf 255", "Conf 147", "Conf 171", "Conf 349", "Conf 947", "Conf 1,276", "Conf 1,958", "Conf 68,135", "Conf 1,019", "Conf 249", "Conf 654", "Conf 932", "Conf 155", "Conf 164", "Conf 46", "Conf 75", "Conf 18", "Conf 322", "Conf 798", "Conf 737", "Conf 201", "Conf 603", "Conf 203", "Conf 1", "Conf 140", "Conf 188", "Conf 1,270", "Conf 211,038", "Conf 2,851", "Conf 8,534", "Conf 11,811", "Conf 14,531", "Conf 4,422", "Conf 712", "Conf 2,449", "Conf 1,040", "Conf 14,324", "Conf 191", "Conf 13", "Conf 13,302", "Conf 5,027", "Conf 54,797", "Conf 76,217", "Conf 89,078", "Conf 12,582", "Conf 3,071", "Conf 251", "Conf 2,022", "Conf 1,894", "Conf 11,072", "Conf 27", "Conf 7,351", "Conf 6,851", "Conf 62", "Conf 195", "Conf 2,824", "Conf 22", "Conf 639", "Conf 6", "Conf 46", "Conf 262", "Conf 203,696", "Conf 6,433", "Conf 112", "Conf 1,049", "Conf 203,717", "Conf 28,989", "Conf 4,048", "Conf 40,229", "Conf 6,652", "Conf 339", "Conf 7,100", "Conf 12", "Conf 35,345", "Conf 4,347", "Conf 1,839", "Conf 1,193,078", "Conf 89,869", "Conf 278,827", "Conf 97,159", "Conf 25,802", "Conf 54,042", "Conf 244,752", "Conf 810", "Conf 26,463", "Conf 1,113", "Conf 75,153", "Conf 14,168", "Conf 13,879", "Conf 60,434", "Conf 28,251", "Conf 1,193", "Conf 2,980", "Conf 1,108", "Conf 86", "Conf 1,949", "Conf 5,725", "Conf 7,548", "Conf 8,815", "Conf 3,044", "Conf 677", "Conf 5,985", "Conf 343", "Conf 356,255", "Conf 21,442", "Conf 111", "Conf 287", "Conf 2,381", "Conf 17,742", "Conf 1,366", "Conf 17,994", "Conf 117", "Conf 28", "Conf 79", "Conf 52,073", "Conf 1,555", "Conf 3,439", "Conf 1,113", "Conf 37,801", "Conf 9,412", "Conf 9,053", "Conf 69,887", "Conf 267,428", "Conf 55,153", "Conf 27", "Conf 3,817", "Conf 362,087", "Conf 70,764", "Conf 40,782", "Conf 48,898", "Conf 107,430", "Conf 39,133", "Conf 782,040", "Conf 1,655", "Conf 23", "Conf 50", "Conf 699", "Conf 255,825", "Conf 8,985", "Conf 21,605", "Conf 108", "Conf 48,434", "Conf 2,021", "Conf 1,977", "Conf 3,135", "Conf 381,798", "Conf 266,194", "Conf 2,730", "Conf 10,992", "Conf 1,131", "Conf 78,166", "Conf 33,742", "Conf 451", "Conf 509", "Conf 3,255", "Conf 790", "Conf 139", "Conf 1,389", "Conf 221,500", "Conf 1,072", "Conf 61,454", "Conf 57,498", "Conf 153", "Conf 203", "Conf 583", "Conf 180", "Conf 336", "Conf 12", "Conf 295,817", "Conf 1,096", "Conf 3,899,211", "Conf 17,881", "Conf 12,774", "Conf 401", "Conf 3,386", "Conf 1,820", "Conf 0", "Conf 18", "Conf 23", "Conf 1,536", "Conf 540", "Conf 24", "Conf 42", "Conf 19", "Conf 2,088", "Conf 9,228", "Conf 1,954", "Conf 2,477", "Conf 17", "Conf 5", "Conf 13", "Conf 5,877", "Conf 341", "Conf 3", "Conf 8", "Conf 81", "Conf 9", "Conf 522", "Conf 328", "Conf 1,727", "Conf 10", "Conf 3,045", "Conf 13", "Conf 4", "Conf 2,211", "Conf 10", "Conf 746", "Conf 1,629", "Conf 337", "Conf 6,967", "Conf 359", " Confirmed 746,440", " Confirmed 3,518,632", " Confirmed 10", " Confirmed 2,692,821", " Confirmed 4,593,148", " Confirmed 14,503", " Confirmed 3,348,537", " Confirmed 24", " Confirmed 12", " Confirmed 33,695", "14,947,822"], "type": "sunburst", "values": [35615.0, 4290.0, 24278.0, 884.0, 779.0, 76.0, 136118.0, 35254.0, 113.0, 3614.0, 31.0, 1073.0, 444.0, 229.0, 6739.0, 651.0, 19827.0, 28242.0, 194.0, 37316.0, 210510.0, 106.0, 66348.0, 64258.0, 1602.0, 92.0, 62357.0, 8787.0, 2159654.0, 141.0, 9254.0, 1065.0, 2107.0, 197.0, 16522.0, 9728.0, 3328.0, 13.0, 366.0, 170.0, 263.0, 1067.0, 39718.0, 36.0, 57796.0, 970.0, 4561.0, 889.0, 334683.0, 991.0, 929.0, 583.0, 364.0, 167.0, 1661.0, 255.0, 147.0, 171.0, 349.0, 947.0, 1276.0, 1958.0, 68135.0, 1019.0, 249.0, 654.0, 932.0, 155.0, 164.0, 46.0, 75.0, 18.0, 322.0, 798.0, 737.0, 201.0, 603.0, 203.0, 1.0, 140.0, 188.0, 1270.0, 211038.0, 2851.0, 8534.0, 11811.0, 14531.0, 4422.0, 712.0, 2449.0, 1040.0, 14324.0, 191.0, 13.0, 13302.0, 5027.0, 54797.0, 76217.0, 89078.0, 12582.0, 3071.0, 251.0, 2022.0, 1894.0, 11072.0, 27.0, 7351.0, 6851.0, 62.0, 195.0, 2824.0, 22.0, 639.0, 6.0, 46.0, 262.0, 203696.0, 6433.0, 112.0, 1049.0, 203717.0, 28989.0, 4048.0, 40229.0, 6652.0, 339.0, 7100.0, 12.0, 35345.0, 4347.0, 1839.0, 1193078.0, 89869.0, 278827.0, 97159.0, 25802.0, 54042.0, 244752.0, 810.0, 26463.0, 1113.0, 75153.0, 14168.0, 13879.0, 60434.0, 28251.0, 1193.0, 2980.0, 1108.0, 86.0, 1949.0, 5725.0, 7548.0, 8815.0, 3044.0, 677.0, 5985.0, 343.0, 356255.0, 21442.0, 111.0, 287.0, 2381.0, 17742.0, 1366.0, 17994.0, 117.0, 28.0, 79.0, 52073.0, 1555.0, 3439.0, 1113.0, 37801.0, 9412.0, 9053.0, 69887.0, 267428.0, 55153.0, 27.0, 3817.0, 362087.0, 70764.0, 40782.0, 48898.0, 107430.0, 39133.0, 782040.0, 1655.0, 23.0, 50.0, 699.0, 255825.0, 8985.0, 21605.0, 108.0, 48434.0, 2021.0, 1977.0, 3135.0, 381798.0, 266194.0, 2730.0, 10992.0, 1131.0, 78166.0, 33742.0, 451.0, 509.0, 3255.0, 790.0, 139.0, 1389.0, 221500.0, 1072.0, 61454.0, 57498.0, 153.0, 203.0, 583.0, 180.0, 336.0, 12.0, 295817.0, 1096.0, 3899211.0, 17881.0, 12774.0, 401.0, 3386.0, 1820.0, 0.0, 18.0, 23.0, 1536.0, 540.0, 24.0, 42.0, 19.0, 2088.0, 9228.0, 1954.0, 2477.0, 17.0, 5.0, 13.0, 5877.0, 341.0, 3.0, 8.0, 81.0, 9.0, 522.0, 328.0, 1727.0, 10.0, 3045.0, 13.0, 4.0, 2211.0, 10.0, 746.0, 1629.0, 337.0, 6967.0, 359.0, 15692.0, 82546.0, 1.0, 199704.0, 196776.0, 151.0, 121146.0, 0.0, 0.0, 431.0, 0.0]}],
-                        {"height": 800, "insidetextorientation": "radial", "title": "COVID-19 Confirmed Cases as of 2020-07-22", "width": 800},
+                        'd9c1a464-7738-49f6-941c-0b3db79e648d',
+                        [{"hoverinfo": "values", "labels": ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Australia", "Australia", "Australia", "Australia", "Australia", "Australia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Central African Republic", "Chad", "Chile", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "China", "Colombia", "Comoros", "Congo (Brazzaville)", "Congo (Kinshasa)", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czechia", "Denmark", "Denmark", "Denmark", "Diamond Princess", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "France", "France", "France", "France", "France", "France", "France", "France", "France", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Holy See", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "MS Zaandam", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Mauritania", "Mauritius", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Namibia", "Nepal", "Netherlands", "Netherlands", "Netherlands", "Netherlands", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan*", "Tajikistan", "Tanzania", "Thailand", "Timor-Leste", "Togo", "Trinidad and Tobago", "Tunisia", "Turkey", "US", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "United Kingdom", "Uruguay", "Uzbekistan", "Venezuela", "Vietnam", "West Bank and Gaza", "Western Sahara", "Yemen", "Zambia", "Zimbabwe", "AF", "AS", "EH", "EU", "NA", "OC", "SA", "TL", "VA", "XX", "World"], "parents": ["AS", "EU", "AF", "EU", "AF", "NA", "SA", "AS", "OC", "OC", "OC", "OC", "OC", "OC", "OC", "OC", "EU", "AS", "XX", "AS", "AS", "NA", "EU", "EU", "NA", "AF", "AS", "SA", "EU", "AF", "SA", "AS", "EU", "AF", "XX", "AF", "XX", "AS", "AF", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "AF", "AF", "SA", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "AS", "SA", "AF", "AF", "AF", "NA", "AF", "EU", "NA", "AS", "EU", "EU", "EU", "EU", "XX", "AF", "NA", "NA", "SA", "AF", "NA", "AF", "AF", "EU", "XX", "AF", "OC", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "AF", "AF", "AS", "EU", "AF", "EU", "NA", "NA", "AF", "AF", "SA", "NA", "VA", "NA", "EU", "EU", "AS", "AS", "AS", "AS", "EU", "AS", "EU", "NA", "AS", "AS", "AS", "AF", "AS", "XX", "AS", "AS", "XX", "EU", "AS", "AF", "AF", "AF", "EU", "EU", "EU", "XX", "AF", "AF", "AS", "AS", "AF", "EU", "AF", "AF", "NA", "EU", "EU", "AS", "EU", "AF", "AF", "AF", "AS", "EU", "EU", "EU", "EU", "EU", "OC", "NA", "AF", "AF", "EU", "EU", "AS", "AS", "NA", "OC", "SA", "SA", "AS", "EU", "EU", "AS", "EU", "EU", "AF", "NA", "NA", "NA", "EU", "AF", "AS", "AF", "EU", "AF", "AF", "AS", "EU", "EU", "AF", "AF", "AF", "EU", "AS", "AF", "SA", "EU", "EU", "XX", "AS", "AS", "AF", "AS", "TL", "AF", "NA", "AF", "AS", "NA", "AF", "EU", "AS", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "EU", "SA", "AS", "XX", "AS", "XX", "EH", "AS", "AF", "AF", "World", "World", "World", "World", "World", "World", "World", "World", "World", "World", ""], "text": ["Conf 38,641", "Conf 11,185", "Conf 48,007", "Conf 1,344", "Conf 3,335", "Conf 95", "Conf 546,481", "Conf 45,675", "Conf 113", "Conf 4,166", "Conf 33", "Conf 1,149", "Conf 466", "Conf 230", "Conf 19,835", "Conf 659", "Conf 32,696", "Conf 38,172", "Conf 2,928", "Conf 59,586", "Conf 336,044", "Conf 180", "Conf 73,975", "Conf 92,478", "Conf 1,458", "Conf 2,242", "Conf 244", "Conf 125,982", "Conf 23,138", "Conf 2,252", "Conf 4,315,687", "Conf 145", "Conf 17,891", "Conf 1,514", "Conf 2,796", "Conf 471", "Conf 4,711", "Conf 275", "Conf 20,009", "Conf 15,415", "Conf 6,962", "Conf 0", "Conf 13", "Conf 1,410", "Conf 193", "Conf 271", "Conf 5", "Conf 1,086", "Conf 46,323", "Conf 55", "Conf 64,707", "Conf 1,709", "Conf 15", "Conf 4,749", "Conf 1,083", "Conf 432,666", "Conf 991", "Conf 935", "Conf 584", "Conf 388", "Conf 170", "Conf 1,777", "Conf 258", "Conf 147", "Conf 171", "Conf 365", "Conf 948", "Conf 1,277", "Conf 4,938", "Conf 68,139", "Conf 1,019", "Conf 261", "Conf 665", "Conf 935", "Conf 157", "Conf 264", "Conf 46", "Conf 75", "Conf 18", "Conf 381", "Conf 831", "Conf 942", "Conf 203", "Conf 665", "Conf 234", "Conf 1", "Conf 902", "Conf 201", "Conf 1,280", "Conf 708,964", "Conf 456", "Conf 4,928", "Conf 10,385", "Conf 55,454", "Conf 18,916", "Conf 13,368", "Conf 4,653", "Conf 1,523", "Conf 35,401", "Conf 418", "Conf 14", "Conf 19,557", "Conf 712", "Conf 5,394", "Conf 24", "Conf 103,092", "Conf 116,451", "Conf 100,856", "Conf 26,851", "Conf 4,996", "Conf 361", "Conf 2,655", "Conf 5,050", "Conf 63,888", "Conf 32", "Conf 8,557", "Conf 9,521", "Conf 953", "Conf 3,080", "Conf 939", "Conf 3,374", "Conf 26", "Conf 2,723", "Conf 21", "Conf 11", "Conf 256", "Conf 381,907", "Conf 8,643", "Conf 3,376", "Conf 2,075", "Conf 260,817", "Conf 45,434", "Conf 13,036", "Conf 24", "Conf 81,658", "Conf 10,020", "Conf 2,275", "Conf 1,812", "Conf 8,478", "Conf 12", "Conf 67,136", "Conf 11,825", "Conf 2,162", "Conf 4,754,356", "Conf 214,746", "Conf 399,940", "Conf 286,778", "Conf 30,730", "Conf 152,722", "Conf 286,297", "Conf 3,623", "Conf 75,206", "Conf 3,062", "Conf 106,803", "Conf 35,969", "Conf 22,176", "Conf 12,683", "Conf 94,211", "Conf 44,828", "Conf 23", "Conf 1,464", "Conf 23,669", "Conf 1,245", "Conf 1,316", "Conf 22,348", "Conf 111", "Conf 3,296", "Conf 7,159", "Conf 9", "Conf 15,737", "Conf 5,678", "Conf 9,868", "Conf 9,052", "Conf 2,916", "Conf 2,274", "Conf 7,274", "Conf 361", "Conf 663,973", "Conf 42,714", "Conf 169", "Conf 311", "Conf 6,530", "Conf 84,435", "Conf 5,040", "Conf 9,604", "Conf 53,120", "Conf 2,994", "Conf 25", "Conf 145", "Conf 533", "Conf 81,012", "Conf 1,797", "Conf 4,818", "Conf 1,178", "Conf 56,177", "Conf 15,694", "Conf 12,079", "Conf 88,337", "Conf 301,481", "Conf 101,041", "Conf 508", "Conf 27,324", "Conf 716,670", "Conf 257,863", "Conf 73,650", "Conf 63,310", "Conf 121,523", "Conf 102,386", "Conf 1,053,663", "Conf 4,565", "Conf 17", "Conf 27", "Conf 64", "Conf 722", "Conf 906", "Conf 325,050", "Conf 14,237", "Conf 32,300", "Conf 139", "Conf 2,096", "Conf 57,357", "Conf 5,453", "Conf 3,603", "Conf 3,376", "Conf 648,214", "Conf 2,578", "Conf 566,326", "Conf 3,195", "Conf 13,470", "Conf 4,579", "Conf 86,505", "Conf 46,704", "Conf 3,506", "Conf 498", "Conf 9,014", "Conf 509", "Conf 3,473", "Conf 27", "Conf 1,555", "Conf 2,993", "Conf 6,635", "Conf 289,635", "Conf 6,485,123", "Conf 4,703", "Conf 155,558", "Conf 78,849", "Conf 3", "Conf 177", "Conf 66", "Conf 208", "Conf 633", "Conf 13", "Conf 327", "Conf 337", "Conf 13", "Conf 641", "Conf 365,174", "Conf 1,780", "Conf 46,721", "Conf 59,630", "Conf 1,060", "Conf 29,906", "Conf 10", "Conf 2,009", "Conf 13,466", "Conf 7,508", " Confirmed 1,336,825", " Confirmed 8,449,461", " Confirmed 10", " Confirmed 4,074,326", " Confirmed 7,748,946", " Confirmed 28,988", " Confirmed 6,998,396", " Confirmed 27", " Confirmed 12", " Confirmed 121,954", "28,758,945"], "type": "sunburst", "values": [38641.0, 11185.0, 48007.0, 1344.0, 3335.0, 95.0, 546481.0, 45675.0, 113.0, 4166.0, 33.0, 1149.0, 466.0, 230.0, 19835.0, 659.0, 32696.0, 38172.0, 2928.0, 59586.0, 336044.0, 180.0, 73975.0, 92478.0, 1458.0, 2242.0, 244.0, 125982.0, 23138.0, 2252.0, 4315687.0, 145.0, 17891.0, 1514.0, 2796.0, 471.0, 4711.0, 275.0, 20009.0, 15415.0, 6962.0, 0.0, 13.0, 1410.0, 193.0, 271.0, 5.0, 1086.0, 46323.0, 55.0, 64707.0, 1709.0, 15.0, 4749.0, 1083.0, 432666.0, 991.0, 935.0, 584.0, 388.0, 170.0, 1777.0, 258.0, 147.0, 171.0, 365.0, 948.0, 1277.0, 4938.0, 68139.0, 1019.0, 261.0, 665.0, 935.0, 157.0, 264.0, 46.0, 75.0, 18.0, 381.0, 831.0, 942.0, 203.0, 665.0, 234.0, 1.0, 902.0, 201.0, 1280.0, 708964.0, 456.0, 4928.0, 10385.0, 55454.0, 18916.0, 13368.0, 4653.0, 1523.0, 35401.0, 418.0, 14.0, 19557.0, 712.0, 5394.0, 24.0, 103092.0, 116451.0, 100856.0, 26851.0, 4996.0, 361.0, 2655.0, 5050.0, 63888.0, 32.0, 8557.0, 9521.0, 953.0, 3080.0, 939.0, 3374.0, 26.0, 2723.0, 21.0, 11.0, 256.0, 381907.0, 8643.0, 3376.0, 2075.0, 260817.0, 45434.0, 13036.0, 24.0, 81658.0, 10020.0, 2275.0, 1812.0, 8478.0, 12.0, 67136.0, 11825.0, 2162.0, 4754356.0, 214746.0, 399940.0, 286778.0, 30730.0, 152722.0, 286297.0, 3623.0, 75206.0, 3062.0, 106803.0, 35969.0, 22176.0, 12683.0, 94211.0, 44828.0, 23.0, 1464.0, 23669.0, 1245.0, 1316.0, 22348.0, 111.0, 3296.0, 7159.0, 9.0, 15737.0, 5678.0, 9868.0, 9052.0, 2916.0, 2274.0, 7274.0, 361.0, 663973.0, 42714.0, 169.0, 311.0, 6530.0, 84435.0, 5040.0, 9604.0, 53120.0, 2994.0, 25.0, 145.0, 533.0, 81012.0, 1797.0, 4818.0, 1178.0, 56177.0, 15694.0, 12079.0, 88337.0, 301481.0, 101041.0, 508.0, 27324.0, 716670.0, 257863.0, 73650.0, 63310.0, 121523.0, 102386.0, 1053663.0, 4565.0, 17.0, 27.0, 64.0, 722.0, 906.0, 325050.0, 14237.0, 32300.0, 139.0, 2096.0, 57357.0, 5453.0, 3603.0, 3376.0, 648214.0, 2578.0, 566326.0, 3195.0, 13470.0, 4579.0, 86505.0, 46704.0, 3506.0, 498.0, 9014.0, 509.0, 3473.0, 27.0, 1555.0, 2993.0, 6635.0, 289635.0, 6485123.0, 4703.0, 155558.0, 78849.0, 3.0, 177.0, 66.0, 208.0, 633.0, 13.0, 327.0, 337.0, 13.0, 641.0, 365174.0, 1780.0, 46721.0, 59630.0, 1060.0, 29906.0, 10.0, 2009.0, 13466.0, 7508.0, 32359.0, 162153.0, 1.0, 212269.0, 284602.0, 841.0, 226439.0, 0.0, 0.0, 1567.0, 0.0]}],
+                        {"height": 800, "insidetextorientation": "radial", "title": "COVID-19 Confirmed Cases as of 2020-09-13", "width": 800},
                         {"responsive": true}
                     ).then(function(){
 
-var gd = document.getElementById('d7f6f1a1-4306-4833-91c2-303e9e58baec');
+var gd = document.getElementById('d9c1a464-7738-49f6-941c-0b3db79e648d');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -1247,6 +1276,25 @@ if (outputEl) {{
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Science/COVID-19/world-cases"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

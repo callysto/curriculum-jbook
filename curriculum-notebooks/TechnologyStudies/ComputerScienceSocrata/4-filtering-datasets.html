@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,15 +23,23 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Lists and Dictionaries in Python" href="../IntroductionToDataStructures/introduction-to-data-structures.html" />
+    <link rel="next" title="Python - introduction" href="../IntroductionToPython/introduction-to-python.html" />
     <link rel="prev" title="Joining Datasets" href="3-joining-datasets.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,65 +73,103 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="active">
-    <a href="../Technology.html">Technology Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="1-introduction-to-socrata-and-soda.html">Socrata and Soda</a>
-    </li>
-    <li class="">
-      <a href="2-introduction-to-plotly.html">Plotly - introduction</a>
-    </li>
-    <li class="">
-      <a href="3-joining-datasets.html">Joining Datasets</a>
-    </li>
-    <li class="active">
-      <a href="">Filtering Datasets</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToDataStructures/introduction-to-data-structures.html">Lists and Dictionaries in Python</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToPython/introduction-to-python.html">Python - introduction</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToPython/introduction-to-python-classes.html">Python Classes</a>
-    </li>
-    <li class="">
-      <a href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">Loops and Iteration in Python</a>
-    </li>
-  </ul>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Technology.html">
+   Technology Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="1-introduction-to-socrata-and-soda.html">
+     Socrata and Soda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2-introduction-to-plotly.html">
+     Plotly - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3-joining-datasets.html">
+     Joining Datasets
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Filtering Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python.html">
+     Python - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python-classes.html">
+     Python - Classes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">
+     Python - Loops and Iteration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToDataStructures/introduction-to-data-structures.html">
+     Python - Lists and Dictionaries
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -195,70 +241,73 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/4-filtering-datasets.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/4-filtering-datasets.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/4-filtering-datasets.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#server-side-filtering">
+   Server-side filtering
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#note">
+     Note
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#client-side-filtering">
+   Client-side filtering
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualization">
+   Visualization
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Note
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#which-approach-is-best">
+   Which approach is best?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#final-thoughts">
+   Final Thoughts
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#" class="nav-link">Filtering Datasets</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#server-side-filtering" class="nav-link">Server-side filtering</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#note" class="nav-link">Note</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#client-side-filtering" class="nav-link">Client-side filtering</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#visualization" class="nav-link">Visualization</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id1" class="nav-link">Note</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#which-approach-is-best" class="nav-link">Which approach is best?</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#final-thoughts" class="nav-link">Final Thoughts</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -279,7 +328,7 @@
 <p>if you are curious, according to <a class="reference external" href="http://www.csgnetwork.com/degreelenllavcalc.html">this calculator</a>, 0.01 degree latitude equals about 1.112 km, and one minute longitude at Calgary’s latitude equals about 0.702 kilometres, so this would be a box about 2.2 by 1.4 km</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">io</span> <span class="k">as</span> <span class="nn">io</span>
 
@@ -356,30 +405,6 @@
   <tbody>
     <tr>
       <td>0</td>
-      <td>Senator Patrick Burns</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Senator Patrick Burns School</td>
-      <td>2155 Chilcotin Road N.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary/Junior High</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2L0X2</td>
-      <td>1383123</td>
-      <td>-114.115537</td>
-      <td>51.088211</td>
-      <td>\n,  \n(51.08821109631006, -114.11553670016748)</td>
-    </tr>
-    <tr>
-      <td>1</td>
       <td>Branton</td>
       <td>The Calgary School Division</td>
       <td>Public School</td>
@@ -395,12 +420,36 @@
       <td>Y</td>
       <td>Y</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
+      <td>2020-08-30T00:00:00.000Z</td>
       <td>T2M3W1</td>
       <td>1381141</td>
       <td>-114.109030</td>
       <td>51.071247</td>
       <td>\n,  \n(51.07124691272822, -114.10903047499593)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Senator Patrick Burns</td>
+      <td>The Calgary School Division</td>
+      <td>Public School</td>
+      <td>Senator Patrick Burns School</td>
+      <td>2155 Chilcotin Road N.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Elementary/Junior High</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2L0X2</td>
+      <td>1383123</td>
+      <td>-114.115537</td>
+      <td>51.088211</td>
+      <td>\n,  \n(51.08821109631006, -114.11553670016748)</td>
     </tr>
     <tr>
       <td>2</td>
@@ -419,7 +468,7 @@
       <td>Y</td>
       <td>N</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
+      <td>2020-08-30T00:00:00.000Z</td>
       <td>T2M4J3</td>
       <td>1383034</td>
       <td>-114.116759</td>
@@ -443,7 +492,7 @@
       <td>N</td>
       <td>N</td>
       <td>Y</td>
-      <td>2020-06-28T00:00:00.000Z</td>
+      <td>2020-08-30T00:00:00.000Z</td>
       <td>T2M4G9</td>
       <td>1382288</td>
       <td>-114.115337</td>
@@ -468,7 +517,7 @@
 <p>The opposite approach is to obtain an entire dataset and to then programatically filter using your native language. The pandas library provides various tools that allow you to easily select specific records in a dataframe. In this case, we will use the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html">panda dataframe’s <strong>loc</strong> function</a> on  the <em>entire</em> dataset. The output should be equivalent to the server-side filter’s output</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    *</span>
 <span class="s2">&quot;&quot;&quot;</span>
@@ -527,31 +576,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>143</td>
-      <td>Senator Patrick Burns</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Senator Patrick Burns School</td>
-      <td>2155 Chilcotin Road N.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary/Junior High</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2L0X2</td>
-      <td>1383123</td>
-      <td>-114.115537</td>
-      <td>51.088211</td>
-      <td>\n,  \n(51.08821109631006, -114.11553670016748)</td>
-    </tr>
-    <tr>
-      <td>206</td>
+      <td>78</td>
       <td>Branton</td>
       <td>The Calgary School Division</td>
       <td>Public School</td>
@@ -567,7 +592,7 @@
       <td>Y</td>
       <td>Y</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
+      <td>2020-08-30T00:00:00.000Z</td>
       <td>T2M3W1</td>
       <td>1381141</td>
       <td>-114.109030</td>
@@ -575,7 +600,31 @@
       <td>\n,  \n(51.07124691272822, -114.10903047499593)</td>
     </tr>
     <tr>
-      <td>283</td>
+      <td>252</td>
+      <td>Senator Patrick Burns</td>
+      <td>The Calgary School Division</td>
+      <td>Public School</td>
+      <td>Senator Patrick Burns School</td>
+      <td>2155 Chilcotin Road N.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Elementary/Junior High</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2L0X2</td>
+      <td>1383123</td>
+      <td>-114.115537</td>
+      <td>51.088211</td>
+      <td>\n,  \n(51.08821109631006, -114.11553670016748)</td>
+    </tr>
+    <tr>
+      <td>325</td>
       <td>Banff Trail</td>
       <td>The Calgary School Division</td>
       <td>Public School</td>
@@ -591,7 +640,7 @@
       <td>Y</td>
       <td>N</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
+      <td>2020-08-30T00:00:00.000Z</td>
       <td>T2M4J3</td>
       <td>1383034</td>
       <td>-114.116759</td>
@@ -599,7 +648,7 @@
       <td>\n,  \n(51.08163947732653, -114.11675875440444)</td>
     </tr>
     <tr>
-      <td>352</td>
+      <td>358</td>
       <td>William Aberhart High</td>
       <td>The Calgary School Division</td>
       <td>Public School</td>
@@ -615,7 +664,7 @@
       <td>N</td>
       <td>N</td>
       <td>Y</td>
-      <td>2020-06-28T00:00:00.000Z</td>
+      <td>2020-08-30T00:00:00.000Z</td>
       <td>T2M4G9</td>
       <td>1382288</td>
       <td>-114.115337</td>
@@ -633,7 +682,7 @@
 <p>So, with all that work done, let’s do the visualization.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 
 <span class="n">figure1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span><span class="n">local_schools</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span>
                             <span class="n">color_discrete_sequence</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;blue&quot;</span><span class="p">],</span>
@@ -725,20 +774,20 @@ var n,a=t("./lib/build-log"),i=t("./lib/epsilon"),o=t("./lib/intersecter"),s=t("
 </div><div class="output text_html"><div>
 
 
-            <div id="74e4f1b0-57f7-4493-b852-26b09900aab7" class="plotly-graph-div" style="height:600px; width:100%;"></div>
+            <div id="003c54ea-cbf8-4914-9408-684835fae8ed" class="plotly-graph-div" style="height:600px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
 
-                if (document.getElementById("74e4f1b0-57f7-4493-b852-26b09900aab7")) {
+                if (document.getElementById("003c54ea-cbf8-4914-9408-684835fae8ed")) {
                     Plotly.newPlot(
-                        '74e4f1b0-57f7-4493-b852-26b09900aab7',
-                        [{"customdata": [["Public School", "Elementary/Junior High", "2155 Chilcotin Road N.W."], ["Public School", "Elementary/Junior High", "2103 - 20 Street N.W."], ["Public School", "Elementary", "3232 Cochrane Road N.W."], ["Public School", "Senior High", "3009 Morley Trail N.W."]], "hovertemplate": "<b>%{hovertext}</b><br><br>latitude=%{lat}<br>longitude=%{lon}<br>type=%{customdata[0]}<br>grades=%{customdata[1]}<br>address_ab=%{customdata[2]}<extra></extra>", "hovertext": ["Senator Patrick Burns", "Branton", "Banff Trail", "William Aberhart High"], "lat": [51.08821109631006, 51.07124691272821, 51.081639477326526, 51.07866950960592], "legendgroup": "", "lon": [-114.11553670016748, -114.10903047499592, -114.11675875440443, -114.11533747920514], "marker": {"color": "blue", "size": [51.08821109631006, 51.07124691272821, 51.081639477326526, 51.07866950960592], "sizemode": "area", "sizeref": 0.22705871598360028}, "mode": "markers", "name": "", "showlegend": false, "subplot": "mapbox", "type": "scattermapbox"}],
+                        '003c54ea-cbf8-4914-9408-684835fae8ed',
+                        [{"customdata": [["Public School", "Elementary/Junior High", "2103 - 20 Street N.W."], ["Public School", "Elementary/Junior High", "2155 Chilcotin Road N.W."], ["Public School", "Elementary", "3232 Cochrane Road N.W."], ["Public School", "Senior High", "3009 Morley Trail N.W."]], "hovertemplate": "<b>%{hovertext}</b><br><br>latitude=%{lat}<br>longitude=%{lon}<br>type=%{customdata[0]}<br>grades=%{customdata[1]}<br>address_ab=%{customdata[2]}<extra></extra>", "hovertext": ["Branton", "Senator Patrick Burns", "Banff Trail", "William Aberhart High"], "lat": [51.07124691272821, 51.08821109631006, 51.081639477326526, 51.07866950960592], "legendgroup": "", "lon": [-114.10903047499592, -114.11553670016748, -114.11675875440443, -114.11533747920514], "marker": {"color": "blue", "size": [51.07124691272821, 51.08821109631006, 51.081639477326526, 51.07866950960592], "sizemode": "area", "sizeref": 0.22705871598360028}, "mode": "markers", "name": "", "showlegend": false, "subplot": "mapbox", "type": "scattermapbox"}],
                         {"height": 600, "legend": {"itemsizing": "constant", "tracegroupgap": 0}, "mapbox": {"center": {"lat": 51.07994174899268, "lon": -114.11416585219324}, "domain": {"x": [0.0, 1.0], "y": [0.0, 1.0]}, "style": "open-street-map", "zoom": 13}, "margin": {"b": 0, "l": 0, "r": 0, "t": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}},
                         {"responsive": true}
                     ).then(function(){
 
-var gd = document.getElementById('74e4f1b0-57f7-4493-b852-26b09900aab7');
+var gd = document.getElementById('003c54ea-cbf8-4914-9408-684835fae8ed');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -769,7 +818,7 @@ if (outputEl) {{
 <p>But if we then changed our current location to be Sir Winston Churchill High School (51.10011269545306°, -114.1399900255147°), we can very quickly change our results without having to re-query the City of Calgary server! It may still take some time to re-plot the data, but latency is not a concern.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">local_schools2</span> <span class="o">=</span> <span class="n">all_schools</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">51.09011269545306</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">local_schools2</span> <span class="o">=</span> <span class="n">all_schools</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">51.09011269545306</span><span class="p">)</span> 
                                 <span class="o">&amp;</span> <span class="p">(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">51.11011269545306</span><span class="p">)</span>
                                 <span class="o">&amp;</span> <span class="p">(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">114.1299900255147</span><span class="p">)</span>
                                 <span class="o">&amp;</span> <span class="p">(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mf">114.1499900255147</span><span class="p">)]</span>
@@ -821,31 +870,7 @@ if (outputEl) {{
   </thead>
   <tbody>
     <tr>
-      <td>137</td>
-      <td>Dr. E. W. Coffin</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Dr. E. W. Coffin School</td>
-      <td>5615 Barrett Drive N.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2L1W4</td>
-      <td>1383141</td>
-      <td>-114.134799</td>
-      <td>51.103753</td>
-      <td>\n,  \n(51.103752632520376, -114.13479912704769)</td>
-    </tr>
-    <tr>
-      <td>174</td>
+      <td>12</td>
       <td>Simon Fraser</td>
       <td>The Calgary School Division</td>
       <td>Public School</td>
@@ -861,7 +886,7 @@ if (outputEl) {{
       <td>Y</td>
       <td>Y</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
+      <td>2020-08-30T00:00:00.000Z</td>
       <td>T2L1V3</td>
       <td>1383906</td>
       <td>-114.136550</td>
@@ -869,79 +894,7 @@ if (outputEl) {{
       <td>\n,  \n(51.10031940846632, -114.13655045217867)</td>
     </tr>
     <tr>
-      <td>222</td>
-      <td>Captain John Palliser</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Captain John Palliser School</td>
-      <td>1484 Northmount Drive N.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2L0G6</td>
-      <td>1000998</td>
-      <td>-114.136016</td>
-      <td>51.096365</td>
-      <td>\n,  \n(51.09636485434405, -114.13601610820098)</td>
-    </tr>
-    <tr>
-      <td>271</td>
-      <td>Varsity Acres</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Varsity Acres School</td>
-      <td>4255 - 40 Street N.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T3A0H7</td>
-      <td>1383570</td>
-      <td>-114.148218</td>
-      <td>51.091014</td>
-      <td>\n,  \n(51.09101439261288, -114.14821824727312)</td>
-    </tr>
-    <tr>
-      <td>317</td>
-      <td>Sir Winston Churchill High</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Sir Winston Churchill High School</td>
-      <td>5220 Northland Drive N.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Senior High</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>N</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2L2J6</td>
-      <td>1383224</td>
-      <td>-114.139990</td>
-      <td>51.100113</td>
-      <td>\n,  \n(51.10011269545306, -114.1399900255147)</td>
-    </tr>
-    <tr>
-      <td>349</td>
+      <td>17</td>
       <td>St. Jean Brebeuf</td>
       <td>The Calgary Roman Catholic Separate School Div...</td>
       <td>Separate School</td>
@@ -957,12 +910,108 @@ if (outputEl) {{
       <td>N</td>
       <td>Y</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
+      <td>2020-08-30T00:00:00.000Z</td>
       <td>T2L2J6</td>
       <td>1369132</td>
       <td>-114.140229</td>
       <td>51.097893</td>
       <td>\n,  \n(51.09789338393484, -114.14022892058524)</td>
+    </tr>
+    <tr>
+      <td>254</td>
+      <td>Varsity Acres</td>
+      <td>The Calgary School Division</td>
+      <td>Public School</td>
+      <td>Varsity Acres School</td>
+      <td>4255 - 40 Street N.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Elementary</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T3A0H7</td>
+      <td>1383570</td>
+      <td>-114.148218</td>
+      <td>51.091014</td>
+      <td>\n,  \n(51.09101439261288, -114.14821824727312)</td>
+    </tr>
+    <tr>
+      <td>255</td>
+      <td>Dr. E. W. Coffin</td>
+      <td>The Calgary School Division</td>
+      <td>Public School</td>
+      <td>Dr. E. W. Coffin School</td>
+      <td>5615 Barrett Drive N.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Elementary</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2L1W4</td>
+      <td>1383141</td>
+      <td>-114.134799</td>
+      <td>51.103753</td>
+      <td>\n,  \n(51.103752632520376, -114.13479912704769)</td>
+    </tr>
+    <tr>
+      <td>383</td>
+      <td>Captain John Palliser</td>
+      <td>The Calgary School Division</td>
+      <td>Public School</td>
+      <td>Captain John Palliser School</td>
+      <td>1484 Northmount Drive N.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Elementary</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2L0G6</td>
+      <td>1000998</td>
+      <td>-114.136016</td>
+      <td>51.096365</td>
+      <td>\n,  \n(51.09636485434405, -114.13601610820098)</td>
+    </tr>
+    <tr>
+      <td>439</td>
+      <td>Sir Winston Churchill High</td>
+      <td>The Calgary School Division</td>
+      <td>Public School</td>
+      <td>Sir Winston Churchill High School</td>
+      <td>5220 Northland Drive N.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Senior High</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2L2J6</td>
+      <td>1383224</td>
+      <td>-114.139990</td>
+      <td>51.100113</td>
+      <td>\n,  \n(51.10011269545306, -114.1399900255147)</td>
     </tr>
   </tbody>
 </table>
@@ -971,7 +1020,7 @@ if (outputEl) {{
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">figure1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span><span class="n">local_schools2</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">figure1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span><span class="n">local_schools2</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span>
                             <span class="n">color_discrete_sequence</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;blue&quot;</span><span class="p">],</span>
                             <span class="n">zoom</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
                             <span class="n">size</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span>
@@ -988,20 +1037,20 @@ if (outputEl) {{
 <div class="output text_html"><div>
 
 
-            <div id="f687a6fd-9511-4195-a82f-eaee8294d9b7" class="plotly-graph-div" style="height:600px; width:100%;"></div>
+            <div id="a024c7e2-a829-4a4d-9cc2-913b07280a4f" class="plotly-graph-div" style="height:600px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
 
-                if (document.getElementById("f687a6fd-9511-4195-a82f-eaee8294d9b7")) {
+                if (document.getElementById("a024c7e2-a829-4a4d-9cc2-913b07280a4f")) {
                     Plotly.newPlot(
-                        'f687a6fd-9511-4195-a82f-eaee8294d9b7',
-                        [{"customdata": [["Public School", "Elementary", "5615 Barrett Drive N.W."], ["Public School", "Elementary/Junior High", "5215 - 33 Street N.W."], ["Public School", "Elementary", "1484 Northmount Drive N.W."], ["Public School", "Elementary", "4255 - 40 Street N.W."], ["Public School", "Senior High", "5220 Northland Drive N.W."], ["Separate School", "Junior High", "5030 Northland Drive N.W."]], "hovertemplate": "<b>%{hovertext}</b><br><br>latitude=%{lat}<br>longitude=%{lon}<br>type=%{customdata[0]}<br>grades=%{customdata[1]}<br>address_ab=%{customdata[2]}<extra></extra>", "hovertext": ["Dr. E. W. Coffin", "Simon Fraser", "Captain John Palliser", "Varsity Acres", "Sir Winston Churchill High", "St. Jean Brebeuf"], "lat": [51.10375263252038, 51.10031940846632, 51.096364854344046, 51.091014392612884, 51.10011269545306, 51.09789338393484], "legendgroup": "", "lon": [-114.13479912704769, -114.13655045217868, -114.13601610820099, -114.14821824727312, -114.13999002551469, -114.14022892058523], "marker": {"color": "blue", "size": [51.10375263252038, 51.10031940846632, 51.096364854344046, 51.091014392612884, 51.10011269545306, 51.09789338393484], "sizemode": "area", "sizeref": 0.22712778947786838}, "mode": "markers", "name": "", "showlegend": false, "subplot": "mapbox", "type": "scattermapbox"}],
+                        'a024c7e2-a829-4a4d-9cc2-913b07280a4f',
+                        [{"customdata": [["Public School", "Elementary/Junior High", "5215 - 33 Street N.W."], ["Separate School", "Junior High", "5030 Northland Drive N.W."], ["Public School", "Elementary", "4255 - 40 Street N.W."], ["Public School", "Elementary", "5615 Barrett Drive N.W."], ["Public School", "Elementary", "1484 Northmount Drive N.W."], ["Public School", "Senior High", "5220 Northland Drive N.W."]], "hovertemplate": "<b>%{hovertext}</b><br><br>latitude=%{lat}<br>longitude=%{lon}<br>type=%{customdata[0]}<br>grades=%{customdata[1]}<br>address_ab=%{customdata[2]}<extra></extra>", "hovertext": ["Simon Fraser", "St. Jean Brebeuf", "Varsity Acres", "Dr. E. W. Coffin", "Captain John Palliser", "Sir Winston Churchill High"], "lat": [51.10031940846632, 51.09789338393484, 51.091014392612884, 51.10375263252038, 51.096364854344046, 51.10011269545306], "legendgroup": "", "lon": [-114.13655045217868, -114.14022892058523, -114.14821824727312, -114.13479912704769, -114.13601610820099, -114.13999002551469], "marker": {"color": "blue", "size": [51.10031940846632, 51.09789338393484, 51.091014392612884, 51.10375263252038, 51.096364854344046, 51.10011269545306], "sizemode": "area", "sizeref": 0.22712778947786838}, "mode": "markers", "name": "", "showlegend": false, "subplot": "mapbox", "type": "scattermapbox"}],
                         {"height": 600, "legend": {"itemsizing": "constant", "tracegroupgap": 0}, "mapbox": {"center": {"lat": 51.098242894555256, "lon": -114.1393004801334}, "domain": {"x": [0.0, 1.0], "y": [0.0, 1.0]}, "style": "open-street-map", "zoom": 13}, "margin": {"b": 0, "l": 0, "r": 0, "t": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}},
                         {"responsive": true}
                     ).then(function(){
 
-var gd = document.getElementById('f687a6fd-9511-4195-a82f-eaee8294d9b7');
+var gd = document.getElementById('a024c7e2-a829-4a4d-9cc2-913b07280a4f');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -1034,9 +1083,8 @@ if (outputEl) {{
 <p>There are many many functions within the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/frame.html">pandas dataframe class</a> that allow you to filter, combine, and transform data. Learning these would take time, and is outside of our scope here. This course is about learning how to query for data.</p>
 </div>
 </div>
-</div>
 <div class="section" id="which-approach-is-best">
-<h1>Which approach is best?<a class="headerlink" href="#which-approach-is-best" title="Permalink to this headline">¶</a></h1>
+<h2>Which approach is best?<a class="headerlink" href="#which-approach-is-best" title="Permalink to this headline">¶</a></h2>
 <p>That depends, of course!</p>
 <p>If your application will show multiple views of the data set within a short time, it makes sense to download it once in its entirety. Re-querying for the data for each view would obviously be inefficient.</p>
 <p>However, loading the data in its entirety will cost more bandwidth, and may take time up front. Also, your data will at some point go stale; hence the ‘within a short time’ qualifier.</p>
@@ -1044,6 +1092,7 @@ if (outputEl) {{
 <p>The time gaps in between the various steps may be fractions of seconds, but that is an eternity compared to how fast your local device can process locally stored data. Thus, loading your data up front <em>may</em> be a good design decision.</p>
 <p>In the above example, the client-side approach would probably be best. The dataset is relatively small, so data usage is reasonable, unless the data plan really is restrictive. Also, the data is highly static, as not many schools will get added in the next month, and none will change location. Thus, it would be good design to download the dataset, and perhaps even store it locally in a csv file. You can then move all around the city, and the map can be updated very quickly and without extra data transmission. Of course, your app will still want to update the dataset once in a while, and may need to load the Edmonton data if we change cities!</p>
 <p>An alternate example could be an app that checks if any of your friends are within walking distance. Perhaps this app has a few million users, and their locations are being stored on a server somewhere in Silicon Valley. You would not want to download the entire dataset, as 99.99% of it would be useless to you. Furthermore, the data is highly dynamic, and if you don’t update continuously, you will have a useless app. In this example, the server-side approach would undoubtedly be best.</p>
+</div>
 <div class="section" id="final-thoughts">
 <h2>Final Thoughts<a class="headerlink" href="#final-thoughts" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -1056,6 +1105,25 @@ if (outputEl) {{
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -1066,7 +1134,7 @@ if (outputEl) {{
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="3-joining-datasets.html" title="previous page">Joining Datasets</a>
-    <a class='right-next' id="next-link" href="../IntroductionToDataStructures/introduction-to-data-structures.html" title="next page">Lists and Dictionaries in Python</a>
+    <a class='right-next' id="next-link" href="../IntroductionToPython/introduction-to-python.html" title="next page">Python - introduction</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

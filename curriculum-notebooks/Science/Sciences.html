@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Chemical Equations: Writing and Balancing" href="BalancingChemicalEquations/balancing-chemical-equations.html" />
@@ -65,128 +73,213 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="active">
-    <a href="">Sciences Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="BalancingChemicalEquations/balancing-chemical-equations.html">Chemical Equations: Writing and Balancing</a>
-    </li>
-    <li class="">
-      <a href="ChemicalNomenclature/chemical-nomenclature.html">Chemical Nomenclature</a>
-    </li>
-    <li class="">
-      <a href="ClassifyingChemicalReactions/classifying-chemical-reactions.html">Classifying Chemical Equations</a>
-    </li>
-    <li class="">
-      <a href="ClimateChange/climate-change.html">Climate Change</a>
-    </li>
-    <li class="">
-      <a href="Climatograph/climatograph.html">Climatograph</a>
-    </li>
-    <li class="">
-      <a href="ConcentrationAndPH/concentration-and-ph.html">Concentration and pH</a>
-    </li>
-    <li class="">
-      <a href="ElectricalConductivity/electrical-conductivity.html">Electrical Conductivity</a>
-    </li>
-    <li class="">
-      <a href="ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">Electricity Consumption Monitoring</a>
-    </li>
-    <li class="">
-      <a href="ExploringSolarSystem/exploring-the-solar-system.html">Exploring the Solar System</a>
-    </li>
-    <li class="">
-      <a href="HeatAndTemperature/heat-and-temperature.html">Heat and Temperature</a>
-    </li>
-    <li class="">
-      <a href="LightOpticalSystems/light-optical-systems.html">Light and Optics</a>
-    </li>
-    <li class="">
-      <a href="LightTransmission/transmission-of-light.html">Transmission of Light</a>
-    </li>
-    <li class="">
-      <a href="MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">Methods used in Scientific Study of the Earth</a>
-    </li>
-    <li class="">
-      <a href="NatureOfThermalEnergy/nature-of-thermal-energy.html">The Nature of Thermal Energy</a>
-    </li>
-    <li class="">
-      <a href="NewtonsFirstLaw/newtons-first-law.html">Newton’s First Law</a>
-    </li>
-    <li class="">
-      <a href="NewtonsSecondLaw/newtons-second-law.html">Newton’s Second Law</a>
-    </li>
-    <li class="">
-      <a href="NewtonsThirdLaw/newtons-third-law.html">Newton’s Third Law</a>
-    </li>
-    <li class="">
-      <a href="NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">Half life calculations</a>
-    </li>
-    <li class="">
-      <a href="NuclearDecay/nuclear-decay.html">Nuclear Decay - Half Life</a>
-    </li>
-    <li class="">
-      <a href="ProjectileMotion/projectile-motion.html">Projectile Motion</a>
-    </li>
-    <li class="">
-      <a href="RadiationAnimations/radiation-animations.html">Nuclear Radiation: Alpha, Beta, and Gamma</a>
-    </li>
-    <li class="">
-      <a href="ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">Reflection of Light by Plane and Spherical Mirrors</a>
-    </li>
-    <li class="">
-      <a href="ScienceLabReportTemplate/science-lab-report-template.html">Science Lab Report Template</a>
-    </li>
-    <li class="">
-      <a href="SourcesOfEnergy/resources-and-recycling.html">Sources of Energy</a>
-    </li>
-    <li class="">
-      <a href="SpecificAndLatentHeat/specific-and-latent-heat.html">Specific and Latent Heat</a>
-    </li>
-    <li class="">
-      <a href="StaticAndKineticFriction/static-and-kinetic-friction.html">Static and Kinetic Friction</a>
-    </li>
-    <li class="">
-      <a href="StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">Stoichiometry and Limiting Reactants</a>
-    </li>
-    <li class="">
-      <a href="ThermalExpansion/thermal-expansion.html">Thermal Linear Expansion</a>
-    </li>
-    <li class="">
-      <a href="UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">Uniform Motion and Uniformly Accelerated Motion</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Sciences Section
+  </a>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="BalancingChemicalEquations/balancing-chemical-equations.html">
+     Chemical Equations: Writing and Balancing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ChemicalNomenclature/chemical-nomenclature.html">
+     Chemical Nomenclature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ClassifyingChemicalReactions/classifying-chemical-reactions.html">
+     Classifying Chemical Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ClimateChange/climate-change.html">
+     Climate Change
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Climatograph/climatograph.html">
+     Climatograph
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ConcentrationAndPH/concentration-and-ph.html">
+     Concentration and pH
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
+     Acids and Bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ElectricalConductivity/electrical-conductivity.html">
+     Electrical Conductivity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">
+     Electricity Consumption Monitoring
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ExploringSolarSystem/exploring-the-solar-system.html">
+     Exploring the Solar System
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="HeatAndTemperature/heat-and-temperature.html">
+     Heat and Temperature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LightOpticalSystems/light-optical-systems.html">
+     Light and Optics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LightTransmission/transmission-of-light.html">
+     Transmission of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">
+     Methods used in Scientific Study of the Earth
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NatureOfThermalEnergy/nature-of-thermal-energy.html">
+     The Nature of Thermal Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NewtonsFirstLaw/newtons-first-law.html">
+     Newton’s First Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NewtonsSecondLaw/newtons-second-law.html">
+     Newton’s Second Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NewtonsThirdLaw/newtons-third-law.html">
+     Newton’s Third Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">
+     Half life calculations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NuclearDecay/nuclear-decay.html">
+     Nuclear Decay - Half Life
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ProjectileMotion/projectile-motion.html">
+     Projectile Motion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="RadiationAnimations/radiation-animations.html">
+     Nuclear Radiation: Alpha, Beta, and Gamma
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">
+     Reflection of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ScienceLabReportTemplate/science-lab-report-template.html">
+     Science Lab Report Template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="SourcesOfEnergy/resources-and-recycling.html">
+     Sources of Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="SpecificAndLatentHeat/specific-and-latent-heat.html">
+     Specific and Latent Heat
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="StaticAndKineticFriction/static-and-kinetic-friction.html">
+     Static and Kinetic Friction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">
+     Stoichiometry and Limiting Reactants
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ThermalExpansion/thermal-expansion.html">
+     Thermal Linear Expansion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">
+     Uniform Motion and Uniformly Accelerated Motion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -247,15 +340,15 @@
         <!-- Launch buttons -->
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-    </ul>
-</nav>
-
-
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -269,6 +362,25 @@
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Science"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

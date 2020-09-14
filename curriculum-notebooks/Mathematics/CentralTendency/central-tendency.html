@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,16 +23,24 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Combined Log Law" href="../CombinedLogLaw/combined-log-law.html" />
-    <link rel="prev" title="Outliers and Central Tendency" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html" />
+    <link rel="prev" title="Central Tendency and Outliers" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="active">
-      <a href="">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,148 +471,178 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CentralTendency/central-tendency.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CentralTendency/central-tendency.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/CentralTendency/central-tendency.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
-
-<nav id="bd-toc-nav">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grade-7-statistics">
+   Grade 7 Statistics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definitions">
+   1. Definitions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-range">
+     What is range?
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#grade-7-statistics" class="nav-link">Grade 7 Statistics</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#definitions" class="nav-link">1. Definitions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#what-is-range" class="nav-link">What is range?</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#example" class="nav-link">Example</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#what-is-mean" class="nav-link">What is ‘mean’?</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#example-1" class="nav-link">Example 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#example-2" class="nav-link">Example 2</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#try-for-yourself" class="nav-link">Try for yourself!</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#what-is-median" class="nav-link">What is median?</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id1" class="nav-link">Example 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id2" class="nav-link">Example 2</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id3" class="nav-link">Try for yourself!</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#what-is-mode" class="nav-link">What is mode?</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">Example 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id5" class="nav-link">Example 2</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#example-3" class="nav-link">Example 3</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id6" class="nav-link">Try for yourself!</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#interactive-bar-graph" class="nav-link">2. Interactive bar graph</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#instructions" class="nav-link">Instructions:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#example-using-a-large-dataset" class="nav-link">Example Using A Large Dataset</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#mean" class="nav-link">Mean</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#median" class="nav-link">Median</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#mode" class="nav-link">Mode</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#create-your-own-data-set" class="nav-link">Create Your Own Data Set</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#test-yourself" class="nav-link">Test yourself</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#let-s-summarize-what-we-have-learned-in-this-notebook" class="nav-link">Let’s summarize what we have learned in this notebook:</a>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example">
+       Example
+      </a>
+     </li>
     </ul>
-</nav>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-mean">
+     What is ‘mean’?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example-1">
+       Example 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example-2">
+       Example 2
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-for-yourself">
+     Try for yourself!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-median">
+     What is median?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Example 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Example 2
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Try for yourself!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-mode">
+     What is mode?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Example 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Example 2
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example-3">
+       Example 3
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Try for yourself!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactive-bar-graph">
+   2. Interactive bar graph
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instructions">
+     Instructions:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-using-a-large-dataset">
+   Example Using A Large Dataset
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mean">
+     Mean
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#median">
+     Median
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mode">
+     Mode
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-your-own-data-set">
+   Create Your Own Data Set
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-yourself">
+   Test yourself
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#let-s-summarize-what-we-have-learned-in-this-notebook">
+   Let’s summarize what we have learned in this notebook:
+  </a>
+ </li>
+</ul>
 
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -466,9 +652,9 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/CentralTendency/central-tendency.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%html
 
 &lt;script&gt;
   function code_toggle() {
@@ -487,6 +673,7 @@
     $(&#39;div.input&#39;).hide()
   });
 &lt;/script&gt;
+&lt;p&gt; Code is hidden for ease of viewing. Click the Show/Hide button to see. &lt;/&gt;
 &lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;
 </pre></div>
 </div>
@@ -510,47 +697,48 @@
     $('div.input').hide()
   });
 </script>
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
 <form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg=geogebra\&amp;subdirectory=geogebra 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg<span class="o">=</span>geogebra<span class="se">\&amp;</span><span class="nv">subdirectory</span><span class="o">=</span>geogebra 
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Collecting geogebra from git+git://github.com/callysto/nbplus.git#egg=geogebra&amp;subdirectory=geogebra
-  Cloning git://github.com/callysto/nbplus.git to /tmp/pip-install-zpk32_2e/geogebra
-  Running command git clone -q git://github.com/callysto/nbplus.git /tmp/pip-install-zpk32_2e/geogebra
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting geogebra
+  Cloning git://github.com/callysto/nbplus.git to /tmp/pip-install-vwd5m6kt/geogebra
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Building wheels for collected packages: geogebra
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building wheels for collected packages: geogebra
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>  Building wheel for geogebra (setup.py) ... [?25l-
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for geogebra (setup.py) ... ?25l-
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span> done
-[?25h  Created wheel for geogebra: filename=geogebra-0.0.0-cp37-none-any.whl size=6210 sha256=f6fcfb4bc567357e68b761178e0d3557ed3dd5d482b0564c13473802c228e743
-  Stored in directory: /tmp/pip-ephem-wheel-cache-wcsb3lor/wheels/cd/8f/54/42a9349ed6e488bb120c4c182ad6aa4f19e86061fe875bf3c5
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> done
+?25h  Created wheel for geogebra: filename=geogebra-0.0.0-py3-none-any.whl size=6210 sha256=6d670737bd8888f7163e4244ed81aa1903e121bbb13537fb403eb9a7858859a4
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ps513ia7/wheels/a2/4f/cf/ee77bbaa35bfe141f46fc9f8153c9509b1535406d0d68b6086
 Successfully built geogebra
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Installing collected packages: geogebra
-  Found existing installation: geogebra 0.0.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: geogebra
+  Attempting uninstall: geogebra
+    Found existing installation: geogebra 0.0.0
     Uninstalling geogebra-0.0.0:
       Successfully uninstalled geogebra-0.0.0
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Successfully installed geogebra-0.0.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed geogebra-0.0.0
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.mlab</span> <span class="k">as</span> <span class="nn">mlab</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">widgets</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">Layout</span>
@@ -569,9 +757,9 @@ Successfully built geogebra
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">answerList</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">answerList</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">answerList</span><span class="p">)</span>
 </pre></div>
@@ -595,7 +783,7 @@ Here are a few questions this notebook will answer:</p>
 </div>
 <div class="section" id="definitions">
 <h2>1. Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h2>
-<img style="float: right;" src="https://images-na.ssl-images-amazon.com/images/I/51JWOlyyH9L._SY445_.jpg" width="200" height="500">
+<a class="reference internal image-reference" href="https://images-na.ssl-images-amazon.com/images/I/51JWOlyyH9L._SY445_.jpg"><img alt="https://images-na.ssl-images-amazon.com/images/I/51JWOlyyH9L._SY445_.jpg" src="https://images-na.ssl-images-amazon.com/images/I/51JWOlyyH9L._SY445_.jpg" style="width: 200px; height: 500px;" /></a>
 <div class="section" id="what-is-range">
 <h3>What is range?<a class="headerlink" href="#what-is-range" title="Permalink to this headline">¶</a></h3>
 <p>Given a set of values, the range is just the difference between the highest value and the lowest value. This quickly tells us if the values are spread apart or close together.</p>
@@ -616,9 +804,9 @@ range = 12 minutes <br></p>
 <p>Here is a data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9\)</span>
 <br> Number of elements in this data set: <span class="math notranslate nohighlight">\(7\)</span>
 <br>So the mean is:
-<span class="math notranslate nohighlight">\($\text{mean} = \frac{2 + 6 + 3 + 7 + 5 + 3 + 9}{7} = \frac{35}{7} = 5 $\)</span></p>
+$<span class="math notranslate nohighlight">\(\text{mean} = \frac{2 + 6 + 3 + 7 + 5 + 3 + 9}{7} = \frac{35}{7} = 5 \)</span>$</p>
 <p>Now these are just numbers, let’s see where the mean applies in real life.</p>
-<img style="float: left;" src="images/positive-classroom.jpg" width="300" height="400">
+<a class="reference internal image-reference" href="../../../_images/positive-classroom.jpg"><img alt="../../../_images/positive-classroom.jpg" src="../../../_images/positive-classroom.jpg" style="width: 300px; height: 400px;" /></a>
 </div>
 <div class="section" id="example-2">
 <h4>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h4>
@@ -633,9 +821,9 @@ range = 12 minutes <br></p>
 </div>
 <div class="section" id="try-for-yourself">
 <h3>Try for yourself!<a class="headerlink" href="#try-for-yourself" title="Permalink to this headline">¶</a></h3>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">question612</span> <span class="o">=</span> <span class="s2">&quot;What is the mean of the following numbers? </span><span class="se">\n</span><span class="s2"> 10, 91, 39, 71, 17,  39, 76, 37, 25&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">question612</span> <span class="o">=</span> <span class="s2">&quot;What is the mean of the following numbers? </span><span class="se">\n</span><span class="s2"> 10, 91, 39, 71, 17,  39, 76, 37, 25&quot;</span>
 
 <span class="n">answer612</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;45&#39;</span><span class="p">,</span> <span class="s1">&#39;45.11&#39;</span><span class="p">,</span> <span class="s1">&#39;43.67&#39;</span><span class="p">,</span> <span class="s1">&#39;46&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
                              <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
@@ -655,46 +843,46 @@ range = 12 minutes <br></p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>What is the mean of the following numbers? 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is the mean of the following numbers? 
  10, 91, 39, 71, 17,  39, 76, 37, 25
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "31abd65e497340b1ac2fba4fd6c9ed1a"}
+{"version_major": 2, "version_minor": 0, "model_id": "5cb22c23fe574ac8917527293de69ee5"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-function toggle(id) {
-var e = document.getElementById(id);
-if(e.style.display == &#39;none&#39;)
-e.style.display = &#39;block&#39;;
-else
-e.style.display = &#39;none&#39;;
-}
-//--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-&lt;div id=&quot;question612&quot;&gt;
- &lt;button id = &quot;612&quot;
-onclick=&quot;toggle(&#39;answer612&#39;);&quot;&gt;Solution&lt;/button&gt; 
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer612&quot;&gt;
-To find out the mean of semester 1 we divide the sum of all data by the numbers of data.&lt;br/&gt;
-Therefore, Mean $=  \frac{10 + 91 +  39 + 71 + 17 +  39 + 76 + 37 + 25}{9} = 45$ &lt;br/&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question612&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;612&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer612&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer612&quot;</span><span class="p">&gt;</span>
+To find out the mean of semester 1 we divide the sum of all data by the numbers of data.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+Therefore, Mean $=  \frac{10 + 91 +  39 + 71 + 17 +  39 + 76 + 37 + 25}{9} = 45$ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
 
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -735,7 +923,7 @@ Therefore, Mean $=  \frac{10 + 91 +  39 + 71 + 17 +  39 + 76 + 37 + 25}{9} = 45$
 <h3>What is median?<a class="headerlink" href="#what-is-median" title="Permalink to this headline">¶</a></h3>
 <p>Let’s play monkey in the middle!
 The <strong>median</strong> is the middle number in a sequence of numbers.To compute the median, the set needs to be ordered from smallest to largest. Then it’s easy to find the middle number!<br></p>
-<img style="float: left;" src="https://i0.wp.com/www.thegamegal.com/wp-content/uploads/2016/02/monkey-in-the-middle.png?fit=391%2C501&ssl=1&w=640" width="275" height="3500">
+<a class="reference internal image-reference" href="https://i0.wp.com/www.thegamegal.com/wp-content/uploads/2016/02/monkey-in-the-middle.png?fit=391%2C501&amp;ssl=1&amp;w=640"><img alt="https://i0.wp.com/www.thegamegal.com/wp-content/uploads/2016/02/monkey-in-the-middle.png?fit=391%2C501&amp;ssl=1&amp;w=640" src="https://i0.wp.com/www.thegamegal.com/wp-content/uploads/2016/02/monkey-in-the-middle.png?fit=391%2C501&amp;ssl=1&amp;w=640" style="width: 275px; height: 3500px;" /></a>
 <div class="section" id="id1">
 <h4>Example 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9\)</span>
@@ -745,7 +933,7 @@ The <strong>median</strong> is the middle number in a sequence of numbers.To com
 </div>
 <div class="section" id="id2">
 <h4>Example 2<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
-<p>Data set: $2, 6, 3, 7, 5, 3, 9, 4 $ <br>
+<p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9, 4 \)</span> <br>
 <strong>Notice how there’s 8 values in this set</strong>
 <br> Sorted data set: <span class="math notranslate nohighlight">\(2, 3, 3, 4, 5, 6, 7, 9\)</span>
 <br> There two middle numbers are <span class="math notranslate nohighlight">\(4\)</span> and <span class="math notranslate nohighlight">\(5\)</span>
@@ -755,9 +943,9 @@ The <strong>median</strong> is the middle number in a sequence of numbers.To com
 </div>
 <div class="section" id="id3">
 <h3>Try for yourself!<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">answer622</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;11&#39;</span><span class="p">,</span> <span class="s1">&#39;11.5&#39;</span><span class="p">,</span> <span class="s1">&#39;12&#39;</span><span class="p">,</span> <span class="s1">&#39;12.5&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer622</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;11&#39;</span><span class="p">,</span> <span class="s1">&#39;11.5&#39;</span><span class="p">,</span> <span class="s1">&#39;12&#39;</span><span class="p">,</span> <span class="s1">&#39;12.5&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
                              <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
 
 <span class="n">question622</span> <span class="o">=</span> <span class="s2">&quot;Suppose, the front row in your classroom has 23 seats. If you were asked to sit in the seat </span><span class="se">\n</span><span class="s2"> in the median position, in which seat would you have to sit?&quot;</span>
@@ -778,48 +966,48 @@ The <strong>median</strong> is the middle number in a sequence of numbers.To com
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Suppose, the front row in your classroom has 23 seats. If you were asked to sit in the seat 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Suppose, the front row in your classroom has 23 seats. If you were asked to sit in the seat 
  in the median position, in which seat would you have to sit?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "4d26e6feb310461e9ef0e47339742fe2"}
+{"version_major": 2, "version_minor": 0, "model_id": "b556792e617d4d7683be0560258012cc"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-function toggle(id) {
-var e = document.getElementById(id);
-if(e.style.display == &#39;none&#39;)
-e.style.display = &#39;block&#39;;
-else
-e.style.display = &#39;none&#39;;
-}
-//--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-&lt;div id=&quot;question622&quot;&gt;
- &lt;button id = &quot;622&quot;
-onclick=&quot;toggle(&#39;answer622&#39;);&quot;&gt;Solution&lt;/button&gt; 
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer622&quot;&gt;
-    &lt;br/&gt; 
-    The number of seats is odd (23). To find out the median of the seats we need to divide the total number of seats by 2 and we get 11.5. &lt;br/&gt;
-    So, 12-th seat is in the median position in the first row. &lt;br/&gt;
-    We can also think of it as the seat 12 has 11 seat on the left, and 11 seats on the right. &lt;br/&gt;
-    So the correct answer is 12.&lt;br/&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question622&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;622&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer622&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer622&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
+    The number of seats is odd (23). To find out the median of the seats we need to divide the total number of seats by 2 and we get 11.5. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    So, 12-th seat is in the median position in the first row. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    We can also think of it as the seat 12 has 11 seat on the left, and 11 seats on the right. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    So the correct answer is 12.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -863,7 +1051,7 @@ onclick="toggle('answer622');">Solution</button>
 <p>The <strong>mode</strong> for a data set is the element that occurs the most often.<br>
 It’s possible for a data set to have no modes, one mode, two modes (bimodal), or even three modes (trimodal)!<br>
 To find the mode, you don’t have to sort the set, but it is very helpful to sort it as the mode(s) will be where a number is repeated and that’s easier to see when they are next to each other.</p>
-<img style="float: left;" src="https://zookyworld.files.wordpress.com/2013/03/stop-repeating.gif" width="400" height="700">
+<a class="reference internal image-reference" href="https://zookyworld.files.wordpress.com/2013/03/stop-repeating.gif"><img alt="https://zookyworld.files.wordpress.com/2013/03/stop-repeating.gif" src="https://zookyworld.files.wordpress.com/2013/03/stop-repeating.gif" style="width: 400px; height: 700px;" /></a>
 <div class="section" id="id4">
 <h4>Example 1<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9\)</span>
@@ -873,7 +1061,7 @@ To find the mode, you don’t have to sort the set, but it is very helpful to so
 </div>
 <div class="section" id="id5">
 <h4>Example 2<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
-<p>Data set: $2, 6, 3, 7, 5, 3, 9, 5, 3, 5, 6 $
+<p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9, 5, 3, 5, 6 \)</span>
 <br> Sorted data set: <span class="math notranslate nohighlight">\(2, 3, 3, 3,  5, 5, 5,  6, 6, 7, 9\)</span>
 <br> Values <span class="math notranslate nohighlight">\(3\)</span> and <span class="math notranslate nohighlight">\(5\)</span> have same number of repetitions.
 <br> Notice how <span class="math notranslate nohighlight">\(6\)</span> is also repeated but it is not as many times as <span class="math notranslate nohighlight">\(3\)</span> or <span class="math notranslate nohighlight">\(5\)</span> so it is not part of the mode.
@@ -881,7 +1069,7 @@ To find the mode, you don’t have to sort the set, but it is very helpful to so
 </div>
 <div class="section" id="example-3">
 <h4>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h4>
-<p>Data set: $2, 6, 3, 7, 5, 8, 9, 4 $
+<p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 8, 9, 4 \)</span>
 <br> Sorted data set: <span class="math notranslate nohighlight">\(2, 3, 4, 5, 6, 7, 8, 9\)</span>
 <br>There are no value that repeats.
 <br> So, there is no mode.</p>
@@ -892,9 +1080,9 @@ To find the mode, you don’t have to sort the set, but it is very helpful to so
 <h3>Try for yourself!<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>A student recorded her scores on weekly math quizzes that were marked out of a possible 10 points. Her scores were as follows: <br>
 5, 6, 9, 8, 9, 10, 7, 6, 8, 7, 6, 7</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">answer641</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;6&#39;</span><span class="p">,</span> <span class="s1">&#39; 7&#39;</span><span class="p">,</span> <span class="s1">&#39;6 and 7&#39;</span><span class="p">,</span> <span class="s1">&#39;8 and 9&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer641</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;6&#39;</span><span class="p">,</span> <span class="s1">&#39; 7&#39;</span><span class="p">,</span> <span class="s1">&#39;6 and 7&#39;</span><span class="p">,</span> <span class="s1">&#39;8 and 9&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
                               <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
 
 <span class="n">question641</span> <span class="o">=</span> <span class="s2">&quot;What is/are the mode of her records?&quot;</span>
@@ -915,50 +1103,50 @@ To find the mode, you don’t have to sort the set, but it is very helpful to so
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>What is/are the mode of her records?
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is/are the mode of her records?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "3e9801f5f9be40cda6fc4cbee395b8bd"}
+{"version_major": 2, "version_minor": 0, "model_id": "1ef477ecebb444e7ab44721f90f83150"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-function toggle(id) {
-var e = document.getElementById(id);
-if(e.style.display == &#39;none&#39;)
-e.style.display = &#39;block&#39;;
-else
-e.style.display = &#39;none&#39;;
-}
-//--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-&lt;div id=&quot;question641&quot;&gt;
- &lt;button id = &quot;641&quot;
-onclick=&quot;toggle(&#39;answer641&#39;);&quot;&gt;Solution&lt;/button&gt; 
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer641&quot;&gt;
-At first, let sort the scores on weekly math quizzes: &lt;br/&gt;
-    $ 5, 6, 6, 6, 7, 7, 7, 8, 8, 9, 9, 10$ &lt;br/&gt;
-From the sorted points, we can imply, &lt;br/&gt;
-5 only apears once, &lt;br/&gt;
-    6 and 7 repeat three times, &lt;br/&gt;
-    8 and 9 repeat two times, &lt;br/&gt; 
-    and 10 only appears once. &lt;br/&gt;
-    Therefore, the mode of her scores are: 6 and 7 &lt;br/&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question641&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;641&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer641&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer641&quot;</span><span class="p">&gt;</span>
+At first, let sort the scores on weekly math quizzes: <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    $ 5, 6, 6, 6, 7, 7, 7, 8, 8, 9, 9, 10$ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+From the sorted points, we can imply, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+5 only apears once, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    6 and 7 repeat three times, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    8 and 9 repeat two times, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
+    and 10 only appears once. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    Therefore, the mode of her scores are: 6 and 7 <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
    
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1015,93 +1203,36 @@ From the sorted points, we can imply, <br/>
 <li><p>Step 2: change the value of sliders and see the associated changes in the bar graph.<br></p></li>
 <li><p>Step 3: to show the breakdown for calculating mean check the box Mean, for median check Median and so on.<br></p></li>
 </ul>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">importlib</span> <span class="k">import</span> <span class="n">reload</span>
-<span class="kn">import</span> <span class="nn">site</span>
-<span class="n">reload</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
-
-<span class="kn">from</span> <span class="nn">geogebra.ggb</span> <span class="k">import</span> <span class="o">*</span>
-<span class="n">ggb</span> <span class="o">=</span> <span class="n">GGB</span><span class="p">()</span>
-<span class="n">ggb</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="s1">&#39;sources/centralTendency.ggb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;CentralTendancy&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.geogebra.org/material/iframe/id/fnx4j7yg/width/1010/height/476/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1010px&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;476px&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border:0px;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ggbLoadMsg"></div></div><script type="application/javascript">
-            window.ggbRequireStatus = 'loading';
-            requirejs.config({
-                paths: {
-                    ggb: "https://cdn.geogebra.org/apps/deployggb"
-                }
-            });
-
-            window.safeGGB = function safeGGB(counter, cb) {
-                if (window.ggbRequireStatus == 'failed') {
-                    console.log('panic-failed');
-                }
-
-                if (window.ggbRequireStatus == 'loading') {
-                    if (counter > 0) {
-                        console.log('in-loop' + counter);
-                        counter = counter-1;
-                        setTimeout(() => safeGGB(counter, cb), 2000);
-                    } else {
-                        console.log('panic-timeout');
-                    }
-                } else if (window.ggbRequireStatus == 'loaded') {
-                    cb();
-                }
-
-            }
-
-            requirejs(
-                ["ggb"],
-                () => {
-                    window.ggbRequireStatus = 'loaded';
-                    console.log('loaded');
-                    return;
-                },
-                (err) => {
-                    if (err.requireModules) {
-                        window.ggbRequireStatus = 'failed';
-                        console.error("There was an error while downloading one or more required Javascript Libraries.");
-                        err.requireModules.forEach(failedItem => {
-                            console.error("Failed to load: " + failedItem);
-                            $('#ggbLoadMsg').append('<p>Failed to load: ' + failedItem + '</p>');
-                        });
-                        $('#ggbLoadMsg').append('<p>Please check your internet connection.</p>');
-                        $('#ggbLoadMsg').css({'color':'red', 'font-size':'150%'});
-                    }
-                }
-            );
-
-            console.log(window.ggbRequireStatus);
-        </script><div class="output text_html"><div id="ggb_0_0e"></div></div><script type="application/javascript">window.safeGGB(5, () => {
-var ggb_0_0e = new GGBApplet({"filename": "sources/centralTendency.ggb"}, "ggb_0_0e", false);
- ggb_0_0e.inject();
-
-})</script></div>
+<div class="output text_html"><iframe scrolling="no" title="CentralTendancy" src="https://www.geogebra.org/material/iframe/id/fnx4j7yg/width/1010/height/476/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1010px" height="476px" style="border:0px;"> </iframe>
+</div></div>
 </div>
 </div>
 </div>
 <div class="section" id="example-using-a-large-dataset">
 <h2>Example Using A Large Dataset<a class="headerlink" href="#example-using-a-large-dataset" title="Permalink to this headline">¶</a></h2>
 <p>We will be using a computer to calculate the mean, median, and mode for both the x and y values of this graph.</p>
-<img src="images/JustTRex.png" width="400" height="400" align="center"/>
+<a class="reference internal image-reference" href="../../../_images/JustTRex.png"><img alt="../../../_images/JustTRex.png" class="align-center" src="../../../_images/JustTRex.png" style="width: 400px; height: 400px;" /></a>
 <p>This dataset was originally created by <a class="reference external" href="http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html">Alberto Cairo</a> which is named “Datasaurus” (for obvious reasons). It was made to show how we shouldn’t blindly trust only central tendency to tell the full picture of the data.</p>
 <p>He also made this data free for everyone to use!</p>
 <p>There are 142 values in this dataset! If you want to compute mean, median, or mode by hand, feel free to display the whole dataset using the button below.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;sources/Datasaurus.csv&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;sources/Datasaurus.csv&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">show</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">ToggleButton</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Show dataset&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">ToggleButton</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Show dataset&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">display_data</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">show</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
@@ -1117,14 +1248,14 @@ var ggb_0_0e = new GGBApplet({"filename": "sources/centralTendency.ggb"}, "ggb_0
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "7ee415f518f1422abd14428c5fe7a0e3"}
+{"version_major": 2, "version_minor": 0, "model_id": "fbe74a2261d34a0bb020eb094760637c"}
 </script></div>
 </div>
 <div class="section" id="mean">
 <h3>Mean<a class="headerlink" href="#mean" title="Permalink to this headline">¶</a></h3>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mean </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mean </span>
 <span class="n">fullDataframeMean</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">fullDataframeMean</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">fullDataframeMean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
@@ -1132,7 +1263,7 @@ var ggb_0_0e = new GGBApplet({"filename": "sources/centralTendency.ggb"}, "ggb_0
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>x    54.263
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x    54.263
 y    47.832
 dtype: float64
 </pre></div>
@@ -1145,9 +1276,9 @@ dtype: float64
 </div>
 <div class="section" id="median">
 <h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">¶</a></h3>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Median</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Median</span>
 <span class="n">fullDataframeMedian</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">fullDataframeMedian</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">fullDataframeMedian</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
@@ -1155,7 +1286,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>x    53.333
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x    53.333
 y    46.026
 dtype: float64
 </pre></div>
@@ -1167,9 +1298,9 @@ dtype: float64
 </div>
 <div class="section" id="mode">
 <h3>Mode<a class="headerlink" href="#mode" title="Permalink to this headline">¶</a></h3>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mode</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mode</span>
 <span class="n">fullDataFrameMode</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">fullDataFrameMode</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">fullDataFrameMode</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
@@ -1177,7 +1308,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>  dataset       x       y
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  dataset       x       y
 0    dino  29.744  10.641
 </pre></div>
 </div>
@@ -1186,7 +1317,8 @@ dtype: float64
 <p>What does this tell us?</p>
 <p>The mode tells us where to find the straightest line up and down by the x value and the straightest line left to right by the y value.</p>
 <p><a class="reference external" href="https://www.autodeskresearch.com/publications/samestats">Autodesk Research</a> used this dataset to create the “Datasaurus Dozen”. They created 12 new graphs with the same x and y mean as “Datasaurus”.</p>
-<img src="images/DinoSequential.gif" width="400" height="400" align="center"/></div>
+<a class="reference internal image-reference" href="../../../_images/DinoSequential.gif"><img alt="../../../_images/DinoSequential.gif" class="align-center" src="../../../_images/DinoSequential.gif" style="width: 400px; height: 400px;" /></a>
+</div>
 </div>
 <div class="section" id="create-your-own-data-set">
 <h2>Create Your Own Data Set<a class="headerlink" href="#create-your-own-data-set" title="Permalink to this headline">¶</a></h2>
@@ -1194,9 +1326,9 @@ dtype: float64
 <p><em>Just make sure there’s a comma ( , ) between each number.</em></p>
 <p>Then we tell the computer to compute the mean, then the median, then the mode. It’s important to know how to calculate these by hand, but computers are very smart now. We have these tools to help us calculate things like mean, median, and mode once we understand what they mean.</p>
 <p>After making your changes, to run the cell with code below click on the “Run” button at the top or hit “Ctrl+Enter/Return” key.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#found on https://stackoverflow.com/questions/31517194/how-to-hide-one-specific-cell-input-or-output-in-ipython-notebook</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#found on https://stackoverflow.com/questions/31517194/how-to-hide-one-specific-cell-input-or-output-in-ipython-notebook</span>
 
 <span class="k">def</span> <span class="nf">hide_toggle</span><span class="p">():</span>
     <span class="n">this_cell</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;$(&#39;div.cell.code_cell.rendered.selected&#39;)&quot;&quot;&quot;</span>
@@ -1227,27 +1359,27 @@ dtype: float64
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hide_toggle</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hide_toggle</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
 <script>
-    function code_toggle_6820594554148684312() {
+    function code_toggle_14649223853834787793() {
         $('div.cell.code_cell.rendered.selected').next().find('div.input').toggle();
     }
 
 </script>
 
-<a href="javascript:code_toggle_6820594554148684312()">Show/hide next box</a>
+<a href="javascript:code_toggle_14649223853834787793()">Show/hide next box</a>
 </div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">YourDataSet</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="c1">#don&#39;t forget a comma between each number!</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">YourDataSet</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="c1">#don&#39;t forget a comma between each number!</span>
 
 <span class="c1">#the word &quot;print&quot; tells the computer to write it below this block so you can read it!</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your mean is: &quot;</span><span class="p">)</span>
@@ -1263,7 +1395,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Your mean is: 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your mean is: 
 3
 Your median is: 
 3
@@ -1278,9 +1410,9 @@ There is no mode in your data set
 <div class="section" id="test-yourself">
 <h2>Test yourself<a class="headerlink" href="#test-yourself" title="Permalink to this headline">¶</a></h2>
 <p>Try out some of these harder questions on your own!</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">question611</span> <span class="o">=</span> <span class="s2">&quot;What number would you divide by to calculate the mean of 3, 4, 5, and 6?&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">question611</span> <span class="o">=</span> <span class="s2">&quot;What number would you divide by to calculate the mean of 3, 4, 5, and 6?&quot;</span>
 
 <span class="n">answer611</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;4.5&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
                              <span class="n">value</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
@@ -1297,50 +1429,49 @@ There is no mode in your data set
 <span class="n">display</span><span class="p">(</span><span class="n">question611</span><span class="p">,</span> <span class="n">answer611</span><span class="p">)</span>
 
 <span class="n">answer611</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">checkAnswer</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
-
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;What number would you divide by to calculate the mean of 3, 4, 5, and 6?&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What number would you divide by to calculate the mean of 3, 4, 5, and 6?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "8c2fe49f98564960a8497df367603572"}
+{"version_major": 2, "version_minor": 0, "model_id": "5475ec8d92874ca197646314a7133dde"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-function toggle(id) {
-var e = document.getElementById(id);
-if(e.style.display == &#39;none&#39;)
-e.style.display = &#39;block&#39;;
-else
-e.style.display = &#39;none&#39;;
-}
-//--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-&lt;div id=&quot;question611&quot;&gt;
- &lt;button id = &quot;611&quot;
-onclick=&quot;toggle(&#39;answer611&#39;);&quot;&gt;Solution&lt;/button&gt; 
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer611&quot;&gt;
-From the definition of mean, we know that we have to divide by the total number of elements in the data set.&lt;br/&gt;
-In this case, that number is 4. &lt;br/&gt;
-So, to compute the mean, we have to divide the sum of the data set by 4. &lt;br/&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question611&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;611&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer611&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer611&quot;</span><span class="p">&gt;</span>
+From the definition of mean, we know that we have to divide by the total number of elements in the data set.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+In this case, that number is 4. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+So, to compute the mean, we have to divide the sum of the data set by 4. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1376,9 +1507,9 @@ So, to compute the mean, we have to divide the sum of the data set by 4. <br/>
 </html>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">question621</span> <span class="o">=</span> <span class="s2">&quot;The mean of four numbers is 71.5. If three of the numbers are 58, 76, and 88, what is the value of the fourth number?&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">question621</span> <span class="o">=</span> <span class="s2">&quot;The mean of four numbers is 71.5. If three of the numbers are 58, 76, and 88, what is the value of the fourth number?&quot;</span>
 
 <span class="n">answer621</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;62&#39;</span><span class="p">,</span> <span class="s1">&#39;73.37&#39;</span><span class="p">,</span> <span class="s1">&#39;64&#39;</span><span class="p">,</span> <span class="s1">&#39;74&#39;</span><span class="p">,</span>  <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
                               <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
@@ -1398,54 +1529,54 @@ So, to compute the mean, we have to divide the sum of the data set by 4. <br/>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;The mean of four numbers is 71.5. If three of the numbers are 58, 76, and 88, what is the value of the fourth number?&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The mean of four numbers is 71.5. If three of the numbers are 58, 76, and 88, what is the value of the fourth number?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "74a0ed2fb3bd4ac3964349378689f576"}
+{"version_major": 2, "version_minor": 0, "model_id": "b86e5ba056a349689ae3f161e8276bf6"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-function toggle(id) {
-var e = document.getElementById(id);
-if(e.style.display == &#39;none&#39;)
-e.style.display = &#39;block&#39;;
-else
-e.style.display = &#39;none&#39;;
-}
-//--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-&lt;div id=&quot;question621&quot;&gt;
- &lt;button id = &quot;621&quot;
-onclick=&quot;toggle(&#39;answer621&#39;);&quot;&gt;Solution&lt;/button&gt; 
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer621&quot;&gt;
-We are given three numbers but told the mean of four numbers is 71.5. Let assume the fourth number is x. &lt;br/&gt;
-So, by the definition of mean, we can write &lt;br&gt;
-$\frac{58 + 76 + 88 + x}{4} = 71.5 $ &lt;br/&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question621&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;621&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer621&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer621&quot;</span><span class="p">&gt;</span>
+We are given three numbers but told the mean of four numbers is 71.5. Let assume the fourth number is x. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+So, by the definition of mean, we can write <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+$\frac{58 + 76 + 88 + x}{4} = 71.5 $ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-or, $222 + x = 71.5 \times 4 $ &lt;br/&gt;
+or, $222 + x = 71.5 \times 4 $ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-or, $x = 286 - 222 $ &lt;br/&gt;
+or, $x = 286 - 222 $ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-or, $x = 64 $ &lt;br/&gt;
+or, $x = 64 $ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-Therefore, the fourth number is 64. &lt;br/&gt;
+Therefore, the fourth number is 64. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
 
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1491,9 +1622,9 @@ Therefore, the fourth number is 64. <br/>
 </div></div>
 </div>
 <p>Sara tried to compute the mean average of her 8 test scores. She mistakenly divided the correct sum of all her test scores by 7, which yields 96.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">answer631</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;78&#39;</span><span class="p">,</span> <span class="s1">&#39;83.5&#39;</span><span class="p">,</span> <span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="s1">&#39;84&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer631</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;78&#39;</span><span class="p">,</span> <span class="s1">&#39;83.5&#39;</span><span class="p">,</span> <span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="s1">&#39;84&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
                              <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
 
 <span class="n">question631</span> <span class="o">=</span> <span class="s2">&quot;What is Sara&#39;s mean test score? (Source: dummies)&quot;</span>
@@ -1513,60 +1644,60 @@ Therefore, the fourth number is 64. <br/>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&quot;What is Sara&#39;s mean test score? (Source: dummies)&quot;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is Sara&#39;s mean test score? (Source: dummies)
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "a44ec78b1d38428493148e949e6e09a7"}
+{"version_major": 2, "version_minor": 0, "model_id": "9851f653fa084e33ba2bf10afb60ab13"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-function toggle(id) {
-var e = document.getElementById(id);
-if(e.style.display == &#39;none&#39;)
-e.style.display = &#39;block&#39;;
-else
-e.style.display = &#39;none&#39;;
-}
-//--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-&lt;div id=&quot;question631&quot;&gt;
- &lt;button id = &quot;631&quot;
-onclick=&quot;toggle(&#39;answer631&#39;);&quot;&gt;Solution&lt;/button&gt; 
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer631&quot;&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question631&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;631&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer631&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer631&quot;</span><span class="p">&gt;</span>
 You know the test score mean of Sara when divided by 7, you can determine the sum of her scores. This information will then allow you
-to determine her mean average over eight tests.&lt;br/&gt;
+to determine her mean average over eight tests.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-Apply the average formula to her wrong calculation. &lt;br/&gt;
+Apply the average formula to her wrong calculation. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-96 = sum of scores ÷ 7 &lt;br/&gt;
+96 = sum of scores ÷ 7 <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-96 × 7 = sum of scores &lt;br/&gt;
+96 × 7 = sum of scores <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-672 = sum of scores &lt;br/&gt; 
+672 = sum of scores <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
 
-Now that you know her test score sum, you can figure her true mean average.&lt;br/&gt; 
+Now that you know her test score sum, you can figure her true mean average.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
 
-Mean average = 672 ÷ 8 &lt;br/&gt;
+Mean average = 672 ÷ 8 <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-Mean average = 84 &lt;br/&gt;
+Mean average = 84 <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-So, the correct answer is D. &lt;br/&gt;
+So, the correct answer is D. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1617,9 +1748,9 @@ So, the correct answer is D. <br/>
 </html>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">answer632</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;32, 34, 35, 36&#39;</span><span class="p">,</span> <span class="s1">&#39;32, 35, 36, 41&#39;</span><span class="p">,</span> <span class="s1">&#39;32, 34, 40, 44&#39;</span><span class="p">,</span> <span class="s1">&#39;32, 32, 38, 38&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer632</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;32, 34, 35, 36&#39;</span><span class="p">,</span> <span class="s1">&#39;32, 35, 36, 41&#39;</span><span class="p">,</span> <span class="s1">&#39;32, 34, 40, 44&#39;</span><span class="p">,</span> <span class="s1">&#39;32, 32, 38, 38&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
                              <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
 
 <span class="n">question632</span> <span class="o">=</span> <span class="s2">&quot;A set of four numbers that begins with the number 32 is arranged from smallest to largest.</span><span class="se">\n</span><span class="s2"> If the median is 35, which of the following could be the set of numbers?&quot;</span>
@@ -1639,47 +1770,48 @@ So, the correct answer is D. <br/>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;A set of four numbers that begins with the number 32 is arranged from smallest to largest.\n If the median is 35, which of the following could be the set of numbers?&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A set of four numbers that begins with the number 32 is arranged from smallest to largest.
+ If the median is 35, which of the following could be the set of numbers?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "74556fbda71a4ba1be0b698f31713672"}
+{"version_major": 2, "version_minor": 0, "model_id": "eb1f1ede53304d9a83cf03faa83a9c94"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-function toggle(id) {
-var e = document.getElementById(id);
-if(e.style.display == &#39;none&#39;)
-e.style.display = &#39;block&#39;;
-else
-e.style.display = &#39;none&#39;;
-}
-//--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-&lt;div id=&quot;question632&quot;&gt;
- &lt;button id = &quot;632&quot;
-onclick=&quot;toggle(&#39;answer632&#39;);&quot;&gt;Solution&lt;/button&gt; 
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer632&quot;&gt;
-We are given the median of four numbers 35. We can imply from the given information is that the sum &lt;br/&gt; 
-of the numbers is 140. Now we check all the choices one by one. We add all the numbers of the first choice and get 137. &lt;br/&gt;
-So it is not our correct answer. &lt;br/&gt;
-Similarly, for the next choices we get 144, 150, and 140 for second, third and fourth choices, respectively, &lt;br/&gt;
-Therefore, the correct series is: 32, 32, 38, 38.&lt;br/&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question632&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;632&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer632&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer632&quot;</span><span class="p">&gt;</span>
+We are given the median of four numbers 35. We can imply from the given information is that the sum <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
+of the numbers is 140. Now we check all the choices one by one. We add all the numbers of the first choice and get 137. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+So it is not our correct answer. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+Similarly, for the next choices we get 144, 150, and 140 for second, third and fourth choices, respectively, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+Therefore, the correct series is: 32, 32, 38, 38.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1717,9 +1849,9 @@ Therefore, the correct series is: 32, 32, 38, 38.<br/>
 </html>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">answer642</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;19&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer642</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;19&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
                              <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>  <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
 
 <span class="n">question642</span> <span class="o">=</span> <span class="s2">&quot;The average of five positive integers is less than 20. What is the smallest possible median of this set?&quot;</span>
@@ -1739,46 +1871,46 @@ Therefore, the correct series is: 32, 32, 38, 38.<br/>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;The average of five positive integers is less than 20. What is the smallest possible median of this set?&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The average of five positive integers is less than 20. What is the smallest possible median of this set?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "6cb84d6a3eab419d9fc17f433bee363b"}
+{"version_major": 2, "version_minor": 0, "model_id": "8b2702a046ce4797a85d54dc60e4d2ac"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-function toggle(id) {
-var e = document.getElementById(id);
-if(e.style.display == &#39;none&#39;)
-e.style.display = &#39;block&#39;;
-else
-e.style.display = &#39;none&#39;;
-}
-//--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-&lt;div id=&quot;question642&quot;&gt;
- &lt;button id = &quot;642&quot;
-onclick=&quot;toggle(&#39;answer642&#39;);&quot;&gt;Solution&lt;/button&gt; 
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer642&quot;&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question642&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;642&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer642&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer642&quot;</span><span class="p">&gt;</span>
 As we are given that the numbers are positive integers that means all numbers should be
-&lt;br/&gt;greater than or equal 1. Let assume the five numbers are 1, 1, 1, 1, 16. The sum is equal
-&lt;br/&gt;to 20, and the average is 20/5 = 4 which is less than 20. All given conditions are satisfied. 
-&lt;br &gt; &lt;b&gt;Therefore, the smallest possible median is 1. &lt;b&gt; &lt;br/&gt;
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>greater than or equal 1. Let assume the five numbers are 1, 1, 1, 1, 16. The sum is equal
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>to 20, and the average is 20/5 = 4 which is less than 20. All given conditions are satisfied. 
+<span class="p">&lt;</span><span class="nt">br</span> <span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>Therefore, the smallest possible median is 1. <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1825,9 +1957,9 @@ As we are given that the numbers are positive integers that means all numbers sh
 <li><p>Range is the highest value minus the lowest value</p></li>
 </ul>
 <p>Here is a video made by Dylan Peters EDU that is a parody of the song Lazy Song by Bruno Mars that sums up these 4 concepts.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;560&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;315&quot;</span><span class="p">,</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://www.youtube.com/embed/IHginNwss5c&quot;</span><span class="p">,</span> <span class="n">allow</span><span class="o">=</span><span class="s2">&quot;accelerometer; encrypted-media; gyroscope; picture-in-picture; allowfullscreen&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;560&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;315&quot;</span><span class="p">,</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://www.youtube.com/embed/IHginNwss5c&quot;</span><span class="p">,</span> <span class="n">allow</span><span class="o">=</span><span class="s2">&quot;accelerometer; encrypted-media; gyroscope; picture-in-picture; allowfullscreen&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1848,10 +1980,29 @@ As we are given that the numbers are positive integers that means all numbers sh
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"5698b5d618d344eda21235a93559e221": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d65c1f345dcd4e4c944f627e81d29aaa": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "31abd65e497340b1ac2fba4fd6c9ed1a": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["45", "45.11", "43.67", "46", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_5698b5d618d344eda21235a93559e221", "style": "IPY_MODEL_d65c1f345dcd4e4c944f627e81d29aaa"}}, "bc24e6130cd6446289ccc93b6ea857ed": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8384935dff1649a58ee7c5e825df8c06": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "4d26e6feb310461e9ef0e47339742fe2": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["11", "11.5", "12", "12.5", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_bc24e6130cd6446289ccc93b6ea857ed", "style": "IPY_MODEL_8384935dff1649a58ee7c5e825df8c06"}}, "1f71bf36b0504b35b228193b85525f7e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d4a70e17ca144d55a113f901761226ef": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "3e9801f5f9be40cda6fc4cbee395b8bd": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["6", " 7", "6 and 7", "8 and 9", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_1f71bf36b0504b35b228193b85525f7e", "style": "IPY_MODEL_d4a70e17ca144d55a113f901761226ef"}}, "f3700ab5cd5b4d47bef6c0c5e9ca8ed1": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "ed3aec4909314fce9a398dea11491c16": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "7ee415f518f1422abd14428c5fe7a0e3": {"model_name": "ToggleButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ToggleButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ToggleButtonView", "button_style": "", "description": "Show dataset", "description_tooltip": null, "disabled": false, "icon": "", "layout": "IPY_MODEL_f3700ab5cd5b4d47bef6c0c5e9ca8ed1", "style": "IPY_MODEL_ed3aec4909314fce9a398dea11491c16", "tooltip": "", "value": false}}, "5e89088346c0487a85e345071ce0a061": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "93bc63a0a8c74d0690022c1958232443": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "8c2fe49f98564960a8497df367603572": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["3", "4", "4.5", "5", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_5e89088346c0487a85e345071ce0a061", "style": "IPY_MODEL_93bc63a0a8c74d0690022c1958232443"}}, "689d0bc50a5b4bd5a5a768c43d9368fa": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "20f97cf0ad0845a18be66591203c8b44": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "74a0ed2fb3bd4ac3964349378689f576": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["62", "73.37", "64", "74", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_689d0bc50a5b4bd5a5a768c43d9368fa", "style": "IPY_MODEL_20f97cf0ad0845a18be66591203c8b44"}}, "e04ebedc0f4d46e6a3439777b1cd1b26": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1c96ed5b23c54b069dd35f83379fd33e": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "a44ec78b1d38428493148e949e6e09a7": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["78", "83.5", "100", "84", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_e04ebedc0f4d46e6a3439777b1cd1b26", "style": "IPY_MODEL_1c96ed5b23c54b069dd35f83379fd33e"}}, "7453c3386f7b45dbbf6ab50f31e0f935": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d8de11aaddb54bfa932aa8572ba3d90c": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "74556fbda71a4ba1be0b698f31713672": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["32, 34, 35, 36", "32, 35, 36, 41", "32, 34, 40, 44", "32, 32, 38, 38", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_7453c3386f7b45dbbf6ab50f31e0f935", "style": "IPY_MODEL_d8de11aaddb54bfa932aa8572ba3d90c"}}, "6fbd06827d6c4372be8f15248e72211e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "91bb30a3f9f0455787445227b83fc355": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "6cb84d6a3eab419d9fc17f433bee363b": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["1", "2", "4", "19", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_6fbd06827d6c4372be8f15248e72211e", "style": "IPY_MODEL_91bb30a3f9f0455787445227b83fc355"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"8789548908454730884828dd712f4124": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "bbc6824216c249359784affcab52a831": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "5cb22c23fe574ac8917527293de69ee5": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["45", "45.11", "43.67", "46", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_8789548908454730884828dd712f4124", "style": "IPY_MODEL_bbc6824216c249359784affcab52a831"}}, "3efdc1afdc664df3b245ce3a6cba2b43": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "ef35874ae96840fc808c2a4c9655d561": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "b556792e617d4d7683be0560258012cc": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["11", "11.5", "12", "12.5", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_3efdc1afdc664df3b245ce3a6cba2b43", "style": "IPY_MODEL_ef35874ae96840fc808c2a4c9655d561"}}, "0c071d1f754d4875a1026e7d829ec77a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3015d8f2daa04ea7bf86b2cc9be9db47": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "1ef477ecebb444e7ab44721f90f83150": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["6", " 7", "6 and 7", "8 and 9", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_0c071d1f754d4875a1026e7d829ec77a", "style": "IPY_MODEL_3015d8f2daa04ea7bf86b2cc9be9db47"}}, "2a0e7f7dae6e40ada9b3acb5cdc64c5a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e1e1c0a8cfcd4ccbb32f57c415013434": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "fbe74a2261d34a0bb020eb094760637c": {"model_name": "ToggleButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ToggleButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ToggleButtonView", "button_style": "", "description": "Show dataset", "description_tooltip": null, "disabled": false, "icon": "", "layout": "IPY_MODEL_2a0e7f7dae6e40ada9b3acb5cdc64c5a", "style": "IPY_MODEL_e1e1c0a8cfcd4ccbb32f57c415013434", "tooltip": "", "value": false}}, "e5dce62634324e4f9da9da961fd6741a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e59b1882a1a549db9d5ff15802f3ca39": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "5475ec8d92874ca197646314a7133dde": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["3", "4", "4.5", "5", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_e5dce62634324e4f9da9da961fd6741a", "style": "IPY_MODEL_e59b1882a1a549db9d5ff15802f3ca39"}}, "88ea539020044277a270d1f44d27efe4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "75c11314b5f44f6fbde31dc04b78cafe": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "b86e5ba056a349689ae3f161e8276bf6": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["62", "73.37", "64", "74", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_88ea539020044277a270d1f44d27efe4", "style": "IPY_MODEL_75c11314b5f44f6fbde31dc04b78cafe"}}, "7511069382bf4e29a864f2e076f276d6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1311bf6657e649448ea86eb5d3a4f31e": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "9851f653fa084e33ba2bf10afb60ab13": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["78", "83.5", "100", "84", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_7511069382bf4e29a864f2e076f276d6", "style": "IPY_MODEL_1311bf6657e649448ea86eb5d3a4f31e"}}, "882de598603b4e998257ac03fa1f4795": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "ae6003c025e0413592c6e0f3755c5a78": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "eb1f1ede53304d9a83cf03faa83a9c94": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["32, 34, 35, 36", "32, 35, 36, 41", "32, 34, 40, 44", "32, 32, 38, 38", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_882de598603b4e998257ac03fa1f4795", "style": "IPY_MODEL_ae6003c025e0413592c6e0f3755c5a78"}}, "8b1417e66ff54dd2b8236983ee9ca85f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "72478130d3fc48e4af5bb88e67de89dc": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "8b2702a046ce4797a85d54dc60e4d2ac": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["1", "2", "4", "19", "None of the above"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Choices:", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_8b1417e66ff54dd2b8236983ee9ca85f", "style": "IPY_MODEL_72478130d3fc48e4af5bb88e67de89dc"}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/CentralTendency"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -1861,7 +2012,7 @@ As we are given that the numbers are positive integers that means all numbers sh
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html" title="previous page">Outliers and Central Tendency</a>
+    <a class='left-prev' id="prev-link" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html" title="previous page">Central Tendency and Outliers</a>
     <a class='right-next' id="next-link" href="../CombinedLogLaw/combined-log-law.html" title="next page">Combined Log Law</a>
 
     </div>

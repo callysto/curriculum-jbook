@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Patterns and Relations" href="../PatternsAndRelations/patterns-and-relations.html" />
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="active">
-      <a href="">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,114 +471,138 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/ParallelogramArea/parallelogram-area.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/ParallelogramArea/parallelogram-area.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/ParallelogramArea/parallelogram-area.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
-
-<nav id="bd-toc-nav">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grade-7-curriculum">
+   Grade 7 Curriculum
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recall-what-a-parallelogram-is">
+   Recall what a Parallelogram is
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-find-the-area">
+   How to find the area
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-about-skewed-parallelograms">
+   What about skewed parallelograms?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example">
+   Example
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-area">
+   Calculate Area
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-1">
+   Question 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-does-changing-the-base-change-the-area">
+   How does changing the base change the area?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-does-changing-the-height-change-the-area">
+   How does changing the height change the area?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-conclusion-can-we-draw">
+   What conclusion can we draw?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#practice">
+   Practice
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Question 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#question-2">
+     Question 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#question-3">
+     Question 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-if-you-know-the-area-but-not-one-of-the-variables">
+     What if you know the area, but not one of the variables?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-about-the-other-way">
+     What about the other way?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-questions">
+     Practice Questions
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#grade-7-curriculum" class="nav-link">Grade 7 Curriculum</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#recall-what-a-parallelogram-is" class="nav-link">Recall what a Parallelogram is</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#how-to-find-the-area" class="nav-link">How to find the area</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#what-about-skewed-parallelograms" class="nav-link">What about skewed parallelograms?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#example" class="nav-link">Example</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#calculate-area" class="nav-link">Calculate Area</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#question-1" class="nav-link">Question 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#how-does-changing-the-base-change-the-area" class="nav-link">How does changing the base change the area?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#how-does-changing-the-height-change-the-area" class="nav-link">How does changing the height change the area?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#what-conclusion-can-we-draw" class="nav-link">What conclusion can we draw?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#practice" class="nav-link">Practice</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id1" class="nav-link">Question 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#question-2" class="nav-link">Question 2</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#question-3" class="nav-link">Question 3</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#what-if-you-know-the-area-but-not-one-of-the-variables" class="nav-link">What if you know the area, but not one of the variables?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#what-about-the-other-way" class="nav-link">What about the other way?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#practice-questions" class="nav-link">Practice Questions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id2" class="nav-link">Question 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Question 2</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Question 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Question 2
+      </a>
+     </li>
     </ul>
-</nav>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
 
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -434,26 +614,26 @@
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/ParallelogramArea/parallelogram-area.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-&lt;script&gt;
-  function code_toggle() {
-    if (code_shown){
-      $(&#39;div.input&#39;).hide(&#39;500&#39;);
-      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)
-    } else {
-      $(&#39;div.input&#39;).show(&#39;500&#39;);
-      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)
-    }
-    code_shown = !code_shown
-  }
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">function</span> <span class="nx">code_toggle</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">code_shown</span><span class="p">){</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.input&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">(</span><span class="s1">&#39;500&#39;</span><span class="p">);</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#toggleButton&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;Show Code&#39;</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.input&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="s1">&#39;500&#39;</span><span class="p">);</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#toggleButton&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;Hide Code&#39;</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="nx">code_shown</span> <span class="o">=</span> <span class="o">!</span><span class="nx">code_shown</span>
+  <span class="p">}</span>
 
-  $( document ).ready(function(){
-    code_shown=false;
-    $(&#39;div.input&#39;).hide()
-  });
-&lt;/script&gt;
-&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;
+  <span class="nx">$</span><span class="p">(</span> <span class="nb">document</span> <span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">code_shown</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.input&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">()</span>
+  <span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;javascript:code_toggle()&quot;</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;toggleButton&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Show Code&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -481,30 +661,30 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg=geogebra\&amp;subdirectory=geogebra
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg<span class="o">=</span>geogebra<span class="se">\&amp;</span><span class="nv">subdirectory</span><span class="o">=</span>geogebra
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Collecting geogebra from git+git://github.com/callysto/nbplus.git#egg=geogebra&amp;subdirectory=geogebra
-  Cloning git://github.com/callysto/nbplus.git to /tmp/pip-install-wsmar1n6/geogebra
-  Running command git clone -q git://github.com/callysto/nbplus.git /tmp/pip-install-wsmar1n6/geogebra
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting geogebra
+  Cloning git://github.com/callysto/nbplus.git to /tmp/pip-install-jy90eirg/geogebra
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Building wheels for collected packages: geogebra
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building wheels for collected packages: geogebra
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>  Building wheel for geogebra (setup.py) ... [?25l-
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for geogebra (setup.py) ... ?25l-
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span> done
-[?25h  Created wheel for geogebra: filename=geogebra-0.0.0-cp37-none-any.whl size=6210 sha256=985a3f222ee7828f34275bc138344618edae2d0f7446ab5457365538c0e01a6e
-  Stored in directory: /tmp/pip-ephem-wheel-cache-hc8jcsed/wheels/cd/8f/54/42a9349ed6e488bb120c4c182ad6aa4f19e86061fe875bf3c5
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> done
+?25h  Created wheel for geogebra: filename=geogebra-0.0.0-py3-none-any.whl size=6210 sha256=734ede509646c4c620864f31dee34d41df88afccac72840284ec0da8bf9ccea9
+  Stored in directory: /tmp/pip-ephem-wheel-cache-kg1sq3u2/wheels/a2/4f/cf/ee77bbaa35bfe141f46fc9f8153c9509b1535406d0d68b6086
 Successfully built geogebra
 </pre></div>
 </div>
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Installing collected packages: geogebra
-  Found existing installation: geogebra 0.0.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: geogebra
+  Attempting uninstall: geogebra
+    Found existing installation: geogebra 0.0.0
     Uninstalling geogebra-0.0.0:
       Successfully uninstalled geogebra-0.0.0
 Successfully installed geogebra-0.0.0
@@ -514,7 +694,7 @@ Successfully installed geogebra-0.0.0
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">importlib</span> <span class="k">import</span> <span class="n">reload</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">importlib</span> <span class="k">import</span> <span class="n">reload</span>
 <span class="kn">import</span> <span class="nn">site</span>
 <span class="n">reload</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
 
@@ -596,7 +776,7 @@ Successfully installed geogebra-0.0.0
 </div>
 <div class="section" id="how-to-find-the-area">
 <h2>How to find the area<a class="headerlink" href="#how-to-find-the-area" title="Permalink to this headline">¶</a></h2>
-<p>Since we know a rectangle is a type of parallelogram, let’s recall the area of a rectangle: <span class="math notranslate nohighlight">\($\text{base} \times \text{height}\)</span>$
+<p>Since we know a rectangle is a type of parallelogram, let’s recall the area of a rectangle: $<span class="math notranslate nohighlight">\(\text{base} \times \text{height}\)</span>$
 Can we use this formula for all parallelograms? Actually, yes we can! This is because of the fact that parallelograms have parallel sides.</p>
 <p><img alt="animation" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Parallelogram_area_animated.gif" /> wikimedia.org</p>
 </div>
@@ -606,7 +786,7 @@ Can we use this formula for all parallelograms? Actually, yes we can! This is be
 <p>The applet below automatically calculates the area of the parallelogram shown. You can move the sliders to change the length and height, and you can also move the point <span class="math notranslate nohighlight">\(P\)</span> to change how skewed the parallelogram is. Notice how the area changes when you change the base or height, but not when you move the point <span class="math notranslate nohighlight">\(P\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">material</span><span class="p">(</span><span class="s1">&#39;YFS3rJVz&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">material</span><span class="p">(</span><span class="s1">&#39;YFS3rJVz&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -624,7 +804,7 @@ var ggb_0_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_0_0e", false);
 <p>Let’s go through an example. Here is a parallelogram. What is its area?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaStep1.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaStep1.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -635,7 +815,7 @@ var ggb_0_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_0_0e", false);
 <p>Let’s dissect this parallelogram using two vertical lines. Then let’s move the triangles inwards to create a rectangle.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaStep2.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaStep2.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -645,7 +825,7 @@ var ggb_0_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_0_0e", false);
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaStep3.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaStep3.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -654,7 +834,7 @@ var ggb_0_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_0_0e", false);
 </div>
 </div>
 <p>Now we can see that the area of this parallelogram can be calculated like the area of a rectangle:
-<span class="math notranslate nohighlight">\($\begin{align*}
+$<span class="math notranslate nohighlight">\(\begin{align*}
 \text{Area of parallelogram} &amp; = \text{Area of rectangle}\\
 \text{Area of parallelogram} &amp; = \text{base} \times \text{height}\\
 \text{Area of parallelogram} &amp; = 2 \text{ cm} \times 3 \text{ cm}\\
@@ -663,7 +843,7 @@ var ggb_0_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_0_0e", false);
 <p>For one last check, slide point <span class="math notranslate nohighlight">\(P\)</span> forward and back, perhaps lining up with the height line, to confirm that the parallelogram can be turned into a rectangle without changing how much area is there.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="s1">&#39;ParaEx.ggb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="s1">&#39;ParaEx.ggb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -686,7 +866,7 @@ var ggb_1_0e = new GGBApplet({"filename": "ParaEx.ggb"}, "ggb_1_0e", false);
 <h2>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ1.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ1.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -696,7 +876,7 @@ var ggb_1_0e = new GGBApplet({"filename": "ParaEx.ggb"}, "ggb_1_0e", false);
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ans</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Area=&#39;</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ans</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Area=&#39;</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">display</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What is the area of this parallelogram?&quot;</span><span class="p">)</span>
@@ -722,16 +902,16 @@ var ggb_1_0e = new GGBApplet({"filename": "ParaEx.ggb"}, "ggb_1_0e", false);
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>What is the area of this parallelogram?
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is the area of this parallelogram?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "c459bd3afdd141eea1c6db9f8e63f477"}
+{"version_major": 2, "version_minor": 0, "model_id": "0d28902b9ffe4a06ac6269490463af33"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ2.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ2.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -741,7 +921,7 @@ var ggb_1_0e = new GGBApplet({"filename": "ParaEx.ggb"}, "ggb_1_0e", false);
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ans2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Area=&#39;</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ans2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Area=&#39;</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">display2</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What is the area of this parallelogram?&quot;</span><span class="p">)</span>
@@ -767,11 +947,11 @@ var ggb_1_0e = new GGBApplet({"filename": "ParaEx.ggb"}, "ggb_1_0e", false);
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>What is the area of this parallelogram?
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is the area of this parallelogram?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "ec371b798e1e474abd17bb074aa95c03"}
+{"version_major": 2, "version_minor": 0, "model_id": "2a0f0e5adeeb4b0c82c84d1d3ac21526"}
 </script></div>
 </div>
 </div>
@@ -779,7 +959,7 @@ var ggb_1_0e = new GGBApplet({"filename": "ParaEx.ggb"}, "ggb_1_0e", false);
 <h2>How does changing the base change the area?<a class="headerlink" href="#how-does-changing-the-base-change-the-area" title="Permalink to this headline">¶</a></h2>
 <p>Let’s take the first parallelogram from the example we went through where the base is 2 cm and the height is 3 cm which we figured out the area is <span class="math notranslate nohighlight">\(6 cm^2\)</span>. What do you think would happen to the area if we doubled the base to 4 cm?
 Let’s calculate it:
-<span class="math notranslate nohighlight">\($\begin{align*}
+$<span class="math notranslate nohighlight">\(\begin{align*}
 \text{Area of parallelogram} &amp; = \text{base} \times \text{height}\\
 \text{Area of parallelogram} &amp; = 4 \text{ cm} \times 3 \text{ cm}\\
 \text{Area of parallelogram} &amp; = 12 \text{ cm}^2
@@ -790,7 +970,7 @@ Let’s calculate it:
 <h2>How does changing the height change the area?<a class="headerlink" href="#how-does-changing-the-height-change-the-area" title="Permalink to this headline">¶</a></h2>
 <p>Now instead of changing the base, let’s double the height of the parallelogram in the first example to 6 cm and keep the base at 2 cm. How will this new area compare to the old area? How will it compare to the area when we changed the base?
 Let’s calculate it:
-<span class="math notranslate nohighlight">\($\begin{align*}
+$<span class="math notranslate nohighlight">\(\begin{align*}
 \text{Area of parallelogram} &amp; = \text{base} \times \text{height}\\
 \text{Area of parallelogram} &amp; = 6 \text{ cm} \times 2 \text{ cm}\\
 \text{Area of parallelogram} &amp; = 12 \text{ cm}^2
@@ -799,7 +979,7 @@ Let’s calculate it:
 <p><strong>Note:</strong> you can slide P back and forth to create differently skewed parallelograms, including a rectangle, or even a square if you choose the same base length and height.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">material</span><span class="p">(</span><span class="s1">&#39;YFS3rJVz&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">material</span><span class="p">(</span><span class="s1">&#39;YFS3rJVz&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -840,7 +1020,7 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 <p>Let’s say you know the area and the base, but are asked for the height, or you know the area and the height, but are asked for the base. How can we find these missing variables? Look at this example below. What is the height of the parallelogram?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ3.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ3.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -848,8 +1028,8 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 <img alt="../../../_images/parallelogram-area_25_0.png" src="../../../_images/parallelogram-area_25_0.png" />
 </div>
 </div>
-<p>Let’s look at the formula: <span class="math notranslate nohighlight">\($ \text{Area of parallelogram} = \text{base} \times \text{height}\)</span>$</p>
-<p>Now let’s plug in all the values we know into the formula: <span class="math notranslate nohighlight">\($10 \text{ mm}^2 = 2.5 \text{ mm} \times \text{height}\)</span>$</p>
+<p>Let’s look at the formula: $<span class="math notranslate nohighlight">\( \text{Area of parallelogram} = \text{base} \times \text{height}\)</span>$</p>
+<p>Now let’s plug in all the values we know into the formula: $<span class="math notranslate nohighlight">\(10 \text{ mm}^2 = 2.5 \text{ mm} \times \text{height}\)</span>$</p>
 <p>This looks a lot different than when all the numbers we know are on one side of the equals sign, so let’s solve this equation for <span class="math notranslate nohighlight">\(height\)</span> which will put all the numbers on one side of the equals sign and <span class="math notranslate nohighlight">\(height\)</span> will be the only thing on the other side of the equals sign.</p>
 <p><em>Don’t forget, to keep the meaning of the equation the same, any operation you do on one side, you must do it to the other.</em></p>
 <div class="math notranslate nohighlight">
@@ -860,15 +1040,15 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 10 \text{ mm}^2\!\!\!\!\!\diagup \div 2.5 \text{ mm}\!\!\!\!\!\diagup &amp; = \text{height} \tag{cancel units}\\
 4 \text{ mm} &amp; = \text{height}
 \end{align*}\end{split}\]</div>
-<p>At the step with the comment “Solve” on it, that step actually shows us the formula for height when you know the base and area. Let’s remove the values from that step to see what the formula is in general: <span class="math notranslate nohighlight">\($\frac{\text{Area of parallelogram}}{\text{base}} = \text{height}\)</span>$</p>
-<p>This can also be written with height on the left and the formula on the right: <span class="math notranslate nohighlight">\($\text{height} = \frac{\text{Area of parallelogram}}{\text{base}}\)</span>$</p>
+<p>At the step with the comment “Solve” on it, that step actually shows us the formula for height when you know the base and area. Let’s remove the values from that step to see what the formula is in general: $<span class="math notranslate nohighlight">\(\frac{\text{Area of parallelogram}}{\text{base}} = \text{height}\)</span>$</p>
+<p>This can also be written with height on the left and the formula on the right: $<span class="math notranslate nohighlight">\(\text{height} = \frac{\text{Area of parallelogram}}{\text{base}}\)</span>$</p>
 </div>
 <div class="section" id="what-about-the-other-way">
 <h3>What about the other way?<a class="headerlink" href="#what-about-the-other-way" title="Permalink to this headline">¶</a></h3>
 <p>We can do the same thing if we know the height and not the base! What is the base length of this parallelogram?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ4.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ4.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -887,8 +1067,8 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 35 \text{ cm}^2\!\!\!\!\diagup \div 4 \text{ cm}\!\!\!\!\diagup &amp; = \text{base} \tag{cancel units}\\
 8.75 \text{ cm} &amp; = \text{base}
 \end{align*}\end{split}\]</div>
-<p>Now let’s get the general formula from the “Solve” step: <span class="math notranslate nohighlight">\($\frac{\text{Area of parallelogram}}{\text{height}} = \text{base}\)</span>$</p>
-<p>we can also write this with base on the left and the formula on the right: <span class="math notranslate nohighlight">\($\text{base} = \frac{\text{Area of parallelogram}}{\text{height}}\)</span>$</p>
+<p>Now let’s get the general formula from the “Solve” step: $<span class="math notranslate nohighlight">\(\frac{\text{Area of parallelogram}}{\text{height}} = \text{base}\)</span>$</p>
+<p>we can also write this with base on the left and the formula on the right: $<span class="math notranslate nohighlight">\(\text{base} = \frac{\text{Area of parallelogram}}{\text{height}}\)</span>$</p>
 </div>
 <div class="section" id="practice-questions">
 <h3>Practice Questions<a class="headerlink" href="#practice-questions" title="Permalink to this headline">¶</a></h3>
@@ -898,7 +1078,7 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 <p>What is the base length of this parallelogram?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ5.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ5.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -908,7 +1088,7 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ans3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Base=&#39;</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ans3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Base=&#39;</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">display3</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What is the base length of this parallelogram?&quot;</span><span class="p">)</span>
@@ -934,11 +1114,11 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>What is the base length of this parallelogram?
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is the base length of this parallelogram?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "883571e190c14ca0b67514fbb7d94c5f"}
+{"version_major": 2, "version_minor": 0, "model_id": "b15dd9808261415ea6456586c4b2b2ed"}
 </script></div>
 </div>
 </div>
@@ -947,7 +1127,7 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 <p>What is the height of this parallelogram?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ6.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;images/ParaQ6.png&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -957,7 +1137,7 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ans4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Height=&#39;</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ans4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Height=&#39;</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">display4</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What is the height of this parallelogram?&quot;</span><span class="p">)</span>
@@ -983,11 +1163,11 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>What is the height of this parallelogram?
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is the height of this parallelogram?
 </pre></div>
 </div>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "097d0996e30a441396336e5fa519cd01"}
+{"version_major": 2, "version_minor": 0, "model_id": "8ea46dccf6704949aecdde26d0e4ff96"}
 </script></div>
 </div>
 </div>
@@ -1009,10 +1189,29 @@ var ggb_2_0e = new GGBApplet({"material_id": "YFS3rJVz"}, "ggb_2_0e", false);
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"b7c2a266fd464d8b9acd25f889e16d5f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9aab4387f0904199bc8bde6aef3d0a71": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "c459bd3afdd141eea1c6db9f8e63f477": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "Area=", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_b7c2a266fd464d8b9acd25f889e16d5f", "placeholder": "0", "style": "IPY_MODEL_9aab4387f0904199bc8bde6aef3d0a71", "value": ""}}, "85dfbe1d35e642f883362e1bba9ae56a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7acef134ec994672b7507477503c95de": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "ec371b798e1e474abd17bb074aa95c03": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "Area=", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_85dfbe1d35e642f883362e1bba9ae56a", "placeholder": "0", "style": "IPY_MODEL_7acef134ec994672b7507477503c95de", "value": ""}}, "9a16b01f62904e9a8fc86e0c343a4fea": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "cb4153ece41f46b7b65b4fc63acc1950": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "883571e190c14ca0b67514fbb7d94c5f": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "Base=", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_9a16b01f62904e9a8fc86e0c343a4fea", "placeholder": "0", "style": "IPY_MODEL_cb4153ece41f46b7b65b4fc63acc1950", "value": ""}}, "c6a7acf1d7ea405f8c2cd9d4f1c14509": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "34e32f245ae040fb89e302e78e5658e7": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "097d0996e30a441396336e5fa519cd01": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "Height=", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_c6a7acf1d7ea405f8c2cd9d4f1c14509", "placeholder": "0", "style": "IPY_MODEL_34e32f245ae040fb89e302e78e5658e7", "value": ""}}}, "version_major": 2, "version_minor": 0}
+{"state": {"f7a34c4382894275a3826a43d2f0d605": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7b242a330b934e04bb21e42f7eb9e1d9": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "0d28902b9ffe4a06ac6269490463af33": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "Area=", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f7a34c4382894275a3826a43d2f0d605", "placeholder": "0", "style": "IPY_MODEL_7b242a330b934e04bb21e42f7eb9e1d9", "value": ""}}, "4dcbff812b9e4a24988d33393ccb2a9d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0f94d9b5cbcc40438088804fb04a177c": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "2a0f0e5adeeb4b0c82c84d1d3ac21526": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "Area=", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_4dcbff812b9e4a24988d33393ccb2a9d", "placeholder": "0", "style": "IPY_MODEL_0f94d9b5cbcc40438088804fb04a177c", "value": ""}}, "b9f5d876408f4819823e234ea20c585b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1d98a471666f43dbb007cfdd1c0035f2": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "b15dd9808261415ea6456586c4b2b2ed": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "Base=", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_b9f5d876408f4819823e234ea20c585b", "placeholder": "0", "style": "IPY_MODEL_1d98a471666f43dbb007cfdd1c0035f2", "value": ""}}, "637e3989823342a5b8136ce4940bfa4c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3b6fe5b8fc714a57a590cefe136e8fcc": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "8ea46dccf6704949aecdde26d0e4ff96": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": false, "description": "Height=", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_637e3989823342a5b8136ce4940bfa4c", "placeholder": "0", "style": "IPY_MODEL_3b6fe5b8fc714a57a590cefe136e8fcc", "value": ""}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/ParallelogramArea"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

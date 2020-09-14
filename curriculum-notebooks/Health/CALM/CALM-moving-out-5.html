@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CALM - Moving Out 6" href="CALM-moving-out-6.html" />
@@ -65,71 +73,113 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="active">
-    <a href="../Health.html">Health Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="CALM-moving-out.html">CALM - Moving Out Project</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-1.html">CALM - Moving Out 1</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-2.html">CALM - Moving Out 2</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-3.html">CALM - Moving Out 3</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-4.html">CALM - Moving Out 4</a>
-    </li>
-    <li class="active">
-      <a href="">CALM - Moving Out 5</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-6.html">CALM - Moving Out 6</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-7.html">CALM - Moving Out 7</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-9.html">CALM - Moving Out 9</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-8.html">CALM - Moving Out 8</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Health.html">
+   Health Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out.html">
+     CALM - Moving Out Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-1.html">
+     CALM - Moving Out 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-2.html">
+     CALM - Moving Out 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-3.html">
+     CALM - Moving Out 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-4.html">
+     CALM - Moving Out 4
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     CALM - Moving Out 5
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-6.html">
+     CALM - Moving Out 6
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-7.html">
+     CALM - Moving Out 7
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-9.html">
+     CALM - Moving Out 9
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-8.html">
+     CALM - Moving Out 8
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -201,48 +251,56 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-5.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-5.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Health/CALM/CALM-moving-out-5.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-5-transportation">
+   Part 5 - Transportation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#owning-and-operating-a-car">
+     Owning and Operating a Car
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#car-loan">
+     Car Loan
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-vehicle-expenses">
+     Other Vehicle Expenses
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#part-5-transportation" class="nav-link">Part 5 - Transportation</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#owning-and-operating-a-car" class="nav-link">Owning and Operating a Car</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#car-loan" class="nav-link">Car Loan</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#other-vehicle-expenses" class="nav-link">Other Vehicle Expenses</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -266,7 +324,7 @@
 <p>Complete the statements then <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_6.txt
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_6.txt
 ✏️
 Link to vehicle advertisement:
 
@@ -289,7 +347,7 @@ Fuel is currently $  per litre.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_6.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_6.txt
 </pre></div>
 </div>
 </div>
@@ -300,7 +358,7 @@ Fuel is currently $  per litre.
 <p>📕Now let’s consider the cost of a loan to purchase that vehicle. Enter the purchase price and <code class="docutils literal notranslate"><span class="pre">Run</span></code> the code cell to calculate monthly costs.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️</span>
 <span class="n">purchasePrice</span> <span class="o">=</span> <span class="mi">5000</span>
 
 <span class="n">interestRate</span> <span class="o">=</span> <span class="mf">0.07</span>  <span class="c1"># assume a 7% interest rate</span>
@@ -315,7 +373,7 @@ Fuel is currently $  per litre.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Purchasing this vehicle with financing will cost $119.73 per month.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Purchasing this vehicle with financing will cost $119.73 per month.
 The total cost of the vehicle over 48 months will be $5747.10
 </pre></div>
 </div>
@@ -331,18 +389,18 @@ estimate the operating cost for the year, make, and model of your selected vehic
 <p>Fill in your numbers and <code class="docutils literal notranslate"><span class="pre">Run</span></code> the code cell below. If you get an error, check that you have run the cell above this one.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️</span>
 <span class="n">vehicleInsurance</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">otherVehicleExpenses</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="n">vehicleCosts</span> <span class="o">=</span> <span class="n">monthlyCarPayment</span> <span class="o">+</span> <span class="n">vehicleInsurance</span> <span class="o">+</span> <span class="n">otherVehicleExpenses</span>
-<span class="o">%</span><span class="n">store</span> <span class="n">vehicleCosts</span>
+<span class="o">%</span><span class="k">store</span> vehicleCosts
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Estimated vehicle costs per month are $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vehicleCosts</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Stored &#39;vehicleCosts&#39; (float)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stored &#39;vehicleCosts&#39; (float)
 Estimated vehicle costs per month are $119.73.
 </pre></div>
 </div>
@@ -351,7 +409,7 @@ Estimated vehicle costs per month are $119.73.
 <p>📕Type your responses in the code cell below, and <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell once you have finished.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_7.txt
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_7.txt
 ✏️
 
 My estimated vehicle costs per month are $
@@ -367,7 +425,7 @@ because
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_7.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_7.txt
 </pre></div>
 </div>
 </div>
@@ -378,7 +436,7 @@ because
 <p>Then <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell to calculate and store your responses.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️ Enter the cost of a monthly bus pass</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️ Enter the cost of a monthly bus pass</span>
 <span class="n">busPass</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1">#✏️ Change this to 1 for taking the bus or 2 for driving a vehicle</span>
@@ -394,12 +452,12 @@ because
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You will be spending approximately $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vehicleCosts</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39; for your vehicle.&#39;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Please change transportationDecision to 1 or 2 and run the cell again.&#39;</span><span class="p">)</span>
-<span class="o">%</span><span class="n">store</span> <span class="n">transportationCost</span>
+<span class="o">%</span><span class="k">store</span> transportationCost
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Please change transportationDecision to 1 or 2 and run the cell again.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please change transportationDecision to 1 or 2 and run the cell again.
 Stored &#39;transportationCost&#39; (int)
 </pre></div>
 </div>
@@ -408,7 +466,7 @@ Stored &#39;transportationCost&#39; (int)
 <p>📕<code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to check that your answers have been stored.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#📕 Run this cell to check that your answers have been stored</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#📕 Run this cell to check that your answers have been stored</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Transportation cost:&#39;</span><span class="p">,</span> <span class="n">transportationCost</span><span class="p">)</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;moving_out_6.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file6</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">file6</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
@@ -418,7 +476,7 @@ Stored &#39;transportationCost&#39; (int)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Transportation cost: 0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Transportation cost: 0
 ✏️
 Link to vehicle advertisement:
 
@@ -449,7 +507,6 @@ I will be attending post-secondary, so U-Pass costs: $    per semester.
 
 I have decided that for transportation I will 
 because
-
 </pre></div>
 </div>
 </div>
@@ -460,6 +517,25 @@ because
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Health/CALM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

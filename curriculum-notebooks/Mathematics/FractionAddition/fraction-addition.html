@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,15 +23,23 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Graphing two variables" href="../GraphingTwoVariables/graphing-two-variables.html" />
+    <link rel="next" title="Fractions and Multiplication" href="../FractionMultiplication/fraction-multiplication.html" />
     <link rel="prev" title="Flipping Coins" href="../FlippingCoins/flipping-coins.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="active">
-      <a href="">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,54 +471,64 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/FractionAddition/fraction-addition.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/FractionAddition/fraction-addition.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/FractionAddition/fraction-addition.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fractions-quick-recap">
+   Fractions (Quick Recap)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fractions-with-the-same-denominators">
+   Fractions with the Same Denominators
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fractions-with-different-denominators">
+   Fractions with Different Denominators
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#practice-and-experiment">
+   Practice and Experiment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#introduction" class="nav-link">Introduction</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#fractions-quick-recap" class="nav-link">Fractions (Quick Recap)</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#fractions-with-the-same-denominators" class="nav-link">Fractions with the Same Denominators</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#fractions-with-different-denominators" class="nav-link">Fractions with Different Denominators</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#practice-and-experiment" class="nav-link">Practice and Experiment</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -372,10 +538,10 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/FractionAddition/FractionAddition.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">uiButtons</span>
-<span class="o">%</span><span class="n">uiButtons</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">uiButtons</span>
+<span class="o">%</span><span class="k">uiButtons</span>
 </pre></div>
 </div>
 </div>
@@ -453,31 +619,31 @@ Did you get the same answer both times?</p>
 <div class="section" id="fractions-with-the-same-denominators">
 <h2>Fractions with the Same Denominators<a class="headerlink" href="#fractions-with-the-same-denominators" title="Permalink to this headline">¶</a></h2>
 <p>The simplest fraction addition or subtraction happens when both denominators are the same. Let’s watch the video below before we do an example.<br></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;div align=&quot;middle&quot;&gt;
-&lt;iframe id=&quot;vid1&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/qDc_-GTipBk&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen style=&quot;box-shadow: 3px 3px 12px #ACACAC&quot;&gt;&lt;/iframe&gt; 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCBuMwlP7kHkNxdPAqtFSJTw&quot; target=&quot;_blank&quot;&gt;Click here&lt;/a&gt; for more videos by Math Antics.&lt;/p&gt;
-&lt;/div&gt;
-&lt;script&gt;
-    var reachable = false;
-    $(function() {
-        var myFrame = $(&#39;#vid1&#39;);
-        var videoSrc = myFrame.attr(&quot;src&quot;);
-        myFrame.attr(&quot;src&quot;, videoSrc)
-        .on(&#39;load&#39;, function(){reachable = true;});
-        setTimeout(function() {
-            if(!reachable) {
-                var ifrm = myFrame[0];
-                ifrm = (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
-                ifrm.document.open();
-                ifrm.document.write(&#39;If the video does not start click &lt;a href=&quot;&#39; + videoSrc + &#39;&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;&#39;);
-                ifrm.document.close();
-            }
-        }, 2000)
-    });
-&lt;/script&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;middle&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;vid1&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;640&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;360&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/embed/qDc_-GTipBk&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allow</span><span class="o">=</span><span class="s">&quot;autoplay; encrypted-media&quot;</span> <span class="na">allowfullscreen</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;box-shadow: 3px 3px 12px #ACACAC&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/channel/UCBuMwlP7kHkNxdPAqtFSJTw&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>Click here<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> for more videos by Math Antics.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="kd">var</span> <span class="nx">reachable</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">myFrame</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#vid1&#39;</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">videoSrc</span> <span class="o">=</span> <span class="nx">myFrame</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">);</span>
+        <span class="nx">myFrame</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">,</span> <span class="nx">videoSrc</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">reachable</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;});</span>
+        <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">reachable</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">ifrm</span> <span class="o">=</span> <span class="nx">myFrame</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+                <span class="nx">ifrm</span> <span class="o">=</span> <span class="p">(</span><span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentWindow</span><span class="p">)</span> <span class="o">?</span> <span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentWindow</span> <span class="o">:</span> <span class="p">(</span><span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentDocument</span><span class="p">.</span><span class="nb">document</span><span class="p">)</span> <span class="o">?</span> <span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentDocument</span><span class="p">.</span><span class="nb">document</span> <span class="o">:</span> <span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentDocument</span><span class="p">;</span>
+                <span class="nx">ifrm</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">open</span><span class="p">();</span>
+                <span class="nx">ifrm</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;If the video does not start click &lt;a href=&quot;&#39;</span> <span class="o">+</span> <span class="nx">videoSrc</span> <span class="o">+</span> <span class="s1">&#39;&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;&#39;</span><span class="p">);</span>
+                <span class="nx">ifrm</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">},</span> <span class="mi">2000</span><span class="p">)</span>
+    <span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -541,31 +707,31 @@ The fraction of deluxe that remains is <span class="math notranslate nohighlight
 <p>Now, the first thing to keep in mind is that we must have <em>common denominators</em> before we can add the fractions together.<br>
 A popular method for getting a common denominator is to multiply each fraction by each other’s denominator.<br>
 Let’s watch the video below to help understand this concept.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;div align=&quot;middle&quot;&gt;
-&lt;iframe id=&quot;vid2&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/N-Y0Kvcnw8g?start=0&amp;end=278&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen style=&quot;box-shadow: 3px 3px 12px #ACACAC&quot;&gt;&lt;/iframe&gt; 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCBuMwlP7kHkNxdPAqtFSJTw&quot; target=&quot;_blank&quot;&gt;Click here&lt;/a&gt; for more videos by Math Antics.&lt;/p&gt;
-&lt;/div&gt;
-&lt;script&gt;
-    $(function() {
-        var reachable = false;
-        var myFrame = $(&#39;#vid2&#39;);
-        var videoSrc = myFrame.attr(&quot;src&quot;);
-        myFrame.attr(&quot;src&quot;, videoSrc)
-        .on(&#39;load&#39;, function(){reachable = true;});
-        setTimeout(function() {
-            if(!reachable) {
-                var ifrm = myFrame[0];
-                ifrm = (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
-                ifrm.document.open();
-                ifrm.document.write(&#39;If the video does not start click &lt;a href=&quot;&#39; + videoSrc + &#39;&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;&#39;);
-                ifrm.document.close();
-            }
-        }, 2000)
-    });
-&lt;/script&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;middle&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;vid2&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;640&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;360&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/embed/N-Y0Kvcnw8g?start=0&amp;end=278&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allow</span><span class="o">=</span><span class="s">&quot;autoplay; encrypted-media&quot;</span> <span class="na">allowfullscreen</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;box-shadow: 3px 3px 12px #ACACAC&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span> 
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/channel/UCBuMwlP7kHkNxdPAqtFSJTw&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>Click here<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> for more videos by Math Antics.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">reachable</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">myFrame</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#vid2&#39;</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">videoSrc</span> <span class="o">=</span> <span class="nx">myFrame</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">);</span>
+        <span class="nx">myFrame</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">,</span> <span class="nx">videoSrc</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">reachable</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;});</span>
+        <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">reachable</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">ifrm</span> <span class="o">=</span> <span class="nx">myFrame</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+                <span class="nx">ifrm</span> <span class="o">=</span> <span class="p">(</span><span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentWindow</span><span class="p">)</span> <span class="o">?</span> <span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentWindow</span> <span class="o">:</span> <span class="p">(</span><span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentDocument</span><span class="p">.</span><span class="nb">document</span><span class="p">)</span> <span class="o">?</span> <span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentDocument</span><span class="p">.</span><span class="nb">document</span> <span class="o">:</span> <span class="nx">ifrm</span><span class="p">.</span><span class="nx">contentDocument</span><span class="p">;</span>
+                <span class="nx">ifrm</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">open</span><span class="p">();</span>
+                <span class="nx">ifrm</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;If the video does not start click &lt;a href=&quot;&#39;</span> <span class="o">+</span> <span class="nx">videoSrc</span> <span class="o">+</span> <span class="s1">&#39;&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;&#39;</span><span class="p">);</span>
+                <span class="nx">ifrm</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">},</span> <span class="mi">2000</span><span class="p">)</span>
+    <span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -618,56 +784,56 @@ This means there is <span class="math notranslate nohighlight">\(\frac{7}{8}\)</
 <p>Below is an interactive widget to help you visualize what happens when adding two fractions together. <br>
 You should see two pairs of boxes that look like fractions. <br>
 You can enter the fractions from our examples above or your own, then click <strong>start</strong> when ready.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
-    <span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;./d3/d3.min.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://d3js.org/d3.v3.min.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://code.jquery.com/jquery-1.10.2.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./d3/d3.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://d3js.org/d3.v3.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://code.jquery.com/jquery-1.10.2.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
-            <span class="o">.</span><span class="n">divisionBox</span> <span class="p">{</span>
-                <span class="n">outline</span><span class="p">:</span> <span class="n">solid</span> <span class="c1">#000000 3px;</span>
-                <span class="n">fill</span><span class="p">:</span> <span class="c1">#ffffff;</span>
-                <span class="n">opacity</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">;</span>
-                <span class="n">z</span><span class="o">-</span><span class="n">index</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="p">.</span><span class="nc">divisionBox</span> <span class="p">{</span>
+                <span class="k">outline</span><span class="p">:</span> <span class="kc">solid</span> <span class="mh">#000000</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+                <span class="n">fill</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>
+                <span class="k">opacity</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">;</span>
+                <span class="k">z-index</span><span class="p">:</span> <span class="mi">-1</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="o">.</span><span class="n">filledNum</span> <span class="p">{</span>
-                <span class="n">z</span><span class="o">-</span><span class="n">index</span><span class="p">:</span> <span class="mi">99</span><span class="p">;</span>
+            <span class="p">.</span><span class="nc">filledNum</span> <span class="p">{</span>
+                <span class="k">z-index</span><span class="p">:</span> <span class="mi">99</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="o">.</span><span class="n">fractionInput</span> <span class="p">{</span>
-                <span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="mi">50</span><span class="n">px</span><span class="p">;</span>
+            <span class="p">.</span><span class="nc">fractionInput</span> <span class="p">{</span>
+                <span class="k">max-width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="o">.</span><span class="n">fractionText</span> <span class="p">{</span>
-                <span class="n">font</span><span class="p">:</span> <span class="mi">25</span><span class="n">px</span> <span class="n">serif</span><span class="p">;</span>
-                <span class="n">fill</span><span class="p">:</span> <span class="n">black</span><span class="p">;</span>
+            <span class="p">.</span><span class="nc">fractionText</span> <span class="p">{</span>
+                <span class="k">font</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span> <span class="kc">serif</span><span class="p">;</span>
+                <span class="n">fill</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="o">.</span><span class="n">lOpperandDivisonBoxFractionText</span> <span class="p">{</span>
-                <span class="n">fill</span><span class="p">:</span> <span class="n">red</span><span class="p">;</span>
+            <span class="p">.</span><span class="nc">lOpperandDivisonBoxFractionText</span> <span class="p">{</span>
+                <span class="n">fill</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="o">.</span><span class="n">rOpperandDivisonBoxFractionText</span> <span class="p">{</span>
-                <span class="n">fill</span><span class="p">:</span> <span class="n">red</span><span class="p">;</span>
+            <span class="p">.</span><span class="nc">rOpperandDivisonBoxFractionText</span> <span class="p">{</span>
+                <span class="n">fill</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="o">.</span><span class="n">fractionBar</span> <span class="p">{</span>
-                <span class="nb">max</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="mi">50</span><span class="n">px</span><span class="p">;</span>
-                <span class="n">height</span><span class="p">:</span> <span class="mi">3</span><span class="n">px</span><span class="p">;</span>
-                <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#000000;</span>
+            <span class="p">.</span><span class="nc">fractionBar</span> <span class="p">{</span>
+                <span class="k">max-width</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+                <span class="k">height</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+                <span class="k">background-color</span><span class="p">:</span> <span class="mh">#000000</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="o">.</span><span class="n">buttons</span> <span class="p">{</span>
-              <span class="nb">min</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="mi">40</span><span class="n">px</span><span class="p">;</span>
-              <span class="n">width</span><span class="p">:</span> <span class="mi">40</span><span class="n">px</span><span class="p">;</span>
-              <span class="n">margin</span><span class="p">:</span> <span class="mi">5</span><span class="n">px</span><span class="p">;</span>
+            <span class="p">.</span><span class="nc">buttons</span> <span class="p">{</span>
+              <span class="k">min-width</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+              <span class="k">width</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+              <span class="k">margin</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="o">.</span><span class="n">mainButtons</span><span class="p">{</span>
-                <span class="n">clear</span><span class="p">:</span> <span class="n">left</span><span class="p">;</span>
+            <span class="p">.</span><span class="nc">mainButtons</span><span class="p">{</span>
+                <span class="k">clear</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="n">h1</span><span class="p">,</span> <span class="n">p</span> <span class="p">{</span>
-                <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">Sans</span><span class="o">-</span><span class="n">Serif</span><span class="p">;</span>
+            <span class="nt">h1</span><span class="o">,</span> <span class="nt">p</span> <span class="p">{</span>
+                <span class="k">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">Sans-Serif</span><span class="p">;</span>
             <span class="p">}</span>
-            <span class="nb">input</span> <span class="p">{</span>
-                <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+            <span class="nt">input</span> <span class="p">{</span>
+                <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
             <span class="p">}</span>
-<span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -721,32 +887,32 @@ You can enter the fractions from our examples above or your own, then click <str
 </style>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
-<span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float:left&quot;</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lOppNumerator&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin-bottom: -10px&quot;</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="n">hr</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;left&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionBar&quot;</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lOppDenominator&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;1&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin-top: -10px&quot;</span><span class="o">&gt;</span>
-        <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; margin: 12px 20px 0 20px&quot;</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;+&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
-        <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; margin-left: 0px&quot;</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;rOppNumerator&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin-bottom: -10px&quot;</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="n">hr</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;left&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionBar&quot;</span><span class="o">&gt;</span>
-            <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;rOppDenominator&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;1&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin-top: -10px&quot;</span><span class="o">&gt;</span>
-        <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin-left: 180px&quot;</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">h3</span><span class="o">&gt;</span><span class="n">Enter</span> <span class="n">two</span> <span class="n">fractions</span> <span class="n">to</span> <span class="n">add</span> <span class="n">together</span><span class="o">&lt;/</span><span class="n">h3</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;clear:left; margin-top: 60px&quot;</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;submitFraction&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btn btn-primary buttons&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; min-width:100px&quot;</span><span class="o">&gt;</span><span class="n">Start</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float:left&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;lOppNumerator&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin-bottom: -10px&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">hr</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;left&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fractionBar&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;lOppDenominator&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin-top: -10px&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float: left; margin: 12px 20px 0 20px&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>+<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float: left; margin-left: 0px&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;rOppNumerator&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin-bottom: -10px&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">hr</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;left&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fractionBar&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;rOppDenominator&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin-top: -10px&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin-left: 180px&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Enter two fractions to add together<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;clear:left; margin-top: 60px&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;submitFraction&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary buttons&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float: left; min-width:100px&quot;</span><span class="p">&gt;</span>Start<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -776,65 +942,65 @@ You can enter the fractions from our examples above or your own, then click <str
 </div>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
-    <span class="o">&lt;</span><span class="n">svg</span> <span class="n">xmlns</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="n">xmlns</span><span class="p">:</span><span class="n">xlink</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="n">viewBox</span><span class="o">=</span><span class="s2">&quot;-200 0 800 200&quot;</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">image</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;speechBubbles resetDisplay&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;speech1&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/Speech1.png&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;225&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: block&quot;</span><span class="o">/&gt;</span>
-        <span class="o">&lt;</span><span class="n">image</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;speechBubbles resetDisplay&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;speech2&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/Speech2.png&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;225&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none&quot;</span><span class="o">/&gt;</span>
-        <span class="o">&lt;</span><span class="n">image</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;speechBubbles resetDisplay&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;speech3&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/Speech3.png&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;225&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none&quot;</span><span class="o">/&gt;</span>
-        <span class="o">&lt;</span><span class="n">image</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;speechBubbles resetDisplay&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;speech4&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/Speech4.png&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;225&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;-150&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none&quot;</span><span class="o">/&gt;</span>   
-        <span class="o">&lt;</span><span class="n">image</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;speechBubbles resetDisplay&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;speech5&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/Speech5.png&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;225&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none&quot;</span><span class="o">/&gt;</span>
-        <span class="o">&lt;</span><span class="n">image</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;speechBubbles resetDisplay&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;speech6&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/Speech6.png&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;225&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none&quot;</span><span class="o">/&gt;</span>
-        <span class="o">&lt;</span><span class="n">image</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;speechBubbles resetDisplay&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;speech7&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/Speech7.png&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;225&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;75&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none&quot;</span><span class="o">/&gt;</span>
-        <span class="o">&lt;</span><span class="n">image</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;meow&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/meow.png&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;190&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;60&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;-20&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none&quot;</span><span class="o">/&gt;</span>
-        <span class="o">&lt;</span><span class="n">image</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;pixelCat&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/pixelCat.png&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;250&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;200&quot;</span> <span class="n">onmouseover</span><span class="o">=</span><span class="s2">&quot;showMeow()&quot;</span> <span class="n">onmouseout</span><span class="o">=</span><span class="s2">&quot;hideMeow()&quot;</span><span class="o">/&gt;</span>
-    <span class="o">&lt;/</span><span class="n">svg</span><span class="o">&gt;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="na">xmlns:xlink</span><span class="o">=</span><span class="s">&quot;http://www.w3.org/1999/xlink&quot;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&quot;-200 0 800 200&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">image</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;speechBubbles resetDisplay&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;speech1&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/Speech1.png&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;225&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: block&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">image</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;speechBubbles resetDisplay&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;speech2&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/Speech2.png&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;225&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">image</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;speechBubbles resetDisplay&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;speech3&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/Speech3.png&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;225&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">image</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;speechBubbles resetDisplay&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;speech4&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/Speech4.png&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;225&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;-150&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">/&gt;</span>   
+        <span class="p">&lt;</span><span class="nt">image</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;speechBubbles resetDisplay&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;speech5&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/Speech5.png&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;225&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">image</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;speechBubbles resetDisplay&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;speech6&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/Speech6.png&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;225&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">image</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;speechBubbles resetDisplay&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;speech7&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/Speech7.png&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;225&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">image</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;meow&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/meow.png&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;190&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;60&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;-20&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">image</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;pixelCat&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/pixelCat.png&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;250&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;200&quot;</span> <span class="na">onmouseover</span><span class="o">=</span><span class="s">&quot;showMeow()&quot;</span> <span class="na">onmouseout</span><span class="o">=</span><span class="s">&quot;hideMeow()&quot;</span><span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 
-    <span class="o">&lt;</span><span class="n">svg</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;mainCanvas&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left&quot;</span> <span class="n">viewBox</span><span class="o">=</span><span class="s2">&quot;0 0 850 420&quot;</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">rect</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;400&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;divisionBox&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">rect</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;300&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;divisionBox&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;answerBox&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">rect</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;400&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;divisionBox&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lOpperandDivisonBox&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">rect</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;filledNum&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lOpperandDivisonBoxFilled&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">rect</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;filledNum&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lOpperandDivisonBoxAnswer&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">text</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;148&quot;</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span> <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="s2">&quot;30&quot;</span><span class="o">&gt;+&lt;/</span><span class="n">text</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">rect</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;400&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;160&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;divisionBox&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;rOpperandDivisonBox&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">rect</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;160&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;filledNum&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;rOpperandDivisonBoxFilled&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">rect</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;20&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;160&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;filledNum&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;rOpperandDivisonBoxAnswer&quot;</span><span class="o">&gt;&lt;/</span><span class="n">rect</span><span class="o">&gt;</span>
-     <span class="o">&lt;</span><span class="n">line</span> <span class="n">x1</span><span class="o">=</span><span class="s2">&quot;15&quot;</span> <span class="n">x2</span><span class="o">=</span><span class="s2">&quot;425&quot;</span> <span class="n">y1</span><span class="o">=</span><span class="s2">&quot;280&quot;</span> <span class="n">y2</span><span class="o">=</span><span class="s2">&quot;280&quot;</span> <span class="n">stroke</span><span class="o">=</span><span class="s2">&quot;black&quot;</span> <span class="n">stroke</span><span class="o">-</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;3px&quot;</span><span class="o">&gt;&lt;/</span><span class="n">line</span><span class="o">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;mainCanvas&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float: left&quot;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&quot;0 0 850 420&quot;</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">rect</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;divisionBox&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">rect</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">rect</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;300&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;divisionBox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answerBox&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">rect</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">rect</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;divisionBox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;lOpperandDivisonBox&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">rect</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">rect</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filledNum&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;lOpperandDivisonBoxFilled&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">rect</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">rect</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filledNum&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;lOpperandDivisonBoxAnswer&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">rect</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;148&quot;</span> <span class="na">color</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">font-size</span><span class="o">=</span><span class="s">&quot;30&quot;</span><span class="p">&gt;</span>+<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">rect</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;160&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;divisionBox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;rOpperandDivisonBox&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">rect</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">rect</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;160&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filledNum&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;rOpperandDivisonBoxFilled&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">rect</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">rect</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;160&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filledNum&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;rOpperandDivisonBoxAnswer&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">rect</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">line</span> <span class="na">x1</span><span class="o">=</span><span class="s">&quot;15&quot;</span> <span class="na">x2</span><span class="o">=</span><span class="s">&quot;425&quot;</span> <span class="na">y1</span><span class="o">=</span><span class="s">&quot;280&quot;</span> <span class="na">y2</span><span class="o">=</span><span class="s">&quot;280&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3px&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">line</span><span class="p">&gt;</span>
         
-     <span class="o">&lt;</span><span class="n">image</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;660&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;175px&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;175px&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;opacity:0&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;arrow&quot;</span> <span class="n">xlink</span><span class="p">:</span><span class="n">href</span><span class="o">=</span><span class="s2">&quot;./images/speechbubble.png&quot;</span><span class="o">/&gt;</span>
+     <span class="p">&lt;</span><span class="nt">image</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;660&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;175px&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;175px&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;opacity:0&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;arrow&quot;</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&quot;./images/speechbubble.png&quot;</span><span class="p">/&gt;</span>
 
-       <span class="o">&lt;</span><span class="n">foreignObject</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;440&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;150&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;50&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;expandBtn resetDisplay&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lOppExpandBtn&quot;</span>
-           <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none&quot;</span><span class="o">&gt;</span>
-           <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-               <span class="o">&lt;</span><span class="n">lable</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; margin-top:10px;&quot;</span><span class="o">&gt;</span><span class="n">Multiply</span><span class="o">&lt;/</span><span class="n">lable</span><span class="o">&gt;</span>
-               <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btns&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; margin: 5px 0 0 5px;&quot;</span><span class="o">&gt;</span>
-                   <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lOppExpandPlusBtn&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btn btn-outline-primary btn-sm&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;width: 30px&quot;</span><span class="o">&gt;&lt;</span><span class="n">b</span><span class="o">&gt;+&lt;/</span><span class="n">b</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
-                   <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lOppExpandMinusBtn&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btn btn-outline-primary btn-sm&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;width: 30px&quot;</span><span class="o">&gt;&lt;</span><span class="n">b</span><span class="o">&gt;-&lt;/</span><span class="n">b</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
-               <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-           <span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
-       <span class="o">&lt;/</span><span class="n">foreignObject</span><span class="o">&gt;</span>
-       <span class="o">&lt;</span><span class="n">foreignObject</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;440&quot;</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;240&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;150&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;50&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;expandBtn resetDisplay&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;rOppExpandBtn&quot;</span>
-           <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none&quot;</span><span class="o">&gt;</span>
-           <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-               <span class="o">&lt;</span><span class="n">lable</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; margin-top:10px;&quot;</span><span class="o">&gt;</span><span class="n">Multiply</span><span class="o">&lt;/</span><span class="n">lable</span><span class="o">&gt;</span>
-               <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btns&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; margin: 5px 0 0 5px;&quot;</span><span class="o">&gt;</span>
-                   <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;rOppExpandPlusBtn&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btn btn-outline-primary btn-sm&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;width: 30px&quot;</span><span class="o">&gt;&lt;</span><span class="n">b</span><span class="o">&gt;+&lt;/</span><span class="n">b</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
-                   <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;rOppExpandMinusBtn&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btn btn-outline-primary btn-sm&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;width: 30px&quot;</span><span class="o">&gt;&lt;</span><span class="n">b</span><span class="o">&gt;-&lt;/</span><span class="n">b</span><span class="o">&gt;&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
-               <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-           <span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
-       <span class="o">&lt;/</span><span class="n">foreignObject</span><span class="o">&gt;</span>
+       <span class="p">&lt;</span><span class="nt">foreignObject</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;440&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;150&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;50&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;expandBtn resetDisplay&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;lOppExpandBtn&quot;</span>
+           <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">&gt;</span>
+           <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+               <span class="p">&lt;</span><span class="nt">lable</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float: left; margin-top:10px;&quot;</span><span class="p">&gt;</span>Multiply<span class="p">&lt;/</span><span class="nt">lable</span><span class="p">&gt;</span>
+               <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btns&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float: left; margin: 5px 0 0 5px;&quot;</span><span class="p">&gt;</span>
+                   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;lOppExpandPlusBtn&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-outline-primary btn-sm&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 30px&quot;</span><span class="p">&gt;&lt;</span><span class="nt">b</span><span class="p">&gt;</span>+<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;lOppExpandMinusBtn&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-outline-primary btn-sm&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 30px&quot;</span><span class="p">&gt;&lt;</span><span class="nt">b</span><span class="p">&gt;</span>-<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+               <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+           <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+       <span class="p">&lt;/</span><span class="nt">foreignObject</span><span class="p">&gt;</span>
+       <span class="p">&lt;</span><span class="nt">foreignObject</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;440&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;240&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;150&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;50&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;expandBtn resetDisplay&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;rOppExpandBtn&quot;</span>
+           <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">&gt;</span>
+           <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+               <span class="p">&lt;</span><span class="nt">lable</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float: left; margin-top:10px;&quot;</span><span class="p">&gt;</span>Multiply<span class="p">&lt;/</span><span class="nt">lable</span><span class="p">&gt;</span>
+               <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btns&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float: left; margin: 5px 0 0 5px;&quot;</span><span class="p">&gt;</span>
+                   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;rOppExpandPlusBtn&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-outline-primary btn-sm&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 30px&quot;</span><span class="p">&gt;&lt;</span><span class="nt">b</span><span class="p">&gt;</span>+<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+                   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;rOppExpandMinusBtn&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-outline-primary btn-sm&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 30px&quot;</span><span class="p">&gt;&lt;</span><span class="nt">b</span><span class="p">&gt;</span>-<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+               <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+           <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+       <span class="p">&lt;/</span><span class="nt">foreignObject</span><span class="p">&gt;</span>
     
-   <span class="o">&lt;/</span><span class="n">svg</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-  <span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;clear: left; margin-left: 0px;&quot;</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;addBtn&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btn btn-primary buttons resetDisplay&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none; float: left; min-width:100px&quot;</span><span class="o">&gt;</span><span class="n">Combine</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;mainButtons&quot;</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;resetBtn&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;btn btn-primary buttons resetDisplay&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none; clear: left; min-width:100px&quot;</span><span class="o">&gt;</span><span class="n">Reset</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;clear: left; margin-left: 0px;&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;addBtn&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary buttons resetDisplay&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none; float: left; min-width:100px&quot;</span><span class="p">&gt;</span>Combine<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mainButtons&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;resetBtn&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary buttons resetDisplay&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none; clear: left; min-width:100px&quot;</span><span class="p">&gt;</span>Reset<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -897,17 +1063,17 @@ You can enter the fractions from our examples above or your own, then click <str
 </div>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
-  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;answerArea&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;answerAreaId&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;display: none;&quot;</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">svg</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;130&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;100&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;answerCanvas&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;float: left; padding-right: 10px&quot;</span><span class="o">&gt;&lt;/</span><span class="n">svg</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;answerNumerator&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin-bottom: -10px&quot;</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="n">hr</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;left&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionBar&quot;</span><span class="o">&gt;</span>
-      <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;answerDenominator&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;1&quot;</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;margin-top: -10px&quot;</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;answerArea&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answerAreaId&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none;&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;130&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answerCanvas&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;float: left; padding-right: 10px&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answerNumerator&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin-bottom: -10px&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">hr</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;left&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fractionBar&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fractionInput form-control form-control-sm&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answerDenominator&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin-top: -10px&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -922,18 +1088,18 @@ You can enter the fractions from our examples above or your own, then click <str
 </div>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-  &lt;div class=&quot;answerArea&quot; style=&quot;display: none;&quot;&gt;
-    &lt;button id=&quot;checkAnswer&quot; class=&quot;btn btn-primary&quot;&gt;Check Answer&lt;/button&gt;
-  &lt;/div&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;answerArea&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none;&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;checkAnswer&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="p">&gt;</span>Check Answer<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-  &lt;div&gt;
-    &lt;h5 id=&quot;correct&quot; class=&quot;answerStatusText resetDisplay&quot; style=&quot;display: none&quot;&gt;Correct!&lt;/h5&gt;
-    &lt;h5 id=&quot;needRounding&quot; class=&quot;answerStatusText resetDisplay&quot; style=&quot;display: none&quot;&gt;Correct but can be reduced.&lt;/h5&gt;
-    &lt;h5 id=&quot;incorrect&quot; class=&quot;answerStatusText resetDisplay&quot; style=&quot;display: none&quot;&gt;Not quite, try again.&lt;/br&gt;Don&#39;t forget to keep the original common denominator (only the numerators get added)&lt;/h5&gt;
-  &lt;/div&gt;
+  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;correct&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;answerStatusText resetDisplay&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">&gt;</span>Correct!<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;needRounding&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;answerStatusText resetDisplay&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">&gt;</span>Correct but can be reduced.<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;incorrect&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;answerStatusText resetDisplay&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display: none&quot;</span><span class="p">&gt;</span>Not quite, try again.<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>Don&#39;t forget to keep the original common denominator (only the numerators get added)<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -949,11 +1115,11 @@ You can enter the fractions from our examples above or your own, then click <str
 </div>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
-<span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;main.js&quot;</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;main.js&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -978,6 +1144,25 @@ You can enter the fractions from our examples above or your own, then click <str
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/FractionAddition"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -988,7 +1173,7 @@ You can enter the fractions from our examples above or your own, then click <str
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../FlippingCoins/flipping-coins.html" title="previous page">Flipping Coins</a>
-    <a class='right-next' id="next-link" href="../GraphingTwoVariables/graphing-two-variables.html" title="next page">Graphing two variables</a>
+    <a class='right-next' id="next-link" href="../FractionMultiplication/fraction-multiplication.html" title="next page">Fractions and Multiplication</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

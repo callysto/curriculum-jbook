@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pet Popularity &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../../index.html">
+  
+  <img src="../../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../../_sources/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/pet-popularity.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/pet-popularity.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/pet-popularity.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/pet-popularity.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/StatisticsProject/AccessingData/pet-popularity.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="section" id="pet-popularity">
+<h1>Pet Popularity<a class="headerlink" href="#pet-popularity" title="Permalink to this headline">¶</a></h1>
+<p>Using <a class="reference external" href="https://data.edmonton.ca/Community-Services/Pet-Licenses-by-Neighbourhood/5squ-mg4w">Pet Licenses data from the City of Edmonton Open Data Portal</a> we can see which (licensed) pets are the most popular.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">domain</span> <span class="o">=</span> <span class="s1">&#39;https://data.edmonton.ca/resource/&#39;</span>
+<span class="n">uuid</span> <span class="o">=</span> <span class="s1">&#39;5squ-mg4w&#39;</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;SELECT *&#39;</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span> <span class="o">+</span> <span class="n">uuid</span> <span class="o">+</span><span class="s1">&#39;.csv?$query=&#39;</span> <span class="o">+</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span>  <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)))</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>month</th>
+      <th>month_number</th>
+      <th>license_date</th>
+      <th>neighbourhood</th>
+      <th>neighbourhood_id</th>
+      <th>pet_type</th>
+      <th>breed</th>
+      <th>gender</th>
+      <th>spayed_or_neutered</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>location</th>
+      <th>count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>2020</td>
+      <td>July</td>
+      <td>7</td>
+      <td>2020-07-01T00:00:00.000</td>
+      <td>Glenora</td>
+      <td>3200</td>
+      <td>Cat</td>
+      <td>SIAMESE</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>53.544905</td>
+      <td>-113.557043</td>
+      <td>\n,  \n(53.544904705207486, -113.55704251234017)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2020</td>
+      <td>July</td>
+      <td>7</td>
+      <td>2020-07-01T00:00:00.000</td>
+      <td>Avonmore</td>
+      <td>6020</td>
+      <td>Dog</td>
+      <td>AMERICAN STAFFORDSHIRE TERRIER</td>
+      <td>Male</td>
+      <td>Yes</td>
+      <td>53.507780</td>
+      <td>-113.451631</td>
+      <td>\n,  \n(53.50777958168241, -113.45163097839595)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2020</td>
+      <td>August</td>
+      <td>8</td>
+      <td>2020-08-29T00:00:00.000</td>
+      <td>Michaels Park</td>
+      <td>6480</td>
+      <td>Dog</td>
+      <td>PINSCHER (MINIATURE)</td>
+      <td>Male</td>
+      <td>Yes</td>
+      <td>53.479575</td>
+      <td>-113.446214</td>
+      <td>\n,  \n(53.479574887970564, -113.44621358136584)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2020</td>
+      <td>July</td>
+      <td>7</td>
+      <td>2020-07-01T00:00:00.000</td>
+      <td>Oliver</td>
+      <td>1150</td>
+      <td>Cat</td>
+      <td>DOMESTIC (SHORT HAIR)</td>
+      <td>Male</td>
+      <td>Yes</td>
+      <td>53.541983</td>
+      <td>-113.523994</td>
+      <td>\n,  \n(53.541982930616356, -113.52399393488137)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2020</td>
+      <td>July</td>
+      <td>7</td>
+      <td>2020-07-01T00:00:00.000</td>
+      <td>Summerside</td>
+      <td>6213</td>
+      <td>Cat</td>
+      <td>DOMESTIC (SHORT HAIR)</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>53.417528</td>
+      <td>-113.461227</td>
+      <td>\n,  \n(53.417527612947964, -113.461227376245)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>995</td>
+      <td>2020</td>
+      <td>August</td>
+      <td>8</td>
+      <td>2020-08-03T00:00:00.000</td>
+      <td>Cumberland</td>
+      <td>3150</td>
+      <td>Dog</td>
+      <td>TERRIER</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>53.610563</td>
+      <td>-113.553188</td>
+      <td>\n,  \n(53.61056256776709, -113.55318813533495)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>996</td>
+      <td>2020</td>
+      <td>February</td>
+      <td>2</td>
+      <td>2020-02-11T00:00:00.000</td>
+      <td>Meadowlark Park</td>
+      <td>4310</td>
+      <td>Cat</td>
+      <td>DOMESTIC (SHORT HAIR)</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>53.525532</td>
+      <td>-113.596554</td>
+      <td>\n,  \n(53.52553194472455, -113.5965541546899)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>997</td>
+      <td>2020</td>
+      <td>June</td>
+      <td>6</td>
+      <td>2020-06-30T00:00:00.000</td>
+      <td>Belmont</td>
+      <td>2070</td>
+      <td>Dog</td>
+      <td>JACK RUSSELL TERRIER</td>
+      <td>Male</td>
+      <td>Yes</td>
+      <td>53.593124</td>
+      <td>-113.394379</td>
+      <td>\n,  \n(53.59312408353891, -113.39437923899207)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>998</td>
+      <td>2020</td>
+      <td>April</td>
+      <td>4</td>
+      <td>2020-04-02T00:00:00.000</td>
+      <td>Ottewell</td>
+      <td>6550</td>
+      <td>Dog</td>
+      <td>GERMAN SHEPHERD</td>
+      <td>Male</td>
+      <td>Yes</td>
+      <td>53.531285</td>
+      <td>-113.430746</td>
+      <td>\n,  \n(53.53128518402029, -113.43074600681692)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>999</td>
+      <td>2020</td>
+      <td>July</td>
+      <td>7</td>
+      <td>2020-07-01T00:00:00.000</td>
+      <td>Larkspur</td>
+      <td>6390</td>
+      <td>Dog</td>
+      <td>PEMBROKE WELSH CORGI</td>
+      <td>Male</td>
+      <td>Yes</td>
+      <td>53.480210</td>
+      <td>-113.381240</td>
+      <td>\n,  \n(53.4802104573005, -113.38123994870551)</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>1000 rows × 14 columns</p>
+</div></div></div>
+</div>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/StatisticsProject/AccessingData"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

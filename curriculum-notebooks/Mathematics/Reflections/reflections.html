@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Root Finding Algorithms" href="../RootFindingAlgorithms/root-finding-algorithms.html" />
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="active">
-      <a href="">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,104 +471,136 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/Reflections/reflections.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/Reflections/reflections.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/Reflections/reflections.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflections-across-the-x-axis">
+   Reflections across the
+   <span class="math notranslate nohighlight">
+    \(x\)
+   </span>
+   -axis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#points">
+     Points
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#graphs">
+     Graphs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflections-across-the-y-axis">
+   Reflections across the
+   <span class="math notranslate nohighlight">
+    \(y\)
+   </span>
+   -axis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Points
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Graphs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflections-across-both-axes">
+   Reflections across both axes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#even-and-odd-functions">
+   Even and odd functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflections-across-the-line-y-x">
+   Reflections across the line
+   <span class="math notranslate nohighlight">
+    \(y = x\)
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Points
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflections-combined-with-function-operations">
+   Reflections combined with function operations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflections-combined-with-translations">
+   Reflections combined with translations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#introduction" class="nav-link">Introduction</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#reflections-across-the-x-axis" class="nav-link">Reflections across the x-axis</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#points" class="nav-link">Points</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#graphs" class="nav-link">Graphs</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#functions" class="nav-link">Functions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#reflections-across-the-y-axis" class="nav-link">Reflections across the y-axis</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id1" class="nav-link">Points</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id2" class="nav-link">Graphs</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id3" class="nav-link">Functions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#reflections-across-both-axes" class="nav-link">Reflections across both axes</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#even-and-odd-functions" class="nav-link">Even and odd functions</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#reflections-across-the-line-y-x" class="nav-link">Reflections across the line y = x</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id4" class="nav-link">Points</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#reflections-combined-with-function-operations" class="nav-link">Reflections combined with function operations</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#reflections-combined-with-translations" class="nav-link">Reflections combined with translations</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#exercises" class="nav-link">Exercises</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -424,8 +612,8 @@
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/Reflections/reflections.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
-<span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://cdn.geogebra.org/apps/deployggb.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.geogebra.org/apps/deployggb.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -435,7 +623,8 @@
 </div>
 <div class="section" id="reflections-of-graphs">
 <h1>Reflections of Graphs<a class="headerlink" href="#reflections-of-graphs" title="Permalink to this headline">¶</a></h1>
-<img src="images/cat_fight.jpg" width=960 height=640><div class="section" id="introduction">
+<a class="reference internal image-reference" href="../../../_images/cat_fight.jpg"><img alt="../../../_images/cat_fight.jpg" src="../../../_images/cat_fight.jpg" style="width: 960px; height: 640px;" /></a>
+<div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>In the photo above, a kitten is looking at its reflection in a mirror.
 There are a few obvious but important observations to make about the kitten and its reflection.
@@ -448,26 +637,26 @@ The applet below shows a point <span class="math notranslate nohighlight">\(P\)<
 Try moving <span class="math notranslate nohighlight">\(P\)</span> and the line and see how <span class="math notranslate nohighlight">\(P'\)</span> changes.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-point&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-point&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-point.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">400</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-point.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-point&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -520,26 +709,26 @@ You will see a message if you got it right.
 You can also keep reading and come back to this exercise later.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-exercise1&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-exercise1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-exercise1.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-exercise1.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-exercise1&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -610,26 +799,26 @@ The reflection of these points is in red.
 Use the slider to see what happens when we take and reflect more and more points on the graph.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-slider1&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-slider1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-slider1.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-slider1.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-slider1&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -668,7 +857,7 @@ Their reflections are <span class="math notranslate nohighlight">\((1, 0)\)</spa
 Then we connect these points by a curve.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">log</span>
@@ -717,35 +906,35 @@ But this is just the graph of the function <span class="math notranslate nohighl
 <p><strong>Example:</strong> Suppose we have the function <span class="math notranslate nohighlight">\(y = x^2\)</span> and we want to reflect it across the <span class="math notranslate nohighlight">\(x\)</span>-axis.
 All we have to do is negate the right hand side of the equation.
 The reflection is simply
-<span class="math notranslate nohighlight">\($ y = -(x^2) = -x^2. $\)</span></p>
+$<span class="math notranslate nohighlight">\( y = -(x^2) = -x^2. \)</span>$</p>
 <p><strong>Example:</strong> Suppose we have the function <span class="math notranslate nohighlight">\(y = \sin(x) - x\)</span> instead.
 Again, we just negate the right hand side of the equation,
 but make sure to negate <em>all</em> of the terms and be careful with double negatives.
 This time, the reflection across the <span class="math notranslate nohighlight">\(x\)</span>-axis is
-<span class="math notranslate nohighlight">\($ y = -(\sin(x) - x) = -\sin(x) + x. $\)</span></p>
+$<span class="math notranslate nohighlight">\( y = -(\sin(x) - x) = -\sin(x) + x. \)</span>$</p>
 <p>The interactive graph below allows you to enter an arbitrary function <span class="math notranslate nohighlight">\(f(x)\)</span> and see its graph and its reflection across the <span class="math notranslate nohighlight">\(x\)</span>-axis.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-interactive1&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-interactive1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-interactive1.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-interactive1.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-interactive1&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -792,26 +981,26 @@ Click and drag the points <span class="math notranslate nohighlight">\(A'\)</spa
 of <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(C\)</span>, respectively.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-exercise2&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-exercise2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-exercise2.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-exercise2.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-exercise2&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -855,26 +1044,26 @@ In practice, because life is short, we reflect a few points and connect them by 
 The more points we reflect, the more accurately we can draw the reflection of the graph.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-slider2&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-slider2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-slider2.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-slider2.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-slider2&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -917,42 +1106,42 @@ Let’s reflect them across the <span class="math notranslate nohighlight">\(y\)
 According to our rule, we just replace <span class="math notranslate nohighlight">\(x\)</span> with <span class="math notranslate nohighlight">\(-x\)</span>,
 but we should be careful and put parentheses around it, like so: <span class="math notranslate nohighlight">\((-x)\)</span>.
 The reflection is simply
-<span class="math notranslate nohighlight">\($ y = (-x)^2 = x^2. $\)</span>
-In this case, the reflection across the <span class="math notranslate nohighlight">\(y\)</span>-axis is the same as the original function.</p>
+$<span class="math notranslate nohighlight">\( y = (-x)^2 = x^2. \)</span><span class="math notranslate nohighlight">\(
+In this case, the reflection across the \)</span>y$-axis is the same as the original function.</p>
 <p><strong>Example:</strong> Let’s reflect the function <span class="math notranslate nohighlight">\(y = \sin(x) - x\)</span> across the <span class="math notranslate nohighlight">\(y\)</span>-axis.
 We replace every <span class="math notranslate nohighlight">\(x\)</span> with <span class="math notranslate nohighlight">\(-x\)</span> to get
-<span class="math notranslate nohighlight">\($ y = \sin(-x) - (-x) = \sin(-x) + x. $\)</span>
+$<span class="math notranslate nohighlight">\( y = \sin(-x) - (-x) = \sin(-x) + x. \)</span><span class="math notranslate nohighlight">\(
 This is a perfectly acceptable answer.
-You might have learned that <span class="math notranslate nohighlight">\(\sin(-x) = -\sin(x)\)</span>,
+You might have learned that \)</span>\sin(-x) = -\sin(x)<span class="math notranslate nohighlight">\(,
 so we could also rewrite this as
-<span class="math notranslate nohighlight">\($ y = -\sin(x) + x $\)</span>
+    \)</span><span class="math notranslate nohighlight">\( y = -\sin(x) + x \)</span><span class="math notranslate nohighlight">\(
 if we prefer.
-You might also notice that this is the same answer that we got when we reflected it across the <span class="math notranslate nohighlight">\(x\)</span>-axis.
-Whether we reflect <span class="math notranslate nohighlight">\(y = \sin(x) - x\)</span> across the <span class="math notranslate nohighlight">\(x\)</span>-axis or the <span class="math notranslate nohighlight">\(y\)</span>-axis, we get the same result.</p>
+You might also notice that this is the same answer that we got when we reflected it across the \)</span>x<span class="math notranslate nohighlight">\(-axis.
+Whether we reflect \)</span>y = \sin(x) - x<span class="math notranslate nohighlight">\( across the \)</span>x<span class="math notranslate nohighlight">\(-axis or the \)</span>y$-axis, we get the same result.</p>
 <p>Use the interactive graph below to plot any function with its reflection across the <span class="math notranslate nohighlight">\(y\)</span>-axis.
 As usual, the function will be in blue and its reflection in red.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-interactive2&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-interactive2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-interactive2.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-interactive2.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-interactive2&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1003,26 +1192,26 @@ Click and drag the point <span class="math notranslate nohighlight">\(P\)</span>
 The red point <span class="math notranslate nohighlight">\(P'\)</span> is the result of reflecting <span class="math notranslate nohighlight">\(P\)</span> across both axes.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-point2&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-point2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-point2.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">400</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-point2.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-point2&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1119,26 +1308,26 @@ Let’s state the rule first:</p>
 Move the points <span class="math notranslate nohighlight">\(A'\)</span>, <span class="math notranslate nohighlight">\(B'\)</span>, <span class="math notranslate nohighlight">\(C'\)</span>, and <span class="math notranslate nohighlight">\(D'\)</span> so that they are the reflections of <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, and <span class="math notranslate nohighlight">\(D\)</span>, respectively.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-exercise3&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-exercise3&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-exercise3.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-exercise3.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-exercise3&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1171,11 +1360,13 @@ and the line connecting them intersects <span class="math notranslate nohighligh
 Let’s call the this point of intersection <span class="math notranslate nohighlight">\(Q\)</span>.
 The points <span class="math notranslate nohighlight">\(P\)</span> and <span class="math notranslate nohighlight">\(P'\)</span> are the same distance from <span class="math notranslate nohighlight">\(Q\)</span>.
 This is our picture so far:</p>
-<img src="images/ggb1.png" width=300 height=300><p>Draw a line segment from <span class="math notranslate nohighlight">\(P\)</span> directly left until it intersects the line <span class="math notranslate nohighlight">\(y = x\)</span>.
+<a class="reference internal image-reference" href="../../../_images/ggb1.png"><img alt="../../../_images/ggb1.png" src="../../../_images/ggb1.png" style="width: 300px; height: 300px;" /></a>
+<p>Draw a line segment from <span class="math notranslate nohighlight">\(P\)</span> directly left until it intersects the line <span class="math notranslate nohighlight">\(y = x\)</span>.
 Draw another line segment from <span class="math notranslate nohighlight">\(P'\)</span> directly down until it too intersects the line <span class="math notranslate nohighlight">\(y = x\)</span>.
 These two line segments and the line <span class="math notranslate nohighlight">\(y = x\)</span> all meet at the same point.
 Let’s call this point <span class="math notranslate nohighlight">\(R\)</span>.</p>
-<img src="images/ggb2.png" width=300 height=300><p>Since the line segment <span class="math notranslate nohighlight">\(PR\)</span> is horizontal and <span class="math notranslate nohighlight">\(P'R\)</span> is vertical,
+<a class="reference internal image-reference" href="../../../_images/ggb2.png"><img alt="../../../_images/ggb2.png" src="../../../_images/ggb2.png" style="width: 300px; height: 300px;" /></a>
+<p>Since the line segment <span class="math notranslate nohighlight">\(PR\)</span> is horizontal and <span class="math notranslate nohighlight">\(P'R\)</span> is vertical,
 then angle <span class="math notranslate nohighlight">\(\angle PRP'\)</span> is a right angle.
 The other angles <span class="math notranslate nohighlight">\(\angle RPP'\)</span> and <span class="math notranslate nohighlight">\(\angle RP'P\)</span> are each 45 degrees, so this makes the triangle <span class="math notranslate nohighlight">\(\triangle PRP'\)</span> an isosceles triangle.</p>
 <p>Now suppose <span class="math notranslate nohighlight">\(P\)</span> has the coordinates <span class="math notranslate nohighlight">\((a, b)\)</span>.
@@ -1189,14 +1380,15 @@ To get from <span class="math notranslate nohighlight">\(P\)</span> to <span cla
 Since <span class="math notranslate nohighlight">\(R\)</span> is on the line <span class="math notranslate nohighlight">\(y = x\)</span>, its <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-coordinates are equal.
 But we know <span class="math notranslate nohighlight">\(R\)</span> has the same <span class="math notranslate nohighlight">\(y\)</span>-coordinate as <span class="math notranslate nohighlight">\(P\)</span>, so <span class="math notranslate nohighlight">\(R = (b, b)\)</span>.
 The distance from <span class="math notranslate nohighlight">\(P\)</span> to <span class="math notranslate nohighlight">\(R\)</span> is just the difference between <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span>, so <span class="math notranslate nohighlight">\(\overline{PR} = a - b\)</span>.</p>
-<p>Now
-\begin{align*}
-P’
-&amp;= (a - \overline{PR}, b + \overline{PR}) \
-&amp;= (a - (a - b), b + (a - b)) \
-&amp;= (a - a + b, b + a - b) \
-&amp;= (b, a).
-\end{align*}</p>
+<p>Now</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    P'
+        &amp;= (a - \overline{PR}, b + \overline{PR}) \\
+        &amp;= (a - (a - b), b + (a - b)) \\
+        &amp;= (a - a + b, b + a - b) \\
+        &amp;= (b, a).
+\end{align*}\]</div>
 <p>This argument depended on <span class="math notranslate nohighlight">\(P\)</span> being to the lower-right of the line <span class="math notranslate nohighlight">\(y = x\)</span>.
 As an exercise, figure out how this argument has to change if <span class="math notranslate nohighlight">\(P\)</span> is to the upper-left instead.</p>
 <p>Now let’s reflect the graph of a function across the line <span class="math notranslate nohighlight">\(y = x\)</span>.
@@ -1204,26 +1396,26 @@ As always, we sample a bunch of points on the curve, and reflect them each acros
 See what happens when we sample more and more points on the graph of <span class="math notranslate nohighlight">\(y = x^2\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-slider3&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-slider3&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-slider3.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-slider3.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-slider3&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1262,47 +1454,47 @@ Points of that form are just the points on the graph of <span class="math notran
 <p><strong>Example:</strong> Let’s reflect the function <span class="math notranslate nohighlight">\(y = x^2\)</span> across the line <span class="math notranslate nohighlight">\(y = x\)</span>.
 According to our rule, we just swap the <span class="math notranslate nohighlight">\(x\)</span>’s and <span class="math notranslate nohighlight">\(y\)</span>’s.
 So the reflection is
-<span class="math notranslate nohighlight">\($ x = y^2. $\)</span>
-The problem is solved at this point, but suppose we try to solve for <span class="math notranslate nohighlight">\(y\)</span>.
+$<span class="math notranslate nohighlight">\( x = y^2. \)</span><span class="math notranslate nohighlight">\(
+The problem is solved at this point, but suppose we try to solve for \)</span>y<span class="math notranslate nohighlight">\(.
 We get either
-<span class="math notranslate nohighlight">\($ y = \sqrt x $\)</span>
+    \)</span><span class="math notranslate nohighlight">\( y = \sqrt x \)</span><span class="math notranslate nohighlight">\(
 or
-<span class="math notranslate nohighlight">\($ y = -\sqrt x. $\)</span>
-How do the graphs of <span class="math notranslate nohighlight">\(x = y^2\)</span>, <span class="math notranslate nohighlight">\(y = \sqrt x\)</span>, and <span class="math notranslate nohighlight">\(y = -\sqrt x\)</span> compare to one another?
-The graph of <span class="math notranslate nohighlight">\(x = y^2\)</span> is a sideways parabola and does not pass the vertical line test.
-The graph of <span class="math notranslate nohighlight">\(y = \sqrt x\)</span> is just the top half of that parabola and therefore <em>does</em> pass the vertical line test.
-The graph of <span class="math notranslate nohighlight">\(y = -\sqrt x\)</span> is the bottom half of the parabola and also passes the vertical line test.</p>
+    \)</span><span class="math notranslate nohighlight">\( y = -\sqrt x. \)</span><span class="math notranslate nohighlight">\(
+How do the graphs of \)</span>x = y^2<span class="math notranslate nohighlight">\(, \)</span>y = \sqrt x<span class="math notranslate nohighlight">\(, and \)</span>y = -\sqrt x<span class="math notranslate nohighlight">\( compare to one another?
+The graph of \)</span>x = y^2<span class="math notranslate nohighlight">\( is a sideways parabola and does not pass the vertical line test.
+The graph of \)</span>y = \sqrt x<span class="math notranslate nohighlight">\( is just the top half of that parabola and therefore *does* pass the vertical line test.
+The graph of \)</span>y = -\sqrt x$ is the bottom half of the parabola and also passes the vertical line test.</p>
 <p><strong>Example:</strong> Now let’s reflect the straight line <span class="math notranslate nohighlight">\(y = \frac 1 2 x + 1\)</span> across the line <span class="math notranslate nohighlight">\(y = x\)</span>.
 Our rule says we just need to swap the <span class="math notranslate nohighlight">\(x\)</span>’s and <span class="math notranslate nohighlight">\(y\)</span>’s, so we get
-<span class="math notranslate nohighlight">\($ x = \frac 1 2 y + 1. $\)</span>
-Once again, the problem is solved at this point, but let’s try solving for <span class="math notranslate nohighlight">\(y\)</span>:
-<span class="math notranslate nohighlight">\($ y = 2 x - 2. $\)</span>
-The reflection of the line <span class="math notranslate nohighlight">\(y = \frac 1 2 x + 1\)</span> across the line <span class="math notranslate nohighlight">\(y = x\)</span> is the line <span class="math notranslate nohighlight">\(y = 2 x - 2\)</span>.
+$<span class="math notranslate nohighlight">\( x = \frac 1 2 y + 1. \)</span><span class="math notranslate nohighlight">\(
+Once again, the problem is solved at this point, but let's try solving for \)</span>y<span class="math notranslate nohighlight">\(:
+    \)</span><span class="math notranslate nohighlight">\( y = 2 x - 2. \)</span><span class="math notranslate nohighlight">\(
+The reflection of the line \)</span>y = \frac 1 2 x + 1<span class="math notranslate nohighlight">\( across the line \)</span>y = x<span class="math notranslate nohighlight">\( is the line \)</span>y = 2 x - 2<span class="math notranslate nohighlight">\(.
 This is a case of a function whose reflection actually does pass the vertical line test
-and can be written in the form <span class="math notranslate nohighlight">\(y = f(x)\)</span>.</p>
+and can be written in the form \)</span>y = f(x)$.</p>
 <p>Use the interactive graph below to plot functions and their reflections across <span class="math notranslate nohighlight">\(y = x\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;ggb-interactive3&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ggb-interactive3&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-  <span class="n">var</span> <span class="n">ggbApp</span> <span class="o">=</span> <span class="n">new</span> <span class="n">GGBApplet</span><span class="p">({</span>
-      <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
-      <span class="s2">&quot;showToolBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showMenuBar&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;showResetIcon&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;enableRightClick&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-      <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;geogebra/reflection-interactive3.ggb&quot;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">ggbApp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GGBApplet</span><span class="p">({</span>
+      <span class="s2">&quot;height&quot;</span><span class="o">:</span> <span class="mi">600</span><span class="p">,</span>
+      <span class="s2">&quot;showToolBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showMenuBar&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showAlgebraInput&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;showResetIcon&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableLabelDrags&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableShiftDragZoom&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="s2">&quot;enableRightClick&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;useBrowserForJS&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="s2">&quot;filename&quot;</span><span class="o">:</span> <span class="s2">&quot;geogebra/reflection-interactive3.ggb&quot;</span>
   <span class="p">},</span> <span class="s1">&#39;ggb-interactive3&#39;</span><span class="p">);</span>
 
-  <span class="n">ggbApp</span><span class="o">.</span><span class="n">inject</span><span class="p">();</span>
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+  <span class="nx">ggbApp</span><span class="p">.</span><span class="nx">inject</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1339,42 +1531,46 @@ Well, the sum of two functions, for instance, is a function and we know how to r
 so we ought to be able to do this.</p>
 <p><strong>Problem:</strong>
 Reflect <span class="math notranslate nohighlight">\(f(x) + g(x)\)</span> across the <span class="math notranslate nohighlight">\(x\)</span>-axis, where
-<span class="math notranslate nohighlight">\($ f(x) = x^2 + 1 \text{ and } g(x) = x^3 + 1. $\)</span></p>
+$<span class="math notranslate nohighlight">\( f(x) = x^2 + 1 \text{ and } g(x) = x^3 + 1. \)</span>$</p>
 <p><strong>Solution:</strong>
-To do this, let’s add <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> and call their sum <span class="math notranslate nohighlight">\(h(x)\)</span>. So
-\begin{align*}
-h(x)
-&amp;= f(x) + g(x) \
-&amp;= (x^2 + 1) + (x^3 + 1) \
-&amp;= x^3 + x^2 + 2.
-\end{align*}
-Now we just need to reflect <span class="math notranslate nohighlight">\(h(x)\)</span> across the <span class="math notranslate nohighlight">\(x\)</span>-axis.
-Its reflection is <span class="math notranslate nohighlight">\(y = -h(x)\)</span>, so
-\begin{align*}
-y
-&amp;= -h(x) \
-&amp;= -(x^3 + x^2 + 2) \
-&amp;= -x^3 - x^2 - 2.
-\end{align*}</p>
+To do this, let’s add <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> and call their sum <span class="math notranslate nohighlight">\(h(x)\)</span>. So</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    h(x)
+        &amp;= f(x) + g(x) \\
+        &amp;= (x^2 + 1) + (x^3 + 1) \\
+        &amp;= x^3 + x^2 + 2.
+\end{align*}\]</div>
+<p>Now we just need to reflect <span class="math notranslate nohighlight">\(h(x)\)</span> across the <span class="math notranslate nohighlight">\(x\)</span>-axis.
+Its reflection is <span class="math notranslate nohighlight">\(y = -h(x)\)</span>, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    y
+        &amp;= -h(x) \\
+        &amp;= -(x^3 + x^2 + 2) \\
+        &amp;= -x^3 - x^2 - 2.
+\end{align*}\]</div>
 <p><strong>Problem:</strong>
 Reflect <span class="math notranslate nohighlight">\(f(g(x))\)</span> across the <span class="math notranslate nohighlight">\(y\)</span>-axis, where
-<span class="math notranslate nohighlight">\($ f(x) = \sin(x) \text{ and } g(x) = x^2. $\)</span></p>
+$<span class="math notranslate nohighlight">\( f(x) = \sin(x) \text{ and } g(x) = x^2. \)</span>$</p>
 <p><strong>Solution:</strong>
-Like before, let’s compose <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> and call their composite <span class="math notranslate nohighlight">\(h(x)\)</span>. So
-\begin{align*}
-h(x)
-&amp;= f(g(x)) \
-&amp;= f(x^2) \
-&amp;= \sin(x^2).
-\end{align*}
-Now we reflect <span class="math notranslate nohighlight">\(h(x)\)</span> across the <span class="math notranslate nohighlight">\(y\)</span>-axis.
-The reflection of <span class="math notranslate nohighlight">\(h(x)\)</span> is <span class="math notranslate nohighlight">\(y = h(-x)\)</span>, so
-\begin{align*}
-y
-&amp;= h(-x) \
-&amp;= \sin((-x)^2) \
-&amp;= \sin(x^2).
-\end{align*}</p>
+Like before, let’s compose <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> and call their composite <span class="math notranslate nohighlight">\(h(x)\)</span>. So</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    h(x)
+        &amp;= f(g(x)) \\
+        &amp;= f(x^2) \\
+        &amp;= \sin(x^2).
+\end{align*}\]</div>
+<p>Now we reflect <span class="math notranslate nohighlight">\(h(x)\)</span> across the <span class="math notranslate nohighlight">\(y\)</span>-axis.
+The reflection of <span class="math notranslate nohighlight">\(h(x)\)</span> is <span class="math notranslate nohighlight">\(y = h(-x)\)</span>, so</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    y
+        &amp;= h(-x) \\
+        &amp;= \sin((-x)^2) \\
+        &amp;= \sin(x^2).
+\end{align*}\]</div>
 </div>
 <div class="section" id="reflections-combined-with-translations">
 <h2>Reflections combined with translations<a class="headerlink" href="#reflections-combined-with-translations" title="Permalink to this headline">¶</a></h2>
@@ -1385,20 +1581,22 @@ where <span class="math notranslate nohighlight">\(y = |2x|\)</span>.</p>
 <p><strong>Solution:</strong>
 Let’s label by <span class="math notranslate nohighlight">\(g(x)\)</span> the translation of <span class="math notranslate nohighlight">\(f(x)\)</span> left by three units.
 Then we just have to reflect <span class="math notranslate nohighlight">\(g(x)\)</span> across the <span class="math notranslate nohighlight">\(y\)</span>-axis.
-So
-\begin{align*}
-g(x)
-&amp;= f(x+3) \
-&amp;= |2(x+3)| \
-&amp;= |2x + 6|.
-\end{align*}
-Its reflection across the <span class="math notranslate nohighlight">\(y\)</span>-axis is
-\begin{align*}
-y
-&amp;= g(-x) \
-&amp;= |2(-x) + 6| \
-&amp;= |-2x + 6|.
-\end{align*}</p>
+So</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    g(x)
+        &amp;= f(x+3) \\
+        &amp;= |2(x+3)| \\
+        &amp;= |2x + 6|.
+\end{align*}\]</div>
+<p>Its reflection across the <span class="math notranslate nohighlight">\(y\)</span>-axis is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    y
+        &amp;= g(-x) \\
+        &amp;= |2(-x) + 6| \\
+        &amp;= |-2x + 6|.
+\end{align*}\]</div>
 </div>
 <div class="section" id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
@@ -1428,7 +1626,7 @@ Doubling a number is easier than most things in math, so this can be a time save
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
 
 <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
 <span class="s1">code_show=true; </span>
@@ -1465,6 +1663,25 @@ $( document ).ready(code_toggle);
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/Reflections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

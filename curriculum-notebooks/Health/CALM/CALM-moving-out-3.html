@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CALM - Moving Out 4" href="CALM-moving-out-4.html" />
@@ -65,71 +73,113 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="active">
-    <a href="../Health.html">Health Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="CALM-moving-out.html">CALM - Moving Out Project</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-1.html">CALM - Moving Out 1</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-2.html">CALM - Moving Out 2</a>
-    </li>
-    <li class="active">
-      <a href="">CALM - Moving Out 3</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-4.html">CALM - Moving Out 4</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-5.html">CALM - Moving Out 5</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-6.html">CALM - Moving Out 6</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-7.html">CALM - Moving Out 7</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-9.html">CALM - Moving Out 9</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-8.html">CALM - Moving Out 8</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Health.html">
+   Health Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out.html">
+     CALM - Moving Out Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-1.html">
+     CALM - Moving Out 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-2.html">
+     CALM - Moving Out 2
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     CALM - Moving Out 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-4.html">
+     CALM - Moving Out 4
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-5.html">
+     CALM - Moving Out 5
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-6.html">
+     CALM - Moving Out 6
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-7.html">
+     CALM - Moving Out 7
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-9.html">
+     CALM - Moving Out 9
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-8.html">
+     CALM - Moving Out 8
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -201,48 +251,56 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-3.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-3.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Health/CALM/CALM-moving-out-3.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-3-accommodation">
+   Part 3 - Accommodation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-a-rental-home">
+     Finding a Rental Home
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#roommate">
+     Roommate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#moving-expenses">
+     Moving Expenses
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#part-3-accomodation" class="nav-link">Part 3 - Accomodation</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#finding-a-rental-home" class="nav-link">Finding a Rental Home</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#roommate" class="nav-link">Roommate</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#moving-expenses" class="nav-link">Moving Expenses</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -254,12 +312,12 @@
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Health/CALM/CALM-moving-out-3.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <div class="section" id="calm-moving-out-3">
 <h1>CALM - Moving Out 3<a class="headerlink" href="#calm-moving-out-3" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="part-3-accomodation">
-<h2>Part 3 - Accomodation<a class="headerlink" href="#part-3-accomodation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="part-3-accommodation">
+<h2>Part 3 - Accommodation<a class="headerlink" href="#part-3-accommodation" title="Permalink to this headline">¶</a></h2>
 <p>📚You will need somewhere to live. Think about the advantages and disadvantages of an <a class="reference external" href="https://en.wikipedia.org/wiki/Apartment">apartment</a>, <a class="reference external" href="https://simple.wikipedia.org/wiki/Townhouse">townhouse</a>/<a class="reference external" href="https://en.wikipedia.org/wiki/Duplex_(building)">duplex</a>, and a <a class="reference external" href="https://en.wikipedia.org/wiki/Single-family_detached_home">single detached house</a> and record your thoughts in the cell below. Remember to <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell once you have finished.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_2.txt
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_2.txt
 ✏️
 Advantages of an Apartment
 1. 
@@ -308,7 +366,7 @@ The type of home I picture myself in when I decide to move out is (be descriptiv
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_2.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_2.txt
 </pre></div>
 </div>
 </div>
@@ -319,7 +377,7 @@ The type of home I picture myself in when I decide to move out is (be descriptiv
 <p>Carefully read the listing and fill in the information in the following cell, and <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell once you have finished.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_3.txt
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_3.txt
 ✏️
 
 Link to listing: 
@@ -341,7 +399,7 @@ Summary of other important information:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_3.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_3.txt
 </pre></div>
 </div>
 </div>
@@ -352,7 +410,7 @@ Summary of other important information:
 <p>📚Some expenses can be decreased by having a roommate. For the purposes of this project you may choose to have one roommate. Complete the statements then <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_4.txt
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_4.txt
 ✏️
 Advantages of living on my own are:
 1. 
@@ -386,7 +444,7 @@ Essential characteristics of a roommate are:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_4.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_4.txt
 </pre></div>
 </div>
 </div>
@@ -397,7 +455,7 @@ Essential characteristics of a roommate are:
 <p>📚There are one-time moving expenses to consider. Follow the instructions in the code cell below to edit the numbers, then run the cell to calculate and store your expenses.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️</span>
 <span class="c1"># If you plan to have a roommate, change this to a 1 instead of a 0</span>
 <span class="n">roommate</span> <span class="o">=</span> <span class="mi">0</span>
 
@@ -450,14 +508,14 @@ Essential characteristics of a roommate are:
         <span class="n">petPurchase</span>
         <span class="p">)</span>
 
-<span class="o">%</span><span class="n">store</span> <span class="n">roommate</span>
-<span class="o">%</span><span class="n">store</span> <span class="n">movingExpenses</span>
+<span class="o">%</span><span class="k">store</span> roommate
+<span class="o">%</span><span class="k">store</span> movingExpenses
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Moving expenses will be about $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">movingExpenses</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Stored &#39;roommate&#39; (int)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stored &#39;roommate&#39; (int)
 Stored &#39;movingExpenses&#39; (int)
 Moving expenses will be about $2145
 </pre></div>
@@ -467,7 +525,7 @@ Moving expenses will be about $2145
 <p>📚<code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to check that your answers have been stored. If you get an error, make sure that you have run all of the previous code cells in this notebook.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#📚 Run this cell to check that your answers have been stored.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#📚 Run this cell to check that your answers have been stored.</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Roommate:&#39;</span><span class="p">,</span> <span class="n">roommate</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Moving expenses:&#39;</span><span class="p">,</span> <span class="n">movingExpenses</span><span class="p">)</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;moving_out_2.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file2</span><span class="p">:</span>
@@ -480,7 +538,7 @@ Moving expenses will be about $2145
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Roommate: 0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Roommate: 0
 Moving expenses: 2145
 ✏️
 Advantages of an Apartment
@@ -574,7 +632,6 @@ Essential characteristics of a roommate are:
 2. 
 3. 
 4. 
-
 </pre></div>
 </div>
 </div>
@@ -585,6 +642,25 @@ Essential characteristics of a roommate are:
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Health/CALM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

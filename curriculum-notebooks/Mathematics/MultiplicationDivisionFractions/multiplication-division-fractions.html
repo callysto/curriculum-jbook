@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Patterns: Oral and written" href="../OralAndWrittenPatterns/oral-and-written-patterns.html" />
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="active">
-      <a href="">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,198 +471,242 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/MultiplicationDivisionFractions/multiplication-division-fractions.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/MultiplicationDivisionFractions/multiplication-division-fractions.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/MultiplicationDivisionFractions/multiplication-division-fractions.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
-
-<nav id="bd-toc-nav">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiplying-a-whole-number-with-a-fraction">
+   Multiplying a Whole Number with a fraction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiplying-two-fractions">
+   Multiplying two Fractions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizing-multiplication-of-fractions">
+   Visualizing multiplication of fractions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiplying-fractions">
+   Multiplying fractions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-1-sticking-to-the-rules">
+     Method #1: sticking to the rules.
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#" class="nav-link">Fractions: Multiplication and Division</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#multiplying-a-whole-number-with-a-fraction" class="nav-link">Multiplying a Whole Number with a fraction</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#multiplying-two-fractions" class="nav-link">Multiplying two Fractions</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#visualizing-multiplication-of-fractions" class="nav-link">Visualizing multiplication of fractions</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#multiplying-fractions-method-1-sticking-to-the-rules" class="nav-link">Multiplying fractions, Method #1: sticking to the rules.</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#step-1" class="nav-link">Step 1:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#step-2" class="nav-link">Step 2:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#step-3" class="nav-link">Step 3:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#and-you-re-done" class="nav-link">And You’re Done!</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#method-2-a-little-less-work" class="nav-link">Method #2: A little less work.</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id1" class="nav-link">Step 1:</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#id2" class="nav-link">Step 2:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Step 3:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">And You’re Done!</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#here-s-an-animation-showing-the-two-methods-on-the-same-problem" class="nav-link">Here’s an animation showing the two methods on the same problem.</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#practice-with-fraction-multiplication" class="nav-link">Practice with fraction multiplication</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#dividing-positive-fractions" class="nav-link">Dividing Positive Fractions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#how-do-we-divide-using-fractions" class="nav-link">How do we divide using fractions?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#the-golden-rule-of-division-division-is-the-same-as-multiplying-by-the-reciprocal" class="nav-link">The golden rule of division: division is the same as multiplying by the reciprocal</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#here-are-the-steps" class="nav-link">Here are the steps</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#id5" class="nav-link">Step 1:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#id6" class="nav-link">Step 2:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#id7" class="nav-link">And you’re done!</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#but-why-does-this-work" class="nav-link">But why does this work?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#but-isn-t-division-supposed-to-make-the-number-smaller" class="nav-link">But isn’t division supposed to make the number smaller?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#let-s-go-through-an-example" class="nav-link">Let’s go through an example:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#multiplication-and-division-with-positive-mixed-fractions" class="nav-link">Multiplication and Division with Positive Mixed Fractions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#for-multiplication-and-division-all-mixed-numbers-must-be-converted-to-improper-fractions" class="nav-link">For multiplication and division, all mixed numbers must be converted to improper fractions.</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#id8" class="nav-link">Step 1:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#id9" class="nav-link">Step 2:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#step-3-optional" class="nav-link">Step 3: (Optional?)</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#id10" class="nav-link">And you’re done!</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#let-s-do-some-examples" class="nav-link">Let’s do some examples!</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#practice-questions" class="nav-link">Practice Questions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#question-1" class="nav-link">Question 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h5">
-            <a href="#question-2" class="nav-link">Question 2</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#summary" class="nav-link">Summary</a>
-        </li>
-    
-            </ul>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-1">
+       Step 1:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-2">
+       Step 2:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-3">
+       Step 3:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#and-you-re-done">
+       And You’re Done!
+      </a>
+     </li>
     </ul>
-</nav>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-2-a-little-less-work">
+     Method #2: A little less work.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Step 1:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Step 2:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Step 3:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       And You’re Done!
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#here-s-an-animation-showing-the-two-methods-on-the-same-problem">
+       Here’s an animation showing the two methods on the same problem.
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#practice-with-fraction-multiplication">
+   Practice with fraction multiplication
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dividing-positive-fractions">
+   Dividing Positive Fractions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-do-we-divide-using-fractions">
+     How do we divide using fractions?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-golden-rule-of-division-division-is-the-same-as-multiplying-by-the-reciprocal">
+   The golden rule of division:
+   <em>
+    division is the same as multiplying by the reciprocal
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#here-are-the-steps">
+     Here are the steps
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Step 1:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Step 2:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       And you’re done!
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#but-why-does-this-work">
+   But why does this work?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#but-isn-t-division-supposed-to-make-the-number-smaller">
+   But isn’t division supposed to make the number smaller?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-go-through-an-example">
+     Let’s go through an example:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiplication-and-division-with-positive-mixed-fractions">
+   Multiplication and Division with Positive Mixed Fractions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-multiplication-and-division-all-mixed-numbers-must-be-converted-to-improper-fractions">
+     For multiplication and division, all mixed numbers must be converted to improper fractions.
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Step 1:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Step 2:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-3-optional">
+       Step 3: (Optional?)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       And you’re done!
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-do-some-examples">
+     Let’s do some examples!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-questions">
+     Practice Questions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#question-1">
+       Question 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#question-2">
+       Question 2
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+</ul>
 
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -518,26 +718,26 @@
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/MultiplicationDivisionFractions/multiplication-division-fractions.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
-&lt;script&gt;
-  function code_toggle() {
-    if (code_shown){
-      $(&#39;div.input&#39;).hide(&#39;500&#39;);
-      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)
-    } else {
-      $(&#39;div.input&#39;).show(&#39;500&#39;);
-      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)
-    }
-    code_shown = !code_shown
-  }
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">function</span> <span class="nx">code_toggle</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">code_shown</span><span class="p">){</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.input&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">(</span><span class="s1">&#39;500&#39;</span><span class="p">);</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#toggleButton&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;Show Code&#39;</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.input&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="s1">&#39;500&#39;</span><span class="p">);</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#toggleButton&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;Hide Code&#39;</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="nx">code_shown</span> <span class="o">=</span> <span class="o">!</span><span class="nx">code_shown</span>
+  <span class="p">}</span>
 
-  $( document ).ready(function(){
-    code_shown=false;
-    $(&#39;div.input&#39;).hide()
-  });
-&lt;/script&gt;
-&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;
+  <span class="nx">$</span><span class="p">(</span> <span class="nb">document</span> <span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">code_shown</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.input&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">()</span>
+  <span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;javascript:code_toggle()&quot;</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;toggleButton&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Show Code&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -565,7 +765,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">import</span> <span class="nn">IPython</span>
 </pre></div>
@@ -580,12 +780,12 @@
 <div class="section" id="multiplying-a-whole-number-with-a-fraction">
 <h2>Multiplying a Whole Number with a fraction<a class="headerlink" href="#multiplying-a-whole-number-with-a-fraction" title="Permalink to this headline">¶</a></h2>
 <p>We know that repeated addition can be written as multiplication with whole numbers, which are also know as integers, and we can do the same for fractions.
-<span class="math notranslate nohighlight">\($\begin{align*}
+$<span class="math notranslate nohighlight">\(\begin{align*}
 \frac15 + \frac15 + \frac15 &amp; = \frac35 \\
 3 \times \frac15 &amp; = \frac35
 \end{align*}\)</span>$</p>
 <p>What if we want <span class="math notranslate nohighlight">\(4 \times \frac23\)</span>? Then we are saying we want two thirds of “4”, or 4 copies of two thirds, which is the same as eight copies of one-thirds, which is eight thirds. Lets look at what we did, but with numbers:
-<span class="math notranslate nohighlight">\($\begin{align*}
+$<span class="math notranslate nohighlight">\(\begin{align*}
 4 \times \frac23 \\
 4 \times \frac23 &amp; = 4 \times (2 \times \frac13) \\
 4 \times (2 \times \frac13) &amp; = (4 \times 2) \times \frac13 \\
@@ -593,7 +793,7 @@
 8 \times \frac13 &amp; = \frac83 \\
 \frac83 &amp; = 2 \frac23
 \end{align*}
-$\)</span></p>
+\)</span>$</p>
 <p>Did you notice how we never had to find a common denominator? That’s because multiplication doesn’t need a common denominator!</p>
 <p><font color='red'>Tip! To remember which fractions need the common denominator, think of this:</font></p>
 <blockquote>
@@ -613,7 +813,7 @@ Let’s show what’s going on using the rectangles below.</p>
 We cut our second rectangle horizontally into 2 equal pieces, and select one of them (in yellow) to show <span class="math notranslate nohighlight">\(\frac12\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fig01</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig01</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
 
 <span class="n">t_data01</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">]]</span>
 <span class="n">colors01</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">]]</span>
@@ -641,10 +841,10 @@ We cut our second rectangle horizontally into 2 equal pieces, and select one of 
 <img alt="../../../_images/multiplication-division-fractions_6_1.png" src="../../../_images/multiplication-division-fractions_6_1.png" />
 </div>
 </div>
-<p>Now let’s lay one rectangle on top of the other. Do you see that there’s now 10 pieces, and only one is green? The green piece represents the product of this multiplication. Therefore: <span class="math notranslate nohighlight">\($\frac15 \times \frac12 = \frac{1}{10}\)</span>$</p>
+<p>Now let’s lay one rectangle on top of the other. Do you see that there’s now 10 pieces, and only one is green? The green piece represents the product of this multiplication. Therefore: $<span class="math notranslate nohighlight">\(\frac15 \times \frac12 = \frac{1}{10}\)</span>$</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
 
 <span class="n">t_data</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
 <span class="n">colors</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;lime&quot;</span><span class="p">,</span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span><span class="s2">&quot;yellow&quot;</span><span class="p">],[</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">]]</span>
@@ -666,7 +866,7 @@ We cut our second rectangle horizontally into 2 equal pieces, and select one of 
 \[\frac15 \times \frac12 = \frac12 \times \frac15 = \frac{1}{10}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fig2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
 
 <span class="n">t_data2</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">),(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">))</span>
 <span class="n">colors2</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;lime&quot;</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">],[</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">],[</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">],[</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">],[</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">]]</span>
@@ -684,32 +884,34 @@ We cut our second rectangle horizontally into 2 equal pieces, and select one of 
 </div>
 </div>
 </div>
-<div class="section" id="multiplying-fractions-method-1-sticking-to-the-rules">
-<h2>Multiplying fractions, Method #1: sticking to the rules.<a class="headerlink" href="#multiplying-fractions-method-1-sticking-to-the-rules" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="multiplying-fractions">
+<h2>Multiplying fractions<a class="headerlink" href="#multiplying-fractions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="method-1-sticking-to-the-rules">
+<h3>Method #1: sticking to the rules.<a class="headerlink" href="#method-1-sticking-to-the-rules" title="Permalink to this headline">¶</a></h3>
 <p>In this example, we will work out the product of two fractions using the rule of multiplying the numerators together, then the denominators together, then reducing the fraction if possible at the end.</p>
 <p>What is the product of <span class="math notranslate nohighlight">\(\frac34\times\frac29\)</span>? Let’s walk through this step by step:</p>
 <div class="section" id="step-1">
-<h3>Step 1:<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
+<h4>Step 1:<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h4>
 <p>Multiply both numerators together to get the answer’s numerator.</p>
 <p>In this question, the numerators are 3 and 2, so we get <span class="math notranslate nohighlight">\(3\times 2=6\)</span> for the numerator of the product.</p>
 </div>
 <div class="section" id="step-2">
-<h3>Step 2:<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h3>
+<h4>Step 2:<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h4>
 <p>Multiply both denominators together to get the answer’s denominator.</p>
 <p>In this question, the denominators are 4 and 9, so we get <span class="math notranslate nohighlight">\(4\times 9=36\)</span> for the denominator of the product.</p>
 </div>
 <div class="section" id="step-3">
-<h3>Step 3:<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h3>
+<h4>Step 3:<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h4>
 <p>Reduce the fraction by dividing both the numerator and denominator by the greatest common factor (GCF). You already know how to do this!</p>
 <p>Using the numbers from step 1 and step 2, we get <span class="math notranslate nohighlight">\(\frac34\times \frac29 = \frac{6}{36}\)</span>. But the GCF between 6 and 36 is not 1, it’s 6. So when we reduce by dividing the top and bottom by 6, we get a final answer of <span class="math notranslate nohighlight">\(\frac16\)</span>.</p>
 </div>
 <div class="section" id="and-you-re-done">
-<h3>And You’re Done!<a class="headerlink" href="#and-you-re-done" title="Permalink to this headline">¶</a></h3>
+<h4>And You’re Done!<a class="headerlink" href="#and-you-re-done" title="Permalink to this headline">¶</a></h4>
 <p>This method seems like the most straight-forward answer, but what if you need to calculate really big numbers like <span class="math notranslate nohighlight">\(\frac{5}{24} \times \frac{12}{13}\)</span>? You can use method #1, but then you need to do large multiplication, which is hard, and then you need to reduce after, which is also hard. But, there’s a way to make it easier! What if you reduce the fraction before doing the multiplication? That’s where method #2 comes in.</p>
 </div>
 </div>
 <div class="section" id="method-2-a-little-less-work">
-<h2>Method #2: A little less work.<a class="headerlink" href="#method-2-a-little-less-work" title="Permalink to this headline">¶</a></h2>
+<h3>Method #2: A little less work.<a class="headerlink" href="#method-2-a-little-less-work" title="Permalink to this headline">¶</a></h3>
 <p>The second approach relies on the fact that order of multiplication doesn’t matter, and that this is true not only for the product of the fractions, but for the products in the numerator and denominator as well! In other words, we are reducing the fraction before multiplying. Observe:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\hskip-36pt\begin{align*}
@@ -720,22 +922,22 @@ We cut our second rectangle horizontally into 2 equal pieces, and select one of 
 &amp;= \frac{1\times 1}{2\times 3}= \frac16 \tag{Multiplying one more time}
 \end{align*}\end{split}\]</div>
 <p>This might seem like more work (certainly, there are more steps), but what it tells us is that we can <em>cancel between fractions</em>. Let’s repeat the above calculation, using this shortcut:
-<span class="math notranslate nohighlight">\($\hskip-60pt\large \frac34\times\frac29 = \frac{^{\color{red}{1}}3\!\!\!\!\diagup}{_{\color{blue}{2}}\,4\!\!\!\!\diagup}\times\frac{2\!\!\!\!\diagup^{\,\,\color{blue}{1}}}{9\!\!\!\!\!\diagup_{\,\,\color{red}{3}}} = \frac{1\times 1}{2\times 3}=\frac16.\)</span>$</p>
+$<span class="math notranslate nohighlight">\(\hskip-60pt\large \frac34\times\frac29 = \frac{^{\color{red}{1}}3\!\!\!\!\diagup}{_{\color{blue}{2}}\,4\!\!\!\!\diagup}\times\frac{2\!\!\!\!\diagup^{\,\,\color{blue}{1}}}{9\!\!\!\!\!\diagup_{\,\,\color{red}{3}}} = \frac{1\times 1}{2\times 3}=\frac16.\)</span>$</p>
 <p>What we’ve done here is cancel the 3 in <span class="math notranslate nohighlight">\(\frac34\)</span> with a factor of 3 in the <span class="math notranslate nohighlight">\(9=3\times 3\)</span> in <span class="math notranslate nohighlight">\(\frac29\)</span>, and similarly, the 2 in <span class="math notranslate nohighlight">\(\frac29\)</span> with the 4 in <span class="math notranslate nohighlight">\(\frac34\)</span>. The advantage of this approach is that the numbers we need to multiply are smaller, and (usually, if you were careful) no further reduction is needed. To recap:</p>
 <div class="section" id="id1">
-<h3>Step 1:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h4>Step 1:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>Reduce fractions first, and you can reduce the numerator of one fraction with the denominator of the other by the same common factor.</p>
+</div>
 <div class="section" id="id2">
 <h4>Step 2:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <p>Multiply both numerators together for the answer’s numerator. Multiply both denominators together for the answer’s denominator.</p>
 </div>
-</div>
 <div class="section" id="id3">
-<h3>Step 3:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h4>Step 3:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <p>Though the fraction should already be reduced, check again in case it can be reduced again. Check to see if there’s any other common factors.</p>
 </div>
 <div class="section" id="id4">
-<h3>And You’re Done!<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h4>And You’re Done!<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <p>Let’s do another example. This time, we multiply an integer, a whole number, by a fraction. Remember that any integer, or whole number, can be written as a fraction with a denominator equal to 1. First, we will use Method #1.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\hskip-60pt\begin{align*}
@@ -759,8 +961,9 @@ We cut our second rectangle horizontally into 2 equal pieces, and select one of 
 \end{align*}\end{split}\]</div>
 </div>
 <div class="section" id="here-s-an-animation-showing-the-two-methods-on-the-same-problem">
-<h3>Here’s an animation showing the two methods on the same problem.<a class="headerlink" href="#here-s-an-animation-showing-the-two-methods-on-the-same-problem" title="Permalink to this headline">¶</a></h3>
+<h4>Here’s an animation showing the two methods on the same problem.<a class="headerlink" href="#here-s-an-animation-showing-the-two-methods-on-the-same-problem" title="Permalink to this headline">¶</a></h4>
 <p><img alt="animation" src="http://privatekgsmaths.weebly.com/uploads/1/4/9/3/14935550/8741366_orig.gif" /></p>
+</div>
 </div>
 </div>
 <div class="section" id="practice-with-fraction-multiplication">
@@ -770,7 +973,7 @@ We cut our second rectangle horizontally into 2 equal pieces, and select one of 
 <br>
 $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;a =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;a =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
@@ -790,14 +993,14 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "e07802ed7db6486f9ec74e89b5a64e10"}
+{"version_major": 2, "version_minor": 0, "model_id": "dd79b6fab2754b60bfab2e1e55716afc"}
 </script></div>
 </div>
 <div class="math notranslate nohighlight">
 \[\hskip-60pt\frac{4}{9} \times \frac{1}{10} = \frac{\color{Blue}{b}}{45}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;b =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;b =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
@@ -819,14 +1022,14 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "d75cbe2182ef4f90a9736d7d01c63bc1"}
+{"version_major": 2, "version_minor": 0, "model_id": "450c85e8afe2479197e665d3ef98b10e"}
 </script></div>
 </div>
 <div class="math notranslate nohighlight">
 \[\hskip-60pt\frac{2}{3} \times \frac{9}{10} = \frac{\color{Purple}{c}}{\color{Green}{d}}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;c =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;c =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
@@ -848,12 +1051,12 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "0f880c281e4445659d6d3c00f1a068bb"}
+{"version_major": 2, "version_minor": 0, "model_id": "85d04f6db56944718f96dbec8460f169"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;d =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;d =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
@@ -875,25 +1078,25 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "4f7498f4520e49dbaafa016ba54e5a16"}
+{"version_major": 2, "version_minor": 0, "model_id": "cdd19f63672d4a64ae08cb413853b4f7"}
 </script></div>
 </div>
 </div>
-</div>
 <div class="section" id="dividing-positive-fractions">
-<h1>Dividing Positive Fractions<a class="headerlink" href="#dividing-positive-fractions" title="Permalink to this headline">¶</a></h1>
+<h2>Dividing Positive Fractions<a class="headerlink" href="#dividing-positive-fractions" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="how-do-we-divide-using-fractions">
-<h2>How do we divide using fractions?<a class="headerlink" href="#how-do-we-divide-using-fractions" title="Permalink to this headline">¶</a></h2>
+<h3>How do we divide using fractions?<a class="headerlink" href="#how-do-we-divide-using-fractions" title="Permalink to this headline">¶</a></h3>
 <p>If you know how to multiply fractions, then you already know how to divide fractions!</p>
 <p>Let’s go back to dividing integers,or whole numbers. We know that 10 divided by 2 is 5, because 10 can be split into 2 portions each of which has 5. Now notice that dividing 10 by 2 is the same as taking half of 10. That is,
-<span class="math notranslate nohighlight">\($\hskip-60pt 10\div 2 = 10\times \frac12 = 5.\)</span>$</p>
+$<span class="math notranslate nohighlight">\(\hskip-60pt 10\div 2 = 10\times \frac12 = 5.\)</span>$</p>
 <p>Notice that in the equality <span class="math notranslate nohighlight">\(10 \div 2 = 10\times\frac{1}{2}\)</span>, we took the reciprocal of the second number (<span class="math notranslate nohighlight">\(\frac{2}{1} \rightarrow \frac{1}{2}\)</span>) then changed the division to multiplication! What is the reciprocal? It’s when the old numerator becomes the new denominator and the old denominator becomes the new numerator!</p>
 <p>That’s how division with fractions works too: flip the divisor, the number after the division, and then multiply!</p>
+</div>
 </div>
 <div class="section" id="the-golden-rule-of-division-division-is-the-same-as-multiplying-by-the-reciprocal">
 <h2>The golden rule of division: <em>division is the same as multiplying by the reciprocal</em><a class="headerlink" href="#the-golden-rule-of-division-division-is-the-same-as-multiplying-by-the-reciprocal" title="Permalink to this headline">¶</a></h2>
 <p>For example, what is <span class="math notranslate nohighlight">\(10\div \frac{1}{3}\)</span>? If we apply the rule we just came up with, we find
-<span class="math notranslate nohighlight">\($\hskip-60pt 10\div \frac13 = 10\times\frac31 = 10\times 3 = 30.\)</span>$</p>
+$<span class="math notranslate nohighlight">\(\hskip-60pt 10\div \frac13 = 10\times\frac31 = 10\times 3 = 30.\)</span>$</p>
 <p>Does this make sense? Recall that when we compute <span class="math notranslate nohighlight">\(10\div 2=5\)</span>, what we’re working out is the number of groups of 2 we need to make 10. Similarly, the expression <span class="math notranslate nohighlight">\(10\div \frac13\)</span> is asking how many <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span> pieces can fit into 10 pieces. Since it takes 3 <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span>s to make one and 10 ones to make 10, we need <span class="math notranslate nohighlight">\(3\times 10 = 30\)</span> pieces of size <span class="math notranslate nohighlight">\(\frac{1}{3}\)</span> to make 10, therefore <span class="math notranslate nohighlight">\(10 \div \frac{1}{3} = 10 \times 3 = 30\)</span>.</p>
 <div class="section" id="here-are-the-steps">
 <h3>Here are the steps<a class="headerlink" href="#here-are-the-steps" title="Permalink to this headline">¶</a></h3>
@@ -916,14 +1119,15 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 </div></blockquote>
 </div>
 </div>
+</div>
 <div class="section" id="but-why-does-this-work">
-<h3>But why does this work?<a class="headerlink" href="#but-why-does-this-work" title="Permalink to this headline">¶</a></h3>
+<h2>But why does this work?<a class="headerlink" href="#but-why-does-this-work" title="Permalink to this headline">¶</a></h2>
 <p>Remember that division is the opposite of multiplication: dividing by a number “undoes” multiplication by that same number. This has a special name, division is the <em>inverse operation</em> of multiplication. Here, we are interested in undoing multiplication by fractions. Let’s start with an integer example. Consider the multiplication of 10 by 4: <span class="math notranslate nohighlight">\(10 \times 4 = 40\)</span>. To undo the multiplication by 4, we divide by 4: <span class="math notranslate nohighlight">\(40 \div 4 = 10\)</span> and we get back to the original number! Same goes for fractions: consider the product <span class="math notranslate nohighlight">\(20 \times \frac{1}{2} = 10\)</span>. Dividing by <span class="math notranslate nohighlight">\(\frac12\)</span> should undo the multiplication. Our rule for division says that to divide by <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>, we multiply by <span class="math notranslate nohighlight">\(\frac21 = 2\)</span>: <span class="math notranslate nohighlight">\(10 \div \frac{1}{2} = 10\times 2 = 20\)</span>. Once again, we get back to the original number!</p>
 <p>If dividing by 4 is equivalent to multiplying by <span class="math notranslate nohighlight">\(\frac{1}{4}\)</span>, then it’s true that dividing by <span class="math notranslate nohighlight">\(\frac{1}{4}\)</span> is equivalent to multiplying by 4.</p>
 <p>What if you flip the first number instead of the second? Try it with an example we’ve already solved. Does it change the answer or does the order not matter like multiplication?</p>
 </div>
 <div class="section" id="but-isn-t-division-supposed-to-make-the-number-smaller">
-<h3>But isn’t division supposed to make the number smaller?<a class="headerlink" href="#but-isn-t-division-supposed-to-make-the-number-smaller" title="Permalink to this headline">¶</a></h3>
+<h2>But isn’t division supposed to make the number smaller?<a class="headerlink" href="#but-isn-t-division-supposed-to-make-the-number-smaller" title="Permalink to this headline">¶</a></h2>
 <p>The short answer is, “Yes, but only if the number we’re dividing by is bigger than 1.” Try thinking of division as repeated subtraction: <span class="math notranslate nohighlight">\(2 \div \frac{1}{2}\)</span> is asking how many times can we subtract <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> from 2.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\hskip-60pt \begin{align*}
@@ -936,11 +1140,11 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 <p>This is because we are taking smaller portions out of the original number, so we need more subtractions to get to zero.</p>
 <p>Here’s another example. In this example, we perform division by multiplying by the reciprocal, and we use Method #2, reducing our fractions before carrying out the multiplication.
 <br>
-<span class="math notranslate nohighlight">\($\hskip-36pt\large \frac14\div\frac38 = \frac14\times\frac83 = \frac{1}{_{\color{red}{1}}\,4\!\!\!\!\diagup}\times\frac{8\!\!\!\!\diagup^{\,\,\color{red}{2}}}{3} = \frac23.\)</span>$</p>
+$<span class="math notranslate nohighlight">\(\hskip-36pt\large \frac14\div\frac38 = \frac14\times\frac83 = \frac{1}{_{\color{red}{1}}\,4\!\!\!\!\diagup}\times\frac{8\!\!\!\!\diagup^{\,\,\color{red}{2}}}{3} = \frac23.\)</span>$</p>
 <p>Still need another explanation? Here’s a video that might help:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">YouTubeVideo</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">YouTubeVideo</span>
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;f3ySpxX9oeM&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -955,7 +1159,6 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
     allowfullscreen
 ></iframe>
 </div></div>
-</div>
 </div>
 <div class="section" id="let-s-go-through-an-example">
 <h3>Let’s go through an example:<a class="headerlink" href="#let-s-go-through-an-example" title="Permalink to this headline">¶</a></h3>
@@ -972,7 +1175,7 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 \[\hskip-60pt\frac{2}{3} \div \frac{5}{7} = \frac{2}{3} \times \frac{\color{Blue}{A}}{\color{Green}{B}} = \frac{\color{Purple}{C}}{\color{Red}{D}}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -992,12 +1195,12 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "9f9a51d8b17f4ea880cb2ba35b74aa2d"}
+{"version_major": 2, "version_minor": 0, "model_id": "b9639707c2c64653af536184647de0e0"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;B =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;B =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1017,12 +1220,12 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "4fe1955428aa47898007b829ad888a85"}
+{"version_major": 2, "version_minor": 0, "model_id": "8301f086a2ec4a708065024da4c178e8"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;C =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">C</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;C =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1042,12 +1245,12 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "b98cdfdff4194644814df05605b39388"}
+{"version_major": 2, "version_minor": 0, "model_id": "06dce3396655442aa977b150ebb8603b"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">D</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;D =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;D =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1067,7 +1270,7 @@ $$\hskip-60pt\frac{2}{7} \times \frac{3}{5} = \frac{6}{\color{Red}{a}}$$<div cla
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "c6c0f1f43b1640d58dacd9cb315f42c5"}
+{"version_major": 2, "version_minor": 0, "model_id": "3eb87de310574637b9b9f39efa7d811d"}
 </script></div>
 </div>
 <p>Here’s another fill in the blank question. Please read which numbers need to be filled out correctly. <br>
@@ -1076,7 +1279,7 @@ Note: there is a reduction in this one!</p>
 \[\hskip-60pt\frac{4}{9} \div \frac{5}{3} = \frac{4}{9} \times \frac{3}{5} = \frac{4}{\color{Blue}{E}} \times \frac{\color{Green}{F}}{5} = \frac{\color{Purple}{G}}{\color{Red}{H}}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;E =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;E =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1098,12 +1301,12 @@ Note: there is a reduction in this one!</p>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "adb37a35cc444a3a99fa9b1db6585ccd"}
+{"version_major": 2, "version_minor": 0, "model_id": "dc044694584a4b42b9d5ffb9af4c63a2"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">F</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;F =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">F</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;F =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1125,12 +1328,12 @@ Note: there is a reduction in this one!</p>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "9d152d0d376c44a8bd6a5207aaed4994"}
+{"version_major": 2, "version_minor": 0, "model_id": "840f2b9ddf544cc4a7a1bb9f4dc3f222"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;G =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;G =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1150,12 +1353,12 @@ Note: there is a reduction in this one!</p>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "7cbaf61cde964474a35d2ead354a5a6e"}
+{"version_major": 2, "version_minor": 0, "model_id": "3cc4577dee4d4cedbf993906181a25f6"}
 </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">H</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;H =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">H</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;H =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1175,7 +1378,7 @@ Note: there is a reduction in this one!</p>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "98712838a64f425c823cff5bdb7d9766"}
+{"version_major": 2, "version_minor": 0, "model_id": "bd8e3c1cfb474ebdb66b209449a6799f"}
 </script></div>
 </div>
 </div>
@@ -1226,21 +1429,21 @@ Note: there is a reduction in this one!</p>
 <h3>Let’s do some examples!<a class="headerlink" href="#let-s-do-some-examples" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>Calculate the product <span class="math notranslate nohighlight">\(\color{blue}{2 \dfrac{2}{3} \times 1 \dfrac{3}{4}}\)</span>.<br><br>
-<span class="math notranslate nohighlight">\($\hskip-60pt\begin{align*}
+$<span class="math notranslate nohighlight">\(\hskip-60pt\begin{align*}
 2 \frac{2}{3} \times 1 \frac{3}{4} &amp; = \frac{8}{3} \times \frac{7}{4} \tag{Convert to improper fractions}\\[5pt]
 \frac{8\!\!\!\diagup}{3} \times \frac{7}{4\!\!\!\diagup} &amp; = \frac{2}{3} \times \frac{7}{1} \tag{Reduce numbers}\\[5pt]
 \frac{2}{3} \times \frac{7}{1} &amp; = \frac{14}{3} \tag{Multiply numerators and denomintators}\\[5pt]
 \frac{14}{3} &amp; = 4 \frac{2}{3} \tag{Write as a mixed fraction}
 \end{align*}\)</span>$<br></p></li>
 <li><p>Calculate the quotient <span class="math notranslate nohighlight">\(\color{blue}{2 \dfrac{2}{3} \div 1 \dfrac{3}{4}}\)</span>. (These are the same fractions as the first example.)<br><br>
-<span class="math notranslate nohighlight">\($\hskip-60pt\begin{align*}
+$<span class="math notranslate nohighlight">\(\hskip-60pt\begin{align*}
 2 \frac{2}{3} \div 1 \frac{3}{4} &amp; = \frac{8}{3} \div \frac{7}{4} \tag{Convert to improper fractions}\\[5pt]
 \frac{8}{3} \div \frac{7}{4} &amp; = \frac{8}{3} \times \frac{4}{7} \tag{Invert the divisor}\\[5pt]
 \frac{8}{3} \times \frac{4}{7} &amp; = \frac{32}{21} \tag{Multiply numerators and denomintators}\\[5pt]
 \frac{32}{21} &amp; = 1 \frac{11}{21} \tag{Write as a mixed fraction}
 \end{align*}\)</span>$<br></p></li>
 <li><p>Calculate the quotient <span class="math notranslate nohighlight">\(\color{blue}{3 \frac{1}{2} \div 1 \frac{1}{6}}\)</span>. (This time some reduction is required.)<br><br>
-<span class="math notranslate nohighlight">\($\hskip-60pt\begin{align*}
+$<span class="math notranslate nohighlight">\(\hskip-60pt\begin{align*}
 3 \frac{1}{2} \div 1 \frac{1}{6} &amp; = \frac{7}{2} \div \frac{7}{6} \tag{Convert to improper fractions}\\[5pt]
 \frac{7}{2} \div \frac{7}{6} &amp; = \frac{7}{2} \times \frac{6}{7} \tag{Invert the divisor}\\[5pt]
 \frac{7\!\!\!\diagup}{2} \times \frac{6}{7\!\!\!\diagup} &amp; = \frac{1}{2} \times \frac{6}{1} \tag{Reduce numbers}\\[5pt]
@@ -1259,7 +1462,7 @@ Note: there is a reduction in this one!</p>
 <p><span class="math notranslate nohighlight">\(2\frac{1}{2} \times 1\frac{1}{2}\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">fractions</span> <span class="k">import</span> <span class="n">Fraction</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">fractions</span> <span class="k">import</span> <span class="n">Fraction</span>
 
 <span class="n">answer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;3 3/4&#39;</span><span class="p">,</span> <span class="s1">&#39;2 1/4&#39;</span><span class="p">,</span><span class="s1">&#39;4&#39;</span><span class="p">,</span><span class="s1">&#39;1 2/3&#39;</span><span class="p">],</span>
                               <span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span> <span class="s1">&#39;Answer&#39;</span><span class="p">)</span>
@@ -1282,7 +1485,7 @@ Note: there is a reduction in this one!</p>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "9dd1a7fca0c347cca3f536459ebbed32"}
+{"version_major": 2, "version_minor": 0, "model_id": "36a290aed5a04e68b55009ebbf0cbc23"}
 </script></div>
 </div>
 </div>
@@ -1291,7 +1494,7 @@ Note: there is a reduction in this one!</p>
 <p><span class="math notranslate nohighlight">\(3\frac{1}{3} \div 2\frac{1}{6}\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">answer2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;7 2/9&#39;</span><span class="p">,</span> <span class="s1">&#39;2 1/2&#39;</span><span class="p">,</span><span class="s1">&#39;1 7/13&#39;</span><span class="p">,</span><span class="s1">&#39;3 1/2&#39;</span><span class="p">],</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;7 2/9&#39;</span><span class="p">,</span> <span class="s1">&#39;2 1/2&#39;</span><span class="p">,</span><span class="s1">&#39;1 7/13&#39;</span><span class="p">,</span><span class="s1">&#39;3 1/2&#39;</span><span class="p">],</span>
                               <span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span> <span class="s1">&#39;Answer&#39;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
@@ -1312,7 +1515,7 @@ Note: there is a reduction in this one!</p>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "a80876200142496184267b07aadce9af"}
+{"version_major": 2, "version_minor": 0, "model_id": "126a08517ace41469aed037227f3bfa1"}
 </script></div>
 </div>
 </div>
@@ -1335,10 +1538,29 @@ Note: there is a reduction in this one!</p>
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"f29c1425046042538ed0fcfc73deabc1": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "097fd50c3850443898dde7b733c7a1cc": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "e07802ed7db6486f9ec74e89b5a64e10": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "a =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f29c1425046042538ed0fcfc73deabc1", "step": 1, "style": "IPY_MODEL_097fd50c3850443898dde7b733c7a1cc", "value": 0}}, "f8bbf5f2ad724b9daeb9b1ae6d77d26b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "161456d8dd8942d79d4c73a64fa66bf8": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "d75cbe2182ef4f90a9736d7d01c63bc1": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "b =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f8bbf5f2ad724b9daeb9b1ae6d77d26b", "step": 1, "style": "IPY_MODEL_161456d8dd8942d79d4c73a64fa66bf8", "value": 0}}, "6f8c214c7fb541db97f672c5b54b41cf": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b1524d4eca90403c909381033fb6091d": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "0f880c281e4445659d6d3c00f1a068bb": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "c =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_6f8c214c7fb541db97f672c5b54b41cf", "step": 1, "style": "IPY_MODEL_b1524d4eca90403c909381033fb6091d", "value": 0}}, "66ed12a93f3f4d46afaced27b0638e1f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "fc311b5fdefa4612af91223a05b703d4": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "4f7498f4520e49dbaafa016ba54e5a16": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "d =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_66ed12a93f3f4d46afaced27b0638e1f", "step": 1, "style": "IPY_MODEL_fc311b5fdefa4612af91223a05b703d4", "value": 0}}, "ef6c853236aa44fa8be6bfa9b53f2ea3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "caaa962affd74078965b01212dc6e471": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "9f9a51d8b17f4ea880cb2ba35b74aa2d": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "A =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_ef6c853236aa44fa8be6bfa9b53f2ea3", "step": 1, "style": "IPY_MODEL_caaa962affd74078965b01212dc6e471", "value": 0}}, "e5de0179e06240af94f87d3d145caf60": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0daa4389f85f451eb4ec7229a88cdfb7": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "4fe1955428aa47898007b829ad888a85": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "B =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_e5de0179e06240af94f87d3d145caf60", "step": 1, "style": "IPY_MODEL_0daa4389f85f451eb4ec7229a88cdfb7", "value": 0}}, "d3919ea1956341079e0eb560f3bb4f2d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "57211d3376be476a9037afde6c657c13": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "b98cdfdff4194644814df05605b39388": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "C =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_d3919ea1956341079e0eb560f3bb4f2d", "step": 1, "style": "IPY_MODEL_57211d3376be476a9037afde6c657c13", "value": 0}}, "771ea4f72b3e4a2693e8b9c68e55d0d3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c1c75b753e1c4643a88d4f2bc7f21763": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "c6c0f1f43b1640d58dacd9cb315f42c5": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "D =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_771ea4f72b3e4a2693e8b9c68e55d0d3", "step": 1, "style": "IPY_MODEL_c1c75b753e1c4643a88d4f2bc7f21763", "value": 0}}, "a17929b6d39b487fbc9e14589fc51584": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4bd7924fe0d7480b86d1653441d5540d": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "adb37a35cc444a3a99fa9b1db6585ccd": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "E =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_a17929b6d39b487fbc9e14589fc51584", "step": 1, "style": "IPY_MODEL_4bd7924fe0d7480b86d1653441d5540d", "value": 0}}, "4cef89c71bfc4ba282bf023c5d458958": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "388d188e39bd45b894e1a663891a99f0": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "9d152d0d376c44a8bd6a5207aaed4994": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "F =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_4cef89c71bfc4ba282bf023c5d458958", "step": 1, "style": "IPY_MODEL_388d188e39bd45b894e1a663891a99f0", "value": 0}}, "fe847869313948f6bb780c6aa054bd33": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "76237f3670284bb594fcad1bedc85879": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "7cbaf61cde964474a35d2ead354a5a6e": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "G =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_fe847869313948f6bb780c6aa054bd33", "step": 1, "style": "IPY_MODEL_76237f3670284bb594fcad1bedc85879", "value": 0}}, "1ce4cef339644a28b222c52e25b2e31a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8d3930aabda3470580e753205d787d2f": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "98712838a64f425c823cff5bdb7d9766": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "H =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_1ce4cef339644a28b222c52e25b2e31a", "step": 1, "style": "IPY_MODEL_8d3930aabda3470580e753205d787d2f", "value": 0}}, "5673dadcb252468bbbd9ede0a05ba895": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "80a52b0507e44df29fb65be8aca9dd27": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "9dd1a7fca0c347cca3f536459ebbed32": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["", "3 3/4", "2 1/4", "4", "1 2/3"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Answer", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_5673dadcb252468bbbd9ede0a05ba895", "style": "IPY_MODEL_80a52b0507e44df29fb65be8aca9dd27"}}, "fd14c5a8f1cc4f99aba73392b4768c21": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "19f699be659744b7a705e053bb259b4a": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "a80876200142496184267b07aadce9af": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["", "7 2/9", "2 1/2", "1 7/13", "3 1/2"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Answer", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_fd14c5a8f1cc4f99aba73392b4768c21", "style": "IPY_MODEL_19f699be659744b7a705e053bb259b4a"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"2535909fe1f74995bb3025146f9955a3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3afee57747b0413a8ade7a35e624ff86": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "dd79b6fab2754b60bfab2e1e55716afc": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "a =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_2535909fe1f74995bb3025146f9955a3", "step": 1, "style": "IPY_MODEL_3afee57747b0413a8ade7a35e624ff86", "value": 0}}, "461bba6f5f5c4d33a5fa0b429b1d6f53": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "089794f0f3674cbb8be81c36f09108e0": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "450c85e8afe2479197e665d3ef98b10e": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "b =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_461bba6f5f5c4d33a5fa0b429b1d6f53", "step": 1, "style": "IPY_MODEL_089794f0f3674cbb8be81c36f09108e0", "value": 0}}, "a1193a066ff64042a727f7051ea27091": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "51cfe5bf51a140e0898335c209116ab0": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "85d04f6db56944718f96dbec8460f169": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "c =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_a1193a066ff64042a727f7051ea27091", "step": 1, "style": "IPY_MODEL_51cfe5bf51a140e0898335c209116ab0", "value": 0}}, "4a5265cc3f794fdaaaa7aaa5040c5ba5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a38ee14b02344fde93010a64aa2b5906": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "cdd19f63672d4a64ae08cb413853b4f7": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "d =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_4a5265cc3f794fdaaaa7aaa5040c5ba5", "step": 1, "style": "IPY_MODEL_a38ee14b02344fde93010a64aa2b5906", "value": 0}}, "72be57a845e1467788607ab86141df9d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "831b030a1e21491783736aec564dbcdc": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "b9639707c2c64653af536184647de0e0": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "A =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_72be57a845e1467788607ab86141df9d", "step": 1, "style": "IPY_MODEL_831b030a1e21491783736aec564dbcdc", "value": 0}}, "1a932e007d2c43adba23419a1917fd52": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "544f6fb83908425ea57b0706318bc665": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "8301f086a2ec4a708065024da4c178e8": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "B =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_1a932e007d2c43adba23419a1917fd52", "step": 1, "style": "IPY_MODEL_544f6fb83908425ea57b0706318bc665", "value": 0}}, "cf6095391ac24b068a210beae5d3df21": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1adfba20359e43549a03215dc96268a2": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "06dce3396655442aa977b150ebb8603b": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "C =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_cf6095391ac24b068a210beae5d3df21", "step": 1, "style": "IPY_MODEL_1adfba20359e43549a03215dc96268a2", "value": 0}}, "0a5d87385b684fceb818ac375d722176": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f6203e0b2c30422bb8b2e8b1bd1399fd": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "3eb87de310574637b9b9f39efa7d811d": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "D =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_0a5d87385b684fceb818ac375d722176", "step": 1, "style": "IPY_MODEL_f6203e0b2c30422bb8b2e8b1bd1399fd", "value": 0}}, "0c28b5cdea454e10af459221f757658b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c3f081de4fd64356ad6ae7c31c07c07b": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "dc044694584a4b42b9d5ffb9af4c63a2": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "E =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_0c28b5cdea454e10af459221f757658b", "step": 1, "style": "IPY_MODEL_c3f081de4fd64356ad6ae7c31c07c07b", "value": 0}}, "5b1bd7e947ad4549b8711c40177e77d9": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "88e07a844bc2480b82a27b71e05c334b": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "840f2b9ddf544cc4a7a1bb9f4dc3f222": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "F =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_5b1bd7e947ad4549b8711c40177e77d9", "step": 1, "style": "IPY_MODEL_88e07a844bc2480b82a27b71e05c334b", "value": 0}}, "07c2c56a48de4270b1348ac50a172ba1": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "33df5e3734144885a4c2ff513f9c1dd1": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "3cc4577dee4d4cedbf993906181a25f6": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "G =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_07c2c56a48de4270b1348ac50a172ba1", "step": 1, "style": "IPY_MODEL_33df5e3734144885a4c2ff513f9c1dd1", "value": 0}}, "afb47a7660b14d32b5720fd808c50851": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4eb2d9e041534784a04e21994046a944": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "bd8e3c1cfb474ebdb66b209449a6799f": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "H =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_afb47a7660b14d32b5720fd808c50851", "step": 1, "style": "IPY_MODEL_4eb2d9e041534784a04e21994046a944", "value": 0}}, "1dd061234a3f4e4884cfa779779b3de4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a0610df48f124d4b8a2fbd5ce0169e77": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "36a290aed5a04e68b55009ebbf0cbc23": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["", "3 3/4", "2 1/4", "4", "1 2/3"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Answer", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_1dd061234a3f4e4884cfa779779b3de4", "style": "IPY_MODEL_a0610df48f124d4b8a2fbd5ce0169e77"}}, "79ed0b2d413542da96bbe75e494ca4e7": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c4dea999fdf44f5c97126044c4f5707a": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "126a08517ace41469aed037227f3bfa1": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["", "7 2/9", "2 1/2", "1 7/13", "3 1/2"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "Answer", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_79ed0b2d413542da96bbe75e494ca4e7", "style": "IPY_MODEL_c4dea999fdf44f5c97126044c4f5707a"}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/MultiplicationDivisionFractions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

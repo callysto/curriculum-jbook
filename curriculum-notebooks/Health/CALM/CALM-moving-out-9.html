@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CALM - Moving Out 8" href="CALM-moving-out-8.html" />
@@ -65,71 +73,113 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="active">
-    <a href="../Health.html">Health Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="CALM-moving-out.html">CALM - Moving Out Project</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-1.html">CALM - Moving Out 1</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-2.html">CALM - Moving Out 2</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-3.html">CALM - Moving Out 3</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-4.html">CALM - Moving Out 4</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-5.html">CALM - Moving Out 5</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-6.html">CALM - Moving Out 6</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-7.html">CALM - Moving Out 7</a>
-    </li>
-    <li class="active">
-      <a href="">CALM - Moving Out 9</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-8.html">CALM - Moving Out 8</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Health.html">
+   Health Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out.html">
+     CALM - Moving Out Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-1.html">
+     CALM - Moving Out 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-2.html">
+     CALM - Moving Out 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-3.html">
+     CALM - Moving Out 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-4.html">
+     CALM - Moving Out 4
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-5.html">
+     CALM - Moving Out 5
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-6.html">
+     CALM - Moving Out 6
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-7.html">
+     CALM - Moving Out 7
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     CALM - Moving Out 9
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-8.html">
+     CALM - Moving Out 8
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -201,38 +251,44 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-9.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out-9.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Health/CALM/CALM-moving-out-9.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-9-summary">
+   Part 9 - Summary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflections">
+   Reflections
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#part-9-summary" class="nav-link">Part 9 - Summary</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#reflections" class="nav-link">Reflections</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -250,10 +306,10 @@
 <p>Make sure you have completed all of the activities, and run all of the cells even if they resulted in zero expenses. If you get any errors, read the error messages to determine what you may have missed.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#🎒Run this cell to calculate your total monthly expenses</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#🎒Run this cell to calculate your total monthly expenses</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">qgrid</span>
-<span class="o">%</span><span class="n">store</span> <span class="o">-</span><span class="n">r</span>
+<span class="o">%</span><span class="k">store</span> -r
 <span class="n">totalCostsValues</span> <span class="o">=</span> <span class="p">[</span><span class="n">transportationCost</span><span class="p">,</span> 
                     <span class="n">monthlyFoodCost</span><span class="p">,</span> 
                     <span class="n">monthlyHouseholdCost</span><span class="p">,</span> 
@@ -273,7 +329,7 @@
                             <span class="s1">&#39;Cost Per Month&#39;</span><span class="p">:</span> <span class="n">totalCostsValues</span><span class="p">})</span>
 
 <span class="n">totalCostsPerMonth</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">dfTotalCosts</span><span class="p">[</span><span class="s1">&#39;Cost Per Month&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="o">%</span><span class="n">store</span> <span class="n">totalCostsPerMonth</span> <span class="o">&gt;&gt;</span><span class="n">moving_out_11</span><span class="o">.</span><span class="n">txt</span>
+<span class="o">%</span><span class="k">store</span> totalCostsPerMonth &gt;&gt;moving_out_11.txt
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Your total expenses per month will be about $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">totalCostsPerMonth</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This is about &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.1f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">totalCostsPerMonth</span> <span class="o">/</span> <span class="n">netIncome</span> <span class="o">*</span> <span class="mi">100</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f your net income.&#39;</span><span class="p">)</span>
 <span class="n">dfTotalCosts</span>
@@ -281,7 +337,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Writing &#39;totalCostsPerMonth&#39; (float64) to file &#39;moving_out_11.txt&#39;.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Writing &#39;totalCostsPerMonth&#39; (float64) to file &#39;moving_out_11.txt&#39;.
 Your total expenses per month will be about $57.85.
 This is about 3.4% of your net income.
 </pre></div>
@@ -356,13 +412,13 @@ This is about 3.4% of your net income.
 <p>🎒Next, <code class="docutils literal notranslate"><span class="pre">Run</span></code> the following cell to display your one-time moving out expenses.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">oneTimeExpenses</span> <span class="o">=</span> <span class="n">movingExpenses</span> <span class="o">+</span> <span class="n">fneCost</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">oneTimeExpenses</span> <span class="o">=</span> <span class="n">movingExpenses</span> <span class="o">+</span> <span class="n">fneCost</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">oneTimeExpenses</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>2179
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2179
 </pre></div>
 </div>
 </div>
@@ -370,7 +426,7 @@ This is about 3.4% of your net income.
 <p>🎒Answer the two questions in the next cell, then <code class="docutils literal notranslate"><span class="pre">Run</span></code> it to store your responses.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_11.txt
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_11.txt
 ✏️ 
 1. Can you afford this lifestyle?
 
@@ -381,7 +437,7 @@ This is about 3.4% of your net income.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_11.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_11.txt
 </pre></div>
 </div>
 </div>
@@ -393,7 +449,7 @@ This is about 3.4% of your net income.
 <p>After you have recorded your responses in the next cell, <code class="docutils literal notranslate"><span class="pre">Run</span></code> it to store your answers.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_12.txt
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%writefile moving_out_12.txt
 ✏️
 
 My one-time moving expenses will be about
@@ -421,14 +477,14 @@ The most surprising or eye-opening part of this project was
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_12.txt
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Overwriting moving_out_12.txt
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️ Type your name between the &#39;&#39;, e.g. &#39;Monty Python&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#✏️ Type your name between the &#39;&#39;, e.g. &#39;Monty Python&#39;</span>
 <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 
 <span class="c1">#🎒Run this cell to finish up and check all of your answers</span>
@@ -453,7 +509,636 @@ The most surprising or eye-opening part of this project was
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>✏️
+My name is 
+1. I will move out of my family home at the age of 
+2. My educational path will be 
+3. My occupation or job at that time will be 
+4. I expect to take home $      each month.
+5. I (will / will not) be married sometime in my twenties.
+6. By the age of 30 I will likely have     children.
+7. I (will / will not) buy a home sometime in my twenties.
+8. My home or living accommodations will be described as
+9. I will be living in or near the city/town of 
+10. A vehicle I would like to drive when I am in my twenties is
+11. Other things I own will be
+    1. 
+    2. 
+    3. 
+12. I (will / will not) plan to travel in my twenties.
+13. If I plan to travel, some of my vacations will be
+    1. 
+    2. 
+    3. 
+14. My major accomplishments or bucket list items in my twenties will be
+    1. 
+    2. 
+    3. 
+✏️
+Advantages of an Apartment
+1. 
+2. 
+3. 
+Disadvantages of an Apartment
+1. 
+2. 
+3. 
+
+Advantages of a Townhouse or Duplex
+1. 
+2. 
+3. 
+Disadvantages of a Townhouse or Duplex
+1. 
+2. 
+3. 
+
+Advantages of a Single Detatched House
+1. 
+2. 
+3. 
+Disadvantages of a Single Detatched House
+1. 
+2. 
+3. 
+
+The best choice of housing for a retired couple with no children 
+who do not want to cut grass or do other maintenance is 
+because
+
+The best choice of housing for a middle-aged couple with two small children 
+who what room for children and friends to visit is 
+because
+
+The best choice of housing for a young couple with a small child is 
+because
+
+The best choice of housing for a young, single person who travels frequently for work is 
+because
+
+
+The type of home I picture myself in when I decide to move out is (be descriptive)
+✏️
+
+Link to listing: 
+
+Address: 
+
+Type of accomodation: 
+
+Rent per month: 
+
+Utilities included in rent: 
+
+Damage deposit or security deposit amount: 
+
+Other costs not included in rent (e.g. parking, coin laundry): 
+
+Summary of other important information: 
+✏️
+Advantages of living on my own are:
+1. 
+2. 
+3. 
+    
+Disadvantages of living on my own are:
+1. 
+2. 
+3. 
+    
+Advantages of living with a roommate are:
+1. 
+2. 
+3. 
+
+Disadvantages of living with a roommate are:
+1. 
+2. 
+3. 
+
+I have decided to live (on my own / with a roommate) because
+
+
+Essential characteristics of a roommate are:
+1. 
+2. 
+3. 
+4. 
+✏️
+I have decided to use the following service providers (remove any lines that are not applicable)
+
+Natural Gas (Heat): 
+
+Electricity: 
+
+Tenant Insurance: 
+
+Mobile Phone: 
+
+Landline: 
+
+Internet:  
+
+TV, Video, Music Subscriptions: 
+✏️
+Link to vehicle advertisement:
+
+I chose this vehicle because: 
+
+The total price of this vehicle is: 
+
+Year: 
+
+Make: 
+
+Model: 
+
+Car insurance will cost about $   per month.
+
+To register a car in Alberta costs $
+
+Fuel is currently $  per litre.
+✏️
+
+My estimated vehicle costs per month are $
+
+An adult monthly bus pass costs: $    in (Sherwood Park / Edmonton / myCity).
+or
+I will be attending post-secondary, so U-Pass costs: $    per semester.
+
+
+I have decided that for transportation I will 
+because
+✏️
+
+|Day|Breakfast|Lunch|Dinner|
+|-|-|-|-|
+|Monday| meal | meal | meal |
+|Tuesday| meal | meal | meal |
+|Wednesday| meal | meal | meal |
+|Thursday| meal | meal | meal |
+|Friday| meal | meal | meal |
+|Saturday| meal | meal | meal |
+|Sunday| meal | meal | meal |
+✏️
+Thinking about gifts and entertainment, 
+✏️
+I (am / am not) planning to attend any type of post-secondary education.
+
+I (will / will not) be paying for my own education
+
+I (have / have not) looked into bursaries, grants, and scholarships.
+
+During my post-secondary education, I will be living (at home / on my own).
+✏️ 
+1. Can you afford this lifestyle?
+
+2. If not, what do you think you can change to have a balanced budget?
+2. If yes, what do you plan to do with any extra money you might have?
+
+✏️
+
+My one-time moving expenses will be about
+
+
+My total expense per month will be about
+
+
+
+Five things I learned from this project are
+
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+
+The most surprising or eye-opening part of this project was 
+✏️
+My name is 
+1. I will move out of my family home at the age of 
+2. My educational path will be 
+3. My occupation or job at that time will be 
+4. I expect to take home $      each month.
+5. I (will / will not) be married sometime in my twenties.
+6. By the age of 30 I will likely have     children.
+7. I (will / will not) buy a home sometime in my twenties.
+8. My home or living accommodations will be described as
+9. I will be living in or near the city/town of 
+10. A vehicle I would like to drive when I am in my twenties is
+11. Other things I own will be
+    1. 
+    2. 
+    3. 
+12. I (will / will not) plan to travel in my twenties.
+13. If I plan to travel, some of my vacations will be
+    1. 
+    2. 
+    3. 
+14. My major accomplishments or bucket list items in my twenties will be
+    1. 
+    2. 
+    3. 
+✏️
+Advantages of an Apartment
+1. 
+2. 
+3. 
+Disadvantages of an Apartment
+1. 
+2. 
+3. 
+
+Advantages of a Townhouse or Duplex
+1. 
+2. 
+3. 
+Disadvantages of a Townhouse or Duplex
+1. 
+2. 
+3. 
+
+Advantages of a Single Detatched House
+1. 
+2. 
+3. 
+Disadvantages of a Single Detatched House
+1. 
+2. 
+3. 
+
+The best choice of housing for a retired couple with no children 
+who do not want to cut grass or do other maintenance is 
+because
+
+The best choice of housing for a middle-aged couple with two small children 
+who what room for children and friends to visit is 
+because
+
+The best choice of housing for a young couple with a small child is 
+because
+
+The best choice of housing for a young, single person who travels frequently for work is 
+because
+
+
+The type of home I picture myself in when I decide to move out is (be descriptive)
+✏️
+
+Link to listing: 
+
+Address: 
+
+Type of accomodation: 
+
+Rent per month: 
+
+Utilities included in rent: 
+
+Damage deposit or security deposit amount: 
+
+Other costs not included in rent (e.g. parking, coin laundry): 
+
+Summary of other important information: 
+✏️
+Advantages of living on my own are:
+1. 
+2. 
+3. 
+    
+Disadvantages of living on my own are:
+1. 
+2. 
+3. 
+    
+Advantages of living with a roommate are:
+1. 
+2. 
+3. 
+
+Disadvantages of living with a roommate are:
+1. 
+2. 
+3. 
+
+I have decided to live (on my own / with a roommate) because
+
+
+Essential characteristics of a roommate are:
+1. 
+2. 
+3. 
+4. 
+✏️
+I have decided to use the following service providers (remove any lines that are not applicable)
+
+Natural Gas (Heat): 
+
+Electricity: 
+
+Tenant Insurance: 
+
+Mobile Phone: 
+
+Landline: 
+
+Internet:  
+
+TV, Video, Music Subscriptions: 
+✏️
+Link to vehicle advertisement:
+
+I chose this vehicle because: 
+
+The total price of this vehicle is: 
+
+Year: 
+
+Make: 
+
+Model: 
+
+Car insurance will cost about $   per month.
+
+To register a car in Alberta costs $
+
+Fuel is currently $  per litre.
+✏️
+
+My estimated vehicle costs per month are $
+
+An adult monthly bus pass costs: $    in (Sherwood Park / Edmonton / myCity).
+or
+I will be attending post-secondary, so U-Pass costs: $    per semester.
+
+
+I have decided that for transportation I will 
+because
+✏️
+
+|Day|Breakfast|Lunch|Dinner|
+|-|-|-|-|
+|Monday| meal | meal | meal |
+|Tuesday| meal | meal | meal |
+|Wednesday| meal | meal | meal |
+|Thursday| meal | meal | meal |
+|Friday| meal | meal | meal |
+|Saturday| meal | meal | meal |
+|Sunday| meal | meal | meal |
+✏️
+Thinking about gifts and entertainment, 
+✏️
+I (am / am not) planning to attend any type of post-secondary education.
+
+I (will / will not) be paying for my own education
+
+I (have / have not) looked into bursaries, grants, and scholarships.
+
+During my post-secondary education, I will be living (at home / on my own).
+✏️ 
+1. Can you afford this lifestyle?
+
+2. If not, what do you think you can change to have a balanced budget?
+2. If yes, what do you plan to do with any extra money you might have?
+
+✏️
+
+My one-time moving expenses will be about
+
+
+My total expense per month will be about
+
+
+
+Five things I learned from this project are
+
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+
+The most surprising or eye-opening part of this project was 
+✏️
+My name is 
+1. I will move out of my family home at the age of 
+2. My educational path will be 
+3. My occupation or job at that time will be 
+4. I expect to take home $      each month.
+5. I (will / will not) be married sometime in my twenties.
+6. By the age of 30 I will likely have     children.
+7. I (will / will not) buy a home sometime in my twenties.
+8. My home or living accommodations will be described as
+9. I will be living in or near the city/town of 
+10. A vehicle I would like to drive when I am in my twenties is
+11. Other things I own will be
+    1. 
+    2. 
+    3. 
+12. I (will / will not) plan to travel in my twenties.
+13. If I plan to travel, some of my vacations will be
+    1. 
+    2. 
+    3. 
+14. My major accomplishments or bucket list items in my twenties will be
+    1. 
+    2. 
+    3. 
+✏️
+Advantages of an Apartment
+1. 
+2. 
+3. 
+Disadvantages of an Apartment
+1. 
+2. 
+3. 
+
+Advantages of a Townhouse or Duplex
+1. 
+2. 
+3. 
+Disadvantages of a Townhouse or Duplex
+1. 
+2. 
+3. 
+
+Advantages of a Single Detatched House
+1. 
+2. 
+3. 
+Disadvantages of a Single Detatched House
+1. 
+2. 
+3. 
+
+The best choice of housing for a retired couple with no children 
+who do not want to cut grass or do other maintenance is 
+because
+
+The best choice of housing for a middle-aged couple with two small children 
+who what room for children and friends to visit is 
+because
+
+The best choice of housing for a young couple with a small child is 
+because
+
+The best choice of housing for a young, single person who travels frequently for work is 
+because
+
+
+The type of home I picture myself in when I decide to move out is (be descriptive)
+✏️
+
+Link to listing: 
+
+Address: 
+
+Type of accomodation: 
+
+Rent per month: 
+
+Utilities included in rent: 
+
+Damage deposit or security deposit amount: 
+
+Other costs not included in rent (e.g. parking, coin laundry): 
+
+Summary of other important information: 
+✏️
+Advantages of living on my own are:
+1. 
+2. 
+3. 
+    
+Disadvantages of living on my own are:
+1. 
+2. 
+3. 
+    
+Advantages of living with a roommate are:
+1. 
+2. 
+3. 
+
+Disadvantages of living with a roommate are:
+1. 
+2. 
+3. 
+
+I have decided to live (on my own / with a roommate) because
+
+
+Essential characteristics of a roommate are:
+1. 
+2. 
+3. 
+4. 
+✏️
+I have decided to use the following service providers (remove any lines that are not applicable)
+
+Natural Gas (Heat): 
+
+Electricity: 
+
+Tenant Insurance: 
+
+Mobile Phone: 
+
+Landline: 
+
+Internet:  
+
+TV, Video, Music Subscriptions: 
+✏️
+Link to vehicle advertisement:
+
+I chose this vehicle because: 
+
+The total price of this vehicle is: 
+
+Year: 
+
+Make: 
+
+Model: 
+
+Car insurance will cost about $   per month.
+
+To register a car in Alberta costs $
+
+Fuel is currently $  per litre.
+✏️
+
+My estimated vehicle costs per month are $
+
+An adult monthly bus pass costs: $    in (Sherwood Park / Edmonton / myCity).
+or
+I will be attending post-secondary, so U-Pass costs: $    per semester.
+
+
+I have decided that for transportation I will 
+because
+✏️
+
+|Day|Breakfast|Lunch|Dinner|
+|-|-|-|-|
+|Monday| meal | meal | meal |
+|Tuesday| meal | meal | meal |
+|Wednesday| meal | meal | meal |
+|Thursday| meal | meal | meal |
+|Friday| meal | meal | meal |
+|Saturday| meal | meal | meal |
+|Sunday| meal | meal | meal |
+✏️
+Thinking about gifts and entertainment, 
+✏️
+I (am / am not) planning to attend any type of post-secondary education.
+
+I (will / will not) be paying for my own education
+
+I (have / have not) looked into bursaries, grants, and scholarships.
+
+During my post-secondary education, I will be living (at home / on my own).
+✏️ 
+1. Can you afford this lifestyle?
+
+2. If not, what do you think you can change to have a balanced budget?
+2. If yes, what do you plan to do with any extra money you might have?
+
+✏️
+
+My one-time moving expenses will be about
+
+
+My total expense per month will be about
+
+
+
+Five things I learned from this project are
+
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+
+The most surprising or eye-opening part of this project was 
 ✏️
 My name is 
 1. I will move out of my family home at the age of 
@@ -1084,7 +1769,6 @@ Five things I learned from this project are
 
 
 The most surprising or eye-opening part of this project was 
-
 </pre></div>
 </div>
 </div>
@@ -1095,6 +1779,25 @@ The most surprising or eye-opening part of this project was
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Health/CALM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

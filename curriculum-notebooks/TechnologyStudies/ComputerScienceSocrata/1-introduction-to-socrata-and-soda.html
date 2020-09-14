@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Plotly - introduction" href="2-introduction-to-plotly.html" />
@@ -65,65 +73,103 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="active">
-    <a href="../Technology.html">Technology Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="active">
-      <a href="">Socrata and Soda</a>
-    </li>
-    <li class="">
-      <a href="2-introduction-to-plotly.html">Plotly - introduction</a>
-    </li>
-    <li class="">
-      <a href="3-joining-datasets.html">Joining Datasets</a>
-    </li>
-    <li class="">
-      <a href="4-filtering-datasets.html">Filtering Datasets</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToDataStructures/introduction-to-data-structures.html">Lists and Dictionaries in Python</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToPython/introduction-to-python.html">Python - introduction</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToPython/introduction-to-python-classes.html">Python Classes</a>
-    </li>
-    <li class="">
-      <a href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">Loops and Iteration in Python</a>
-    </li>
-  </ul>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Technology.html">
+   Technology Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Socrata and Soda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2-introduction-to-plotly.html">
+     Plotly - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3-joining-datasets.html">
+     Joining Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="4-filtering-datasets.html">
+     Filtering Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python.html">
+     Python - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python-classes.html">
+     Python - Classes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">
+     Python - Loops and Iteration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToDataStructures/introduction-to-data-structures.html">
+     Python - Lists and Dictionaries
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -195,140 +241,168 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/1-introduction-to-socrata-and-soda.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/1-introduction-to-socrata-and-soda.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/1-introduction-to-socrata-and-soda.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
-
-<nav id="bd-toc-nav">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-soda-api">
+   The SODA API
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-city-of-calgary-datasets">
+   The City of Calgary datasets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#queries-in-soda">
+   Queries in SODA
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-tools">
+   Python tools
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-terminology-and-a-helper-function">
+   Some terminology and a helper function
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ready-lets-query-some-data">
+   READY? Lets query some data!
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simple-query">
+     simple query
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#the-soda-api" class="nav-link">The SODA API</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#the-city-of-calgary-datasets" class="nav-link">The City of Calgary datasets</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#queries-in-soda" class="nav-link">Queries in SODA</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#python-tools" class="nav-link">Python tools</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#some-terminology-and-a-helper-function" class="nav-link">Some terminology and a helper function</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#ready-lets-query-some-data" class="nav-link">READY? Lets query some data!</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#simple-query" class="nav-link">simple query</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#note" class="nav-link">Note:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#limiting-the-amount-of-data" class="nav-link">limiting the amount of data</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id1" class="nav-link">Note:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#paging-through-data" class="nav-link">paging through data</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id2" class="nav-link">Note:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#select-a-limited-number-of-fields" class="nav-link">select a limited number of fields</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#providing-an-alias-for-a-field" class="nav-link">providing an alias for a field</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#data-transform-functions" class="nav-link">data transform functions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Note:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#where-clause" class="nav-link">WHERE clause</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">Note:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#order-by-clause" class="nav-link">ORDER BY clause</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#group-by-clause" class="nav-link">GROUP BY clause</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id5" class="nav-link">Note:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id6" class="nav-link">Note:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#an-important-distinction" class="nav-link">AN IMPORTANT DISTINCTION</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#note">
+       Note:
+      </a>
+     </li>
     </ul>
-</nav>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#limiting-the-amount-of-data">
+     limiting the amount of data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#paging-through-data">
+     paging through data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#select-a-limited-number-of-fields">
+     select a limited number of fields
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#providing-an-alias-for-a-field">
+     providing an alias for a field
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-transform-functions">
+     data transform functions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#where-clause">
+     WHERE clause
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#order-by-clause">
+     ORDER BY clause
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#group-by-clause">
+     GROUP BY clause
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Note:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#an-important-distinction">
+     AN IMPORTANT DISTINCTION
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
 
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -371,7 +445,7 @@
 <p>The beauty of using Jupyter is that these tools are pre-installed! So, no messing with downloading and installing. We simply import them :-)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">io</span> <span class="k">as</span> <span class="nn">io</span>
 </pre></div>
@@ -389,7 +463,7 @@
 <p><strong>returns</strong>: pandas dataframe</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
     <span class="n">session</span> <span class="o">=</span> <span class="n">rq</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
     <span class="n">results</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span> <span class="o">+</span> <span class="n">uuid</span> <span class="o">+</span><span class="s2">&quot;.csv?$query=&quot;</span> <span class="o">+</span> <span class="n">query</span><span class="p">)</span>
     <span class="n">dataframe</span> <span class="o">=</span>  <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)))</span>
@@ -412,7 +486,7 @@
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">domain</span> <span class="o">=</span> <span class="s2">&quot;https://data.calgary.ca/resource/&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">domain</span> <span class="o">=</span> <span class="s2">&quot;https://data.calgary.ca/resource/&quot;</span>
 
 <span class="n">uuid_river_levels</span> <span class="o">=</span> <span class="s2">&quot;5fdg-ifgr&quot;</span>
 <span class="n">uuid_school_enrollment</span> <span class="o">=</span> <span class="s2">&quot;9qye-mibh&quot;</span>
@@ -422,7 +496,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT *</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
@@ -463,46 +537,46 @@
       <td>0</td>
       <td>05BJ010</td>
       <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T18:30:00.000Z</td>
-      <td>3.884</td>
-      <td>12.433</td>
-      <td>05BJ010-2020-07-22 18:30:00</td>
+      <td>2020-09-13T18:30:00.000Z</td>
+      <td>3.579</td>
+      <td>5.817</td>
+      <td>05BJ010-2020-09-13 18:30:00</td>
     </tr>
     <tr>
       <td>1</td>
       <td>05BJ010</td>
       <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T18:25:00.000Z</td>
-      <td>3.885</td>
-      <td>12.460</td>
-      <td>05BJ010-2020-07-22 18:25:00</td>
+      <td>2020-09-13T18:25:00.000Z</td>
+      <td>3.579</td>
+      <td>5.817</td>
+      <td>05BJ010-2020-09-13 18:25:00</td>
     </tr>
     <tr>
       <td>2</td>
       <td>05BJ010</td>
       <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T18:20:00.000Z</td>
-      <td>3.885</td>
-      <td>12.460</td>
-      <td>05BJ010-2020-07-22 18:20:00</td>
+      <td>2020-09-13T18:20:00.000Z</td>
+      <td>3.579</td>
+      <td>5.817</td>
+      <td>05BJ010-2020-09-13 18:20:00</td>
     </tr>
     <tr>
       <td>3</td>
       <td>05BJ008</td>
       <td>Glenmore Reservoir at Calgary</td>
-      <td>2020-07-22T18:15:00.000Z</td>
-      <td>1076.801</td>
+      <td>2020-09-13T18:15:00.000Z</td>
+      <td>1076.623</td>
       <td>NaN</td>
-      <td>05BJ008-2020-07-22 18:15:00</td>
+      <td>05BJ008-2020-09-13 18:15:00</td>
     </tr>
     <tr>
       <td>4</td>
       <td>05BJ010</td>
       <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T18:15:00.000Z</td>
-      <td>3.885</td>
-      <td>12.460</td>
-      <td>05BJ010-2020-07-22 18:15:00</td>
+      <td>2020-09-13T18:15:00.000Z</td>
+      <td>3.578</td>
+      <td>5.800</td>
+      <td>05BJ010-2020-09-13 18:15:00</td>
     </tr>
     <tr>
       <td>...</td>
@@ -515,48 +589,48 @@
     </tr>
     <tr>
       <td>995</td>
-      <td>05BH004</td>
-      <td>Bow River at Calgary</td>
-      <td>2020-07-22T06:20:00.000Z</td>
-      <td>1.478</td>
-      <td>168.152</td>
-      <td>05BH004-2020-07-22 06:20:00</td>
+      <td>05BH014</td>
+      <td>Nose Creek above Airdrie</td>
+      <td>2020-09-13T06:20:00.000Z</td>
+      <td>8.640</td>
+      <td>0.040</td>
+      <td>05BH014-2020-09-13 06:20:00</td>
     </tr>
     <tr>
       <td>996</td>
-      <td>05BH014</td>
-      <td>Nose Creek above Airdrie</td>
-      <td>2020-07-22T06:20:00.000Z</td>
-      <td>9.205</td>
-      <td>0.489</td>
-      <td>05BH014-2020-07-22 06:20:00</td>
+      <td>05BH015</td>
+      <td>Jumpingpound Creek at Township Road 252</td>
+      <td>2020-09-13T06:20:00.000Z</td>
+      <td>2.478</td>
+      <td>0.552</td>
+      <td>05BH015-2020-09-13 06:20:00</td>
     </tr>
     <tr>
       <td>997</td>
-      <td>05BJ004</td>
-      <td>Elbow River at Bragg Creek</td>
-      <td>2020-07-22T06:20:00.000Z</td>
-      <td>1.546</td>
-      <td>13.923</td>
-      <td>05BJ004-2020-07-22 06:20:00</td>
+      <td>05BH004</td>
+      <td>Bow River at Calgary</td>
+      <td>2020-09-13T06:20:00.000Z</td>
+      <td>1.100</td>
+      <td>76.544</td>
+      <td>05BH004-2020-09-13 06:20:00</td>
     </tr>
     <tr>
       <td>998</td>
-      <td>05BJ001</td>
-      <td>Elbow River below Glenmore Dam</td>
-      <td>2020-07-22T06:20:00.000Z</td>
-      <td>0.844</td>
-      <td>10.440</td>
-      <td>05BJ001-2020-07-22 06:20:00</td>
+      <td>05BJ004</td>
+      <td>Elbow River at Bragg Creek</td>
+      <td>2020-09-13T06:20:00.000Z</td>
+      <td>1.376</td>
+      <td>5.917</td>
+      <td>05BJ004-2020-09-13 06:20:00</td>
     </tr>
     <tr>
       <td>999</td>
       <td>05BH005</td>
       <td>Bow River near Cochrane</td>
-      <td>2020-07-22T06:20:00.000Z</td>
-      <td>16.770</td>
-      <td>164.178</td>
-      <td>05BH005-2020-07-22 06:20:00</td>
+      <td>2020-09-13T06:20:00.000Z</td>
+      <td>16.263</td>
+      <td>52.300</td>
+      <td>05BH005-2020-09-13 06:20:00</td>
     </tr>
   </tbody>
 </table>
@@ -575,7 +649,7 @@
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    *</span>
 <span class="s2">LIMIT</span>
@@ -619,46 +693,46 @@
       <td>0</td>
       <td>05BJ010</td>
       <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T18:30:00.000Z</td>
-      <td>3.884</td>
-      <td>12.433</td>
-      <td>05BJ010-2020-07-22 18:30:00</td>
+      <td>2020-09-13T18:30:00.000Z</td>
+      <td>3.579</td>
+      <td>5.817</td>
+      <td>05BJ010-2020-09-13 18:30:00</td>
     </tr>
     <tr>
       <td>1</td>
       <td>05BJ010</td>
       <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T18:25:00.000Z</td>
-      <td>3.885</td>
-      <td>12.460</td>
-      <td>05BJ010-2020-07-22 18:25:00</td>
+      <td>2020-09-13T18:25:00.000Z</td>
+      <td>3.579</td>
+      <td>5.817</td>
+      <td>05BJ010-2020-09-13 18:25:00</td>
     </tr>
     <tr>
       <td>2</td>
       <td>05BJ010</td>
       <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T18:20:00.000Z</td>
-      <td>3.885</td>
-      <td>12.460</td>
-      <td>05BJ010-2020-07-22 18:20:00</td>
+      <td>2020-09-13T18:20:00.000Z</td>
+      <td>3.579</td>
+      <td>5.817</td>
+      <td>05BJ010-2020-09-13 18:20:00</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>05BJ010</td>
-      <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T18:15:00.000Z</td>
-      <td>3.885</td>
-      <td>12.460</td>
-      <td>05BJ010-2020-07-22 18:15:00</td>
+      <td>05BJ008</td>
+      <td>Glenmore Reservoir at Calgary</td>
+      <td>2020-09-13T18:15:00.000Z</td>
+      <td>1076.623</td>
+      <td>NaN</td>
+      <td>05BJ008-2020-09-13 18:15:00</td>
     </tr>
     <tr>
       <td>4</td>
-      <td>05BJ008</td>
-      <td>Glenmore Reservoir at Calgary</td>
-      <td>2020-07-22T18:15:00.000Z</td>
-      <td>1076.801</td>
-      <td>NaN</td>
-      <td>05BJ008-2020-07-22 18:15:00</td>
+      <td>05BJ010</td>
+      <td>Elbow River at Sarcee Bridge</td>
+      <td>2020-09-13T18:15:00.000Z</td>
+      <td>3.578</td>
+      <td>5.800</td>
+      <td>05BJ010-2020-09-13 18:15:00</td>
     </tr>
     <tr>
       <td>...</td>
@@ -671,48 +745,48 @@
     </tr>
     <tr>
       <td>95</td>
-      <td>05BH004</td>
-      <td>Bow River at Calgary</td>
-      <td>2020-07-22T16:50:00.000Z</td>
-      <td>1.554</td>
-      <td>188.134</td>
-      <td>05BH004-2020-07-22 16:50:00</td>
+      <td>05BH014</td>
+      <td>Nose Creek above Airdrie</td>
+      <td>2020-09-13T16:50:00.000Z</td>
+      <td>8.640</td>
+      <td>0.040</td>
+      <td>05BH014-2020-09-13 16:50:00</td>
     </tr>
     <tr>
       <td>96</td>
-      <td>05BJ010</td>
-      <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T16:50:00.000Z</td>
-      <td>3.886</td>
-      <td>12.487</td>
-      <td>05BJ010-2020-07-22 16:50:00</td>
+      <td>05BH015</td>
+      <td>Jumpingpound Creek at Township Road 252</td>
+      <td>2020-09-13T16:45:00.000Z</td>
+      <td>2.478</td>
+      <td>0.552</td>
+      <td>05BH015-2020-09-13 16:45:00</td>
     </tr>
     <tr>
       <td>97</td>
-      <td>05BH014</td>
-      <td>Nose Creek above Airdrie</td>
-      <td>2020-07-22T16:45:00.000Z</td>
-      <td>9.199</td>
-      <td>0.461</td>
-      <td>05BH014-2020-07-22 16:45:00</td>
+      <td>05BH004</td>
+      <td>Bow River at Calgary</td>
+      <td>2020-09-13T16:45:00.000Z</td>
+      <td>1.097</td>
+      <td>76.022</td>
+      <td>05BH004-2020-09-13 16:45:00</td>
     </tr>
     <tr>
       <td>98</td>
-      <td>05BJ001</td>
-      <td>Elbow River below Glenmore Dam</td>
-      <td>2020-07-22T16:45:00.000Z</td>
-      <td>0.840</td>
-      <td>10.320</td>
-      <td>05BJ001-2020-07-22 16:45:00</td>
+      <td>05BJ010</td>
+      <td>Elbow River at Sarcee Bridge</td>
+      <td>2020-09-13T16:45:00.000Z</td>
+      <td>3.579</td>
+      <td>5.817</td>
+      <td>05BJ010-2020-09-13 16:45:00</td>
     </tr>
     <tr>
       <td>99</td>
-      <td>05BJ008</td>
-      <td>Glenmore Reservoir at Calgary</td>
-      <td>2020-07-22T16:45:00.000Z</td>
-      <td>1076.802</td>
-      <td>NaN</td>
-      <td>05BJ008-2020-07-22 16:45:00</td>
+      <td>05BJ001</td>
+      <td>Elbow River below Glenmore Dam</td>
+      <td>2020-09-13T16:45:00.000Z</td>
+      <td>0.607</td>
+      <td>4.158</td>
+      <td>05BJ001-2020-09-13 16:45:00</td>
     </tr>
   </tbody>
 </table>
@@ -731,7 +805,7 @@
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    *</span>
 <span class="s2">LIMIT</span>
@@ -775,48 +849,48 @@
   <tbody>
     <tr>
       <td>0</td>
-      <td>05BH014</td>
-      <td>Nose Creek above Airdrie</td>
-      <td>2020-07-22T16:45:00.000Z</td>
-      <td>9.199</td>
-      <td>0.461</td>
-      <td>05BH014-2020-07-22 16:45:00</td>
+      <td>05BJ004</td>
+      <td>Elbow River at Bragg Creek</td>
+      <td>2020-09-13T16:45:00.000Z</td>
+      <td>1.376</td>
+      <td>5.917</td>
+      <td>05BJ004-2020-09-13 16:45:00</td>
     </tr>
     <tr>
       <td>1</td>
-      <td>05BH004</td>
-      <td>Bow River at Calgary</td>
-      <td>2020-07-22T16:45:00.000Z</td>
-      <td>1.549</td>
-      <td>186.788</td>
-      <td>05BH004-2020-07-22 16:45:00</td>
+      <td>05BH014</td>
+      <td>Nose Creek above Airdrie</td>
+      <td>2020-09-13T16:45:00.000Z</td>
+      <td>8.640</td>
+      <td>0.040</td>
+      <td>05BH014-2020-09-13 16:45:00</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>05BJ001</td>
-      <td>Elbow River below Glenmore Dam</td>
-      <td>2020-07-22T16:45:00.000Z</td>
-      <td>0.840</td>
-      <td>10.320</td>
-      <td>05BJ001-2020-07-22 16:45:00</td>
+      <td>05BJ008</td>
+      <td>Glenmore Reservoir at Calgary</td>
+      <td>2020-09-13T16:45:00.000Z</td>
+      <td>1076.623</td>
+      <td>NaN</td>
+      <td>05BJ008-2020-09-13 16:45:00</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>05BJ008</td>
-      <td>Glenmore Reservoir at Calgary</td>
-      <td>2020-07-22T16:45:00.000Z</td>
-      <td>1076.802</td>
-      <td>NaN</td>
-      <td>05BJ008-2020-07-22 16:45:00</td>
+      <td>05BH015</td>
+      <td>Jumpingpound Creek at Township Road 252</td>
+      <td>2020-09-13T16:40:00.000Z</td>
+      <td>2.478</td>
+      <td>0.552</td>
+      <td>05BH015-2020-09-13 16:40:00</td>
     </tr>
     <tr>
       <td>4</td>
-      <td>05BJ001</td>
-      <td>Elbow River below Glenmore Dam</td>
-      <td>2020-07-22T16:40:00.000Z</td>
-      <td>0.839</td>
-      <td>10.290</td>
-      <td>05BJ001-2020-07-22 16:40:00</td>
+      <td>05BH004</td>
+      <td>Bow River at Calgary</td>
+      <td>2020-09-13T16:40:00.000Z</td>
+      <td>1.098</td>
+      <td>76.196</td>
+      <td>05BH004-2020-09-13 16:40:00</td>
     </tr>
     <tr>
       <td>...</td>
@@ -831,46 +905,46 @@
       <td>95</td>
       <td>05BH005</td>
       <td>Bow River near Cochrane</td>
-      <td>2020-07-22T15:35:00.000Z</td>
-      <td>16.869</td>
-      <td>193.322</td>
-      <td>05BH005-2020-07-22 15:35:00</td>
+      <td>2020-09-13T15:35:00.000Z</td>
+      <td>16.737</td>
+      <td>149.695</td>
+      <td>05BH005-2020-09-13 15:35:00</td>
     </tr>
     <tr>
       <td>96</td>
       <td>05BJ001</td>
       <td>Elbow River below Glenmore Dam</td>
-      <td>2020-07-22T15:35:00.000Z</td>
-      <td>0.832</td>
-      <td>10.084</td>
-      <td>05BJ001-2020-07-22 15:35:00</td>
+      <td>2020-09-13T15:35:00.000Z</td>
+      <td>0.615</td>
+      <td>4.302</td>
+      <td>05BJ001-2020-09-13 15:35:00</td>
     </tr>
     <tr>
       <td>97</td>
-      <td>05BJ010</td>
-      <td>Elbow River at Sarcee Bridge</td>
-      <td>2020-07-22T15:35:00.000Z</td>
-      <td>3.887</td>
-      <td>12.514</td>
-      <td>05BJ010-2020-07-22 15:35:00</td>
+      <td>05BJ004</td>
+      <td>Elbow River at Bragg Creek</td>
+      <td>2020-09-13T15:35:00.000Z</td>
+      <td>1.375</td>
+      <td>5.887</td>
+      <td>05BJ004-2020-09-13 15:35:00</td>
     </tr>
     <tr>
       <td>98</td>
-      <td>05BJ004</td>
-      <td>Elbow River at Bragg Creek</td>
-      <td>2020-07-22T15:35:00.000Z</td>
-      <td>1.550</td>
-      <td>14.077</td>
-      <td>05BJ004-2020-07-22 15:35:00</td>
+      <td>05BH014</td>
+      <td>Nose Creek above Airdrie</td>
+      <td>2020-09-13T15:35:00.000Z</td>
+      <td>8.642</td>
+      <td>0.043</td>
+      <td>05BH014-2020-09-13 15:35:00</td>
     </tr>
     <tr>
       <td>99</td>
-      <td>05BH004</td>
-      <td>Bow River at Calgary</td>
-      <td>2020-07-22T15:35:00.000Z</td>
-      <td>1.480</td>
-      <td>168.665</td>
-      <td>05BH004-2020-07-22 15:35:00</td>
+      <td>05BJ010</td>
+      <td>Elbow River at Sarcee Bridge</td>
+      <td>2020-09-13T15:35:00.000Z</td>
+      <td>3.580</td>
+      <td>5.833</td>
+      <td>05BJ010-2020-09-13 15:35:00</td>
     </tr>
   </tbody>
 </table>
@@ -884,7 +958,7 @@
 <p>This can dramatically reduce the amount of data returned (as the dataframe is like a table, so rows x columns).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    station_number,</span>
 <span class="s2">    timestamp,</span>
@@ -1000,7 +1074,7 @@
 <p>You can rename a field with a custom name. This will be useful later when we calculate our own fields; for now, you can see the syntax is simple. Observe that the dataframe has the desired field names.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    station_number as station,</span>
 <span class="s2">    timestamp as time,</span>
@@ -1042,32 +1116,32 @@
     <tr>
       <td>0</td>
       <td>05BH005</td>
+      <td>2019-11-10T10:40:00.000Z</td>
+      <td>16.306</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>05BH005</td>
+      <td>2019-11-10T10:45:00.000Z</td>
+      <td>16.305</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>05BH005</td>
       <td>2019-11-10T10:50:00.000Z</td>
       <td>16.309</td>
     </tr>
     <tr>
-      <td>1</td>
+      <td>3</td>
       <td>05BH005</td>
       <td>2019-11-10T10:55:00.000Z</td>
       <td>16.307</td>
     </tr>
     <tr>
-      <td>2</td>
+      <td>4</td>
       <td>05BH005</td>
       <td>2019-11-10T11:00:00.000Z</td>
       <td>16.308</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>05BH005</td>
-      <td>2019-11-10T11:05:00.000Z</td>
-      <td>16.306</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>05BH005</td>
-      <td>2019-11-10T11:10:00.000Z</td>
-      <td>16.306</td>
     </tr>
     <tr>
       <td>...</td>
@@ -1078,32 +1152,32 @@
     <tr>
       <td>95</td>
       <td>05BH005</td>
+      <td>2010-04-21T10:30:00.000Z</td>
+      <td>16.006</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>05BH005</td>
+      <td>2010-04-21T10:45:00.000Z</td>
+      <td>16.031</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>05BH005</td>
       <td>2010-04-21T11:00:00.000Z</td>
       <td>16.030</td>
     </tr>
     <tr>
-      <td>96</td>
+      <td>98</td>
       <td>05BH005</td>
       <td>2010-04-21T11:15:00.000Z</td>
       <td>16.056</td>
     </tr>
     <tr>
-      <td>97</td>
+      <td>99</td>
       <td>05BH005</td>
       <td>2010-04-21T11:30:00.000Z</td>
       <td>16.094</td>
-    </tr>
-    <tr>
-      <td>98</td>
-      <td>05BH005</td>
-      <td>2010-04-21T11:45:00.000Z</td>
-      <td>16.137</td>
-    </tr>
-    <tr>
-      <td>99</td>
-      <td>05BH005</td>
-      <td>2010-04-21T12:00:00.000Z</td>
-      <td>16.143</td>
     </tr>
   </tbody>
 </table>
@@ -1124,7 +1198,7 @@
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    station_name,</span>
 <span class="s2">    timestamp,</span>
@@ -1178,30 +1252,6 @@
     <tr>
       <td>0</td>
       <td>Bow River near Cochrane</td>
-      <td>2019-11-10T10:40:00.000Z</td>
-      <td>2019</td>
-      <td>11</td>
-      <td>10</td>
-      <td>10</td>
-      <td>40</td>
-      <td>0</td>
-      <td>16.306</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Bow River near Cochrane</td>
-      <td>2019-11-10T10:45:00.000Z</td>
-      <td>2019</td>
-      <td>11</td>
-      <td>10</td>
-      <td>10</td>
-      <td>45</td>
-      <td>0</td>
-      <td>16.305</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Bow River near Cochrane</td>
       <td>2019-11-10T10:50:00.000Z</td>
       <td>2019</td>
       <td>11</td>
@@ -1212,7 +1262,7 @@
       <td>16.309</td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>1</td>
       <td>Bow River near Cochrane</td>
       <td>2019-11-10T10:55:00.000Z</td>
       <td>2019</td>
@@ -1224,7 +1274,7 @@
       <td>16.307</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>2</td>
       <td>Bow River near Cochrane</td>
       <td>2019-11-10T11:00:00.000Z</td>
       <td>2019</td>
@@ -1236,7 +1286,7 @@
       <td>16.308</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>3</td>
       <td>Bow River near Cochrane</td>
       <td>2019-11-10T11:05:00.000Z</td>
       <td>2019</td>
@@ -1248,7 +1298,7 @@
       <td>16.306</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>4</td>
       <td>Bow River near Cochrane</td>
       <td>2019-11-10T11:10:00.000Z</td>
       <td>2019</td>
@@ -1260,7 +1310,7 @@
       <td>16.306</td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>5</td>
       <td>Bow River near Cochrane</td>
       <td>2019-11-10T11:15:00.000Z</td>
       <td>2019</td>
@@ -1272,7 +1322,7 @@
       <td>16.307</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>6</td>
       <td>Bow River near Cochrane</td>
       <td>2019-11-10T11:20:00.000Z</td>
       <td>2019</td>
@@ -1284,7 +1334,7 @@
       <td>16.306</td>
     </tr>
     <tr>
-      <td>9</td>
+      <td>7</td>
       <td>Bow River near Cochrane</td>
       <td>2019-11-10T11:25:00.000Z</td>
       <td>2019</td>
@@ -1294,6 +1344,30 @@
       <td>25</td>
       <td>0</td>
       <td>16.307</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Bow River near Cochrane</td>
+      <td>2019-11-10T11:30:00.000Z</td>
+      <td>2019</td>
+      <td>11</td>
+      <td>10</td>
+      <td>11</td>
+      <td>30</td>
+      <td>0</td>
+      <td>16.308</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Bow River near Cochrane</td>
+      <td>2019-11-10T11:35:00.000Z</td>
+      <td>2019</td>
+      <td>11</td>
+      <td>10</td>
+      <td>11</td>
+      <td>35</td>
+      <td>0</td>
+      <td>16.306</td>
     </tr>
   </tbody>
 </table>
@@ -1312,7 +1386,7 @@
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    station_name,</span>
 <span class="s2">    timestamp,</span>
@@ -1429,7 +1503,7 @@
 <p>Just like in SQL, we can order the records returned using the ORDER BY clause. You can specify multiple fields in order to create a secondary order.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    station_name,</span>
 <span class="s2">    timestamp,</span>
@@ -1603,7 +1677,7 @@
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    school_authority_name,</span>
 <span class="s2">    school_year,</span>
@@ -1875,7 +1949,7 @@
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    school_authority_name,</span>
 <span class="s2">    COUNT(school_name) as total_schools,</span>
@@ -2018,7 +2092,7 @@
 <p>This also allows me to quickly discuss the <a class="reference external" href="https://www.python-course.eu/dealing_with_NaN_in_python.php">NaN</a> value, which can be though of like a null. If you do not include the WHERE clause in the query below, you will get a record with NaN,</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    COUNT(school_name) as total_schools,</span>
 <span class="s2">    MAX(grade_12) as max_grade_12</span>
@@ -2076,6 +2150,25 @@
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

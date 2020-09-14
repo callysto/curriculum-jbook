@@ -1,0 +1,84 @@
+Traceback (most recent call last):
+  File "/home/mikel/anaconda3/lib/python3.7/site-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/home/mikel/anaconda3/lib/python3.7/site-packages/nbclient/client.py", line 968, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/mikel/anaconda3/lib/python3.7/site-packages/nbclient/util.py", line 72, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/home/mikel/anaconda3/lib/python3.7/site-packages/nbclient/util.py", line 51, in just_run
+    return loop.run_until_complete(coro)
+  File "/home/mikel/anaconda3/lib/python3.7/asyncio/base_events.py", line 579, in run_until_complete
+    return future.result()
+  File "/home/mikel/anaconda3/lib/python3.7/site-packages/nbclient/client.py", line 509, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/home/mikel/anaconda3/lib/python3.7/site-packages/nbclient/client.py", line 747, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/home/mikel/anaconda3/lib/python3.7/site-packages/nbclient/client.py", line 671, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from ipywidgets import interact_manual, widgets
+import matplotlib.pyplot as plt
+
+# set style
+s = {'description_width': 'initial'}
+
+# Set interact manual box widget for beta
+@interact(answer=widgets.FloatText(value=0.50, description='Enter beta ',
+    disabled=False, style=s, step=0.01
+))
+
+# define function to find the appropriate value of beta
+# this function takes as input a floating value and outputs a plot with the best fit curve
+def find_beta(answer):
+    
+    # set initial values for SIR model
+    S1,I1,R1 = 254,7,0
+    
+    # Use original data on Number of infected from table in the notebook
+    ori_data = [7,14,22,29,21,8,21,0]
+    
+    # use days, time data was provided biweekly, we transform to days here
+    ori_days = [1,14,28,42,56,70,84,112]
+    
+    # set number of days as the second to last entry on the ori_days array 
+    n = ori_days[len(ori_days)-1]-ori_days[0]+1
+    
+    # get beta from answer - to be sure transform to float
+    beta = float(answer)
+    
+    # Gamma was obtained from disease
+    gamma = 1/11
+    
+    # Compute SIR values using our discrete_SIR function
+    (S,I,R) = discrete_SIR(S1,I1,R1,n,beta,gamma)
+    
+    # Figure
+    fig,ax = plt.subplots(figsize=(10,10))
+ 
+    # Scatter plot of original number of infected in the course of 112 days
+    plt.scatter(ori_days,ori_data,c="blue", label="Original Data")
+    
+    # Scatter plot of infected obtained from SIR mode, in the course of 112 days
+    plt.scatter(range(n),I,c="red",label="SIR Model Predictions")
+    
+    # Make the plot pretty
+    plt.xlabel('Time (days)')
+    plt.ylabel('Infected Individuals')
+    plt.title('Real Data vs Model')
+    legend = ax.legend()
+    plt.show()
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m<ipython-input-2-53a60541f19c>[0m in [0;36m<module>[0;34m[0m
+[1;32m      6[0m [0;34m[0m[0m
+[1;32m      7[0m [0;31m# Set interact manual box widget for beta[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 8[0;31m @interact(answer=widgets.FloatText(value=0.50, description='Enter beta ',
+[0m[1;32m      9[0m     [0mdisabled[0m[0;34m=[0m[0;32mFalse[0m[0;34m,[0m [0mstyle[0m[0;34m=[0m[0ms[0m[0;34m,[0m [0mstep[0m[0;34m=[0m[0;36m0.01[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     10[0m ))
+
+[0;31mNameError[0m: name 'interact' is not defined
+NameError: name 'interact' is not defined
+

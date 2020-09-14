@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Budget and Banking" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html" />
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="active">
-      <a href="">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Transformations of Objects and Shapes: Exercises</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Transformations: Positions and Motions of Objects and Shapes</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,168 +471,201 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/BinaryDecimalConversion/binary-decimal-conversion.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/BinaryDecimalConversion/binary-decimal-conversion.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/BinaryDecimalConversion/binary-decimal-conversion.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
-
-<nav id="bd-toc-nav">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#big-ideas">
+     Big Ideas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background-information">
+   Background information
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#numeral-systems">
+     Numeral systems
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-binary">
+     Why Binary?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#base-and-digits-in-a-positional-system">
+     Base and Digits in a Positional System
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#introduction" class="nav-link">Introduction</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#big-ideas" class="nav-link">Big Ideas</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#background-information" class="nav-link">Background information</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#numeral-systems" class="nav-link">Numeral systems</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#why-binary" class="nav-link">Why Binary?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#base-and-digits-in-a-positional-system" class="nav-link">Base and Digits in a Positional System</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#an-answer-to-an-impractical-problem" class="nav-link">An answer to an impractical problem.</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#counting-in-binary" class="nav-link">Counting in binary</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#converting-between-decimal-and-binary-notation" class="nav-link">Converting between decimal and binary notation.</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#converting-binary-to-decimal" class="nav-link">Converting binary to decimal</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#example" class="nav-link">Example:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#interactive-method" class="nav-link">Interactive Method</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#applet-instructions" class="nav-link">Applet Instructions:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#a-remark-on-notation" class="nav-link">A remark on notation</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#converting-decimal-to-binary" class="nav-link">Converting Decimal to Binary</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#visualizing-the-algorithm" class="nav-link">Visualizing the Algorithm</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#instructions" class="nav-link">Instructions:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#try-doing-the-algorithm-yourself" class="nav-link">Try doing the algorithm yourself!</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id1" class="nav-link">Instructions:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#practice-questions" class="nav-link">Practice Questions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#convert-the-following-decimal-numbers-to-binary" class="nav-link">Convert the following Decimal Numbers to binary</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#question-1" class="nav-link">Question 1</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#question-2" class="nav-link">Question 2</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#question-3" class="nav-link">Question 3</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#convert-the-following-binary-numbers-to-decimal" class="nav-link">Convert the following Binary Numbers to Decimal</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#question-4" class="nav-link">Question 4</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#question-5" class="nav-link">Question 5</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#question-6" class="nav-link">Question 6</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#an-answer-to-an-impractical-problem">
+       An answer to an impractical problem.
+      </a>
+     </li>
     </ul>
-</nav>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#counting-in-binary">
+     Counting in binary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#converting-between-decimal-and-binary-notation">
+   Converting between decimal and binary notation.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#converting-binary-to-decimal">
+     Converting binary to decimal
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example">
+       Example:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interactive-method">
+     Interactive Method
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#applet-instructions">
+       Applet Instructions:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-remark-on-notation">
+     A remark on notation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#converting-decimal-to-binary">
+     Converting Decimal to Binary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-algorithm">
+     Visualizing the Algorithm
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#instructions">
+       Instructions:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-doing-the-algorithm-yourself">
+     Try doing the algorithm yourself!
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Instructions:
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#practice-questions">
+   Practice Questions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#convert-the-following-decimal-numbers-to-binary">
+     Convert the following Decimal Numbers to binary
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#question-1">
+       Question 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#question-2">
+       Question 2
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#question-3">
+       Question 3
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#convert-the-following-binary-numbers-to-decimal">
+     Convert the following Binary Numbers to Decimal
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#question-4">
+       Question 4
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#question-5">
+       Question 5
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#question-6">
+       Question 6
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
 
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -486,9 +675,9 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/BinaryDecimalConversion/binary-decimal-conversion.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%html
 
 &lt;script&gt;
   function code_toggle() {
@@ -507,6 +696,7 @@
     $(&#39;div.input&#39;).hide()
   });
 &lt;/script&gt;
+&lt;p&gt; Code is hidden for ease of viewing. Click the Show/Hide button to see. &lt;/&gt;
 &lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;
 </pre></div>
 </div>
@@ -530,27 +720,28 @@
     $('div.input').hide()
   });
 </script>
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
 <form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg=geogebra\&amp;subdirectory=geogebra</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ch">#!pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg=geogebra\&amp;subdirectory=geogebra</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>try:
-    from geogebra.ggb import *
-except ImportError:
-    !pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg=geogebra\&amp;subdirectory=geogebra
-    from importlib import reload
-    import site
-    reload(site)
-    from geogebra.ggb import *    
-ggb = GGB()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">geogebra.ggb</span> <span class="k">import</span> <span class="o">*</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="o">!</span>pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg<span class="o">=</span>geogebra<span class="se">\&amp;</span><span class="nv">subdirectory</span><span class="o">=</span>geogebra
+    <span class="kn">from</span> <span class="nn">importlib</span> <span class="k">import</span> <span class="n">reload</span>
+    <span class="kn">import</span> <span class="nn">site</span>
+    <span class="n">reload</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
+    <span class="kn">from</span> <span class="nn">geogebra.ggb</span> <span class="k">import</span> <span class="o">*</span>    
+<span class="n">ggb</span> <span class="o">=</span> <span class="n">GGB</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -606,9 +797,9 @@ ggb = GGB()
             console.log(window.ggbRequireStatus);
         </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">fixed</span><span class="p">,</span> <span class="n">interact_manual</span>
 <span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 
@@ -642,7 +833,8 @@ The decimal (base-10) system we all know and love, and the binary (base-2) syste
 <li><p>how the choice of base effects the <em>digits</em> we use to write a number</p></li>
 <li><p>how to convert between decimal and binary representations of a number.</p></li>
 </ul>
-<img src="images/binary.png" alt="drawing" style="width:500px;"/><div class="section" id="big-ideas">
+<img alt="drawing" src="../../../_images/binary.png" />
+<div class="section" id="big-ideas">
 <h3>Big Ideas<a class="headerlink" href="#big-ideas" title="Permalink to this headline">¶</a></h3>
 <p>Here are some key takeaways you should have in mind as you progress through this notebook:</p>
 <ul class="simple">
@@ -736,9 +928,9 @@ For example, we could imagine a base-26 system with each letter of the alphabet 
 (It’s doubtful anyone would want to <em>use</em> this system, but we can imagine it!)<br>
 In this system, the word “number” would actually <em>be</em> a number!<br>
 If we assign each letter its place value in the alphabet, we have
-<span class="math notranslate nohighlight">\($
+$<span class="math notranslate nohighlight">\(
 n = 14, u = 21, m = 13, b = 2, e = 5, r = 18,
-$\)</span></p>
+\)</span>$</p>
 <p>and
 <img alt="" src="../../../_images/number.png" /></p>
 <p>This doesn’t seem very practical, however, so let’s sum up the key points and move on to numbers in decimal and binary.</p>
@@ -759,12 +951,12 @@ $\)</span></p>
 We can ask the computer to calculate it for us:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">14</span><span class="o">*</span><span class="mi">26</span><span class="o">**</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">21</span><span class="o">*</span><span class="mi">26</span><span class="o">**</span><span class="mi">4</span> <span class="o">+</span> <span class="mi">13</span><span class="o">*</span><span class="mi">26</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="mi">26</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="o">*</span><span class="mi">26</span> <span class="o">+</span> <span class="mi">18</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">14</span><span class="o">*</span><span class="mi">26</span><span class="o">**</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">21</span><span class="o">*</span><span class="mi">26</span><span class="o">**</span><span class="mi">4</span> <span class="o">+</span> <span class="mi">13</span><span class="o">*</span><span class="mi">26</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="mi">26</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="o">*</span><span class="mi">26</span> <span class="o">+</span> <span class="mi">18</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>176165748
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>176165748
 </pre></div>
 </div>
 </div>
@@ -776,16 +968,16 @@ We can ask the computer to calculate it for us:</p>
 <p>We can count in decimal endlessly, even in our sleep, but how can we count in binary?<br>
 Zero and one in base-two should look pretty familiar: 0 and 1. From there things get decidedly binary.</p>
 <p>In decimal, we start in the ‘ones’ position, and count until we run out of digits:
-<span class="math notranslate nohighlight">\($0, 1, 2, 3, 4, 5, 6, 7, 8, 9.\)</span>$
-After 9, we hit the next power of 10, so we add 1 to the ‘tens’ position, and reset the’ones’ to 0.<br>
-Then we go back to counting in the ‘ones’ position until we reach 9 again:
-<span class="math notranslate nohighlight">\($10, 11, 12, 13, 14, 15, 16, 17, 18, 19.\)</span>$
+$<span class="math notranslate nohighlight">\(0, 1, 2, 3, 4, 5, 6, 7, 8, 9.\)</span><span class="math notranslate nohighlight">\(
+After 9, we hit the next power of 10, so we add 1 to the 'tens' position, and reset the'ones' to 0.&lt;br&gt;
+Then we go back to counting in the 'ones' position until we reach 9 again:
+\)</span><span class="math notranslate nohighlight">\(10, 11, 12, 13, 14, 15, 16, 17, 18, 19.\)</span>$
 Now, we increase the ‘tens’ digit by 1 again, and reset the ‘ones’, getting 20.<br>
 We continue like this until we reach 99, and then we’re ready to add a 1 in the ‘hundreds’ position.<br>
 When we do, the digits in both the ‘tens’ and ‘ones’ positions reset to zero, and then we continue the process.</p>
 <p>Counting in binary is similar, with two important differences:</p>
 <ol class="simple">
-<li><p>Positions represent powers of 2, not 10: $ 2^0=1, 2^1 = 2, 2^2 = 4, 2^3 = 8, 2^4 = 16, 2^5 = 32, 2^6=64$, etc.</p></li>
+<li><p>Positions represent powers of 2, not 10: <span class="math notranslate nohighlight">\( 2^0=1, 2^1 = 2, 2^2 = 4, 2^3 = 8, 2^4 = 16, 2^5 = 32, 2^6=64\)</span>, etc.</p></li>
 <li><p>Digits are only 0 and 1, so the ‘change position and reset to zero’ step is a lot more frequent!</p></li>
 </ol>
 <p>Remember that we’ve only got those two digits, so as we do in decimal, when we run out of symbols we shift one column to the left, add a 1, and turn all of the digits to the right of that column to 0. <br>
@@ -858,7 +1050,7 @@ Each position represents a power of 2. We multiply each power of 2 by the bit in
 <div class="section" id="example">
 <h4>Example:<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
 <p>To convert the number 1101 from binary to decimal, we compute as follows:
-<span class="math notranslate nohighlight">\($\begin{aligned}
+$<span class="math notranslate nohighlight">\(\begin{aligned}
 1101 &amp;= 1 * 2^{3} + 1 * 2^{2} + 0 * 2^{1} + 1 * 2^{0} \\
     &amp;= 1*8+1*4+0*2+1*1\\
     &amp;= 8+4+1\\&amp;=13
@@ -888,9 +1080,9 @@ For 11001 we have <span class="math notranslate nohighlight">\(16+8+0+0+1=25\)</
 <li><p>The corresponding power of 2 below will change colour, and the 0 in front will change to a 1.</p></li>
 <li><p>The decimal equivalent will appear at the bottom.</p></li>
 </ol>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%HTML
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%HTML
 
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -1418,9 +1610,9 @@ the final step : 1 - 1 = 0</p></li>
 <ul class="simple">
 <li><p>So The binary for <span class="math notranslate nohighlight">\((25)_{10}\)</span> is <span class="math notranslate nohighlight">\((11001)_{2}\)</span>.</p></li>
 </ul>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">py</span><span class="o">.</span><span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">connected</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">py</span><span class="o">.</span><span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">connected</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">plot_stored_values</span><span class="p">(</span><span class="n">store_plot_value</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
     
@@ -1490,9 +1682,9 @@ require(['plotly'], function(Plotly) {
 </script>
 </div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#function for finding the power of 2 </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#function for finding the power of 2 </span>
 <span class="k">def</span> <span class="nf">power_two_1</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 
@@ -1525,9 +1717,9 @@ require(['plotly'], function(Plotly) {
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Algorithm_value</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">BoundedIntText</span><span class="p">(</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Algorithm_value</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">BoundedIntText</span><span class="p">(</span>
     <span class="n">value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
     <span class="nb">min</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
     <span class="nb">max</span> <span class="o">=</span> <span class="mi">256</span><span class="p">,</span>
@@ -1565,7 +1757,7 @@ require(['plotly'], function(Plotly) {
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "d31a01bdc27240be8593e08cb6845452"}
+{"version_major": 2, "version_minor": 0, "model_id": "9f6a579de8504d9b92b33780d810cc59"}
 </script></div>
 </div>
 </div>
@@ -1580,18 +1772,23 @@ require(['plotly'], function(Plotly) {
 <li><p>Keep working until the amount r that remains is zero.</p></li>
 <li><p>Your number in binary will be shown at the bottom.</p></li>
 </ol>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">material</span><span class="p">(</span><span class="s1">&#39;VJJpYMQ2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#ggb.material(&#39;VJJpYMQ2&#39;).draw()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;TriangleAnimation&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.geogebra.org/material/iframe/id/VJJpYMQ2/width/800/height/300/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;716px&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;272px&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border:0px;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ggb_0_0e"></div></div><script type="application/javascript">window.safeGGB(5, () => {
-var ggb_0_0e = new GGBApplet({"material_id": "VJJpYMQ2"}, "ggb_0_0e", false);
- ggb_0_0e.inject();
-
-})</script></div>
+<div class="output text_html"><iframe scrolling="no" title="TriangleAnimation" src="https://www.geogebra.org/material/iframe/id/VJJpYMQ2/width/800/height/300/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="716px" height="272px" style="border:0px;"> </iframe>
+</div></div>
 </div>
 </div>
 </div>
@@ -1606,9 +1803,9 @@ Make sure you take the time to work through additional problems from your teache
 <div class="section" id="question-1">
 <h4>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h4>
 <p><span class="math notranslate nohighlight">\((57)_{10} = (A)_2\)</span></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
@@ -1625,41 +1822,41 @@ Make sure you take the time to work through additional problems from your teache
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "bf4eb2547e644bca84f6a7870d49de3b"}
+{"version_major": 2, "version_minor": 0, "model_id": "724b410af54d46e0813e3d078d5d1181"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-&lt;!--
-function toggle(id) {
-var e = document.getElementById(id);
-if(e.style.display == &#39;none&#39;)
-e.style.display = &#39;block&#39;;
-else
-e.style.display = &#39;none&#39;;
-}
-//--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-&lt;div id=&quot;question1&quot;&gt;
-Solution Question 1.  &lt;button id = &quot;A&quot;
-onclick=&quot;toggle(&#39;answer1&#39;);&quot;&gt;Click Here&lt;/button&gt; to see the answer.
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer1&quot;&gt;
-As $64(2^6)$ is closest power of 2 for 57, so there will be atleast 6 digits for binary. &lt;br /&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question1&quot;</span><span class="p">&gt;</span>
+Solution Question 1.  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;A&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer1&#39;);&quot;</span><span class="p">&gt;</span>Click Here<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> to see the answer.
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer1&quot;</span><span class="p">&gt;</span>
+As $64(2^6)$ is closest power of 2 for 57, so there will be atleast 6 digits for binary. <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
 
-the first step : 57 - 32 = 25  &lt;br /&gt;
-the next step : 25 - 16 = 9  &lt;br /&gt;
-the next step : 9 - 8 = 1  &lt;br /&gt;
-the last step : 1 - 1 = 0  &lt;br /&gt;
-so, the solution is: &lt;br /&gt; $1*32+ 1*16+ 1*8+ 0*4 + 0*2 + 1*1 $= $(111001)_2$
-&lt;/div&gt;
+the first step : 57 - 32 = 25  <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the next step : 25 - 16 = 9  <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the next step : 9 - 8 = 1  <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the last step : 1 - 1 = 0  <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+so, the solution is: <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span> $1*32+ 1*16+ 1*8+ 0*4 + 0*2 + 1*1 $= $(111001)_2$
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1699,9 +1896,9 @@ so, the solution is: <br /> $1*32+ 1*16+ 1*8+ 0*4 + 0*2 + 1*1 $= $(111001)_2$
 <div class="section" id="question-2">
 <h4>Question 2<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h4>
 <p><span class="math notranslate nohighlight">\((79)_{10} = (B)_2\)</span></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;B =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;B =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1717,32 +1914,32 @@ so, the solution is: <br /> $1*32+ 1*16+ 1*8+ 0*4 + 0*2 + 1*1 $= $(111001)_2$
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "dc1534cea65f49868948c6d64c9c1e1b"}
+{"version_major": 2, "version_minor": 0, "model_id": "90b74ee08df24dc2848c98ec35c50a8d"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;body&gt;
-&lt;div id=&quot;question2&quot;&gt;
-Solution Question 2.  &lt;button id = &quot;B&quot;
-onclick=&quot;toggle(&#39;answer2&#39;);&quot;&gt;Click Here&lt;/button&gt; to see the answer.
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer2&quot;&gt;
-As $128(2^7)$ is closest power of 2 for 79, so there will be atleast 7 digits for binary. &lt;br /&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question2&quot;</span><span class="p">&gt;</span>
+Solution Question 2.  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;B&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer2&#39;);&quot;</span><span class="p">&gt;</span>Click Here<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> to see the answer.
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer2&quot;</span><span class="p">&gt;</span>
+As $128(2^7)$ is closest power of 2 for 79, so there will be atleast 7 digits for binary. <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
 
-the first step : 79 - 64 = 15 &lt;br /&gt;
-the next step : 15 - 8 = 7 &lt;br /&gt;
-the next step : 7 - 4 = 3 &lt;br /&gt;
-the next step : 3 - 2 = 1 &lt;br /&gt;
-the last step : 1 - 1 = 0 &lt;br /&gt;
-so, the solution is: &lt;br /&gt; $1*64+ 0*32+ 0*16+ 1*8+ 1*4 + 1*2 + 1*1 $= $(1001111)_2$
-&lt;/div&gt;
+the first step : 79 - 64 = 15 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the next step : 15 - 8 = 7 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the next step : 7 - 4 = 3 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the next step : 3 - 2 = 1 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the last step : 1 - 1 = 0 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+so, the solution is: <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span> $1*64+ 0*32+ 0*16+ 1*8+ 1*4 + 1*2 + 1*1 $= $(1001111)_2$
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1773,9 +1970,9 @@ so, the solution is: <br /> $1*64+ 0*32+ 0*16+ 1*8+ 1*4 + 1*2 + 1*1 $= $(1001111
 <div class="section" id="question-3">
 <h4>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h4>
 <p><span class="math notranslate nohighlight">\((39)_{10} = (C)_2\)</span></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;C =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;C =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1791,30 +1988,30 @@ so, the solution is: <br /> $1*64+ 0*32+ 0*16+ 1*8+ 1*4 + 1*2 + 1*1 $= $(1001111
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "74eab4fe7ad745928e0bcf5cfe1a0152"}
+{"version_major": 2, "version_minor": 0, "model_id": "41e095b47baa4a7b858a41c8d55918be"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;body&gt;
-&lt;div id=&quot;question3&quot;&gt;
-Solution Question 3. &lt;button id = &quot;C&quot;
-onclick=&quot;toggle(&#39;answer3&#39;);&quot;&gt;Click Here&lt;/button&gt; to see the answer.
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer3&quot;&gt;
-As $64(2^6)$ is closest power of 2 for 39, so there will be atleast 6 digits for binary. &lt;br /&gt;
-the first step : 39 - 32 = 7 &lt;br /&gt;
-the next step : 7 - 4 = 3 &lt;br /&gt;
-the next step : 3 - 2 = 1 &lt;br /&gt;
-the last step : 1 - 1 = 0 &lt;br /&gt;
-so, the solution is: &lt;br /&gt; $1*32+ 0*16+ 0*8+ 1*4 + 1*2 + 1*1 $= $(100111)_2$
-&lt;/div&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question3&quot;</span><span class="p">&gt;</span>
+Solution Question 3. <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;C&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer3&#39;);&quot;</span><span class="p">&gt;</span>Click Here<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> to see the answer.
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer3&quot;</span><span class="p">&gt;</span>
+As $64(2^6)$ is closest power of 2 for 39, so there will be atleast 6 digits for binary. <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the first step : 39 - 32 = 7 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the next step : 7 - 4 = 3 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the next step : 3 - 2 = 1 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the last step : 1 - 1 = 0 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+so, the solution is: <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span> $1*32+ 0*16+ 0*8+ 1*4 + 1*2 + 1*1 $= $(100111)_2$
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1846,9 +2043,9 @@ so, the solution is: <br /> $1*32+ 0*16+ 0*8+ 1*4 + 1*2 + 1*1 $= $(100111)_2$
 <div class="section" id="question-4">
 <h4>Question 4<a class="headerlink" href="#question-4" title="Permalink to this headline">¶</a></h4>
 <p><span class="math notranslate nohighlight">\((10101)_{2} = (D)_{10}\)</span></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;D =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;D =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1864,30 +2061,30 @@ so, the solution is: <br /> $1*32+ 0*16+ 0*8+ 1*4 + 1*2 + 1*1 $= $(100111)_2$
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "7223ad0c491b4e1790f1b1c1f4565714"}
+{"version_major": 2, "version_minor": 0, "model_id": "382b2544465d4f0eb0017ff107fe2b9b"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;body&gt;
-&lt;div id=&quot;question4&quot;&gt;
-Solution Question 4. &lt;button id = &quot;C&quot;
-onclick=&quot;toggle(&#39;answer4&#39;);&quot;&gt;Click Here&lt;/button&gt; to see the answer.
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer4&quot;&gt;
-As $64(2^6)$ is closest power of 2 for 39, so there will be atleast 6 digits for binary. &lt;br /&gt;
-the first step : 39 - 32 = 7 &lt;br /&gt;
-the next step : 7 - 4 = 3 &lt;br /&gt;
-the next step : 3 - 2 = 1 &lt;br /&gt;
-the last step : 1 - 1 = 0 &lt;br /&gt;
-so, the solution is: &lt;br /&gt; $1*32+ 0*16+ 0*8+ 1*4 + 1*2 + 1*1 $= $(100111)_2$
-&lt;/div&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question4&quot;</span><span class="p">&gt;</span>
+Solution Question 4. <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;C&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer4&#39;);&quot;</span><span class="p">&gt;</span>Click Here<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> to see the answer.
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer4&quot;</span><span class="p">&gt;</span>
+As $64(2^6)$ is closest power of 2 for 39, so there will be atleast 6 digits for binary. <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the first step : 39 - 32 = 7 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the next step : 7 - 4 = 3 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the next step : 3 - 2 = 1 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+the last step : 1 - 1 = 0 <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+so, the solution is: <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span> $1*32+ 0*16+ 0*8+ 1*4 + 1*2 + 1*1 $= $(100111)_2$
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1916,9 +2113,9 @@ so, the solution is: <br /> $1*32+ 0*16+ 0*8+ 1*4 + 1*2 + 1*1 $= $(100111)_2$
 <div class="section" id="question-5">
 <h4>Question 5<a class="headerlink" href="#question-5" title="Permalink to this headline">¶</a></h4>
 <p><span class="math notranslate nohighlight">\((01111)_{2} = (E)_{10}\)</span></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">e</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;E =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">e</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;E =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1934,27 +2131,27 @@ so, the solution is: <br /> $1*32+ 0*16+ 0*8+ 1*4 + 1*2 + 1*1 $= $(100111)_2$
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "1614262150214469b9dbe40119f97d73"}
+{"version_major": 2, "version_minor": 0, "model_id": "e91284f57351494daad425e94c5090b3"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;body&gt;
-&lt;div id=&quot;question5&quot;&gt;
-Solution Question 5.  &lt;button id = &quot;D&quot;
-onclick=&quot;toggle(&#39;answer5&#39;);&quot;&gt;Click Here&lt;/button&gt; to see the answer.
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer5&quot;&gt;
-$(10101)_2 = 1 * 2^{4} + 0 * 2^{3} + 1 * 2^{2} + 0* 2{1} + 1*2{0}$ &lt;br /&gt;  &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp;
-           = $1*16+ 0*8+ 1*4 + 0*2 + 1*1$ &lt;br /&gt; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp;
-           = $(21)_{10}$ &lt;br /&gt;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question5&quot;</span><span class="p">&gt;</span>
+Solution Question 5.  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;D&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer5&#39;);&quot;</span><span class="p">&gt;</span>Click Here<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> to see the answer.
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer5&quot;</span><span class="p">&gt;</span>
+$(10101)_2 = 1 * 2^{4} + 0 * 2^{3} + 1 * 2^{2} + 0* 2{1} + 1*2{0}$ <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>  <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span>
+           = $1*16+ 0*8+ 1*4 + 0*2 + 1*1$ <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span>
+           = $(21)_{10}$ <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
 
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1980,9 +2177,9 @@ $(10101)_2 = 1 * 2^{4} + 0 * 2^{3} + 1 * 2^{2} + 0* 2{1} + 1*2{0}$ <br />  &emsp
 <div class="section" id="question-6">
 <h4>Question 6<a class="headerlink" href="#question-6" title="Permalink to this headline">¶</a></h4>
 <p><span class="math notranslate nohighlight">\((100100)_{2} = (F)_{10}\)</span></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;F =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;F =&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
     <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1998,26 +2195,26 @@ $(10101)_2 = 1 * 2^{4} + 0 * 2^{3} + 1 * 2^{2} + 0* 2{1} + 1*2{0}$ <br />  &emsp
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "a7bf691d15e74028b57ec2f4e0c25bfc"}
+{"version_major": 2, "version_minor": 0, "model_id": "3c3e460fb9af40f6b1fa62109e911579"}
 </script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%html
-&lt;html&gt;
-&lt;body&gt;
-&lt;div id=&quot;question6&quot;&gt;
-Solution Question 6. &lt;button id = &quot;D&quot;
-onclick=&quot;toggle(&#39;answer6&#39;);&quot;&gt;Click Here&lt;/button&gt; to see the answer.
-&lt;/div&gt;
-&lt;div style=&quot;display:none&quot; id=&quot;answer6&quot;&gt;
-$(100100)_2 = 1 * 2^{5} + 0 * 2^{4} + 0 * 2^{3} + 1 * 2^{2} + 0* 2{1} + 1*2{0}$ &lt;br /&gt;  &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp;
-           = $1*32+ 0*16+ 0*8+ 1*4 + 0*2 + 0*1$ &lt;br /&gt; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question6&quot;</span><span class="p">&gt;</span>
+Solution Question 6. <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;D&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer6&#39;);&quot;</span><span class="p">&gt;</span>Click Here<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> to see the answer.
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer6&quot;</span><span class="p">&gt;</span>
+$(100100)_2 = 1 * 2^{5} + 0 * 2^{4} + 0 * 2^{3} + 1 * 2^{2} + 0* 2{1} + 1*2{0}$ <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>  <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span>
+           = $1*32+ 0*16+ 0*8+ 1*4 + 0*2 + 0*1$ <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span> <span class="ni">&amp;emsp;</span>
            = $(36)_{10}$
-&lt;/div&gt;
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -2058,10 +2255,29 @@ The best way of representing a number can depend on what we’re trying to do.</
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"a26df7a7d7784515b90e54bd7ae91e73": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8bd8441914544273b3863a673cd33f38": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "d31a01bdc27240be8593e08cb6845452": {"model_name": "BoundedIntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "BoundedIntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "Enter value:", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_a26df7a7d7784515b90e54bd7ae91e73", "max": 256, "min": 0, "step": 1, "style": "IPY_MODEL_8bd8441914544273b3863a673cd33f38", "value": 0}}, "abe86b18dd9e466881d732a4b9aea5d9": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9cb24efa25ff4e338b3bda0de575ff88": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "bf4eb2547e644bca84f6a7870d49de3b": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "A =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_abe86b18dd9e466881d732a4b9aea5d9", "step": 1, "style": "IPY_MODEL_9cb24efa25ff4e338b3bda0de575ff88", "value": 0}}, "a109575e99e443539eebc691fff0d639": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "76a56901cc54412db0021310e31ed3d5": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "dc1534cea65f49868948c6d64c9c1e1b": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "B =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_a109575e99e443539eebc691fff0d639", "step": 1, "style": "IPY_MODEL_76a56901cc54412db0021310e31ed3d5", "value": 0}}, "79fe7a7b865f4dc6a153daef30fa67c4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c0824546f66a4f1390433074b81d9daf": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "74eab4fe7ad745928e0bcf5cfe1a0152": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "C =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_79fe7a7b865f4dc6a153daef30fa67c4", "step": 1, "style": "IPY_MODEL_c0824546f66a4f1390433074b81d9daf", "value": 0}}, "2212561eb0244622b2165bc8a4ce38b2": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2491e3a9ce8545a1930ffdcbc8275e56": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "7223ad0c491b4e1790f1b1c1f4565714": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "D =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_2212561eb0244622b2165bc8a4ce38b2", "step": 1, "style": "IPY_MODEL_2491e3a9ce8545a1930ffdcbc8275e56", "value": 0}}, "b7931a6ea1fe4385a1799cdc93a3f381": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1e6f7b41e1e6403b8241bf8c97d93498": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "1614262150214469b9dbe40119f97d73": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "E =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_b7931a6ea1fe4385a1799cdc93a3f381", "step": 1, "style": "IPY_MODEL_1e6f7b41e1e6403b8241bf8c97d93498", "value": 0}}, "ecaaf0fec46343618d9c0589b567cee3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d2ea862c1399488b863b0fb1ccae42a3": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "a7bf691d15e74028b57ec2f4e0c25bfc": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "F =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_ecaaf0fec46343618d9c0589b567cee3", "step": 1, "style": "IPY_MODEL_d2ea862c1399488b863b0fb1ccae42a3", "value": 0}}}, "version_major": 2, "version_minor": 0}
+{"state": {"9d5dbcd132a44217bd8bf2652e22c76d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b5d087f1f2c94f14aa5bf0a5777f6b68": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "9f6a579de8504d9b92b33780d810cc59": {"model_name": "BoundedIntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "BoundedIntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "Enter value:", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_9d5dbcd132a44217bd8bf2652e22c76d", "max": 256, "min": 0, "step": 1, "style": "IPY_MODEL_b5d087f1f2c94f14aa5bf0a5777f6b68", "value": 0}}, "5c1729152c664f49860e42bd497071b3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "54d1d24a8db94a2a86be14938ec1dc55": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "724b410af54d46e0813e3d078d5d1181": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "A =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_5c1729152c664f49860e42bd497071b3", "step": 1, "style": "IPY_MODEL_54d1d24a8db94a2a86be14938ec1dc55", "value": 0}}, "0ea2abc0b2c24f00b9c3040b6b3cb30f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d68d77b3acb44d169eaa9c7ed6ddaccf": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "90b74ee08df24dc2848c98ec35c50a8d": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "B =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_0ea2abc0b2c24f00b9c3040b6b3cb30f", "step": 1, "style": "IPY_MODEL_d68d77b3acb44d169eaa9c7ed6ddaccf", "value": 0}}, "d5d499cf4de84a3b95a05103cf344c34": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "6a0f2d77552d4c08ae51fd7e0cdc1ff1": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "41e095b47baa4a7b858a41c8d55918be": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "C =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_d5d499cf4de84a3b95a05103cf344c34", "step": 1, "style": "IPY_MODEL_6a0f2d77552d4c08ae51fd7e0cdc1ff1", "value": 0}}, "4f7752cd5c8a4e14bb734de546360fdd": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "54be20df0d584829b64d4c7c9fe131a0": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "382b2544465d4f0eb0017ff107fe2b9b": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "D =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_4f7752cd5c8a4e14bb734de546360fdd", "step": 1, "style": "IPY_MODEL_54be20df0d584829b64d4c7c9fe131a0", "value": 0}}, "97467991032042d582e20282479bc065": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a6ade036d6134a2798a630dc3f8ea64f": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "e91284f57351494daad425e94c5090b3": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "E =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_97467991032042d582e20282479bc065", "step": 1, "style": "IPY_MODEL_a6ade036d6134a2798a630dc3f8ea64f", "value": 0}}, "b73fba1161a04c3a8db27a8ea7d9a0e3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "21547747cc4f4e17946d979b5979bb75": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "3c3e460fb9af40f6b1fa62109e911579": {"model_name": "IntTextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntTextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntTextView", "continuous_update": false, "description": "F =", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_b73fba1161a04c3a8db27a8ea7d9a0e3", "step": 1, "style": "IPY_MODEL_21547747cc4f4e17946d979b5979bb75", "value": 0}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/BinaryDecimalConversion"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Flipping Coins" href="../FlippingCoins/flipping-coins.html" />
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="active">
-      <a href="">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="">
-      <a href="../TippingPointJobs/tipping-point-jobs.html">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,82 +471,101 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/FibonacciNumbers/fibonacci-numbers.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/FibonacciNumbers/fibonacci-numbers.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/FibonacciNumbers/fibonacci-numbers.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-fast-does-it-grow">
+   How fast does it grow?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-golden-ratio">
+   The Golden Ratio
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-formula-for-the-fibonacci-sequence-f-n">
+   A Formula for the Fibonacci Sequence
+   <span class="math notranslate nohighlight">
+    \(F_n\)
+   </span>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wow">
+     Wow!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#checking-the-math">
+   Checking the Math
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-did-this-work">
+   Why did this work?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#from-sequences-to-functions">
+   From sequences to functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-plot-of-the-continuous-fibonacci-function">
+   A plot of the continuous Fibonacci function
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-plot-with-negative-values">
+   A plot with negative values
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-golden-ratio-and-continued-fractions">
+   The Golden Ratio and Continued Fractions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-have-we-learned">
+     What have we learned?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#how-fast-does-it-grow" class="nav-link">How fast does it grow?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#the-golden-ratio" class="nav-link">The Golden Ratio</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#a-formula-for-the-fibonacci-sequence-f-n" class="nav-link">A Formula for the Fibonacci Sequence F_n</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#wow" class="nav-link">Wow!</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#checking-the-math" class="nav-link">Checking the Math</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#why-did-this-work" class="nav-link">Why did this work?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#from-sequences-to-functions" class="nav-link">From sequences to functions</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#a-plot-of-the-continuous-fibonacci-function" class="nav-link">A plot of the continuous Fibonacci function</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#a-plot-with-negative-values" class="nav-link">A plot with negative values</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#the-golden-ratio-and-continued-fractions" class="nav-link">The Golden Ratio and Continued Fractions</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#what-have-we-learned" class="nav-link">What have we learned?</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -413,7 +588,7 @@
 <p>For an excellent exposition about the motivation, poetry, and linguistics of these early mathematicians, and to learn about some fascinating properties of these numbers, check out the following video:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">YouTubeVideo</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">YouTubeVideo</span>
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;LP253wHIoO8&#39;</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">2633</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -430,8 +605,8 @@
 </div></div>
 </div>
 <p>It’s convenient to label these numbers, so we write <span class="math notranslate nohighlight">\(F_0 = 0\)</span>, <span class="math notranslate nohighlight">\(F_1 = 1\)</span> <span class="math notranslate nohighlight">\(F_2 = 2\)</span> and so on. The list of numbers is thus  defined <strong>recursively</strong>  by the formula
-<span class="math notranslate nohighlight">\($ \qquad\)</span>$
-<span class="math notranslate nohighlight">\($ F_n = F_{n-1} + F_{n-2}.\)</span>$</p>
+$<span class="math notranslate nohighlight">\( \qquad\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\( F_n = F_{n-1} + F_{n-2}.\)</span>$</p>
 <p>We can check the few numbers in the Fibonacci sequence are obtained by that formula, by computing:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{eqnarray*}
@@ -465,7 +640,7 @@ F_{7} &amp;=&amp;F_{6}+F_{5}=8+5=13 \\
 <p><strong>WAIT</strong> – before you read the next cell, try to do Exercise 2!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">20</span>   <span class="c1"># Set the size of the list we will compute</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">20</span>   <span class="c1"># Set the size of the list we will compute</span>
 
 <span class="n">F</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># The first two numbers in the list</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
@@ -476,7 +651,7 @@ F_{7} &amp;=&amp;F_{6}+F_{5}=8+5=13 \\
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>First 20 Fibonacci numbers: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>First 20 Fibonacci numbers: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
 </pre></div>
 </div>
 </div>
@@ -484,7 +659,7 @@ F_{7} &amp;=&amp;F_{6}+F_{5}=8+5=13 \\
 <p><strong>For fun,</strong> we can make a little widget to control how many numbers to print out.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span>
 
 <span class="k">def</span> <span class="nf">printFib</span><span class="p">(</span><span class="n">N</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">F</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># The first two numbers in the list</span>
@@ -498,7 +673,7 @@ F_{7} &amp;=&amp;F_{6}+F_{5}=8+5=13 \\
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "a1d2ad3b6a7b4d38bba35d8af564d5cb"}
+{"version_major": 2, "version_minor": 0, "model_id": "a89ecf96260b4c198ae087ebeadd03a3"}
 </script></div>
 </div>
 <p>By moving the slider above, print out the first 100 Fibonacci numbers</p>
@@ -507,25 +682,26 @@ to have one more digit after about every five terms in the sequence.</p>
 <div class="section" id="how-fast-does-it-grow">
 <h2>How fast does it grow?<a class="headerlink" href="#how-fast-does-it-grow" title="Permalink to this headline">¶</a></h2>
 <p>One of the ways to study the growth of a sequence is to look at ratios between consecutive terms. We  look at ratios of pairs of numbers in the Fibonacci sequence.</p>
-<p>The first few values are
-\begin{eqnarray}
-F_2/F_1 &amp;=&amp; 1 \
-F_3/F_2 &amp;=&amp; 2/1 = 2 \
-F_4/F_3 &amp;=&amp; 3/2 = 1.5 \
-F_5/F_4 &amp;=&amp; 5/3 = 1.666… \
-F_6/F_5  &amp;=&amp; 8/5 = 1.6 \
-F_7/F_6  &amp;=&amp; 13/8 = 1.625
-\end{eqnarray}</p>
+<p>The first few values are</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8ca967a7-fcd5-42f6-917b-5efc8b656ce9">
+<span class="eqno">(23)<a class="headerlink" href="#equation-8ca967a7-fcd5-42f6-917b-5efc8b656ce9" title="Permalink to this equation">¶</a></span>\[\begin{eqnarray}
+F_2/F_1 &amp;=&amp; 1 \\
+F_3/F_2 &amp;=&amp; 2/1 = 2 \\
+F_4/F_3 &amp;=&amp; 3/2 = 1.5 \\ 
+F_5/F_4 &amp;=&amp; 5/3 = 1.666... \\ 
+F_6/F_5  &amp;=&amp; 8/5 = 1.6 \\ 
+F_7/F_6  &amp;=&amp; 13/8 = 1.625 
+\end{eqnarray}\]</div>
 <p>So the ratios are levelling out somewhere around 1.6. We observe that <span class="math notranslate nohighlight">\(1.6^5 \approx 10\)</span>, which is why after every five terms in the Fibonacci sequence, we get another digit. This tells us we have roughly  <strong>exponential growth,</strong> where <span class="math notranslate nohighlight">\(F_n\)</span> grows about as quickly as the exponential function <span class="math notranslate nohighlight">\((1.6)^n\)</span>.</p>
-<p>We can check this computation in Python. We use $ ** $ to take a power, as in the following cell.</p>
+<p>We can check this computation in Python. We use <span class="math notranslate nohighlight">\( ** \)</span> to take a power, as in the following cell.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mf">1.6</span><span class="p">)</span><span class="o">**</span><span class="mi">5</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mf">1.6</span><span class="p">)</span><span class="o">**</span><span class="mi">5</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>10.485760000000003
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10.485760000000003
 </pre></div>
 </div>
 </div>
@@ -538,7 +714,7 @@ F_7/F_6  &amp;=&amp; 13/8 = 1.625
 <p><strong>WAIT!</strong> Don’t read any further until you try the exercises.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="k">import</span> <span class="o">*</span> 
 
 <span class="n">N</span> <span class="o">=</span> <span class="mi">20</span>
@@ -560,7 +736,7 @@ F_7/F_6  &amp;=&amp; 13/8 = 1.625
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>The first 18 ratios are: [1.0, 2.0, 1.5, 1.6666666666666667, 1.6, 1.625, 1.6153846153846154, 1.619047619047619, 1.6176470588235294, 1.6181818181818182, 1.6179775280898876, 1.6180555555555556, 1.6180257510729614, 1.6180371352785146, 1.618032786885246, 1.618034447821682, 1.6180338134001253, 1.618034055727554]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The first 18 ratios are: [1.0, 2.0, 1.5, 1.6666666666666667, 1.6, 1.625, 1.6153846153846154, 1.619047619047619, 1.6176470588235294, 1.6181818181818182, 1.6179775280898876, 1.6180555555555556, 1.6180257510729614, 1.6180371352785146, 1.618032786885246, 1.618034447821682, 1.6180338134001253, 1.618034055727554]
 </pre></div>
 </div>
 <img alt="../../../_images/fibonacci-numbers_22_1.png" src="../../../_images/fibonacci-numbers_22_1.png" />
@@ -568,24 +744,24 @@ F_7/F_6  &amp;=&amp; 13/8 = 1.625
 </div>
 <p>We see the numbers are levelling out at the value 1.6108034…  This number may be familiar to you. It is called the <strong>Golden Ratio.</strong></p>
 <p>We can compute the exact value by observing the ratios satisfy a nice algebraic equation:
-<span class="math notranslate nohighlight">\($
+$<span class="math notranslate nohighlight">\(
 \frac{F_{n+2}}{F_{n+1}}=\frac{F_{n+1}+F_{n}}{F_{n+1}}=1+\frac{F_{n}}{F_{n+1}}=1+\frac{1}{\frac{F_{n+1}}{F_{n}}},
-$\)</span>
-or more simply
-<span class="math notranslate nohighlight">\($\frac{F_{n+2}}{F_{n+1}}=1+\frac{1}{\frac{F_{n+1}}{F_{n}}}.\)</span>$</p>
+\)</span><span class="math notranslate nohighlight">\(
+or more simply 
+\)</span><span class="math notranslate nohighlight">\(\frac{F_{n+2}}{F_{n+1}}=1+\frac{1}{\frac{F_{n+1}}{F_{n}}}.\)</span>$</p>
 <p>As <span class="math notranslate nohighlight">\(n\)</span> gets larger and larger, the ratios <span class="math notranslate nohighlight">\(F_{n+2}/F_{n+1}\)</span> and <span class="math notranslate nohighlight">\(F_{n+1}/F_{n}\)</span> tend toward a final value, say <span class="math notranslate nohighlight">\(x\)</span>. This value must then solve the equation
-<span class="math notranslate nohighlight">\($x=1+\frac{1}{x}.\)</span>$</p>
+$<span class="math notranslate nohighlight">\(x=1+\frac{1}{x}.\)</span>$</p>
 <p>We rewrite this as a quadratic equation
-<span class="math notranslate nohighlight">\($x^2=x+1\)</span>$
+$<span class="math notranslate nohighlight">\(x^2=x+1\)</span><span class="math notranslate nohighlight">\( 
 which we solve from the quadratic formula
-<span class="math notranslate nohighlight">\($ x= \frac{1 \pm \sqrt{1+4}}{2} = \frac{1 \pm \sqrt{5}}{2}.\)</span>$
-It is the positive solution <span class="math notranslate nohighlight">\(x= \frac{1 + \sqrt{5}}{2} = 1.6108034...\)</span> which is called the Golden Ratio.</p>
+\)</span><span class="math notranslate nohighlight">\( x= \frac{1 \pm \sqrt{1+4}}{2} = \frac{1 \pm \sqrt{5}}{2}.\)</span><span class="math notranslate nohighlight">\(
+It is the positive solution \)</span>x= \frac{1 + \sqrt{5}}{2} = 1.6108034…$ which is called the Golden Ratio.</p>
 <p>The <strong>Golden ratio</strong> comes up in art, geometry, and  Greek mythology as a perfect ratio that is pleasing to the eye (and to the gods).</p>
 <p>For instance, the rectangle shown below is said to have the dimensions of the Golden ratio, because the big rectangle has the same shape as the smaller rectangle inside. Mathematically, we have the ratios of lengths
-<span class="math notranslate nohighlight">\($ \frac{a+b}{a} = \frac{a}{b}.\)</span>$</p>
+$<span class="math notranslate nohighlight">\( \frac{a+b}{a} = \frac{a}{b}.\)</span>$</p>
 <p><img alt="Golden ratio rectangle" src="../../../_images/Golden2.png" /></p>
 <p>Writing <span class="math notranslate nohighlight">\(x = \frac{a}{b}\)</span>, the above equation simplifies to
-<span class="math notranslate nohighlight">\($ 1 + \frac{1}{x} = x,\)</span>$
+$<span class="math notranslate nohighlight">\( 1 + \frac{1}{x} = x,\)</span>$
 which is the same quadratic equation we saw for the limit of ratios of Fibonacci numbers.</p>
 <p>For more information about the Golden ratio see
 https://en.wikipedia.org/wiki/Golden_ratio</p>
@@ -593,12 +769,12 @@ https://en.wikipedia.org/wiki/Golden_ratio</p>
 <div class="section" id="a-formula-for-the-fibonacci-sequence-f-n">
 <h2>A Formula for the Fibonacci Sequence <span class="math notranslate nohighlight">\(F_n\)</span><a class="headerlink" href="#a-formula-for-the-fibonacci-sequence-f-n" title="Permalink to this headline">¶</a></h2>
 <p>Let’s give the Golden ratio a special name. In honour of the ancient Greeks who used it so much, we call it `phi:’
-<span class="math notranslate nohighlight">\($ \varphi = \frac{1 + \sqrt{5}}{2}. $\)</span>
-We’ll call the other quadratic root ‘psi:’
-<span class="math notranslate nohighlight">\($ \psi = \frac{1 - \sqrt{5}}{2}. $\)</span>
-This number <span class="math notranslate nohighlight">\(\psi\)</span> is called the <strong>conjugate</strong> of <span class="math notranslate nohighlight">\(\varphi\)</span> because it looks the same, except for the negative sign in front of the <span class="math notranslate nohighlight">\(\sqrt{5}\)</span>.</p>
+$<span class="math notranslate nohighlight">\( \varphi = \frac{1 + \sqrt{5}}{2}. \)</span><span class="math notranslate nohighlight">\(
+We'll call the other quadratic root 'psi:'
+\)</span><span class="math notranslate nohighlight">\( \psi = \frac{1 - \sqrt{5}}{2}. \)</span><span class="math notranslate nohighlight">\(
+This number \)</span>\psi<span class="math notranslate nohighlight">\( is called the **conjugate** of \)</span>\varphi<span class="math notranslate nohighlight">\( because it looks the same, except for the negative sign in front of the \)</span>\sqrt{5}$.</p>
 <p>Here’s something <strong>amazing.</strong> It turns out that we have a remarkable formula for the Fibonnaci numbers, in terms of these two Greek numbers. The formula says
-<span class="math notranslate nohighlight">\($F_n = \frac{\varphi^n - \psi^n}{\sqrt{5}}.\)</span>$</p>
+$<span class="math notranslate nohighlight">\(F_n = \frac{\varphi^n - \psi^n}{\sqrt{5}}.\)</span>$</p>
 <div class="section" id="wow">
 <h3>Wow!<a class="headerlink" href="#wow" title="Permalink to this headline">¶</a></h3>
 <p>Seems amazing. And it is handy because now we can compute, say, the thousandth term in the sequence, <span class="math notranslate nohighlight">\(F_{1000}\)</span> directly, without having to compute all the other terms that come before.</p>
@@ -607,7 +783,7 @@ This number <span class="math notranslate nohighlight">\(\psi\)</span> is called
 <p><strong>WAIT!</strong> Don’t go on until you try writing a program yourself, to compute the Fibonacci numbers using only powers of <span class="math notranslate nohighlight">\(\varphi, \psi\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## SOLUTION (don&#39;t peak!)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## SOLUTION (don&#39;t peak!)</span>
 
 <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="o">*</span>  <span class="c1">## We need this to define square roots</span>
 <span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
@@ -618,7 +794,7 @@ This number <span class="math notranslate nohighlight">\(\psi\)</span> is called
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>0.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.0
 1.0
 1.0
 2.0
@@ -650,13 +826,13 @@ This number <span class="math notranslate nohighlight">\(\psi\)</span> is called
 <p>Doing math, though, we like exact answers and we want to know why. So WHY does this formula <span class="math notranslate nohighlight">\((\phi^n - \psi^n)/\sqrt{5}\)</span> give Fibonacci numbers?</p>
 <p>Well, we can check, step by step.</p>
 <p>For <span class="math notranslate nohighlight">\(n=0\)</span>, the formula gives
-<span class="math notranslate nohighlight">\($\frac{\varphi^0 - \psi^0}{\sqrt{5}} = \frac{1-1}{\sqrt{5}} = 0,\)</span>$ which is <span class="math notranslate nohighlight">\(F[0]\)</span>, the first Fibonacci number.</p>
+$<span class="math notranslate nohighlight">\(\frac{\varphi^0 - \psi^0}{\sqrt{5}} = \frac{1-1}{\sqrt{5}} = 0,\)</span><span class="math notranslate nohighlight">\( which is \)</span>F[0]$, the first Fibonacci number.</p>
 <p>For <span class="math notranslate nohighlight">\(n=1\)</span>, the formula gives
-<span class="math notranslate nohighlight">\($\frac{\varphi^1 - \psi^1}{\sqrt{5}} =
-\frac{\frac{1 + \sqrt{5}}{2} - \frac{1 -\sqrt{5}}{2} }{\sqrt{5}} = \frac{\sqrt{5}}{\sqrt{5}} = 1,\)</span>$ which is <span class="math notranslate nohighlight">\(F[1]\)</span>, the next Fibonacci number.</p>
+$<span class="math notranslate nohighlight">\(\frac{\varphi^1 - \psi^1}{\sqrt{5}} =
+\frac{\frac{1 + \sqrt{5}}{2} - \frac{1 -\sqrt{5}}{2} }{\sqrt{5}} = \frac{\sqrt{5}}{\sqrt{5}} = 1,\)</span><span class="math notranslate nohighlight">\( which is \)</span>F[1]$, the next Fibonacci number.</p>
 <p>For <span class="math notranslate nohighlight">\(n=2\)</span>, it looks harder because we get the squares <span class="math notranslate nohighlight">\(\varphi^2, \psi^2\)</span> in the formula. But then remember that both <span class="math notranslate nohighlight">\(\varphi\)</span> and <span class="math notranslate nohighlight">\(\psi\)</span> solve the quadratic <span class="math notranslate nohighlight">\(x^2 = x+1\)</span>, so we know <span class="math notranslate nohighlight">\(\varphi^2 = \phi +1\)</span> and <span class="math notranslate nohighlight">\(\psi^2 = \psi +1\)</span>. So we can write
-<span class="math notranslate nohighlight">\($\frac{\phi^2 - \psi^2}{\sqrt{5}} = \frac{\phi + 1 - \psi -1}{\sqrt{5}} = \frac{\phi - \psi }{\sqrt{5}} = 1,\)</span>$
-since we already calculated this in the <span class="math notranslate nohighlight">\(n=1\)</span> step. So this really is <span class="math notranslate nohighlight">\(F[2]=1\)</span>.</p>
+$<span class="math notranslate nohighlight">\(\frac{\phi^2 - \psi^2}{\sqrt{5}} = \frac{\phi + 1 - \psi -1}{\sqrt{5}} = \frac{\phi - \psi }{\sqrt{5}} = 1,\)</span><span class="math notranslate nohighlight">\(
+since we already calculated this in the \)</span>n=1<span class="math notranslate nohighlight">\( step. So this really is \)</span>F[2]=1$.</p>
 <p>For <span class="math notranslate nohighlight">\(n=3,4,5,\ldots\)</span> again it might seem like it will be hard because of the higher powers. But multiplying the formulas <span class="math notranslate nohighlight">\(\varphi^2 = \varphi +1\)</span> and <span class="math notranslate nohighlight">\(\psi^2 = \psi +1\)</span> by powers of <span class="math notranslate nohighlight">\(\phi\)</span> and <span class="math notranslate nohighlight">\(\psi\)</span>, we get</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{eqnarray*}
@@ -667,24 +843,24 @@ since we already calculated this in the <span class="math notranslate nohighligh
 \dots \qquad \psi^{n+2}=\psi^{n+1}+\psi^n.
 \end{eqnarray*}\end{split}\]</div>
 <p>So, assuming we know the generating formula already for <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(n+1\)</span> we can write the next term as
-<span class="math notranslate nohighlight">\($\frac{\varphi^{n+2} - \psi^{n+2}}{\sqrt{5}} = \frac{\varphi^{n+1} +\varphi^n - \psi^{n+1} - \psi^n}{\sqrt{5}}
+$<span class="math notranslate nohighlight">\(\frac{\varphi^{n+2} - \psi^{n+2}}{\sqrt{5}} = \frac{\varphi^{n+1} +\varphi^n - \psi^{n+1} - \psi^n}{\sqrt{5}}
 = \frac{\varphi^{n+1} - \psi^{n+1}}{\sqrt{5}} + \frac{\varphi^{n} - \psi^{n}}{\sqrt{5}} = F[n+1] + F[n] = F[n+2].\)</span>$</p>
 <p>So we do get <span class="math notranslate nohighlight">\(\frac{\varphi^{n+2} - \psi^{n+2}}{\sqrt{5}} = F[n+2]\)</span>, and the formula holds for all numbers n.</p>
 <p>This method of verifying the formula for all n, based on previous values of n, is an example of <strong>mathematical induction.</strong></p>
 </div>
 <div class="section" id="why-did-this-work">
 <h2>Why did this work?<a class="headerlink" href="#why-did-this-work" title="Permalink to this headline">¶</a></h2>
-<p>Well, from the Golden ratio, we have the formula <span class="math notranslate nohighlight">\(\varphi^2 = \varphi + 1\)</span>, which then gives the formula <span class="math notranslate nohighlight">\(\varphi^{n+2} = \varphi^{n+1} + \varphi^n\)</span>.  This looks a lot like the Fibonacci formula <span class="math notranslate nohighlight">\($F[n+2] = F[n+1] + F[n].\)</span>$ Same powers of <span class="math notranslate nohighlight">\(\psi\)</span>.</p>
+<p>Well, from the Golden ratio, we have the formula <span class="math notranslate nohighlight">\(\varphi^2 = \varphi + 1\)</span>, which then gives the formula <span class="math notranslate nohighlight">\(\varphi^{n+2} = \varphi^{n+1} + \varphi^n\)</span>.  This looks a lot like the Fibonacci formula $<span class="math notranslate nohighlight">\(F[n+2] = F[n+1] + F[n].\)</span><span class="math notranslate nohighlight">\( Same powers of \)</span>\psi$.</p>
 <p>If we take ANY linear combination of powers of <span class="math notranslate nohighlight">\(\varphi, \psi\)</span>, such as
-<span class="math notranslate nohighlight">\($f(n) = 3\varphi^n + 4\psi^n,\)</span>$
-we will get a sequence that behaves like the Fibonacci sequence, with <span class="math notranslate nohighlight">\(f(n+2) = f(n+1) + f(n).\)</span> To get the ‘right’ Fibonacci sequence, we just have to replace the 3 and 4 with the right coefficients.</p>
+$<span class="math notranslate nohighlight">\(f(n) = 3\varphi^n + 4\psi^n,\)</span><span class="math notranslate nohighlight">\(
+we will get a sequence that behaves like the Fibonacci sequence, with \)</span>f(n+2) = f(n+1) + f(n).$ To get the ‘right’ Fibonacci sequence, we just have to replace the 3 and 4 with the right coefficients.</p>
 </div>
 <div class="section" id="from-sequences-to-functions">
 <h2>From sequences to functions<a class="headerlink" href="#from-sequences-to-functions" title="Permalink to this headline">¶</a></h2>
 <p>Wouldn’t it be fun to extend Fibonacci numbers to a function, defined for all numbers <span class="math notranslate nohighlight">\(x\)</span>?</p>
 <p>The problems is the function
-<span class="math notranslate nohighlight">\($F[x] = \frac{\varphi^x - \psi^x}{\sqrt{5}}\)</span>$
-is not defined for values of <span class="math notranslate nohighlight">\(x\)</span> other than integers.</p>
+$<span class="math notranslate nohighlight">\(F[x] = \frac{\varphi^x - \psi^x}{\sqrt{5}}\)</span><span class="math notranslate nohighlight">\(
+is not defined for values of \)</span>x$ other than integers.</p>
 <p>The issue is the term <span class="math notranslate nohighlight">\(\psi^{x}=\left( \frac{1-\sqrt{5}}{2}\right) ^{x}\)</span>, which is the power of a negative number.
 We don’t really know how to define that. For instance, what is the square root of a negative number?</p>
 <p>To
@@ -703,7 +879,7 @@ continuous function <span class="math notranslate nohighlight">\(m(x)\)</span> s
 <div class="math notranslate nohighlight">
 \[m\left( x\right) =\cos \left( \pi x\right) \qquad \text{does the job.} \]</div>
 <p>That is:
-<span class="math notranslate nohighlight">\($\cos \left( n\pi \right) =1\quad \text{if }n\text{ is even}\quad\text{ and}\quad %
+$<span class="math notranslate nohighlight">\(\cos \left( n\pi \right) =1\quad \text{if }n\text{ is even}\quad\text{ and}\quad %
 \cos \left( n\pi \right) =-1\quad \text{if }n\text{ is odd.}\)</span>$</p>
 <p>Why this is a <strong>good</strong> choice would lead us to complex numbers and more!</p>
 <p>Hence, we obtain the following closed formula for our function <span class="math notranslate nohighlight">\(F[x]:\)</span></p>
@@ -721,7 +897,7 @@ F[x]  &amp;=&amp;\frac{{\varphi }^{x}-\left( -1\right) ^{x}\left( -\psi
 <h2>A plot of the continuous Fibonacci function<a class="headerlink" href="#a-plot-of-the-continuous-fibonacci-function" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="k">import</span> <span class="o">*</span>
 
@@ -752,7 +928,7 @@ F[x]  &amp;=&amp;\frac{{\varphi }^{x}-\left( -1\right) ^{x}\left( -\psi
 <p>Let’s plot this too.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="k">import</span> <span class="o">*</span>
 
@@ -859,13 +1035,13 @@ R_{5} &amp;=&amp;1+\frac{1}{R_{4}}=1+\frac{1}{1+\frac{1}{1+\frac{1}{1+1}}} \\
 \end{split}\]</div>
 <p>This confirms that both the sequence of rations <span class="math notranslate nohighlight">\(R_{n}\)</span> and the sequence of
 approximations to the continuous fraction of <span class="math notranslate nohighlight">\({\varphi }\)</span> are the same
-sequence. $\square $</p>
+sequence. <span class="math notranslate nohighlight">\(\square \)</span></p>
 <p>In general, continued fractions are expressions of the form</p>
 <div class="math notranslate nohighlight">
 \[
 a_{0}+\frac{1}{a_{1}+\dfrac{1}{a_{2}+\dfrac{1}{a_{3}+\dots }}}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(a_{0}\)</span> is an integer and $a_{1},a_{2},a_{3},\dots $ are positive
+<p>where <span class="math notranslate nohighlight">\(a_{0}\)</span> is an integer and <span class="math notranslate nohighlight">\(a_{1},a_{2},a_{3},\dots \)</span> are positive
 integers. These type of fractions are abbreviated by the notation</p>
 <div class="math notranslate nohighlight">
 \[
@@ -897,7 +1073,7 @@ https://en.wikipedia.org/wiki/Continued_fraction</p>
 <li><p>each number in this sequence is the sum of the two coming before it in the sequence.</p></li>
 <li><p>the sequence grows fast, increasing by a <strong>factor</strong> of about <strong>10</strong> for every <strong>five</strong> terms.</p></li>
 <li><p>the <strong>ratio</strong> of pairs of Fibonacci numbers converges to the <strong>Golden ratio,</strong> known since the ancient Greeks as the number
-<span class="math notranslate nohighlight">\($\varphi = \frac{1 + \sqrt{5}}{2} \approx 1.6108.\)</span>$</p></li>
+$<span class="math notranslate nohighlight">\(\varphi = \frac{1 + \sqrt{5}}{2} \approx 1.6108.\)</span>$</p></li>
 <li><p>the Fibonacci numbers can be computed directly as the difference of powers of <span class="math notranslate nohighlight">\(\varphi\)</span> and its <strong>conjugate,</strong> <span class="math notranslate nohighlight">\(\psi = \frac{1 - \sqrt{5}}{2}.\)</span> This is sometimes faster than computing the whole list of Fibonnaci numbers.</p></li>
 <li><p>this formula with powers of <span class="math notranslate nohighlight">\(\varphi, \psi\)</span> is verified using <strong>induction.</strong></p></li>
 <li><p>The Fibonacci numbers can be <strong>extended</strong> to a <strong>continuous function</strong> <span class="math notranslate nohighlight">\(Fib(x)\)</span>, defined for all real numbers <span class="math notranslate nohighlight">\(x\)</span> (including negatives). It <strong>oscillates</strong> (wiggles) on the negative x-axis.</p></li>
@@ -910,10 +1086,29 @@ https://en.wikipedia.org/wiki/Continued_fraction</p>
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"6d2060fb5e6e4f129d5098060bd6145e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a1d2ad3b6a7b4d38bba35d8af564d5cb": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_c2a0716a10844370bc39c57c5ceba527", "IPY_MODEL_34efd33c29aa4bc9805bc1070b21a8a6"], "layout": "IPY_MODEL_6d2060fb5e6e4f129d5098060bd6145e"}}, "a7df3df8e5324bee8359b5597100bd1d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "682a46c2afae470cae4be257b1b82435": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "c2a0716a10844370bc39c57c5ceba527": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "N", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_a7df3df8e5324bee8359b5597100bd1d", "max": 100, "min": 10, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 10, "style": "IPY_MODEL_682a46c2afae470cae4be257b1b82435", "value": 10}}, "e1feb4ea04e2478c896bd02f3d36e080": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "34efd33c29aa4bc9805bc1070b21a8a6": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_e1feb4ea04e2478c896bd02f3d36e080", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n"}]}}}, "version_major": 2, "version_minor": 0}
+{"state": {"1dacb0b0ff184bcea68a8f94795f58c5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a89ecf96260b4c198ae087ebeadd03a3": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_e9c1e2a1ac134a8382ae248f3eabcaca", "IPY_MODEL_72116c32e67d4da78f95674b53897dc7"], "layout": "IPY_MODEL_1dacb0b0ff184bcea68a8f94795f58c5"}}, "a6cd09e43405454eb7ef67606a639f6d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1ed823aa2acc4ea8b79d28838fc4091c": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "e9c1e2a1ac134a8382ae248f3eabcaca": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "N", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_a6cd09e43405454eb7ef67606a639f6d", "max": 100, "min": 10, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 10, "style": "IPY_MODEL_1ed823aa2acc4ea8b79d28838fc4091c", "value": 10}}, "f898a622f391466ab5308b74189938cc": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "72116c32e67d4da78f95674b53897dc7": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_f898a622f391466ab5308b74189938cc", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n"}]}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/FibonacciNumbers"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

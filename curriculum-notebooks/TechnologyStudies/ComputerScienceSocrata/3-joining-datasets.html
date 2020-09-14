@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Filtering Datasets" href="4-filtering-datasets.html" />
@@ -65,65 +73,103 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="active">
-    <a href="../Technology.html">Technology Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="1-introduction-to-socrata-and-soda.html">Socrata and Soda</a>
-    </li>
-    <li class="">
-      <a href="2-introduction-to-plotly.html">Plotly - introduction</a>
-    </li>
-    <li class="active">
-      <a href="">Joining Datasets</a>
-    </li>
-    <li class="">
-      <a href="4-filtering-datasets.html">Filtering Datasets</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToDataStructures/introduction-to-data-structures.html">Lists and Dictionaries in Python</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToPython/introduction-to-python.html">Python - introduction</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToPython/introduction-to-python-classes.html">Python Classes</a>
-    </li>
-    <li class="">
-      <a href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">Loops and Iteration in Python</a>
-    </li>
-  </ul>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Technology.html">
+   Technology Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="1-introduction-to-socrata-and-soda.html">
+     Socrata and Soda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2-introduction-to-plotly.html">
+     Plotly - introduction
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Joining Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="4-filtering-datasets.html">
+     Filtering Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python.html">
+     Python - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python-classes.html">
+     Python - Classes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">
+     Python - Loops and Iteration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToDataStructures/introduction-to-data-structures.html">
+     Python - Lists and Dictionaries
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -195,52 +241,61 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/3-joining-datasets.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/3-joining-datasets.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/3-joining-datasets.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-from-csv-files">
+   Data from CSV files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#joining-data-sets">
+   Joining data sets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualizing-the-data">
+   Visualizing the data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#note">
+     Note
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#data-from-csv-files" class="nav-link">Data from CSV files</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#joining-data-sets" class="nav-link">Joining data sets</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#visualizing-the-data" class="nav-link">Visualizing the data</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#note" class="nav-link">Note</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -257,7 +312,7 @@
 <p>But, what if we wanted to demonstrate additional features of the scattermapbox by visualizing school enrollment? We will need to obtain data from the two seperate datasets, and dynamically <em>join</em> them together. As mentioned, we can’t do it in SODA, but we can do so programatically using the pandas ‘merge’ function.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">io</span> <span class="k">as</span> <span class="nn">io</span>
 
@@ -278,7 +333,7 @@
 <p>The first dataset contains latitude and longitude</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    *</span>
 <span class="s2">&quot;&quot;&quot;</span>
@@ -333,7 +388,31 @@
   <tbody>
     <tr>
       <td>0</td>
-      <td>University of Calgary - Downtown Campus</td>
+      <td>Cappy Smart</td>
+      <td>The Calgary School Division</td>
+      <td>Public School</td>
+      <td>Cappy Smart School</td>
+      <td>5808 Madigan Drive N.E.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Elementary</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2A4P5</td>
+      <td>1382334</td>
+      <td>-113.945068</td>
+      <td>51.063693</td>
+      <td>\n,  \n(51.06369308063351, -113.94506774810269)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SAIT - Main Campus</td>
       <td>NaN</td>
       <td>Post Secondary</td>
       <td>NaN</td>
@@ -348,44 +427,44 @@
       <td>N</td>
       <td>N</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2P1H9</td>
-      <td>1417012</td>
-      <td>-114.082128</td>
-      <td>51.046361</td>
-      <td>\n,  \n(51.04636129977132, -114.08212752491288)</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>NaN</td>
+      <td>1382335</td>
+      <td>-114.089272</td>
+      <td>51.064515</td>
+      <td>\n,  \n(51.0645150986753, -114.08927241599774)</td>
     </tr>
     <tr>
-      <td>1</td>
-      <td>Harold Panabaker</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Harold Panabaker School</td>
-      <td>23 Sackville Drive S.W.</td>
+      <td>2</td>
+      <td>Sibylla Kiddle</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Sibylla Kiddle School</td>
+      <td>66 Cranford Drive SE</td>
       <td>Calgary</td>
       <td>AB</td>
-      <td>Elementary/Junior High</td>
+      <td>NaN</td>
       <td>N</td>
       <td>Provincial Data</td>
       <td>...</td>
       <td>N</td>
-      <td>Y</td>
-      <td>Y</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2W0W3</td>
-      <td>1593042</td>
-      <td>-114.086648</td>
-      <td>50.957640</td>
-      <td>\n,  \n(50.957639591895244, -114.0866481919576)</td>
+      <td>N</td>
+      <td>N</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>NaN</td>
+      <td>2523238</td>
+      <td>-113.970802</td>
+      <td>50.877863</td>
+      <td>\n,  \n(50.87786253882289, -113.97080229585185)</td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>Deer Run</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Deer Run School</td>
-      <td>2127 - 146 Avenue S.E.</td>
+      <td>3</td>
+      <td>Holy Trinity</td>
+      <td>The Calgary Roman Catholic Separate School Div...</td>
+      <td>Separate School</td>
+      <td>Holy Trinity School</td>
+      <td>1717 - 41 Street S.E.</td>
       <td>Calgary</td>
       <td>AB</td>
       <td>Elementary</td>
@@ -396,20 +475,20 @@
       <td>Y</td>
       <td>N</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2J6P8</td>
-      <td>1369586</td>
-      <td>-114.009455</td>
-      <td>50.921555</td>
-      <td>\n,  \n(50.921555427743264, -114.00945454338842)</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2A1L2</td>
+      <td>1382817</td>
+      <td>-113.974946</td>
+      <td>51.038970</td>
+      <td>\n,  \n(51.03897000809795, -113.9749455922452)</td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>Dr. George Stanley</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Dr. George Stanley School</td>
-      <td>585 Cranston Dr. SE</td>
+      <td>4</td>
+      <td>St. Michael</td>
+      <td>The Calgary Roman Catholic Separate School Div...</td>
+      <td>Separate School</td>
+      <td>St. Michael School</td>
+      <td>4511 - 8 Avenue S.W.</td>
       <td>Calgary</td>
       <td>AB</td>
       <td>Elementary/Junior High</td>
@@ -420,20 +499,44 @@
       <td>Y</td>
       <td>Y</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T3M0J4</td>
-      <td>2417018</td>
-      <td>-113.978289</td>
-      <td>50.882777</td>
-      <td>\n,  \n(50.88277715461323, -113.97828885592264)</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T3C0G9</td>
+      <td>1382837</td>
+      <td>-114.151577</td>
+      <td>51.044785</td>
+      <td>\n,  \n(51.044784910360725, -114.15157745417609)</td>
     </tr>
     <tr>
-      <td>4</td>
-      <td>Forest Lawn High</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>467</td>
+      <td>Ernest Manning High</td>
       <td>The Calgary School Division</td>
       <td>Public School</td>
-      <td>Forest Lawn High School</td>
-      <td>1304 - 44 Street S.E.</td>
+      <td>Ernest Manning High School</td>
+      <td>20 Springborough Blvd. SW</td>
       <td>Calgary</td>
       <td>AB</td>
       <td>Senior High</td>
@@ -444,140 +547,68 @@
       <td>N</td>
       <td>N</td>
       <td>Y</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2A1M8</td>
-      <td>1382833</td>
-      <td>-113.968950</td>
-      <td>51.042403</td>
-      <td>\n,  \n(51.042403074671775, -113.9689496478143)</td>
-    </tr>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>464</td>
-      <td>Glenbrook</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Glenbrook School</td>
-      <td>4725 - 33 Avenue S.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T3E3V1</td>
-      <td>1382605</td>
-      <td>-114.154997</td>
-      <td>51.023511</td>
-      <td>\n,  \n(51.02351140240388, -114.15499749200283)</td>
-    </tr>
-    <tr>
-      <td>465</td>
-      <td>Stanley Jones</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Stanley Jones School</td>
-      <td>950 6th St. NE</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary/Junior High</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2E8M3</td>
-      <td>1381145</td>
-      <td>-114.047707</td>
-      <td>51.059905</td>
-      <td>\n,  \n(51.059905406243594, -114.04770729105564)</td>
-    </tr>
-    <tr>
-      <td>466</td>
-      <td>Our Lady of Peace Elementary Junior High</td>
-      <td>The Calgary Roman Catholic Separate School Div...</td>
-      <td>Separate School</td>
-      <td>Our Lady of Peace Elementary Junior High School</td>
-      <td>14826 Millrise Hill S.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary/Junior High</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2Y2B4</td>
-      <td>1382578</td>
-      <td>-114.087710</td>
-      <td>50.918485</td>
-      <td>\n,  \n(50.91848505964268, -114.08771017487246)</td>
-    </tr>
-    <tr>
-      <td>467</td>
-      <td>Altadore</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Altadore School</td>
-      <td>4506 - 16 Street S.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>N</td>
-      <td>Y</td>
-      <td>N</td>
-      <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2T4H9</td>
-      <td>1382211</td>
-      <td>-114.099733</td>
-      <td>51.014003</td>
-      <td>\n,  \n(51.014002662591665, -114.09973324841206)</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T3H0N7</td>
+      <td>1539496</td>
+      <td>-114.189235</td>
+      <td>51.035957</td>
+      <td>\n,  \n(51.03595702416803, -114.18923533988372)</td>
     </tr>
     <tr>
       <td>468</td>
-      <td>Elbow Park</td>
+      <td>St. Mary's High</td>
+      <td>The Calgary Roman Catholic Separate School Div...</td>
+      <td>Separate School</td>
+      <td>St. Mary's High School</td>
+      <td>111 - 18 Avenue S.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Senior High</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2S0B8</td>
+      <td>1382530</td>
+      <td>-114.064018</td>
+      <td>51.036614</td>
+      <td>\n,  \n(51.03661432292529, -114.06401757166121)</td>
+    </tr>
+    <tr>
+      <td>469</td>
+      <td>Discovering Choices</td>
       <td>The Calgary School Division</td>
       <td>Public School</td>
-      <td>Elbow Park School</td>
-      <td>721 - 38 Avenue S.W.</td>
+      <td>Discovering Choices</td>
+      <td>206, 315 - 10 Avenue S.E.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Senior High</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2G0W2</td>
+      <td>1428383</td>
+      <td>-114.056693</td>
+      <td>51.042871</td>
+      <td>\n,  \n(51.04287050666238, -114.05669326024136)</td>
+    </tr>
+    <tr>
+      <td>470</td>
+      <td>Holy Family</td>
+      <td>The Calgary Roman Catholic Separate School Div...</td>
+      <td>Separate School</td>
+      <td>Holy Family School</td>
+      <td>904 - 32 St. S.E.</td>
       <td>Calgary</td>
       <td>AB</td>
       <td>Elementary</td>
@@ -588,22 +619,46 @@
       <td>Y</td>
       <td>N</td>
       <td>N</td>
-      <td>2020-06-28T00:00:00.000Z</td>
-      <td>T2T2H8</td>
-      <td>1382920</td>
-      <td>-114.082197</td>
-      <td>51.019577</td>
-      <td>\n,  \n(51.01957747339584, -114.0821970414466)</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T2A0Z1</td>
+      <td>1382133</td>
+      <td>-113.987864</td>
+      <td>51.045536</td>
+      <td>\n,  \n(51.04553616438823, -113.98786382817913)</td>
+    </tr>
+    <tr>
+      <td>471</td>
+      <td>Chinook Winds Adventist Academy</td>
+      <td>Alberta Conference of 7th Day Adventist Church</td>
+      <td>Private School</td>
+      <td>Chinook Winds Adventist Academy</td>
+      <td>10101 - 2nd Avenue S.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Elementary/Junior High/Senior High</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>2020-08-30T00:00:00.000Z</td>
+      <td>T3B5T2</td>
+      <td>1376232</td>
+      <td>-114.233266</td>
+      <td>51.079234</td>
+      <td>\n,  \n(51.07923420646401, -114.2332661890989)</td>
     </tr>
   </tbody>
 </table>
-<p>469 rows × 21 columns</p>
+<p>472 rows × 21 columns</p>
 </div></div></div>
 </div>
 <p>The second dataset contains enrollment data. Note that the enrollment dataset also contains a school_year column, which makes sense, as enrollment values do change. However, our intent is to visualize enrollment at a specific point in time, so we use the WHERE clause to filter out rows that do not match that time.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">SELECT</span>
 <span class="s2">    *</span>
 <span class="s2">WHERE</span>
@@ -616,7 +671,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>    school_year school_authority_category  \
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    school_year school_authority_category  \
 0     2019-2020                  Separate   
 1     2019-2020                    Public   
 2     2019-2020                    Public   
@@ -691,7 +746,7 @@
 <p>We could instead use pandas to import data from CSV (<a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">comma separated values</a>) files.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">calgary_school_location</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://data.calgary.ca/resource/64t2-ax4d.csv&quot;</span><span class="p">)</span>
 <span class="n">calgary_school_enrollment</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://data.calgary.ca/resource/9qye-mibh.csv?$where=School_Year%20=%20&#39;2019-2020&#39;&quot;</span><span class="p">)</span>
@@ -701,7 +756,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">calgary_school_location</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">calgary_school_location</span>
 </pre></div>
 </div>
 </div>
@@ -750,7 +805,31 @@
   <tbody>
     <tr>
       <td>0</td>
-      <td>University of Calgary - Downtown Campus</td>
+      <td>Cappy Smart</td>
+      <td>The Calgary School Division</td>
+      <td>Public School</td>
+      <td>Cappy Smart School</td>
+      <td>5808 Madigan Drive N.E.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Elementary</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>T2A4P5</td>
+      <td>1382334</td>
+      <td>-113.945068</td>
+      <td>51.063693</td>
+      <td>(51.06369308063351, -113.94506774810269)</td>
+      <td>12</td>
+      <td>4</td>
+      <td>33</td>
+      <td>3</td>
+      <td>246</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SAIT - Main Campus</td>
       <td>NaN</td>
       <td>Post Secondary</td>
       <td>NaN</td>
@@ -761,83 +840,35 @@
       <td>Y</td>
       <td>Post Secondary Data</td>
       <td>...</td>
-      <td>T2P1H9</td>
-      <td>1417012</td>
-      <td>-114.082128</td>
-      <td>51.046361</td>
-      <td>(51.04636129977132, -114.08212752491288)</td>
-      <td>14</td>
-      <td>1</td>
-      <td>262</td>
-      <td>2</td>
-      <td>160</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Harold Panabaker</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Harold Panabaker School</td>
-      <td>23 Sackville Drive S.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary/Junior High</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>T2W0W3</td>
-      <td>1593042</td>
-      <td>-114.086648</td>
-      <td>50.957640</td>
-      <td>(50.957639591895244, -114.0866481919576)</td>
-      <td>8</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>1382335</td>
+      <td>-114.089272</td>
+      <td>51.064515</td>
+      <td>(51.0645150986753, -114.08927241599774)</td>
       <td>7</td>
-      <td>5</td>
-      <td>91</td>
+      <td>2</td>
+      <td>40</td>
+      <td>7</td>
+      <td>285</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>Deer Run</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Deer Run School</td>
-      <td>2127 - 146 Avenue S.E.</td>
+      <td>Sibylla Kiddle</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Sibylla Kiddle School</td>
+      <td>66 Cranford Drive SE</td>
       <td>Calgary</td>
       <td>AB</td>
-      <td>Elementary</td>
+      <td>NaN</td>
       <td>N</td>
       <td>Provincial Data</td>
       <td>...</td>
-      <td>T2J6P8</td>
-      <td>1369586</td>
-      <td>-114.009455</td>
-      <td>50.921555</td>
-      <td>(50.921555427743264, -114.00945454338842)</td>
-      <td>6</td>
-      <td>3</td>
-      <td>168</td>
-      <td>13</td>
-      <td>71</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Dr. George Stanley</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Dr. George Stanley School</td>
-      <td>585 Cranston Dr. SE</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary/Junior High</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>T3M0J4</td>
-      <td>2417018</td>
-      <td>-113.978289</td>
-      <td>50.882777</td>
-      <td>(50.88277715461323, -113.97828885592264)</td>
+      <td>NaN</td>
+      <td>2523238</td>
+      <td>-113.970802</td>
+      <td>50.877863</td>
+      <td>(50.87786253882289, -113.97080229585185)</td>
       <td>4</td>
       <td>3</td>
       <td>294</td>
@@ -845,23 +876,23 @@
       <td>82</td>
     </tr>
     <tr>
-      <td>4</td>
-      <td>Forest Lawn High</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Forest Lawn High School</td>
-      <td>1304 - 44 Street S.E.</td>
+      <td>3</td>
+      <td>Holy Trinity</td>
+      <td>The Calgary Roman Catholic Separate School Div...</td>
+      <td>Separate School</td>
+      <td>Holy Trinity School</td>
+      <td>1717 - 41 Street S.E.</td>
       <td>Calgary</td>
       <td>AB</td>
-      <td>Senior High</td>
+      <td>Elementary</td>
       <td>N</td>
       <td>Provincial Data</td>
       <td>...</td>
-      <td>T2A1M8</td>
-      <td>1382833</td>
-      <td>-113.968950</td>
-      <td>51.042403</td>
-      <td>(51.042403074671775, -113.9689496478143)</td>
+      <td>T2A1L2</td>
+      <td>1382817</td>
+      <td>-113.974946</td>
+      <td>51.038970</td>
+      <td>(51.03897000809795, -113.9749455922452)</td>
       <td>12</td>
       <td>3</td>
       <td>85</td>
@@ -869,152 +900,176 @@
       <td>211</td>
     </tr>
     <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>464</td>
-      <td>Glenbrook</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Glenbrook School</td>
-      <td>4725 - 33 Avenue S.W.</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>T3E3V1</td>
-      <td>1382605</td>
-      <td>-114.154997</td>
-      <td>51.023511</td>
-      <td>(51.02351140240388, -114.15499749200283)</td>
-      <td>1</td>
-      <td>1</td>
-      <td>298</td>
-      <td>14</td>
-      <td>33</td>
-    </tr>
-    <tr>
-      <td>465</td>
-      <td>Stanley Jones</td>
-      <td>The Calgary School Division</td>
-      <td>Public School</td>
-      <td>Stanley Jones School</td>
-      <td>950 6th St. NE</td>
-      <td>Calgary</td>
-      <td>AB</td>
-      <td>Elementary/Junior High</td>
-      <td>N</td>
-      <td>Provincial Data</td>
-      <td>...</td>
-      <td>T2E8M3</td>
-      <td>1381145</td>
-      <td>-114.047707</td>
-      <td>51.059905</td>
-      <td>(51.059905406243594, -114.04770729105564)</td>
-      <td>10</td>
       <td>4</td>
-      <td>171</td>
-      <td>11</td>
-      <td>78</td>
-    </tr>
-    <tr>
-      <td>466</td>
-      <td>Our Lady of Peace Elementary Junior High</td>
+      <td>St. Michael</td>
       <td>The Calgary Roman Catholic Separate School Div...</td>
       <td>Separate School</td>
-      <td>Our Lady of Peace Elementary Junior High School</td>
-      <td>14826 Millrise Hill S.W.</td>
+      <td>St. Michael School</td>
+      <td>4511 - 8 Avenue S.W.</td>
       <td>Calgary</td>
       <td>AB</td>
       <td>Elementary/Junior High</td>
       <td>N</td>
       <td>Provincial Data</td>
       <td>...</td>
-      <td>T2Y2B4</td>
-      <td>1382578</td>
-      <td>-114.087710</td>
-      <td>50.918485</td>
-      <td>(50.91848505964268, -114.08771017487246)</td>
-      <td>5</td>
+      <td>T3C0G9</td>
+      <td>1382837</td>
+      <td>-114.151577</td>
+      <td>51.044785</td>
+      <td>(51.044784910360725, -114.15157745417609)</td>
+      <td>14</td>
       <td>1</td>
-      <td>156</td>
-      <td>6</td>
-      <td>74</td>
+      <td>281</td>
+      <td>2</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <td>467</td>
-      <td>Altadore</td>
+      <td>Ernest Manning High</td>
       <td>The Calgary School Division</td>
       <td>Public School</td>
-      <td>Altadore School</td>
-      <td>4506 - 16 Street S.W.</td>
+      <td>Ernest Manning High School</td>
+      <td>20 Springborough Blvd. SW</td>
       <td>Calgary</td>
       <td>AB</td>
-      <td>Elementary</td>
+      <td>Senior High</td>
       <td>N</td>
       <td>Provincial Data</td>
       <td>...</td>
-      <td>T2T4H9</td>
-      <td>1382211</td>
-      <td>-114.099733</td>
-      <td>51.014003</td>
-      <td>(51.014002662591665, -114.09973324841206)</td>
-      <td>8</td>
+      <td>T3H0N7</td>
+      <td>1539496</td>
+      <td>-114.189235</td>
+      <td>51.035957</td>
+      <td>(51.03595702416803, -114.18923533988372)</td>
       <td>1</td>
-      <td>200</td>
-      <td>2</td>
-      <td>267</td>
+      <td>1</td>
+      <td>289</td>
+      <td>14</td>
+      <td>22</td>
     </tr>
     <tr>
       <td>468</td>
-      <td>Elbow Park</td>
+      <td>St. Mary's High</td>
+      <td>The Calgary Roman Catholic Separate School Div...</td>
+      <td>Separate School</td>
+      <td>St. Mary's High School</td>
+      <td>111 - 18 Avenue S.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Senior High</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>T2S0B8</td>
+      <td>1382530</td>
+      <td>-114.064018</td>
+      <td>51.036614</td>
+      <td>(51.03661432292529, -114.06401757166121)</td>
+      <td>14</td>
+      <td>1</td>
+      <td>297</td>
+      <td>5</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>469</td>
+      <td>Discovering Choices</td>
       <td>The Calgary School Division</td>
       <td>Public School</td>
-      <td>Elbow Park School</td>
-      <td>721 - 38 Avenue S.W.</td>
+      <td>Discovering Choices</td>
+      <td>206, 315 - 10 Avenue S.E.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Senior High</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>T2G0W2</td>
+      <td>1428383</td>
+      <td>-114.056693</td>
+      <td>51.042871</td>
+      <td>(51.04287050666238, -114.05669326024136)</td>
+      <td>14</td>
+      <td>3</td>
+      <td>260</td>
+      <td>5</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>470</td>
+      <td>Holy Family</td>
+      <td>The Calgary Roman Catholic Separate School Div...</td>
+      <td>Separate School</td>
+      <td>Holy Family School</td>
+      <td>904 - 32 St. S.E.</td>
       <td>Calgary</td>
       <td>AB</td>
       <td>Elementary</td>
       <td>N</td>
       <td>Provincial Data</td>
       <td>...</td>
-      <td>T2T2H8</td>
-      <td>1382920</td>
-      <td>-114.082197</td>
-      <td>51.019577</td>
-      <td>(51.01957747339584, -114.0821970414466)</td>
-      <td>8</td>
+      <td>T2A0Z1</td>
+      <td>1382133</td>
+      <td>-113.987864</td>
+      <td>51.045536</td>
+      <td>(51.04553616438823, -113.98786382817913)</td>
+      <td>12</td>
+      <td>3</td>
+      <td>121</td>
+      <td>11</td>
+      <td>264</td>
+    </tr>
+    <tr>
+      <td>471</td>
+      <td>Chinook Winds Adventist Academy</td>
+      <td>Alberta Conference of 7th Day Adventist Church</td>
+      <td>Private School</td>
+      <td>Chinook Winds Adventist Academy</td>
+      <td>10101 - 2nd Avenue S.W.</td>
+      <td>Calgary</td>
+      <td>AB</td>
+      <td>Elementary/Junior High/Senior High</td>
+      <td>N</td>
+      <td>Provincial Data</td>
+      <td>...</td>
+      <td>T3B5T2</td>
+      <td>1376232</td>
+      <td>-114.233266</td>
+      <td>51.079234</td>
+      <td>(51.07923420646401, -114.2332661890989)</td>
+      <td>13</td>
       <td>1</td>
-      <td>70</td>
-      <td>5</td>
-      <td>75</td>
+      <td>291</td>
+      <td>14</td>
+      <td>14</td>
     </tr>
   </tbody>
 </table>
-<p>469 rows × 26 columns</p>
+<p>472 rows × 26 columns</p>
 </div></div></div>
 </div>
 </div>
@@ -1024,7 +1079,7 @@
 <p>Thus, we can do a simple left join with the enrollment on the left and the locations on the right. That way, our resulting dataframe will only have data on schools that have enrollment data. We would run into problems later on if there are NaN (aka null) values in the total field.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">calgary_school_location_enrollment</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">calgary_school_enrollment</span><span class="p">,</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">calgary_school_location_enrollment</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">calgary_school_enrollment</span><span class="p">,</span> 
                                               <span class="n">right</span><span class="o">=</span><span class="n">calgary_school_location</span><span class="p">,</span> 
                                               <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> 
                                               <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;school_name&#39;</span><span class="p">,</span> 
@@ -1358,7 +1413,7 @@
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 
 <span class="n">figure1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span><span class="n">calgary_school_location_enrollment</span><span class="p">,</span> 
                             <span class="n">size</span><span class="o">=</span><span class="s2">&quot;total&quot;</span><span class="p">,</span>
@@ -1457,20 +1512,20 @@ var n,a=t("./lib/build-log"),i=t("./lib/epsilon"),o=t("./lib/intersecter"),s=t("
 </div><div class="output text_html"><div>
 
 
-            <div id="b4f8b07a-9344-4d7c-a6d6-384a4efcdbd5" class="plotly-graph-div" style="height:600px; width:100%;"></div>
+            <div id="6f781fae-b328-4442-a74a-aeb55384174a" class="plotly-graph-div" style="height:600px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
 
-                if (document.getElementById("b4f8b07a-9344-4d7c-a6d6-384a4efcdbd5")) {
+                if (document.getElementById("6f781fae-b328-4442-a74a-aeb55384174a")) {
                     Plotly.newPlot(
-                        'b4f8b07a-9344-4d7c-a6d6-384a4efcdbd5',
+                        '6f781fae-b328-4442-a74a-aeb55384174a',
                         [{"customdata": [[null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Separate School", "Elementary/Junior High", "15 Skyview Ranch Street SE"], [null, null, null], ["Separate School", "Elementary/Junior High", "999 Sherwood Blvd. NW"], [null, null, null], ["Separate School", "Elementary", "12455 Coventry Hills Way, N.E."], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Separate School", "Elementary/Junior High", "1916 2nd Street SW"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Separate School", "Elementary/Junior High", "509 Harvest Hills Drive N.E."], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Separate School", "Elementary/Junior High", "730 Citadel Way, N.W."], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Separate School", "Elementary/Junior High/Senior High", "1010 - 21 Avenue S.E."], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Separate School", "Elementary/Junior High", "16201 McKenzie Lake Boulevard S.E."], [null, null, null], ["Separate School", "Elementary/Junior High", "10845 Hidden Valley Drive"], ["Separate School", "Elementary/Junior High", "99 Bridlewood Road SW"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Separate School", "Elementary", "231 - 6 Street N.E."], [null, null, null], [null, null, null], ["Separate School", "Elementary", "6320 Taralea Park NE"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Separate School", "Elementary/Junior High", "70 Sunmills Drive S.E."], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Separate School", "Elementary/Junior High", "225 Prestwick Ave SE"], ["Separate School", "Elementary/Junior High/Senior High", "4811 6th St. SW"], [null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=The Calgary Roman Catholic Separate School Division<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Our Lady of the Assumption School", "St. Thomas Aquinas School", "Our Lady of Wisdom", "St. Andrew School", "St. Maria Goretti Elementary School", "Apostles of Jesus", "St. Gerard Bilingual School", "Blessed Marie-Rose", "Corpus Christi School", "St. Clare", "St. Teresa of Calcutta School", "Our Lady of Grace School", "Holy Family School", "St. Marguerite School", "Monsignor Neville Anderson School", "Bishop Carroll High School", "Our Lady of Lourdes", "St. Matthew School", "St. Sylvester School", "Bishop Kidd School", "Holy Child School", "Christ the King Catholic School", "Holy Cross Elementary Junior High School", "St. Cyril School", "Bishop O'Byrne High School", "St. Monica School", "Ascension of Our Lord", "St. Benedict School", "St. Peter Elementary School", "St. Sebastian Elementary School", "Madeleine D' Houet Bilingual School", "Good Shepherd School", "Our Lady of Peace Elementary Junior High School", "St. Stephen School", "Divine Mercy School", "St. Brigid", "Monsignor A. J. Hetherington Elementary School", "St. Isabella School", "St. Wilfrid Elementary School", "St. Vincent De Paul Elementary Junior High School", "Father Doucet School", "St. Martin De Porres High School", "St. Anne Academic Centre", "St. Jerome Elementary School", "St. Joseph Elementary Junior High School", "St. Luke Bilingual Elementary School", "St. Bede Elementary School", "St. Gregory School", "Sacred Heart Elementary School", "Our Lady of the Evergreens Catholic School", "Our Lady Queen of Peace Elementary School", "St. Veronica School", "Don Bosco School", "Monsignor J. S. Smith School", "Notre Dame High School", "St. Thomas More School", "Sanctuary Outreach", "St. John Paul II School", "Guardian Angel School", "Monsignor E. L. Doyle Elementary School", "Holy Spirit Catholic School", "Father Lacombe School", "St. Dominic School", "Bishop McNally High School", "St. Cecilia (Bilingual) Elementary School", "Blessed Cardinal Newman", "St. Jean Brebeuf School", "St. Elizabeth Seton", "Monsignor J. J. O'Brien", "Junior High Fresh Start Outreach Program", "St. Alphonsus Elementary Junior High School", "Mother Mary Greene School", "Holy Angels School", "St. Helena School", "St. Bonaventure School", "St. Kateri Tekakwitha School", "Father Scollen School", "St. Angela Elementary", "St. Bernadette School", "St. Margaret School", "Our Lady of Fatima", "St. John XXIII School", "St. Rose of Lima Junior High School", "St. William School", "St. Joan of Arc Elementary/Junior High School", "St. Jude School", "St. Basil Elementary/Junior High School", "Bishop Grandin High School", "All Saints School", "Fresh Start Outreach Program", "John Costello Catholic School", "St. Francis High School", "Father James Whelihan", "St. Ambrose School", "Holy Trinity School", "Light of Christ Catholic School", "St. Michael School", "St. Rupert School", "Holy Name (Bilingual) School", "St. Gabriel the Archangel", "St. Hubert Elementary School", "St. Boniface Elementary School", "Prince of Peace School", "St. Catherine Elementary School", "St. Martha School", "St. Henry Elementary School", "Ecole St. Pius X School", "St. Philip School", "St. Mary's High School", "St. James Elementary Junior High School", "St. Mark Elementary School", "St. Augustine Elementary Junior High School", "St. Rita School", "St. Damien School", "Our Lady of the Rosary School", "St. Timothy", "St. Albert the Great", "St. Anthony", "St. Patrick School"], "lat": [null, null, null, null, null, 51.158417311435436, null, 51.15988954389629, null, 51.16474252576233, null, null, null, null, null, null, 51.03567311798714, null, null, null, null, null, null, null, null, null, 51.14695688983868, null, null, null, null, null, null, null, null, 51.14634032196725, null, null, null, null, null, null, 51.035139307143496, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 50.90733934148647, null, 51.151101831682396, 50.90156760298889, null, null, null, null, null, null, null, null, 51.054421929469136, null, null, 51.116321746688435, null, null, null, null, null, null, null, null, null, null, null, 50.90452434869364, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 50.921509651828956, 51.01010774903789, null], "legendgroup": "The Calgary Roman Catholic Separate School Division", "lon": [null, null, null, null, null, -113.95651306852257, null, -114.14832373726935, null, -114.04539562092779, null, null, null, null, null, null, -114.06816034687648, null, null, null, null, null, null, null, null, null, -114.05968876099476, null, null, null, null, null, null, null, null, -114.1877229326153, null, null, null, null, null, null, -114.03891808256479, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -113.98885844209258, null, -114.11043639110669, -114.10386000810915, null, null, null, null, null, null, null, null, -114.04881975336572, null, null, -113.93791023243341, null, null, null, null, null, null, null, null, null, null, null, -114.04701940847612, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -113.9600758499875, -114.07929513859631, null], "marker": {"color": "#636efa", "size": [382, 172, 653, 133, 415, 795, 90, 709, 195, 645, 295, 876, 224, 486, 356, 1171, 35, 614, 230, 378, 444, 795, 450, 346, 1377, 262, 786, 290, 312, 563, 346, 399, 706, 374, 642, 504, 242, 884, 352, 432, 338, 767, 956, 659, 440, 383, 369, 404, 210, 497, 739, 369, 288, 452, 1746, 282, 20, 338, 340, 231, 344, 1157, 240, 1403, 312, 686, 443, 703, 766, 3, 423, 293, 213, 317, 290, 317, 669, 121, 129, 546, 523, 566, 507, 133, 742, 162, 837, 1271, 1301, 58, 272, 1627, 624, 515, 175, 707, 416, 256, 394, 707, 156, 127, 899, 244, 715, 173, 336, 444, 1092, 351, 313, 523, 135, 326, 491, 356, 604, 27, 249], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "The Calgary Roman Catholic Separate School Division", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null], [null, null, null], ["Public School", "Senior High", "2336 53 Ave SW, Calgary, T3E 1"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Senior High", "#92 116 3800 Memorial Dr NE"], ["Public School", "Senior High", "#92 116 3800 Memorial Dr NE"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Senior High", "#3, 1002 - 37 Street S.W"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Elementary", "3743 Dover Ridge Drive S.W."], [null, null, null], [null, null, null], ["Public School", "Senior High", "206, 315 - 10 Avenue S.E."], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Elementary/Junior High", "10020 19 St. SW"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Elementary/Junior High/Senior High", "5505 4A St. SW"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Elementary/Junior High/Senior High", "805 - 37 Street NW"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Elementary", "c/o Sir James Lougheed School 3519 - 36 Avenue SW"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Senior High", "4110 - 79 Street NW"], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Senior High", "2282 - 9 Street N.W."], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], ["Public School", "Elementary/Junior High/Senior High", "2336 53 Avenue S.W."], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null], [null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=The Calgary School Division<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Fish Creek School", "Kenneth D. Taylor School", "Chinook Learning Services", "Clarence Sansom School", "Terry Fox School", "Maple Ridge School", "Ron Southern School", "Collingwood School", "Midsun School", "Bowcroft School", "Vincent Massey School", "Queen Elizabeth High School", "Saddle Ridge School", "John Ware School", "Westgate School", "Wilma Hansen School", "Deer Run School", "McKenzie Highlands School", "Sir John Franklin School", "Abbeydale School", "Glenmeadows School", "John G Diefenbaker High School", "Alex Ferguson School", "Citadel Park School", "James Short Memorial School", "Nose Creek School", "Sundance School", "A. E. Cross School", "Richmond School", "Woodlands School", "The Hamptons School", "Forest Lawn High School", "Erin Woods School", "Rosedale School", "Buffalo Rubbing Stone School", "Brentwood School", "Falconridge School", "David Thompson School", "Prince of Wales School", "R. T. Alderman School", "Belvedere Parkway School", "Dalhousie School", "Queen Elizabeth School", "Eric Harvie School", "Discovering Choices 2", "Discovering Choices 2", "Beddington Heights School", "Ted Harrison School", "Lord Beaverbrook High School", "Chief Justice Milvain School", "Buchanan School", "William Roper Hull School", "Copperfield School", "William Aberhart High School", "Westbrook Outreach", "Captain Nichola Goddard School", "Manmeet Singh Bhullar School", "Battalion Park School", "Sir Winston Churchill High School", "Henry Wise Wood High School", "Stanley Jones School", "Royal Oak School", "Terrace Road School", "Nellie McClung School", "West Dover School", "Colonel J. Fred Scott School", "Niitsitapi Learning Centre", "Marlborough School", "Haultain Memorial School", "Discovering Choices", "Georges P. Vanier School", "Grant MacEwan School", "Ramsay School", "H. D. Cartwright School", "Highwood School", "Dr. Gladys McKelvie Egbert", "West View School", "Sir Wilfrid Laurier School", "Branton School", "Mountain Park School", "Huntington Hills School", "Patrick Airlie School", "Calgary Home Education", "Marion Carson School", "Crossing Park School", "Alex Munro School", "Taradale School", "Midnapore School", "Fairview School", "Willow Park School", "Dr. Martha Cohen School", "Lester B. Pearson High School", "Coventry Hills School", "Chaparral School", "Roland Michener School", "Hawkwood School", "Louise Dean School", "Cranston School", "William D. Pratt School", "Somerset School", "Chinook Park School", "Bridlewood School", "Robert Thirsk School", "Jennie Elliott School", "Adolescent Day Treatment Program", "Young Adult Program", "Rundle School", "West Dalhousie School", "Annie Foote School", "Christine Meikle School", "Dr. George Stanley School", "Dr. Oakley School", "Captain John Palliser School", "Belfast School", "Glendale School", "Central Memorial High School", "Ernest Manning High School", "Balmoral School", "Thorncliffe School", "Annie Gale School", "Louis Riel School", "Peter Lougheed School", "National Sport School", "Wildwood School", "King George School", "All Boys Alternative Program", "Mount View School", "Briar Hill School", "James Fowler High School", "West Ridge School", "Twelve Mile Coulee School", "Dr. Gordon Higgins School", "Haysboro School", "Guy Weadick School", "Silver Springs School", "Tuscany School", "Alternative High School", "Riverbend School", "Nickle School", "Sherwood School", "Glamorgan School", "O.S. Geiger School", "Keeler School", "Wood's Homes School", "West Springs School", "Rideau Park School", "F. E. Osborne School", "Scenic Acres School", "Western Canada High School", "Bob Edwards School", "Children's Village School", "Braeside School", "Crescent Heights High School", "Acadia School", "Dr. J. K. Mulloy School", "William Reid School", "Janet Johnstone School", "Pineridge School", "Robert Warren School", "Ethel M. Johnson School", "Colonel Irvine School", "Panorama Hills School", "Dr. E. P. Scarlett High School", "Dr. Roberta Bondar School", "Catherine Nichols Gunn School", "Colonel Macleod School", "Joane Cardinal-Schubert High School", "Start Outreach", "Cappy Smart School", "Elbow Park School", "Hugh A. Bennett School", "Langevin School", "Lake Bonavista School", "Andrew Sibbald School", "Cedarbrae School", "Glenbrook School", "Banff Trail School", "Cecil Swanson School", "Thomas B Riley School", "Killarney School", "Project Trust", "Chris Akkerman School", "Olympic Heights School", "W.O. Mitchell School", "Earl Grey School", "Douglas Harkness School", "Ranchlands School", "Piitoayis Family School", "Valley Creek School", "Edgemont School", "Samuel W. Shaw School", "McKenzie Towne School", "Le Roi Daniels School", "Cambrian Heights School", "Capitol Hill School", "Varsity Acres School", "Senator Patrick Burns School", "Penbrooke Meadows School", "North Haven School", "Sunnyside School", "Rosemont School", "Hillhurst School", "Hidden Valley School", "Woodbine School", "Mount Royal School", "Jack James High School", "McKenzie Lake School", "Nelson Mandela High School", "Radisson Park School", "Emily Follensbee School", "Griffith Woods School", "Simon Fraser School", "Woodman School", "Evergreen School", "Valley View School", "Ernest Morrow School", "Sir John A Macdonald School", "CBe - Learn", "Monterey Park School", "Banting and Best School", "Arbour Lake Middle School", "Rosscarrock School", "Altadore School", "Sunalta School", "Eugene Coste School", "Colonel Sanders School", "University School", "Simons Valley School", "Bishop Pinkham School", "Marshall Springs School", "Douglasdale School", "Colonel Walker School", "Canyon Meadows School", "G.W. Skene School", "Centennial High School", "Harold Panabaker School", "Sam Livingston School", "Auburn Bay School", "Dr. Gordon Townsend School", "Tom Baines School", "New Brighton School", "Mayland Heights School", "Vista Heights School", "Ian Bazalgette School", "Bowness High School", "Connaught School", "Elboya School", "Dr. E. W. Coffin School"], "lat": [null, null, 51.06858162243973, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 51.055338754642, 51.055338754642, null, null, null, null, null, null, null, null, 51.04428798607457, null, null, null, null, null, null, null, null, null, null, null, 51.02058871132544, null, null, 51.042870506662375, null, null, null, null, null, 51.05889221373373, null, null, null, null, null, null, 51.004703998351424, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 51.06466875907604, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 51.021179776802185, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 51.08942952683853, null, null, null, null, null, null, null, null, null, null, null, null, 51.072070215107075, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 51.006516911687534, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], "legendgroup": "The Calgary School Division", "lon": [null, null, -114.06542562664656, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -113.97840984640041, -113.97840984640041, null, null, null, null, null, null, null, null, -114.14030684447422, null, null, null, null, null, null, null, null, null, null, null, -113.97933712379472, null, null, -114.05669326024136, null, null, null, null, null, -113.94152909003292, null, null, null, null, null, null, -114.07444393789528, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -114.13441071716393, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -114.136225786072, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -114.20190323510076, null, null, null, null, null, null, null, null, null, null, null, null, -114.08284033402592, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -114.1139277191071, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], "marker": {"color": "#EF553B", "size": [702, 585, 943, 499, 406, 348, 250, 480, 726, 312, 698, 980, 570, 477, 567, 364, 345, 782, 405, 275, 346, 1454, 226, 424, 205, 929, 441, 530, 208, 272, 182, 1221, 349, 238, 621, 656, 448, 552, 298, 451, 401, 410, 320, 424, 384, 384, 422, 758, 785, 550, 185, 109, 552, 1430, 251, 850, 530, 478, 2170, 1316, 525, 494, 166, 345, 243, 471, 183, 257, 202, 611, 435, 400, 164, 449, 349, 472, 50, 474, 737, 752, 244, 207, 210, 546, 1136, 304, 682, 431, 871, 618, 866, 1616, 582, 499, 201, 614, 88, 523, 930, 231, 437, 485, 1240, 558, 25, 40, 557, 319, 542, 120, 824, 164, 524, 216, 205, 1193, 1995, 558, 265, 545, 862, 950, 212, 378, 562, 104, 160, 238, 807, 843, 894, 525, 175, 315, 263, 478, 87, 463, 529, 372, 740, 358, 264, 69, 576, 496, 539, 126, 2245, 423, 72, 267, 1701, 365, 526, 284, 442, 237, 250, 334, 619, 556, 1505, 558, 307, 537, 1858, 186, 181, 209, 590, 643, 366, 363, 243, 237, 354, 402, 608, 382, 17, 639, 607, 422, 200, 310, 408, 216, 686, 700, 804, 565, 558, 282, 316, 482, 711, 196, 264, 164, 189, 274, 438, 397, 277, 325, 430, 1817, 283, 87, 966, 548, 495, 421, 483, 633, 712, 566, 572, 196, 734, 122, 366, 314, 347, 360, 358, 642, 477, 835, 372, 126, 425, 207, 1500, 317, 462, 672, 18, 839, 622, 458, 165, 530, 1026, 409, 709, 183], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "The Calgary School Division", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [["Private School", "Senior High", "B1 - 2451 Dieppe Avenue S.W. Box 100"]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Access International College (Calgary) Incorporated<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Access Academy"], "lat": [51.01928658422201], "legendgroup": "Access International College (Calgary) Incorporated", "lon": [-114.1190387515867], "marker": {"color": "#00cc96", "size": [19], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Access International College (Calgary) Incorporated", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=G.R.I.T. (Getting Ready for Inclusion Today) Calgary Society<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Getting Ready For Inclusion To"], "lat": [null], "legendgroup": "G.R.I.T. (Getting Ready for Inclusion Today) Calgary Society", "lon": [null], "marker": {"color": "#ab63fa", "size": [119], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "G.R.I.T. (Getting Ready for Inclusion Today) Calgary Society", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Khalsa School Calgary Educational Foundation<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Khalsa School Calgary Educational Foundation"], "lat": [null], "legendgroup": "Khalsa School Calgary Educational Foundation", "lon": [null], "marker": {"color": "#FFA15A", "size": [413], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Khalsa School Calgary Educational Foundation", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null], ["Private School", "Unknown", "cSPACE Projects 1721-29 Avenue SW"]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Maria Montessori Education Centre of Calgary, Ltd.<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Maria Montessori School", "Maria Montessori School - cSPACE King Edward Location"], "lat": [null, 51.02726986042332], "legendgroup": "Maria Montessori Education Centre of Calgary, Ltd.", "lon": [null, -114.10088343789057], "marker": {"color": "#19d3f3", "size": [172, 6], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Maria Montessori Education Centre of Calgary, Ltd.", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=The PREP Program - A Calgary Society to Promote Education for Individuals with Down Syndrome<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["The PREP Program"], "lat": [null], "legendgroup": "The PREP Program - A Calgary Society to Promote Education for Individuals with Down Syndrome", "lon": [null], "marker": {"color": "#FF6692", "size": [17], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "The PREP Program - A Calgary Society to Promote Education for Individuals with Down Syndrome", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null], [null, null, null], [null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Montessori Children's House Charity Foundation of Calgary<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Montessori Children's House Academy Ltd #2", "Montessori Children's House Academy Ltd #3", "Montessori Children's House Academy Ltd #1"], "lat": [null, null, null], "legendgroup": "Montessori Children's House Charity Foundation of Calgary", "lon": [null, null, null], "marker": {"color": "#B6E880", "size": [9, 17, 9], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Montessori Children's House Charity Foundation of Calgary", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [["Private School", "Elementary/Junior High/Senior High", "1677 93 rd Street S.W."], ["Private School", "Elementary/Junior High/Senior High", "1677 - 93rd Street S.W."]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Calgary Academy Society<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Calgary Academy", "Calgary Academy Collegiate"], "lat": [51.03943008461903, 51.03943008461903], "legendgroup": "Calgary Academy Society", "lon": [-114.22424793723509, -114.22424793723509], "marker": {"color": "#FF97FF", "size": [479, 118], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Calgary Academy Society", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [["Charter", "Elementary/Junior High", "640 14th Avenue S.E."]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Calgary Arts Academy Society<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Calgary Arts Academy"], "lat": [51.039401978663456], "legendgroup": "Calgary Arts Academy Society", "lon": [-114.04924221170056], "marker": {"color": "#FECB52", "size": [503], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Calgary Arts Academy Society", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Calgary French & International School Society<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Calgary French & International School"], "lat": [null], "legendgroup": "Calgary French & International School Society", "lon": [null], "marker": {"color": "#636efa", "size": [707], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Calgary French & International School Society", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Calgary Quest Children's Society<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Calgary Quest School"], "lat": [null], "legendgroup": "Calgary Quest Children's Society", "lon": [null], "marker": {"color": "#EF553B", "size": [139], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Calgary Quest Children's Society", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Calgary Girls' School Society<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Calgary Girls Charter School"], "lat": [null], "legendgroup": "Calgary Girls' School Society", "lon": [null], "marker": {"color": "#00cc96", "size": [511], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Calgary Girls' School Society", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=The Canadian Reformed School Society of Calgary<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Tyndale Christian School"], "lat": [null], "legendgroup": "The Canadian Reformed School Society of Calgary", "lon": [null], "marker": {"color": "#ab63fa", "size": [81], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "The Canadian Reformed School Society of Calgary", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [["Private School", "Elementary/Junior High/Senior High", "#137 5305 McCall Way NE"]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Aurora Learning Foundation (Calgary)<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Aurora Learning Calgary"], "lat": [51.101339314226095], "legendgroup": "Aurora Learning Foundation (Calgary)", "lon": [-114.00303449514635], "marker": {"color": "#FFA15A", "size": [15], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Aurora Learning Foundation (Calgary)", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [["Private School", "Elementary", "2201 Cliff Street S.W."]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Montessori School of Calgary<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Montessori School of Calgary"], "lat": [51.033361015610076], "legendgroup": "Montessori School of Calgary", "lon": [-114.07607763566236], "marker": {"color": "#19d3f3", "size": [73], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Montessori School of Calgary", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Society For Treatment of Autism (Calgary Region)<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Society for Treatment of Autism"], "lat": [null], "legendgroup": "Society For Treatment of Autism (Calgary Region)", "lon": [null], "marker": {"color": "#FF6692", "size": [36], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Society For Treatment of Autism (Calgary Region)", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Calgary Early Learning Centre Association<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Calgary Early Learning Centre"], "lat": [null], "legendgroup": "Calgary Early Learning Centre Association", "lon": [null], "marker": {"color": "#B6E880", "size": [48], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Calgary Early Learning Centre Association", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null], [null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Calgary Urban Project Society<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["CUPS One World Child Development Centre", "One World Child Development Centre"], "lat": [null, null], "legendgroup": "Calgary Urban Project Society", "lon": [null, null], "marker": {"color": "#FF97FF", "size": [1, 53], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Calgary Urban Project Society", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [["Private School", "Elementary/Junior High", "6700 Kootenay Street S.W."]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=The Calgary Jewish Academy<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Calgary Jewish Academy"], "lat": [50.99349472299215], "legendgroup": "The Calgary Jewish Academy", "lon": [-114.0926064832227], "marker": {"color": "#FECB52", "size": [244], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "The Calgary Jewish Academy", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}, {"customdata": [[null, null, null]], "hovertemplate": "<b>%{hovertext}</b><br><br>school_authority_name=Calgary Waldorf School Society<br>total=%{marker.size}<br>latitude=%{lat}<br>longitude=%{lon}<br>TYPE=%{customdata[0]}<br>GRADES=%{customdata[1]}<br>ADDRESS_AB=%{customdata[2]}<extra></extra>", "hovertext": ["Calgary Waldorf School"], "lat": [null], "legendgroup": "Calgary Waldorf School Society", "lon": [null], "marker": {"color": "#636efa", "size": [211], "sizemode": "area", "sizeref": 1.108641975308642}, "mode": "markers", "name": "Calgary Waldorf School Society", "showlegend": true, "subplot": "mapbox", "type": "scattermapbox"}],
                         {"height": 600, "legend": {"itemsizing": "constant", "title": {"text": "school_authority_name"}, "tracegroupgap": 0}, "mapbox": {"center": {"lat": 51.04754262785179, "lon": -114.07095111197151}, "domain": {"x": [0.0, 1.0], "y": [0.0, 1.0]}, "style": "open-street-map", "zoom": 10}, "margin": {"b": 0, "l": 0, "r": 0, "t": 0}, "showlegend": false, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}},
                         {"responsive": true}
                     ).then(function(){
 
-var gd = document.getElementById('b4f8b07a-9344-4d7c-a6d6-384a4efcdbd5');
+var gd = document.getElementById('6f781fae-b328-4442-a74a-aeb55384174a');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -1507,6 +1562,25 @@ if (outputEl) {{
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,12 +23,20 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="CALM - Moving Out 1" href="CALM-moving-out-1.html" />
@@ -65,71 +73,113 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="active">
-    <a href="../Health.html">Health Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="active">
-      <a href="">CALM - Moving Out Project</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-1.html">CALM - Moving Out 1</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-2.html">CALM - Moving Out 2</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-3.html">CALM - Moving Out 3</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-4.html">CALM - Moving Out 4</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-5.html">CALM - Moving Out 5</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-6.html">CALM - Moving Out 6</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-7.html">CALM - Moving Out 7</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-9.html">CALM - Moving Out 9</a>
-    </li>
-    <li class="">
-      <a href="CALM-moving-out-8.html">CALM - Moving Out 8</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Health.html">
+   Health Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     CALM - Moving Out Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-1.html">
+     CALM - Moving Out 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-2.html">
+     CALM - Moving Out 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-3.html">
+     CALM - Moving Out 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-4.html">
+     CALM - Moving Out 4
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-5.html">
+     CALM - Moving Out 5
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-6.html">
+     CALM - Moving Out 6
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-7.html">
+     CALM - Moving Out 7
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-9.html">
+     CALM - Moving Out 9
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CALM-moving-out-8.html">
+     CALM - Moving Out 8
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -201,42 +251,49 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Health/CALM/CALM-moving-out.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Health/CALM/CALM-moving-out.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apartment">
+   Apartment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#townhouse-or-duplex">
+   Townhouse or Duplex
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#single-detached-house">
+   Single Detached House
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#apartment" class="nav-link">Apartment</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#townhouse-or-duplex" class="nav-link">Townhouse or Duplex</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#single-detached-house" class="nav-link">Single Detached House</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -338,7 +395,7 @@ Pay received for working over 8 hours a day or 44 hours a week, whichever is gre
 <p>Click on the code cell below, then press the <code class="docutils literal notranslate"><span class="pre">Run</span></code> button on the toolbar to calculate your net income. You may also change some values in the code to see how the results change.</p>
 </h3><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wagePerHour</span> <span class="o">=</span> <span class="mi">15</span>  <span class="c1"># this is your wage in $/hour</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wagePerHour</span> <span class="o">=</span> <span class="mi">15</span>  <span class="c1"># this is your wage in $/hour</span>
 <span class="n">hoursPerDay</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="n">daysPerMonth</span> <span class="o">=</span> <span class="mi">21</span>
 
@@ -359,7 +416,7 @@ Pay received for working over 8 hours a day or 44 hours a week, whichever is gre
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Your gross income is $ 2520 per month.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your gross income is $ 2520 per month.
 $ 821.02  will be taken off your paycheck.
 Your net income is $ 1698.98 per month.
 </pre></div>
@@ -370,7 +427,7 @@ Your net income is $ 1698.98 per month.
 <p>We can also look at how your net income (take-home pay) changes based on your hourly wage. We will use <a class="reference external" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html">2019 taxation rates</a> as well as <a class="reference external" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html">EI</a> and <a class="reference external" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html">CPP</a> rates. <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell below to generate a graph.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this cell without editing it to generate a graph of Net Income vs Hourly Wage</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this cell without editing it to generate a graph of Net Income vs Hourly Wage</span>
 <span class="k">def</span> <span class="nf">calculateFederalTax</span><span class="p">(</span><span class="n">income</span><span class="p">):</span>
     <span class="n">taxBrackets</span> <span class="o">=</span> <span class="p">[</span><span class="mi">47630</span><span class="p">,</span> <span class="mi">95259</span><span class="p">,</span> <span class="mi">147667</span><span class="p">,</span> <span class="mi">210371</span><span class="p">]</span>
     <span class="n">taxRates</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="mi">15</span><span class="p">,</span> <span class="o">.</span><span class="mi">205</span><span class="p">,</span> <span class="o">.</span><span class="mi">26</span><span class="p">,</span> <span class="o">.</span><span class="mi">29</span><span class="p">,</span> <span class="o">.</span><span class="mi">33</span><span class="p">]</span>
@@ -527,20 +584,20 @@ var n,a=t("./lib/build-log"),i=t("./lib/epsilon"),o=t("./lib/intersecter"),s=t("
 </div><div class="output text_html"><div>
 
 
-            <div id="416fbf2d-ec74-43c8-a862-617b9d990725" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="611ea09f-dcef-446e-be42-e1cc823450ad" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
 
-                if (document.getElementById("416fbf2d-ec74-43c8-a862-617b9d990725")) {
+                if (document.getElementById("611ea09f-dcef-446e-be42-e1cc823450ad")) {
                     Plotly.newPlot(
-                        '416fbf2d-ec74-43c8-a862-617b9d990725',
+                        '611ea09f-dcef-446e-be42-e1cc823450ad',
                         [{"name": "Net Income", "type": "scatter", "x": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149], "y": [19664.64, 20975.616, 22286.592, 23597.568, 24908.544, 26219.52, 27530.496, 28841.472, 30152.448, 31463.424, 32754.05, 33959.426, 35164.801999999996, 36380.87, 37708.130000000005, 39042.53, 40376.93, 41711.33, 43045.729999999996, 44380.13, 45714.53, 47048.93, 48383.33, 49717.729999999996, 51052.13, 52386.53, 53720.93, 55055.33, 56389.729999999996, 57724.13, 59058.53, 60392.93, 61727.33, 63061.729999999996, 64396.13, 63070.125, 64298.925, 65527.725, 66756.525, 67985.32500000001, 69214.125, 70442.92499999999, 71671.725, 72900.525, 74129.32500000001, 75358.125, 76586.92499999999, 77815.725, 79044.525, 80273.32500000001, 81502.125, 82730.92499999999, 83959.725, 85188.525, 86392.125, 87582.525, 88772.92499999999, 89963.325, 91153.725, 92344.125, 93534.525, 94724.92499999999, 90670.89, 91803.69, 92936.48999999999, 94069.29000000001, 95202.09, 96334.89, 94824.32999999999, 95937.93, 97051.53, 98165.13, 99278.73000000001, 100392.33, 101505.93000000001, 102619.53, 103733.13, 104846.73000000001, 105960.33, 107073.93000000001, 108187.53, 109301.13, 110414.73000000001, 111528.33, 112641.93000000001, 113755.53, 114869.13, 115982.73000000001, 117096.33, 118209.93000000001, 119323.53, 120437.13, 121550.73000000001, 122664.33, 123777.93, 118841.24, 119858.84000000001, 120876.44, 121894.04000000001, 122911.64000000001, 123929.24, 124946.84000000001, 125964.44, 126982.04000000001, 127999.64000000001, 129017.23999999999, 130034.84000000001, 131052.44, 132070.04, 133087.64, 134105.24, 135122.84000000003, 136140.44, 137158.04, 138175.64, 139193.24, 140210.84000000003, 141228.44, 142246.04, 143263.64, 144281.24, 145298.84000000003, 146316.44, 147334.04, 148351.64, 149369.24, 150386.84000000003, 151404.44, 152422.04, 153439.64, 154457.24, 155474.84000000003, 156492.44, 157510.04, 158527.64]}],
                         {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Net Income vs Hourly Wage"}, "xaxis": {"title": {"text": "Hourly Wage"}}, "yaxis": {"title": {"text": "Income"}}},
                         {"responsive": true}
                     ).then(function(){
 
-var gd = document.getElementById('416fbf2d-ec74-43c8-a862-617b9d990725');
+var gd = document.getElementById('611ea09f-dcef-446e-be42-e1cc823450ad');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -569,7 +626,7 @@ if (outputEl) {{
         </div></div></div>
 </div>
 <div class="alert alert-block alert-info">
-<h3>Accomodation Options</h3>
+<h3>Accommodation Options</h3>
 <p>Using <a class="reference external" href="https://www.kijiji.ca">Kijiji</a> or other internet sources, investigate each of the following options and add information to the cells below. Edit each white cell by double-clicking on it.</p>
 </div><div class="section" id="apartment">
 <h2>Apartment<a class="headerlink" href="#apartment" title="Permalink to this headline">¶</a></h2>
@@ -666,7 +723,7 @@ if (outputEl) {{
 <p>Follow the instructions in the code cell below to edit the numbers, then <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell to calculate your monthly housing expenses.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rent</span> <span class="o">=</span> <span class="mi">900</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rent</span> <span class="o">=</span> <span class="mi">900</span>
 
 <span class="c1"># change this to 1 if you plan to have a roommate</span>
 <span class="n">roommate</span> <span class="o">=</span> <span class="mi">0</span>
@@ -718,7 +775,7 @@ if (outputEl) {{
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Your monthly bills will be approximately $1378.58.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your monthly bills will be approximately $1378.58.
 </pre></div>
 </div>
 </div>
@@ -728,7 +785,7 @@ if (outputEl) {{
 <p>As well as the monthly expenses there are one-time moving expenses to consider. Change the numbers in the following cell, if necessary, then <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell to display the calculated value.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Security / Damage Deposit: this is usually equal to one month&#39;s rent.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Security / Damage Deposit: this is usually equal to one month&#39;s rent.</span>
 <span class="c1">#  You can get your deposit back when you move out, if you take care of your home.</span>
 <span class="c1">#  Some landlords charge a non-refundable pet fee.</span>
 <span class="n">damageDeposit</span> <span class="o">=</span> <span class="n">rent</span>
@@ -781,7 +838,7 @@ if (outputEl) {{
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Moving expenses will be about $3045
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Moving expenses will be about $3045
 </pre></div>
 </div>
 </div>
@@ -805,7 +862,7 @@ if (outputEl) {{
 Now let's consider the cost of a loan to purchase that vehicle. Enter the purchase price and run the code cell to calculate monthly costs.
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">purchasePrice</span> <span class="o">=</span> <span class="mi">5000</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">purchasePrice</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">interestRate</span> <span class="o">=</span> <span class="mf">0.07</span>  <span class="c1"># assume a 7% interest rate</span>
 <span class="n">financingTerm</span> <span class="o">=</span> <span class="mi">48</span>  <span class="c1"># 48 months is four years</span>
 
@@ -818,7 +875,7 @@ Now let's consider the cost of a loan to purchase that vehicle. Enter the purcha
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Purchasing this vehicle with financing will cost $119.73 per month.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Purchasing this vehicle with financing will cost $119.73 per month.
 The total cost of the vehicle over 48 months will be $5747.10
 </pre></div>
 </div>
@@ -840,7 +897,7 @@ estimate the operating cost for the year, make, and model of your selected vehic
 <p>Fill in your numbers in the cell below, then run it to calculate your estimated vehicle costs as compared to public transportation.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># The cost of monthly adult bus pass</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The cost of monthly adult bus pass</span>
 <span class="n">busPass</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1"># The costs of a vehicle</span>
@@ -854,7 +911,7 @@ estimate the operating cost for the year, make, and model of your selected vehic
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Estimated vehicle costs per month are $0 which is $0 more than a bus pass.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estimated vehicle costs per month are $0 which is $0 more than a bus pass.
 </pre></div>
 </div>
 </div>
@@ -871,7 +928,7 @@ estimate the operating cost for the year, make, and model of your selected vehic
 <p>Then <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell to calculate your monthly transportation costs.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">transportationDecision</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">transportationDecision</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1">#Run this cell after you have recorded your decision above (1 or 2).</span>
 <span class="n">transportationCost</span> <span class="o">=</span> <span class="mi">0</span>
@@ -887,7 +944,7 @@ estimate the operating cost for the year, make, and model of your selected vehic
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Please change transportationDecision to 1 or 2 and run the cell again.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please change transportationDecision to 1 or 2 and run the cell again.
 </pre></div>
 </div>
 </div>
@@ -948,7 +1005,7 @@ estimate the operating cost for the year, make, and model of your selected vehic
 <p>Double-click on the “nan” values to put in your information. Use the “Add Row” and “Remove Row” buttons if necessary.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">qgrid</span>
 <span class="n">foodItemList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Vegetables&#39;</span><span class="p">,</span><span class="s1">&#39;Fruit&#39;</span><span class="p">,</span><span class="s1">&#39;Protein&#39;</span><span class="p">,</span><span class="s1">&#39;Whole Grains&#39;</span><span class="p">,</span><span class="s1">&#39;Snacks&#39;</span><span class="p">,</span><span class="s1">&#39;Restaurant Meal 1&#39;</span><span class="p">,</span><span class="s1">&#39;Restaurant Meal 2&#39;</span><span class="p">]</span>
 <span class="n">foodColumns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Size&#39;</span><span class="p">,</span><span class="s1">&#39;Quantity&#39;</span><span class="p">,</span><span class="s1">&#39;Price&#39;</span><span class="p">]</span>
@@ -962,14 +1019,14 @@ estimate the operating cost for the year, make, and model of your selected vehic
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "bc473562a49b41938ac4549fd62a3950"}
+{"version_major": 2, "version_minor": 0, "model_id": "259170f2b4174238925b8baec3f0fe7b"}
 </script></div>
 </div>
 <div class="alert alert-block alert-info">
 <p>After you have added data to the table above, <code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to calculate your food costs for the month. It adds up weekly food costs and multiplies by 4.3 weeks per month.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">foodShoppingList</span> <span class="o">=</span> <span class="n">dfFoodWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">foodShoppingList</span> <span class="o">=</span> <span class="n">dfFoodWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
 <span class="n">foodPrices</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">foodShoppingList</span><span class="p">[</span><span class="s1">&#39;Price&#39;</span><span class="p">])</span>
 <span class="n">weeklyFoodCost</span> <span class="o">=</span> <span class="n">foodPrices</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">monthlyFoodCost</span> <span class="o">=</span> <span class="n">weeklyFoodCost</span> <span class="o">*</span> <span class="mf">4.3</span>
@@ -979,7 +1036,7 @@ estimate the operating cost for the year, make, and model of your selected vehic
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>That is about $0.0 per week for food.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is about $0.0 per week for food.
 Your food for the month will cost about $0.0.
 </pre></div>
 </div>
@@ -991,7 +1048,7 @@ Your food for the month will cost about $0.0.
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to generate a data table that you can then edit.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">householdItemList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Toilet Paper&#39;</span><span class="p">,</span><span class="s1">&#39;Tissues&#39;</span><span class="p">,</span><span class="s1">&#39;Paper Towel&#39;</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">householdItemList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Toilet Paper&#39;</span><span class="p">,</span><span class="s1">&#39;Tissues&#39;</span><span class="p">,</span><span class="s1">&#39;Paper Towel&#39;</span><span class="p">,</span>
                      <span class="s1">&#39;Dish Soap&#39;</span><span class="p">,</span><span class="s1">&#39;Laundry Detergent&#39;</span><span class="p">,</span><span class="s1">&#39;Cleaners&#39;</span><span class="p">,</span>
                      <span class="s1">&#39;Plastic Wrap&#39;</span><span class="p">,</span><span class="s1">&#39;Foil&#39;</span><span class="p">,</span><span class="s1">&#39;Garbage/Recycling Bags&#39;</span><span class="p">,</span>
                      <span class="s1">&#39;Condiments&#39;</span><span class="p">,</span><span class="s1">&#39;Coffee/Tea&#39;</span><span class="p">,</span><span class="s1">&#39;Flour&#39;</span><span class="p">,</span><span class="s1">&#39;Sugar&#39;</span><span class="p">,</span>
@@ -1010,14 +1067,14 @@ Your food for the month will cost about $0.0.
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "8a73ac55bbc84704aa4daefae3b20508"}
+{"version_major": 2, "version_minor": 0, "model_id": "d01d57d3463f4c17ab2e6c355e4d446d"}
 </script></div>
 </div>
 <div class="alert alert-block alert-info">
 <p>After you have added data to the above data table, <code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to calculate your monthly household item costs.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">householdShoppingList</span> <span class="o">=</span> <span class="n">dfHouseholdWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">householdShoppingList</span> <span class="o">=</span> <span class="n">dfHouseholdWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
 <span class="n">householdPrices</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">householdShoppingList</span><span class="p">[</span><span class="s1">&#39;Price&#39;</span><span class="p">])</span>
 <span class="n">monthlyHouseholdCost</span> <span class="o">=</span> <span class="n">householdPrices</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;That is about $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">monthlyHouseholdCost</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; per month for household items.&#39;</span><span class="p">)</span>
@@ -1025,7 +1082,7 @@ Your food for the month will cost about $0.0.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>That is about $0.0 per month for household items.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is about $0.0 per month for household items.
 </pre></div>
 </div>
 </div>
@@ -1036,7 +1093,7 @@ Your food for the month will cost about $0.0.
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to generate a data table that you can edit.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fneItemList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Pots and Pans&#39;</span><span class="p">,</span><span class="s1">&#39;Glasses&#39;</span><span class="p">,</span><span class="s1">&#39;Plates&#39;</span><span class="p">,</span><span class="s1">&#39;Bowls&#39;</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fneItemList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Pots and Pans&#39;</span><span class="p">,</span><span class="s1">&#39;Glasses&#39;</span><span class="p">,</span><span class="s1">&#39;Plates&#39;</span><span class="p">,</span><span class="s1">&#39;Bowls&#39;</span><span class="p">,</span>
                <span class="s1">&#39;Cutlery&#39;</span><span class="p">,</span><span class="s1">&#39;Knives&#39;</span><span class="p">,</span><span class="s1">&#39;Oven Mitts&#39;</span><span class="p">,</span><span class="s1">&#39;Towels&#39;</span><span class="p">,</span><span class="s1">&#39;Cloths&#39;</span><span class="p">,</span>
                <span class="s1">&#39;Toaster&#39;</span><span class="p">,</span><span class="s1">&#39;Garbage Cans&#39;</span><span class="p">,</span><span class="s1">&#39;Kettle&#39;</span><span class="p">,</span><span class="s1">&#39;Table&#39;</span><span class="p">,</span><span class="s1">&#39;Kitchen Chairs&#39;</span><span class="p">,</span>
                <span class="s1">&#39;Broom and Dustpan&#39;</span><span class="p">,</span><span class="s1">&#39;Vacuum Cleaner&#39;</span><span class="p">,</span><span class="s1">&#39;Clock&#39;</span><span class="p">,</span>
@@ -1056,14 +1113,14 @@ Your food for the month will cost about $0.0.
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "491f399851a94720b084aba466a65a2e"}
+{"version_major": 2, "version_minor": 0, "model_id": "629fe29f24e54389be0a99263a8131b6"}
 </script></div>
 </div>
 <div class="alert alert-block alert-info">
 <p>Next <code class="docutils literal notranslate"><span class="pre">Run</span></code> the following cell to add up your furniture and equipment costs.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fneList</span> <span class="o">=</span> <span class="n">dfFneWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fneList</span> <span class="o">=</span> <span class="n">dfFneWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
 <span class="n">fnePrices</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">fneList</span><span class="p">[</span><span class="s1">&#39;Price&#39;</span><span class="p">])</span>
 <span class="n">fneCost</span> <span class="o">=</span> <span class="n">fnePrices</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;That is about $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fneCost</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; for furniture and equipment items.&#39;</span><span class="p">)</span>
@@ -1071,7 +1128,7 @@ Your food for the month will cost about $0.0.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>That is about $0.0 for furniture and equipment items.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is about $0.0 for furniture and equipment items.
 </pre></div>
 </div>
 </div>
@@ -1082,7 +1139,7 @@ Your food for the month will cost about $0.0.
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to generate an editable data table.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">clothingItemList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Dress Pants&#39;</span><span class="p">,</span><span class="s1">&#39;Skirts&#39;</span><span class="p">,</span><span class="s1">&#39;Shirts&#39;</span><span class="p">,</span><span class="s1">&#39;Suits/Jackets/Dresses&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clothingItemList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Dress Pants&#39;</span><span class="p">,</span><span class="s1">&#39;Skirts&#39;</span><span class="p">,</span><span class="s1">&#39;Shirts&#39;</span><span class="p">,</span><span class="s1">&#39;Suits/Jackets/Dresses&#39;</span>
                     <span class="s1">&#39;T-Shirts/Tops&#39;</span><span class="p">,</span><span class="s1">&#39;Jeans/Pants&#39;</span><span class="p">,</span><span class="s1">&#39;Shorts&#39;</span><span class="p">,</span>
                     <span class="s1">&#39;Dress Shoes&#39;</span><span class="p">,</span><span class="s1">&#39;Casual Shoes&#39;</span><span class="p">,</span><span class="s1">&#39;Running Shoes&#39;</span><span class="p">,</span>
                     <span class="s1">&#39;Outdoor Coats&#39;</span><span class="p">,</span><span class="s1">&#39;Boots&#39;</span><span class="p">,</span><span class="s1">&#39;Sports Clothing&#39;</span><span class="p">,</span>
@@ -1099,14 +1156,14 @@ Your food for the month will cost about $0.0.
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "bb106b27aae743ebbb9c00f0794aa44f"}
+{"version_major": 2, "version_minor": 0, "model_id": "4db4609143b14b8796db53037e55f592"}
 </script></div>
 </div>
 <div class="alert alert-block alert-info">
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to add up your clothing costs.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">clothingList</span> <span class="o">=</span> <span class="n">dfClothingWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clothingList</span> <span class="o">=</span> <span class="n">dfClothingWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
 <span class="n">clothingQuantities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">clothingList</span><span class="p">[</span><span class="s1">&#39;Quantity Required&#39;</span><span class="p">])</span>
 <span class="n">clothingPrices</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">clothingList</span><span class="p">[</span><span class="s1">&#39;Cost per Item&#39;</span><span class="p">])</span>
 <span class="n">clothingList</span><span class="p">[</span><span class="s1">&#39;Total Cost&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">clothingQuantities</span> <span class="o">*</span> <span class="n">clothingPrices</span>
@@ -1118,7 +1175,7 @@ Your food for the month will cost about $0.0.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>That is $0.00 per year, or about $0.00 per month for clothing.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is $0.00 per year, or about $0.00 per month for clothing.
 </pre></div>
 </div>
 <div class="output text_html"><div>
@@ -1265,11 +1322,11 @@ Your food for the month will cost about $0.0.
 <div class="alert alert-block alert-info">
 <h3>Charitable Donations and Gifts</h3>
 <p>In a year, how many birthday or Christmas gifts do you purchase for friends and family members? How much do you spend on gifts?</p>
-<p>Do you donate to any charities? Charitable donations are tax-deductible so you will essentially get 25% back at tax time. This means if you plan to donate \$100 then you can record it as \$75 in the table below.</p>
+<p>Do you donate to any charities? Charitable donations are tax-deductible so you will essentially get 25% back at tax time. This means if you plan to donate \<span class="math notranslate nohighlight">\(100 then you can record it as \\\)</span>75 in the table below.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to display a data table that you can edit with your expected health costs.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">giftsList</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">giftsList</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
 <span class="n">giftsColumns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span><span class="s1">&#39;Occasion&#39;</span><span class="p">,</span><span class="s1">&#39;Amount&#39;</span><span class="p">]</span>
 <span class="n">dfGifts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">giftsList</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">giftsColumns</span><span class="p">))</span>
 <span class="n">dfGiftsWidget</span> <span class="o">=</span> <span class="n">qgrid</span><span class="o">.</span><span class="n">QgridWidget</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">dfGifts</span><span class="p">,</span> <span class="n">show_toolbar</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1279,14 +1336,14 @@ Your food for the month will cost about $0.0.
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "2e001988739642c89ddc5ed394761133"}
+{"version_major": 2, "version_minor": 0, "model_id": "656dfcf1ce7c4f4ba9aa45704073520e"}
 </script></div>
 </div>
 <div class="alert alert-block alert-info">
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to add up your gifts and donations costs.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">giftsList</span> <span class="o">=</span> <span class="n">dfGiftsWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">giftsList</span> <span class="o">=</span> <span class="n">dfGiftsWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
 <span class="n">giftsCost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">giftsList</span><span class="p">[</span><span class="s1">&#39;Amount&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">monthlyGiftsCost</span> <span class="o">=</span>  <span class="n">giftsCost</span> <span class="o">/</span> <span class="mi">12</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;That is $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">giftsCost</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39; per year, or about $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">monthlyGiftsCost</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39; per month for gifts and donations.&#39;</span><span class="p">)</span>
@@ -1294,7 +1351,7 @@ Your food for the month will cost about $0.0.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>That is $0.00 per year, or about $0.00 per month for gifts and donations.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is $0.00 per year, or about $0.00 per month for gifts and donations.
 </pre></div>
 </div>
 </div>
@@ -1309,7 +1366,7 @@ Your food for the month will cost about $0.0.
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to display a data table that you can edit with your expected health costs.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">healthItems</span> <span class="o">=</span> <span class="p">[</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">healthItems</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">&#39;Pain Relievers&#39;</span><span class="p">,</span><span class="s1">&#39;Bandages&#39;</span><span class="p">,</span><span class="s1">&#39;Cough Medicine&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Prescriptions&#39;</span><span class="p">,</span><span class="s1">&#39;Dental Checkup&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Optometrist&#39;</span><span class="p">,</span><span class="s1">&#39;Glasses&#39;</span><span class="p">,</span><span class="s1">&#39;Contacts&#39;</span><span class="p">,</span><span class="s1">&#39;Contact Solution&#39;</span><span class="p">,</span>
@@ -1326,14 +1383,14 @@ Your food for the month will cost about $0.0.
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "b5952cd1a83f4bceaf772a8c3da48975"}
+{"version_major": 2, "version_minor": 0, "model_id": "4566656968d744d2970007270c272fbd"}
 </script></div>
 </div>
 <div class="alert alert-block alert-info">
 <p><code class="docutils literal notranslate"><span class="pre">Run</span></code> the next cell to add up your health care costs.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">healthList</span> <span class="o">=</span> <span class="n">dfHealthWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">healthList</span> <span class="o">=</span> <span class="n">dfHealthWidget</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
 <span class="n">healthCost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">healthList</span><span class="p">[</span><span class="s1">&#39;Cost Per Year&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">monthlyHealthCost</span> <span class="o">=</span>  <span class="n">healthCost</span> <span class="o">/</span> <span class="mi">12</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;That is $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">healthCost</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39; per year, or about $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">monthlyHealthCost</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39; per month for health care.&#39;</span><span class="p">)</span>
@@ -1341,7 +1398,7 @@ Your food for the month will cost about $0.0.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>That is $0.00 per year, or about $0.00 per month for health care.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is $0.00 per year, or about $0.00 per month for health care.
 </pre></div>
 </div>
 </div>
@@ -1353,35 +1410,35 @@ Your food for the month will cost about $0.0.
 <p>Use the next few code cells to calculate monthly entertainment costs.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># use this cell to calculate monthly cost from yearly cost (optional)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use this cell to calculate monthly cost from yearly cost (optional)</span>
 <span class="n">yearlyCost</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">yearlyCost</span> <span class="o">/</span> <span class="mi">12</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>0.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.0
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># use this cell to calculate monthly cost from weekly cost (optional)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use this cell to calculate monthly cost from weekly cost (optional)</span>
 <span class="n">weeklyCost</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">weeklyCost</span> <span class="o">*</span> <span class="mf">4.3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>0.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.0
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># What would you spend on movies, videos, concerts, and other events?</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># What would you spend on movies, videos, concerts, and other events?</span>
 <span class="n">events</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1"># What do you spend on things like coffee with friends</span>
@@ -1422,7 +1479,7 @@ Your food for the month will cost about $0.0.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>That is about $0 per month for recreation and entertainment.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is about $0 per month for recreation and entertainment.
 </pre></div>
 </div>
 </div>
@@ -1444,7 +1501,7 @@ Your food for the month will cost about $0.0.
 <p>If you are planning on attending postsecondary, change the values in the next cell. Otherwise just <code class="docutils literal notranslate"><span class="pre">Run</span></code> the cell without editing it.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tuitionPerYear</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tuitionPerYear</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">booksAndSuppliesPerYear</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="n">tuitionPerMonth</span> <span class="o">=</span> <span class="n">tuitionPerYear</span> <span class="o">/</span> <span class="mi">12</span>
@@ -1455,7 +1512,7 @@ Your food for the month will cost about $0.0.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>You will likely be spending $0.00 per month for education.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>You will likely be spending $0.00 per month for education.
 </pre></div>
 </div>
 </div>
@@ -1486,7 +1543,7 @@ Your food for the month will cost about $0.0.
 <p>Ensure that you have run all of the previous cells, even if they result in zero expenses.</p>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">totalCostsValues</span> <span class="o">=</span> <span class="p">[</span><span class="n">transportationCost</span><span class="p">,</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">totalCostsValues</span> <span class="o">=</span> <span class="p">[</span><span class="n">transportationCost</span><span class="p">,</span> 
                     <span class="n">monthlyFoodCost</span><span class="p">,</span> 
                     <span class="n">monthlyHouseholdCost</span><span class="p">,</span> 
                     <span class="n">monthlyClothingCost</span><span class="p">,</span> 
@@ -1516,7 +1573,7 @@ Your food for the month will cost about $0.0.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Your total expense per month will be about $0.00.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your total expense per month will be about $0.00.
 This is about 0.0% of your net income.
 </pre></div>
 </div>
@@ -1614,10 +1671,29 @@ Explain in detail five things you have learned from this project. What was the m
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"74f0cbeb43fa4991b20fb935548adba4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "bc473562a49b41938ac4549fd62a3950": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item(s)": {"name": "Item(s)", "type": "string", "position": 2, "field": "Item(s)", "id": "Item(s)", "cssClass": "string"}, "Size": {"name": "Size", "type": "string", "position": 3, "field": "Size", "id": "Size", "cssClass": "string"}, "Quantity": {"name": "Quantity", "type": "string", "position": 4, "field": "Quantity", "id": "Quantity", "cssClass": "string"}, "Price": {"name": "Price", "type": "string", "position": 5, "field": "Price", "id": "Price", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item(s)\",\"type\":\"string\"},{\"name\":\"Size\",\"type\":\"string\"},{\"name\":\"Quantity\",\"type\":\"string\"},{\"name\":\"Price\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item(s)\":\"Vegetables\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item(s)\":\"Fruit\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item(s)\":\"Protein\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item(s)\":\"Whole Grains\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item(s)\":\"Snacks\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item(s)\":\"Restaurant Meal 1\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item(s)\":\"Restaurant Meal 2\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 7, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "3dcb3595-70ed-4aeb-8748-4ac82c9dcecb", "layout": "IPY_MODEL_74f0cbeb43fa4991b20fb935548adba4", "precision": 5, "show_toolbar": true}}, "ada54bc50e3040ee852937d05825c492": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8a73ac55bbc84704aa4daefae3b20508": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item(s)": {"name": "Item(s)", "type": "string", "position": 2, "field": "Item(s)", "id": "Item(s)", "cssClass": "string"}, "Size": {"name": "Size", "type": "string", "position": 3, "field": "Size", "id": "Size", "cssClass": "string"}, "Quantity": {"name": "Quantity", "type": "string", "position": 4, "field": "Quantity", "id": "Quantity", "cssClass": "string"}, "Price": {"name": "Price", "type": "string", "position": 5, "field": "Price", "id": "Price", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item(s)\",\"type\":\"string\"},{\"name\":\"Size\",\"type\":\"string\"},{\"name\":\"Quantity\",\"type\":\"string\"},{\"name\":\"Price\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item(s)\":\"Toilet Paper\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item(s)\":\"Tissues\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item(s)\":\"Paper Towel\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item(s)\":\"Dish Soap\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item(s)\":\"Laundry Detergent\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item(s)\":\"Cleaners\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item(s)\":\"Plastic Wrap\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":8,\"qgrid_unfiltered_index\":7,\"Item(s)\":\"Foil\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":9,\"qgrid_unfiltered_index\":8,\"Item(s)\":\"Garbage\\/Recycling Bags\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":10,\"qgrid_unfiltered_index\":9,\"Item(s)\":\"Condiments\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":11,\"qgrid_unfiltered_index\":10,\"Item(s)\":\"Coffee\\/Tea\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":12,\"qgrid_unfiltered_index\":11,\"Item(s)\":\"Flour\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":13,\"qgrid_unfiltered_index\":12,\"Item(s)\":\"Sugar\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":14,\"qgrid_unfiltered_index\":13,\"Item(s)\":\"Shampoo\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":15,\"qgrid_unfiltered_index\":14,\"Item(s)\":\"Conditioner\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":16,\"qgrid_unfiltered_index\":15,\"Item(s)\":\"Soap\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":17,\"qgrid_unfiltered_index\":16,\"Item(s)\":\"Deodorant\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":18,\"qgrid_unfiltered_index\":17,\"Item(s)\":\"Toothpaste\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":19,\"qgrid_unfiltered_index\":18,\"Item(s)\":\"Mouthwash\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":20,\"qgrid_unfiltered_index\":19,\"Item(s)\":\"Hair Products\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":21,\"qgrid_unfiltered_index\":20,\"Item(s)\":\"Toothbrush\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":22,\"qgrid_unfiltered_index\":21,\"Item(s)\":\"Makeup\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":23,\"qgrid_unfiltered_index\":22,\"Item(s)\":\"Cotton Balls\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":24,\"qgrid_unfiltered_index\":23,\"Item(s)\":\"Shaving Gel\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":25,\"qgrid_unfiltered_index\":24,\"Item(s)\":\"Razors\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 25, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "d3a45a31-36b9-4d45-9f0b-0db125ed7d69", "layout": "IPY_MODEL_ada54bc50e3040ee852937d05825c492", "precision": 5, "show_toolbar": true}}, "01bd4fc8210847b2acde07a7ac08291d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "491f399851a94720b084aba466a65a2e": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item(s)": {"name": "Item(s)", "type": "string", "position": 2, "field": "Item(s)", "id": "Item(s)", "cssClass": "string"}, "Room": {"name": "Room", "type": "string", "position": 3, "field": "Room", "id": "Room", "cssClass": "string"}, "Quantity": {"name": "Quantity", "type": "string", "position": 4, "field": "Quantity", "id": "Quantity", "cssClass": "string"}, "Price": {"name": "Price", "type": "string", "position": 5, "field": "Price", "id": "Price", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item(s)\",\"type\":\"string\"},{\"name\":\"Room\",\"type\":\"string\"},{\"name\":\"Quantity\",\"type\":\"string\"},{\"name\":\"Price\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item(s)\":\"Pots and Pans\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item(s)\":\"Glasses\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item(s)\":\"Plates\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item(s)\":\"Bowls\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item(s)\":\"Cutlery\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item(s)\":\"Knives\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item(s)\":\"Oven Mitts\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":8,\"qgrid_unfiltered_index\":7,\"Item(s)\":\"Towels\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":9,\"qgrid_unfiltered_index\":8,\"Item(s)\":\"Cloths\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":10,\"qgrid_unfiltered_index\":9,\"Item(s)\":\"Toaster\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":11,\"qgrid_unfiltered_index\":10,\"Item(s)\":\"Garbage Cans\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":12,\"qgrid_unfiltered_index\":11,\"Item(s)\":\"Kettle\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":13,\"qgrid_unfiltered_index\":12,\"Item(s)\":\"Table\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":14,\"qgrid_unfiltered_index\":13,\"Item(s)\":\"Kitchen Chairs\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":15,\"qgrid_unfiltered_index\":14,\"Item(s)\":\"Broom and Dustpan\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":16,\"qgrid_unfiltered_index\":15,\"Item(s)\":\"Vacuum Cleaner\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":17,\"qgrid_unfiltered_index\":16,\"Item(s)\":\"Clock\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":18,\"qgrid_unfiltered_index\":17,\"Item(s)\":\"Bath Towels\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":19,\"qgrid_unfiltered_index\":18,\"Item(s)\":\"Hand Towels\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":20,\"qgrid_unfiltered_index\":19,\"Item(s)\":\"Bath Mat\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":21,\"qgrid_unfiltered_index\":20,\"Item(s)\":\"Toilet Brush\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":22,\"qgrid_unfiltered_index\":21,\"Item(s)\":\"Plunger\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":23,\"qgrid_unfiltered_index\":22,\"Item(s)\":\"Bed\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":24,\"qgrid_unfiltered_index\":23,\"Item(s)\":\"Dresser\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":25,\"qgrid_unfiltered_index\":24,\"Item(s)\":\"Night Stand\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":26,\"qgrid_unfiltered_index\":25,\"Item(s)\":\"Sheets\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":27,\"qgrid_unfiltered_index\":26,\"Item(s)\":\"Blankets\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":28,\"qgrid_unfiltered_index\":27,\"Item(s)\":\"Pillows\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":29,\"qgrid_unfiltered_index\":28,\"Item(s)\":\"Lamps\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":30,\"qgrid_unfiltered_index\":29,\"Item(s)\":\"TV\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":31,\"qgrid_unfiltered_index\":30,\"Item(s)\":\"Electronics\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":32,\"qgrid_unfiltered_index\":31,\"Item(s)\":\"Coffee Table\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":33,\"qgrid_unfiltered_index\":32,\"Item(s)\":\"Couch\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":34,\"qgrid_unfiltered_index\":33,\"Item(s)\":\"Chairs\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 34, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "5cce8313-e87e-4318-9739-c18f58eaaf72", "layout": "IPY_MODEL_01bd4fc8210847b2acde07a7ac08291d", "precision": 5, "show_toolbar": true}}, "fde19895ce9847d08055a45ddc86692e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "bb106b27aae743ebbb9c00f0794aa44f": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item(s)": {"name": "Item(s)", "type": "string", "position": 2, "field": "Item(s)", "id": "Item(s)", "cssClass": "string"}, "Quantity Required": {"name": "Quantity Required", "type": "string", "position": 3, "field": "Quantity Required", "id": "Quantity Required", "cssClass": "string"}, "Cost per Item": {"name": "Cost per Item", "type": "string", "position": 4, "field": "Cost per Item", "id": "Cost per Item", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item(s)\",\"type\":\"string\"},{\"name\":\"Quantity Required\",\"type\":\"string\"},{\"name\":\"Cost per Item\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item(s)\":\"Dress Pants\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item(s)\":\"Skirts\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item(s)\":\"Shirts\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item(s)\":\"Suits\\/Jackets\\/DressesT-Shirts\\/Tops\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item(s)\":\"Jeans\\/Pants\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item(s)\":\"Shorts\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item(s)\":\"Dress Shoes\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":8,\"qgrid_unfiltered_index\":7,\"Item(s)\":\"Casual Shoes\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":9,\"qgrid_unfiltered_index\":8,\"Item(s)\":\"Running Shoes\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":10,\"qgrid_unfiltered_index\":9,\"Item(s)\":\"Outdoor Coats\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":11,\"qgrid_unfiltered_index\":10,\"Item(s)\":\"Boots\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":12,\"qgrid_unfiltered_index\":11,\"Item(s)\":\"Sports Clothing\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":13,\"qgrid_unfiltered_index\":12,\"Item(s)\":\"Pajamas\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":14,\"qgrid_unfiltered_index\":13,\"Item(s)\":\"Underwear\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":15,\"qgrid_unfiltered_index\":14,\"Item(s)\":\"Socks\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":16,\"qgrid_unfiltered_index\":15,\"Item(s)\":\"Swimsuits\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 16, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "227ab5b3-1a5c-4a92-acc7-59a93f7813d4", "layout": "IPY_MODEL_fde19895ce9847d08055a45ddc86692e", "precision": 5, "show_toolbar": true}}, "0cba9d2983b348eabcb8329b5e8bc24f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2e001988739642c89ddc5ed394761133": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Name": {"name": "Name", "type": "string", "position": 2, "field": "Name", "id": "Name", "cssClass": "string"}, "Occasion": {"name": "Occasion", "type": "string", "position": 3, "field": "Occasion", "id": "Occasion", "cssClass": "string"}, "Amount": {"name": "Amount", "type": "string", "position": 4, "field": "Amount", "id": "Amount", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Name\",\"type\":\"string\"},{\"name\":\"Occasion\",\"type\":\"string\"},{\"name\":\"Amount\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 6, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "f070f74b-8d07-4339-a2bc-7903e0deb7ef", "layout": "IPY_MODEL_0cba9d2983b348eabcb8329b5e8bc24f", "precision": 5, "show_toolbar": true}}, "205d90c48c584de0881a24ec123e0904": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b5952cd1a83f4bceaf772a8c3da48975": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item or Service": {"name": "Item or Service", "type": "string", "position": 2, "field": "Item or Service", "id": "Item or Service", "cssClass": "string"}, "Cost Per Year": {"name": "Cost Per Year", "type": "string", "position": 3, "field": "Cost Per Year", "id": "Cost Per Year", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item or Service\",\"type\":\"string\"},{\"name\":\"Cost Per Year\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item or Service\":\"Pain Relievers\",\"Cost Per Year\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item or Service\":\"Bandages\",\"Cost Per Year\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item or Service\":\"Cough Medicine\",\"Cost Per Year\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item or Service\":\"Prescriptions\",\"Cost Per Year\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item or Service\":\"Dental Checkup\",\"Cost Per Year\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item or Service\":\"Optometrist\",\"Cost Per Year\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item or Service\":\"Glasses\",\"Cost Per Year\":\"nan\"},{\"index\":8,\"qgrid_unfiltered_index\":7,\"Item or Service\":\"Contacts\",\"Cost Per Year\":\"nan\"},{\"index\":9,\"qgrid_unfiltered_index\":8,\"Item or Service\":\"Contact Solution\",\"Cost Per Year\":\"nan\"},{\"index\":10,\"qgrid_unfiltered_index\":9,\"Item or Service\":\"Physiotherapy\",\"Cost Per Year\":\"nan\"},{\"index\":11,\"qgrid_unfiltered_index\":10,\"Item or Service\":\"Massage\",\"Cost Per Year\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 11, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "517e7789-32ec-40b4-814f-e64ba67bb891", "layout": "IPY_MODEL_205d90c48c584de0881a24ec123e0904", "precision": 5, "show_toolbar": true}}}, "version_major": 2, "version_minor": 0}
+{"state": {"d87873fb68694a5c9d2baabb30a9667a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "259170f2b4174238925b8baec3f0fe7b": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item(s)": {"name": "Item(s)", "type": "string", "position": 2, "field": "Item(s)", "id": "Item(s)", "cssClass": "string"}, "Size": {"name": "Size", "type": "string", "position": 3, "field": "Size", "id": "Size", "cssClass": "string"}, "Quantity": {"name": "Quantity", "type": "string", "position": 4, "field": "Quantity", "id": "Quantity", "cssClass": "string"}, "Price": {"name": "Price", "type": "string", "position": 5, "field": "Price", "id": "Price", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item(s)\",\"type\":\"string\"},{\"name\":\"Size\",\"type\":\"string\"},{\"name\":\"Quantity\",\"type\":\"string\"},{\"name\":\"Price\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item(s)\":\"Vegetables\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item(s)\":\"Fruit\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item(s)\":\"Protein\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item(s)\":\"Whole Grains\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item(s)\":\"Snacks\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item(s)\":\"Restaurant Meal 1\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item(s)\":\"Restaurant Meal 2\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 7, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "5d9e5b8a-f071-4ba5-9a1d-01fdbadabb3c", "layout": "IPY_MODEL_d87873fb68694a5c9d2baabb30a9667a", "precision": 5, "show_toolbar": true}}, "7b50bb899f504c60ae7aa0cda1a54287": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d01d57d3463f4c17ab2e6c355e4d446d": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item(s)": {"name": "Item(s)", "type": "string", "position": 2, "field": "Item(s)", "id": "Item(s)", "cssClass": "string"}, "Size": {"name": "Size", "type": "string", "position": 3, "field": "Size", "id": "Size", "cssClass": "string"}, "Quantity": {"name": "Quantity", "type": "string", "position": 4, "field": "Quantity", "id": "Quantity", "cssClass": "string"}, "Price": {"name": "Price", "type": "string", "position": 5, "field": "Price", "id": "Price", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item(s)\",\"type\":\"string\"},{\"name\":\"Size\",\"type\":\"string\"},{\"name\":\"Quantity\",\"type\":\"string\"},{\"name\":\"Price\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item(s)\":\"Toilet Paper\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item(s)\":\"Tissues\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item(s)\":\"Paper Towel\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item(s)\":\"Dish Soap\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item(s)\":\"Laundry Detergent\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item(s)\":\"Cleaners\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item(s)\":\"Plastic Wrap\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":8,\"qgrid_unfiltered_index\":7,\"Item(s)\":\"Foil\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":9,\"qgrid_unfiltered_index\":8,\"Item(s)\":\"Garbage\\/Recycling Bags\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":10,\"qgrid_unfiltered_index\":9,\"Item(s)\":\"Condiments\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":11,\"qgrid_unfiltered_index\":10,\"Item(s)\":\"Coffee\\/Tea\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":12,\"qgrid_unfiltered_index\":11,\"Item(s)\":\"Flour\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":13,\"qgrid_unfiltered_index\":12,\"Item(s)\":\"Sugar\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":14,\"qgrid_unfiltered_index\":13,\"Item(s)\":\"Shampoo\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":15,\"qgrid_unfiltered_index\":14,\"Item(s)\":\"Conditioner\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":16,\"qgrid_unfiltered_index\":15,\"Item(s)\":\"Soap\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":17,\"qgrid_unfiltered_index\":16,\"Item(s)\":\"Deodorant\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":18,\"qgrid_unfiltered_index\":17,\"Item(s)\":\"Toothpaste\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":19,\"qgrid_unfiltered_index\":18,\"Item(s)\":\"Mouthwash\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":20,\"qgrid_unfiltered_index\":19,\"Item(s)\":\"Hair Products\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":21,\"qgrid_unfiltered_index\":20,\"Item(s)\":\"Toothbrush\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":22,\"qgrid_unfiltered_index\":21,\"Item(s)\":\"Makeup\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":23,\"qgrid_unfiltered_index\":22,\"Item(s)\":\"Cotton Balls\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":24,\"qgrid_unfiltered_index\":23,\"Item(s)\":\"Shaving Gel\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":25,\"qgrid_unfiltered_index\":24,\"Item(s)\":\"Razors\",\"Size\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 25, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "bdd2c946-86bd-422d-afda-e1717172d3cf", "layout": "IPY_MODEL_7b50bb899f504c60ae7aa0cda1a54287", "precision": 5, "show_toolbar": true}}, "fc386f8cc6c84407aec1a52c5537ceff": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "629fe29f24e54389be0a99263a8131b6": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item(s)": {"name": "Item(s)", "type": "string", "position": 2, "field": "Item(s)", "id": "Item(s)", "cssClass": "string"}, "Room": {"name": "Room", "type": "string", "position": 3, "field": "Room", "id": "Room", "cssClass": "string"}, "Quantity": {"name": "Quantity", "type": "string", "position": 4, "field": "Quantity", "id": "Quantity", "cssClass": "string"}, "Price": {"name": "Price", "type": "string", "position": 5, "field": "Price", "id": "Price", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item(s)\",\"type\":\"string\"},{\"name\":\"Room\",\"type\":\"string\"},{\"name\":\"Quantity\",\"type\":\"string\"},{\"name\":\"Price\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item(s)\":\"Pots and Pans\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item(s)\":\"Glasses\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item(s)\":\"Plates\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item(s)\":\"Bowls\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item(s)\":\"Cutlery\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item(s)\":\"Knives\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item(s)\":\"Oven Mitts\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":8,\"qgrid_unfiltered_index\":7,\"Item(s)\":\"Towels\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":9,\"qgrid_unfiltered_index\":8,\"Item(s)\":\"Cloths\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":10,\"qgrid_unfiltered_index\":9,\"Item(s)\":\"Toaster\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":11,\"qgrid_unfiltered_index\":10,\"Item(s)\":\"Garbage Cans\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":12,\"qgrid_unfiltered_index\":11,\"Item(s)\":\"Kettle\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":13,\"qgrid_unfiltered_index\":12,\"Item(s)\":\"Table\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":14,\"qgrid_unfiltered_index\":13,\"Item(s)\":\"Kitchen Chairs\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":15,\"qgrid_unfiltered_index\":14,\"Item(s)\":\"Broom and Dustpan\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":16,\"qgrid_unfiltered_index\":15,\"Item(s)\":\"Vacuum Cleaner\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":17,\"qgrid_unfiltered_index\":16,\"Item(s)\":\"Clock\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":18,\"qgrid_unfiltered_index\":17,\"Item(s)\":\"Bath Towels\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":19,\"qgrid_unfiltered_index\":18,\"Item(s)\":\"Hand Towels\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":20,\"qgrid_unfiltered_index\":19,\"Item(s)\":\"Bath Mat\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":21,\"qgrid_unfiltered_index\":20,\"Item(s)\":\"Toilet Brush\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":22,\"qgrid_unfiltered_index\":21,\"Item(s)\":\"Plunger\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":23,\"qgrid_unfiltered_index\":22,\"Item(s)\":\"Bed\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":24,\"qgrid_unfiltered_index\":23,\"Item(s)\":\"Dresser\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":25,\"qgrid_unfiltered_index\":24,\"Item(s)\":\"Night Stand\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":26,\"qgrid_unfiltered_index\":25,\"Item(s)\":\"Sheets\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":27,\"qgrid_unfiltered_index\":26,\"Item(s)\":\"Blankets\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":28,\"qgrid_unfiltered_index\":27,\"Item(s)\":\"Pillows\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":29,\"qgrid_unfiltered_index\":28,\"Item(s)\":\"Lamps\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":30,\"qgrid_unfiltered_index\":29,\"Item(s)\":\"TV\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":31,\"qgrid_unfiltered_index\":30,\"Item(s)\":\"Electronics\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":32,\"qgrid_unfiltered_index\":31,\"Item(s)\":\"Coffee Table\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":33,\"qgrid_unfiltered_index\":32,\"Item(s)\":\"Couch\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"},{\"index\":34,\"qgrid_unfiltered_index\":33,\"Item(s)\":\"Chairs\",\"Room\":\"nan\",\"Quantity\":\"nan\",\"Price\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 34, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "b27da1dd-5bd3-44ff-bae2-a2cbe1c36a2f", "layout": "IPY_MODEL_fc386f8cc6c84407aec1a52c5537ceff", "precision": 5, "show_toolbar": true}}, "41662a8f09cd44e19af59e443be75ccf": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4db4609143b14b8796db53037e55f592": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item(s)": {"name": "Item(s)", "type": "string", "position": 2, "field": "Item(s)", "id": "Item(s)", "cssClass": "string"}, "Quantity Required": {"name": "Quantity Required", "type": "string", "position": 3, "field": "Quantity Required", "id": "Quantity Required", "cssClass": "string"}, "Cost per Item": {"name": "Cost per Item", "type": "string", "position": 4, "field": "Cost per Item", "id": "Cost per Item", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item(s)\",\"type\":\"string\"},{\"name\":\"Quantity Required\",\"type\":\"string\"},{\"name\":\"Cost per Item\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item(s)\":\"Dress Pants\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item(s)\":\"Skirts\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item(s)\":\"Shirts\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item(s)\":\"Suits\\/Jackets\\/DressesT-Shirts\\/Tops\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item(s)\":\"Jeans\\/Pants\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item(s)\":\"Shorts\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item(s)\":\"Dress Shoes\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":8,\"qgrid_unfiltered_index\":7,\"Item(s)\":\"Casual Shoes\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":9,\"qgrid_unfiltered_index\":8,\"Item(s)\":\"Running Shoes\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":10,\"qgrid_unfiltered_index\":9,\"Item(s)\":\"Outdoor Coats\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":11,\"qgrid_unfiltered_index\":10,\"Item(s)\":\"Boots\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":12,\"qgrid_unfiltered_index\":11,\"Item(s)\":\"Sports Clothing\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":13,\"qgrid_unfiltered_index\":12,\"Item(s)\":\"Pajamas\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":14,\"qgrid_unfiltered_index\":13,\"Item(s)\":\"Underwear\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":15,\"qgrid_unfiltered_index\":14,\"Item(s)\":\"Socks\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"},{\"index\":16,\"qgrid_unfiltered_index\":15,\"Item(s)\":\"Swimsuits\",\"Quantity Required\":\"nan\",\"Cost per Item\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 16, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "6e9d04a1-c06f-460a-8a9f-e549f56658f3", "layout": "IPY_MODEL_41662a8f09cd44e19af59e443be75ccf", "precision": 5, "show_toolbar": true}}, "e9ef461aaa8d49379785c0c3dcca7f17": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "656dfcf1ce7c4f4ba9aa45704073520e": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Name": {"name": "Name", "type": "string", "position": 2, "field": "Name", "id": "Name", "cssClass": "string"}, "Occasion": {"name": "Occasion", "type": "string", "position": 3, "field": "Occasion", "id": "Occasion", "cssClass": "string"}, "Amount": {"name": "Amount", "type": "string", "position": 4, "field": "Amount", "id": "Amount", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Name\",\"type\":\"string\"},{\"name\":\"Occasion\",\"type\":\"string\"},{\"name\":\"Amount\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Name\":\"nan\",\"Occasion\":\"nan\",\"Amount\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 6, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "ceeaef06-e29c-46b3-a737-392a2d3b2a38", "layout": "IPY_MODEL_e9ef461aaa8d49379785c0c3dcca7f17", "precision": 5, "show_toolbar": true}}, "c7dfb10bedfc4ce7b98f42e07a7a6053": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4566656968d744d2970007270c272fbd": {"model_name": "QgridModel", "model_module": "qgrid", "model_module_version": "1.1.1", "state": {"_columns": {"index": {"name": "index", "type": "integer", "is_index": true, "index_display_text": "", "level": 0, "first_index": true, "position": 0, "field": "index", "id": "index", "cssClass": "integer"}, "qgrid_unfiltered_index": {"name": "qgrid_unfiltered_index", "type": "integer", "position": 1, "field": "qgrid_unfiltered_index", "id": "qgrid_unfiltered_index", "cssClass": "integer"}, "Item or Service": {"name": "Item or Service", "type": "string", "position": 2, "field": "Item or Service", "id": "Item or Service", "cssClass": "string"}, "Cost Per Year": {"name": "Cost Per Year", "type": "string", "position": 3, "field": "Cost Per Year", "id": "Cost Per Year", "cssClass": "string"}}, "_df_json": "{\"schema\": {\"fields\":[{\"name\":\"index\",\"type\":\"integer\"},{\"name\":\"qgrid_unfiltered_index\",\"type\":\"integer\"},{\"name\":\"Item or Service\",\"type\":\"string\"},{\"name\":\"Cost Per Year\",\"type\":\"string\"}],\"primaryKey\":[\"index\"],\"pandas_version\":\"0.20.0\"}, \"data\": [{\"index\":1,\"qgrid_unfiltered_index\":0,\"Item or Service\":\"Pain Relievers\",\"Cost Per Year\":\"nan\"},{\"index\":2,\"qgrid_unfiltered_index\":1,\"Item or Service\":\"Bandages\",\"Cost Per Year\":\"nan\"},{\"index\":3,\"qgrid_unfiltered_index\":2,\"Item or Service\":\"Cough Medicine\",\"Cost Per Year\":\"nan\"},{\"index\":4,\"qgrid_unfiltered_index\":3,\"Item or Service\":\"Prescriptions\",\"Cost Per Year\":\"nan\"},{\"index\":5,\"qgrid_unfiltered_index\":4,\"Item or Service\":\"Dental Checkup\",\"Cost Per Year\":\"nan\"},{\"index\":6,\"qgrid_unfiltered_index\":5,\"Item or Service\":\"Optometrist\",\"Cost Per Year\":\"nan\"},{\"index\":7,\"qgrid_unfiltered_index\":6,\"Item or Service\":\"Glasses\",\"Cost Per Year\":\"nan\"},{\"index\":8,\"qgrid_unfiltered_index\":7,\"Item or Service\":\"Contacts\",\"Cost Per Year\":\"nan\"},{\"index\":9,\"qgrid_unfiltered_index\":8,\"Item or Service\":\"Contact Solution\",\"Cost Per Year\":\"nan\"},{\"index\":10,\"qgrid_unfiltered_index\":9,\"Item or Service\":\"Physiotherapy\",\"Cost Per Year\":\"nan\"},{\"index\":11,\"qgrid_unfiltered_index\":10,\"Item or Service\":\"Massage\",\"Cost Per Year\":\"nan\"}]}", "_df_range": [0, 100], "_dom_classes": [], "_editable_rows": {}, "_index_col_name": "qgrid_unfiltered_index", "_interval_columns": [], "_model_module": "qgrid", "_model_module_version": "1.1.1", "_model_name": "QgridModel", "_multi_index": false, "_row_count": 11, "_row_styles": {}, "_sort_ascending": true, "_sort_field": null, "_view_count": null, "_view_module": "qgrid", "_view_module_version": "1.1.1", "_view_name": "QgridView", "_viewport_range": [0, 100], "grid_options": {"fullWidthRows": true, "syncColumnCellResize": true, "forceFitColumns": true, "defaultColumnWidth": 150, "rowHeight": 28, "enableColumnReorder": false, "enableTextSelectionOnCells": true, "editable": true, "autoEdit": false, "explicitInitialization": true, "maxVisibleRows": 15, "minVisibleRows": 8, "sortable": true, "filterable": true, "highlightSelectedCell": false, "highlightSelectedRow": true, "boldIndex": true}, "id": "5dcddae2-c2dc-4f1a-a908-a3c66fb1b128", "layout": "IPY_MODEL_c7dfb10bedfc4ce7b98f42e07a7a6053", "precision": 5, "show_toolbar": true}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Health/CALM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

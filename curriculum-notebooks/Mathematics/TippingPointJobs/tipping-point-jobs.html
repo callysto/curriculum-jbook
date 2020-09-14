@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,15 +23,23 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Instructions - from the “Kernel” menu, select “Restart &amp; Run All” to begin." href="../Transformations/exercises-transformations-of-objects-and-shapes.html" />
+    <link rel="next" title="Transformations of Objects and Shapes: Exercises" href="../Transformations/exercises-transformations-of-objects-and-shapes.html" />
     <link rel="prev" title="Telling Time" href="../TellingTime/telling-time.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,185 +73,333 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="active">
-    <a href="../Mathematics.html">Mathematics Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">Analyzing Radical Functions</a>
-    </li>
-    <li class="">
-      <a href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">Appreciation of Math in Society</a>
-    </li>
-    <li class="">
-      <a href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">Approximating Square Roots of Non-Perfect Squares</a>
-    </li>
-    <li class="">
-      <a href="../BinaryDecimalConversion/binary-decimal-conversion.html">Binary decimal conversion</a>
-    </li>
-    <li class="">
-      <a href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">Budget and Banking</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">Outliers and Central Tendency</a>
-    </li>
-    <li class="">
-      <a href="../CentralTendency/central-tendency.html">Central Tendancy: Mean, Median, and Mode</a>
-    </li>
-    <li class="">
-      <a href="../CombinedLogLaw/combined-log-law.html">Combined Log Law</a>
-    </li>
-    <li class="">
-      <a href="../CompareandOrderNumbers/compare-and-order-numbers.html">Instructions before you start</a>
-    </li>
-    <li class="">
-      <a href="../CompositionsOfFunctions/compositions-of-functions.html">Compositions of Functions</a>
-    </li>
-    <li class="">
-      <a href="../CountingTriangles/counting-triangles.html">Counting triangles</a>
-    </li>
-    <li class="">
-      <a href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">Creating, Labelling, and Interpreting Line Graphs</a>
-    </li>
-    <li class="">
-      <a href="../CryptographyCyphers/cryptography-cyphers.html">Cryptography and Cyphers</a>
-    </li>
-    <li class="">
-      <a href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">Data and sinusoidal functions</a>
-    </li>
-    <li class="">
-      <a href="../DataRepresentation/data-representation.html">Data Representation in Graphs</a>
-    </li>
-    <li class="">
-      <a href="../FibonacciNumbers/fibonacci-numbers.html">Fibonacci Numbers</a>
-    </li>
-    <li class="">
-      <a href="../FlippingCoins/flipping-coins.html">Flipping Coins</a>
-    </li>
-    <li class="">
-      <a href="../FractionAddition/fraction-addition.html">Fractions and Addition</a>
-    </li>
-    <li class="">
-      <a href="../GraphingTwoVariables/graphing-two-variables.html">Graphing two variables</a>
-    </li>
-    <li class="">
-      <a href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">Horizontal and vertical translations</a>
-    </li>
-    <li class="">
-      <a href="../IndependentProbability/independent-probability.html">Probability of Independent Events</a>
-    </li>
-    <li class="">
-      <a href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">Inductive Reasoning and Deductive Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">Interpret and Assess the Odds</a>
-    </li>
-    <li class="">
-      <a href="../InterpretingStatisticalData/interpreting-statistical-data.html">Interpreting Statistical Data</a>
-    </li>
-    <li class="">
-      <a href="../IntervalsAndInequalities/intervals-and-inequalities.html">Intervals and inequalities</a>
-    </li>
-    <li class="">
-      <a href="../MultiplesAndFactors/multiples-and-factors.html">Multiples and Factors</a>
-    </li>
-    <li class="">
-      <a href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">Fractions: Multiplication and Division</a>
-    </li>
-    <li class="">
-      <a href="../OralAndWrittenPatterns/oral-and-written-patterns.html">Patterns: Oral and written</a>
-    </li>
-    <li class="">
-      <a href="../OrderOfOperations/order-of-operations.html">Order of Operations</a>
-    </li>
-    <li class="">
-      <a href="../ParallelogramArea/parallelogram-area.html">Parallelogram: Area</a>
-    </li>
-    <li class="">
-      <a href="../PatternsAndRelations/patterns-and-relations.html">Patterns  and Relations</a>
-    </li>
-    <li class="">
-      <a href="../Percentage/percentage.html">Percentages</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">Perimeter - Irregular Shapes</a>
-    </li>
-    <li class="">
-      <a href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">Perimeter - Triangles and Rectangles</a>
-    </li>
-    <li class="">
-      <a href="../PiDay/pi-day.html">Pi Day</a>
-    </li>
-    <li class="">
-      <a href="../ProbabilityExperiment/probability-experiment.html">Statistics and Probability</a>
-    </li>
-    <li class="">
-      <a href="../PythagoreanTheorem/pythagorean-theorem.html">Pythagorean Theorem</a>
-    </li>
-    <li class="">
-      <a href="../Radicands/radicands.html">Radicans: Simplifying</a>
-    </li>
-    <li class="">
-      <a href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">Rates, Ratios, and Proportional Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../Reflections/reflections.html">Reflections of Graphs</a>
-    </li>
-    <li class="">
-      <a href="../RootFindingAlgorithms/root-finding-algorithms.html">Root Finding Algorithms</a>
-    </li>
-    <li class="">
-      <a href="../ShapeAndSpace/shape-and-space.html">Geometry: Shape and Space</a>
-    </li>
-    <li class="">
-      <a href="../StatisticalReasoning/statistical-reasoning.html">Statistical Reasoning</a>
-    </li>
-    <li class="">
-      <a href="../TellingTime/telling-time.html">Telling Time</a>
-    </li>
-    <li class="active">
-      <a href="">Tipping Point - Jobs</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/exercises-transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../Transformations/transformations-of-objects-and-shapes.html">Instructions - from the “Kernel” menu, select “Restart & Run All” to begin.</a>
-    </li>
-    <li class="">
-      <a href="../TriangleArea/triangle-area.html">Area of a Triangle</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="">
-    <a href="../../TechnologyStudies/Technology.html">Technology Section</a>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -315,84 +471,101 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/TippingPointJobs/tipping-point-jobs.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/TippingPointJobs/tipping-point-jobs.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/TippingPointJobs/tipping-point-jobs.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#which-job-pays-better">
+   Which job pays better?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#congratulations">
+   Congratulations!
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculations-with-python">
+   Calculations with Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graphical-comparison">
+   Graphical Comparison
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comments-on-the-code">
+     Comments on the code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-tipping-point">
+   The Tipping Point
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tipping-point-with-interactive-tools">
+   Tipping point with interactive tools
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tipping-point-by-algebra">
+   Tipping point by algebra
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#minimum-wage">
+   Minimum wage
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sanity-check">
+   Sanity check
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-hard-at-acme">
+   Working hard at Acme
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#another-province">
+   Another province.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#which-job-pays-better" class="nav-link">Which job pays better?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#congratulations" class="nav-link">Congratulations!</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#calculations-with-python" class="nav-link">Calculations with Python</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#graphical-comparison" class="nav-link">Graphical Comparison</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#comments-on-the-code" class="nav-link">Comments on the code</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#the-tipping-point" class="nav-link">The Tipping Point</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#tipping-point-with-interactive-tools" class="nav-link">Tipping point with interactive tools</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#tipping-point-by-algebra" class="nav-link">Tipping point by algebra</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#minimum-wage" class="nav-link">Minimum wage</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#sanity-check" class="nav-link">Sanity check</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#working-hard-at-acme" class="nav-link">Working hard at Acme</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#another-province" class="nav-link">Another province.</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#summary" class="nav-link">Summary</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -426,18 +599,18 @@
 <p>Both companies <strong>Acme</strong> and <strong>Bigby</strong> are Electronic Supply companies, and are offering you a sales position.</p>
 <p><strong>Which job should you take?</strong> Well, let’s look how much each job pays.</p>
 <ol class="simple">
-<li><p>Acme offers a base salary of $$$1200 per month, plus 3% commission on sales over $$$1000.</p></li>
-<li><p>Bigby offers a base salary of $$$250 per month, plus 18% commission on all sales.</p></li>
+<li><p>Acme offers a base salary of <span class="math notranslate nohighlight">\(\$\)</span>1200 per month, plus 3% commission on sales over <span class="math notranslate nohighlight">\(\$\)</span>1000.</p></li>
+<li><p>Bigby offers a base salary of <span class="math notranslate nohighlight">\(\$\)</span>250 per month, plus 18% commission on all sales.</p></li>
 </ol>
 <p><strong>Your Task:</strong> Figure out which job pays better.</p>
 <p><strong>Need a Hint?</strong></p>
 <p>It seems clear that your salary will depend on how much you sell each month.</p>
 <p>You can consider various sales amounts, and calculate how much you’d earn at either job with those same sales amounts.</p>
 <p>Since this notebook module can interpret basic math operations, we can type in the formulas for salary.</p>
-<p>Acme pays a base salary of $$<span class="math notranslate nohighlight">\(1200 plus 3\% on sales, we can write this formula as
-$\)</span> Acme\ pay = 1200 + .03*(sales-1000). $$</p>
-<p>Meanwhile, Bigby pays a base salary of $$<span class="math notranslate nohighlight">\(250 plus 18\% on sales, we can write this formula as
-$\)</span> Bigby\ pay = 250 + .18*sales.$$</p>
+<p>Acme pays a base salary of <span class="math notranslate nohighlight">\(\$\)</span>1200 plus 3% on sales, we can write this formula as
+$<span class="math notranslate nohighlight">\( Acme\ pay = 1200 + .03*(sales-1000). \)</span>$</p>
+<p>Meanwhile, Bigby pays a base salary of <span class="math notranslate nohighlight">\(\$\)</span>250 plus 18% on sales, we can write this formula as
+$<span class="math notranslate nohighlight">\( Bigby\ pay = 250 + .18*sales.\)</span>$</p>
 </div>
 <div class="section" id="calculations-with-python">
 <h2>Calculations with Python<a class="headerlink" href="#calculations-with-python" title="Permalink to this headline">¶</a></h2>
@@ -445,48 +618,48 @@ $\)</span> Bigby\ pay = 250 + .18*sales.$$</p>
 <p>Let’s start the calculation with no sales at all. You can do this in your head, but let’s try it out in Python code.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## For zero sales</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## For zero sales</span>
 <span class="mi">1200</span> <span class="o">+</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">250</span> <span class="o">+</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(1200, 250)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1200, 250)
 </pre></div>
 </div>
 </div>
 </div>
-<p>The above calculation tells us that for zero sales, Acme pays $$$1200 and Bigby pays $$$250. So Acme pays better in this case.</p>
-<p>Let’s next try sales of $$$2000</p>
+<p>The above calculation tells us that for zero sales, Acme pays <span class="math notranslate nohighlight">\(\$\)</span>1200 and Bigby pays <span class="math notranslate nohighlight">\(\$\)</span>250. So Acme pays better in this case.</p>
+<p>Let’s next try sales of <span class="math notranslate nohighlight">\(\$\)</span>2000</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## For 2000 dollars in sales</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## For 2000 dollars in sales</span>
 <span class="mi">1200</span> <span class="o">+</span> <span class="o">.</span><span class="mi">03</span><span class="o">*</span><span class="p">(</span><span class="mi">2000</span><span class="o">-</span><span class="mi">1000</span><span class="p">),</span> <span class="mi">250</span> <span class="o">+</span> <span class="o">.</span><span class="mi">18</span><span class="o">*</span><span class="mi">2000</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(1230.0, 610.0)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1230.0, 610.0)
 </pre></div>
 </div>
 </div>
 </div>
-<p>That is, for $$$2000 in sales, Acme pays $$$1230 and Bigby pays $$$610. So Acme also pays better in this case.</p>
-<p>Now let’s be more ambitious, and say you can make $$$10,000 in sales. How much will you make?</p>
+<p>That is, for <span class="math notranslate nohighlight">\(\$\)</span>2000 in sales, Acme pays <span class="math notranslate nohighlight">\(\$\)</span>1230 and Bigby pays <span class="math notranslate nohighlight">\(\$\)</span>610. So Acme also pays better in this case.</p>
+<p>Now let’s be more ambitious, and say you can make <span class="math notranslate nohighlight">\(\$\)</span>10,000 in sales. How much will you make?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## for 10000 in sales</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## for 10000 in sales</span>
 <span class="mi">1200</span> <span class="o">+</span> <span class="o">.</span><span class="mi">03</span><span class="o">*</span><span class="p">(</span><span class="mi">10000</span><span class="o">-</span><span class="mi">1000</span><span class="p">),</span> <span class="mi">250</span> <span class="o">+</span> <span class="o">.</span><span class="mi">18</span><span class="o">*</span><span class="mi">10000</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(1470.0, 2050.0)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1470.0, 2050.0)
 </pre></div>
 </div>
 </div>
 </div>
-<p>Here, for $$$10000 in sales, Acme pays $$$1470 and Bigby pays $$$2050. So this time, Bigby pays better!</p>
+<p>Here, for <span class="math notranslate nohighlight">\(\$\)</span>10000 in sales, Acme pays <span class="math notranslate nohighlight">\(\$\)</span>1470 and Bigby pays <span class="math notranslate nohighlight">\(\$\)</span>2050. So this time, Bigby pays better!</p>
 </div>
 <div class="section" id="graphical-comparison">
 <h2>Graphical Comparison<a class="headerlink" href="#graphical-comparison" title="Permalink to this headline">¶</a></h2>
@@ -495,7 +668,7 @@ $\)</span> Bigby\ pay = 250 + .18*sales.$$</p>
 <p>First, we load in some code packages for plotting, in the following three lines.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span><span class="p">,</span> <span class="n">maximum</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span><span class="p">,</span> <span class="n">maximum</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span>
 <span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
 </pre></div>
@@ -505,7 +678,7 @@ $\)</span> Bigby\ pay = 250 + .18*sales.$$</p>
 <p>Now we define a few variables for sales and company pay, then plot the data in a scatter plot graph.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sales</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10000</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sales</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10000</span><span class="p">)</span>
 <span class="n">bigby</span> <span class="o">=</span> <span class="mi">250</span> <span class="o">+</span> <span class="o">.</span><span class="mi">18</span><span class="o">*</span><span class="n">sales</span>
 <span class="n">acme</span> <span class="o">=</span> <span class="mi">1200</span> <span class="o">+</span> <span class="o">.</span><span class="mi">03</span><span class="o">*</span><span class="n">maximum</span><span class="p">(</span><span class="n">sales</span><span class="o">-</span><span class="mi">1000</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">sales</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">acme</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Acme&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">sales</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">bigby</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Bigby&quot;</span><span class="p">))</span>
@@ -589,20 +762,20 @@ var n,a=t("./lib/build-log"),i=t("./lib/epsilon"),o=t("./lib/intersecter"),s=t("
 </div><div class="output text_html"><div>
 
 
-            <div id="e6ba7392-90cd-46ce-b2ff-cefb78819a78" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="b244b117-bff6-4f87-a426-3ce5e6c4b7a7" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
 
-                if (document.getElementById("e6ba7392-90cd-46ce-b2ff-cefb78819a78")) {
+                if (document.getElementById("b244b117-bff6-4f87-a426-3ce5e6c4b7a7")) {
                     Plotly.newPlot(
-                        'e6ba7392-90cd-46ce-b2ff-cefb78819a78',
+                        'b244b117-bff6-4f87-a426-3ce5e6c4b7a7',
                         [{"name": "Acme", "type": "scatter", "x": [0.0, 204.08163265306123, 408.16326530612247, 612.2448979591837, 816.3265306122449, 1020.4081632653061, 1224.4897959183675, 1428.5714285714287, 1632.6530612244899, 1836.734693877551, 2040.8163265306123, 2244.8979591836737, 2448.979591836735, 2653.061224489796, 2857.1428571428573, 3061.2244897959185, 3265.3061224489797, 3469.387755102041, 3673.469387755102, 3877.5510204081634, 4081.6326530612246, 4285.714285714286, 4489.795918367347, 4693.877551020409, 4897.95918367347, 5102.040816326531, 5306.122448979592, 5510.2040816326535, 5714.285714285715, 5918.367346938776, 6122.448979591837, 6326.530612244898, 6530.6122448979595, 6734.693877551021, 6938.775510204082, 7142.857142857143, 7346.938775510204, 7551.0204081632655, 7755.102040816327, 7959.183673469388, 8163.265306122449, 8367.34693877551, 8571.428571428572, 8775.510204081633, 8979.591836734695, 9183.673469387755, 9387.755102040817, 9591.836734693878, 9795.91836734694, 10000.0], "y": [1200.0, 1200.0, 1200.0, 1200.0, 1200.0, 1200.6122448979593, 1206.734693877551, 1212.857142857143, 1218.9795918367347, 1225.1020408163265, 1231.2244897959183, 1237.3469387755101, 1243.4693877551022, 1249.591836734694, 1255.7142857142858, 1261.8367346938776, 1267.9591836734694, 1274.0816326530612, 1280.204081632653, 1286.3265306122448, 1292.4489795918366, 1298.5714285714287, 1304.6938775510205, 1310.8163265306123, 1316.938775510204, 1323.061224489796, 1329.1836734693877, 1335.3061224489795, 1341.4285714285716, 1347.5510204081634, 1353.6734693877552, 1359.795918367347, 1365.9183673469388, 1372.0408163265306, 1378.1632653061224, 1384.2857142857142, 1390.408163265306, 1396.5306122448978, 1402.6530612244899, 1408.7755102040817, 1414.8979591836735, 1421.0204081632653, 1427.142857142857, 1433.265306122449, 1439.387755102041, 1445.5102040816328, 1451.6326530612246, 1457.7551020408164, 1463.8775510204082, 1470.0]}, {"name": "Bigby", "type": "scatter", "x": [0.0, 204.08163265306123, 408.16326530612247, 612.2448979591837, 816.3265306122449, 1020.4081632653061, 1224.4897959183675, 1428.5714285714287, 1632.6530612244899, 1836.734693877551, 2040.8163265306123, 2244.8979591836737, 2448.979591836735, 2653.061224489796, 2857.1428571428573, 3061.2244897959185, 3265.3061224489797, 3469.387755102041, 3673.469387755102, 3877.5510204081634, 4081.6326530612246, 4285.714285714286, 4489.795918367347, 4693.877551020409, 4897.95918367347, 5102.040816326531, 5306.122448979592, 5510.2040816326535, 5714.285714285715, 5918.367346938776, 6122.448979591837, 6326.530612244898, 6530.6122448979595, 6734.693877551021, 6938.775510204082, 7142.857142857143, 7346.938775510204, 7551.0204081632655, 7755.102040816327, 7959.183673469388, 8163.265306122449, 8367.34693877551, 8571.428571428572, 8775.510204081633, 8979.591836734695, 9183.673469387755, 9387.755102040817, 9591.836734693878, 9795.91836734694, 10000.0], "y": [250.0, 286.734693877551, 323.46938775510205, 360.2040816326531, 396.9387755102041, 433.67346938775506, 470.40816326530614, 507.14285714285717, 543.8775510204082, 580.6122448979592, 617.3469387755101, 654.0816326530612, 690.8163265306123, 727.5510204081634, 764.2857142857143, 801.0204081632653, 837.7551020408164, 874.4897959183673, 911.2244897959183, 947.9591836734694, 984.6938775510204, 1021.4285714285714, 1058.1632653061224, 1094.8979591836735, 1131.6326530612246, 1168.3673469387754, 1205.1020408163267, 1241.8367346938776, 1278.5714285714287, 1315.3061224489795, 1352.0408163265306, 1388.7755102040817, 1425.5102040816328, 1462.2448979591836, 1498.9795918367347, 1535.7142857142858, 1572.4489795918366, 1609.1836734693877, 1645.9183673469388, 1682.6530612244899, 1719.3877551020407, 1756.1224489795918, 1792.857142857143, 1829.5918367346937, 1866.326530612245, 1903.061224489796, 1939.795918367347, 1976.5306122448978, 2013.2653061224491, 2050.0]}],
                         {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}},
                         {"responsive": true}
                     ).then(function(){
 
-var gd = document.getElementById('e6ba7392-90cd-46ce-b2ff-cefb78819a78');
+var gd = document.getElementById('b244b117-bff6-4f87-a426-3ce5e6c4b7a7');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -633,8 +806,8 @@ if (outputEl) {{
 <div class="section" id="comments-on-the-code">
 <h3>Comments on the code<a class="headerlink" href="#comments-on-the-code" title="Permalink to this headline">¶</a></h3>
 <p>The variable <strong>sales</strong> is a list of possible sales values, from 0 to 10,000, set up using the <strong>linspace</strong> function.</p>
-<p>The variable <strong>bigby</strong> is the same formula we used above, adding 18% of sales to a base salary of $$$250.</p>
-<p>The variable <strong>acme</strong> is just a little more complicated. We use the <strong>maximum</strong> function to make sure we only get a commision on sales <strong>over</strong> $$$1000.</p>
+<p>The variable <strong>bigby</strong> is the same formula we used above, adding 18% of sales to a base salary of <span class="math notranslate nohighlight">\(\$\)</span>250.</p>
+<p>The variable <strong>acme</strong> is just a little more complicated. We use the <strong>maximum</strong> function to make sure we only get a commision on sales <strong>over</strong> <span class="math notranslate nohighlight">\(\$\)</span>1000.</p>
 <p>The <strong>go.Figure</strong> command creates a scatter plot with the <strong>Acme</strong> data, overlaid with a second trace of the <strong>Bigby</strong> data.</p>
 <p>With this plot, you can pan and zoom in on the lines, to investigate the data more directly.</p>
 </div>
@@ -647,13 +820,13 @@ if (outputEl) {{
 <p>One way is to simply use Python. Type in a value for <strong>sales</strong> in the code below, replacing the number <strong>4000</strong> with a number of your choice. Try to find the number where these two pay values are equal.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sales</span> <span class="o">=</span> <span class="mi">4000</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sales</span> <span class="o">=</span> <span class="mi">4000</span>
 <span class="mi">1200</span> <span class="o">+</span> <span class="o">.</span><span class="mi">03</span><span class="o">*</span><span class="p">(</span><span class="n">sales</span><span class="o">-</span><span class="mi">1000</span><span class="p">),</span> <span class="mi">250</span> <span class="o">+</span> <span class="o">.</span><span class="mi">18</span><span class="o">*</span><span class="n">sales</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(1290.0, 970.0)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1290.0, 970.0)
 </pre></div>
 </div>
 </div>
@@ -665,26 +838,26 @@ if (outputEl) {{
 <p>Python lets you do this calculation automatically. Just type in the box below, and it will compute the Acme and Bigby pay. Again, try to find the value for <strong>sales</strong> so that the two pays are equal. <strong>Note</strong>, the following expressions use Python lambda functions and interactive Jupyter widgets; try these links to learn more about <a class="reference external" href="https://realpython.com/python-lambda/">lambda functions</a> and <a class="reference external" href="https://ipywidgets.readthedocs.io/en/latest/examples/Using%20Interact.html">widgets</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="k">lambda</span> <span class="n">sales</span><span class="p">:</span> <span class="p">[</span><span class="mi">1200</span><span class="o">+.</span><span class="mi">03</span><span class="o">*</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">sales</span><span class="p">)</span><span class="o">-</span><span class="mi">1000</span><span class="p">),</span><span class="mi">250</span><span class="o">+.</span><span class="mi">18</span><span class="o">*</span><span class="nb">float</span><span class="p">(</span><span class="n">sales</span><span class="p">)],</span><span class="n">sales</span><span class="o">=</span><span class="s1">&#39;4000&#39;</span><span class="p">);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="k">lambda</span> <span class="n">sales</span><span class="p">:</span> <span class="p">[</span><span class="mi">1200</span><span class="o">+.</span><span class="mi">03</span><span class="o">*</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">sales</span><span class="p">)</span><span class="o">-</span><span class="mi">1000</span><span class="p">),</span><span class="mi">250</span><span class="o">+.</span><span class="mi">18</span><span class="o">*</span><span class="nb">float</span><span class="p">(</span><span class="n">sales</span><span class="p">)],</span><span class="n">sales</span><span class="o">=</span><span class="s1">&#39;4000&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "f17fe2e14e164b85ae50021df1dcd11b"}
+{"version_major": 2, "version_minor": 0, "model_id": "c6997c8729694b469e76c455abd08889"}
 </script></div>
 </div>
 <p>You can also use a slider in Python to play around with the sales, as follows:</p>
 <p>Again, try to find the point where the two companies pay the same.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="k">lambda</span> <span class="n">sales</span><span class="p">:</span> <span class="p">[</span><span class="mi">1200</span><span class="o">+.</span><span class="mi">03</span><span class="o">*</span><span class="p">(</span><span class="n">sales</span><span class="o">-</span><span class="mi">1000</span><span class="p">),</span><span class="mi">250</span><span class="o">+.</span><span class="mi">18</span><span class="o">*</span><span class="n">sales</span><span class="p">],</span><span class="n">sales</span><span class="o">=</span><span class="p">(</span><span class="mi">6000</span><span class="p">,</span><span class="mi">7000</span><span class="p">));</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="k">lambda</span> <span class="n">sales</span><span class="p">:</span> <span class="p">[</span><span class="mi">1200</span><span class="o">+.</span><span class="mi">03</span><span class="o">*</span><span class="p">(</span><span class="n">sales</span><span class="o">-</span><span class="mi">1000</span><span class="p">),</span><span class="mi">250</span><span class="o">+.</span><span class="mi">18</span><span class="o">*</span><span class="n">sales</span><span class="p">],</span><span class="n">sales</span><span class="o">=</span><span class="p">(</span><span class="mi">6000</span><span class="p">,</span><span class="mi">7000</span><span class="p">));</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "1973ee13143d445385f8255641de31c4"}
+{"version_major": 2, "version_minor": 0, "model_id": "4a99a6f799614c2b88305dd04961b310"}
 </script></div>
 </div>
 <p>✏️ <strong>Exercise:</strong> Double click on this cell and enter the value(s) you find for <strong>sales</strong> where both pays are the same?</p>
@@ -710,18 +883,17 @@ if (outputEl) {{
 <li><p>what is the minimum wage in your area?</p></li>
 <li><p>how many hours would you typically work in a year?</p></li>
 </ul>
-<p>For instance, in Alberta, the minimum wage is $$$15 per hour. Most people work about 40 hours a week, for 50 weeks a year, which is 2000 hours per year.</p>
-<p>That results in an annual salary of $$$30,000 per year, or $$$2,500 per month.</p>
+<p>For instance, in Alberta, the minimum wage is <span class="math notranslate nohighlight">\(\$\)</span>15 per hour. Most people work about 40 hours a week, for 50 weeks a year, which is 2000 hours per year.</p>
+<p>That results in an annual salary of <span class="math notranslate nohighlight">\(\$\)</span>30,000 per year, or <span class="math notranslate nohighlight">\(\$\)</span>2,500 per month.</p>
 <div class="math notranslate nohighlight">
 \[ 2,500 = 30,000 \div 12.\]</div>
 <p>Working at Bigby gives you more money, so let’s find out how many dollars in sales at Bigby are needed to make the same as minimum wage.</p>
 <p>Remembering our formulas above are for monthly pay, we solve:
-<span class="math notranslate nohighlight">\($ 2,500 = 250 + .18x.\)</span>$</p>
+$<span class="math notranslate nohighlight">\( 2,500 = 250 + .18x.\)</span>$</p>
 <p><strong>Exercise:</strong> What do you find for the value of <strong>x</strong>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ You can use this area to calculate the answer in Python. Solve for x in the above equation. </span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ You can use this area to calculate the answer in Python. Solve for x in the above equation. </span>
 </pre></div>
 </div>
 </div>
@@ -729,14 +901,13 @@ if (outputEl) {{
 </div>
 <div class="section" id="sanity-check">
 <h2>Sanity check<a class="headerlink" href="#sanity-check" title="Permalink to this headline">¶</a></h2>
-<p>You’ll find <span class="math notranslate nohighlight">\(x\)</span> is over $$$10,000 per month. That means you’ll need to sell over a hundred and twenty thousand dollars worth of electronics every year, just to make minimum wage.</p>
+<p>You’ll find <span class="math notranslate nohighlight">\(x\)</span> is over <span class="math notranslate nohighlight">\(\$\)</span>10,000 per month. That means you’ll need to sell over a hundred and twenty thousand dollars worth of electronics every year, just to make minimum wage.</p>
 <p>Does that sound like a lot to sell?</p>
 <p><strong>Exercise:</strong> Exactly how much in sales <strong>per year</strong> do you need to make minimum wage, in Alberta?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ Use this area to calculate the answer in Python. </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ Use this area to calculate the answer in Python. </span>
 <span class="c1">## Take the answer x from the last Exercise, and convert from monthly to yearly sales.</span>
-
 </pre></div>
 </div>
 </div>
@@ -745,13 +916,12 @@ if (outputEl) {{
 <div class="section" id="working-hard-at-acme">
 <h2>Working hard at Acme<a class="headerlink" href="#working-hard-at-acme" title="Permalink to this headline">¶</a></h2>
 <p>It seems obvious that Acme pays much less than Bigby, when the sales are large.  So let’s check with this exercise.</p>
-<p><strong>Exercise:</strong> Following the calculations as above, how many dollars in sales are needed at Acme to match the minimum wage month of $$$2,500?</p>
+<p><strong>Exercise:</strong> Following the calculations as above, how many dollars in sales are needed at Acme to match the minimum wage month of <span class="math notranslate nohighlight">\(\$\)</span>2,500?</p>
 <p><strong>Do you need a hint?</strong> Try solving this equation for <strong>x</strong> (and explain why this is the one you want):
-<span class="math notranslate nohighlight">\($ 2,500 = 1200 + .03(x-1000).\)</span>$</p>
+$<span class="math notranslate nohighlight">\( 2,500 = 1200 + .03(x-1000).\)</span>$</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ Use this area to calculate your answer in Python. </span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ Use this area to calculate your answer in Python. </span>
 </pre></div>
 </div>
 </div>
@@ -759,8 +929,7 @@ if (outputEl) {{
 <p><strong>Exercise:</strong> Given your answers, how much more do you need in sales at Acme to match the monthly minimum wage, than you need at Bigby? (Bigby should be looking pretty good to you now!)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ Use this area to calculate your answer in Python. </span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ Use this area to calculate your answer in Python. </span>
 </pre></div>
 </div>
 </div>
@@ -768,7 +937,7 @@ if (outputEl) {{
 </div>
 <div class="section" id="another-province">
 <h2>Another province.<a class="headerlink" href="#another-province" title="Permalink to this headline">¶</a></h2>
-<p>What is minimum wage in your province? (You can look it up on the internet.) For instance, in Saskatchewan, it is $$$11 per hour. In Ontario, $$$14 per hour.</p>
+<p>What is minimum wage in your province? (You can look it up on the internet.) For instance, in Saskatchewan, it is <span class="math notranslate nohighlight">\(\$\)</span>11 per hour. In Ontario, <span class="math notranslate nohighlight">\(\$\)</span>14 per hour.</p>
 <p><strong>Exercise:</strong></p>
 <ul class="simple">
 <li><p>Imitating the calculations above, what is the monthly minimum wage salary in your province?</p></li>
@@ -776,8 +945,7 @@ if (outputEl) {{
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ Use this area to calculate your answer in Python. </span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## ✏️ Use this area to calculate your answer in Python. </span>
 </pre></div>
 </div>
 </div>
@@ -797,10 +965,29 @@ if (outputEl) {{
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"fb6b002b93f443ecac0b6f407729f485": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f17fe2e14e164b85ae50021df1dcd11b": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_69a5a44c32be4f87b978e57eddd5ed41", "IPY_MODEL_0ac9631c2b394b08b514749e8954a5b5"], "layout": "IPY_MODEL_fb6b002b93f443ecac0b6f407729f485"}}, "11b926801bfa43659aa07e1a96e351ee": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4a218821cc654e959d1438d97528a1ec": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "69a5a44c32be4f87b978e57eddd5ed41": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "sales", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_11b926801bfa43659aa07e1a96e351ee", "placeholder": "\u200b", "style": "IPY_MODEL_4a218821cc654e959d1438d97528a1ec", "value": "4000"}}, "deba81e74d9e49b18ca1be6caebe5d43": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0ac9631c2b394b08b514749e8954a5b5": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_deba81e74d9e49b18ca1be6caebe5d43", "msg_id": "", "outputs": [{"output_type": "display_data", "metadata": {}, "data": {"text/plain": "[1290.0, 970.0]"}}]}}, "93ef154e50144d80ac1da68e8f8c516f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1973ee13143d445385f8255641de31c4": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_ad880c8cd2c64848b7677a1d707770c2", "IPY_MODEL_afb8e638760c4b4a8a591563a6c6e4e3"], "layout": "IPY_MODEL_93ef154e50144d80ac1da68e8f8c516f"}}, "5c3d075254e74893adae9dea46797204": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "dc85d18541a143119f7f1b7c77b0e699": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "ad880c8cd2c64848b7677a1d707770c2": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "sales", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_5c3d075254e74893adae9dea46797204", "max": 7000, "min": 6000, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_dc85d18541a143119f7f1b7c77b0e699", "value": 6500}}, "c4310f42406c4dc7be58d0814c1ec804": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "afb8e638760c4b4a8a591563a6c6e4e3": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_c4310f42406c4dc7be58d0814c1ec804", "msg_id": "", "outputs": [{"output_type": "display_data", "metadata": {}, "data": {"text/plain": "[1365.0, 1420.0]"}}]}}}, "version_major": 2, "version_minor": 0}
+{"state": {"9217f32185f94c66ad6c8a49ace9b999": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c6997c8729694b469e76c455abd08889": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_accbdb6939c94f21be9393dcf58a5fd9", "IPY_MODEL_240a904ac91f4382aaf7d0251fb061ee"], "layout": "IPY_MODEL_9217f32185f94c66ad6c8a49ace9b999"}}, "c4696249013b4beea8d49f7aa38770c3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1b856a82797b468186326dca8363ff59": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "accbdb6939c94f21be9393dcf58a5fd9": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "sales", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_c4696249013b4beea8d49f7aa38770c3", "placeholder": "\u200b", "style": "IPY_MODEL_1b856a82797b468186326dca8363ff59", "value": "4000"}}, "577087d805d44654ba4a90f276949060": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "240a904ac91f4382aaf7d0251fb061ee": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_577087d805d44654ba4a90f276949060", "msg_id": "", "outputs": [{"output_type": "display_data", "metadata": {}, "data": {"text/plain": "[1290.0, 970.0]"}}]}}, "a325ac40cb7140858e720d179dca8b23": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4a99a6f799614c2b88305dd04961b310": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_d99d0119f4ce4325857a1c82c6c576b9", "IPY_MODEL_474cfc06da724b7397823ec22ee718c7"], "layout": "IPY_MODEL_a325ac40cb7140858e720d179dca8b23"}}, "f04d21ec45dd42d5af0b102830a4cfa8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2a658a94ae7b44a781c344f1bc6e2f30": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "d99d0119f4ce4325857a1c82c6c576b9": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "sales", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_f04d21ec45dd42d5af0b102830a4cfa8", "max": 7000, "min": 6000, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_2a658a94ae7b44a781c344f1bc6e2f30", "value": 6500}}, "440783e50cb34986bae0c998411005b4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "474cfc06da724b7397823ec22ee718c7": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_440783e50cb34986bae0c998411005b4", "msg_id": "", "outputs": [{"output_type": "display_data", "metadata": {}, "data": {"text/plain": "[1365.0, 1420.0]"}}]}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/TippingPointJobs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -811,7 +998,7 @@ if (outputEl) {{
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../TellingTime/telling-time.html" title="previous page">Telling Time</a>
-    <a class='right-next' id="next-link" href="../Transformations/exercises-transformations-of-objects-and-shapes.html" title="next page">Instructions - from the “Kernel” menu, select “Restart &amp; Run All” to begin.</a>
+    <a class='right-next' id="next-link" href="../Transformations/exercises-transformations-of-objects-and-shapes.html" title="next page">Transformations of Objects and Shapes: Exercises</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

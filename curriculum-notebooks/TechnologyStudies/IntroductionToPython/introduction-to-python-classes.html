@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Python Classes &#8212; Callysto Curriculum Notebooks</title>
+    <title>Python - Classes &#8212; Callysto Curriculum Notebooks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../../../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,15 +23,23 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Loops and Iteration in Python" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html" />
+    <link rel="next" title="Python - Loops and Iteration" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html" />
     <link rel="prev" title="Python - introduction" href="introduction-to-python.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,65 +73,103 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="active">
-    <a href="../Technology.html">Technology Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../ComputerScienceSocrata/1-introduction-to-socrata-and-soda.html">Socrata and Soda</a>
-    </li>
-    <li class="">
-      <a href="../ComputerScienceSocrata/2-introduction-to-plotly.html">Plotly - introduction</a>
-    </li>
-    <li class="">
-      <a href="../ComputerScienceSocrata/3-joining-datasets.html">Joining Datasets</a>
-    </li>
-    <li class="">
-      <a href="../ComputerScienceSocrata/4-filtering-datasets.html">Filtering Datasets</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToDataStructures/introduction-to-data-structures.html">Lists and Dictionaries in Python</a>
-    </li>
-    <li class="">
-      <a href="introduction-to-python.html">Python - introduction</a>
-    </li>
-    <li class="active">
-      <a href="">Python Classes</a>
-    </li>
-    <li class="">
-      <a href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">Loops and Iteration in Python</a>
-    </li>
-  </ul>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Technology.html">
+   Technology Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ComputerScienceSocrata/1-introduction-to-socrata-and-soda.html">
+     Socrata and Soda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ComputerScienceSocrata/2-introduction-to-plotly.html">
+     Plotly - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ComputerScienceSocrata/3-joining-datasets.html">
+     Joining Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ComputerScienceSocrata/4-filtering-datasets.html">
+     Filtering Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introduction-to-python.html">
+     Python - introduction
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python - Classes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">
+     Python - Loops and Iteration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToDataStructures/introduction-to-data-structures.html">
+     Python - Lists and Dictionaries
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -195,80 +241,95 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/IntroductionToPython/introduction-to-python-classes.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/IntroductionToPython/introduction-to-python-classes.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/TechnologyStudies/IntroductionToPython/introduction-to-python-classes.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of Contents:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Python Classes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remark">
+     Remark:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getters-and-setters">
+     Getters and Setters:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-project">
+     Practice Project
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extra-resources">
+     Extra Resources:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#class-inheritance">
+   Class Inheritance
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Extra Resources:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-word-on-object-oriented-programming-and-data">
+   A word on Object Oriented Programming and Data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Extra Resources:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of Contents:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id1" class="nav-link">Python Classes</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#remark" class="nav-link">Remark:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getters-and-setters" class="nav-link">Getters and Setters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#practice-project" class="nav-link">Practice Project</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#extra-resources" class="nav-link">Extra Resources:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#class-inheritance" class="nav-link">Class Inheritance</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id2" class="nav-link">Extra Resources:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#a-word-on-object-oriented-programming-and-data" class="nav-link">A word on Object Oriented Programming and Data</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#id3" class="nav-link">Extra Resources:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -279,7 +340,7 @@
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=TechnologyStudies/IntroductionToPython/introduction-to-python-classes.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <div class="section" id="python-classes">
-<h1>Python Classes<a class="headerlink" href="#python-classes" title="Permalink to this headline">¶</a></h1>
+<h1>Python - Classes<a class="headerlink" href="#python-classes" title="Permalink to this headline">¶</a></h1>
 <p>In this lesson, we are going to introduce a powerful programming language technique called Object-Oriented Programming, or OOP for short, using Python Classes. First, we will introduce Python classes, and then, we will provide the motivation for OOP and how Python Classes fit into OOP.</p>
 <div class="section" id="table-of-contents">
 <h2>Table of Contents:<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
@@ -312,7 +373,7 @@
 <p>In contrast, a public attribute is a attribute that can be accessed from outside the class. In general, all attributes in a Python class or instance are public – but it can be a good practice to treat them like they’re not.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## An example ##</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## An example ##</span>
 
 <span class="c1">## The syntax for declaring a class is class Class_Name ##</span>
 <span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
@@ -341,7 +402,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating a new instance #</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating a new instance #</span>
 <span class="c1"># To create a new instance of a class, simply declare it as a normal variable #</span>
 <span class="c1"># and pass your desired information to the initializer, note that self is not passed #</span>
 
@@ -353,7 +414,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Accessing class methods #</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Accessing class methods #</span>
 <span class="c1"># We can access the methods in the class employee using the dot operator #</span>
 <span class="c1"># Because these are two different instances, they will print two different values #</span>
 <span class="n">Emp1</span><span class="o">.</span><span class="n">Display_Name</span><span class="p">()</span>
@@ -362,7 +423,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Employee Name: Frank
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Employee Name: Frank
 Employee Name: Sarah
 </pre></div>
 </div>
@@ -370,7 +431,7 @@ Employee Name: Sarah
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Accessing Data inside the class #</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Accessing Data inside the class #</span>
 <span class="c1"># In Python, it is possible to have access to the actual values inside the class using the dot operator #</span>
 <span class="c1"># This is not the case in other languages such as Java and C++ #</span>
 
@@ -380,7 +441,7 @@ Employee Name: Sarah
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Frank
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Frank
 Sarah
 </pre></div>
 </div>
@@ -394,7 +455,7 @@ Sarah
 <p>We will illustrate with an example.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## Example with Getters and Setters ##</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Example with Getters and Setters ##</span>
 
 <span class="k">class</span> <span class="nc">Better_Employee</span><span class="p">:</span>
     
@@ -439,7 +500,7 @@ Sarah
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now we create new instances #</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now we create new instances #</span>
 
 <span class="n">Emp1</span> <span class="o">=</span> <span class="n">Better_Employee</span><span class="p">(</span><span class="s2">&quot;Frank&quot;</span><span class="p">,</span> <span class="mi">20000</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
 <span class="n">Emp2</span> <span class="o">=</span> <span class="n">Better_Employee</span><span class="p">(</span><span class="s2">&quot;Sarah&quot;</span><span class="p">,</span> <span class="mi">40000</span><span class="p">,</span> <span class="mi">34</span><span class="p">)</span>
@@ -457,7 +518,7 @@ Sarah
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Employee Name: Frank
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Employee Name: Frank
 Employee Salary: 20000
 Employee Age: 25
 Frank
@@ -470,7 +531,7 @@ Employee Age: 34
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Suppose that everyone turns one year older and because of existing they get a 40000 dollar raise. #</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Suppose that everyone turns one year older and because of existing they get a 40000 dollar raise. #</span>
 <span class="c1"># Now, the current age and salary information in each class is outdated. Thus, we need to update #</span>
 <span class="c1"># the information in the class using setters #</span>
 
@@ -490,7 +551,7 @@ Employee Age: 34
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Employee Salary: 60000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Employee Salary: 60000
 Employee Age: 26
 Employee Salary: 80000
 Employee Age: 35
@@ -500,7 +561,7 @@ Employee Age: 35
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now suppose we want to use the values in the class elsewhere, such as another file. #</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now suppose we want to use the values in the class elsewhere, such as another file. #</span>
 <span class="c1"># We can access those values by using the get functions. Note that these are not the original #</span>
 <span class="c1"># variables, just the values associated with them are returned. The original variables are #</span>
 <span class="c1"># unaccessable. #</span>
@@ -514,7 +575,7 @@ Employee Age: 35
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>80000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>80000
 26
 </pre></div>
 </div>
@@ -543,7 +604,7 @@ Set ID <br /></p>
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## Code Goes Here ##</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Code Goes Here ##</span>
 </pre></div>
 </div>
 </div>
@@ -563,7 +624,7 @@ Set ID <br /></p>
 <p>Suppose we create a class called Car, and a class called Truck, each with its own attributes and methods.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Car Class #</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Car Class #</span>
 
 <span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
     
@@ -592,7 +653,7 @@ Set ID <br /></p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Truck Class #</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Truck Class #</span>
 
 <span class="k">class</span> <span class="nc">Truck</span><span class="p">:</span>
     
@@ -628,7 +689,7 @@ Set ID <br /></p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>1969
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1969
 1986
 </pre></div>
 </div>
@@ -641,7 +702,7 @@ This method is called <strong>Class Inheritance</strong>. Class inheritance allo
 <p>The class which we inherit from is called a <strong>base class</strong>. Classes which inherit from the base class are called <strong>derived classes</strong>. Base classes and derived classes can be called <strong>parent classes</strong> and <strong>child classes</strong> respectively.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Vehicle Class, carries all attributes associated with any vehicle #</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Vehicle Class, carries all attributes associated with any vehicle #</span>
 
 <span class="k">class</span> <span class="nc">Vehicle</span><span class="p">:</span>
     <span class="c1"># Attributes #</span>
@@ -713,7 +774,7 @@ This method is called <strong>Class Inheritance</strong>. Class inheritance allo
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;Herbie&#39; was built in 1969. Other information: &#39;A movie star that&#39;s also a car!&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Herbie&#39; was built in 1969. Other information: &#39;A movie star that&#39;s also a car!&#39;
 It can&#39;t talk.
 
 &#39;Kitt&#39; was built in 1986. Other information: &#39;From the TV Smash hit &#39;Knight Rider&#39;&#39;
@@ -768,6 +829,25 @@ Don&#39;t ask it to carry cargo.
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/TechnologyStudies/IntroductionToPython"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -778,7 +858,7 @@ Don&#39;t ask it to carry cargo.
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="introduction-to-python.html" title="previous page">Python - introduction</a>
-    <a class='right-next' id="next-link" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html" title="next page">Loops and Iteration in Python</a>
+    <a class='right-next' id="next-link" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html" title="next page">Python - Loops and Iteration</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

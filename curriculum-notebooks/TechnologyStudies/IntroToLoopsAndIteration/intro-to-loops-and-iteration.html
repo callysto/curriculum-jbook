@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Loops and Iteration in Python &#8212; Callysto Curriculum Notebooks</title>
+    <title>Python - Loops and Iteration &#8212; Callysto Curriculum Notebooks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../../../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
@@ -23,15 +23,24 @@
     <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
     <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
     <script type="text/javascript" src="../../../_static/copybutton.js"></script>
-    <script type="text/javascript" src="../../../_static/mystnb.js"></script>
     <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="prev" title="Python Classes" href="../IntroductionToPython/introduction-to-python-classes.html" />
+    <link rel="next" title="Python - Lists and Dictionaries" href="../IntroductionToDataStructures/introduction-to-data-structures.html" />
+    <link rel="prev" title="Python - Classes" href="../IntroductionToPython/introduction-to-python-classes.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -64,65 +73,103 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../../../intro.html">Welcome to Callysto</a>
-  </li>
-  <li class="">
-    <a href="../../README.html">Curriculum Notebooks</a>
-  </li>
-  <li class="">
-    <a href="../../Arts/Arts.html">Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../EnglishLanguageArts/EnglishLangArts.html">English Language Arts Section</a>
-  </li>
-  <li class="">
-    <a href="../../Health/Health.html">Health Section</a>
-  </li>
-  <li class="">
-    <a href="../../Languages/Languages.html">Languages Section</a>
-  </li>
-  <li class="">
-    <a href="../../Mathematics/Mathematics.html">Mathematics Section</a>
-  </li>
-  <li class="">
-    <a href="../../Science/Sciences.html">Sciences Section</a>
-  </li>
-  <li class="">
-    <a href="../../SocialStudies/SocialStudies.html">Social Studies Section</a>
-  </li>
-  <li class="active">
-    <a href="../Technology.html">Technology Section</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../ComputerScienceSocrata/1-introduction-to-socrata-and-soda.html">Socrata and Soda</a>
-    </li>
-    <li class="">
-      <a href="../ComputerScienceSocrata/2-introduction-to-plotly.html">Plotly - introduction</a>
-    </li>
-    <li class="">
-      <a href="../ComputerScienceSocrata/3-joining-datasets.html">Joining Datasets</a>
-    </li>
-    <li class="">
-      <a href="../ComputerScienceSocrata/4-filtering-datasets.html">Filtering Datasets</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToDataStructures/introduction-to-data-structures.html">Lists and Dictionaries in Python</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToPython/introduction-to-python.html">Python - introduction</a>
-    </li>
-    <li class="">
-      <a href="../IntroductionToPython/introduction-to-python-classes.html">Python Classes</a>
-    </li>
-    <li class="active">
-      <a href="">Loops and Iteration in Python</a>
-    </li>
-  </ul>
-  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Technology.html">
+   Technology Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ComputerScienceSocrata/1-introduction-to-socrata-and-soda.html">
+     Socrata and Soda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ComputerScienceSocrata/2-introduction-to-plotly.html">
+     Plotly - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ComputerScienceSocrata/3-joining-datasets.html">
+     Joining Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ComputerScienceSocrata/4-filtering-datasets.html">
+     Filtering Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python.html">
+     Python - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python-classes.html">
+     Python - Classes
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python - Loops and Iteration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToDataStructures/introduction-to-data-structures.html">
+     Python - Lists and Dictionaries
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -194,92 +241,111 @@
                     alt="Interact on binder">Binder</button></a>
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/IntroToLoopsAndIteration/intro-to-loops-and-iteration.ipynb"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/IntroToLoopsAndIteration/intro-to-loops-and-iteration.ipynb&branch=master"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/TechnologyStudies/IntroToLoopsAndIteration/intro-to-loops-and-iteration.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
         
     </div>
 </div>
 
     </div>
+
+    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of Contents:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#while-loops">
+   While Loops:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#for-loops">
+   For Loops:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-range-function">
+     The Range Function:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iterating-over-list-indices-and-dictionary-keys">
+     Iterating over list indices and dictionary keys:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#application-randomly-generated-list">
+     Application: Randomly Generated List
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-break-statement">
+   The Break Statement:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#practice">
+   Practice:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#incrementing-and-decrementing">
+   Incrementing and Decrementing:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#off-by-one-error">
+   Off by one error:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#infinite-loops">
+   Infinite Loops:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loops-with-if-else-statements">
+   Loops with if/else statements:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nested-loops">
+   Nested Loops:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extra-resources">
+   Extra Resources:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion:
+  </a>
+ </li>
+</ul>
 
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of Contents:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#while-loops" class="nav-link">While Loops:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#for-loops" class="nav-link">For Loops:</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#the-range-function" class="nav-link">The Range Function:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#iterating-over-list-indices-and-dictionary-keys" class="nav-link">Iterating over list indices and dictionary keys:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#application-randomly-generated-list" class="nav-link">Application: Randomly Generated List</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#the-break-statement" class="nav-link">The Break Statement:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#practice" class="nav-link">Practice:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#incrementing-and-decrementing" class="nav-link">Incrementing and Decrementing:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#off-by-one-error" class="nav-link">Off by one error:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#infinite-loops" class="nav-link">Infinite Loops:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#loops-with-if-else-statements" class="nav-link">Loops with if/else statements:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#nested-loops" class="nav-link">Nested Loops:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#extra-resources" class="nav-link">Extra Resources:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#conclusion" class="nav-link">Conclusion:</a>
-        </li>
-    
-    </ul>
-</nav>
-
-
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -289,8 +355,8 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=TechnologyStudies/IntroToLoopsAndIteration/intro-to-loops-and-iteration.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"></a></p>
-<div class="section" id="loops-and-iteration-in-python">
-<h1>Loops and Iteration in Python<a class="headerlink" href="#loops-and-iteration-in-python" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="python-loops-and-iteration">
+<h1>Python - Loops and Iteration<a class="headerlink" href="#python-loops-and-iteration" title="Permalink to this headline">¶</a></h1>
 <p>In this notebook, we will be introducing loops and iteration. They are commonly used tools in programming as they allow us to perform repetitive tasks.</p>
 <p>To run a code cell, select the cell you wish to run, then either:</p>
 <ol class="simple">
@@ -321,7 +387,7 @@
 <p>Here is an example of a basic <code class="docutils literal notranslate"><span class="pre">while</span></code> loop. This loop will print <code class="docutils literal notranslate"><span class="pre">n</span></code> as long as <code class="docutils literal notranslate"><span class="pre">n</span></code> is greater than 0. The computer will check the <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> condition after it decrements <code class="docutils literal notranslate"><span class="pre">n</span></code>. If that condition still holds, then we will continue to print and decrement. If <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">0</span></code> then the condition is no longer <code class="docutils literal notranslate"><span class="pre">True</span></code>, so the computer will not enter the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
@@ -329,7 +395,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>10
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
 9
 8
 7
@@ -346,7 +412,7 @@
 <p>Another example. Since <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&lt;</span> <span class="pre">0</span></code> to start, the <code class="docutils literal notranslate"><span class="pre">while</span></code> condition is not satisfied.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
@@ -356,7 +422,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>n is less than 0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n is less than 0
 </pre></div>
 </div>
 </div>
@@ -375,13 +441,13 @@
 <p>Here is an example of iterating over a string. The sequence part of this <code class="docutils literal notranslate"><span class="pre">for</span></code> loop contains a string, The computer will take the string and assign the first value in that string to the variable <code class="docutils literal notranslate"><span class="pre">letter</span></code>. Then the statement inside the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop is executed. Each element in the string will then be assigned to the variable <code class="docutils literal notranslate"><span class="pre">letter</span></code> until there are no more letters left in the string.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s2">&quot;Dog&quot;</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s2">&quot;Dog&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Letter:&quot;</span><span class="p">,</span> <span class="n">letter</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Current Letter: D
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Current Letter: D
 Current Letter: o
 Current Letter: g
 </pre></div>
@@ -391,14 +457,14 @@ Current Letter: g
 <p>Another example of iterating over a string. The same idea as above, but now the elements assigned to the variable are from a list.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;mango&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;mango&quot;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current fruit:&quot;</span><span class="p">,</span> <span class="n">fruit</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Current fruit: banana
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Current fruit: banana
 Current fruit: apple
 Current fruit: mango
 </pre></div>
@@ -413,13 +479,13 @@ Current fruit: mango
 <p><code class="docutils literal notranslate"><span class="pre">start</span></code> specifies the first number, <code class="docutils literal notranslate"><span class="pre">stop</span></code> specifies the last number, and <code class="docutils literal notranslate"><span class="pre">step</span></code> is the number by which we increment. <code class="docutils literal notranslate"><span class="pre">start</span></code> is included in the list, but <code class="docutils literal notranslate"><span class="pre">stop</span></code> is not. Each parameter has to be an integer.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
 1
 2
 3
@@ -430,13 +496,13 @@ Current fruit: mango
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>3
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 4
 5
 </pre></div>
@@ -445,13 +511,13 @@ Current fruit: mango
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>4
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
 6
 8
 </pre></div>
@@ -460,13 +526,13 @@ Current fruit: mango
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
 -2
 -4
 -6
@@ -483,14 +549,14 @@ Current fruit: mango
 <p>An example of iterating through a list using <code class="docutils literal notranslate"><span class="pre">range</span></code>. What happens here is the same as what happens above when we interated through a string.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;mango&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;mango&quot;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">)):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current fruit:&quot;</span><span class="p">,</span> <span class="n">fruits</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Current fruit: banana
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Current fruit: banana
 Current fruit: apple
 Current fruit: mango
 </pre></div>
@@ -500,14 +566,14 @@ Current fruit: mango
 <p>An example of iteration on a dictionary.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;z&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;z&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s2">&quot;corresponds to&quot;</span><span class="p">,</span> <span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>x corresponds to 1
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x corresponds to 1
 y corresponds to 2
 z corresponds to 3
 </pre></div>
@@ -524,7 +590,7 @@ z corresponds to 3
 <p>Change the value of the <code class="docutils literal notranslate"><span class="pre">size_of_list</span></code> variable to see what happens.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">size_of_list</span> <span class="o">=</span> <span class="mi">7</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">size_of_list</span> <span class="o">=</span> <span class="mi">7</span>
 
 <span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="nn">rand</span>
 <span class="n">random_list</span> <span class="o">=</span> <span class="p">[]</span>
@@ -537,7 +603,7 @@ z corresponds to 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>[497, 169, 20, 611, 568, 755, 94]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[542, 869, 661, 482, 564, 829, 142]
 </pre></div>
 </div>
 </div>
@@ -551,7 +617,7 @@ z corresponds to 3
 <p>For example, This loop will add <code class="docutils literal notranslate"><span class="pre">1</span></code> to the variable <code class="docutils literal notranslate"><span class="pre">n</span></code>. If <code class="docutils literal notranslate"><span class="pre">n</span></code> is greater than <code class="docutils literal notranslate"><span class="pre">10</span></code> then the <code class="docutils literal notranslate"><span class="pre">if</span></code> statements will be <code class="docutils literal notranslate"><span class="pre">True</span></code>, and the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop will be exited. After that the next line of code will be executed.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
@@ -563,7 +629,7 @@ z corresponds to 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>1
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
 2
 3
 4
@@ -581,7 +647,7 @@ Done!
 <p>Another example, this time iterating through the letters in a string, and breaking out if the letter is equal to <code class="docutils literal notranslate"><span class="pre">h</span></code>. Notice the <code class="docutils literal notranslate"><span class="pre">==</span></code> to check for equality.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s2">&quot;Python&quot;</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s2">&quot;Python&quot;</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">letter</span> <span class="o">==</span> <span class="s2">&quot;h&quot;</span><span class="p">:</span>
         <span class="k">break</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Letter:&quot;</span><span class="p">,</span> <span class="n">letter</span><span class="p">)</span>
@@ -591,7 +657,7 @@ Done!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Current Letter: P
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Current Letter: P
 Current Letter: y
 Current Letter: t
 Done!
@@ -610,7 +676,7 @@ Done!
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code goes here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code goes here</span>
 </pre></div>
 </div>
 </div>
@@ -622,7 +688,7 @@ Done!
 <p>We can increment or decrement variables in loops using two different notations. We used one in a previous example, where we set a variable equal to itself plus <code class="docutils literal notranslate"><span class="pre">1</span></code> to increment by one each time through the loop. We can decrement in a similar way.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
@@ -631,7 +697,7 @@ Done!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>5
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
 4
 3
 2
@@ -644,7 +710,7 @@ Blastoff!
 <p>To increment or decrement we can also use the short form <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">+=</span> <span class="pre">1</span></code> or <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">-=</span> <span class="pre">1</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
     <span class="n">n</span> <span class="o">+=</span> <span class="mi">2</span> <span class="c1"># equivalent to  n = n + 2</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
@@ -654,7 +720,7 @@ Blastoff!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>2
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
 4
 6
 8
@@ -666,7 +732,7 @@ Done!
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
@@ -674,7 +740,7 @@ Done!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>10
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
 9
 8
 7
@@ -695,7 +761,7 @@ Done!
 <p>Note the difference between the outputs of the following loops.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">list_of_words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;zero&#39;</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">,</span> <span class="s1">&#39;four&#39;</span><span class="p">,</span> <span class="s1">&#39;five&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_of_words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;zero&#39;</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">,</span> <span class="s1">&#39;four&#39;</span><span class="p">,</span> <span class="s1">&#39;five&#39;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loop 1:&#39;</span><span class="p">)</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
@@ -711,7 +777,7 @@ Done!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Loop 1:
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loop 1:
 zero
 one
 two
@@ -751,7 +817,7 @@ five
 <p>For example, <code class="docutils literal notranslate"><span class="pre">9</span> <span class="pre">%</span> <span class="pre">4</span></code> returns <code class="docutils literal notranslate"><span class="pre">1</span></code> since <code class="docutils literal notranslate"><span class="pre">9</span> <span class="pre">÷</span> <span class="pre">4</span> <span class="pre">=</span> <span class="pre">2</span></code> with a remainder of <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;is even.&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -760,7 +826,7 @@ five
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>10 is even.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10 is even.
 11 is odd.
 12 is even.
 13 is odd.
@@ -784,12 +850,12 @@ five
 <p>The following code iterates over <code class="docutils literal notranslate"><span class="pre">n</span></code> from <code class="docutils literal notranslate"><span class="pre">3</span></code> to <code class="docutils literal notranslate"><span class="pre">8</span></code> (not including <code class="docutils literal notranslate"><span class="pre">8</span></code>) with a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. Each time through the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop it uses a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop to iterate over numbers from <code class="docutils literal notranslate"><span class="pre">1</span></code> to <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Counting up to&#39;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
         <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="k">2</span> == 0:
             <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;is even&#39;</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;is odd&#39;</span><span class="p">)</span>
@@ -797,7 +863,7 @@ five
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Counting up to 3
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Counting up to 3
 1 is odd
 2 is even
 3 is odd
@@ -854,6 +920,25 @@ Counting up to 7
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/TechnologyStudies/IntroToLoopsAndIteration"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -863,7 +948,8 @@ Counting up to 7
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../IntroductionToPython/introduction-to-python-classes.html" title="previous page">Python Classes</a>
+    <a class='left-prev' id="prev-link" href="../IntroductionToPython/introduction-to-python-classes.html" title="previous page">Python - Classes</a>
+    <a class='right-next' id="next-link" href="../IntroductionToDataStructures/introduction-to-data-structures.html" title="next page">Python - Lists and Dictionaries</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
