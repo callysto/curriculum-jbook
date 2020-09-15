@@ -1,0 +1,725 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Newton’s Third Law &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Half life calculations" href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html" />
+    <link rel="prev" title="Newton’s Second Law" href="../NewtonsSecondLaw/newtons-second-law.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Sciences.html">
+   Sciences Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BalancingChemicalEquations/balancing-chemical-equations.html">
+     Chemical Equations: Writing and Balancing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ChemicalNomenclature/chemical-nomenclature.html">
+     Chemical Nomenclature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClassifyingChemicalReactions/classifying-chemical-reactions.html">
+     Classifying Chemical Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClimateChange/climate-change.html">
+     Climate Change
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Climatograph/climatograph.html">
+     Climatograph
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html">
+     Concentration and pH
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
+     Acids and Bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricalConductivity/electrical-conductivity.html">
+     Electrical Conductivity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">
+     Electricity Consumption Monitoring
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ExploringSolarSystem/exploring-the-solar-system.html">
+     Exploring the Solar System
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HeatAndTemperature/heat-and-temperature.html">
+     Heat and Temperature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LightOpticalSystems/light-optical-systems.html">
+     Light and Optics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LightTransmission/transmission-of-light.html">
+     Transmission of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">
+     Methods used in Scientific Study of the Earth
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NatureOfThermalEnergy/nature-of-thermal-energy.html">
+     The Nature of Thermal Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsFirstLaw/newtons-first-law.html">
+     Newton’s First Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsSecondLaw/newtons-second-law.html">
+     Newton’s Second Law
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Newton’s Third Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">
+     Half life calculations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NuclearDecay/nuclear-decay.html">
+     Nuclear Decay - Half Life
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProjectileMotion/projectile-motion.html">
+     Projectile Motion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RadiationAnimations/radiation-animations.html">
+     Nuclear Radiation: Alpha, Beta, and Gamma
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">
+     Reflection of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ScienceLabReportTemplate/science-lab-report-template.html">
+     Science Lab Report Template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SourcesOfEnergy/resources-and-recycling.html">
+     Sources of Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SpecificAndLatentHeat/specific-and-latent-heat.html">
+     Specific and Latent Heat
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StaticAndKineticFriction/static-and-kinetic-friction.html">
+     Static and Kinetic Friction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">
+     Stoichiometry and Limiting Reactants
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ThermalExpansion/thermal-expansion.html">
+     Thermal Linear Expansion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">
+     Uniform Motion and Uniformly Accelerated Motion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Science/NewtonsThirdLaw/newtons-third-law.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Science/NewtonsThirdLaw/newtons-third-law.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/NewtonsThirdLaw/newtons-third-law.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Science/NewtonsThirdLaw/newtons-third-law.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-third-law">
+   The Third Law
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1">
+     Example 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2">
+     Example 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-3">
+     Example 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equal-and-opposite">
+     Equal and opposite
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#some-details">
+     Some details
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-4">
+     Example 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-train-derailment">
+     A train derailment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-simulation">
+     A simulation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#second-and-third-law-together">
+   Second and Third Law together
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-3-colliding-people">
+   Example 3 - colliding people.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-s-the-force">
+   Where’s the force?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conservation-law">
+   Conservation law
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-newton-s-third-law">
+   Summary of Newton’s Third Law
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/NewtonsThirdLaw/NewtonsThirdLaw.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="section" id="newton-s-third-law">
+<h1>Newton’s Third Law<a class="headerlink" href="#newton-s-third-law" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">function</span> <span class="nx">code_toggle</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">code_shown</span><span class="p">){</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.input&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">(</span><span class="s1">&#39;500&#39;</span><span class="p">);</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#toggleButton&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;Show Code&#39;</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.input&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="s1">&#39;500&#39;</span><span class="p">);</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#toggleButton&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;Hide Code&#39;</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="nx">code_shown</span> <span class="o">=</span> <span class="o">!</span><span class="nx">code_shown</span>
+  <span class="p">}</span>
+
+  <span class="nx">$</span><span class="p">(</span> <span class="nb">document</span> <span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">code_shown</span><span class="o">=</span><span class="kc">false</span><span class="p">;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div.input&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">()</span>
+  <span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;javascript:code_toggle()&quot;</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;toggleButton&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Show Code&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+</div></div>
+</div>
+<div class="section" id="the-third-law">
+<h2>The Third Law<a class="headerlink" href="#the-third-law" title="Permalink to this headline">¶</a></h2>
+<p>Let’s remind ourselves of the Three Laws of motion from Newton:</p>
+<ol class="simple">
+<li><p>A body at <strong>rest</strong> stays at <strong>rest</strong>. A body in <strong>motion</strong> stays in <strong>motion</strong>, with uniform speed in a straight line. A change happens only if a <strong>force</strong> acts on the body.</p></li>
+<li><p>The <strong>force</strong> on the body equals the rate of change of its <strong>momentum</strong> (mass times velocity).</p></li>
+<li><p>For every <strong>action</strong>, there is an equal and opposite <strong>reaction</strong>.</p></li>
+</ol>
+<p>In this notebook, we examine the Third Law:</p>
+<p>#3. For every <strong>action</strong>, there is an equal and opposite <strong>reaction</strong>.</p>
+<div class="section" id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
+<p>A familiar example of the Third Law we see often on TV or the Internet - a rocket blasting off to space.</p>
+<p>The rocket demonstrates Newton’s Third Law. In a NASA rocket, as in the video below, some chemicals inside the the rocket body are burned, creating hot gases that shoot out the bottom of the rocket. That motion of hot gases is the <strong>action</strong>. The rocket responds by moving in the opposite direction. That rocket motion is the <strong>reaction</strong>.</p>
+<a class="reference internal image-reference" href="https://media.giphy.com/media/6yWV529bDk3WU/giphy.gif"><img alt="https://media.giphy.com/media/6yWV529bDk3WU/giphy.gif" src="https://media.giphy.com/media/6yWV529bDk3WU/giphy.gif" style="width: 480px; height: 350px;" /></a>
+<p>(Image via Giphy.com)</p>
+</div>
+<div class="section" id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
+<p>A similar example is with a water bottle rocket, as in the video below.</p>
+<p>The child pumps air into the water bottle creating pressure inside the container. When the lid on the bottom open, the air pressure forces the water  out the bottom of the rocket. That motion of water is the <strong>action.</strong> The resulting <strong>reaction</strong> is the water bottle shooting up into the air.</p>
+<a class="reference internal image-reference" href="https://media.giphy.com/media/qGQ7uiYh4II2k/giphy.gif"><img alt="https://media.giphy.com/media/qGQ7uiYh4II2k/giphy.gif" src="https://media.giphy.com/media/qGQ7uiYh4II2k/giphy.gif" style="width: 480px; height: 270px;" /></a>
+<p>(Image via Giphy.com)</p>
+</div>
+<div class="section" id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="equal-and-opposite">
+<h3>Equal and opposite<a class="headerlink" href="#equal-and-opposite" title="Permalink to this headline">¶</a></h3>
+<p>Equal reaction might not be obvious. In the video below, two people collide while holding big, bouncy balls. At the collision, one of them flies backwards (and lands comfortably on cushions). The other only slows down a bit.  The reaction seems opposite (goes in the reverse direction), but not really equal.</p>
+<a class="reference internal image-reference" href="https://media.giphy.com/media/ri4ux6gkNifIs/giphy.gif"><img alt="https://media.giphy.com/media/ri4ux6gkNifIs/giphy.gif" src="https://media.giphy.com/media/ri4ux6gkNifIs/giphy.gif" style="width: 480px; height: 280px;" /></a>
+<p>(Image via Giphy.com)</p>
+</div>
+<div class="section" id="some-details">
+<h3>Some details<a class="headerlink" href="#some-details" title="Permalink to this headline">¶</a></h3>
+<p>So, what’s happening here?</p>
+<p>A more precise statement of Newton’s Third Law is the following:</p>
+<blockquote>
+<div><p>#3. When two objects interact, there are two forces acting, one on each object, that are equal strength and opposite in direction.</p>
+</div></blockquote>
+<p>In the video above with the two people colliding, each has a <strong>force</strong> on them (the force through the balls). These are equal and opposite <strong>forces</strong> acting on them. The person on the left is big, heavy, and moving quickly with his feet planting firmly on the ground. He will firmly absorb any force, and only slow down a bit.</p>
+<p>The person on the right is small, light-weight, not moving initially, and lifts her feet off the floor. When the equal-sized force hits her, she flies back quickly because her momentum, and her velocity must make a big change in reaction to the force of the collision.</p>
+<p>By the Second Law, a force causes a change in momentum (velocity times mass), so it is the change in <strong>momentum</strong> that must be equal. Here, the smaller person on the right, with lower mass, has to see a bigger change in velocity in the collision to have an equivalent change of momentum. So this person bounces back much faster.</p>
+</div>
+<div class="section" id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="a-train-derailment">
+<h3>A train derailment<a class="headerlink" href="#a-train-derailment" title="Permalink to this headline">¶</a></h3>
+<p>Tragic accidents can happen when we forget Newton’s Third Law. Here is an example of a train derailment, captured in the video below. The train is following Newton’s laws of motion, but something went terribly wrong.</p>
+<a class="reference internal image-reference" href="https://media.giphy.com/media/oQLfkLMkDdfnG/giphy.gif"><img alt="https://media.giphy.com/media/oQLfkLMkDdfnG/giphy.gif" src="https://media.giphy.com/media/oQLfkLMkDdfnG/giphy.gif" style="width: 480px; height: 354px;" /></a>
+<p>(Image via Giphy.com)</p>
+<p>So, what went wrong here?</p>
+<p>First, notice the train is turning in a curve - by Newton’s First Law, there must be a force on the train causing it to deviate from a straight line. It’s not hard to imagine that this force is the action of the rails on the ground pushing against the wheels of the train.</p>
+<p>By the Third Law, the wheels/train push back on the rails. This is the equal, opposite force. Because it is a fast, heavy train, this results in a very strong force pushing on the rails.</p>
+<p>Normally, the rails do not move (much) because they are cemented into the ground. In this derailment video, though, the force is so strong that the rails break! Once they are broken, there is nothing to push against the train. With no force, Newton’s First Law says the train will have to move in a straight line. So it does, which means it leaves the curved track and crashes into the wall.</p>
+</div>
+<div class="section" id="a-simulation">
+<h3>A simulation<a class="headerlink" href="#a-simulation" title="Permalink to this headline">¶</a></h3>
+<p>Following is a bouncing ball simulation, based on code by Ziggy Jonsson <a class="reference external" href="http://bl.ocks.org/ZJONSSON/1706849">Click here for the original</a>. Details are in this <a class="reference external" href="http://www.vobarian.com/collisions/2dcollisions2.pdf">paper</a>.</p>
+<p>What we see in the animation is a collection of balls that bounce off each other in elastic collisions. Each ball has a different mass, proportional to the area of the ball.</p>
+<p>So when a small ball hits a big ball, there is a force acting on each ball, in equal and opposite directions. The difference in masses means the velocity of the small ball changes a lot, while the big ball only changes a little.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;C3.html&#39;</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="500"
+    height="500"
+    src="C3.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+</div>
+</div>
+<div class="section" id="second-and-third-law-together">
+<h2>Second and Third Law together<a class="headerlink" href="#second-and-third-law-together" title="Permalink to this headline">¶</a></h2>
+<p>When two balls hit, the Third Law tells us that the force each feels is equal and opposite. The Second Law tells us the rate of change in <strong>momentum</strong> for each ball is equal to this force.</p>
+<p>This means the total change in <strong>momentum</strong> for the two balls is equal and opposite. That is to say that the total change in total momentum between two objects is</p>
+<div class="math notranslate nohighlight">
+\[\Delta \vec{p}_1 = - \Delta \vec{p}_2, \]</div>
+<p>where delta <span class="math notranslate nohighlight">\(\Delta\)</span> means the ‘’change in’’ the momentum <span class="math notranslate nohighlight">\(\vec{p}\)</span>.
+So <span class="math notranslate nohighlight">\(\Delta \vec{p} = \vec{p}(\mbox{after}) - \vec{p}(\mbox{before}).\)</span></p>
+<p>The letter <span class="math notranslate nohighlight">\(\vec{p}\)</span> stands for momentum (<em>petere</em> in Latin), and is just the product of mass times velocity.</p>
+<p>Rewriting momentum as mass times velocity,  for the two balls (1 and 2) we have
+$<span class="math notranslate nohighlight">\( \Delta \left( m_1 \cdot \vec{v}_1 \right) = - \Delta \left( m_2 \cdot \vec{v}_2\right).\)</span>$
+The minus sign on the right is to remind us that the change is in opposite directions.</p>
+<p>For the balls in this simulation, the masses stay constant, and it is only the velocities that change, so we can write
+$<span class="math notranslate nohighlight">\( m_1 \cdot (\Delta \vec{v}_1) = - m_2 \cdot (\Delta  \vec{v}_2).\)</span>$</p>
+<p>In other words, the relative change in velocities is related to the ratio of their masses,
+$<span class="math notranslate nohighlight">\( \Delta \vec{v}_1 = - \frac{m_2}{m_1} \cdot \Delta   \vec{v}_2.\)</span>$</p>
+<p>So, if ball two has twice the mass of ball one, the change in speed of ball one is twice the change in ball two.</p>
+</div>
+<div class="section" id="example-3-colliding-people">
+<h2>Example 3 - colliding people.<a class="headerlink" href="#example-3-colliding-people" title="Permalink to this headline">¶</a></h2>
+<p>Recall in the thrid video above, we had a boy colliding into a girl. Suppose</p>
+<ul class="simple">
+<li><p>the boy weighs 80 kg</p></li>
+<li><p>the girl weighs 40 kg</p></li>
+<li><p>the boy is running at 5 meters per second, and after the collision, has stopped dead.
+How fast is the girl going?</p></li>
+</ul>
+<p>Well, if we ignore the forces of their feet on the floor, we see the boy’s change in velocity is 5 m/s. Since the ratio of masses <span class="math notranslate nohighlight">\(m_2/m_1\)</span> is 2, the change in the girl’s velocity must be twice as great. So she goes from 0 m/s to 10 m/s (which is very fast).</p>
+<p>If you like, we can compute further:</p>
+<ul class="simple">
+<li><p>the boy’s initial momentum is <span class="math notranslate nohighlight">\(80\times 5\)</span> = <span class="math notranslate nohighlight">\(400\)</span> kg m/s.</p></li>
+<li><p>Going to a dead stop, his change in momentum is <span class="math notranslate nohighlight">\(- 400\)</span> kg m/s.</p></li>
+<li><p>The girl goes from zero to <span class="math notranslate nohighlight">\(40\times 10\)</span> = <span class="math notranslate nohighlight">\(+400\)</span> kg m/s.</p></li>
+</ul>
+<p>So the change in momentum of the boy is equal and opposite the change in momentum of the girl.</p>
+</div>
+<div class="section" id="where-s-the-force">
+<h2>Where’s the force?<a class="headerlink" href="#where-s-the-force" title="Permalink to this headline">¶</a></h2>
+<p>Notice in the above example that we did not need to compute the force of the collision. This is one of the powerful aspects of Newton’s Third Law. That is, without knowing any details of the forces involved, we can still figure out the change in velocities of the interacting bodies.</p>
+<p>In fact, the forces can be quite complicated. With the boy and girl colliding, the force is transmitted through the bouncy ball. So it is a small force, extended over a rather long time (a few tenths of a second). If they were holding hard steel balls, the force of collision would have been very large, over a short time (a hundredth of a second, say). Fortunately, we don’t need to know these details to use the Third Law.</p>
+</div>
+<div class="section" id="conservation-law">
+<h2>Conservation law<a class="headerlink" href="#conservation-law" title="Permalink to this headline">¶</a></h2>
+<p>Newton’s Third Law leads to the conservation of momentum law. This is a deeper physical result that holds true even in very complicated situations, with many bodies (not just two), and even for things like fluids, gases, and elastic solids.</p>
+<p>It is easy to see this conservation of total momentum for the bouncing balls. We write
+$<span class="math notranslate nohighlight">\(\mbox{Total Momentum}, \; \vec{p} = m_1\cdot \vec{v}_1 + m_2\cdot \vec{v}_2 + m_3\cdot \vec{v}_3 + \ldots\)</span>$
+as the sum of the momenta of all the balls.</p>
+<p>Now, if two balls collide, say one and two, then the momentum of first ball goes up by <span class="math notranslate nohighlight">\(\mbox{ change in } (m_1 \cdot v_1)\)</span> while the momentum of the second ball goes down by the same amount. This is the <strong>equal and opposite</strong> part of the Third Law. The Total Momentum stays the same, since this increase and decrease cancels out in the total sum of momenta.</p>
+</div>
+<div class="section" id="summary-of-newton-s-third-law">
+<h2>Summary of Newton’s Third Law<a class="headerlink" href="#summary-of-newton-s-third-law" title="Permalink to this headline">¶</a></h2>
+<p>The Third Law really is a physical law. It says that when two objects interact, it is through forces. Each object experiences a force, that is equal to, and opposite to the force on the other object.</p>
+<p>From the First and Second Laws, we know there are consequences to these forces. The objects will change their motion, and the size of the change of their velocities will depend on their relative masses.</p>
+<p>So when big things hit small things, the small thing has a bigger change in velocity.</p>
+<p>One important consequence of Newtons’ Third Law is the conservation of total momentum for a system of particles.</p>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Suppose you are in your car, stopped at an intersection. A car hits you from behind (that is an action). What is the reaction? (What does your car do?)</p></li>
+<li><p>If the car hitting you from behind has the same mass as yours, is the force your car experiences the same as the force the other car feels?</p></li>
+<li><p>If the car hitting you from behind has 10 times the mass, is the force your car experiences the same as the force the other car feels? Explain.</p></li>
+<li><p>If the car hitting you from behind has 10 times the mass as yours, is the change in velocity your car experiences the same as the change in velocity the other car feels? Explain.</p></li>
+<li><p>From the passenger’s point of view, any big increase in velocity is a problem because at some point in an accident, you get stopped (by an airbag, a windshield, or a road surface). Explain why getting hit by a heavy truck is worse than getting hit by a light car.</p></li>
+<li><p>You and a friend are on a skating rink that is perfectly smooth, and your skates move frictionlessly on the ice. Standing face to face, if you push against each other, do you move? In which direction do each of you move?</p></li>
+<li><p>As in 6, if you and your friend weigh the same, how fast do you move, compared to your friend?</p></li>
+<li><p>As in 6, if you weigh twice as much as your friend, do you move twice as fast? Four times as fast? How fast?</p></li>
+<li><p>A bird can lift itself into the sky by pushing the air with its wings. A rocket in outer space doesn’t have air to push against – so how does it move? (Hint – think of the skaters. One skater could be like the rocket, the other skater is like the hot gases being pushed away from the rocket.)</p></li>
+</ol>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Science/NewtonsThirdLaw"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../NewtonsSecondLaw/newtons-second-law.html" title="previous page">Newton’s Second Law</a>
+    <a class='right-next' id="next-link" href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html" title="next page">Half life calculations</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

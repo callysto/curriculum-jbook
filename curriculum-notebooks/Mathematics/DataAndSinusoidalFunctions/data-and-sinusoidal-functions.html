@@ -1,0 +1,1557 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Data and sinusoidal functions &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Data Representation in Graphs" href="../DataRepresentation/data-representation.html" />
+    <link rel="prev" title="Cryptography and Cyphers" href="../CryptographyCyphers/cryptography-cyphers.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Geometry: Shape and Space
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Area of a Triangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Mathematics/DataAndSinusoidalFunctions/data-and-sinusoidal-functions.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/DataAndSinusoidalFunctions/data-and-sinusoidal-functions.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/DataAndSinusoidalFunctions/data-and-sinusoidal-functions.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/DataAndSinusoidalFunctions/data-and-sinusoidal-functions.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-solve-problems">
+   to solve problems
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lesson-outcomes">
+     Lesson outcomes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     Example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-sinusoidal-function">
+   The sinusoidal function
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#matching-the-equation-of-a-sinusoidal-function-to-the-corresponding-graph">
+   Matching the equation of a sinusoidal function to the corresponding graph
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise">
+     Exercise
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-finding-the-characteristic-parameters-of-a-sinusoidal-function">
+   Exercise: Finding the characteristic parameters of a sinusoidal function
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-finding-a-sinusoidal-functions-from-temperature-data">
+   Example: Finding a Sinusoidal Functions from Temperature Data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Exercise
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusions">
+     Conclusions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/DataAndSinusoidalFunctions/data-and-sinusoidal-functions.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pylab</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">clear_output</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">Javascript</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="k">import</span> <span class="n">Table</span><span class="p">,</span> <span class="n">Column</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">Button</span> <span class="p">,</span> <span class="n">Layout</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">w</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">ggb</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">ggb</span> <span class="o">=</span> <span class="n">GGB</span><span class="p">()</span>
+
+
+<span class="c1"># Create a text box for user to input text</span>
+
+<span class="n">get_user_text</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Textarea</span><span class="p">(</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Enter your text here.&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;250px&#39;</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># Create a slider to obtain shift integer from user </span>
+
+<span class="n">get_user_shift</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span> <span class="n">value</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">26</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Ceasar Shift:&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span> <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
+
+<span class="c1"># Function: After clicking on a button prompt, the next cell is executed.</span>
+
+<span class="k">def</span> <span class="nf">rerun_cell</span><span class="p">(</span><span class="n">ev</span><span class="p">):</span>
+    
+    <span class="n">display</span><span class="p">(</span><span class="n">Javascript</span><span class="p">(</span><span class="s1">&#39;IPython.notebook.execute_cell_range(IPython.notebook.get_selected_index()+1,IPython.notebook.get_selected_index()+2)&#39;</span><span class="p">))</span>
+    <span class="n">button_t</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Restart&quot;</span><span class="p">)</span> 
+
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">  function code_toggle() {</span>
+<span class="s1">    if (code_shown){</span>
+<span class="s1">      $(&#39;div.input&#39;).hide(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)</span>
+<span class="s1">    } else {</span>
+<span class="s1">      $(&#39;div.input&#39;).show(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)</span>
+<span class="s1">    }</span>
+<span class="s1">    code_shown = !code_shown</span>
+<span class="s1">  }</span>
+<span class="s1">  </span>
+<span class="s1">  $( document ).ready(function(){</span>
+<span class="s1">    code_shown=false;</span>
+<span class="s1">    $(&#39;div.input&#39;).hide()</span>
+<span class="s1">  });</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/javascript">
+            require.config({
+                paths: {
+                    ggb: "https://cdn.geogebra.org/apps/deployggb"
+                }
+            });
+
+            require(["ggb"]);
+        </script><div class="output text_html"><script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form></div></div>
+</div>
+<div class="section" id="data-and-sinusoidal-functions">
+<h1>Data and sinusoidal functions<a class="headerlink" href="#data-and-sinusoidal-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="to-solve-problems">
+<h2>to solve problems<a class="headerlink" href="#to-solve-problems" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Math_Gif" src="https://media.giphy.com/media/l0HlOvy6nzJ0uwJry/giphy.gif" /></p>
+<center>*GIF taken from https://media.giphy.com/media/l0HlOvy6nzJ0uwJry/giphy.gif, June 26th, 2018.*</center>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lesson-outcomes">
+<h3>Lesson outcomes<a class="headerlink" href="#lesson-outcomes" title="Permalink to this headline">¶</a></h3>
+</div>
+<ul>
+    <li> Graph data and determine the sinusoidal functions that best approximate the data. </li>
+    <li> Interpret the graph of a sinusoidal function that models a situation, and explain the reasoning. </li>
+</ul>
+<p>In Mathematics, given a set of data points, it is possible to construct a curve, or mathematical function, that has the best fit to those points. This process is called curve fitting.</p>
+<p>In the case that the data are somewhat cyclic, it is possible to sketch a curve of best fit that somehow resembles a sinusoidal function.  The fitting sinusoidal curve is found by determining the specific parameters which makes the curve match your data as closely as possible.</p>
+<p>To better understand what we mean by cyclic data observe the applet below. It shows a pendulum swinging. By toggling the <strong>graph</strong> option, you can see that its movement at the point <span class="math notranslate nohighlight">\(A\)</span> can be modelled by the particle <span class="math notranslate nohighlight">\(A'\)</span> travelling on a sinusoidal function which can be written as</p>
+<p>$<span class="math notranslate nohighlight">\(f(t) = \theta_0 \cos\left(\sqrt{\frac{g}{l}}t\right)\)</span>$.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="s1">&#39;files/pendulum.ggb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div id="ggb_0_0e"></div></div><script type="application/javascript">var ggb_0_0e = new GGBApplet({"filename": "files/pendulum.ggb"}, "ggb_0_0e", false); ggb_0_0e.inject(); </script></div>
+</div>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p>Suppose we now want to collect data about the height of the pendulum at different times as showed in the table below.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>Height</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>9.7</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>13.4</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>17</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>14.1</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>9.3</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>13.6</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>16.8</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>13.8</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>9.2</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>13.4</p></td>
+</tr>
+</tbody>
+</table>
+<p>The following plot shows the data collected.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">height</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">9.7</span><span class="p">,</span> <span class="mf">13.4</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mf">14.1</span><span class="p">,</span> <span class="mf">9.3</span><span class="p">,</span> <span class="mf">13.6</span><span class="p">,</span> <span class="mf">16.8</span><span class="p">,</span> <span class="mf">13.8</span><span class="p">,</span> <span class="mf">9.2</span><span class="p">,</span> <span class="mf">13.4</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Height of the pendulum &quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Height&quot;</span><span class="p">)</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/data-and-sinusoidal-functions_6_0.png" src="../../../_images/data-and-sinusoidal-functions_6_0.png" />
+</div>
+</div>
+<p>The graph below shows the sinusoidal function that best fits the data we have collected.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">height</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">9.7</span><span class="p">,</span> <span class="mf">13.4</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mf">14.1</span><span class="p">,</span> <span class="mf">9.3</span><span class="p">,</span> <span class="mf">13.6</span><span class="p">,</span> <span class="mf">16.8</span><span class="p">,</span> <span class="mf">13.8</span><span class="p">,</span> <span class="mf">9.2</span><span class="p">,</span> <span class="mf">13.4</span><span class="p">])</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">3.4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">((</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span><span class="mf">1.59</span><span class="p">)</span> <span class="o">+</span> <span class="mf">13.1</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Height&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Sinusoidal fit&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Height of the Pendulum &quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Height&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">borderaxespad</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/data-and-sinusoidal-functions_8_0.png" src="../../../_images/data-and-sinusoidal-functions_8_0.png" />
+</div>
+</div>
+<p>In the next sections we will learn how to define and construct a sinusoidal function from a given set of data.</p>
+</div>
+</div>
+<div class="section" id="the-sinusoidal-function">
+<h2>The sinusoidal function<a class="headerlink" href="#the-sinusoidal-function" title="Permalink to this headline">¶</a></h2>
+<p>The key idea behind sinusoidal functions is that they can all be expressed as a sine function.</p>
+<p>The general form of a sinusoidal function can be written as
+$<span class="math notranslate nohighlight">\( y = a \sin (bx-c)+d\)</span>$</p>
+<p>We can also use the cosine function, but since <span class="math notranslate nohighlight">\(\sin(x) = \cos(\pi/2 - x)\)</span> for every <span class="math notranslate nohighlight">\(x\)</span>, we can express every sinusoidal function using the sine function.</p>
+<hr class="docutils" />
+<p><strong>Features of a sinusoidal function</strong></p>
+<p>Each sinusoidal function can be uniquely determined by four characteristic parameters:</p>
+<ul>
+    <li>$a$ is the *amplitude*. The amplitude describes the vertical footprint of a graph is and can be computed in the following way
+        $$a = \frac{\text{maximum value} - \text{minimum value}}{2}$$ .  
+        As you see, $a$ is always a non-negative quantity -- a large $a$ indicates a graph with wide vertical fluctuations, while a smaller $a$ tells us that the graph is confined to a more narrow horizontal region.
+   <li> $b$ is the *frequency*. The frequency describes the number of cycles that happen in $360^{\circ}$ or $2\pi$ radians. It can be used to compute the period  $T$ as 
+    $$T= \frac{360^{\circ}}{b} \quad\text{  or  } \quad T= \frac{2\pi}{b}$$ .
+    The larger the frequency, the more condensed the waves will be.
+        <li> $c$ is the *phase shift* and it indicates the horizontal translation that has been applied to the graph of 
+    $$y=\sin(x)$$
+    If $c>0$ the graph is shifted to the right, otherwise it is shifted to the left.
+    <li> $d$ is the *midline* and it indicates by how much the function has been translated vertically. It can be computed as
+    $$d = \frac{\text{maximum value} + \text{minimum value}}{2}$$
+    If $d>0$, the graph is shifted up, otherwise it is shifted down.
+<ul>
+<img alt="../../../_images/sine_sinusoidal.jpg" src="../../../_images/sine_sinusoidal.jpg" />
+</div>
+<div class="section" id="matching-the-equation-of-a-sinusoidal-function-to-the-corresponding-graph">
+<h2>Matching the equation of a sinusoidal function to the corresponding graph<a class="headerlink" href="#matching-the-equation-of-a-sinusoidal-function-to-the-corresponding-graph" title="Permalink to this headline">¶</a></h2>
+<p>In this section, we will learn how to describe the characteristics of a sinusoidal function by analyzing its graph.</p>
+<p>The simplest and most basic sinusoidal function we could come across  is $<span class="math notranslate nohighlight">\(y=\sin(x),\)</span>$ whose graph is
+<img src="./figures/sine.jpg" style="width: 700px;"/></p>
+<p>We already leaned that the value of <span class="math notranslate nohighlight">\(a\)</span> changes how tall or short the graph is. The figure below shows you different sinusoidal functions that have different amplitudes.</p>
+<img alt="../../../_images/amplitudes.jpg" src="../../../_images/amplitudes.jpg" />
+<p>By changing the value of <span class="math notranslate nohighlight">\(b\)</span>, we can see whether a graph is more stretched or condensed. The figure below shows you different functions with different periods.</p>
+<img alt="../../../_images/periods.jpg" src="../../../_images/periods.jpg" />
+<p>The figure below describes how the value of <span class="math notranslate nohighlight">\(c\)</span> translates the graph horizontally.</p>
+<img alt="../../../_images/c_values.jpg" src="../../../_images/c_values.jpg" />
+<p>Finally, the figure below shows how <span class="math notranslate nohighlight">\(d\)</span> moves the graph of <span class="math notranslate nohighlight">\(\sin(x)\)</span> vertically.</p>
+<img alt="../../../_images/d_value.jpg" src="../../../_images/d_value.jpg" />
+<p>Use the following widget to change the shape of the sinusoidal function</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="s1">&#39;files/sin.ggb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div id="ggb_1_0e"></div></div><script type="application/javascript">var ggb_1_0e = new GGBApplet({"filename": "files/sin.ggb"}, "ggb_1_0e", false); ggb_1_0e.inject(); </script></div>
+</div>
+<div class="section" id="id1">
+<h3>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Write the equation of the sinusoidal function corresponding to the following graph.</p>
+<img alt="../../../_images/example_sin.jpg" src="../../../_images/example_sin.jpg" />
+<p>We start by computing the amplitude: we know that its value is given by</p>
+<div class="math notranslate nohighlight">
+\[a = \frac{\text{maximum value} - \text{minimum value}}{2}\]</div>
+<p>By looking at the graph we observe that the <span class="math notranslate nohighlight">\(\text{maximum value} = 1\)</span> and <span class="math notranslate nohighlight">\(\text{minimum value} = -5\)</span> so</p>
+<div class="math notranslate nohighlight">
+\[a = \frac{1 -(-5)}{2} = \frac{6}{2} = 3\]</div>
+<p>Next we know that the value of <span class="math notranslate nohighlight">\(d\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[d = \frac{\text{maximum value} + \text{minimum value}}{2}.\]</div>
+<p>So $<span class="math notranslate nohighlight">\(d = \frac{1 + (-5)}{2} = \frac{-4}{2} = -2.\)</span>$</p>
+<p>Next we can compute the value of <span class="math notranslate nohighlight">\(b\)</span>. The period of the graph is 6, which can be measured from the peak at  <span class="math notranslate nohighlight">\(x = 1\)</span>  to the next peak at  <span class="math notranslate nohighlight">\(x = 7\)</span>, or from the distance between two troughs. We know that <span class="math notranslate nohighlight">\(T= \frac{2\pi}{b}\)</span>. By inverting the previous formula we get</p>
+<div class="math notranslate nohighlight">
+\[ b = \frac{2\pi}{T}=\frac{2\pi}{6}=\frac{\pi}{3}\]</div>
+<p>So far for our sinusoidal function equation, we have</p>
+<div class="math notranslate nohighlight">
+\[y = 3\sin\left(\frac{\pi}{3}x -c\right) -2\]</div>
+<p>The simplest way to compute <span class="math notranslate nohighlight">\(c\)</span> is by substituting the coordinates of a point on the curve into the function. For example, we can pick the point with coordinates <span class="math notranslate nohighlight">\((1,1)\)</span>. Substituting these coordinates into our function we get</p>
+<div class="math notranslate nohighlight">
+\[1 = 3\sin\left(\frac{\pi}{3} -c\right) -2\]</div>
+<div class="math notranslate nohighlight">
+\[3 = 3\sin\left(\frac{\pi}{3} -c\right)\]</div>
+<div class="math notranslate nohighlight">
+\[1 = \sin\left(\frac{\pi}{3} -c\right)\]</div>
+<p>When does <span class="math notranslate nohighlight">\(\sin = 1\)</span>? Well, it does at many inputs, but the “first” one is <span class="math notranslate nohighlight">\(\sin(\frac{\pi}{2})\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\sin\left(\frac{\pi}{2}\right)=1\]</div>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\pi}{3} -c\right)=\frac{\pi}{2}\]</div>
+<p>Solve for <span class="math notranslate nohighlight">\(c\)</span> by getting all other terms on the other side.
+$<span class="math notranslate nohighlight">\(c =- \frac{\pi}{2} +\frac{\pi}{3}= \frac{\pi}{6}\)</span>$</p>
+<p>So our sinusoidal function has equation</p>
+<div class="math notranslate nohighlight">
+\[y = 3\sin\left(\frac{\pi}{3}x + \frac{\pi}{6}\right) -2\]</div>
+</div>
+<div class="section" id="exercise">
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>Find the equation of the sinusoidal function for the graph below.</p>
+<img alt="../../../_images/sin_exercise.jpg" src="../../../_images/sin_exercise.jpg" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the amplitude of the function in the graph ?&quot;</span><span class="p">))</span>
+
+<span class="n">attempts_1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">exercise_1</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Your answer&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">exercise_1</span><span class="p">)</span>
+
+<span class="n">button_exercise_1</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;15%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">button_exercise_1</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">rerun_cell</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button_exercise_1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[What is the amplitude of the function in the graph ?\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "15094104e4724ea69ed168983a036853"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "5f0d66fbe04c48c8aaad69adff3ae91b"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 1 user answer handling</span>
+
+<span class="n">user_answer</span> <span class="o">=</span> <span class="n">exercise_1</span><span class="o">.</span><span class="n">value</span>
+<span class="n">expected_answer</span> <span class="o">=</span> <span class="s1">&#39;2&#39;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">attempts_1</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">attempts_1</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># Close the option to keep attempting the answer </span>
+    <span class="k">if</span><span class="p">(</span><span class="n">attempts_1</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">exercise_1</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_1</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The amplitude is </span><span class="se">\n</span><span class="s2"> $2$&quot;</span><span class="p">))</span>
+
+
+    <span class="c1"># If answer is correct, display appropriate markdown cells</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">user_answer</span> <span class="o">==</span> <span class="n">expected_answer</span><span class="p">):</span>        
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### Your answer is correct.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The amplitude is </span><span class="se">\n</span><span class="s2"> $2$&quot;</span><span class="p">))</span>
+
+        <span class="n">exercise_1</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_1</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">attempts_1</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">attempts_1</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;# Please try again.&quot;</span><span class="p">))</span>
+        
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the vertical translation of the sinusoidal function?&quot;</span><span class="p">))</span>
+
+
+<span class="n">attempts_2</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">exercise_2</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Your answer&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">exercise_2</span><span class="p">)</span>
+
+<span class="n">button_exercise_2</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;15%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">button_exercise_2</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">rerun_cell</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button_exercise_2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[What is the vertical translation of the sinusoidal function?\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "9cfbae4abd94450d9dd6c7aaf974478d"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "50db0f2a190848b7b5cda6b23144dd98"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 2 user answer handling</span>
+
+<span class="n">user_answer</span> <span class="o">=</span> <span class="n">exercise_2</span><span class="o">.</span><span class="n">value</span>
+<span class="n">expected_answer</span> <span class="o">=</span> <span class="s1">&#39;2&#39;</span>
+
+<span class="c1"># Close the option to keep attempting the answer </span>
+<span class="k">if</span> <span class="n">attempts_2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">attempts_2</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">attempts_2</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">):</span>    
+        <span class="n">exercise_2</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_2</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The vertical translation is </span><span class="se">\n</span><span class="s2"> $2$&quot;</span><span class="p">))</span>
+
+    <span class="c1"># If answer is correct, display appropriate markdown cells</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">user_answer</span> <span class="o">==</span> <span class="n">expected_answer</span><span class="p">):</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### Your answer is correct.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The vertical translation is </span><span class="se">\n</span><span class="s2"> $2$&quot;</span><span class="p">))</span>
+        <span class="n">exercise_2</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_2</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>    
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">attempts_2</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">attempts_2</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;# Please try again.&quot;</span><span class="p">))</span>
+        
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the frequency of the sinusoidal function?&quot;</span><span class="p">))</span>
+
+<span class="n">attempts_3</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">exercise_3</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Your answer&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">exercise_3</span><span class="p">)</span>
+
+<span class="n">button_exercise_3</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;15%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">button_exercise_3</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">rerun_cell</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button_exercise_3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[What is the frequency of the sinusoidal function?\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "ed13d8af9a0042c79a80ed4210d1755a"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "a233425ee5fc4811b6b5be69a8fb7a2e"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 3 user answer handling</span>
+
+<span class="n">user_answer</span> <span class="o">=</span> <span class="n">exercise_3</span><span class="o">.</span><span class="n">value</span>
+<span class="n">expected_answer</span> <span class="o">=</span> <span class="s1">&#39;pi/2&#39;</span>
+
+
+    
+<span class="c1"># Close the option to keep attempting the answer </span>
+<span class="k">if</span> <span class="n">attempts_3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">attempts_3</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">attempts_3</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">exercise_3</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_3</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The frequency is </span><span class="se">\n</span><span class="s2"> $\pi/2$&quot;</span><span class="p">))</span>
+
+    <span class="c1"># If answer is correct, display appropriate markdown cells</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">user_answer</span> <span class="o">==</span> <span class="n">expected_answer</span><span class="p">):</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### Your answer is correct.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The frequency is </span><span class="se">\n</span><span class="s2"> $pi/2$&quot;</span><span class="p">))</span>
+        <span class="n">exercise_3</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_3</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">attempts_3</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="n">attempts_3</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;# Please try again.&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the horizontal translation of the sinusoidal function?&quot;</span><span class="p">))</span>
+
+
+<span class="n">attempts_4</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">exercise_4</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Your answer&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">exercise_4</span><span class="p">)</span>
+
+<span class="n">button_exercise_4</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;15%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">button_exercise_4</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">rerun_cell</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button_exercise_4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[What is the horizontal translation of the sinusoidal function?\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "2bf2a25d264b48fdb488d7b7e7adf0cc"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "431af7d3d75743a9a095098636bae75a"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 4 user answer handling</span>
+
+<span class="n">user_answer</span> <span class="o">=</span> <span class="n">exercise_4</span><span class="o">.</span><span class="n">value</span>
+<span class="n">expected_answer</span> <span class="o">=</span> <span class="s1">&#39;pi/4&#39;</span>
+
+<span class="k">if</span> <span class="n">attempts_4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">attempts_4</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># Close the option to keep attempting the answer </span>
+    <span class="k">if</span><span class="p">(</span><span class="n">attempts_4</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">exercise_4</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_4</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The horizontal translation is </span><span class="se">\n</span><span class="s2"> $pi/4$&quot;</span><span class="p">))</span>
+
+    <span class="c1"># If answer is correct, display appropriate markdown cells    </span>
+    <span class="k">if</span><span class="p">(</span><span class="n">user_answer</span> <span class="o">==</span> <span class="n">expected_answer</span><span class="p">):</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### Your answer is correct.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The horizontal translation is </span><span class="se">\n</span><span class="s2"> $\pi/4$&quot;</span><span class="p">))</span>
+        <span class="n">exercise_4</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_4</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">attempts_4</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="n">attempts_4</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;# Please try again.&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In this lesson we will only be looking at <strong>sinusoidal functions</strong>.</p>
+<p>Use the activity below to understand whether you are dealing with the equation of a sinusoidal function or not.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">lin_or_non</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="s2">&quot;Yes&quot;</span><span class="p">:</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Correct!&quot;</span><span class="p">))</span>
+        <span class="c1">#display(Latex(&quot;This equation has no exponent on either variable, and is therefore linear.&quot;))</span>
+    <span class="k">elif</span> <span class="n">val</span> <span class="o">==</span> <span class="s2">&quot;No&quot;</span><span class="p">:</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Try Again!&quot;</span><span class="p">))</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Is this the equation of a sinusoidal function?&quot;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;$$y = 12\cos(\pi x +3.45) -3$$&#39;</span><span class="p">))</span>
+    
+<span class="n">interact</span><span class="p">(</span><span class="n">lin_or_non</span><span class="p">,</span> <span class="n">val</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;Yes&#39;</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">],</span><span class="n">value</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">,</span><span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Choose One:&#39;</span><span class="p">,</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">False</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[Is this the equation of a sinusoidal function?\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[y = 12\cos(\pi x +3.45) -3\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "5ed3044f905f4cd4a213be6d264a608c"}
+</script></div>
+</div>
+<hr class="docutils" />
+<p><strong>Determine the characteristics parameters of a sinusoidal function</strong></p>
+<p>In the next example, we will learn how to compute the characteristic parameters when we’re given the equation of a sinusoidal function.</p>
+<p>Determine the characteristic parameters from the following equation:
+$<span class="math notranslate nohighlight">\(y = 5\sin(3x) +2\)</span>$</p>
+<ul>
+    <li>$a$ = 5 so the amplitude is 5
+     <li>$b$ = 3 so the period $T$ is $\frac{2\pi}{3}$
+     <li>$c$  = 0 so there is no horizontal translation
+     <li>$d$ = 2 so the equation of the midline is at $y = 2$
+<ul>
+<p>Determine the characteristic parameters from the following equation:</p>
+<div class="math notranslate nohighlight">
+\[y = 14.1\sin(4.2x+3.4)+2\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the amplitude of the given sinusoidal function?&quot;</span><span class="p">))</span>
+
+
+<span class="c1">#value = display(widgets.Text(value=&#39;&#39;,placeholder=&#39;Type something&#39;,description=&#39;Amplitude =:&#39;,disabled=False))</span>
+
+
+<span class="n">attempts_5</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">exercise_5</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Your answer&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">exercise_5</span><span class="p">)</span>
+
+<span class="n">button_exercise_5</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;15%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">button_exercise_5</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">rerun_cell</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button_exercise_5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[What is the amplitude of the given sinusoidal function?\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "63197682678c40e7addd5a1de6d1fb32"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "09ab963e2837442381a9aa4ab178a753"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 5 user answer handling</span>
+
+<span class="n">user_answer</span> <span class="o">=</span> <span class="n">exercise_5</span><span class="o">.</span><span class="n">value</span>
+<span class="n">expected_answer</span> <span class="o">=</span> <span class="s1">&#39;14.1&#39;</span>
+
+
+<span class="k">if</span> <span class="p">(</span><span class="n">attempts_5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">attempts_5</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+<span class="c1"># Close the option to keep attempting the answer </span>
+    <span class="k">if</span><span class="p">(</span><span class="n">attempts_5</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">exercise_5</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_5</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The amplitude is </span><span class="se">\n</span><span class="s2"> $14.1$&quot;</span><span class="p">))</span>
+
+        
+    <span class="c1"># If answer is correct, display appropriate markdown cells</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">user_answer</span> <span class="o">==</span> <span class="n">expected_answer</span><span class="p">):</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### Your answer is correct.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The amplitude is </span><span class="se">\n</span><span class="s2"> $14.1$&quot;</span><span class="p">))</span>
+        <span class="n">exercise_5</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_5</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">attempts_5</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="n">attempts_5</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;# Please try again.&quot;</span><span class="p">))</span>
+        
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the value of the frequency in the given sinusoidal function?&quot;</span><span class="p">))</span>
+
+<span class="n">attempts_6</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">exercise_6</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Your answer&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">exercise_6</span><span class="p">)</span>
+
+<span class="n">button_exercise_6</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;15%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">button_exercise_6</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">rerun_cell</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button_exercise_6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[What is the value of the frequency in the given sinusoidal function?\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "73eb9612cb314f14ae7702b5f1b1522e"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "0802207091a5439e93a7ca9b6b64e5aa"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 6 user answer handling</span>
+
+<span class="n">user_answer</span> <span class="o">=</span> <span class="n">exercise_6</span><span class="o">.</span><span class="n">value</span>
+<span class="n">expected_answer</span> <span class="o">=</span> <span class="s1">&#39;4.2&#39;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">attempts_6</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">attempts_6</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># Close the option to keep attempting the answer </span>
+    <span class="k">if</span><span class="p">(</span><span class="n">attempts_6</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">exercise_6</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_6</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The frequency is </span><span class="se">\n</span><span class="s2"> $4.2$&quot;</span><span class="p">))</span>
+        
+    <span class="c1"># If answer is correct, display appropriate markdown cells</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">user_answer</span> <span class="o">==</span> <span class="n">expected_answer</span><span class="p">):</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### Your answer is correct.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The frequency is </span><span class="se">\n</span><span class="s2"> $4.2$&quot;</span><span class="p">))</span>
+        <span class="n">exercise_6</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_6</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">attempts_6</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="n">attempts_6</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;# Please try again.&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;By how much is the given sinusoidal function translated horizontally?&quot;</span><span class="p">))</span>
+
+<span class="n">attempts_7</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">exercise_7</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Your answer&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">exercise_7</span><span class="p">)</span>
+
+<span class="n">button_exercise_7</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;15%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">button_exercise_7</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">rerun_cell</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button_exercise_7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[By how much is the given sinusoidal function translated horizontally?\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "cdcfa7337f064698b48657d5090b09b8"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "3c431d90a80e4e8b8d0e82f0922f9383"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 7 user answer handling</span>
+
+<span class="n">user_answer</span> <span class="o">=</span> <span class="n">exercise_7</span><span class="o">.</span><span class="n">value</span>
+<span class="n">expected_answer</span> <span class="o">=</span> <span class="s1">&#39;3.4&#39;</span>
+
+
+<span class="k">if</span> <span class="p">(</span><span class="n">attempts_7</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">attempts_7</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># Close the option to keep attempting the answer </span>
+    <span class="k">if</span><span class="p">(</span><span class="n">attempts_7</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">exercise_7</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_7</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The given sinusoidal function is translated horizontally by </span><span class="se">\n</span><span class="s2"> $3.4$&quot;</span><span class="p">))</span>
+        
+    <span class="c1"># If answer is correct, display appropriate markdown cells</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">user_answer</span> <span class="o">==</span> <span class="n">expected_answer</span><span class="p">):</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### Your answer is correct.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The given sinusoidal function is translated horizontally by </span><span class="se">\n</span><span class="s2"> $3.4$&quot;</span><span class="p">))</span>
+        <span class="n">exercise_7</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_7</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>     
+        <span class="n">attempts_7</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="n">attempts_7</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;# Please try again.&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;What is the equation of the midline in the given sinusoidal function?&quot;</span><span class="p">))</span>
+
+<span class="n">attempts_8</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">exercise_8</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span> <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Your answer&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span> <span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">exercise_8</span><span class="p">)</span>
+
+<span class="n">button_exercise_8</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;15%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;30px&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">button_exercise_8</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">rerun_cell</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">button_exercise_8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[What is the equation of the midline in the given sinusoidal function?\]</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "1a0d7ee6947242cca497b5e5b5991161"}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "b1321dcc5ab247ca96c6b0dc9495e57f"}
+</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 8 user answer handling</span>
+
+<span class="n">user_answer</span> <span class="o">=</span> <span class="n">exercise_8</span><span class="o">.</span><span class="n">value</span>
+<span class="n">expected_answer</span> <span class="o">=</span> <span class="s1">&#39;2&#39;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">attempts_8</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">attempts_8</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+<span class="c1"># Close the option to keep attempting the answer </span>
+    <span class="k">if</span><span class="p">(</span><span class="n">attempts_8</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">exercise_8</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_8</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The midline of given sinusoidal function is at y= </span><span class="se">\n</span><span class="s2"> $2$&quot;</span><span class="p">))</span>
+
+    <span class="c1"># If answer is correct, display appropriate markdown cells </span>
+    <span class="k">if</span><span class="p">(</span><span class="n">user_answer</span> <span class="o">==</span> <span class="n">expected_answer</span><span class="p">):</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### Your answer is correct.&quot;</span><span class="p">))</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;#### The midline of given sinusoidal function is at y= </span><span class="se">\n</span><span class="s2"> $2$&quot;</span><span class="p">))</span>
+        <span class="n">exercise_8</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">button_exercise_8</span><span class="o">.</span><span class="n">disabled</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">attempts_8</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="n">attempts_8</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">):</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;# Please try again.&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercise-finding-the-characteristic-parameters-of-a-sinusoidal-function">
+<h2>Exercise: Finding the characteristic parameters of a sinusoidal function<a class="headerlink" href="#exercise-finding-the-characteristic-parameters-of-a-sinusoidal-function" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="example-finding-a-sinusoidal-functions-from-temperature-data">
+<h2>Example: Finding a Sinusoidal Functions from Temperature Data<a class="headerlink" href="#example-finding-a-sinusoidal-functions-from-temperature-data" title="Permalink to this headline">¶</a></h2>
+<p>Let’s assume that we have some data representing the average temperate for each month:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Month</p></th>
+<th class="head"><p>Average Temperature</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>9.7</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>13.4</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>17</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>22.2</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>27.2</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>32.9</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>36.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>38.4</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>32.9</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>24.4</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>19</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+<p>The data is presented in the graph below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">month</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">temperature</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">9.7</span><span class="p">,</span> <span class="mf">13.4</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mf">22.2</span><span class="p">,</span> <span class="mf">27.2</span><span class="p">,</span> <span class="mf">32.9</span><span class="p">,</span> <span class="mf">36.5</span><span class="p">,</span> <span class="mf">38.4</span><span class="p">,</span> <span class="mf">32.2</span><span class="p">,</span> <span class="mf">24.4</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">11</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Average temperature for each month &quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Month&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Temperature&quot;</span><span class="p">)</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/data-and-sinusoidal-functions_37_0.png" src="../../../_images/data-and-sinusoidal-functions_37_0.png" />
+</div>
+</div>
+<p>We want to fit this data to a sinusoidal function <span class="math notranslate nohighlight">\( y = a \sin (bx-c)+d\)</span>.</p>
+<p>First of all, we need to determine the <em>amplitude</em> <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[a = \frac{\text{maximum value} - \text{minimum value}}{2} = \frac{38.4-9.7}{2} =14.35\]</div>
+<p>Next, we determine the value of the midline <span class="math notranslate nohighlight">\(d\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[d = \frac{\text{maximum value} + \text{minimum value}}{2} = \frac{38.4+9.7}{2} =24.05\]</div>
+<p>For this exercise, the frequency <span class="math notranslate nohighlight">\(b\)</span> be computed in the following way. The  average temperature cycle will  repeat itself every year, so the period <span class="math notranslate nohighlight">\(T = 12\)</span> months. Therefore <span class="math notranslate nohighlight">\(b\)</span> can be computed by inverting the formula for the period <span class="math notranslate nohighlight">\(T\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[b = \frac{2\pi}{T} = \frac{2\pi}{12} =0.52\]</div>
+<p>Using <span class="math notranslate nohighlight">\(a=14.35\)</span>, <span class="math notranslate nohighlight">\(b = 0.52\)</span>, and <span class="math notranslate nohighlight">\(d = 24.05\)</span>, determine horizontal shift by choosing an arbitrary data point <span class="math notranslate nohighlight">\((x,y)\)</span> from the given table and solving the equation</p>
+<div class="math notranslate nohighlight">
+\[y = 14.35 \sin (0.52x-c)+24.05\]</div>
+<p>for <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<p>Let’s choose the first data point, <span class="math notranslate nohighlight">\(x = 1\)</span> (January), <span class="math notranslate nohighlight">\(y = 9.7\)</span></p>
+<div class="math notranslate nohighlight">
+\[9.7 = 14.35 \sin (0.52(1)-c)+24.05\]</div>
+<div class="math notranslate nohighlight">
+\[-14.35.7 = 14.35 \sin (0.52-c)\]</div>
+<div class="math notranslate nohighlight">
+\[-1 =  \sin (0.52-c)\]</div>
+<p>When does <span class="math notranslate nohighlight">\(\sin = -1\)</span>? Again, it does at many places, but the main one is at <span class="math notranslate nohighlight">\(- \frac{\pi}{2}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\sin\left(-\frac{\pi}{2}\right)=-1\]</div>
+<p>So we have</p>
+<div class="math notranslate nohighlight">
+\[{0.52 -c}=-\frac{\pi}{2}\]</div>
+<p>Solve for <span class="math notranslate nohighlight">\(c\)</span> by getting all other terms on the other side.
+$<span class="math notranslate nohighlight">\(c = \frac{\pi}{2} + 0.52 = 2.09\)</span>$</p>
+<p>So the sinusoidal function that fits the data is</p>
+<div class="math notranslate nohighlight">
+\[y = 14.35 \sin (0.52x-2.09)+24.05\]</div>
+<p>and its graph is shown below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">month</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">temperature</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">9.7</span><span class="p">,</span> <span class="mf">13.4</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mf">22.2</span><span class="p">,</span> <span class="mf">27.2</span><span class="p">,</span> <span class="mf">32.9</span><span class="p">,</span> <span class="mf">36.5</span><span class="p">,</span> <span class="mf">38.4</span><span class="p">,</span> <span class="mf">32.2</span><span class="p">,</span> <span class="mf">24.4</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">11</span><span class="p">])</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">14.35</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mf">0.52</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span><span class="mf">2.09</span><span class="p">)</span> <span class="o">+</span> <span class="mf">24.05</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Average temperature&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Sinusoidal fit&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Average temperature for each month &quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Month&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Temperature&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">borderaxespad</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/data-and-sinusoidal-functions_42_0.png" src="../../../_images/data-and-sinusoidal-functions_42_0.png" />
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Exercise<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Tom boards the Ferris wheel at the Pacific Exhibition. When the ride begins, his height above the ground can be
+modelled by</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[x = 43\sin(3.5t-0.9)+47\]</div>
+<p>How long does it take to the Ferris wheel to complete one revolution (period)?</p>
+<p>What is the amplitude of the given function?</p>
+<p>What is Tom’s height above the ground when <span class="math notranslate nohighlight">\(t=10\)</span>?</p>
+<p>What is the maximum height of Tom during the ride?</p>
+</div>
+<div class="section" id="conclusions">
+<h3>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">¶</a></h3>
+<ul>
+    <li> Cyclic data can be fit by a sinusoidal curve
+     <li> A sinusoidal curve is uniquely defined by characteristic parameters
+     <li> The parameters are the amplitude, the frequency and  the horizontal and vertical translations <p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"1e7c6f61fa48468b804db84cfd7dfb91": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "250px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "100%"}}, "ac1f4261e93240b3b1807dfc1da19aea": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "4f49b5518c3242b583b319d62416232c": {"model_name": "TextareaModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextareaModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextareaView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_1e7c6f61fa48468b804db84cfd7dfb91", "placeholder": "Enter your text here.", "rows": null, "style": "IPY_MODEL_ac1f4261e93240b3b1807dfc1da19aea", "value": ""}}, "589615a14d6b44b2b6c2039b161a0f91": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a740edcdc8f84b4e963a48956f62dd51": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "de90636aab7c497fa156f3aee5de3000": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": false, "description": "Ceasar Shift:", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_589615a14d6b44b2b6c2039b161a0f91", "max": 26, "min": 1, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_a740edcdc8f84b4e963a48956f62dd51", "value": 7}}, "e959c136152c457cb9f47d5ed12233ae": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3a8822c731f04563b7af9f15b99e3afd": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "15094104e4724ea69ed168983a036853": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_e959c136152c457cb9f47d5ed12233ae", "placeholder": "Your answer", "style": "IPY_MODEL_3a8822c731f04563b7af9f15b99e3afd", "value": ""}}, "36686865f96c4885bd1fb10e266f36c9": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "15%"}}, "c1a9210ecead4f4b83ec766e66efded8": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "5f0d66fbe04c48c8aaad69adff3ae91b": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Enter", "disabled": false, "icon": "", "layout": "IPY_MODEL_36686865f96c4885bd1fb10e266f36c9", "style": "IPY_MODEL_c1a9210ecead4f4b83ec766e66efded8", "tooltip": ""}}, "5fb9f3a81cfb4e598a9e5fc475181326": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c0ca51ce803c4497ba9f1219e186d5df": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "9cfbae4abd94450d9dd6c7aaf974478d": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_5fb9f3a81cfb4e598a9e5fc475181326", "placeholder": "Your answer", "style": "IPY_MODEL_c0ca51ce803c4497ba9f1219e186d5df", "value": ""}}, "ae5f6e5390484618b06f725d52c6b878": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "15%"}}, "7b181fe8cc22420eb9ef17d318958af5": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "50db0f2a190848b7b5cda6b23144dd98": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Enter", "disabled": false, "icon": "", "layout": "IPY_MODEL_ae5f6e5390484618b06f725d52c6b878", "style": "IPY_MODEL_7b181fe8cc22420eb9ef17d318958af5", "tooltip": ""}}, "33e48de89a9f424da5b194f941dacb6e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9174ca7279ca43948a5b9960b804a665": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "ed13d8af9a0042c79a80ed4210d1755a": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_33e48de89a9f424da5b194f941dacb6e", "placeholder": "Your answer", "style": "IPY_MODEL_9174ca7279ca43948a5b9960b804a665", "value": ""}}, "9a6f9ed8d34840cbac602faed1efdc91": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "15%"}}, "0748acc2a78b4972b7619b9ffc7ebf58": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "a233425ee5fc4811b6b5be69a8fb7a2e": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Enter", "disabled": false, "icon": "", "layout": "IPY_MODEL_9a6f9ed8d34840cbac602faed1efdc91", "style": "IPY_MODEL_0748acc2a78b4972b7619b9ffc7ebf58", "tooltip": ""}}, "5e7329c8368d43c897b8b8e89322759d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d0b0f418ac6f40fc9407c057810299f4": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "2bf2a25d264b48fdb488d7b7e7adf0cc": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_5e7329c8368d43c897b8b8e89322759d", "placeholder": "Your answer", "style": "IPY_MODEL_d0b0f418ac6f40fc9407c057810299f4", "value": ""}}, "eee7e2f8e1d04a5a92f9fbb7eb2d9b52": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "15%"}}, "640ce227953447dd8fa06d30bfa214c7": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "431af7d3d75743a9a095098636bae75a": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Enter", "disabled": false, "icon": "", "layout": "IPY_MODEL_eee7e2f8e1d04a5a92f9fbb7eb2d9b52", "style": "IPY_MODEL_640ce227953447dd8fa06d30bfa214c7", "tooltip": ""}}, "55f5652ee717439da9827d32bbfaf426": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e3b7236a89b3451eaba14e73be8318ee": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "6195a3b14a7b418f9a9a15b75362b2b7": {"model_name": "DropdownModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DropdownModel", "_options_labels": [" ", "Yes", "No"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "DropdownView", "description": "Choose One:", "description_tooltip": null, "disabled": false, "index": 0, "layout": "IPY_MODEL_55f5652ee717439da9827d32bbfaf426", "style": "IPY_MODEL_e3b7236a89b3451eaba14e73be8318ee"}}, "3f1646ba2c2c4e00b32af40c3d656e61": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5ed3044f905f4cd4a213be6d264a608c": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_6195a3b14a7b418f9a9a15b75362b2b7", "IPY_MODEL_21bf6cdb8fb343c1902560fa8580fd40"], "layout": "IPY_MODEL_3f1646ba2c2c4e00b32af40c3d656e61"}}, "a65f9eb83d934efc9e9075e26b43fe32": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "21bf6cdb8fb343c1902560fa8580fd40": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_a65f9eb83d934efc9e9075e26b43fe32", "msg_id": "", "outputs": []}}, "580a651a312541dd822576e389c9a37c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "453886f59074465587a4054623de4541": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "63197682678c40e7addd5a1de6d1fb32": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_580a651a312541dd822576e389c9a37c", "placeholder": "Your answer", "style": "IPY_MODEL_453886f59074465587a4054623de4541", "value": ""}}, "1eb53812de0e48debc62f95b299c60b9": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "15%"}}, "c06feb0b36824bd7b63eed886ab33127": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "09ab963e2837442381a9aa4ab178a753": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Enter", "disabled": false, "icon": "", "layout": "IPY_MODEL_1eb53812de0e48debc62f95b299c60b9", "style": "IPY_MODEL_c06feb0b36824bd7b63eed886ab33127", "tooltip": ""}}, "fb89ad8fe1a84c6086873cada66d484e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "eb52f64582c2428f81cb7d6446f6277f": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "73eb9612cb314f14ae7702b5f1b1522e": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_fb89ad8fe1a84c6086873cada66d484e", "placeholder": "Your answer", "style": "IPY_MODEL_eb52f64582c2428f81cb7d6446f6277f", "value": ""}}, "8ace1458563341c8a62348fc62e5d6f2": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "15%"}}, "caccd845c92c47369b33306ceebd9e06": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "0802207091a5439e93a7ca9b6b64e5aa": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Enter", "disabled": false, "icon": "", "layout": "IPY_MODEL_8ace1458563341c8a62348fc62e5d6f2", "style": "IPY_MODEL_caccd845c92c47369b33306ceebd9e06", "tooltip": ""}}, "9d9d78fe102f4945930a5eaff57c3bcd": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b6d8d795e00e483b834a9bcce7217409": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "cdcfa7337f064698b48657d5090b09b8": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_9d9d78fe102f4945930a5eaff57c3bcd", "placeholder": "Your answer", "style": "IPY_MODEL_b6d8d795e00e483b834a9bcce7217409", "value": ""}}, "ca0b5de444c74018bbeb53cc1a9ba185": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "15%"}}, "772b8c0c17b14ad5bfe7d3e2db6f3b6d": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "3c431d90a80e4e8b8d0e82f0922f9383": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Enter", "disabled": false, "icon": "", "layout": "IPY_MODEL_ca0b5de444c74018bbeb53cc1a9ba185", "style": "IPY_MODEL_772b8c0c17b14ad5bfe7d3e2db6f3b6d", "tooltip": ""}}, "127e0fb3ce224f82883162b92414b596": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2148002f25ea49a18a22e998574558e0": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "1a0d7ee6947242cca497b5e5b5991161": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_127e0fb3ce224f82883162b92414b596", "placeholder": "Your answer", "style": "IPY_MODEL_2148002f25ea49a18a22e998574558e0", "value": ""}}, "f819512f4a114ba9b21711954fc9c791": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "30px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "15%"}}, "c68605856ed84c648b5f6e4c3cecfaa9": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "b1321dcc5ab247ca96c6b0dc9495e57f": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Enter", "disabled": false, "icon": "", "layout": "IPY_MODEL_f819512f4a114ba9b21711954fc9c791", "style": "IPY_MODEL_c68605856ed84c648b5f6e4c3cecfaa9", "tooltip": ""}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/DataAndSinusoidalFunctions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../CryptographyCyphers/cryptography-cyphers.html" title="previous page">Cryptography and Cyphers</a>
+    <a class='right-next' id="next-link" href="../DataRepresentation/data-representation.html" title="next page">Data Representation in Graphs</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

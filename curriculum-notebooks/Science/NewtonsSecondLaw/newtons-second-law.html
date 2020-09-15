@@ -1,0 +1,763 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Newton’s Second Law &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Newton’s Third Law" href="../NewtonsThirdLaw/newtons-third-law.html" />
+    <link rel="prev" title="Newton’s First Law" href="../NewtonsFirstLaw/newtons-first-law.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Sciences.html">
+   Sciences Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BalancingChemicalEquations/balancing-chemical-equations.html">
+     Chemical Equations: Writing and Balancing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ChemicalNomenclature/chemical-nomenclature.html">
+     Chemical Nomenclature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClassifyingChemicalReactions/classifying-chemical-reactions.html">
+     Classifying Chemical Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClimateChange/climate-change.html">
+     Climate Change
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Climatograph/climatograph.html">
+     Climatograph
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html">
+     Concentration and pH
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
+     Acids and Bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricalConductivity/electrical-conductivity.html">
+     Electrical Conductivity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">
+     Electricity Consumption Monitoring
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ExploringSolarSystem/exploring-the-solar-system.html">
+     Exploring the Solar System
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HeatAndTemperature/heat-and-temperature.html">
+     Heat and Temperature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LightOpticalSystems/light-optical-systems.html">
+     Light and Optics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LightTransmission/transmission-of-light.html">
+     Transmission of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">
+     Methods used in Scientific Study of the Earth
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NatureOfThermalEnergy/nature-of-thermal-energy.html">
+     The Nature of Thermal Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsFirstLaw/newtons-first-law.html">
+     Newton’s First Law
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Newton’s Second Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsThirdLaw/newtons-third-law.html">
+     Newton’s Third Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">
+     Half life calculations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NuclearDecay/nuclear-decay.html">
+     Nuclear Decay - Half Life
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProjectileMotion/projectile-motion.html">
+     Projectile Motion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RadiationAnimations/radiation-animations.html">
+     Nuclear Radiation: Alpha, Beta, and Gamma
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">
+     Reflection of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ScienceLabReportTemplate/science-lab-report-template.html">
+     Science Lab Report Template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SourcesOfEnergy/resources-and-recycling.html">
+     Sources of Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SpecificAndLatentHeat/specific-and-latent-heat.html">
+     Specific and Latent Heat
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StaticAndKineticFriction/static-and-kinetic-friction.html">
+     Static and Kinetic Friction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">
+     Stoichiometry and Limiting Reactants
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ThermalExpansion/thermal-expansion.html">
+     Thermal Linear Expansion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">
+     Uniform Motion and Uniformly Accelerated Motion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Science/NewtonsSecondLaw/newtons-second-law.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Science/NewtonsSecondLaw/newtons-second-law.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/NewtonsSecondLaw/newtons-second-law.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Science/NewtonsSecondLaw/newtons-second-law.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#newton-s-first-law">
+   Newton’s First Law
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Newton’s Second Law
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vectors-and-their-notation">
+   Vectors and Their Notation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#back-to-newton-s-second-law">
+   Back to Newton’s Second Law
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#net-force">
+   Net Force
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acceleration-and-mass">
+   Acceleration and Mass
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#beyond-boldsymbol-small-f-ma">
+   Beyond
+   <span class="math notranslate nohighlight">
+    \(\boldsymbol{\small F=ma}\)
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions">
+   Questions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/NewtonsSecondLaw/newtons-second-law.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">clear_output</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">IFrame</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sqrt</span> <span class="k">as</span> <span class="n">sqrt</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">interact_manual</span>
+
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+
+<span class="sd">&#39;&#39;&#39;Above, we are importing all the necessary modules in order to run the notebook. </span>
+<span class="sd">Numpy allows us to define arrays of values for our variables to plot them</span>
+<span class="sd">matplotlib is what we use to create the figures</span>
+<span class="sd">the display and widgets are to make the notebook look neat</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">  function code_toggle() {</span>
+<span class="s1">    if (code_shown){</span>
+<span class="s1">      $(&#39;div.input&#39;).hide(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)</span>
+<span class="s1">    } else {</span>
+<span class="s1">      $(&#39;div.input&#39;).show(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)</span>
+<span class="s1">    }</span>
+<span class="s1">    code_shown = !code_shown</span>
+<span class="s1">  }</span>
+<span class="s1">  </span>
+<span class="s1">  $( document ).ready(function(){</span>
+<span class="s1">    code_shown=false;</span>
+<span class="s1">    $(&#39;div.input&#39;).hide()</span>
+<span class="s1">  });</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form></div></div>
+</div>
+<div class="section" id="newton-s-second-law">
+<h1>Newton’s Second Law<a class="headerlink" href="#newton-s-second-law" title="Permalink to this headline">¶</a></h1>
+<p>Newton’s three laws of motion comprise some of the most foundational thinking for the progression of physics throughout our history. They tells us qualitatively and quantitatively what happens to an object (with mass) when a force has been acted on the object. Without these laws we wouldn’t be able to send people (or Teslas) into space! In this notebook we will focus on the Newton’s Second Law after first reviewing his First Law.</p>
+<img alt="https://media.giphy.com/media/l4pTsJiBeF7WzuApy/giphy.gif" src="https://media.giphy.com/media/l4pTsJiBeF7WzuApy/giphy.gif" />
+<div class="section" id="newton-s-first-law">
+<h2>Newton’s First Law<a class="headerlink" href="#newton-s-first-law" title="Permalink to this headline">¶</a></h2>
+<p>Latin: <em>Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus a viribus impressis cogitur statum illum mutare.</em></p>
+<p>English Translation: <strong>An object at rest will remain at rest unless acted upon by an external and unbalanced force . An object in motion will remain in motion unless acted upon by an external and unbalanced force.</strong></p>
+<p>Let’s see if we can understand better what this means and checkout a real example.</p>
+<p>Imagine you have a ball floating in space, perfectly still, where Newton’s <span class="math notranslate nohighlight">\(1^{\rm st}\)</span> law tells us it will remain motionless for eternity. It will remain this way unless a force acts on the ball. In the cell below, we can see this happening! The ball sits motionless <em>UNTIL</em> you apply the force. Likewise, once a force is applied and the ball starts to move it will continue to do so forever unless another force opposes this motion. Try it out below!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Newtons_First.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;920px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;320px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Newtons_First.html' width = "920px" height = "320px" frameBorder="0"></iframe>
+</div></div>
+</div>
+<p>But how can we quantify what this force is doing when it acts on the ball? This can be described with Newton’s Second Law.</p>
+</div>
+<div class="section" id="id1">
+<h2>Newton’s Second Law<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Latin: <em>Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.</em></p>
+<p>English Translation: <strong>The rate of change of momentum of a body is equal to the resultant force acting on the body and is in the same direction.</strong></p>
+<p>Another way to represent this law, and the most commonly used form, is with the equation</p>
+<p><span class="math notranslate nohighlight">\(\vec{F} = m\vec{a}\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(\vec{F}\)</span> is the force, <span class="math notranslate nohighlight">\(m\)</span> is the mass of the body which experiences the force and <span class="math notranslate nohighlight">\(\vec{a}\)</span> is the acceleration of that same body. This allows us to carefully analyze the motion of an object once it has been impacted by the force. An important aspect of understanding this motion is to be familiar with vectors and their notation, so before we get more in depth with Newton’s <span class="math notranslate nohighlight">\(2^{\rm nd}\)</span> Law let’s look at what vectors are!</p>
+</div>
+<div class="section" id="vectors-and-their-notation">
+<h2>Vectors and Their Notation<a class="headerlink" href="#vectors-and-their-notation" title="Permalink to this headline">¶</a></h2>
+<p>The standard definition for a vector says that they represent both the magnitude and direction of some physical quantity. These quantities can include forces, velocity, acceleration and electromagnetic fields, just to name a few. Vectors (we will use an arbitrary variable <span class="math notranslate nohighlight">\(v\)</span>) are often denoted as <span class="math notranslate nohighlight">\(\vec{v}\)</span> or as <span class="math notranslate nohighlight">\(\boldsymbol{v}\)</span>. Both styles are valid choices when typing on a computer but of course by hand it is most acceptable to write vectors with the arrow notation.</p>
+<p>So now, what does a vector actually look like? Well when looking at the cartesian coordinate system (Euclidean space) we get the usual coordinate axis that looks something like this.</p>
+<a class="reference internal image-reference" href="../../../_images/Cartesian_axes.png"><img alt="../../../_images/Cartesian_axes.png" src="../../../_images/Cartesian_axes.png" style="width: 450px; height: 450px;" /></a>
+<p>Within these coordinates it is then very easy to generate a vector that has both <em>magnitude</em> and <em>direction</em>. Check it out!</p>
+<a class="reference internal image-reference" href="../../../_images/Vector_2.png"><img alt="../../../_images/Vector_2.png" src="../../../_images/Vector_2.png" style="width: 450px; height: 450px;" /></a>
+<p>To obtain the magnitude of this vector it only takes simple trigonometry (only in cartesian coordinates for 2D space). We define the magnitude as</p>
+<p><span class="math notranslate nohighlight">\(\lvert\lvert\vec{v}\rvert\rvert = \sqrt{v_x^2 + v_y^2}\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(v_x\)</span> and <span class="math notranslate nohighlight">\(v_y\)</span> are the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components of a vector respectively. As you may have been able to tell, the magnitude of a vector is just found using the Pythagorean theorem. There can be many ways to write the components of a vector but in this notebook we will use the notation <span class="math notranslate nohighlight">\(\vec{v} = (v_x,v_y)\)</span> for vectors that begin at the origin. For the red vector shown above we get that</p>
+<p><span class="math notranslate nohighlight">\(\vec{v} = (2,6)\)</span></p>
+<p>and the magnitude is</p>
+<p><span class="math notranslate nohighlight">\(\lvert\lvert\vec{v}\rvert\rvert = \sqrt{2^2 + 6^2} = \sqrt{40} \approx 6.3\)</span></p>
+<p>Next it is important to understand how to interpret the direction of a vector. This is of course, merely the direction that the arrow points in our diagram but it should be known that this direction comes from the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components that make up the vector. In this case this is <span class="math notranslate nohighlight">\((v_x,v_y)\)</span> where <span class="math notranslate nohighlight">\(v_x\)</span> is in the <span class="math notranslate nohighlight">\(x\)</span> direction and <span class="math notranslate nohighlight">\(v_y\)</span> is in the <span class="math notranslate nohighlight">\(y\)</span> direction so the net force is pointed in both the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions.</p>
+</div>
+<div class="section" id="back-to-newton-s-second-law">
+<h2>Back to Newton’s Second Law<a class="headerlink" href="#back-to-newton-s-second-law" title="Permalink to this headline">¶</a></h2>
+<p>So now that we are familiar with vectors let’s look at how Newton’s Second law impacts the motion of objects. Again, Newton’s Second Law is written as</p>
+<p><span class="math notranslate nohighlight">\(\vec{F} = m\vec{a}\)</span></p>
+<p>where now we know that the <em>net</em> force <span class="math notranslate nohighlight">\(\vec{F}\)</span> and the acceleration <span class="math notranslate nohighlight">\(\vec{a}\)</span> are vectors. So of course this tells us that the acceleration is in the <strong>same</strong> direction as the net force. To get the full picture of how this law can describe the motion of an object we’ll look at the components of the law in 2 separate parts, starting with net force, then onto acceleration and mass.</p>
+</div>
+<div class="section" id="net-force">
+<h2>Net Force<a class="headerlink" href="#net-force" title="Permalink to this headline">¶</a></h2>
+<p>A force is merely defined in Physics as something that changes the motion of an object. You’ll often hear it defined as a “push” or a “pull”, which works in the context of 2D problems but doesn’t give as clear of a description in 3D so this notebook will refrain from using that nomenclature. There are many types of forces that we experience and interact with every day. Some of these include applied forces, electric and magnetic forces, gravity, friction, etc. If there are 2 or more of these forces acting on a body, we get a <strong>net</strong> force in the resulting direction. To understand how a net force is quantified here is an image showing the resultant, net force from two individual forces.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&#39;images/Vector_3.png&#39;&gt;&lt;/td&gt;&lt;td&gt;&lt;img src=&#39;images/Vector_4.png&#39;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table><tr><td><img src='images/Vector_3.png'></td><td><img src='images/Vector_4.png'></td></tr></table></div></div>
+</div>
+<p>The net force is merely calculated using vector addition principles, which we will not cover here, but should help to intuitively visualize a net force.</p>
+</div>
+<div class="section" id="acceleration-and-mass">
+<h2>Acceleration and Mass<a class="headerlink" href="#acceleration-and-mass" title="Permalink to this headline">¶</a></h2>
+<p>As we saw in the single body example of the ball experiencing the force of gravity and an applied force (of wind), the net force caused a change in the motion of the ball. If you haven’t guessed it yet, this is because the acceleration is directly proportional to the net force acting on an object with mass. Newton’s Second Law tells us exactly this! If we were to manipulate the law so that we are solving for acceleration instead of the force we get</p>
+<p><span class="math notranslate nohighlight">\(\vec{a} = \frac{\large \vec{F}}{\large m}\)</span></p>
+<p>where now we can see that the acceleration depends linearly on the net force and inversely with mass. <strong>BUT BE CAREFUL!</strong> This does not necessarily mean that if we apply the same force to objects of differing mass that the heavier objects will accelerate slower than the lighter ones. It depends on what type of force is acting on the objects. For example let’s simplify our original case and only induce a force of gravity on several objects of varying mass (<strong>where no air resistance is present, i.e. space</strong>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Gravity.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;920px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;420px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Gravity.html' width = "920px" height = "420px" frameBorder="0"></iframe>
+</div></div>
+</div>
+<p>They all fell at the exact same rate! This is because the force of gravity is known to be</p>
+<p><span class="math notranslate nohighlight">\(\vec{F}_g = -m\vec{g}\)</span></p>
+<p>so when substituted into Newton’s Second law we get that</p>
+<p><span class="math notranslate nohighlight">\(\vec{a} = -\vec{g}\)</span></p>
+<p>which shows us that no matter what the mass of the objects are, they all accelerate downwards at a rate of <span class="math notranslate nohighlight">\(\vec{g}\)</span>. Now let’s consider a material that induces a drag force on these falling objects. In general the drag force is defined as</p>
+<p><span class="math notranslate nohighlight">\(\vec{F}_d = -\frac{1}{2}\rho \vec{v}^2 C_D A\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(\rho\)</span> is the density of the material, <span class="math notranslate nohighlight">\(\vec{v}\)</span> is the velocity of our objects, <span class="math notranslate nohighlight">\(C_D\)</span> is the drag coefficient (similar to a friction coefficient) and <span class="math notranslate nohighlight">\(A\)</span> is the surface area in contact with the drag material. For the purpose of this exercise we will simplify the force to</p>
+<p><span class="math notranslate nohighlight">\(\vec{F}_d = -c_0\vec{v}^2 C_D\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(c_0\)</span> is just a constant value. The two important aspects of this equation is now the direction in which the force points and the value of <span class="math notranslate nohighlight">\(C_D\)</span>, which determines how strong the force is.</p>
+<p>The negative sign here indicates that this force acts in the <strong>opposite</strong> direction to the velocity of an object. So in a scenario where an object is experiencing both a gravitational and drag force, what will happen to the acceleration? and what will the dependence on mass be? Well first, to find the net force, let’s look at a force body diagram and then add the forces together.</p>
+<a class="reference internal image-reference" href="../../../_images/Vector_5.png"><img alt="../../../_images/Vector_5.png" src="../../../_images/Vector_5.png" style="width: 450px; height: 450px;" /></a>
+<p>Notice here that the drag force points opposite the direction of the velocity! With this depiction we can go on to write the net force and acceleration as</p>
+<p><span class="math notranslate nohighlight">\(\vec{F}_{net} = -m\vec{g} + c_0\vec{v}^2 C_D\)</span></p>
+<p><span class="math notranslate nohighlight">\(\vec{a} = \frac{1}{m}(-m\vec{g} + c_0\vec{v}^2 C_D) = -\vec{g} + \frac{1}{m}c_0\vec{v}^2 C_D\)</span></p>
+<p>From this there is one important question we could ask ourselves; what are the conditions for the acceleration to be positive or negative? The inflection point between these scenarios would be where there is no acceleration so let’s start there. If we had a scenario where the acceleration was 0 we would find that</p>
+<p><span class="math notranslate nohighlight">\(\vec{g} = \frac{1}{m}c_0\vec{v}^2 C_D\)</span></p>
+<p>or in other words, the forces are <em>balanced</em>. Now if they are <em>unbalanced</em> this must result in an acceleration. Which direction the object accelerates depends on the condition of whether or not our drag force is greater than or less than the gravitational force.</p>
+<p>Below is a simulation where several balls begin in free fall as a result of gravity acting on them, where they go on to hit a substance (we’ll assume it’s water) which will apply a drag force. <strong>Before</strong> running the simulation ask yourself, will the balls fall at the same rate once they hit the water? Will the heavier balls fall quicker or will the smaller ones? Look again at our final equation for acceleration</p>
+<p><span class="math notranslate nohighlight">\(\vec{a} = -\vec{g} + \frac{1}{m}c_0\vec{v}^2 C_D\)</span></p>
+<p>Now check out what happens!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Drag.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;900px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;620px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Drag.html' width = "900px" height = "620px" frameBorder="0"></iframe>
+</div></div>
+</div>
+<p>The smaller balls fall at a slower rate than the larger ones do once they hit the material. This is because our drag term in the acceleration, <span class="math notranslate nohighlight">\(\frac{1}{m}c_0\vec{v}^2 C_D\)</span>, has an inverse dependence on the mass of the ball. Therefore, if you were to <strong>decrease</strong> the mass of the ball, the drag force will <strong>increase</strong> the acceleration in a positive, upwards direction, counteracting the effect of the gravitational effect. Thus, the heavier balls will experience “more” of the gravitational force and fall downwards at a faster rate.</p>
+</div>
+<div class="section" id="beyond-boldsymbol-small-f-ma">
+<h2>Beyond <span class="math notranslate nohighlight">\(\boldsymbol{\small F=ma}\)</span><a class="headerlink" href="#beyond-boldsymbol-small-f-ma" title="Permalink to this headline">¶</a></h2>
+<p>One of the forces we have touched on quite a bit is that of the gravitional force <span class="math notranslate nohighlight">\(F_g = mg\)</span>. It was stated earlier that <span class="math notranslate nohighlight">\(g\)</span> was defined to be <span class="math notranslate nohighlight">\(9.81\)</span> <span class="math notranslate nohighlight">\(\rm m/s^2\)</span>, but this is only the case for when we are situated on the surface of the Earth. Our Earth itself experiences a gravitational force, influenced by our Sun, and this is what causes ours and all the other planets to orbit around it. So this gravitational acceleration term (<span class="math notranslate nohighlight">\(g\)</span>) must have a more generalized form right? Indeed it does, we know that in general, the gravitational acceleration is</p>
+<p><span class="math notranslate nohighlight">\(g = \frac{\large GM}{\large r^2}\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(M\)</span> is the mass of the gravitational influencer (VERY massive object), <span class="math notranslate nohighlight">\(G\)</span> is the universal gravitational constant and <span class="math notranslate nohighlight">\(r\)</span> is the distance between the influencer and the effected body with a mass <span class="math notranslate nohighlight">\(m\)</span>. The direction of this force is in the radial direction, meaning that it always points from the center of one object to the center of the other object. From this we get a general form for the gravitational force</p>
+<p><span class="math notranslate nohighlight">\(F_g = \frac{\large GMm}{\large r^2}\)</span></p>
+<p>It is important to realize that the direction of this force is along the distance or separation vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> and is <strong>negatively</strong> oriented. In the environment of standing on Earth this should be intuitive as we are constantly being pushed <em>downwards</em>, back to the surface when we try to jump in the air or send rockets into space. How might this work for an orbiting planet ? And why doesn’t a planet just fall into the Sun, just like how we are brought back to the ground ? A crucial factor for the stability and effectively eternal nature of the planet’s orbits has to do with the orbital velocity they obtained during the Solar System’s creation.</p>
+<p>During the formation of a star, there may exist a Protoplanetary disk that violently orbits around the young star. If conditions are satisfactory for planetary formation, the material in the disk will start to <em>clump</em> and create it’s own gravitational field, which in turn attracts more material, forming gaseous or rock based planets, depending on their distance from the star. Due to conservation of angular momentum and energy, the orbital velocity that this material had while the star was forming, remains long after the star and planets have formed. Thus, as we see in our own Solar System, this is how the planets perpetually orbit around the Sun.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s2">&quot;f9rBJDajwPc&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">560</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">315</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/f9rBJDajwPc"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<p>Now back to the gravitational force and its role in all of this. Without the constant gravitational acceleration inwards, the planets would merely fling off their elliptical orbits and off into interstellar space. Let’s see what this looks like with some vectors indicating how all these effects are working together.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Orbit.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;620px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;550px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Orbit.html' width = "620px" height = "550px" frameBorder="0"></iframe>
+</div></div>
+</div>
+</div>
+<div class="section" id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
+<p>Q1. By looking at the force body diagram shown below, click on the vector (arrow) at the bottom of the screen that you think represents the net force vector.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Vector_Q1.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;480px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;430px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Vector_Q1.html' width = "480px" height = "430px" frameBorder="0"></iframe>
+</div></div>
+</div>
+<p>Q2. If a force <span class="math notranslate nohighlight">\(F = \frac{\large kq_1q_2}{\large r^2}\)</span> is applied to 2 objects, one with mass <span class="math notranslate nohighlight">\(m_1\)</span> and the other with mass <span class="math notranslate nohighlight">\(m_2\)</span>, where <span class="math notranslate nohighlight">\(m_2 &gt; m_1\)</span>, which object will <strong>accelerate faster</strong>? Object 1 with mass <span class="math notranslate nohighlight">\(m_1\)</span> or object 2 with mass <span class="math notranslate nohighlight">\(m_2\)</span> ? To start off, try equating <span class="math notranslate nohighlight">\(F=ma\)</span> to <span class="math notranslate nohighlight">\(F=\frac{\large kq_1q_2}{\large r^2}\)</span> and then solve for the acceleration and see how it behaves with respect to the mass.</p>
+<p>Click on Run Interact to check your answer.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+
+<span class="c1"># Run Interact Button parameters</span>
+<span class="nd">@interact_manual</span><span class="p">(</span><span class="n">answer</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Textarea</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">,</span>
+    <span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Type something&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Type in m1 or m2 for your selection&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">style</span><span class="o">=</span><span class="n">s</span>
+<span class="p">))</span>
+
+
+<span class="c1"># Get correct answer</span>
+<span class="k">def</span> <span class="nf">get_a</span><span class="p">(</span><span class="n">answer</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">answer</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">if</span> <span class="s2">&quot;m1&quot;</span> <span class="ow">in</span> <span class="n">answer</span> <span class="ow">or</span> <span class="s2">&quot;object 1&quot;</span> <span class="ow">in</span> <span class="n">answer</span><span class="p">:</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Correct! The lighter mass, $m_1$, would accelerate faster in this scenario.&quot;</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="s2">&quot;m2&quot;</span> <span class="ow">in</span> <span class="n">answer</span> <span class="ow">or</span> <span class="s2">&quot;object 2&quot;</span> <span class="ow">in</span> <span class="n">answer</span><span class="p">:</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Close! It&#39;s actually $m_1$ that would accelerate faster. Since our mass variable is in the denominator of the equation, as we increase the mass, the acceleration decreases.&quot;</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Please enter `m1` or `m2`&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "5ba748f3c7d44026a4f0ceeda2630fb0"}
+</script></div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Great, you’ve reached the end of your journey through Newton’s Second Law! It’s important to remember the major aspects of what we covered throughout this notebook. Newton’s Second Law is crucial in explaining how an object behaves once a force has been applied. We know that it’s acceleration is directly proportional to the force itself. As well it should be clear that the acceleration is <strong>ALWAYS</strong> in the same direction as the net force on the object. How the mass of the object effects the acceleration is completely dependent on the analytical form of the force as we saw throughout through examples such as the falling balls hitting the water. Hopefully you’re now more comfortable with all these ideas and they can be translated into understanding more about physics !</p>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"ae289ff4acff470a9da34f462b239b56": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "initial"}}, "3a9cdeb9c6ba4d07990218b642c37b0b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "ef08c192e3db4d05a9b23bb750dd77e5": {"model_name": "TextareaModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextareaModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextareaView", "continuous_update": true, "description": "Type in m1 or m2 for your selection", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_3a9cdeb9c6ba4d07990218b642c37b0b", "placeholder": "Type something", "rows": null, "style": "IPY_MODEL_ae289ff4acff470a9da34f462b239b56", "value": " "}}, "d9bf9f6ed4a446f29f31ad8cdc00bc63": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5ba748f3c7d44026a4f0ceeda2630fb0": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_ef08c192e3db4d05a9b23bb750dd77e5", "IPY_MODEL_a64746f53a0b4db6baa9bfccaea6a71a", "IPY_MODEL_1d7ccfa71f70499fb28031493afc5cdc"], "layout": "IPY_MODEL_d9bf9f6ed4a446f29f31ad8cdc00bc63"}}, "f9199425db4c493a9ad0fa9cf5cfd066": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c68a267e05c44a6886baa408bf0eb68d": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "a64746f53a0b4db6baa9bfccaea6a71a": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "Run Interact", "disabled": false, "icon": "", "layout": "IPY_MODEL_f9199425db4c493a9ad0fa9cf5cfd066", "style": "IPY_MODEL_c68a267e05c44a6886baa408bf0eb68d", "tooltip": ""}}, "3e99ea0940d14adbbd69fd1b268d256a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1d7ccfa71f70499fb28031493afc5cdc": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_3e99ea0940d14adbbd69fd1b268d256a", "msg_id": "", "outputs": []}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Science/NewtonsSecondLaw"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../NewtonsFirstLaw/newtons-first-law.html" title="previous page">Newton’s First Law</a>
+    <a class='right-next' id="next-link" href="../NewtonsThirdLaw/newtons-third-law.html" title="next page">Newton’s Third Law</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

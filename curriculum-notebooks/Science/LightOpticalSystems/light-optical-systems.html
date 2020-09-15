@@ -1,0 +1,796 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Light and Optics &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Transmission of Light" href="../LightTransmission/transmission-of-light.html" />
+    <link rel="prev" title="Heat and Temperature" href="../HeatAndTemperature/heat-and-temperature.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Curriculum Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Sciences.html">
+   Sciences Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BalancingChemicalEquations/balancing-chemical-equations.html">
+     Chemical Equations: Writing and Balancing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ChemicalNomenclature/chemical-nomenclature.html">
+     Chemical Nomenclature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClassifyingChemicalReactions/classifying-chemical-reactions.html">
+     Classifying Chemical Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ClimateChange/climate-change.html">
+     Climate Change
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Climatograph/climatograph.html">
+     Climatograph
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html">
+     Concentration and pH
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
+     Acids and Bases
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricalConductivity/electrical-conductivity.html">
+     Electrical Conductivity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ElectricityConsumptionMonitoring/electricity-consumption-monitoring.html">
+     Electricity Consumption Monitoring
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ExploringSolarSystem/exploring-the-solar-system.html">
+     Exploring the Solar System
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HeatAndTemperature/heat-and-temperature.html">
+     Heat and Temperature
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Light and Optics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LightTransmission/transmission-of-light.html">
+     Transmission of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html">
+     Methods used in Scientific Study of the Earth
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NatureOfThermalEnergy/nature-of-thermal-energy.html">
+     The Nature of Thermal Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsFirstLaw/newtons-first-law.html">
+     Newton’s First Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsSecondLaw/newtons-second-law.html">
+     Newton’s Second Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NewtonsThirdLaw/newtons-third-law.html">
+     Newton’s Third Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.html">
+     Half life calculations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../NuclearDecay/nuclear-decay.html">
+     Nuclear Decay - Half Life
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProjectileMotion/projectile-motion.html">
+     Projectile Motion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RadiationAnimations/radiation-animations.html">
+     Nuclear Radiation: Alpha, Beta, and Gamma
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.html">
+     Reflection of Light
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ScienceLabReportTemplate/science-lab-report-template.html">
+     Science Lab Report Template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SourcesOfEnergy/resources-and-recycling.html">
+     Sources of Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../SpecificAndLatentHeat/specific-and-latent-heat.html">
+     Specific and Latent Heat
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StaticAndKineticFriction/static-and-kinetic-friction.html">
+     Static and Kinetic Friction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StoichiometryAndLimitingReactants/stoichiometry-and-limiting-reactants.html">
+     Stoichiometry and Limiting Reactants
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ThermalExpansion/thermal-expansion.html">
+     Thermal Linear Expansion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../UniformMotionAndUniformlyAcceleratedMotion/uniform-motion-and-uniformly-accelerated-motion.html">
+     Uniform Motion and Uniformly Accelerated Motion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Science/LightOpticalSystems/light-optical-systems.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Science/LightOpticalSystems/light-optical-systems.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Science/LightOpticalSystems/light-optical-systems.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Science/LightOpticalSystems/light-optical-systems.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#isaac-newton-s-prism-experiment">
+     Isaac Newton’s Prism Experiment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ole-romer-and-the-speed-of-light">
+     Ole Rømer and the Speed of Light
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reflection">
+   Reflection
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#refraction">
+   Refraction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rainbows">
+     Rainbows
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mirages">
+     Mirages
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#applications-of-reflection-and-refraction">
+   Applications of Reflection and Refraction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lenses">
+     Lenses
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vision">
+   Vision
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#technology-inventions">
+   Technology &amp; Inventions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-telescope">
+     The Telescope
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-microscope">
+     The Microscope
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/LightOpticalSystems/light-optical-systems.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">plotly</span> <span class="k">as</span> <span class="nn">py</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">IFrame</span>
+<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="k">import</span> <span class="n">Table</span><span class="p">,</span> <span class="n">Column</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span>
+
+<span class="n">py</span><span class="o">.</span><span class="n">offline</span><span class="o">.</span><span class="n">init_notebook_mode</span><span class="p">(</span><span class="n">connected</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="n">font</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span> <span class="p">:</span> <span class="s1">&#39;sans-serif&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;weight&#39;</span> <span class="p">:</span> <span class="s1">&#39;normal&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;size&#39;</span>   <span class="p">:</span> <span class="mi">14</span><span class="p">}</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">font</span><span class="p">)</span>
+
+<span class="sd">&#39;&#39;&#39;Above, we are importing all the necessary modules in order to run the notebook. </span>
+<span class="sd">Numpy allows us to define arrays of values for our variables to plot them</span>
+<span class="sd">matplotlib is what we use to create the figures</span>
+<span class="sd">the display and widgets are to make the notebook look neat</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">  function code_toggle() {</span>
+<span class="s1">    if (code_shown){</span>
+<span class="s1">      $(&#39;div.input&#39;).hide(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)</span>
+<span class="s1">    } else {</span>
+<span class="s1">      $(&#39;div.input&#39;).show(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)</span>
+<span class="s1">    }</span>
+<span class="s1">    code_shown = !code_shown</span>
+<span class="s1">  }</span>
+<span class="s1">  </span>
+<span class="s1">  $( document ).ready(function(){</span>
+<span class="s1">    code_shown=false;</span>
+<span class="s1">    $(&#39;div.input&#39;).hide()</span>
+<span class="s1">  });</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+        
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-latest.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+</div><div class="output text_html"><script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form></div></div>
+</div>
+<hr class="docutils" />
+<div class="section" id="light-and-optics">
+<h1>Light and Optics<a class="headerlink" href="#light-and-optics" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<img alt="Drawing" src="https://media.giphy.com/media/3o7OsM9vKFH2ESl0KA/giphy.gif" />
+<hr class="docutils" />
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Throughout most of history, humans did not understand light as we do today. As science and technology have progressed over time, so too has our knowledge of the nature of light.</p>
+<p>In this lesson, when we say the word “light”, we will be referring to visible light (light that comes from the sun, lightbulbs etc.). We will go over how a few key experiments kickstarted a new way of thinking, and a few of the ways that we are able to manipulate light. We will also talk about how our eyes enable us to see.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>If you had to describe to someone what light is, you may have a hard time. Some people think of light as the absence of darkness, but even that doesn’t say much about light itself.</p>
+<p>Our understanding of light truly began around the 17th century, when a few individuals started to realize that light was not a mystical substance. Scientists (or “natural philosophers”, as they were called during that time) recognized that certain properties of light were measurable, and that some properties could be manipulated. Sir Isaac Newton and Ole Rømer were among the first scientists to take a step in this direction.</p>
+<div class="section" id="isaac-newton-s-prism-experiment">
+<h3>Isaac Newton’s Prism Experiment<a class="headerlink" href="#isaac-newton-s-prism-experiment" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>Sir Isaac Newton has made contributions to many fields of science and mathematics. In 1666, while spending time at his childhood home in Lincolnshire, England, Newton began experimenting with light.</p>
+<p>Using a small slit in his window shutters, Newton passed a narrow beam of sunlight through a glass prism. The light travelled through the prism, and projected a rainbow of color on the other side!</p>
+<img alt="Drawing" src="http://lightingmatters.com.au/wp/wp-content/uploads/2015/09/White-Light-Prism-Experiment.jpg" />
+<p>Later on, scientists determined that the prism was actually splitting light into its component parts. This phenomenon is called <strong>dispersion</strong>.</p>
+<p>Through this experiment, Newton demonstrated that white light was actually made up of all the individual colors of the rainbow!</p>
+<div class="section" id="ole-romer-and-the-speed-of-light">
+<h3>Ole Rømer and the Speed of Light<a class="headerlink" href="#ole-romer-and-the-speed-of-light" title="Permalink to this headline">¶</a></h3>
+</div>
+<p>For many years, people thought that if somebody lit a match, the light from that match would be instantly visible to everyone, no matter how far away they were. However, in 1676 Ole Rømer proved that this is not the case.</p>
+<p>Rømer spent a long time studying the orbit of Io, one of Jupiter’s moons. As part of his study, he began predicting the times when Io should be hidden behind Jupiter’s shadow (these periods are called eclipses). However, Rømer saw that his predictions for when these eclipses should occur were not always accurate.</p>
+<img alt="Drawing" src="https://media.giphy.com/media/DXIa1beDspYRy/giphy.gif" />
+<p>Rømer then realized that these errors may be because the distance between Io and the Earth was always changing. Rømer thought that when the distance between Io and the Earth increased, it might take a longer time for light coming from Io to reach Earth. If this were the case, then the light must be travelling at a finite speed!</p>
+<p>After taking many measurements and using some clever mathematics, Rømer calculated the speed of light to be roughly 220,000,000 m/s, or 792,000,000 km/h.</p>
+<p>Today, we have measured the speed of light to be 299,792,458 m/s. Although he was not exactly right, Rømer provided one of the first mathematical calculations for the speed of light.</p>
+<hr class="docutils" />
+<p>Since the time of Rømer and Newton, scientists have made many new discoveries about the nature of light. While not all of these discoveries agree with one another, here are two things we know for sure:</p>
+<ul class="simple">
+<li><p>Light is made up of a spectrum of color</p></li>
+<li><p>Light travels at a speed of 299,792,458 m/s</p></li>
+</ul>
+<p>Now let’s talk about some of the ways we can manipulate light.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="reflection">
+<h2>Reflection<a class="headerlink" href="#reflection" title="Permalink to this headline">¶</a></h2>
+<p>We are all familiar with reflection; chances are, you look at your reflection more than once a day. But have you ever stopped to wonder what is really going on?</p>
+<p>Reflection is the term used to describe how light can change direction when it comes into contact with certain surfaces.</p>
+<p>When incoming light rays encounter a reflective surface, they bounce off the surface and continue moving in a new direction. The new direction in which it moves is determined by the <strong>law of reflection</strong>.</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0f65fdad-af1f-4838-8565-6b512d20a09d">
+<span class="eqno">(56)<a class="headerlink" href="#equation-0f65fdad-af1f-4838-8565-6b512d20a09d" title="Permalink to this equation">¶</a></span>\[\begin{equation} 
+\rm Law\: of\: Reflection: Angle\: of\: Incidence = Angle\: of\: Reflection
+\end{equation}\]</div>
+<p>On the animation below, click on the flashlight to turn it on, and move your mouse to change the angle of incidence.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;Animations/reflect.html&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">320</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="500"
+    height="320"
+    src="Animations/reflect.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<p>As seen above, the <strong>normal</strong> is what we call the line that forms a 90<span class="math notranslate nohighlight">\(^{\circ}\)</span> angle with  the surface. The <strong>angle of incidence</strong> is what we call the angle between the flash lights beam and the normal. Similarly, the <strong>angle of reflection</strong> is the angle that the newly reflected light beam makes with the normal. The law of reflection states that these two angles will always be equal.</p>
+</div>
+<div class="section" id="refraction">
+<h2>Refraction<a class="headerlink" href="#refraction" title="Permalink to this headline">¶</a></h2>
+<p>Have you ever tried to reach down and grab an object sitting at the bottom of a pool of water? If you have, you may have noticed that the object isn’t actually in the location that you thought it was.</p>
+<img alt="Drawing" src="http://legacy.sciencelearn.org.nz/var/sciencelearn/storage/images/contexts/light-and-sight/sci-media/video/refraction/668954-1-eng-NZ/Refraction.jpg" />
+<p>This phenomenon occurs because the light travelling to your eyes from the bottom of the pool <strong>refracts</strong>, or changes its direction of travel, when it transitions from water to air.</p>
+<p>The <strong>index of refraction</strong> is a value that we use to show how much light will bend when travelling through a substance. For example, the index of refraction for air is approximately 1.00, and the index of refraction for water is about 1.33. Because these indexes are different, light will bend when passing from water to air, or vice versa.</p>
+<p>Use the animation below to see how light refracts when passing from air to water. Click on the flashlight to turn it on.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;Animations/refract.html&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">520</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">320</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="520"
+    height="320"
+    src="Animations/refract.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<p>Mathematically, reflection can be described using the following equation, known as Snell’s Law:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7e200f4d-a85f-4b90-9c65-69b42778cbd7">
+<span class="eqno">(57)<a class="headerlink" href="#equation-7e200f4d-a85f-4b90-9c65-69b42778cbd7" title="Permalink to this equation">¶</a></span>\[\begin{equation} 
+\textrm{Snells Law:}\: n_1\sin(\theta_1) = n_2\sin(\theta_2)
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(n_1\)</span> is the index of refraction for the first medium, <span class="math notranslate nohighlight">\(\theta_1\)</span> is the incident angle, <span class="math notranslate nohighlight">\(n_2\)</span> is the index of refraction for the second medium, and <span class="math notranslate nohighlight">\(\theta_2\)</span> is the angle of refraction.</p>
+<p>Light will bend <em>towards</em> the normal when travelling from a medium with a <em>lower</em> index of refraction to one with a <em>higher</em> index of refraction, and vice versa.</p>
+<hr class="docutils" />
+<p>Some of the most beautiful sights in nature are caused by reflection and refraction. Here are a couple of examples:</p>
+<div class="section" id="rainbows">
+<h3>Rainbows<a class="headerlink" href="#rainbows" title="Permalink to this headline">¶</a></h3>
+<p>Rainbows are a result of both reflection and refraction. As its raining, each water droplet acts like a tiny prism, just like the one we saw in Figure 2. The water droplets split visible light into colors, and these colors are then reflected back towards our eyes.</p>
+<img alt="Drawing" src="http://waterstories.nestle-waters.com/wp-content/uploads/2015/04/How-rainbow-forms-waterstories.jpg" />
+</div>
+<div class="section" id="mirages">
+<h3>Mirages<a class="headerlink" href="#mirages" title="Permalink to this headline">¶</a></h3>
+<p>Have you ever been driving on a sunny day, and up ahead it looks as though a stream of water is running across the road? You are really seeing a mirage.
+Mirages also occur because of refraction, but they do not result in a display of color like a rainbow. This type of refraction occurs due to a difference in temperature between separate layers of air.</p>
+<p>As we were describing before, refraction occurs when light travels from one substance to another. Well, it turns out that hot air and cold air are actually different enough to act as different substances. Therefore, light will refract when passing through one to the other.</p>
+<img alt="Drawing" src="http://edex.s3-us-west-2.amazonaws.com/styles/kraken_optimized/s3/banner-mirage.jpg?itok=YXSTIo8_" />
+<p>When you are looking at a mirage, it can look as though the air is wavy and fluid, which is why it is common to think that you are looking at water. This appearance occurs when layers of hot and cold air are mixing together, and light passing through these layers is constantly being refracted in different directions.</p>
+<p>You may see a mirage appear on top of a hot roadway, behind the exhaust pipe of a plane or car, or around any other source of heat.</p>
+</div>
+</div>
+<div class="section" id="applications-of-reflection-and-refraction">
+<h2>Applications of Reflection and Refraction<a class="headerlink" href="#applications-of-reflection-and-refraction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lenses">
+<h3>Lenses<a class="headerlink" href="#lenses" title="Permalink to this headline">¶</a></h3>
+<p>If you have glasses, or contact lenses, then you are constantly using refraction in order to help you see! Lenses use refraction to point light in specific directions.</p>
+<p>Generally speaking, there are two types of lenses: <strong>convex</strong> and <strong>concave</strong>.</p>
+<p>To see how each type of lens affects light, use the following animation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;Animations/convex.html&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">520</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">420</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="520"
+    height="420"
+    src="Animations/convex.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<p>As seen above, a convex lens focuses light towards a specific point, while a concave lens will spread light away from a point. These lenses can be combined in many ways in order to produce different effects. For example, a camera lens uses a series of both convex and concave lenses in order to direct incoming light towards the back of the camera.</p>
+<img alt="Drawing" src="http://i.imgur.com/IH2ymaj.jpg" />
+</div>
+</div>
+<div class="section" id="vision">
+<h2>Vision<a class="headerlink" href="#vision" title="Permalink to this headline">¶</a></h2>
+<p>Our eyes are very complex organs, but the process that enables us to see is actually pretty simple. The basic steps are as follows:</p>
+<ol class="simple">
+<li><p>Light enters the eye through the <strong>pupil</strong></p></li>
+<li><p>The convex <strong>lens</strong> behind the pupil directs incoming light towards the <strong>retina</strong>, which is like a screen at the back of our eye.</p></li>
+<li><p>The retina then sends this image to the brain.</p></li>
+<li><p>The brain then interprets the image.</p></li>
+</ol>
+<img alt="Drawing" src="https://openclipart.org/image/2400px/svg_to_png/261647/EyeDiagram.png" />
+<p>However, the image that is projected onto the retina is actually upside down!</p>
+<img alt="Drawing" src="https://m.eet.com/media/1077748/max-hfield-01.gif" />
+<p>So the retina actually sends an upside down image to the brain, and the brain automatically flips the image rightside up.</p>
+<p>Use the following link to see an animation showing how a convex lens flips images upside down:https://phet.colorado.edu/sims/geometric-optics/geometric-optics_en.html.</p>
+</div>
+<div class="section" id="technology-inventions">
+<h2>Technology &amp; Inventions<a class="headerlink" href="#technology-inventions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-telescope">
+<h3>The Telescope<a class="headerlink" href="#the-telescope" title="Permalink to this headline">¶</a></h3>
+<p>The first telescope was made by Hans Lippershey in 1608, but it was Galileo Galilee who became famous by using it for astronomy. There are many different types of telescopes, but they all use reflection and refraction to make far away objects appear closer.</p>
+<p>A telescope uses a large opening to collect incoming light, and then directs this light towards your eye by using mirrors and lenses.</p>
+<img alt="Drawing" src="https://www.skyandtelescope.com/wp-content/uploads/three-scopes.jpg" />
+<p>The reason why things look bigger when looking through a telescope is because of the lenses.</p>
+</div>
+<div class="section" id="the-microscope">
+<h3>The Microscope<a class="headerlink" href="#the-microscope" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>talk about invention of microscope</p></li>
+<li><p>why it works</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Our understanding of light is the result of hundreds of years of research and innovation. Along the way, we have created incredible new technologies that have allowed us to look further than ever before.</p>
+<img alt="Drawing" src="https://xenlife.com.au/wp-content/uploads/Hubble-Space-Telescope-650x250-1078x516.jpg" />
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Science/LightOpticalSystems"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../HeatAndTemperature/heat-and-temperature.html" title="previous page">Heat and Temperature</a>
+    <a class='right-next' id="next-link" href="../LightTransmission/transmission-of-light.html" title="next page">Transmission of Light</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>
