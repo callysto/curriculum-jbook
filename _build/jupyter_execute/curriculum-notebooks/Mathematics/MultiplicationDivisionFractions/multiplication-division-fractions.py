@@ -21,6 +21,7 @@
     $('div.input').hide()
   });
 </script>
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
 <form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
 
 import matplotlib.pyplot as plt

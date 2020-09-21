@@ -37,21 +37,21 @@ from IPython.display import Image
 import ipywidgets as widgets
 import IPython
 
-# Area of a Triangle
+# Triangles: Area
 
-##### Grade 7 Curriculum
+## Grade 7 Curriculum
 
 This is a notebook on how to calculate the area of a triangle. In this notebook, we will focus on how to calculate the area of any triangle. We will also learn how to find out the length of one variable, either base or height, while given the other variable and the area. 
 
 This notebook will help you understand how to find the area of a triangle, and give a few practice questions. This one notebook won’t be enough practice to master this skill, so be sure to do lots of practice!
 
-### What is a triangle?
+## What is a triangle?
 
 A triangle is defined as a 2D shape with 3 straight sides and 3 angles, which can take many forms:
 
 ![picture](https://www.onlinemathlearning.com/image-files/xtypes-triangles-sides-angles.png.pagespeed.ic.LLzsGQR2vg.png) www.onlinemathlearning.com
 
-### How to find the area
+## How to find the area
 
 Finding the area of a triangle seems a little trickier than finding the area of a rectangle, but there's an easy way to look at it.
 
@@ -77,15 +77,15 @@ Or if you only work with the original area, we can create a rectangle like this:
 
 ### Formula
 
-So we can see that no matter what kind of triangle you're faced with, as long as we know the base and the height, the area of the triangle will be $$\frac{\text{base } \times \text{ height}}{2}$$.
+So we can see that no matter what kind of triangle you're faced with, as long as we know the base and the height, the area of the triangle will be 
+
+$$\frac{\text{base } \times \text{ height}}{2}$$
 
 We are going to write base as b and height as h in the practice questions.
 
 ### Still not convinced? 
 
 Choose a length for the base and height then slide point $P$ back and forth on the triangle below and watch the area to see if it changes based on the triangle you make. Try making an obtuse triangle, a right-angle triangle, and an acute triangle.
-
-#ggb.material('QgWDn3pt').draw()
 
 %%html
 <iframe scrolling="no" title="TriangleAnimation1" src="https://www.geogebra.org/material/iframe/id/QgWDn3pt/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
@@ -101,6 +101,7 @@ We can see that the height is 2 cm and the base is 3.4 cm. Let's duplicate this 
 Image('images/TriStep2.png',width=300,height=400)
 
 Now we have a rectangle, which we know how to calculate the area for using the formula 
+
 $$\begin{align*}
 \text{Area of rectangle} & = \text{base} \times \text{height}\\
 \text{Area of rectangle} & = 2 \text{ cm} \times 3.4 \text{ cm}\\
@@ -108,6 +109,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Since the triangle makes up only half of this rectangle, we have to divide the area in half as well.
+
 $$\begin{align*}
 \text{Area of triangle} & = \text{Area of rectangle} \div 2\\
 \text{Area of triangle} & = 6.8 \text{ cm}^2 \div 2\\
@@ -116,9 +118,10 @@ $$\begin{align*}
 
 Therefore the area of the triangle by itself is $3.4 \text{ cm}^2$
 
-##### Now let's use our formula!
+### Now let's use our formula!
 
-$$\begin{align*}
+$$
+\begin{align*}
 \text{Area of triangle} & = \frac{\text{base} \times \text{height}}{2}\\
 \text{Area of triangle} & = \frac{3.4 \text{ cm} \times 2 \text{ cm}}{2}\\
 \text{Area of triangle} & = \frac{6.8 \text{ cm}^2}{2}\\
@@ -208,14 +211,17 @@ ans3.observe(check3, 'value')
 
 ### How does a change in height affect the area?
 
-Let's take the first triangle from the example we went through where the base is 3.4 cm and the height is 2 cm which we figured out the area is $3.4text{ cm}^2$. What do you think would happen to the area if we doubled the height to 4 cm? 
+Let's take the first triangle from the example we went through where the base is 3.4 cm and the height is 2 cm which we figured out the area is $3.4\text{ cm}^2$. What do you think would happen to the area if we doubled the height to 4 cm? 
 Let's calculate it:
-$$\begin{align*}
+
+$$
+\begin{align*}
 \text{Area of triangle} & = \frac{\text{base} \times \text{height}}{2}\\
 \text{Area of Triangle} & = \frac{3.4 \text{ cm} \times 4 \text{ cm}}{2}\\
 \text{Area of Triangle} & = \frac{13.6\text{ cm}^2}{2}\\
 \text{Area of Triangle} & = 6.8 \text{ cm}^2
-\end{align*}$$
+\end{align*}
+$$
 
 Interesting. The new area, $6.8 \text{ cm}^2$ is double the amount of the old area, $3.4 \text{ cm}^2$. Perhaps that was just a coincidence? There's a slider over the next triangle labelled height, slide it to double the current height and look at what happens to the area. Can we generalize that when the height is doubled then the area is doubled?
 
@@ -223,18 +229,19 @@ Interesting. The new area, $6.8 \text{ cm}^2$ is double the amount of the old ar
 
 Now instead of changing the height, let's double the base of the triangle in the first example to 6.8 cm and keep the height at 2 cm. How will this new area compare to the old area? How will it compare to the area when we changed the height?
 Let's calculate it:
-$$\begin{align*}
+
+$$
+\begin{align*}
 \text{Area of triangle} & = \frac{\text{base} \times \text{height}}{2}\\
 \text{Area of triangle} & = \frac{6.8 \text{ cm} \times 2 \text{ cm}}{2}\\
 \text{Area of triangle} & = \frac{13.6 \text{ cm}^2}{2}\\
 \text{Area of triangle} & = 6.8 \text{ cm}^2
-\end{align*}$$
+\end{align*}
+$$
 
 Look at that! This new area is the same as when we doubled the height! Let's confirm that doubling the base doubles the area by using the slider labelled base over the triangle below to double the base length and watch what happens to the area.
 
 **Note:** you can slide P back and forth to create right-angle, obtuse, and acute triangles!
-
-#ggb.material('QgWDn3pt').draw()
 
 %%html
 <iframe scrolling="no" title="TriangleAnimation2" src="https://www.geogebra.org/material/iframe/id/QgWDn3pt/width/800/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="800px" height="500px" style="border:0px;"> </iframe>
@@ -274,26 +281,36 @@ Let's say you know the area and the base, but are asked for the height, or you k
 
 Image('images/TriQ4.png',width=300,height=200)
 
-Let's look at the formula: $$ \text{Area of triangle} = \frac{\text{base} \times \text{height}}{2}$$
+Let's look at the formula: 
 
-Now let's plug in all the values we know into the formula: $$11.2 \text{ mm}^2 = \frac{7 \text{ mm} \times \text{height}}{2}$$
+$$ \text{Area of triangle} = \frac{\text{base} \times \text{height}}{2}$$
+
+Now let's plug in all the values we know into the formula: 
+
+$$11.2 \text{ mm}^2 = \frac{7 \text{ mm} \times \text{height}}{2}$$
 
 This looks a lot different than when all the numbers we know are on one side of the equals sign, so let's solve this equation for height which will put all the numbers on one side of the equals sign and height will be the only thing on the other side of the equals sign. 
 
 *Don't forget, to keep the meaning of the equation the same, any operation you do on one side, you must do it to the other.*
 
-$$ \begin{align*}
+$$ 
+\begin{align*}
 11.2 \text{ mm}^2 & = \frac{7 \text{ mm} \times \text{height}}{2}\\
 11.2 \text{ mm}^2 \times 2 & = \frac{7 \text{ mm} \times \text{height}}{2\!\!\!\!\diagup}\times 2\!\!\!\!\diagup \tag{multiply by 2 to cancel out the division}\\[4pt]
 (11.2 \text{ mm}^2 \times 2) \div 7 \text{ mm} & = 7\!\!\!\!\diagup \text{ mm} \times \text{height} \div 7\!\!\!\!\diagup \text{ mm} \tag{divide by 7 mm to cancel out the base}\\[4pt]
 (11.2 \text{ mm}^2 \times 2) \div 7 \text{ mm} & = \text{height} \tag{Solve}\\[4pt]
 22.4 \text{ mm}^2\!\!\!\!\diagup \div 7 \text{ mm}\!\!\!\!\diagup & = \text{height} \tag{cancel units}\\[4pt]
 3.2 \text{ mm} & = \text{height}
-\end{align*}$$
+\end{align*}
+$$
 
-At the step with the comment "Solve" on it, that step actually shows us the formula for height when you know the base and area. Let's remove the values from that step to see what the formula is in general: $$\frac{\text{Area of triangle} \times 2}{\text{base}} = \text{height}$$
+At the step with the comment "Solve" on it, that step actually shows us the formula for height when you know the base and area. Let's remove the values from that step to see what the formula is in general: 
 
-This can also be written with height on the left and the formula on the right: $$\text{height} = \frac{\text{Area of triangle} \times 2}{\text{base}}$$
+$$\frac{\text{Area of triangle} \times 2}{\text{base}} = \text{height}$$
+
+This can also be written with height on the left and the formula on the right: 
+
+$$\text{height} = \frac{\text{Area of triangle} \times 2}{\text{base}}$$
 
 ### What about the other way?
 
@@ -305,7 +322,8 @@ Let's use the same steps as the last example to solve this one.
 
 *Don't forget, to keep the meaning of the equation the same, any operation you do on one side, you must do it to the other.* 
 
-$$\begin{align*}
+$$
+\begin{align*}
 \text{Area of triangle} & = \frac{\text{base} \times \text{height}}{2}\\
 7.5 \text{ cm}^2 & = \frac{\text{base} \times 5 \text{ cm}}{2} \tag{plug in values}\\[4pt]
 7.5 \text{ cm}^2 \times 2 & = \frac{\text{base} \times 5 \text{ cm}}{2\!\!\!\!\diagup}\times 2\!\!\!\!\diagup \tag{multiply by 2 to cancel out the division}\\[4pt]
@@ -313,11 +331,16 @@ $$\begin{align*}
 (7.5 \text{ cm}^2 \times 2) \div 5 \text{ cm} & = \text{base} \tag{Solve}\\[4pt]
 15 \text{ cm}^2\!\!\!\!\diagup \div 5 \text{ cm}\!\!\!\!\diagup & = \text{base} \tag{cancel units}\\
 3 \text{ cm} & = \text{base}
-\end{align*}$$
+\end{align*}
+$$
 
-Now let's get the general formula from the "Solve" step: $$\frac{\text{Area of triangle} \times 2}{\text{height}} = \text{base}$$
+Now let's get the general formula from the "Solve" step: 
 
-This can also be written with base on the left and the formula on the right: $$\text{base} = \frac{\text{Area of triangle} \times 2}{\text{height}}$$
+$$\frac{\text{Area of triangle} \times 2}{\text{height}} = \text{base}$$
+
+This can also be written with base on the left and the formula on the right: 
+
+$$\text{base} = \frac{\text{Area of triangle} \times 2}{\text{height}}$$
 
 ### Practice Questions
 

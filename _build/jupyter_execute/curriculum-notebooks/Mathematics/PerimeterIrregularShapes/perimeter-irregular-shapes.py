@@ -24,7 +24,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 import matplotlib.pyplot as plt
 import ipywidgets
 from ipywidgets import widgets, interact, interact_manual, Button, Layout
-from IPython.display import Javascript, display, Latex, clear_output, Markdown
+from IPython.display import Javascript, display, Latex, clear_output, Markdown, HTML
 
 Geometry is one of the most valuable topics of everyday life. It is important for driving, cooking, drawing, decorating, and many other tasks. It is also instinctive to human beings. Babies use geometry when deciding that circular pieces fit in circular holes. So, this notebook is describing the math behind natural activities.
 
@@ -198,7 +198,7 @@ We will begin by finding the variables that are missing. Let's begin by finding 
 
 To find the length of $x$, we will use the Pythagorean theorem. Since $x$ can be seen as the "$A$" value, $10$ as the "$B$" value, and $11$ as the "$C$" value, we can do:
 
-### $$
+$$
 \begin{align*}
 x &= \sqrt {(11\textrm{cm})^2 - (10\textrm{cm})^2} \\
 &= \sqrt {121\textrm{cm}^2 - 100\textrm{cm}^2}\\
@@ -399,25 +399,28 @@ Finally, we have to find the length of $z$:
 
 There are actually two ways to find the length of $z$:
 
-* ### The Pythagorean Method
+### The Pythagorean Method
 Here, we start by using $z$ as the "$A$" value, $4$cm as the "$B$" value, and $5$cm as the "$C$" value. Now, we can calculate for $z$ by doing: <br>
-### $$
+
+$$
 \begin{align*}
 z &= \sqrt {(5\textrm{cm})^2 - (4\textrm{cm})^2} \\
 &= \sqrt {25\textrm{cm}^2 - 16\textrm{cm}^2}\\
 &= \sqrt {9\textrm{cm}^2}
 \end{align*}
 $$
+
 So, we know that the length of $z = 3$cm
 
-
-* ### The Known Values Method
+### The Known Values Method
 Here, we start by looking at the length on the far right side of the shape. We see that it is $10$cm long. This tells us that the length of the dotted line on the left must equal $10$cm. Then, we can do: <br>
-### $$
+
+$$
 \begin{align*}
 z &= 10 - 7
 \end{align*}
 $$
+
 So, we know that the length of $z = 3$cm
 
 Now, we can add this value to our shape:
@@ -553,7 +556,9 @@ checkButton6.on_click(checkAnswer)
 
 Next, let's try finding the **area** of this shape. We will do this by taking the area of shapes we know. We will also assume that:
 
-<h3 align='center'>$\rm CM = cm^2 $</h3>
+$$
+CM = cm^2 
+$$
 
 Let's start by finding the area of the square on top:
 
@@ -573,11 +578,13 @@ Let's start by finding the area of the square on top:
 
 We should know that the **area of a square** is *the length of any side squared*:
 
-<h3 align='center'>$\rm (Length)^2 = Area $</h3>
+$$ 
+(Length)^2 = Area 
+$$
 
 So, the area of the <span style="color:red">**red square**</span> above is:
 
-### $$
+$$
 \begin{align*}
 (3\textrm{cm})^2 = 9\textrm{cm}^2
 \end{align*}
@@ -614,11 +621,13 @@ Next, we'll calculate the area of the triangle at the bottom:
 
 We should know that the **area of a triangle** is *the length times the height, divided by two*:
 
-<h3 align='center'>$\rm \frac {(Length) \times (Height)}{2} = Area $</h3>
+$$
+\frac {(Length) \times (Height)}{2} = Area 
+$$
 
 So, the area of the <span style="color:pink">**pink triangle**</span> above is:
 
-### $$
+$$
 \begin{align*}
 \frac{(10\textrm{cm}) \times (5\textrm{cm})}{2} = 25\textrm{cm}^2
 \end{align*}
@@ -683,7 +692,7 @@ Now, we'll calculate the triangle at the top left:
 
 To calculate the area of the <span style="color:hotpink">**pink triangle**</span> above, we have to find its length. This is denoted by a $x$. To do this, we have to use *the Pythagorean theorem*. We start by using $x$ as the "$A$" value, $7$cm as the "$B$" value, and $12$cm as the "$C$" value.
 
-### $$
+$$
 \begin{align*}
 x &= \sqrt {(12\textrm{cm})^2 - (7\textrm{cm})^2} \\
 &= \sqrt {144\textrm{cm}^2 - 49\textrm{cm}^2}\\
@@ -729,7 +738,7 @@ So, we know that the length of $x \approx 10$cm
 
 Now, we can calculate the area of the <span style="color:hotpink">**pink triangle**</span>:
 
-### $$
+$$
 \begin{align*}
 \rm \frac{(7cm) \times (10cm)}{2} = 35cm^2
 \end{align*}
@@ -952,7 +961,9 @@ Now, the last area you will have to find is that of a **rectangle**:
 
 To find the area of a rectangle, multiply *the height of the rectangle by the length*:
 
-<h3 align='center'>$\rm (Length) \times (Height) = Area $</h3>
+$$
+(Length) \times (Height) = Area 
+$$
 
 You must calculate the area of the <span style="color:orange">**orange rectangle**</span>:
 

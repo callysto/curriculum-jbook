@@ -3,21 +3,26 @@
 <a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
 
 %%html
-<p>The raw code for this IPython notebook is hidden for easier reading. If you want to see it, 
-<button onclick="javascript:code_toggle()">CLICK HERE TO SHOW/HIDE CODE</button> 
-</p>
+
 <script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
 </script>
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
 
 import numpy as np
 import ipywidgets as widgets
@@ -37,7 +42,7 @@ Take the equation $y=x^2$, which is the formula for a parabola. We can graph it 
 
 x = np.linspace(-4,4,200)
 fig = go.Figure(data = go.Scatter(x = x, y = x**2))
-fig.update_layout(title='$\mbox{A parabola, }y=x^2$',
+fig.update_layout(title='A parabola, y=x^2',
                    xaxis_title='x values',
                    yaxis_title='y values')
 fig.show()
@@ -57,7 +62,7 @@ fig.add_trace(go.Scatter(x=x, y=x**2 + 5,
                     mode='lines',
                     name='vertical shift'))
 
-fig.update_layout(title='$\mbox{A parabola, }y=x^2, \mbox{ and shifted up, } y=x^2 + 5$',
+fig.update_layout(title='A parabola, y=x^2, and shifted up, y=x^2 + 5',
                    xaxis_title='x values',
                    yaxis_title='y values')
 fig.show()
@@ -83,7 +88,7 @@ fig.add_trace(go.Scatter(x=[2], y=[0],
                     mode='markers',
                     name='shifted vertex'))
 
-fig.update_layout(title='$\mbox{A parabola, }y=x^2, \mbox{ and shifted right, } y=(x-2)^2$',
+fig.update_layout(title='A parabola, y=x^2, and shifted right,  y=(x-2)^2',
                    xaxis_title='x values',
                    yaxis_title='y values')
 fig.show()
@@ -216,6 +221,7 @@ fig.show()
 
 You can move your mouse cursor over the graph to get some values of the function. Let's write some values down in a table.   
 
+$$
 \begin{array}{c|c}
 x & y=f(x) \\ \hline
 -2 & -2 \\
@@ -224,9 +230,11 @@ x & y=f(x) \\ \hline
 1 & 1 \\
 2 & 2
 \end{array}
+$$
 
 Now what would happen if we added 2 to every $y$ value? For one thing, the table would now look like this:
 
+$$
 \begin{array}{c|c}
 x & y=f(x) + 2 \\ \hline
 -2 & -2 + 2 = 0 \\
@@ -235,6 +243,7 @@ x & y=f(x) + 2 \\ \hline
 1 & 1 + 2 = 3 \\
 2 & 2 + 2 = 4
 \end{array}
+$$
 
 Now how does that affect the graph? Let's plot it to find out.
 
@@ -263,7 +272,10 @@ From this graph, we can see that adding 2 to every $y$-value moved the graph of 
 Remember, we expressed this idea of 'adding 2 to every function output' very clearly using algebra. We let $y=f(x)$ be the function values, and then used the expression $f(x) + 2$ to translate every function value up by 2 units.
 
 In general, we can write the vertical translation of a function $f(x)$ by $v$ units by the expression
-$$ f(x) + v. $$
+
+$$ 
+f(x) + v. 
+$$
 
 WAIT A MINUTE!! This notation makes it seem like we can only translate functions **up**! We need to keep in mind that if we wanted to translate a function **down**, then we would select a **negative** value for $v$. The translations resulting from values of $v$ are shown in the this table: 
 
@@ -281,6 +293,7 @@ Now you're getting used to vertical translations, so let's move to the next conc
 
 Suppose we add 2 to every function input value. In other words, before we put an $x$ value into our function, we add 2 to it. The table of function inputs and outputs now looks like this:
 
+$$
 \begin{array}{c|c}
 x + 2 & y=f(x) \\ \hline
 -2+2 = 0 & -2 \\
@@ -289,6 +302,7 @@ x + 2 & y=f(x) \\ \hline
 1+2 = 3 & 1 \\
 2+2 = 4 & 2
 \end{array}
+$$
 
 Now let's plot the result of shifting the function inputs. It's ok to be uneasy about the $y$-values in the above table. We'll explain that right after we look at the graph of the translated function.
 
@@ -316,7 +330,10 @@ This plot shows something unexpected. When we added 2 to the $x$ values, the who
 Let's keep in mind what actually happened when we added 2 to the $x$ values. By adding 2 units to $x=1$, for example, we essentially told the function to take on the output value it would normally take on at $x=3$, but instead when $x=1$.
 
 In general, we can express any horizontal translation by $h$ units using the algebraic expression:
-$$ f(x-h). $$
+
+$$ 
+f(x-h). 
+$$
 
 The effects of different values of $h$ are given in this table:
 
@@ -404,12 +421,11 @@ interactive_plot
 
 ### *Exercises*
 
-<ol>
-    <li> Write the expression for translating the function $f(x) = \sqrt{x}$ **down** by 4 units and **right** by 3 units. </li>
-    <li> The graph of the function $f(x) = x^2 - 2x - 3 = (x+1)(x-3)$ touches the $x$-axis at the two points $x=-1$ and $x=3$. What vertical translation can be applied to this function so that it only touches the $x$-axis when $x=1$? </li>
-    <li> What happens to the graph of a constant function $f(x)=c$ when the function is translated horizontally? Vertically? </li>
-        <li> Write a Python function that allows the user to specify input values 'x', an output function to be translated 'f', and the vertical and horizontal translation parameters $k$ and $h$. Your function should have four inputs: x, f, $h$, and $k$. A template is provided in the next cell. Show that your function works on the function 'testf'. </li>
-</ol>
+1.  Write the expression for translating the function $f(x) = \sqrt{x}$ **down** by 4 units and **right** by 3 units. 
+2.  The graph of the function $f(x) = x^2 - 2x - 3 = (x+1)(x-3)$ touches the $x$-axis at the two points $x=-1$ and $x=3$. What vertical translation can be applied to this function so that it only touches the $x$-axis when $x=1$? 
+3.  What happens to the graph of a constant function $f(x)=c$ when the function is translated horizontally? Vertically? </li>
+4.  Write a Python function that allows the user to specify input values 'x', an output function to be translated 'f', and the vertical and horizontal translation parameters $k$ and $h$. Your function should have four inputs: x, f, $h$, and $k$. A template is provided in the next cell. Show that your function works on the function 'testf'. 
+
 
 %%html
 <button onclick="javascript:code_toggle()">CLICK HERE TO SHOW THE CODE CELL FOR THIS EXERCISE.</button> 

@@ -39,6 +39,7 @@
     <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
     <link rel="next" title="Newton’s First Law" href="../NewtonsFirstLaw/newtons-first-law.html" />
     <link rel="prev" title="Methods used in Scientific Study of the Earth" href="../MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.html" />
 
@@ -82,8 +83,8 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../README.html">
-   Curriculum Notebooks
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -274,8 +275,18 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Statistics.html">
+   Statistics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../../TechnologyStudies/Technology.html">
    Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
   </a>
  </li>
 </ul>
@@ -510,23 +521,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><script type="text/javascript">
-window.PlotlyConfig = {MathJaxConfig: 'local'};
-if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
-if (typeof require !== 'undefined') {
-require.undef("plotly");
-requirejs.config({
-    paths: {
-        'plotly': ['https://cdn.plot.ly/plotly-latest.min']
-    }
-});
-require(['plotly'], function(Plotly) {
-    window._Plotly = Plotly;
-});
-}
-</script>
-</div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -551,25 +545,6 @@ require(['plotly'], function(Plotly) {
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><script>
-  function code_toggle() {
-    if (code_shown){
-      $('div.input').hide('500');
-      $('#toggleButton').val('Show Code')
-    } else {
-      $('div.input').show('500');
-      $('#toggleButton').val('Hide Code')
-    }
-    code_shown = !code_shown
-  }
-
-  $( document ).ready(function(){
-    code_shown=false;
-    $('div.input').hide()
-  });
-</script>
-<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form></div></div>
 </div>
 <div class="section" id="the-nature-of-thermal-energy">
 <h1>The Nature of Thermal Energy<a class="headerlink" href="#the-nature-of-thermal-energy" title="Permalink to this headline">¶</a></h1>
@@ -611,13 +586,6 @@ require(['plotly'], function(Plotly) {
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div style="text-align: center">
-    <iframe width="500px" height="420px" src="animations/cube_grid.html" frameborder="0"></iframe>
-</div>
-
-</div></div>
 </div>
 </div>
 <div class="section" id="the-particles-are-constantly-moving">
@@ -633,12 +601,6 @@ require(['plotly'], function(Plotly) {
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div style="text-align: center">
-    <iframe width="450px" height="420px" src="animations/vibrating_cube.html" frameborder="0"></iframe>
-</div>
-</div></div>
 </div>
 <p><em>Side Note</em>: <strong>absolute Zero</strong></p>
 <p>The Kelvin scale is an absolute temperature scale using 0 as the point where all motion due to heat. The celsius scale on the other hand uses the freezing point of water as its zero, which corresponds to 273.15 Kelvin. This can be inconvenient for many scientists, especially when quantities have to be multiplied by temperature, thus the Kelvin scale is the international standard and is recognized as the base unit of temperature. Absolute 0 is an <em>absolute</em> since all motion for any type of matter will stop at this temperature. That being said, absolute zero is actually physically impossible to reach <a href = "https://www.sciencealert.com/after-a-century-of-debate-cooling-to-absolute-zero-has-been-declared-mathematically-impossible">Click here if you’re interested</a>. There is ongoing research on cooling matter to extremely low temperatures in order to observe its behaviour when there is nearly zero thermal motion.</p>
@@ -655,12 +617,6 @@ require(['plotly'], function(Plotly) {
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div style="text-align: center">
-    <iframe width="450px" height="420px" src="animations/particle_in_a_box.html" frameborder="0"></iframe>
-</div>
-</div></div>
 </div>
 <p>Statement 3 of the particle model offers the clearest description for the difference between temperature and heat. As the temperature inside the square increases, the particles move faster. This is because the the particles have more heat energy, but what we actually measure is temperature. The particles collide with the sides of the box more frequently. The more frequent the collisions, the higher the temperature we measure. Above is a graphic describing how the ‘particles’ that make up water might behave as they are heated.</p>
 </div>
@@ -884,776 +840,6 @@ require(['plotly'], function(Plotly) {
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">/* Put everything inside the global mpl namespace */
-window.mpl = {};
-
-
-mpl.get_websocket_type = function() {
-    if (typeof(WebSocket) !== 'undefined') {
-        return WebSocket;
-    } else if (typeof(MozWebSocket) !== 'undefined') {
-        return MozWebSocket;
-    } else {
-        alert('Your browser does not have WebSocket support. ' +
-              'Please try Chrome, Safari or Firefox ≥ 6. ' +
-              'Firefox 4 and 5 are also supported but you ' +
-              'have to enable WebSockets in about:config.');
-    };
-}
-
-mpl.figure = function(figure_id, websocket, ondownload, parent_element) {
-    this.id = figure_id;
-
-    this.ws = websocket;
-
-    this.supports_binary = (this.ws.binaryType != undefined);
-
-    if (!this.supports_binary) {
-        var warnings = document.getElementById("mpl-warnings");
-        if (warnings) {
-            warnings.style.display = 'block';
-            warnings.textContent = (
-                "This browser does not support binary websocket messages. " +
-                    "Performance may be slow.");
-        }
-    }
-
-    this.imageObj = new Image();
-
-    this.context = undefined;
-    this.message = undefined;
-    this.canvas = undefined;
-    this.rubberband_canvas = undefined;
-    this.rubberband_context = undefined;
-    this.format_dropdown = undefined;
-
-    this.image_mode = 'full';
-
-    this.root = $('<div/>');
-    this._root_extra_style(this.root)
-    this.root.attr('style', 'display: inline-block');
-
-    $(parent_element).append(this.root);
-
-    this._init_header(this);
-    this._init_canvas(this);
-    this._init_toolbar(this);
-
-    var fig = this;
-
-    this.waiting = false;
-
-    this.ws.onopen =  function () {
-            fig.send_message("supports_binary", {value: fig.supports_binary});
-            fig.send_message("send_image_mode", {});
-            if (mpl.ratio != 1) {
-                fig.send_message("set_dpi_ratio", {'dpi_ratio': mpl.ratio});
-            }
-            fig.send_message("refresh", {});
-        }
-
-    this.imageObj.onload = function() {
-            if (fig.image_mode == 'full') {
-                // Full images could contain transparency (where diff images
-                // almost always do), so we need to clear the canvas so that
-                // there is no ghosting.
-                fig.context.clearRect(0, 0, fig.canvas.width, fig.canvas.height);
-            }
-            fig.context.drawImage(fig.imageObj, 0, 0);
-        };
-
-    this.imageObj.onunload = function() {
-        fig.ws.close();
-    }
-
-    this.ws.onmessage = this._make_on_message_function(this);
-
-    this.ondownload = ondownload;
-}
-
-mpl.figure.prototype._init_header = function() {
-    var titlebar = $(
-        '<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ' +
-        'ui-helper-clearfix"/>');
-    var titletext = $(
-        '<div class="ui-dialog-title" style="width: 100%; ' +
-        'text-align: center; padding: 3px;"/>');
-    titlebar.append(titletext)
-    this.root.append(titlebar);
-    this.header = titletext[0];
-}
-
-
-
-mpl.figure.prototype._canvas_extra_style = function(canvas_div) {
-
-}
-
-
-mpl.figure.prototype._root_extra_style = function(canvas_div) {
-
-}
-
-mpl.figure.prototype._init_canvas = function() {
-    var fig = this;
-
-    var canvas_div = $('<div/>');
-
-    canvas_div.attr('style', 'position: relative; clear: both; outline: 0');
-
-    function canvas_keyboard_event(event) {
-        return fig.key_event(event, event['data']);
-    }
-
-    canvas_div.keydown('key_press', canvas_keyboard_event);
-    canvas_div.keyup('key_release', canvas_keyboard_event);
-    this.canvas_div = canvas_div
-    this._canvas_extra_style(canvas_div)
-    this.root.append(canvas_div);
-
-    var canvas = $('<canvas/>');
-    canvas.addClass('mpl-canvas');
-    canvas.attr('style', "left: 0; top: 0; z-index: 0; outline: 0")
-
-    this.canvas = canvas[0];
-    this.context = canvas[0].getContext("2d");
-
-    var backingStore = this.context.backingStorePixelRatio ||
-	this.context.webkitBackingStorePixelRatio ||
-	this.context.mozBackingStorePixelRatio ||
-	this.context.msBackingStorePixelRatio ||
-	this.context.oBackingStorePixelRatio ||
-	this.context.backingStorePixelRatio || 1;
-
-    mpl.ratio = (window.devicePixelRatio || 1) / backingStore;
-
-    var rubberband = $('<canvas/>');
-    rubberband.attr('style', "position: absolute; left: 0; top: 0; z-index: 1;")
-
-    var pass_mouse_events = true;
-
-    canvas_div.resizable({
-        start: function(event, ui) {
-            pass_mouse_events = false;
-        },
-        resize: function(event, ui) {
-            fig.request_resize(ui.size.width, ui.size.height);
-        },
-        stop: function(event, ui) {
-            pass_mouse_events = true;
-            fig.request_resize(ui.size.width, ui.size.height);
-        },
-    });
-
-    function mouse_event_fn(event) {
-        if (pass_mouse_events)
-            return fig.mouse_event(event, event['data']);
-    }
-
-    rubberband.mousedown('button_press', mouse_event_fn);
-    rubberband.mouseup('button_release', mouse_event_fn);
-    // Throttle sequential mouse events to 1 every 20ms.
-    rubberband.mousemove('motion_notify', mouse_event_fn);
-
-    rubberband.mouseenter('figure_enter', mouse_event_fn);
-    rubberband.mouseleave('figure_leave', mouse_event_fn);
-
-    canvas_div.on("wheel", function (event) {
-        event = event.originalEvent;
-        event['data'] = 'scroll'
-        if (event.deltaY < 0) {
-            event.step = 1;
-        } else {
-            event.step = -1;
-        }
-        mouse_event_fn(event);
-    });
-
-    canvas_div.append(canvas);
-    canvas_div.append(rubberband);
-
-    this.rubberband = rubberband;
-    this.rubberband_canvas = rubberband[0];
-    this.rubberband_context = rubberband[0].getContext("2d");
-    this.rubberband_context.strokeStyle = "#000000";
-
-    this._resize_canvas = function(width, height) {
-        // Keep the size of the canvas, canvas container, and rubber band
-        // canvas in synch.
-        canvas_div.css('width', width)
-        canvas_div.css('height', height)
-
-        canvas.attr('width', width * mpl.ratio);
-        canvas.attr('height', height * mpl.ratio);
-        canvas.attr('style', 'width: ' + width + 'px; height: ' + height + 'px;');
-
-        rubberband.attr('width', width);
-        rubberband.attr('height', height);
-    }
-
-    // Set the figure to an initial 600x600px, this will subsequently be updated
-    // upon first draw.
-    this._resize_canvas(600, 600);
-
-    // Disable right mouse context menu.
-    $(this.rubberband_canvas).bind("contextmenu",function(e){
-        return false;
-    });
-
-    function set_focus () {
-        canvas.focus();
-        canvas_div.focus();
-    }
-
-    window.setTimeout(set_focus, 100);
-}
-
-mpl.figure.prototype._init_toolbar = function() {
-    var fig = this;
-
-    var nav_element = $('<div/>');
-    nav_element.attr('style', 'width: 100%');
-    this.root.append(nav_element);
-
-    // Define a callback function for later on.
-    function toolbar_event(event) {
-        return fig.toolbar_button_onclick(event['data']);
-    }
-    function toolbar_mouse_event(event) {
-        return fig.toolbar_button_onmouseover(event['data']);
-    }
-
-    for(var toolbar_ind in mpl.toolbar_items) {
-        var name = mpl.toolbar_items[toolbar_ind][0];
-        var tooltip = mpl.toolbar_items[toolbar_ind][1];
-        var image = mpl.toolbar_items[toolbar_ind][2];
-        var method_name = mpl.toolbar_items[toolbar_ind][3];
-
-        if (!name) {
-            // put a spacer in here.
-            continue;
-        }
-        var button = $('<button/>');
-        button.addClass('ui-button ui-widget ui-state-default ui-corner-all ' +
-                        'ui-button-icon-only');
-        button.attr('role', 'button');
-        button.attr('aria-disabled', 'false');
-        button.click(method_name, toolbar_event);
-        button.mouseover(tooltip, toolbar_mouse_event);
-
-        var icon_img = $('<span/>');
-        icon_img.addClass('ui-button-icon-primary ui-icon');
-        icon_img.addClass(image);
-        icon_img.addClass('ui-corner-all');
-
-        var tooltip_span = $('<span/>');
-        tooltip_span.addClass('ui-button-text');
-        tooltip_span.html(tooltip);
-
-        button.append(icon_img);
-        button.append(tooltip_span);
-
-        nav_element.append(button);
-    }
-
-    var fmt_picker_span = $('<span/>');
-
-    var fmt_picker = $('<select/>');
-    fmt_picker.addClass('mpl-toolbar-option ui-widget ui-widget-content');
-    fmt_picker_span.append(fmt_picker);
-    nav_element.append(fmt_picker_span);
-    this.format_dropdown = fmt_picker[0];
-
-    for (var ind in mpl.extensions) {
-        var fmt = mpl.extensions[ind];
-        var option = $(
-            '<option/>', {selected: fmt === mpl.default_extension}).html(fmt);
-        fmt_picker.append(option);
-    }
-
-    // Add hover states to the ui-buttons
-    $( ".ui-button" ).hover(
-        function() { $(this).addClass("ui-state-hover");},
-        function() { $(this).removeClass("ui-state-hover");}
-    );
-
-    var status_bar = $('<span class="mpl-message"/>');
-    nav_element.append(status_bar);
-    this.message = status_bar[0];
-}
-
-mpl.figure.prototype.request_resize = function(x_pixels, y_pixels) {
-    // Request matplotlib to resize the figure. Matplotlib will then trigger a resize in the client,
-    // which will in turn request a refresh of the image.
-    this.send_message('resize', {'width': x_pixels, 'height': y_pixels});
-}
-
-mpl.figure.prototype.send_message = function(type, properties) {
-    properties['type'] = type;
-    properties['figure_id'] = this.id;
-    this.ws.send(JSON.stringify(properties));
-}
-
-mpl.figure.prototype.send_draw_message = function() {
-    if (!this.waiting) {
-        this.waiting = true;
-        this.ws.send(JSON.stringify({type: "draw", figure_id: this.id}));
-    }
-}
-
-
-mpl.figure.prototype.handle_save = function(fig, msg) {
-    var format_dropdown = fig.format_dropdown;
-    var format = format_dropdown.options[format_dropdown.selectedIndex].value;
-    fig.ondownload(fig, format);
-}
-
-
-mpl.figure.prototype.handle_resize = function(fig, msg) {
-    var size = msg['size'];
-    if (size[0] != fig.canvas.width || size[1] != fig.canvas.height) {
-        fig._resize_canvas(size[0], size[1]);
-        fig.send_message("refresh", {});
-    };
-}
-
-mpl.figure.prototype.handle_rubberband = function(fig, msg) {
-    var x0 = msg['x0'] / mpl.ratio;
-    var y0 = (fig.canvas.height - msg['y0']) / mpl.ratio;
-    var x1 = msg['x1'] / mpl.ratio;
-    var y1 = (fig.canvas.height - msg['y1']) / mpl.ratio;
-    x0 = Math.floor(x0) + 0.5;
-    y0 = Math.floor(y0) + 0.5;
-    x1 = Math.floor(x1) + 0.5;
-    y1 = Math.floor(y1) + 0.5;
-    var min_x = Math.min(x0, x1);
-    var min_y = Math.min(y0, y1);
-    var width = Math.abs(x1 - x0);
-    var height = Math.abs(y1 - y0);
-
-    fig.rubberband_context.clearRect(
-        0, 0, fig.canvas.width / mpl.ratio, fig.canvas.height / mpl.ratio);
-
-    fig.rubberband_context.strokeRect(min_x, min_y, width, height);
-}
-
-mpl.figure.prototype.handle_figure_label = function(fig, msg) {
-    // Updates the figure title.
-    fig.header.textContent = msg['label'];
-}
-
-mpl.figure.prototype.handle_cursor = function(fig, msg) {
-    var cursor = msg['cursor'];
-    switch(cursor)
-    {
-    case 0:
-        cursor = 'pointer';
-        break;
-    case 1:
-        cursor = 'default';
-        break;
-    case 2:
-        cursor = 'crosshair';
-        break;
-    case 3:
-        cursor = 'move';
-        break;
-    }
-    fig.rubberband_canvas.style.cursor = cursor;
-}
-
-mpl.figure.prototype.handle_message = function(fig, msg) {
-    fig.message.textContent = msg['message'];
-}
-
-mpl.figure.prototype.handle_draw = function(fig, msg) {
-    // Request the server to send over a new figure.
-    fig.send_draw_message();
-}
-
-mpl.figure.prototype.handle_image_mode = function(fig, msg) {
-    fig.image_mode = msg['mode'];
-}
-
-mpl.figure.prototype.updated_canvas_event = function() {
-    // Called whenever the canvas gets updated.
-    this.send_message("ack", {});
-}
-
-// A function to construct a web socket function for onmessage handling.
-// Called in the figure constructor.
-mpl.figure.prototype._make_on_message_function = function(fig) {
-    return function socket_on_message(evt) {
-        if (evt.data instanceof Blob) {
-            /* FIXME: We get "Resource interpreted as Image but
-             * transferred with MIME type text/plain:" errors on
-             * Chrome.  But how to set the MIME type?  It doesn't seem
-             * to be part of the websocket stream */
-            evt.data.type = "image/png";
-
-            /* Free the memory for the previous frames */
-            if (fig.imageObj.src) {
-                (window.URL || window.webkitURL).revokeObjectURL(
-                    fig.imageObj.src);
-            }
-
-            fig.imageObj.src = (window.URL || window.webkitURL).createObjectURL(
-                evt.data);
-            fig.updated_canvas_event();
-            fig.waiting = false;
-            return;
-        }
-        else if (typeof evt.data === 'string' && evt.data.slice(0, 21) == "data:image/png;base64") {
-            fig.imageObj.src = evt.data;
-            fig.updated_canvas_event();
-            fig.waiting = false;
-            return;
-        }
-
-        var msg = JSON.parse(evt.data);
-        var msg_type = msg['type'];
-
-        // Call the  "handle_{type}" callback, which takes
-        // the figure and JSON message as its only arguments.
-        try {
-            var callback = fig["handle_" + msg_type];
-        } catch (e) {
-            console.log("No handler for the '" + msg_type + "' message type: ", msg);
-            return;
-        }
-
-        if (callback) {
-            try {
-                // console.log("Handling '" + msg_type + "' message: ", msg);
-                callback(fig, msg);
-            } catch (e) {
-                console.log("Exception inside the 'handler_" + msg_type + "' callback:", e, e.stack, msg);
-            }
-        }
-    };
-}
-
-// from http://stackoverflow.com/questions/1114465/getting-mouse-location-in-canvas
-mpl.findpos = function(e) {
-    //this section is from http://www.quirksmode.org/js/events_properties.html
-    var targ;
-    if (!e)
-        e = window.event;
-    if (e.target)
-        targ = e.target;
-    else if (e.srcElement)
-        targ = e.srcElement;
-    if (targ.nodeType == 3) // defeat Safari bug
-        targ = targ.parentNode;
-
-    // jQuery normalizes the pageX and pageY
-    // pageX,Y are the mouse positions relative to the document
-    // offset() returns the position of the element relative to the document
-    var x = e.pageX - $(targ).offset().left;
-    var y = e.pageY - $(targ).offset().top;
-
-    return {"x": x, "y": y};
-};
-
-/*
- * return a copy of an object with only non-object keys
- * we need this to avoid circular references
- * http://stackoverflow.com/a/24161582/3208463
- */
-function simpleKeys (original) {
-  return Object.keys(original).reduce(function (obj, key) {
-    if (typeof original[key] !== 'object')
-        obj[key] = original[key]
-    return obj;
-  }, {});
-}
-
-mpl.figure.prototype.mouse_event = function(event, name) {
-    var canvas_pos = mpl.findpos(event)
-
-    if (name === 'button_press')
-    {
-        this.canvas.focus();
-        this.canvas_div.focus();
-    }
-
-    var x = canvas_pos.x * mpl.ratio;
-    var y = canvas_pos.y * mpl.ratio;
-
-    this.send_message(name, {x: x, y: y, button: event.button,
-                             step: event.step,
-                             guiEvent: simpleKeys(event)});
-
-    /* This prevents the web browser from automatically changing to
-     * the text insertion cursor when the button is pressed.  We want
-     * to control all of the cursor setting manually through the
-     * 'cursor' event from matplotlib */
-    event.preventDefault();
-    return false;
-}
-
-mpl.figure.prototype._key_event_extra = function(event, name) {
-    // Handle any extra behaviour associated with a key event
-}
-
-mpl.figure.prototype.key_event = function(event, name) {
-
-    // Prevent repeat events
-    if (name == 'key_press')
-    {
-        if (event.which === this._key)
-            return;
-        else
-            this._key = event.which;
-    }
-    if (name == 'key_release')
-        this._key = null;
-
-    var value = '';
-    if (event.ctrlKey && event.which != 17)
-        value += "ctrl+";
-    if (event.altKey && event.which != 18)
-        value += "alt+";
-    if (event.shiftKey && event.which != 16)
-        value += "shift+";
-
-    value += 'k';
-    value += event.which.toString();
-
-    this._key_event_extra(event, name);
-
-    this.send_message(name, {key: value,
-                             guiEvent: simpleKeys(event)});
-    return false;
-}
-
-mpl.figure.prototype.toolbar_button_onclick = function(name) {
-    if (name == 'download') {
-        this.handle_save(this, null);
-    } else {
-        this.send_message("toolbar_button", {name: name});
-    }
-};
-
-mpl.figure.prototype.toolbar_button_onmouseover = function(tooltip) {
-    this.message.textContent = tooltip;
-};
-mpl.toolbar_items = [["Home", "Reset original view", "fa fa-home icon-home", "home"], ["Back", "Back to previous view", "fa fa-arrow-left icon-arrow-left", "back"], ["Forward", "Forward to next view", "fa fa-arrow-right icon-arrow-right", "forward"], ["", "", "", ""], ["Pan", "Pan axes with left mouse, zoom with right", "fa fa-arrows icon-move", "pan"], ["Zoom", "Zoom to rectangle", "fa fa-square-o icon-check-empty", "zoom"], ["", "", "", ""], ["Download", "Download plot", "fa fa-floppy-o icon-save", "download"]];
-
-mpl.extensions = ["eps", "jpeg", "pdf", "png", "ps", "raw", "svg", "tif"];
-
-mpl.default_extension = "png";var comm_websocket_adapter = function(comm) {
-    // Create a "websocket"-like object which calls the given IPython comm
-    // object with the appropriate methods. Currently this is a non binary
-    // socket, so there is still some room for performance tuning.
-    var ws = {};
-
-    ws.close = function() {
-        comm.close()
-    };
-    ws.send = function(m) {
-        //console.log('sending', m);
-        comm.send(m);
-    };
-    // Register the callback with on_msg.
-    comm.on_msg(function(msg) {
-        //console.log('receiving', msg['content']['data'], msg);
-        // Pass the mpl event to the overridden (by mpl) onmessage function.
-        ws.onmessage(msg['content']['data'])
-    });
-    return ws;
-}
-
-mpl.mpl_figure_comm = function(comm, msg) {
-    // This is the function which gets called when the mpl process
-    // starts-up an IPython Comm through the "matplotlib" channel.
-
-    var id = msg.content.data.id;
-    // Get hold of the div created by the display call when the Comm
-    // socket was opened in Python.
-    var element = $("#" + id);
-    var ws_proxy = comm_websocket_adapter(comm)
-
-    function ondownload(figure, format) {
-        window.open(figure.imageObj.src);
-    }
-
-    var fig = new mpl.figure(id, ws_proxy,
-                           ondownload,
-                           element.get(0));
-
-    // Call onopen now - mpl needs it, as it is assuming we've passed it a real
-    // web socket which is closed, not our websocket->open comm proxy.
-    ws_proxy.onopen();
-
-    fig.parent_element = element.get(0);
-    fig.cell_info = mpl.find_output_cell("<div id='" + id + "'></div>");
-    if (!fig.cell_info) {
-        console.error("Failed to find cell for figure", id, fig);
-        return;
-    }
-
-    var output_index = fig.cell_info[2]
-    var cell = fig.cell_info[0];
-
-};
-
-mpl.figure.prototype.handle_close = function(fig, msg) {
-    var width = fig.canvas.width/mpl.ratio
-    fig.root.unbind('remove')
-
-    // Update the output cell to use the data from the current canvas.
-    fig.push_to_output();
-    var dataURL = fig.canvas.toDataURL();
-    // Re-enable the keyboard manager in IPython - without this line, in FF,
-    // the notebook keyboard shortcuts fail.
-    IPython.keyboard_manager.enable()
-    $(fig.parent_element).html('<img src="' + dataURL + '" width="' + width + '">');
-    fig.close_ws(fig, msg);
-}
-
-mpl.figure.prototype.close_ws = function(fig, msg){
-    fig.send_message('closing', msg);
-    // fig.ws.close()
-}
-
-mpl.figure.prototype.push_to_output = function(remove_interactive) {
-    // Turn the data on the canvas into data in the output cell.
-    var width = this.canvas.width/mpl.ratio
-    var dataURL = this.canvas.toDataURL();
-    this.cell_info[1]['text/html'] = '<img src="' + dataURL + '" width="' + width + '">';
-}
-
-mpl.figure.prototype.updated_canvas_event = function() {
-    // Tell IPython that the notebook contents must change.
-    IPython.notebook.set_dirty(true);
-    this.send_message("ack", {});
-    var fig = this;
-    // Wait a second, then push the new image to the DOM so
-    // that it is saved nicely (might be nice to debounce this).
-    setTimeout(function () { fig.push_to_output() }, 1000);
-}
-
-mpl.figure.prototype._init_toolbar = function() {
-    var fig = this;
-
-    var nav_element = $('<div/>');
-    nav_element.attr('style', 'width: 100%');
-    this.root.append(nav_element);
-
-    // Define a callback function for later on.
-    function toolbar_event(event) {
-        return fig.toolbar_button_onclick(event['data']);
-    }
-    function toolbar_mouse_event(event) {
-        return fig.toolbar_button_onmouseover(event['data']);
-    }
-
-    for(var toolbar_ind in mpl.toolbar_items){
-        var name = mpl.toolbar_items[toolbar_ind][0];
-        var tooltip = mpl.toolbar_items[toolbar_ind][1];
-        var image = mpl.toolbar_items[toolbar_ind][2];
-        var method_name = mpl.toolbar_items[toolbar_ind][3];
-
-        if (!name) { continue; };
-
-        var button = $('<button class="btn btn-default" href="#" title="' + name + '"><i class="fa ' + image + ' fa-lg"></i></button>');
-        button.click(method_name, toolbar_event);
-        button.mouseover(tooltip, toolbar_mouse_event);
-        nav_element.append(button);
-    }
-
-    // Add the status bar.
-    var status_bar = $('<span class="mpl-message" style="text-align:right; float: right;"/>');
-    nav_element.append(status_bar);
-    this.message = status_bar[0];
-
-    // Add the close button to the window.
-    var buttongrp = $('<div class="btn-group inline pull-right"></div>');
-    var button = $('<button class="btn btn-mini btn-primary" href="#" title="Stop Interaction"><i class="fa fa-power-off icon-remove icon-large"></i></button>');
-    button.click(function (evt) { fig.handle_close(fig, {}); } );
-    button.mouseover('Stop Interaction', toolbar_mouse_event);
-    buttongrp.append(button);
-    var titlebar = this.root.find($('.ui-dialog-titlebar'));
-    titlebar.prepend(buttongrp);
-}
-
-mpl.figure.prototype._root_extra_style = function(el){
-    var fig = this
-    el.on("remove", function(){
-	fig.close_ws(fig, {});
-    });
-}
-
-mpl.figure.prototype._canvas_extra_style = function(el){
-    // this is important to make the div 'focusable
-    el.attr('tabindex', 0)
-    // reach out to IPython and tell the keyboard manager to turn it's self
-    // off when our div gets focus
-
-    // location in version 3
-    if (IPython.notebook.keyboard_manager) {
-        IPython.notebook.keyboard_manager.register_events(el);
-    }
-    else {
-        // location in version 2
-        IPython.keyboard_manager.register_events(el);
-    }
-
-}
-
-mpl.figure.prototype._key_event_extra = function(event, name) {
-    var manager = IPython.notebook.keyboard_manager;
-    if (!manager)
-        manager = IPython.keyboard_manager;
-
-    // Check for shift+enter
-    if (event.shiftKey && event.which == 13) {
-        this.canvas_div.blur();
-        // select the cell after this one
-        var index = IPython.notebook.find_cell_index(this.cell_info[0]);
-        IPython.notebook.select(index + 1);
-    }
-}
-
-mpl.figure.prototype.handle_save = function(fig, msg) {
-    fig.ondownload(fig, null);
-}
-
-
-mpl.find_output_cell = function(html_output) {
-    // Return the cell and output element which can be found *uniquely* in the notebook.
-    // Note - this is a bit hacky, but it is done because the "notebook_saving.Notebook"
-    // IPython event is triggered only after the cells have been serialised, which for
-    // our purposes (turning an active figure into a static one), is too late.
-    var cells = IPython.notebook.get_cells();
-    var ncells = cells.length;
-    for (var i=0; i<ncells; i++) {
-        var cell = cells[i];
-        if (cell.cell_type === 'code'){
-            for (var j=0; j<cell.output_area.outputs.length; j++) {
-                var data = cell.output_area.outputs[j];
-                if (data.data) {
-                    // IPython >= 3 moved mimebundle to data attribute of output
-                    data = data.data;
-                }
-                if (data['text/html'] == html_output) {
-                    return [cell, data, j];
-                }
-            }
-        }
-    }
-}
-
-// Register the function which deals with the matplotlib target/channel.
-// The kernel may be null if the page has been refreshed.
-if (IPython.notebook.kernel != null) {
-    IPython.notebook.kernel.comm_manager.register_target('matplotlib', mpl.mpl_figure_comm);
-}
-</script><div class="output text_html"><div id='16c44eb4-8165-4a95-a1f2-d15dfae9f603'></div></div><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "d95c2d416fd047239238e0f7496bd4e9"}
-</script></div>
 </div>
 </div>
 <div class="section" id="visualizing-the-changes-of-state">
@@ -1670,13 +856,6 @@ if (IPython.notebook.kernel != null) {
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div style="text-align: center">
-    <iframe width="500px" height="420px" src="animations/changes_of_state.html" frameborder="0"></iframe>
-</div>
-
-</div></div>
 </div>
 </div>
 </div>
@@ -1704,11 +883,6 @@ if (IPython.notebook.kernel != null) {
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div style="text-align: center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vqDbMEdLiCs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-</div></div>
 </div>
 </div>
 </div>
@@ -1840,32 +1014,6 @@ if (IPython.notebook.kernel != null) {
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<ol class="simple">
-<li><p>After you turn on the stove, you hold your hand above the stove and it feels hot.</p></li>
-</ol>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "2c4aa8616ac94b5c809f146979643e3f"}
-</script><ol class="simple">
-<li><p>The pot starts to heat up when placed on the stove.</p></li>
-</ol>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "6616a9963eab4364ab29ce9d238cc528"}
-</script><ol class="simple">
-<li><p>Hot water rises to the surface of the pot.</p></li>
-</ol>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "74f30289e9ff4dda8f6eeaa7ec096aba"}
-</script><ol class="simple">
-<li><p>Steam from the pot feels hot on your hand. (Somewhat tricky)</p></li>
-</ol>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "a8f02607a9b44191bf5bb447bd57c95f"}
-</script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "c79d9a6694f04522a91b541a04aa366e"}
-</script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "7a965a03873043a69e6d5f9fe697c5ec"}
-</script></div>
 </div>
 </div>
 <div class="section" id="center-refrigerator-center">
@@ -1962,32 +1110,6 @@ if (IPython.notebook.kernel != null) {
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<ol class="simple">
-<li><p>Hot air is pumped out of the food compartment</p></li>
-</ol>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "7b3c97cbd4bf4b309f1d71910692797f"}
-</script><ol class="simple">
-<li><p>You grab a cold popsicle out of the refrigerator. It feels cold on your hand.</p></li>
-</ol>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "bba62579c14544a1a1348f2799358396"}
-</script><ol class="simple">
-<li><p>How did the popsicle get cold? How did it transfer heat energy while sitting in the refrigerator?</p></li>
-</ol>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "cd5238524e284ed6a9ef6e16615f9aed"}
-</script><ol class="simple">
-<li><p>You open the refrigerator door and it feels cold inside.</p></li>
-</ol>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "55de7f4b758944cb88cf18c4d8c82427"}
-</script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "3843289bf6f34067b4d8aef6b0aacdf6"}
-</script><script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "0aec36e136874f3e842744a5c897e94e"}
-</script></div>
 </div>
 </div>
 <div class="section" id="conclusion">
@@ -2013,12 +1135,6 @@ You also learned the different changes of state of matter. If you don’t feel l
 <p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
 </div>
 </div>
-
-
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"0f6e885236a1467f813942595a624b31": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "30%"}}, "0654c8e73a5b4a12b9bad2bd557282d6": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "d95c2d416fd047239238e0f7496bd4e9": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Play Memory Game", "disabled": false, "icon": "", "layout": "IPY_MODEL_0f6e885236a1467f813942595a624b31", "style": "IPY_MODEL_0654c8e73a5b4a12b9bad2bd557282d6", "tooltip": ""}}, "8ea6b505a21247ba87279ed13e2ab0b5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "30%"}}, "d69d3421cad3406bb5091216478aa828": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "eca306b7c8e74827952b467401a31b7f": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Reset Game", "disabled": false, "icon": "", "layout": "IPY_MODEL_8ea6b505a21247ba87279ed13e2ab0b5", "style": "IPY_MODEL_d69d3421cad3406bb5091216478aa828", "tooltip": ""}}, "85982a36acdc4125a04e73dbdde2a7dc": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "abe9a9c03d5944c189dc81d1df143c75": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "88a6613f608b40659f856cc72e3800a1": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Melting", "Freezing", "Condensation", "Vaporization", "Deposition", "Sublimation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "1?", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_85982a36acdc4125a04e73dbdde2a7dc", "style": "IPY_MODEL_abe9a9c03d5944c189dc81d1df143c75"}}, "92dc4048449d4e46b26adddcd61fdce6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4d8f10ee61494e33ae39432f66471240": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "69925d17bcb444158e2e9445b91f676a": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Melting", "Freezing", "Condensation", "Vaporization", "Deposition", "Sublimation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "2?", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_92dc4048449d4e46b26adddcd61fdce6", "style": "IPY_MODEL_4d8f10ee61494e33ae39432f66471240"}}, "413f92bed4ed477ba9b182a72a91e113": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9ca02001f7bd401faa8384d90d5b5b80": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "40251009be3040fea5ca512d833aa0b2": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Melting", "Freezing", "Condensation", "Vaporization", "Deposition", "Sublimation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "3?", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_413f92bed4ed477ba9b182a72a91e113", "style": "IPY_MODEL_9ca02001f7bd401faa8384d90d5b5b80"}}, "a5cdcf847eca47e18e9e3ae4e129ec22": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2ab3c44a912541549ee1c1f20334f9f9": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "e19e1473b1b046ffa7d93a4006413bd9": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Melting", "Freezing", "Condensation", "Vaporization", "Deposition", "Sublimation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "4?", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_a5cdcf847eca47e18e9e3ae4e129ec22", "style": "IPY_MODEL_2ab3c44a912541549ee1c1f20334f9f9"}}, "4717e35fb533453ab1e8ed8ee836ceea": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c77e882630ba4c338938c265ce0e7b82": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "d3caea4eb6b44e79aea6be0902b28b15": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Melting", "Freezing", "Condensation", "Vaporization", "Deposition", "Sublimation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "5?", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_4717e35fb533453ab1e8ed8ee836ceea", "style": "IPY_MODEL_c77e882630ba4c338938c265ce0e7b82"}}, "90f2d9c605be4041af0c2bc05285a016": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b29fc8a0c3074c83ad36506cd51216de": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "c50554005c154b4ca362f68768fa13e5": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Melting", "Freezing", "Condensation", "Vaporization", "Deposition", "Sublimation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "6?", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_90f2d9c605be4041af0c2bc05285a016", "style": "IPY_MODEL_b29fc8a0c3074c83ad36506cd51216de"}}, "5fdc227ad7334ac9b871a979639e5c0a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "415cc624f34d4a858c5ba5a5a4d154a4": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_88a6613f608b40659f856cc72e3800a1", "IPY_MODEL_69925d17bcb444158e2e9445b91f676a", "IPY_MODEL_40251009be3040fea5ca512d833aa0b2"], "layout": "IPY_MODEL_5fdc227ad7334ac9b871a979639e5c0a"}}, "344f4a2dedca45b2bf663eca8f10cd69": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2d27d8df9e8d49799c5050129d116dae": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_e19e1473b1b046ffa7d93a4006413bd9", "IPY_MODEL_d3caea4eb6b44e79aea6be0902b28b15", "IPY_MODEL_c50554005c154b4ca362f68768fa13e5"], "layout": "IPY_MODEL_344f4a2dedca45b2bf663eca8f10cd69"}}, "04fbf412e893454db156342d6ede5cda": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "30%"}}, "d3cc8db1acf54018ac02f22534ef4806": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "390dddabc901437d91781704254991f3": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check your answers", "disabled": false, "icon": "", "layout": "IPY_MODEL_04fbf412e893454db156342d6ede5cda", "style": "IPY_MODEL_d3cc8db1acf54018ac02f22534ef4806", "tooltip": ""}}, "78984d8728db43998b54b3cf76b3d55c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "30%"}}, "f340fd77ea9f4097bfa608cb726bfdb8": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "5c26e67c1fb84f8c9d7e5a1cab551efc": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Play Again", "disabled": false, "icon": "", "layout": "IPY_MODEL_78984d8728db43998b54b3cf76b3d55c", "style": "IPY_MODEL_f340fd77ea9f4097bfa608cb726bfdb8", "tooltip": ""}}, "06841cd5764d4980b700beee9d3f211e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b7cd61dd52564df3a6f1495b81850a68": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "2c4aa8616ac94b5c809f146979643e3f": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Conduction", "Convection", "Radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_06841cd5764d4980b700beee9d3f211e", "style": "IPY_MODEL_b7cd61dd52564df3a6f1495b81850a68"}}, "3a2325b2788d43098a1945783e5844a8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "47b7f0f4562d4516a484e7e819d3e8ce": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "6616a9963eab4364ab29ce9d238cc528": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Conduction", "Convection", "Radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_3a2325b2788d43098a1945783e5844a8", "style": "IPY_MODEL_47b7f0f4562d4516a484e7e819d3e8ce"}}, "d3cb257511ff4e73ac20249cc46bfb5b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "701792727716443e96e3fcf80d5c0f8c": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "74f30289e9ff4dda8f6eeaa7ec096aba": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Conduction", "Convection", "Radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_d3cb257511ff4e73ac20249cc46bfb5b", "style": "IPY_MODEL_701792727716443e96e3fcf80d5c0f8c"}}, "1f59716f343e4d8191aed3cc615c5891": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f49bda58eb02438b8f99de6836b9a434": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "a8f02607a9b44191bf5bb447bd57c95f": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Conduction", "Convection", "Radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_1f59716f343e4d8191aed3cc615c5891", "style": "IPY_MODEL_f49bda58eb02438b8f99de6836b9a434"}}, "05642f7c924d49a888fe8a2e61a6f276": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "30%"}}, "ca65986e08014fb4af8ec010abd25856": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "c79d9a6694f04522a91b541a04aa366e": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check your answers", "disabled": false, "icon": "", "layout": "IPY_MODEL_05642f7c924d49a888fe8a2e61a6f276", "style": "IPY_MODEL_ca65986e08014fb4af8ec010abd25856", "tooltip": ""}}, "1a400ef347a44013a3f82e33dda88066": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7a965a03873043a69e6d5f9fe697c5ec": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_1a400ef347a44013a3f82e33dda88066", "msg_id": "", "outputs": []}}, "020a0b6c5278416e9ba05f8a91b2696e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "52e509ace7a540d89b8d47ecd04b0b34": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "7b3c97cbd4bf4b309f1d71910692797f": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Conduction", "Convection", "Radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_020a0b6c5278416e9ba05f8a91b2696e", "style": "IPY_MODEL_52e509ace7a540d89b8d47ecd04b0b34"}}, "562fa0607ef741c4bd976f105ddf38cb": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "eb30e3d130ff44e8a535907a67c751b9": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "bba62579c14544a1a1348f2799358396": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Conduction", "Convection", "Radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_562fa0607ef741c4bd976f105ddf38cb", "style": "IPY_MODEL_eb30e3d130ff44e8a535907a67c751b9"}}, "6fd0ec8f08f542469897f0ddcd453f27": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "dfac7b1f923a448083e18497807e3901": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "cd5238524e284ed6a9ef6e16615f9aed": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Conduction", "Convection", "Radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_6fd0ec8f08f542469897f0ddcd453f27", "style": "IPY_MODEL_dfac7b1f923a448083e18497807e3901"}}, "9d400d0f01534031aeef191a89bdf7ab": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3230d7ae4b3c405ca272855ab1229bf9": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "55de7f4b758944cb88cf18c4d8c82427": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Conduction", "Convection", "Radiation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "RadioButtonsView", "description": "", "description_tooltip": null, "disabled": false, "index": null, "layout": "IPY_MODEL_9d400d0f01534031aeef191a89bdf7ab", "style": "IPY_MODEL_3230d7ae4b3c405ca272855ab1229bf9"}}, "8846674e052343ebbbd1976a0e87f8d4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "60px", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "30%"}}, "283495f5db0e4491964eccc245f29ecf": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "3843289bf6f34067b4d8aef6b0aacdf6": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "info", "description": "Check your answers", "disabled": false, "icon": "", "layout": "IPY_MODEL_8846674e052343ebbbd1976a0e87f8d4", "style": "IPY_MODEL_283495f5db0e4491964eccc245f29ecf", "tooltip": ""}}, "49a5b410bfec42aebf2a828427669be6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0aec36e136874f3e842744a5c897e94e": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_49a5b410bfec42aebf2a828427669be6", "msg_id": "", "outputs": []}}}, "version_major": 2, "version_minor": 0}
-</script>
-
 
     <script type="text/x-thebe-config">
     {
@@ -2058,7 +1174,7 @@ You also learned the different changes of state of matter. If you don’t feel l
         
           By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
       </p>
     </div>
   </footer>

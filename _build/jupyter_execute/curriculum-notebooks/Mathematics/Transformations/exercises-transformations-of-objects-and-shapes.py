@@ -237,12 +237,16 @@ def new_example(change):
     
     draw_plot(xO,yO,xT,yT)
     
+def draw_plot_null():
+    draw_plot(xO,yO,xT,yT) 
+    
             
 submit_button.on_click(check_answer)
 
 new_button.on_click(new_example)
     
-draw_plot(xO,yO,xT,yT) 
+#draw_plot(xO,yO,xT,yT) 
+draw_plot_null()
 
 ## Reflections: Objects and Shapes in 2D Space
 
@@ -502,12 +506,10 @@ draw_plot2(xO,yO,xR,yR)
 
 In this exercise you will be determining the point the original object has been rotated around and the amount of degrees it has been rotated. The points an object can be rotated around are on the images below. The amount of degrees an object can be rotated by are 90°, 180° or 270° **clockwise (CW)** or **counter-clockwise (CCW)**. The original object is colored <span style="color:#00FF00"> green </span> and the reflected object is <span style="color:#00CED1"> blue</span>. You can enter your answer in the dropdown boxes below and click the **Submit Answer** button to check your answer. Please note that there can be more than one correct rotation point and the degrees of rotation for a rotation shown and they will all be correct. As an example an object rotated 90° clockwise is the same as rotating an object 270° counter-clockwise and both answer will be correct. If you want a new example generated then click the **New Example** button.
 
-<table>
-<tr>
-    <td><img src="images/exercisePlot1.png" alt="Old" width="475"/></td>
-    <td><img src="images/exercisePlot2.png" alt="New" width="475"/></td>
-</tr>
-</table>
+<img src="images/exercisePlot1.png" alt="Old" width="475">
+
+
+<img src="images/exercisePlot2.png" alt="New" width="475">
 
 from plotly.offline import init_notebook_mode, iplot, plot
 from ipywidgets import HBox

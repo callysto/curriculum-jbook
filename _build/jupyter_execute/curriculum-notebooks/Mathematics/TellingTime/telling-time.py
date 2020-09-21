@@ -142,6 +142,9 @@ Now that we have a much better understanding of how time works and the relations
 
 YouTubeVideo('9ZzkMIrWdPE', width=800, height=550)
 
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ZzkMIrWdPE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Here is another abstract way of telling time, can you decipher what each colour represent?
 
 You can speed up the clock to see how each ring behaves over time, when you think you have figured it out check your answers below.

@@ -2,6 +2,28 @@
 
 <a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/InterpretAndAssessOdds/interpret-and-assess-odds.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
 
+%%html
+
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -16,26 +38,6 @@ import plotly.graph_objs as go
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 init_notebook_mode(connected=True)
 
-
-
-HTML('''<script>
-  function code_toggle() {
-    if (code_shown){
-      $('div.input').hide('500');
-      $('#toggleButton').val('Show Code')
-    } else {
-      $('div.input').show('500');
-      $('#toggleButton').val('Hide Code')
-    }
-    code_shown = !code_shown
-  }
-  
-  $( document ).ready(function(){
-    code_shown=false;
-    $('div.input').hide()
-  });
-</script>
-<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>''')
 
 # Function: executes next cell on button widget click event 
 
@@ -67,26 +69,27 @@ Let's begin with some definitions. Having a clear understanding of these definit
 An outcome of an experiment. These are the outcomes that are possible. 
 </div>
 
-For example, when rolling a die, the possible events are the die landing on the numbers $1-6$.
+For example, when rolling a die, the possible events are the die landing on the numbers 1 to 6.
 
 <div class="alert alert-warning">
 <font color="black"><b>Probability:</b> 
-The likelihood that an event will occur. In a very large amount of trials, it is the fraction of times you expect the event to happen. This is expressed as a number between $0$ and $1$, with $1$ being $100$% likelihood.  
+The likelihood that an event will occur. In a very large amount of trials, it is the fraction of times you expect the event to happen. This is expressed as a number between 0 and 1, with 1 being 100% likelihood.  
 </div>
 
 For example, after a large number of coin flips you would expect a properly weighted coin to land on heads half of the time. Therefore the probability of said event is $0.5$.
 
 <div class="alert alert-warning">
 <font color="black"><b>Odds:</b> 
-The odds of an event $X$ is expressed as a ratio $X$ to $Y$. This the ratio between the probability that the event will occur and the probability that it will not occur. 
+The odds of an event X is expressed as a ratio X to Y. This the ratio between the probability that the event will occur and the probability that it will not occur. 
 </div>
 
 For example, what are the odds of rolling a $1$ for a fair die? 
 
-Well, the probability of rolling a $1$ is $(\frac{1}{6})$ and the probability of not rolling a $1$ is $1-(\frac{1}{6}) = (\frac{5}{6})$ . Therefore the odds are: <br>
- <br>
+Well, the probability of rolling a $1$ is $(\frac{1}{6})$ and the probability of not rolling a $1$ is $1-(\frac{1}{6}) = (\frac{5}{6})$ . Therefore the odds are: 
      
-<center>$\frac{1}{6}:\frac{5}{6} = 1:5$</center>
+$$
+\frac{1}{6}:\frac{5}{6} = 1:5
+$$
 
 **Note**: You would express the probability of an event *not* happening as: $1-p$, where $p$ is the probability of the event occurring. It will be useful to think in the negative case sometimes. 
 
@@ -134,7 +137,7 @@ The most classic example is pulling cards at random from a deck of cards. If you
 Let's try some true or false questions on what you have learned about odds and probability so far!
 
 #trueFalseQuestion1 stores the true or false question that is being asked:
-trueFalseQuestion1 = Latex('The probability of rolling an even number on a fair die is $\\frac{1}{2}$.')
+trueFalseQuestion1 = 'The probability of rolling an even number on a fair die is 0.5'
 display(trueFalseQuestion1)
 
 #a1 is the input button widget for true and false.
@@ -174,7 +177,7 @@ bt1.on_click(check_answer)
 display(bt1)
 
 #trueFalseQuestion2 stores the true or false question that is being asked:
-trueFalseQuestion2 = Latex('The odds of rolling an even number are $2:1$.')
+trueFalseQuestion2 = 'The odds of rolling an even number are 2:1.'
 display(trueFalseQuestion2)
 
 #a2 is the input button widget for true and false.
@@ -214,7 +217,7 @@ bt2.on_click(check_answer)
 display(bt2)
 
 #trueFalseQuestion3 stores the true or false question that is being asked:
-trueFalseQuestion3 = Latex('The odds against rolling a $4$ are $1:5$.')
+trueFalseQuestion3 = 'The odds against rolling a 4 are 1:5.'
 display(trueFalseQuestion3)
 
 #a3 is the input button widget for true and false.
@@ -294,7 +297,7 @@ bt4.on_click(check_answer)
 display(bt4)
 
 #trueFalseQuestion5 stores the true or false question that is being asked:
-trueFalseQuestion5 = Latex('The probability of not rolling a $5$ is $\\frac{5}{6}$.')
+trueFalseQuestion5 = 'The probability of not rolling a 5 is 5/6 (or 0.833).'
 display(trueFalseQuestion5)
 
 #a5 is the input button widget for true and false.
@@ -334,7 +337,7 @@ bt5.on_click(check_answer)
 display(bt5)
 
 #trueFalseQuestion6 stores the true or false question that is being asked:
-trueFalseQuestion6 = Latex('The probability of rolling a $7$ on a regular die is $1$.')
+trueFalseQuestion6 = 'The probability of rolling a 7 on a regular die is 1.'
 display(trueFalseQuestion6)
 
 #a6 is the input button widget for true and false.
@@ -385,22 +388,29 @@ To describe odds in favour of an event $E$, we have to think about what we are w
 
 We can write this as an equation:
 
-$$\text{Odds for the event $E$ occurring} = {P(E) \over 1-P(E)}$$
+$$
+\text{Odds for the event $E$ occurring} = {P(E) \over 1-P(E)}
+$$
 
 As a ratio, we would write this as $P(E):1-P(E).$  
 
 If the odds are $r:s$ in favour of an event $E$, we write this as:
-$$\text{Odds for the event $E$ occurring} = \displaystyle { ({r \over s}) \over {1 + ({r \over s}) } }.$$
+
+$$
+\text{Odds for the event $E$ occurring} =  {{r \over s} \over {1 + {r \over s} }} .
+$$
 
 However, if the odds are against the event $E$ occurring, we would write the equation:
 
-$$\text{Odds against the event $E$ occurring} = {1-P(E) \over P(E)}$$
+$$
+\text{Odds against the event $E$ occurring} = {1-P(E) \over P(E)}
+$$
 
 As a ratio, we would write this as $1-P(E):P(E).$
 
 #question is the question the user is asked.
-question = Latex('If the odds against an event happening are $N:1$, where $N$ is a natural number, what is the \
-probability of the event happening? (Let $p$ be the probability of the event occurring)')
+question = 'If the odds against an event happening are N:1, where N is a whole number, what is the \
+probability of the event happening? (Use p for the probability of the event occurring)'
 display(question)
 
 #Steps for the answer:

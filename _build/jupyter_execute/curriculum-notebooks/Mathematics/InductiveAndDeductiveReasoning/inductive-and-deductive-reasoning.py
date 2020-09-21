@@ -2,8 +2,9 @@
 
 <a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
 
-from IPython.display import display, Math, Latex, HTML
-HTML('''<script>
+%%html
+
+<script>
   function code_toggle() {
     if (code_shown){
       $('div.input').hide('500');
@@ -14,14 +15,16 @@ HTML('''<script>
     }
     code_shown = !code_shown
   }
-  
+
   $( document ).ready(function(){
     code_shown=false;
     $('div.input').hide()
   });
 </script>
-<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>''')
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
 
+from IPython.display import display, Math, Latex, HTML
 import ipywidgets as widgets
 
 try:
@@ -52,7 +55,10 @@ Consider a circle. Suppose we were to add a certain number of dots to the edge o
 
 Here is a simple applet to help visualize the problem. The slider at the bottom controls the number of dots along the edge (from $1$ to $6$). I've labeled each region with a number to make them easier to count.
 
-ggb.file('./applets/cc-20-chords.ggb').draw()
+#ggb.file('./applets/cc-20-chords.ggb').draw()
+
+%%html
+<iframe scrolling="no" title="cc-20-chords" src="https://www.geogebra.org/material/iframe/id/d4uwgs5k/width/700/height/700/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="700px" style="border:0px;"> </iframe>
 
 If we look at the number of regions in the first five examples
 
@@ -85,14 +91,16 @@ Let $a=b$.
 Then it follows that $b^2=ab$.
 
 
-$\begin{align*}
+$$
+\begin{align*}
     a^2 - b^2 &= a^2 - b^2\\
     a^2 - b^2 &= a^2 - ab \tag{Since $b^2=ab$}\\
     (a+b)(a-b) &= (a)(a-b) \tag{Factoring}\\
     a+b &= a \tag{Divide by sides by $a-b$}\\
     2a &= a \tag{Since $a=b$}\\
     2 &= 1 \tag{Divide both sides by $a$}
-\end{align*}$
+\end{align*}
+$$
 
 
 Hint: The problem involves division.
@@ -104,6 +112,7 @@ The problem is introduced when both sides are divided by $a-b$ because $a-b=0$ a
 This one is somewhat less common but still interesting.
 
 
+$$
 \begin{align*}
     -1 
     &= i^2 \\
@@ -113,6 +122,7 @@ This one is somewhat less common but still interesting.
     &= \sqrt{1} \\
     &= 1
 \end{align*}
+$$
 
 
 So $-1=1$.
@@ -332,16 +342,20 @@ For the two failing examples mentioned above we now get:
 * For $(110)(110)$ we get `12100` which is correct!
 
 Now that we have a conjecture let's getting a better sense of why it works. One thing we can do is to take our equation from above:
-$
+
+$$
 \begin{align}
 ab &= [a-(100-b)](100) + (100-b)(100-a) \\
 &= (a)(100) - (100-b)(100) + (100-b)(100-a)
 \end{align}
-$
+$$
 
 We can visualize this:
 
-box = ggb.file('./applets/cc-20-weird-trick.ggb').draw()
+#box = ggb.file('./applets/cc-20-weird-trick.ggb').draw()
+
+%%html
+<iframe scrolling="no" title="cc-20-weird-trick" src="https://www.geogebra.org/material/iframe/id/cb88dnrd/width/732/height/415/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="732px" height="415px" style="border:0px;"> </iframe>
 
 Note: This visualization assumes that $a$ and $b$ are between $0$ and $100$ (though in our conjecture we also allow them be greater than $100$).
 
@@ -356,19 +370,45 @@ This particular algorism has a lot of generalizations for dealing with larger nu
 Fractions can be difficult to manipulate. Perhaps we can use deductive reasoning to come up with some easier ways to manipulate them.
 
 First some observations:
-1. Any integer, like $3$, can be written in fraction form: $$ 3=\frac{3}{1}. $$
-2. Any integer except $0$, like $3$, can be put into a fraction to get $1$: $$ 1=\frac{3}{3}. $$
-3. In order to multiply two fractions, such as $\frac{2}{3}$ and $\frac{5}{7}$, just multiply the numerators and denominators: $$ \left( \frac{2}{3}\right) \left( \frac{5}{7} \right) = \frac{(2)(5)}{(3)(7)} = \frac{10}{21}. $$
+1. Any integer, like $3$, can be written in fraction form: 
 
-The first thing to note is that observation (3) gives us a way to factor any fraction: $$ \frac{2}{3} = \left( \frac{2}{1}\right) \left( \frac{1}{3} \right). $$
+$$ 
+3=\frac{3}{1}. 
+$$
 
-Reducing a fraction, such as $\frac{10}{15}$ to $\frac{2}{3}$, can be achieved by applying observations (2) and (3) in reverse: $$\frac{10}{15}=\frac{(2)(5)}{(3)(5)}=\left(\frac{2}{3}\right)\left(\frac{5}{5}\right)=\left(\frac{2}{3}\right)(1)=\frac{2}{3}$$
+2. Any integer except $0$, like $3$, can be put into a fraction to get $1$: 
 
-The usual process of cancelling a denominator, like $(3) \left(\frac{2}{3}\right)=2$ follows from these observations as well: $$ (3) \left(\frac{2}{3}\right) = \left(\frac{3}{1}\right) \left(\frac{2}{1}\right)\left(\frac{1}{3}\right) = \left(\frac{3}{3}\right) \left(\frac{2}{1}\right) = (1)(2) = 2$$
+$$ 
+1=\frac{3}{3}. 
+$$
+
+3. In order to multiply two fractions, such as $\frac{2}{3}$ and $\frac{5}{7}$, just multiply the numerators and denominators: 
+
+$$ 
+\left( \frac{2}{3}\right) \left( \frac{5}{7} \right) = \frac{(2)(5)}{(3)(7)} = \frac{10}{21}. 
+$$
+
+The first thing to note is that observation (3) gives us a way to factor any fraction: 
+
+$$ 
+\frac{2}{3} = \left( \frac{2}{1}\right) \left( \frac{1}{3} \right). 
+$$
+
+Reducing a fraction, such as $\frac{10}{15}$ to $\frac{2}{3}$, can be achieved by applying observations (2) and (3) in reverse: 
+
+$$
+\frac{10}{15}=\frac{(2)(5)}{(3)(5)}=\left(\frac{2}{3}\right)\left(\frac{5}{5}\right)=\left(\frac{2}{3}\right)(1)=\frac{2}{3}
+$$
+
+The usual process of cancelling a denominator, like $(3) \left(\frac{2}{3}\right)=2$ follows from these observations as well: 
+
+$$ 
+(3) \left(\frac{2}{3}\right) = \left(\frac{3}{1}\right) \left(\frac{2}{1}\right)\left(\frac{1}{3}\right) = \left(\frac{3}{3}\right) \left(\frac{2}{1}\right) = (1)(2) = 2
+$$
 
 Let's use these observations to manipulate some more complicated fractions.
 
-$
+$$
 \begin{align*}
     \frac{2}{\frac{1}{5}}
     & = \left( \frac{2}{\frac{1}{5}}\right) (1) \tag{Multiply by $1$}\\
@@ -378,10 +418,11 @@ $
     & = (2)(5) \tag{By observation 1}\\
     & = 10
 \end{align*}
-$
+$$
 
 Another more complicated example:
-$
+
+$$
 \begin{align*}
     \frac{\frac{2}{3}}{\frac{7}{5}}
     & = \left( \frac{\frac{2}{3}}{\frac{7}{5}} \right) (1)(1) \tag{Multiply by $1$}\\
@@ -390,23 +431,44 @@ $
     & = \frac{(2)(5)}{(7)(3)} \tag{By cancelling}\\
     & = \frac{10}{21}
 \end{align*}
-$
+$$
 
 We can manipulate even the most complicated fractions by __cleverly multiplying by 1__ in this way.
 
 ### Distributive Property
 
-The distributive property is extremely useful in simplifying expressions and performing computations. In fact, every multiplication algorithm you encounter will at some level boil down to some clever application of the distributive property. Simply put the distributive property tells us how addition and multiplication interact: $$(a+b)c = ac + bc.$$
+The distributive property is extremely useful in simplifying expressions and performing computations. In fact, every multiplication algorithm you encounter will at some level boil down to some clever application of the distributive property. Simply put the distributive property tells us how addition and multiplication interact: 
 
-Since multiplication is commutative this statement is equivalent: $$a(c+d) = ac + ad.$$
+$$
+(a+b)c = ac + bc.
+$$
+
+Since multiplication is commutative this statement is equivalent: 
+
+$$
+a(c+d) = ac + ad.
+$$
 
 The FOIL mnemonic is just a special case of the distributive property:
-$$ (a+b)(c+d) = (a+b)c + (a+b)d = ac + bc + ad + bd. $$
+
+$$ 
+(a+b)(c+d) = (a+b)c + (a+b)d = ac + bc + ad + bd. 
+$$
 
 It is important to remember that the distributive property can be read two ways. In one sense it tells us how to distribute multiplication across addition but in another sense it tells us how to undo that distribution.
 
-For an example, suppose you have something like $$6x + 10xy.$$
-If we notice that both $6x$ and $10xy$ have $2x$ as a factor, since $6x=2x(3)$ and $10xy=2x(5y)$, then we can rewrite that as $$6x + 10xy = 2x(3 + 5y).$$
+For an example, suppose you have something like 
+
+$$
+6x + 10xy.
+$$
+
+If we notice that both $6x$ and $10xy$ have $2x$ as a factor, since $6x=2x(3)$ and $10xy=2x(5y)$, then we can rewrite that as 
+
+$$
+6x + 10xy = 2x(3 + 5y).
+$$
+
 This technique is an extremely useful application of deductive reasoning. *Do not underestimate it.*
 
 ### Mentally Computing Simple Percentages

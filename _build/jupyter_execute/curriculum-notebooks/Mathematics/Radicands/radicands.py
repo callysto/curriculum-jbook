@@ -85,7 +85,10 @@ The figure below should help you understand what we mean by squaring a number
 
 
 
-ggb.file('files/square_numbers.ggb').draw();
+#ggb.file('files/square_numbers.ggb').draw();
+
+%%html
+<iframe scrolling="no" title="SquareNumbers" src="https://www.geogebra.org/material/iframe/id/nxyydwdt/width/607/height/403/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="607px" height="403px" style="border:0px;"> </iframe>
 
 Numbers can be raised to powers other than just 2; you can cube things, raise them to the fourth power, raise them to the 100th power, and so forth. In the same way, you can take the cube root of a number, the fourth root, the 100th root, and so forth. To indicate some root other than a square root, you use the same radical symbol, but you insert a number into the radical, tucking it into the check mark. For example:
 
@@ -130,6 +133,8 @@ Therefore, it is pretty easy to compare and order numerical radicands. You just 
 
 Use the activity below to test your understanding.
 
+Is $\sqrt{45}$ smaller than $\sqrt{33}$?
+
 def rad(val):
     if val == "Yes":
         display(Latex("No! $45>33$, therefore $\sqrt{45}>\sqrt{33}$."))
@@ -137,7 +142,7 @@ def rad(val):
     elif val == "No":
         display(Latex("Correct!"))
 
-display(Latex("Is $\sqrt{45}$ smaller than $\sqrt{33}$?"))
+#display(Latex("Is $\sqrt{45}$ smaller than $\sqrt{33}$?"))
 
     
 interact(rad, val = widgets.Dropdown(options=[' ','Yes', 'No'],value = ' ',description = 'Choose One:',disabled = False));
@@ -241,6 +246,7 @@ Consider for instance $\sqrt{75}$. First of all, we need to factor $75$ in prime
 $$\sqrt{75} = \sqrt{3 \cdot 5 \cdot 5}.$$
 
 Next, we look for any factor that has two copies
+
 $$\sqrt{75} = \sqrt{3 \cdot 5 \cdot 5}=  \sqrt{5^2 \cdot 3}.$$ 
 
 Finally, we take those factors out of the square root symbol using the property for product of radicands that we learned above.
@@ -269,7 +275,8 @@ $$\sqrt{720}= \sqrt{3 \cdot 3  \cdot 2  \cdot  2 \cdot 2 \cdot 2 \cdot 5} = \sqr
 
 Use the following activity to test your understanding.
 
-ggb.file('files/ToMixedRadicals.ggb').draw();
+%%html
+<iframe scrolling="no" title="MixedRadicals" src="https://www.geogebra.org/material/iframe/id/g3gyde4q/width/801/height/411/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="801px" height="411px" style="border:0px;"> </iframe>
 
 
 ### Express a mixed radical with a numerical radicand as an entire radical
@@ -298,6 +305,8 @@ $$5\sqrt{7} = \sqrt{5^2}\sqrt{7} = \sqrt{25}\sqrt{7} = \sqrt{25\cdot 7} = \sqrt{
 
 Test you knowledge with the following activities.
 
+Is $2\sqrt{4}$ greater than $4\sqrt{2}$?
+
 def rad(val):
     if val == "Yes":
          display(Latex("Try again!"))
@@ -306,12 +315,14 @@ def rad(val):
         display(Latex("$4\sqrt{2} = \sqrt{4^2}\sqrt{2} = \sqrt{16}\sqrt{2} = \sqrt{32}.$"))
         display(Latex("$2\sqrt{4} = \sqrt{2^2}\sqrt{4} = \sqrt{4}\sqrt{4} = \sqrt{16}.$"))
 
-display(Latex("Is $2\sqrt{4}$ greater than $4\sqrt{2}$?"))
+#display(Latex("Is $2\sqrt{4}$ greater than $4\sqrt{2}$?"))
 
     
 interact(rad, val = widgets.Dropdown(options=[ ' ', 'Yes', 'No'],value = ' ',description = 'Choose One:',disabled = False));
 
-display(Latex("Express $6\sqrt{2}$ as an entire radical"))
+Express $6\sqrt{2}$ as an entire radical
+
+#display(Latex("Express $6\sqrt{2}$ as an entire radical"))
 #display(Latex("Write your answer as sqrt(your answer)"))
 
 
@@ -384,7 +395,9 @@ Notice that there were two pairs of $a$'s, so we were able to bring two to the o
 
 Test you understanding with the following activity.
 
-display(Latex("Express $\sqrt{12a^2c}$ as a mixed radicand"))
+Express $\sqrt{12a^2c}$ as a mixed radicand.
+
+#display(Latex("Express $\sqrt{12a^2c}$ as a mixed radicand"))
 #display(Latex("Write your answer as (factors outside of the square root)sqrt(factors inside of the square root) "))
 
 
@@ -542,7 +555,7 @@ $$ \frac{32\sqrt{8}}{8} = 4\sqrt{8}.$$
 
 The reason why we choose to rationalize a radical expression is because they are easier to understand. For example, consider $\frac{7}{\sqrt{8}}$. We learned that
 
-$$\frac{7}{\sqrt{8}} = \frac{7\sqrt{8}}{8}$$.
+$$\frac{7}{\sqrt{8}} = \frac{7\sqrt{8}}{8}.$$
 
 If you think about it, it is easier to divide a number by a whole number: dividing $7\sqrt{8}$ by $8$ is simpler that dividing $7$ by $\sqrt{8}$!
 
@@ -550,7 +563,9 @@ However, it is very important that you remember that the value of radical expres
 
 Test your understanding using the activity below.
 
-display(Latex("Rationalize and simplify $\\frac{13}{\sqrt{7}}$"))
+Rationalize and simplify $\frac{13}{\sqrt{7}}$.
+
+#display(Latex("Rationalize and simplify $\\frac{13}{\sqrt{7}}$"))
 #display(Latex("Write your answer as (factor)sqrt(factor)/factor "))
 
 
@@ -708,17 +723,22 @@ Therefore
 
 $$l = \sqrt{A}.$$
 
-ggb.file('files/square_area.ggb').draw();
+%%html
+<iframe scrolling="no" title="SquareArea" src="https://www.geogebra.org/material/iframe/id/bcukxbwx/width/611/height/470/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="611px" height="470px" style="border:0px;"> </iframe>
 
 Because the area of a square (or of any geometric figure!) cannot be negative, we cannot compute the square root of  negative number. 
 
 In the following exercise you will learn about what happens to the number zero.
 
-display(Latex("What is $\sqrt{0}?$"))
+What is $\sqrt{0}$?
+
+- Hint. Think about it..what do you get if you multiply any number by $0?$
+
+#display(Latex("What is $\sqrt{0}?$"))
 #display(Latex("Write your answer as sqrt(your answer)"))
 
 
-display(Latex("Hint. Think about it..what do you get if you multiply any number by $0?$"))
+#display(Latex("Hint. Think about it..what do you get if you multiply any number by $0?$"))
 
 
 attempts_7 = 0

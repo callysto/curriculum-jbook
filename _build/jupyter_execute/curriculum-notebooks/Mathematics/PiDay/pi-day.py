@@ -12,7 +12,9 @@
 
 Pi is represented mathematically as the symbol $\pi$ and is **the circumference  divided by the diameter  of a circle**.  
 
-<img src="images/pi_calculation.png" width="400"/>  <center>[Source](https://www.mathsisfun.com/numbers/pi.html)</center>
+<img src="images/pi_calculation.png" width="400">  
+
+<center>[Source](https://www.mathsisfun.com/numbers/pi.html)</center>
 
 
 The symbol for Pi ($\pi$)  was introduced by **[William Jones](https://www.historytoday.com/archive/william-jones-and-his-circle-man-who-invented-pi)** in 1706. Before being ascribed a modern name, Pi was known as "quantitas in quam cum multiflicetur diameter, proveniet circumferencia" — Latin for “the quantity which, when the diameter is multiplied by it, yields the circumference.”
@@ -24,7 +26,9 @@ It's believed that human civilizations were aware of Pi [as early as 2550 BC](ht
 
 ## Why Do We Celebrate [Pi Day](https://www.exploratorium.edu/pi/pi-day-history)?
 
-<img src="images/PiDay.jpeg"/>  <center>[Source](https://www.exploratorium.edu/pi/pi-day-history)</center>
+<img src="images/PiDay.jpeg">  
+
+<center>[Source](https://www.exploratorium.edu/pi/pi-day-history)</center>
 
 March 14 is Community Pi (π) Day, the annual celebration of a never-ending number—and Albert Einstein’s birthday. How did Pi inspire a national holiday and an international celebration thousands of years after its discovery? It all started at San Francisco’s Exploratorium with former staff physicist, tinkerer, and media specialist Larry Shaw in 1988.
 
@@ -77,7 +81,9 @@ According to the [Guiness World Records](http://www.guinnessworldrecords.com/wor
 the most decimal places of Pi memorised is `70,000`! 😍😍😍
 >This was achieved by Rajveer Meena at VIT University, in Vellore, India, on 21 March 2015. Rajveer wore a blindfold throughout the entire recall, which took nearly 10 hours.
 
-<img src="images/rajveer.png" width="500"/>  <center>[Source](http://www.guinnessworldrecords.com/world-records/most-pi-places-memorised)</center>
+<img src="images/rajveer.png" width="500">  
+
+<center>[Source](http://www.guinnessworldrecords.com/world-records/most-pi-places-memorised)</center>
 
 
 #### [The Pilish Language](http://www.cadaeic.net/pilish.htm)
@@ -146,6 +152,9 @@ display(widgets.HBox([vbox1,vbox2]))
 
 from IPython.display import YouTubeVideo
 YouTubeVideo('M34TO71SKGk')
+
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M34TO71SKGk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Throwing Darts at a Target (Dart Board) Explainer**:  
 - The square that surrounds the dart board has sides of 1 unit in length and the circle (dart board) inside of the square has a diameter of 1 unit.  

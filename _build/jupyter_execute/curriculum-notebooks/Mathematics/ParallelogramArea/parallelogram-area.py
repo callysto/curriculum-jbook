@@ -68,7 +68,8 @@ Certain parallelograms are so skewed that they do not resemble a rectangle with 
 
 The applet below automatically calculates the area of the parallelogram shown. You can move the sliders to change the length and height, and you can also move the point $P$ to change how skewed the parallelogram is. Notice how the area changes when you change the base or height, but not when you move the point $P$.
 
-ggb.material('YFS3rJVz').draw()
+%%html
+<iframe scrolling="no" title="ParaEx2" src="https://www.geogebra.org/material/iframe/id/YFS3rJVz/width/700/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="400px" style="border:0px;"> </iframe>
 
 It turns out all parallelograms have the same formula for area, no matter what angle their sides are at. 
 
@@ -76,13 +77,13 @@ It turns out all parallelograms have the same formula for area, no matter what a
 
 Let's go through an example. Here is a parallelogram. What is its area?
 
-Image('images/ParaStep1.png',width=400,height=500)
+<img style="float: left;" src="images/ParaStep1.png"  width="400">
 
 Let's dissect this parallelogram using two vertical lines. Then let's move the triangles inwards to create a rectangle.
 
-Image('images/ParaStep2.png',width=400,height=500)
+<img style="float: left;" src="images/ParaStep2.png"  width="400">
 
-Image('images/ParaStep3.png',width=400,height=500)
+<img style="float: left;" src="images/ParaStep3.png"  width="400">
 
 Now we can see that the area of this parallelogram can be calculated like the area of a rectangle:
 $$\begin{align*}
@@ -94,7 +95,8 @@ $$\begin{align*}
 
 For one last check, slide point $P$ forward and back, perhaps lining up with the height line, to confirm that the parallelogram can be turned into a rectangle without changing how much area is there.
 
-ggb.file('ParaEx.ggb').draw()
+%%html
+<iframe scrolling="no" title="ParaEx" src="https://www.geogebra.org/material/iframe/id/g5m3ecev/width/541/height/276/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="541px" height="276px" style="border:0px;"> </iframe>
 
 ### Calculate Area
 
@@ -106,7 +108,7 @@ $$\text{Area of parallelogram} = \text{base} \times \text{height}$$
 
 ### Question 1
 
-Image('images/ParaQ1.png',width=400,height=500)
+<img style="float: left;" src="images/ParaQ1.png"  width="400">
 
 ans = widgets.Text(value='',placeholder='0',description='Area=',continuous_update=False)
 
@@ -131,7 +133,7 @@ def check(a):
 display()
 ans.observe(check, 'value')
 
-Image('images/ParaQ2.png',width=300,height=300)
+<img style="float: left;" src="images/ParaQ2.png"  width="300">
 
 ans2 = widgets.Text(value='',placeholder='0',description='Area=',continuous_update=False)
 
@@ -182,7 +184,8 @@ Look at that! This new area is the same as when we doubled the base! Let's confi
 
 **Note:** you can slide P back and forth to create differently skewed parallelograms, including a rectangle, or even a square if you choose the same base length and height.
 
-ggb.material('YFS3rJVz').draw()
+%%html
+<iframe scrolling="no" title="ParaEx2" src="https://www.geogebra.org/material/iframe/id/YFS3rJVz/width/700/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="400px" style="border:0px;"> </iframe>
 
 ### What conclusion can we draw?
 
@@ -213,7 +216,7 @@ What is the area of the parallelogram in question 1 if the base is halved and th
 
 Let's say you know the area and the base, but are asked for the height, or you know the area and the height, but are asked for the base. How can we find these missing variables? Look at this example below. What is the height of the parallelogram?
 
-Image('images/ParaQ3.png',width=300)
+<img style="float: left;" src="images/ParaQ3.png"  width="300">
 
 Let's look at the formula: $$ \text{Area of parallelogram} = \text{base} \times \text{height}$$
 
@@ -239,7 +242,7 @@ This can also be written with height on the left and the formula on the right: $
 
 We can do the same thing if we know the height and not the base! What is the base length of this parallelogram?
 
-Image('images/ParaQ4.png',width=200)
+<img style="float: left;" src="images/ParaQ4.png"  width="200">
 
 Let's use the same steps as the last example to solve this one.
 
@@ -265,7 +268,7 @@ Try to figure out the values of the missing base or height.
 ##### Question 1
 What is the base length of this parallelogram?
 
-Image('images/ParaQ5.png',width=300)
+<img style="float: left;" src="images/ParaQ5.png"  width="300">
 
 ans3 = widgets.Text(value='',placeholder='0',description='Base=',continuous_update=False)
 
@@ -293,7 +296,7 @@ ans3.observe(check3, 'value')
 ##### Question 2
 What is the height of this parallelogram?
 
-Image('images/ParaQ6.png',width=700)
+<img style="float: left;" src="images/ParaQ6.png"  width="700">
 
 ans4 = widgets.Text(value='',placeholder='0',description='Height=',continuous_update=False)
 

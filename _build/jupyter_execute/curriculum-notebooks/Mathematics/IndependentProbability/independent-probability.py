@@ -11,9 +11,31 @@ function run_all(){
 }
 </script>
 
+%%html
+
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+
 # Probability of Independent Events
 
-<img style="float: left;" src="Images/FirstDicePic.svg" height="1800" width="700">
+<img style="float: left;" src="Images/FirstDicePic.svg"  width="700">
 
 
 ## Introduction
@@ -527,26 +549,5 @@ text2.on_submit(callback2)
 - Dependent events (removing cards from a deck of cards) are affected by **previous events**
 - Independent events (such as rolling a die) are **not** affected by previous events
 - Calculate the probability of 2 or more **independent** events by **multiplying**
-
-%%html
-
-<script>
-  function code_toggle() {
-    if (code_shown){
-      $('div.input').hide('500');
-      $('#toggleButton').val('Show Code')
-    } else {
-      $('div.input').show('500');
-      $('#toggleButton').val('Hide Code')
-    }
-    code_shown = !code_shown
-  }
-
-  $( document ).ready(function(){
-    code_shown=false;
-    $('div.input').hide()
-  });
-</script>
-<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
 
 [![Callysto.ca License](https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true)](https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md)

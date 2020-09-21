@@ -130,8 +130,8 @@ fig = dict(data=data, layout=layout)
 py.iplot(fig)
 
 <ul>
-    <li> What happens to the shape of the distribution as $N$ increases? </li>
-    <li> What can you estimate will happen to the shape of the distribution if $N$ is increased even further? </li>
+    <li> What happens to the shape of the distribution as N increases? </li>
+    <li> What can you estimate will happen to the shape of the distribution if N is increased even further? </li>
 </ul>
 
 ### The Mean of a Distribution
@@ -147,11 +147,13 @@ What do you think the mean is for any of the above normally distributed datasets
 ### Finding the Mean Mathematically
 
 If you want to calculate the mean for a dataset, you need to add up all of the elements and then divide by the number of elements. So, if we have the dataset ${1,2,3,4,5}$, which has 5 elements, the mean is given by
+
 $$
 \mu = \frac{1+2+3+4+5}{5} = \frac{15}{5} = 3.
 $$
 
 In general, if we have the dataset ${x_1, x_2, x_3, \ldots, x_N}$, where $N$ is the number of elements, then the mean is given by
+
 $$
 \mu = \frac{x_1 + x_2 + x_3 + \ldots + x_N}{N} = \frac{\sum_i x_i}{N}.
 $$
@@ -270,12 +272,15 @@ HTML(html_code)
 There were an odd number of elements in the dataset ($N=13$), so the median was just the middle element. To express the median value mathematically, we need a convenient way to talk about the elements of a dataset. 
 
 We will call the elements in a dataset $x_i$, where $i$ is the location, or *index* of the value. We'll start counting the index at 1. For example, in the dataset 
+
 $$
 {1,3,3,4,5,6,11},
 $$
+
 we have that $x_1 = 1$, $x_2 = 3$, $x_3 = 3$, and $x_7 = 11$. This dataset has $N=7$ elements, so we could also say that $x_N = 11$. The median is the middle element, $x_4 = 4$.
 
 Now we are in a position to mathematically express the median of a dataset with $N$ an odd number. Therefore, when $N$ is odd, the median of the dataset is
+
 $$
 \text{median } = x_{\frac{N+1}{2}}.
 $$
@@ -283,12 +288,15 @@ $$
 So, we look for the median at the $\left(\frac{N+1}{2}\right)^{th}$ index. This is exactly what you did in the last exercise, only you did it by visually finding the middle element. You see a real benefit to using the mathematical expression when $N$ is large. Just imagine trying to look for the middle element when $N=1,000,001$! If you think that's too many, that is a pretty standard size for many datasets.
 
 What if $N$ is even? In that case, we can't find the middle number, because there isn't one! Instead, we take the average of the *two* middle elements. For example, in the dataset
+
 $$
 1,3,5,6,7,8,8,10,
 $$
+
 the median is the average of $x_4 = 6$ and $x_5 = 7$. In other words, the median is $\frac{6 + 7}{2} = 6.5$. **The median doesn't have to be an element of the dataset**, as we have just shown.
 
 In general, when $N$ is even, the median of the dataset is
+
 $$
 \text{median } = \frac{x_{\frac{N}{2}} + x_{\frac{N+1}{2}}}{2}.
 $$
@@ -555,11 +563,11 @@ data[0].visible = True
 fig = dict(data=data, layout=layout)
 py.iplot(fig)
 
-<ul> 
-    <li> What happens to the spread of the histogram when $\sigma$ is small? </li>
-    <li> What happens to the spread of the histogram when $\sigma$ is large? </li>
-    <li> What can you estimate will happen for very small or very large values of $\sigma$? </li>
-</ul>
+
+-  What happens to the spread of the histogram when $\sigma$ is small? 
+-  What happens to the spread of the histogram when $\sigma$ is large? 
+-  What can you estimate will happen for very small or very large values of $\sigma$? 
+
 
 ### Back to Jerry Sokoloski
 
@@ -578,20 +586,19 @@ This graphic shows that 68% of the values in a normally distributed dataset will
 
 The 68-95-99.7 rule can also be seen as the area under the curve that defines the normal distribution. 100% of the elements in a normally distributed dataset will be under the curve. We then have 
 
-<ul>
-    <li> 68% of the data elements represent the area under the normal curve between $-\sigma$ and $\sigma$, </li>
-    <li> 95% of the data elements represent the area under the normal curve between $-2\sigma$ and $2\sigma$, and </li>
-    <li> 99.7% of the data elements represent the area under the normal curve between $-3\sigma$ and $3\sigma$. </li>
-</ul>
+- 68% of the data elements represent the area under the normal curve between $-\sigma$ and $\sigma$, 
+- 95% of the data elements represent the area under the normal curve between $-2\sigma$ and $2\sigma$, and 
+- 99.7% of the data elements represent the area under the normal curve between $-3\sigma$ and $3\sigma$. 
+
 
 What this means in context of our example is that we expect 68% of all men's heights to be within $\sigma = 2.787$ of the mean. Remember, the mean of our dataset was $\mu = 69.872$. 
 
 Therefore, 
-<ul>
-    <li>68% of Canadian men should have a height between $69.872 - 2.787 = 67.085$ inches and $69.872 + 2.787 = 72.659$ inches, </li>
-    <li>95% of Canadian men should have a height between $69.872 - 2\times2.787 = 64.298$ inches and $69.872 + 2\times2.787 = 75.446$ inches, and</li>
-    <li>99.7% of Canadian men should have a height between $69.872 - 3\times2.787 = 61.511$ inches and $69.872 + 3\times2.787 = 78.233$ inches. </li>
-</ul>
+
+- 68% of Canadian men should have a height between $69.872 - 2.787 = 67.085$ inches and $69.872 + 2.787 = 72.659$ inches, 
+- 95% of Canadian men should have a height between $69.872 - 2\times2.787 = 64.298$ inches and $69.872 + 2\times2.787 = 75.446$ inches, and
+- 99.7% of Canadian men should have a height between $69.872 - 3\times2.787 = 61.511$ inches and $69.872 + 3\times2.787 = 78.233$ inches. 
+
 
 For example, a height of 79 inches (6'7" or 2.01 m) is over 3 standard deviations higher than the mean. Since 99.7% of the population should be *within* 3 standard deviations of the mean, we can subtract 100-99.7 to see that 0.3% of male heights should be 3$\sigma$ below the mean **and** 3$\sigma$ above the mean. This can be a hard concept to understand, so let's look at a picture.
 
@@ -608,6 +615,7 @@ Canadian Tire is a well-known retailer with stores across Canada. In November of
 So what's more exceptional, Jerry Sokoloski's height or Canadian Tire's stock jump in 2014? We can check this by **standardizing** the datasets using a **z-score**.
 
 The **z-score** of a data element is found by subtracting the mean from the element and dividing by the standard deviation. In other words, the z-score of the element $x$ is given by
+
 $$
 z = \frac{x - \mu}{\sigma}.
 $$
@@ -782,9 +790,8 @@ def get_answer_two(answer):
 # Change default 'Run Interact' button text.
 get_answer_two.widget.children[1].description = 'Check Answer'
 
-<ol start = '3'>
-    <li> The standard deviation for the Facebook dataset is displayed below. The largest loss in Facebook stock prices during the years 2013-2018 was a drop of \$9.43 on 8 February 2018. Calculate the z-score for this loss by using the formula $z=\frac{x - \mu}{\sigma}$. </li>
-</ol>
+3.  The standard deviation for the Facebook dataset is displayed below. The largest loss in Facebook stock prices during the years 2013-2018 was a drop of \$9.43 on 8 February 2018. Calculate the z-score for this loss by using the formula $z=\frac{x - \mu}{\sigma}$. 
+
 
 fb_stdev = np.std(facebook)
 print('The standard deviation for the Facebook data is {}.'.format(fb_stdev))

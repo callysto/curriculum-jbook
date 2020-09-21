@@ -47,15 +47,21 @@ A **perimeter** is: "The continuous line that forms a boundary around a shape." 
 
 To calculate the perimeter of a square, add the length of all the edges together:
 
-<h3 align='center'>$\ \rm (Length) + (Length) + (Length) + (Length) = Perimeter $</h3>
+$$
+\rm (Length) + (Length) + (Length) + (Length) = Perimeter 
+$$
 
 But, we know that the length of every edge on a square is the same. So, we can do:
 
-<h3 align='center'>$\ \rm 4 \times (Length) = Perimeter $</h3>
+$$
+ \rm 4 \times (Length) = Perimeter 
+$$
 
 So, the perimeter of the square above is:
 
-<h3 align='center'>$\rm 4 \times (4cm) = 16cm $</h3>
+$$
+\rm 4 \times (4cm) = 16cm 
+$$
 
 ### Calculator for Perimeter of a Square
 
@@ -105,7 +111,9 @@ Now, let's say we have to find the **perimeter of a rectangle**:
 
 To calculate the perimeter of a rectangle, add the length of all the edges together:
 
-<h3 align='center'>$\rm (Length) + (Length) + (Height) + (Height) = Perimeter $</h3>
+$$
+\rm (Length) + (Length) + (Height) + (Height) = Perimeter 
+$$
 
 But, we know that a rectangle has 4 edges, and every edge is equal to another. 
 
@@ -113,11 +121,13 @@ This means that *the length of the edge on the bottom is equal to the length of 
 
 So, we can do:
 
-<h3 align='center'>$\rm 2 \times (Length) + 2 \times (Height) = Perimeter $</h3>
+$$
+\rm 2 \times (Length) + 2 \times (Height) = Perimeter $
+$$
 
 So, the perimeter of the rectangle above is:
 
-### $$
+$$
 \begin{align*}
 \rm 2 \times (9cm) + 2 \times (4cm) = 26cm
 \end{align*}
@@ -188,11 +198,13 @@ Now, let's say we have to find the **perimeter of some quadrilateral shape** tha
 
 In this situation, we can't simplify the original formula. This is because the shape is neither a square or rectangle. So, the only way we can find the perimeter is by adding the length of each side together.
 
-<h3 align='center'>$\rm (Length) + (Length) + (Length) + (Length) = (Perimeter) $</h3>
+<$$
+\rm (Length) + (Length) + (Length) + (Length) = (Perimeter) 
+$$
 
 So, the perimeter of the quadrilateral above is:
 
-### $$
+$$
 \begin{align*}
 \rm (4cm) + (6cm) + (7cm) + (9cm) = 26cm
 \end{align*}
@@ -500,11 +512,13 @@ For our next topic, we will cover how to find the **perimeter of a triangle**. I
 
 Then the process for finding the perimeter is simple. We must add the length of all the edges together:
 
-<h3 align='center'>$\rm (Length) + (Length) + (Length) = (Perimeter) $</h3>
+$$
+\rm (Length) + (Length) + (Length) = (Perimeter) 
+$$
 
 So, the perimeter of the above triangle is:
 
-### $$
+$$
 \begin{align*}
 \rm (15cm) + (12cm) + (17cm) = 44cm
 \end{align*}
@@ -622,11 +636,15 @@ Finally, we will create a square using the $C$ side of the triangle:
 
 The Pythagorean theorem states that the area of the square made by $C$ is equal to the areas of the squares $A$ and $B$:
 
-<h3 align='center'>$\ C^2 = A^2 + B^2 $</h3>
+$$
+C^2 = A^2 + B^2 
+$$
 
 So, we can get the length of $C$ by doing:
 
-<h3 align='center'>$ C = \sqrt {A^2 + B^2} $</h3>
+$$ 
+C = \sqrt {A^2 + B^2} 
+$$
 
 Let's give the triangle above numbers so we can try our formula on it:
 
@@ -658,7 +676,7 @@ Let's give the triangle above numbers so we can try our formula on it:
 
 Now, we can calculate the length of $C$ by doing:
 
-### $$
+$$
 \begin{align*}
 C &= \sqrt {(10\textrm{cm})^2 + (10\textrm{cm})^2} \\
 &= \sqrt {100\textrm{cm}^2 + 100\textrm{cm}^2}\\
@@ -698,19 +716,25 @@ But, let's say you didn't have the length of side $A$ instead:
 
 Then, we can rearrange our original formula of:
 
-<h3 align='center'>$\ C^2 = A^2 + B^2 $</h3>
+$$
+C^2 = A^2 + B^2 
+$$
 
 To the formula:
 
-<h3 align='center'>$\ A^2 = C^2 - B^2 $</h3>
+$$ 
+A^2 = C^2 - B^2 
+$$
 
 So that:
 
-<h3 align='center'>$\ A = \sqrt{C^2 - B^2} $</h3>
+$$ 
+A = \sqrt{C^2 - B^2} 
+$$
 
 So, we can calculate the length of $A$ by doing:
 
-### $$
+$$
 \begin{align*}
 A &= \sqrt {(14\textrm{cm})^2 - (10\textrm{cm})^2} \\
 &= \sqrt {196\textrm{cm}^2 - 100\textrm{cm}^2}\\

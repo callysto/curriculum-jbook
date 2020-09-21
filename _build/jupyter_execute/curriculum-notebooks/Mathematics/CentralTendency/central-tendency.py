@@ -62,7 +62,7 @@ If you want a good summary of this topic, check out [this website for Australian
 
 ## 1. Definitions
 
-<img style="float: right;" src="https://images-na.ssl-images-amazon.com/images/I/51JWOlyyH9L._SY445_.jpg" width="200" height="500">
+<img style="float: right;" src="https://images-na.ssl-images-amazon.com/images/I/51JWOlyyH9L._SY445_.jpg" width="200" >
 
 ### What is range?
 
@@ -89,7 +89,7 @@ $$\text{mean} = \frac{2 + 6 + 3 + 7 + 5 + 3 + 9}{7} = \frac{35}{7} = 5 $$
 
 Now these are just numbers, let's see where the mean applies in real life. 
 
-<img style="float: left;" src="images/positive-classroom.jpg" width="300" height="400">
+<img style="float: left;" src="images/positive-classroom.jpg" width="300" >
 
 ##### Example 2
 
@@ -159,7 +159,7 @@ Therefore, Mean $=  \frac{10 + 91 +  39 + 71 + 17 +  39 + 76 + 37 + 25}{9} = 45$
 Let's play monkey in the middle!
 The **median** is the middle number in a sequence of numbers.To compute the median, the set needs to be ordered from smallest to largest. Then it's easy to find the middle number!<br>
 
-<img style="float: left;" src="https://i0.wp.com/www.thegamegal.com/wp-content/uploads/2016/02/monkey-in-the-middle.png?fit=391%2C501&ssl=1&w=640" width="275" height="3500">
+<img style="float: left;" src="https://i0.wp.com/www.thegamegal.com/wp-content/uploads/2016/02/monkey-in-the-middle.png?fit=391%2C501&ssl=1&w=640" width="275" >
 
 
 ##### Example 1
@@ -239,7 +239,7 @@ The **mode** for a data set is the element that occurs the most often.<br>
 It's possible for a data set to have no modes, one mode, two modes (bimodal), or even three modes (trimodal)!<br>
 To find the mode, you don't have to sort the set, but it is very helpful to sort it as the mode(s) will be where a number is repeated and that's easier to see when they are next to each other.
 
-<img style="float: left;" src="https://zookyworld.files.wordpress.com/2013/03/stop-repeating.gif" width="400" height="700">
+<img style="float: left;" src="https://zookyworld.files.wordpress.com/2013/03/stop-repeating.gif" width="400">
 
 ##### Example 1
 Data set: $2, 6, 3, 7, 5, 3, 9$

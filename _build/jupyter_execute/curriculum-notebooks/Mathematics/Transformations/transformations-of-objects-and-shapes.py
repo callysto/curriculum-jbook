@@ -1869,6 +1869,9 @@ We will go through an example below rotating a triangle around one of its points
 
 In the interactive example below you can choose the **Object**, **Rotation Direction** and the **Rotation Point** (the point you want to rotate the object around). Your choices for the rotation point can be seen on the graph below and can be chosen from dropdown menu. You can choose to rotate the object around the origin, a point on the object or the center of the object. Once you have chosen the rotation point you can adjust the degrees of rotation from 0° to 360° clockwise or counter-clockwise using the slider on the plot. As in the examples above the <span style="color:#00FF00"> green </span>object represents the original position of the object and the rotated object will be <span style="color:#00CED1"> blue</span>.
 
+<img style="float: left;" src="images/pointplot2.png"  width="600">
+
+
 from plotly.offline import init_notebook_mode, iplot, plot
 from ipywidgets import HBox
 import plotly.graph_objs as go
@@ -2162,13 +2165,12 @@ def rotation(p):
     fig4 = dict(data=data4, layout=layout4)
 
     
-    if(not(point == 0)):
-        clear_output()
-        display(Markdown("<img src='images/pointplot2.png' align='left'>"))
-        display(input_widget4)
-        iplot(fig4, filename = 'filename')
+#    if(not(point == 0)):
+    clear_output(wait=True)
+    display(Markdown("<img src='images/pointplot2.png' align='left'>"))
+    display(input_widget4)
+    iplot(fig4, filename = 'filename')
         
-  
 def rotationT(p):
     pointT = p   
 
@@ -2367,12 +2369,11 @@ def rotationT(p):
     
     figT4 = dict(data=dataT4, layout=layoutT4)
     
-    if(not(pointT == 0)):
-        clear_output()
-        display(Markdown("<img src='images/pointplot4.png' align='left'>"))
-        display(input_widget4)
-        iplot(figT4, filename = 'filename')
-   
+#    if(not(pointT == 0)):
+    clear_output(wait=True)
+    display(Markdown("<img src='images/pointplot4.png' align='left'>"))
+    display(input_widget4)
+    iplot(figT4, filename = 'filename')
 
 def graph_rotation(change):
     global current_point
@@ -2396,7 +2397,7 @@ def square_update4(change):
         triangle_button4.button_style = ''
         rotation_choice.options = [('',0),('Point A', 1), ('Point B', 2), ('Point C', 3), ('Point D', 4), ('Point E', 5), ('Origin', 6)]
         rotation_choice.value = 0
-        clear_output()
+        clear_output(wait=True)
         display(Markdown("<img src='images/pointplot2.png' align='left'>"))
         display(input_widget4)
     
@@ -2411,7 +2412,7 @@ def triangle_update4(change):
         triangle_button4.button_style = 'success'
         rotation_choice.options = options=[('',0),('Point A', 1), ('Point B', 2), ('Point C', 3), ('Point D', 4), ('Origin', 5)]
         rotation_choice.value = 0
-        clear_output()
+        clear_output(wait=True)
         display(Markdown("<img src='images/pointplot4.png' align='left'>"))
         display(input_widget4)
 
@@ -2425,7 +2426,7 @@ def clockwise_update(change):
         counterclockwise_rotation = False
         clockwise_button.button_style = "success"
         counterclockwise_button.button_style = ""
-        clear_output()
+        clear_output(wait=True)
         if(square_clicked4):
             display(Markdown("<img src='images/pointplot2.png' align='left'>"))
             if(current_point == 0):
@@ -2448,7 +2449,7 @@ def counterclockwise_update(change):
         counterclockwise_rotation = True
         clockwise_button.button_style = ""
         counterclockwise_button.button_style = "success"
-        clear_output()
+        clear_output(wait=True)
         if(square_clicked4):
             display(Markdown("<img src='images/pointplot2.png' align='left'>"))
             if(current_point == 0):
@@ -2470,7 +2471,8 @@ counterclockwise_button.on_click(counterclockwise_update)
 
 rotation_choice.observe(graph_rotation, names='value')
 
-display(Markdown("<img src='images/pointplot2.png' align='left'>"))
+clear_output(wait=True)
+#display(Markdown("<img src='images/pointplot2.png' align='left'>"))
 display(input_widget4)
 
 rotation(0)

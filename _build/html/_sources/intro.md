@@ -1,7 +1,7 @@
 Welcome to Callysto
 ===================
 
-Callysto is a free, multimodal learning program for grades 5-12 students in Canada. The program is part of a two-year pilot project by Cybera and the Pacific Institute for Mathematical Sciences (PIMS), who received funding from the federal government’s CanCode program to build and employ new technologies that promote digital literacy and help Canada’s youth develop the foundational skills required to become the future drivers of innovation.
+[Callysto](https://callysto.ca) is a free, multimodal learning program for grades 5-12 students in Canada. The program is part of a two-year pilot project by Cybera and the Pacific Institute for Mathematical Sciences (PIMS), who received funding from the federal government’s CanCode program to build and employ new technologies that promote digital literacy and help Canada’s youth develop the foundational skills required to become the future drivers of innovation.
 
 Callysto integrates research and analytics capabilities, along with other computing functions, such as coding, interactive graphics, multimedia, and digital math functions to foster students’ computational and design thinking skills. The online tool’s interactive learning modules are available in an array of subjects – from math to history – and have been developed to align with curriculum.
 

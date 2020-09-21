@@ -44,8 +44,6 @@ init_notebook_mode(connected=True)
 <img src = "images/ezgif.com-gif-maker.gif">
 
 
-![garden image](images/ezgif.com-gif-maker.gif)
-
 ## Introduction
 ---
 In this notebook you will gain an understanding of basic root-finding algorithms and their implementation. This topic is introduced with the goal of easing you into numerical solutions to mathematical problems. We will outline the advantages and disadvantages of solving a problem numerically rather than analytically. At the end of the notebook there will be example problems, in which you have the opportunity to implement these methods, yielding a broader understanding of their applicability and power.
@@ -93,8 +91,8 @@ I recommend trying the exercise for a polynomial of order two, reviewing the con
 def find_interval(poly_order):
     poly_order = int(poly_order)
     if poly_order > 3:
-        display(Latex('Order of polynomial must be less than or equal to 3'))
-        display(Latex('Provide order of polynomial:'))
+        display('Order of polynomial must be less than or equal to 3')
+        display('Provide order of polynomial:')
         
     if poly_order == 3:    
         C = np.random.randint(-5,5,poly_order)
@@ -104,7 +102,7 @@ def find_interval(poly_order):
         C11=C1
         C22=C2
         C33=C3
-        display(Latex("Find the interval where $P(x) > 0$ :"))
+        display("Find the interval where P(x) > 0 :")
         if C1>0:
             str1 = '+' + str(C11) + 'x^2'
         elif C1== 0:
@@ -149,7 +147,7 @@ def find_interval(poly_order):
             str2=''
         else:
             str2= str(C22) 
-        display(Latex('Find the interval where $P(x) > 0 $ :'))
+        display('Find the interval where P(x) > 0  :')
         a = 'P(x) = x^2 ' + str1 + str2
         display(Math(a))
         def poly(x):
@@ -207,13 +205,13 @@ def check_answer(answer,interval,y):
     answer = answer.replace(" ","")
     
     if answer == "":
-        display(Latex("Please be sure to press enter after submitting your answer."))
+        display("Please be sure to press enter after submitting your answer.")
     else:    
         if answer != interval:
-            display(Latex("That's not quite right, try again."))
+            display("That's not quite right, try again.")
         if answer == interval:
 
-            display(Latex("Correct! Here's a visualization of the solution:"))
+            display("Correct! Here's a visualization of the solution:")
             x1=np.linspace(-100,100,10000)
             trace = go.Scatter(
                 x = x1,
@@ -854,11 +852,11 @@ lb.on_click(add_num)
 
 clear_output()
 display(restart_button)
-display(Latex('Input a value for $x_0$'))
+display('Input a value for x0')
 display(x0s_in)
-display(Latex("Input a value for $x_1$"))
+display("Input a value for x1")
 display(x1s_in)
-display(Latex("Specify an accuracy"))
+display("Specify an accuracy")
 display(tols_in)
 display(lb)
 
@@ -867,7 +865,7 @@ if lb.value == 0:
     
 if lb.value != 0:
     if x0s_out.value == '' or x1s_out.value == '' or tols_out.value == '':
-        display(Latex("Please be sure to press enter after submitting values"))
+        display("Please be sure to press enter after submitting values")
     else:
         x_0, x_1 = secantmethod(x0s_out.value,x1s_out.value,lb.value,tols_out.value)
         x_0 = float(x_0)
@@ -1013,7 +1011,7 @@ def bisection_method(x0,x1,tol):
         print("Remember to press enter after submitting an answer")
     
     if tol == None:
-        display(Latex('Please specify a tolerance')) 
+        display('Please specify a tolerance')
 #     if str.isdigit(x0) == False or str.isdigit(x1) == False or str.isdigit(tol) == False:  
 #         print("Please input a number")
 
@@ -1081,13 +1079,13 @@ x0_in.on_submit(bind0)
 x1_in.on_submit(bind1)
 tol_in.on_submit(bindtol)
 
-display(Latex("Enter a value for $x_0$"))
+display("Enter a value for x0")
 display(x0_in)
 
-display(Latex("Enter a value for $x_1$"))
+display("Enter a value for x1")
 display(x1_in)
 
-display(Latex("Please specify a tolerance"))
+display("Please specify a tolerance")
 display(tol_in)
 
 show_root = widgets.Button(description="Show Root", 

@@ -39,6 +39,7 @@
     <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
     <link rel="next" title="Python - Loops and Iteration" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html" />
     <link rel="prev" title="Python - introduction" href="introduction-to-python.html" />
 
@@ -82,8 +83,8 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../README.html">
-   Curriculum Notebooks
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -119,6 +120,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
    Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Statistics.html">
+   Statistics Section
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -167,6 +173,11 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
  </li>
 </ul>
 
@@ -422,12 +433,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Employee Name: Frank
-Employee Name: Sarah
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -437,12 +442,6 @@ Employee Name: Sarah
 
 <span class="nb">print</span><span class="p">(</span><span class="n">Emp1</span><span class="o">.</span><span class="n">Employee_Name</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Emp2</span><span class="o">.</span><span class="n">Employee_Name</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Frank
-Sarah
 </pre></div>
 </div>
 </div>
@@ -517,17 +516,6 @@ Sarah
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Employee Name: Frank
-Employee Salary: 20000
-Employee Age: 25
-Frank
-Employee Name: Sarah
-Employee Salary: 40000
-Employee Age: 34
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -550,14 +538,6 @@ Employee Age: 34
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Employee Salary: 60000
-Employee Age: 26
-Employee Salary: 80000
-Employee Age: 35
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -571,12 +551,6 @@ Employee Age: 35
 
 <span class="nb">print</span><span class="p">(</span><span class="n">Salary_To_Be_Used_Elsewhere</span><span class="p">)</span> <span class="c1"># Now we have access to values we extracted from the instance</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Age_To_Be_Used_Elsewhere</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>80000
-26
 </pre></div>
 </div>
 </div>
@@ -688,12 +662,6 @@ Set ID <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1969
-1986
-</pre></div>
-</div>
-</div>
 </div>
 <p>For the most part, these classes are identical, save for a few unique attributes. This is redundant! We have just done more work creating the same thing with a different name.</p>
 <p>So what can we do? Well, we can create what’s know as a <strong>generic class</strong>, a class that can describe both a car and a truck, as well as other vehicles. Call this class vehicle, with all the attributes a vehicle possesses.</p>
@@ -770,18 +738,6 @@ This method is called <strong>Class Inheritance</strong>. Class inheritance allo
 
 <span class="n">my_truck</span> <span class="o">=</span> <span class="n">Truck</span><span class="p">(</span><span class="s2">&quot;Optimius Prime&quot;</span><span class="p">,</span> <span class="mi">1986</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;The animated one was DEFINITELY better.&quot;</span><span class="p">)</span>
 <span class="n">my_truck</span><span class="o">.</span><span class="n">Display_info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Herbie&#39; was built in 1969. Other information: &#39;A movie star that&#39;s also a car!&#39;
-It can&#39;t talk.
-
-&#39;Kitt&#39; was built in 1986. Other information: &#39;From the TV Smash hit &#39;Knight Rider&#39;&#39;
-It can talk!
-
-&#39;Optimius Prime&#39; was built in 1986. Other information: &#39;The animated one was DEFINITELY better.&#39;
-Don&#39;t ask it to carry cargo.
 </pre></div>
 </div>
 </div>
@@ -867,7 +823,7 @@ Don&#39;t ask it to carry cargo.
         
           By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
       </p>
     </div>
   </footer>

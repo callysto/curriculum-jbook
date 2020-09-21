@@ -88,8 +88,8 @@ Therefore the length of the hypotenuse is $\sqrt{13} \text{ m}$.
 
 Not convinced that this relationship works for all right angle triangles? Look at the visual proof from mathisfun.com.
 
-from IPython.display import YouTubeVideo
-YouTubeVideo('_87RbSoELW8?rel=0', width="560", height="315")
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_87RbSoELW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Algebraic proof
 
@@ -141,7 +141,7 @@ The length of the hypotenuse is $\sqrt{29} \text{ cm}$ or approximately $5.4 \te
 
 #### Question 1
 
-Image('images/PythagoreanTriangle5.png',width=300)
+<img style="float: left;" src="images/PythagoreanTriangle5.png"  width="300">
 
 answer1 = widgets.RadioButtons(options=['9 m', '6 m','6.4 m','5.4 m'],
                               value=None, description= 'Hypotenuse')
@@ -166,7 +166,7 @@ answer1.observe(check1, 'value')
 
 Let's have a more practical problem for the Pythagorean theorem. Say you have a table that's shortest side is 3.10 m long. If the table is held on an angle, can it fit through this door frame below? Round to 2 decimal places.
 
-Image('images/PythagoreanTriangleDoor.png',width=200)
+<img style="float: left;" src="images/PythagoreanTriangleDoor.png"  width="200">
 
 answer3 = widgets.RadioButtons(options=['2.00 m', '2.83 m','3.16 m','4.03 m'],
                               value=None, description= 'Diagonal')
@@ -215,7 +215,7 @@ We can use the Pythagorean theorem for more than just finding the length of the 
 
 Given this right angled triangle below, what is the missing side length?
 
-Image('images/PythagoreanTriangle6.png',width=200)
+<img style="float: left;" src="images/PythagoreanTriangle6.png"  width=200>
 
 Let's start by filling in the information we know into the pythagorean theorem.
 $$\begin{align*}
@@ -236,7 +236,7 @@ a & = 4 \text{ units}
 
 Now you try to calculate the length of the missing leg.
 
-Image('images/PythagoreanTriangle8.png',width=200)
+<img style="float: left;" src="images/PythagoreanTriangle8.png"  width="200">
 
 answer4 = widgets.RadioButtons(options=['8 m', '9 m','8.3 m','7.8 m'],
                               value=None, description= 'Side Length')
@@ -263,7 +263,7 @@ We can check if a triangle is a right angle triangle by knowing if its sides fit
 
 Look at the three triangles below. One is a right angle triangle, one is an acute triangle, and one is an obtuse triangle. Fill in the table below by clicking on the box you want to fill (where it's written 'nan') and typing in your answer. The longest side is side c.
 
-Image('images/ThreeTriangles.png',width=600,height=300)
+<img style="float: left;" src="images/ThreeTriangles.png"  width="600">
 
 import pandas as pd
 import qgrid
@@ -292,7 +292,7 @@ answer5.observe(check5, 'value')
 
 Let's go through an example together. Here is a triangle with all three sides labelled. Is this a right angle triangle?
 
-Image('images/angle2.png',width=300,height=300)
+<img style="float: left;" src="images/angle2.png"  width="300">
 
 Remember, the longest side is side c. Let's fill in the Pythagorean theorem and see if the left side equals the right. <br>
 Since c is the largest side, a and b will be the legs.
@@ -320,7 +320,7 @@ c^2 & = 169 \text{ m}^2 \\
 
 Now it's your turn to check if this triangle below is a right angle triangle.
 
-Image('images/angle1.png',width=200,height=300)
+<img style="float: left;" src="images/angle1.png"  width="200">
 
 submit1 = widgets.Button(description='Submit', button_style='success')
 answer6 = widgets.Text(value=None, placeholder='Your answer here', description='Left side')

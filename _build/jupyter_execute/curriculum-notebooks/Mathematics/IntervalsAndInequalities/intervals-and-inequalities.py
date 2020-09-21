@@ -2,14 +2,15 @@
 
 <a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/IntervalsAndInequalities/intervals-and-inequalities.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
 
-from IPython.display import display, Math, Latex, Markdown, HTML, clear_output, Javascript
-HTML('''<script>
+%%html
+
+<script>
   function code_toggle() {
     if (code_shown){
-      $('div.input').hide();
+      $('div.input').hide('500');
       $('#toggleButton').val('Show Code')
     } else {
-      $('div.input').show();
+      $('div.input').show('500');
       $('#toggleButton').val('Hide Code')
     }
     code_shown = !code_shown
@@ -20,7 +21,8 @@ HTML('''<script>
     $('div.input').hide()
   });
 </script>
-<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form''')
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>')
 
 import numpy as np
 import matplotlib.pyplot as plt

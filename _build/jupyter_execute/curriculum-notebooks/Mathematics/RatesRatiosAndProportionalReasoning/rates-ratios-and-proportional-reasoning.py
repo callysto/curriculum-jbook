@@ -32,8 +32,8 @@ from ipywidgets import IntSlider, Label, widgets, interact, interact_manual, But
 
 ## Math 8
 
-<center><img src="./images/ratioBars.gif"></center>
-<font size = 1 > <center> *GIF taken from: https://patches.zone/compression-guide.* </center> </font>
+<img src="./images/ratioBars.gif">
+*GIF taken from: https://patches.zone/compression-guide.* 
 
 ## Introduction
 *Objects do not always appear in the same size.* This is true of everything in the universe. For example, what is the size of a human to an elephant? Or the size of our planet to the likes of Mars?
@@ -47,7 +47,7 @@ This notebook discusses three mathematical comparison concepts. These concepts a
 
 We will use the following illustration to help learn more about ratios:
 
-<img src="./images/ratio.JPG" alt="Callysto" width=200 height=100 align = "center">
+<img src="./images/ratio.JPG" alt="Callysto" width=200  align = "center">
 
 The illustration above contains $2$ *triangles* and $4$ *circles*. So, **the ratio of** *triangles* **to** *circles* would be $2$ to $4$. This is because you have exactly $2$ *triangles* and $4$ *circles*.
 
@@ -61,9 +61,9 @@ Then you can say that **the ratio of** $A$ **to** $B$ is *the number of $As$ you
 
 **Ratios** can also be written in different ways:
 
-<h3 align='left'> a) Use a colon, ($a : b$), to separate the values.</h3>
-<h3 align='left'> b) Use the word "to", ($a\textrm{ to }b$), to separate the values. </h3>
-<h3 align='left'> c) Use a fraction, ($\frac{a}{b}$) to separate the values. </h3>
+- Use a colon, ($a : b$), to separate the values.</h3>
+- Use the word "to", ($a\textrm{ to }b$), to separate the values. </h3>
+- Use a fraction, ($\frac{a}{b}$) to separate the values. </h3>
 
 So, we can write the ratio of the example above in the following ways:
 
@@ -77,7 +77,7 @@ According to our definition of a ratio, for every $2$ *triangles*, there are $4$
 
 We can get an *equal ratio* by either multiplying or dividing each term in the ratio by the same number, (**Just not by zero**). So, since the ratio of *triangles* and *circles* is $2 : 4$, we can divide both sides of the ratio by $2$ to get $1 : 2$. This means there are $2$ *circles* for $each$ *triangle*, and it can be divided into $2$ groups.
 
-<img src="./images/ratio_scale.JPG" alt="Callysto" width=350 height=100 align = "center">
+<img src="./images/ratio_scale.JPG" alt="Callysto" width=350  align = "center">
 
 Let's try the following problem:
 
@@ -204,7 +204,7 @@ button_check1.on_click(check_button1)
 
 * **Problem 2:** (Use the illustration below to answer the question)
 
-<img src="./images/Car.gif" width="500" height="400"/>
+<img src="./images/Car.gif" width="500" />
 <font size = 1 > <center>*GIF taken from [NinetyEast](http://www.ninetyeast.net/physics/grade-9-10-gcse-hsc/forces/newtons-laws-of-motion/newtons-first-law-of-motion)*</center> </font>
 
 
@@ -444,8 +444,9 @@ buttonShowAnswer3.on_click(displayAnswer3)
 
 ## Rates
 
-<img src="./images/GirlRunning.gif" width="300" height="200"/></img>
-<font size=1><center>GIF taken from [Giphy](https://giphy.com/gifs/happy-girl-QKUTD5lAgpgrSHpbMB/fullscreen), October 27, 2018</center></font>
+<img src="./images/GirlRunning.gif" width="300" height="200">
+
+GIF taken from [Giphy](https://giphy.com/gifs/happy-girl-QKUTD5lAgpgrSHpbMB/fullscreen), October 27, 2018
 
 > **Rates** are somewhat different than ratios. A rate is a ratio that compares two quantities of different units.
 
@@ -817,8 +818,9 @@ $\Rightarrow (x\textrm{ seconds}) = 20\textrm{ seconds to run 100 meters.}$
 
 We can view this problem visually:
 
-<img src="./images/run.jpg" width="400" height="400"/></img>
-<font size = 1 > <center> Running image taken and modified from [VectorStock](https://www.vectorstock.com/royalty-free-vector/kid-running-vector-20339619), October 27, 2018</center> </font>
+<img src="./images/run.jpg" width="400" >
+
+Running image taken and modified from [VectorStock](https://www.vectorstock.com/royalty-free-vector/kid-running-vector-20339619), October 27, 2018
 
 Now, we can begin discussing what *proportional reasoning* is:
 
@@ -834,11 +836,12 @@ So, the time required to travel $100$ meters will be $5$ times of the initial ti
 
 This problem is a proportional reasoning problem.
 
-Below is a video that demonstrates the idea of proportion of reasoning:
+Below is a video that demonstrates the idea of proportional reasoning:
 
-YouTubeVideo('uw4mJWVTYXI')
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TTsLGvHve2E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<font size = 1 > <center> *This video was created by the YouTube channel Program Innovation and can be found at: (https://youtu.be/uw4mJWVTYXI)* </center> </font>
+*This video was created by the YouTube channel Program Innovation and can be found at: [https://youtu.be/TTsLGvHve2E](https://youtu.be/TTsLGvHve2E)* 
 
 ### Proportional Reasoning Related Problems
 
@@ -877,8 +880,9 @@ interact(q_17, val17 = widgets.Dropdown(options=[a17, a27, a37],\
 
 Let's see the visualization of this problem to give you clear idea what is exactly happening here:
 
-<img src="./images/Candy_problem.gif" width="500" height="400"/></img>
-<font size = 1 > <center> *GIF from https://tapintoteenminds.com/progression-of-proportional-reasoning/, October 27, 2018.</center> </font>
+<img src="./images/Candy_problem.gif" width="500" height="400">
+
+*GIF from https://tapintoteenminds.com/progression-of-proportional-reasoning/, October 27, 2018.
 
 * **Problem 2:** Below are two investment scenarios. Which investment is better? (This problem is taken from [TapIntoTeenMinds](https://tapintoteenminds.com/progression-of-proportional-reasoning/))
 
@@ -888,8 +892,9 @@ Scenario 2 : An investment of $1000$ dollars grows to $1500$ dollars.
 
 If you think this problem is about profit, then you will get $(400-100) = 300$ dollars profit from Scenario 1. But, you will get $(1500-1000) = 500$ dollars profit from scenario 2. So, in this case, scenario 2 is better than scenario 1. Let's visualize this way of thinking:
 
-<img src="./images/invesment_absolute.gif" width="500" height="400"/></img>
-<font size = 1 > <center> *GIF from https://tapintoteenminds.com/progression-of-proportional-reasoning/, October 27, 2018.</center> </font>
+<img src="./images/invesment_absolute.gif" width="500" height="400">
+
+*GIF from https://tapintoteenminds.com/progression-of-proportional-reasoning/, October 27, 2018.
 
 #writtenQuestion1 is the question the user is asked.
 writtenQuestion18 =  "We can think of this question in terms of profit."
@@ -926,8 +931,9 @@ We will get $(100 \times 4)$ in Scenario 1 and $(1000 \times 1.5)$ in Scenario 2
 
 Below is a visualization that demonstrates the idea of multiplicative thinking:
 
-<img src="./images/invesment_multiplicative.gif" width="500" height="400"/>
-<font size = 1 > <center> *GIF taken from https://tapintoteenminds.com/progression-of-proportional-reasoning/, October 27,2018 </center> </font>
+<img src="./images/invesment_multiplicative.gif" width="500" >
+
+*GIF taken from https://tapintoteenminds.com/progression-of-proportional-reasoning/, October 27,2018 
 
 * **Problem 3:** Jack went to a store to buy oranges. He found that a pack of $8$ oranges cost $2$ dollars, and a pack of $20$ oranges cost $5.5$ dollars.
 

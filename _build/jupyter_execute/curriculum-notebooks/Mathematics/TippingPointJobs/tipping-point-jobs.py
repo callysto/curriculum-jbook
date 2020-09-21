@@ -36,9 +36,11 @@ You can consider various sales amounts, and calculate how much you'd earn at eit
 Since this notebook module can interpret basic math operations, we can type in the formulas for salary. 
 
 Acme pays a base salary of $\$$1200 plus 3\% on sales, we can write this formula as
+
 $$ Acme\ pay = 1200 + .03*(sales-1000). $$
 
 Meanwhile, Bigby pays a base salary of $\$$250 plus 18\% on sales, we can write this formula as
+
 $$ Bigby\ pay = 250 + .18*sales.$$
 
 ## Calculations with Python
@@ -195,6 +197,7 @@ It seems obvious that Acme pays much less than Bigby, when the sales are large. 
 **Exercise:** Following the calculations as above, how many dollars in sales are needed at Acme to match the minimum wage month of $\$$2,500?
 
 **Do you need a hint?** Try solving this equation for **x** (and explain why this is the one you want):
+
 $$ 2,500 = 1200 + .03(x-1000).$$
 
 ## ✏️ Use this area to calculate your answer in Python. 

@@ -23,25 +23,7 @@ The applet below shows a point $P$ and its reflection $P'$ across a line.
 Try moving $P$ and the line and see how $P'$ changes.
 
 %%html
-
-<div id="ggb-point"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 400,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": false,
-      "enableRightClick": false,
-      "enableShiftDragZoom": true,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-point.ggb"
-  }, 'ggb-point');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-pt" src="https://www.geogebra.org/material/iframe/id/ks9hkvtr/width/475/height/455/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="475px" height="455px" style="border:0px;"> </iframe>
 
 Whichever side of the line $P$ is on, its reflection $P'$ is on the opposite side.
 The point $P$ is as far from the line as $P'$ is.
@@ -72,25 +54,7 @@ You will see a message if you got it right.
 You can also keep reading and come back to this exercise later.
 
 %%html
-
-<div id="ggb-exercise1"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 600,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": false,
-      "enableShiftDragZoom": true,
-      "enableRightClick": false,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-exercise1.ggb"
-  }, 'ggb-exercise1');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-x1" src="https://www.geogebra.org/material/iframe/id/cbb36ywk/width/632/height/596/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="632px" height="596px" style="border:0px;"> </iframe>
 
 If you were able to solve the exercise, you might already have guessed the following facts:
 
@@ -162,6 +126,8 @@ Use the slider to see what happens when we take and reflect more and more points
 
   ggbApp.inject();
 </script>
+
+**Oops. This code is broken.**
 
 If we only reflect a few points, the red dots don't look like much,
 but as we reflect more and more points, the red dots start to resemble the blue curve but flipped upside-down.
@@ -235,25 +201,7 @@ This time, the reflection across the $x$-axis is
 The interactive graph below allows you to enter an arbitrary function $f(x)$ and see its graph and its reflection across the $x$-axis.
 
 %%html
-
-<div id="ggb-interactive1"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 600,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": true,
-      "enableShiftDragZoom": true,
-      "enableRightClick": false,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-interactive1.ggb"
-  }, 'ggb-interactive1');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-i1" src="https://www.geogebra.org/material/iframe/id/ct6gamfr/width/796/height/525/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="796px" height="525px" style="border:0px;"> </iframe>
 
 ## Reflections across the $y$-axis
 
@@ -275,25 +223,7 @@ Click and drag the points $A'$, $B'$, and $C'$ so that they are the reflections 
 of $A$, $B$, and $C$, respectively.
 
 %%html
-
-<div id="ggb-exercise2"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 600,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": false,
-      "enableShiftDragZoom": true,
-      "enableRightClick": false,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-exercise2.ggb"
-  }, 'ggb-exercise2');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-x2" src="https://www.geogebra.org/material/iframe/id/kkmadgv7/width/697/height/782/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="697px" height="782px" style="border:0px;"> </iframe>
 
 **Rule:** For an arbitrary point $(x, y)$, its reflection across the $y$-axis is the point $(-x, y)$.
 
@@ -316,25 +246,7 @@ In practice, because life is short, we reflect a few points and connect them by 
 The more points we reflect, the more accurately we can draw the reflection of the graph.
 
 %%html
-
-<div id="ggb-slider2"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 600,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": false,
-      "enableShiftDragZoom": true,
-      "enableRightClick": false,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-slider2.ggb"
-  }, 'ggb-slider2');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-s2" src="https://www.geogebra.org/material/iframe/id/ewntqkmc/width/709/height/712/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="709px" height="712px" style="border:0px;"> </iframe>
 
 ### Functions
 
@@ -355,16 +267,22 @@ Let's reflect them across the $y$-axis instead.
 According to our rule, we just replace $x$ with $-x$,
 but we should be careful and put parentheses around it, like so: $(-x)$.
 The reflection is simply
-    $$ y = (-x)^2 = x^2. $$
+
+$$ y = (-x)^2 = x^2. $$
+
 In this case, the reflection across the $y$-axis is the same as the original function.
 
 **Example:** Let's reflect the function $y = \sin(x) - x$ across the $y$-axis.
 We replace every $x$ with $-x$ to get
-    $$ y = \sin(-x) - (-x) = \sin(-x) + x. $$
+
+$$ y = \sin(-x) - (-x) = \sin(-x) + x. $$
+
 This is a perfectly acceptable answer.
 You might have learned that $\sin(-x) = -\sin(x)$,
 so we could also rewrite this as
-    $$ y = -\sin(x) + x $$
+    
+$$ y = -\sin(x) + x $$
+
 if we prefer.
 You might also notice that this is the same answer that we got when we reflected it across the $x$-axis.
 Whether we reflect $y = \sin(x) - x$ across the $x$-axis or the $y$-axis, we get the same result.
@@ -373,25 +291,7 @@ Use the interactive graph below to plot any function with its reflection across 
 As usual, the function will be in blue and its reflection in red.
 
 %%html
-
-<div id="ggb-interactive2"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 600,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": true,
-      "enableShiftDragZoom": true,
-      "enableRightClick": false,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-interactive2.ggb"
-  }, 'ggb-interactive2');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-i2" src="https://www.geogebra.org/material/iframe/id/zcvsunmk/width/705/height/660/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="705px" height="660px" style="border:0px;"> </iframe>
 
 ## Reflections across both axes
 
@@ -420,25 +320,7 @@ Click and drag the point $P$ in blue.
 The red point $P'$ is the result of reflecting $P$ across both axes.
 
 %%html
-
-<div id="ggb-point2"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 400,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": false,
-      "enableShiftDragZoom": true,
-      "enableRightClick": false,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-point2.ggb"
-  }, 'ggb-point2');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-pt2" src="https://www.geogebra.org/material/iframe/id/kahwzszc/width/609/height/409/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="609px" height="409px" style="border:0px;"> </iframe>
 
 Can you see what is happening?
 There are a couple of ways of thinking about the relationship between $P$ and $P'$ in this applet.
@@ -512,25 +394,7 @@ Try the following exercise.
 Move the points $A'$, $B'$, $C'$, and $D'$ so that they are the reflections of $A$, $B$, $C$, and $D$, respectively.
 
 %%html
-
-<div id="ggb-exercise3"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 600,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": false,
-      "enableShiftDragZoom": true,
-      "enableRightClick": false,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-exercise3.ggb"
-  }, 'ggb-exercise3');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-x3" src="https://www.geogebra.org/material/iframe/id/kb5ch5bw/width/702/height/820/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="702px" height="820px" style="border:0px;"> </iframe>
 
 Here is an explanation of why this rule works.
 
@@ -586,25 +450,7 @@ As always, we sample a bunch of points on the curve, and reflect them each acros
 See what happens when we sample more and more points on the graph of $y = x^2$.
 
 %%html
-
-<div id="ggb-slider3"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 600,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": false,
-      "enableShiftDragZoom": true,
-      "enableRightClick": false,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-slider3.ggb"
-  }, 'ggb-slider3');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-s3" src="https://www.geogebra.org/material/iframe/id/ckvgsvyu/width/598/height/560/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="598px" height="560px" style="border:0px;"> </iframe>
 
 We started with a parabola opening upwards.
 Its reflection is a parabola opening sideways.
@@ -623,12 +469,18 @@ This rule tells us that we only need to swap the $x$'s and $y$'s in our function
 **Example:** Let's reflect the function $y = x^2$ across the line $y = x$.
 According to our rule, we just swap the $x$'s and $y$'s.
 So the reflection is
-    $$ x = y^2. $$
+    
+$$ x = y^2. $$
+
 The problem is solved at this point, but suppose we try to solve for $y$.
 We get either
-    $$ y = \sqrt x $$
+
+$$ y = \sqrt x $$
+
 or
-    $$ y = -\sqrt x. $$
+
+$$ y = -\sqrt x. $$
+
 How do the graphs of $x = y^2$, $y = \sqrt x$, and $y = -\sqrt x$ compare to one another?
 The graph of $x = y^2$ is a sideways parabola and does not pass the vertical line test.
 The graph of $y = \sqrt x$ is just the top half of that parabola and therefore *does* pass the vertical line test.
@@ -636,9 +488,13 @@ The graph of $y = -\sqrt x$ is the bottom half of the parabola and also passes t
 
 **Example:** Now let's reflect the straight line $y = \frac 1 2 x + 1$ across the line $y = x$.
 Our rule says we just need to swap the $x$'s and $y$'s, so we get
-    $$ x = \frac 1 2 y + 1. $$
+
+$$ x = \frac 1 2 y + 1. $$
+
 Once again, the problem is solved at this point, but let's try solving for $y$:
-    $$ y = 2 x - 2. $$
+
+$$ y = 2 x - 2. $$
+
 The reflection of the line $y = \frac 1 2 x + 1$ across the line $y = x$ is the line $y = 2 x - 2$.
 This is a case of a function whose reflection actually does pass the vertical line test
 and can be written in the form $y = f(x)$.
@@ -646,25 +502,7 @@ and can be written in the form $y = f(x)$.
 Use the interactive graph below to plot functions and their reflections across $y = x$.
 
 %%html
-
-<div id="ggb-interactive3"></div>
-
-<script>
-  var ggbApp = new GGBApplet({
-      "height": 600,
-      "showToolBar": false,
-      "showMenuBar": false,
-      "showAlgebraInput": false,
-      "showResetIcon": true,
-      "enableLabelDrags": true,
-      "enableShiftDragZoom": true,
-      "enableRightClick": false,
-      "useBrowserForJS": false,
-      "filename": "geogebra/reflection-interactive3.ggb"
-  }, 'ggb-interactive3');
-
-  ggbApp.inject();
-</script>
+<iframe scrolling="no" title="Reflection-i3" src="https://www.geogebra.org/material/iframe/id/m9xzwneq/width/650/height/548/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="650px" height="548px" style="border:0px;"> </iframe>
 
 ## Reflections combined with function operations
 

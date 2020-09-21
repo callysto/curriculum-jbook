@@ -2,23 +2,27 @@
 
 <a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/PatternsAndRelations/patterns-and-relations.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
 
-from IPython.display import HTML
+%%html
 
-HTML('''<script>
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
 </script>
-The raw code for this IPython notebook is by default hidden for easier reading.
-To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>.''')
-
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
 
 # Modules
 
@@ -32,7 +36,7 @@ import matplotlib.pyplot as plt
 
 from ipywidgets import widgets as w
 from ipywidgets import Button, Layout, widgets
-from IPython.display import display, Javascript, Markdown
+from IPython.display import display, Javascript, Markdown, HTML
 
 # grid features for interactive grids 
 
@@ -135,11 +139,11 @@ This notebook is one in a series of notebooks that explore the use patterns to d
 We begin with a few definitions. 
 
 <div class="alert alert-warning">
-<font color="black"><b>Definition.</b> An **ordered pair** $(n_1,n_2)$ is a pair of numbers where *order* matters. 
+<font color="black"><b>Definition.</b> An **ordered pair** (m,n) is a pair of numbers where *order* matters. 
   </font>
 </div>
 
-For example, the pair $(1,2)$ is different from the pair $(2,1)$.
+For example, the pair (1,2) is different from the pair (2,1).
 
 <div class="alert alert-warning">
 <font color="black"><b>Definition.</b> An **equation** (also referred to as a **relation**) is an expression  asserting that two quantities are equal.
@@ -157,7 +161,7 @@ $y = 2$
 are all equations.
 
 <div class="alert alert-warning">
-<font color="black"><b>Definition.</b> An **linear equation** (or **linear relation**) is an equation of the form $$y = ax + b$$, where $a,b$ are fixed values. 
+<font color="black"><b>Definition.</b> An **linear equation** (or **linear relation**) is an equation of the form y = ax + b, where a,b are fixed values. 
   </font>
 </div>
 
@@ -165,10 +169,10 @@ For example,
 
 | a | b|Linear Relation   |
 |---|--|-----------|
-|1|2|$$y = x + 2$$|
-| 3 |1|$$y = 3x + 1$$|
-|5|0|$$y = 5x$$  |
-|0|0|$$y = 0$$|
+|1|2|y = x + 2|
+| 3 |1|y = 3x + 1|
+|5|0|y = 5x  |
+|0|0|y = 0|
 
 <div class="alert alert-warning">
 <font color="black"><b>Definition.</b> A **table of values** is a set of ordered pairs usually resulting from substituting numbers into an equation.   </font>
@@ -176,7 +180,9 @@ For example,
 
 For example, if we consider the equation 
 
-$$y = x + 1$$
+$$
+y = x + 1
+$$
 
 and the values $x = 1,2,3$, the table of values corresponds to
 
@@ -911,7 +917,11 @@ def get_answer_one(answer):
 
 ### Observation #2
 
-Recall that a linear relation is of the form $$y = ax + b$$
+Recall that a linear relation is of the form 
+
+$$
+y = ax + b
+$$
 
 Use this information along with the answer to Observation #1, to deduce the value of $b$.
 

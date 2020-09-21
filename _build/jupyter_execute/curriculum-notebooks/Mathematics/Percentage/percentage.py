@@ -35,7 +35,9 @@ Let's look at our math exam mark example from above. The student correctly answe
 
 To represent this ratio as a percentage we first convert $\dfrac{22}{25}$ to its decimal representation (simply do the division in your calculator). 
 
-$$\dfrac{22}{25} = 22 \div 25 = 0.88$$ 
+$$
+\dfrac{22}{25} = 22 \div 25 = 0.88
+$$ 
 
 We are almost done: we now have the ratio represented as a value between 0 and 1. To finish getting the answer to our problem all we need to do is multiply this value by $100$ to get our percentage. $$0.88 \times 100 = 88\%$$
 
@@ -129,16 +131,41 @@ If Sam buys these shoes this weekend how much will they cost? If the sales tax i
 
 Let's start by figuring out the sale price of the shoes before calculating the tax. To figure out the new price we must first take $30\%$ off the original price.
 
-So the shoes are regular priced at $\$89.99$ and the sale is for $30\%$ off $$\$89.99\times 30\%=\$89.99\times\frac{30}{100}=\$26.997$$ We can round $\$26.997$ to $\$27$. 
+So the shoes are regular priced at $\$89.99$ and the sale is for $30\%$ off 
 
-Ok we now know how much Sam will save on her new shoes, but let's not forget that the question is asking how much her new shoes will cost, not how much she will save. All we need to do now is take the total price minus the savings to get the new price: $$\$89.99- \$27=\$62.99$$ Wow, what savings!
+$$
+\$89.99\times 30\%=\$89.99\times\frac{30}{100}=\$26.997
+$$ 
+
+We can round $\$26.997$ to $\$27$. 
+
+Ok we now know how much Sam will save on her new shoes, but let's not forget that the question is asking how much her new shoes will cost, not how much she will save. All we need to do now is take the total price minus the savings to get the new price: 
+
+$$
+\$89.99- \$27=\$62.99
+$$ 
+
+Wow, what savings!
 
 Now for the second part of the question: what will the total price be if the tax is $5\%$?
 
-We must now figure out what $5\%$ of $\$62.99$ is $$\$62.99\times5\%=\$62.99\times\frac{5}{100}=\$3.15$$ Now we know that Sam will need to pay $\$3.15$ of tax on her new shoes so the final price is $$\$62.99+\$3.15=\$66.14$$
+We must now figure out what $5\%$ of $\$62.99$ is 
+
+$$
+\$62.99\times5\%=\$62.99\times\frac{5}{100}=\$3.15
+$$ 
+
+Now we know that Sam will need to pay $\$3.15$ of tax on her new shoes so the final price is 
+
+$$
+\$62.99+\$3.15=\$66.14
+$$
 
 A shortcut for finding the total price including the sales tax is to add 1 to the tax ratio, let's see how this works:
-$$\$62.99\times\left(\frac{5}{100}+1\right)=\$62.99\times1.05=\$66.14$$
+
+$$
+\$62.99\times\left(\frac{5}{100}+1\right)=\$62.99\times1.05=\$66.14
+$$
 
 You can use this trick to quickly figure out a price after tax.
 
@@ -149,9 +176,25 @@ Since percentages is simply a different way to represent a fraction, the rules f
 
 Therefore if we write $50\%\times 20\%$ we really mean $50\%$ of $20\%$.
 
-The simplest approach to doing this is to first convert each fraction into their decimal representation (divide them by 100), so $$50\%\div 100=0.50$$ and $$20\%\div 100=0.20$$
+The simplest approach to doing this is to first convert each fraction into their decimal representation (divide them by 100), so 
 
-Now that we have each fraction shown as their decimal representation we simply multiply them together: $$0.50\times0.20=0.10$$ and again to get this decimal to a percent we multiply by 100 $$0.10\times100=10\%$$ Putting this into words we get: *$50\%$ of $20\%$ is $10\%$ (One half of $20\%$ is $10\%$)*.
+$$
+50\%\div 100=0.50$$ and $$20\%\div 100=0.20
+$$
+
+Now that we have each fraction shown as their decimal representation we simply multiply them together: 
+
+$$
+0.50\times0.20=0.10
+$$ 
+
+and again to get this decimal to a percent we multiply by 100 
+
+$$
+0.10\times100=10\%
+$$ 
+
+Putting this into words we get: *$50\%$ of $20\%$ is $10\%$ (One half of $20\%$ is $10\%$)*.
 
 ## Sports Example
 
@@ -202,9 +245,19 @@ _**How to play:** choose the winning score from the drop down box then click "St
 
 If you look below the game screen you will see "Player's point save average" and "Computer's point save average". You might also have noticed these values changed every time a save was made (unless Sv% was 1) or a score happened, can you come up with a formula to get these values?
 
-The Sv% value is the ratio of how many saves was made over how many total shots the player faced so our formula is $$Sv\%=\frac{saved \ shots}{total \ shots}$$
+The Sv% value is the ratio of how many saves was made over how many total shots the player faced so our formula is 
 
-Let's assume the player faced $33$ shots and let in $2$, then the player's Sv% is $$Sv\%=\frac{(33-2)}{33}=0.939$$ *Note: $(33-2)$ is how many shots where saved since the total was $33$ and the player let in $2$*
+$$
+Sv\%=\frac{saved \ shots}{total \ shots}
+$$
+
+Let's assume the player faced $33$ shots and let in $2$, then the player's Sv% is 
+
+$$
+Sv\%=\frac{(33-2)}{33}=0.939
+$$ 
+
+*Note: $(33-2)$ is how many shots where saved since the total was $33$ and the player let in $2$*
 
 ## Questions
 

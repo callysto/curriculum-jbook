@@ -2,15 +2,27 @@
 
 <a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/InterpretingStatisticalData/interpreting-statistical-data.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
 
-from IPython.display import HTML
+%%html
 
-HTML('''<script>
-code_show=true; 
-function code_toggle() { if (code_show){ $('div.input').hide(); } else { $('div.input').show(); } code_show = !code_show } 
-$( document ).ready(code_toggle);
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
 </script>
-
-Raw code hidden. To show code, click <a href="javascript:code_toggle()">here</a>. <b>To begin the notebook, click Kernel then click Restart & Run All. </b> ''')
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
 
 import random
 import math
@@ -23,7 +35,7 @@ import matplotlib.pyplot as plt
 from numpy import linspace
 from scipy.stats import truncnorm
 from ipywidgets import widgets, interact, Layout, Button, Box, interact_manual, fixed
-from IPython.display import display, Markdown, Javascript
+from IPython.display import display, Markdown, Javascript, HTML
 
 # Function: obtains z-value to use given confidence level
 # Input: confidence level (enter value from 0 to 1.00)

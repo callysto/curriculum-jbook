@@ -27,7 +27,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </style>
 
 
-# Geometry: Shape and Space
+# Shape and Space: Geometry
 
 import matplotlib.pyplot as plt
 import ipywidgets
@@ -98,34 +98,36 @@ With this information we can now find the perimeter of a **rectangle** or **squa
 To find the **perimeter** of a **rectangle**, one must *add all the sides* together. The formula for the perimeter of a rectangle is given by
 
 
-<h3 align='center'>$\ (Length) + (Length) + (Width) + (Width) = (Perimeter) $</h3>
+$$ (Length) + (Length) + (Width) + (Width) = (Perimeter) $$
 
 But, since we know that:
 
 
-<h3 align='center'>$\ (Length) + (Length) = 2 \times (Length), $</h3>
+$$ (Length) + (Length) = 2 \times (Length), $$
 
 And that:
 
 
-<h3 align='center'>$\ (Width) + (Width) = 2 \times (Width), $</h3>
+$$ (Width) + (Width) = 2 \times (Width), $$
+
 
 We can simplify the formula to look like:
 
 
-<h3 align='center'>$\ 2 \times (Width) + 2 \times (Length) = (Perimeter). $</h3>
+$$\ 2 \times (Width) + 2 \times (Length) = (Perimeter). $$
 
 Now, we have a simplified formula for finding the perimeter of any **rectangle**. 
 
 Finding the **perimeter** of any **square** is even simpler since we know that all sides have equal length. So, the formula is even simpler. You can either write:
 
 
-<h3 align='center'>$\ 4 \times (Width) = (Perimeter), $</h3>
+$$\ 4 \times (Width) = (Perimeter), $$
 
 Or:
 
 
-<h3 align='center'>$\ 4 \times (Length) = (Perimeter). $</h3>
+$$ 4 \times (Length) = (Perimeter). $$
+
 
 ### Practice Question 2
 
@@ -175,12 +177,14 @@ We get the **diameter** if we draw a line starting from any edge of the circle t
 It is also important to note that the **radius** of any circle is *half* the size of the **diameter**:
 
 
-<h3 align='center'>$\ \frac{Diameter}{2} = (Radius) $</h3>
+$$ \frac{Diameter}{2} = (Radius) $$
+
 
 You can think of the **diameter** as being *twice* the **radius**.
 
 
-<h3 align='center'>$\ 2 \times (Radius) = (Diameter) $</h3>
+$$ 2 \times (Radius) = (Diameter) $$
+
 
 ## Circumference
 
@@ -195,12 +199,13 @@ To find the **circumference** of any circle, we first have to find either the **
 If we only have the **radius**, we can use the following formula to calculate the **circumference**:
 
 
-<h3 align='center'>$\ 2 \times \pi \times (Radius) = (Circumference) $</h3>
+$$\ 2 \times \pi \times (Radius) = (Circumference) $$
+
 
 If we only have the **diameter**, we can use the following formula to calculate the **circumference**:
 
 
-<h3 align='center'>$\ \pi \times (Diameter) = (Circumference) $</h3>
+$$\ \pi \times (Diameter) = (Circumference) $$
 
 Now we have a formula we can use to calculate the **circumference** of a circle!
 
@@ -404,34 +409,36 @@ Then, we know that:
 Suppose you had 5 **decametres**, (*dam*), and you wanted to turn them into **kilometres**, (*km*). We know that going from **decametres** to **kilometres** is going **UP** 2 steps, so we must divide the amount of hectometres by 10 twice. This is because:
 
 
-<h3 align='center'>$\ \frac{Decametre}{10} = (Hectometre) $</h3>
+$$ \frac{Decametre}{10} = (Hectometre) $$
+
 
 And:
 
 
-<h3 align='center'>$\ \frac{Hectometre}{10} = (Kilometre) $</h3>
+$$\ \frac{Hectometre}{10} = (Kilometre) $$
 
 Then, we can find the answer by writing:
 
 
-<h3 align='center'>$\ \frac{Decametres}{10 \times 10} = \frac{Decametres}{100} = (Kilometres) $</h3>
+$$\ \frac{Decametres}{10 \times 10} = \frac{Decametres}{100} = (Kilometres) $$
+
 
 So:
 
 
-<h3 align='center'>$\ \frac{5}{100} = 0.05 $</h3>
+$$\ \frac{5}{100} = 0.05 $$
+
 
 **ANSWER:** 5 *dam* = 0.05 *km*. 
 
 Suppose instead that you had 7 **centimetres**, (*cm*), and you wanted to turn them into **millimetres**, (*mm*). We know that going from **centimetres** to **milimetres** is going **DOWN** 1 step, so we must multiply the amount of centimetres by 10 once. This is because:
 
 
-<h3 align='center'>$\ (Centimetre) \times 10 = (Milimetre) $</h3>
+$$\ (Centimetre) \times 10 = (Millimetre) $$
 
 Then, we can find the answer by doing:
 
-
-<h3 align='center'>$ 7 \times 10 = (70) $</h3>
+$$ 7 \times 10 = (70) $$
 
 **ANSWER:** 7 *cm* = 70 *mm*
 
