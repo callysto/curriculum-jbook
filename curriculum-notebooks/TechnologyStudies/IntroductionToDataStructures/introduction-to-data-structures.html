@@ -39,6 +39,8 @@
     <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Afterword" href="../../../afterword.html" />
     <link rel="prev" title="Python - Loops and Iteration" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,8 +83,8 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../README.html">
-   Curriculum Notebooks
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -118,6 +120,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
    Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Statistics.html">
+   Statistics Section
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -166,6 +173,11 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
  </li>
 </ul>
 
@@ -462,13 +474,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>physics
-[2, 3, 4, 5]
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="creating-new-lists-from-old-lists">
@@ -489,12 +494,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4, 5, 6]
-[&#39;Hello World! &#39;, &#39;Hello World! &#39;, &#39;Hello World! &#39;, &#39;Hello World! &#39;, &#39;Hello World! &#39;]
-</pre></div>
-</div>
-</div>
 </div>
 <p>We can also easily check for an element in a list by using the “in” keyword, just like we did when we were checking for characters in a string.</p>
 <div class="cell docutils container">
@@ -507,12 +506,6 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">list1</span><span class="p">)</span> <span class="c1"># This will be true</span>
 <span class="nb">print</span><span class="p">(</span><span class="mi">4</span> <span class="ow">in</span> <span class="n">list1</span><span class="p">)</span> <span class="c1"># This will be false</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
-False
 </pre></div>
 </div>
 </div>
@@ -542,18 +535,6 @@ False
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4, 5, 6]
-1
-2
-3
-4
-5
-6
-1 2 3 4 5 6 
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id='List_Slicing'></a></p>
 </div>
@@ -580,12 +561,6 @@ False
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2, 3, 4, 5]
-[1, 2, 3, 4, 5]
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -599,11 +574,6 @@ False
 <span class="n">list1</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[8, 7, 6, 5, 4, 3, 2, 1]
 </pre></div>
 </div>
 </div>
@@ -646,21 +616,11 @@ Print L4 on seperate lines <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Max Function: This function returns the maximum value in a list</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">list1</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>13
 </pre></div>
 </div>
 </div>
@@ -672,21 +632,11 @@ Print L4 on seperate lines <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sorted Function: This function sorts the list in ascending order (or alphebetical order)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">list1</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-1, 0, 1, 2, 3, 4, 5, 6, 11, 13]
 </pre></div>
 </div>
 </div>
@@ -703,21 +653,11 @@ Print L4 on seperate lines <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 4, 4, 7]
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Count Method: This method will return the number of times an item shows up in a list</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">list2</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
 </pre></div>
 </div>
 </div>
@@ -731,21 +671,11 @@ Print L4 on seperate lines <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 4, 4, 7, &#39;Hi&#39;, &#39;Hey&#39;, &#39;Howdy&#39;]
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Index Method: This method returns the first occurence of the specified element</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">list2</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
 </pre></div>
 </div>
 </div>
@@ -758,22 +688,12 @@ Print L4 on seperate lines <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[5, 1, 4, 4, 7, &#39;Hi&#39;, &#39;Hey&#39;, &#39;Howdy&#39;]
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove Method: This method will remove a specified object from a list</span>
 <span class="n">list2</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[5, 1, 4, 7, &#39;Hi&#39;, &#39;Hey&#39;, &#39;Howdy&#39;]
 </pre></div>
 </div>
 </div>
@@ -786,22 +706,12 @@ Print L4 on seperate lines <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-1, 0, 5, 13, 6, 3, 11, 4, 2, 1]
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort Method: This method will sort the elements in a given list</span>
 <span class="n">list1</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-1, 0, 1, 2, 3, 4, 5, 6, 11, 13]
 </pre></div>
 </div>
 </div>
@@ -840,11 +750,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Hello&#39;, &#39;World&#39;]
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -854,14 +759,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 <span class="nb">print</span><span class="p">(</span><span class="n">string2</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;i&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="c1"># This will find the i in the string, and split once, i will be the seperator</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">string2</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;w&quot;</span><span class="p">))</span> <span class="c1"># This will use w as a seperator, and split the string multiple times</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">string2</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="c1"># This will split the string twice, and use whitespace as a seperator</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;string&#39;, &#39;example...wow!!!&#39;]
-[&#39;Th&#39;, &#39;s is a string example...wow!!!&#39;]
-[&#39;This is a string example...&#39;, &#39;o&#39;, &#39;!!!&#39;]
-[&#39;This&#39;, &#39;is&#39;, &#39;a string example...wow!!!&#39;]
 </pre></div>
 </div>
 </div>
@@ -877,11 +774,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -893,11 +785,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 <span class="n">input_string</span> <span class="o">=</span> <span class="s2">&quot;8 3 5 1 9 2&quot;</span> <span class="c1"># Pretend input from input()</span>
 <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">input_string</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span> <span class="c1"># This is a compact way of writing a for loop when doing operations on a list</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 5, 8, 9]
 </pre></div>
 </div>
 </div>
@@ -944,12 +831,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Zara
-7
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -961,11 +842,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Name&#39;: &#39;Zara&#39;, &#39;Age&#39;: 8, &#39;Class&#39;: &#39;First&#39;}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -973,11 +849,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 
 <span class="n">d1</span><span class="p">[</span><span class="s2">&quot;School&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;St. Peter&#39;s&quot;</span> <span class="c1"># This will append a key-value pair to the current dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Name&#39;: &#39;Zara&#39;, &#39;Age&#39;: 8, &#39;Class&#39;: &#39;First&#39;, &#39;School&#39;: &quot;St. Peter&#39;s&quot;}
 </pre></div>
 </div>
 </div>
@@ -995,11 +866,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Name&#39;: &#39;Zara&#39;, &#39;Age&#39;: 8, &#39;School&#39;: &quot;St. Peter&#39;s&quot;, &#39;Category&#39;: &#39;First&#39;}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1012,11 +878,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Age&#39;: 8, &#39;School&#39;: &quot;St. Peter&#39;s&quot;, &#39;Category&#39;: &#39;First&#39;}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1025,11 +886,6 @@ Sort L5 from largest to smallest and print the result <br /></p>
 
 <span class="n">d1</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{}
 </pre></div>
 </div>
 </div>
@@ -1074,11 +930,6 @@ Clear D1 and print <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1088,22 +939,12 @@ Clear D1 and print <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Name&#39;: &#39;Zara&#39;, &#39;Age&#39;: 7, &#39;Class&#39;: &#39;First&#39;}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This function determines the type of object you give it, works with dictionaries</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">dict1</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;dict&#39;&gt;
 </pre></div>
 </div>
 </div>
@@ -1122,11 +963,6 @@ Clear D1 and print <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1135,11 +971,6 @@ Clear D1 and print <br /></p>
 <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="s2">&quot;Height&quot;</span><span class="p">,</span> <span class="s2">&quot;Weight&quot;</span><span class="p">]</span>
 <span class="n">dict2</span> <span class="o">=</span> <span class="nb">dict</span><span class="o">.</span><span class="n">fromkeys</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">dict2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Age&#39;: 10, &#39;Height&#39;: 10, &#39;Weight&#39;: 10}
 </pre></div>
 </div>
 </div>
@@ -1154,11 +985,6 @@ Clear D1 and print <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_items([(&#39;Name&#39;, &#39;Zara&#39;), (&#39;Age&#39;, 7), (&#39;Class&#39;, &#39;First&#39;)])
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1169,11 +995,6 @@ Clear D1 and print <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;Name&#39;, &#39;Age&#39;, &#39;Class&#39;])
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1181,11 +1002,6 @@ Clear D1 and print <br /></p>
 
 <span class="n">value_list</span> <span class="o">=</span> <span class="n">dict1</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">value_list</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_values([&#39;Zara&#39;, 7, &#39;First&#39;])
 </pre></div>
 </div>
 </div>
@@ -1201,11 +1017,6 @@ Clear D1 and print <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Name&#39;: &#39;Zara&#39;, &#39;Age&#39;: 7, &#39;Class&#39;: &#39;First&#39;, &#39;Gender&#39;: None}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1214,11 +1025,6 @@ Clear D1 and print <br /></p>
 <span class="n">dict2</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Gender&quot;</span><span class="p">:</span> <span class="s2">&quot;female&quot;</span><span class="p">}</span>
 <span class="n">dict1</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dict2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">dict1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Name&#39;: &#39;Zara&#39;, &#39;Age&#39;: 7, &#39;Class&#39;: &#39;First&#39;, &#39;Gender&#39;: &#39;female&#39;}
 </pre></div>
 </div>
 </div>
@@ -1237,11 +1043,6 @@ Clear D1 and print <br /></p>
 
 <span class="n">new_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span><span class="n">values</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">new_dict</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3}
 </pre></div>
 </div>
 </div>
@@ -1309,11 +1110,6 @@ Add a key-value pair using any method you wish, and print D2 <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1, 2, 3, 4, 5, 6)
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1324,22 +1120,12 @@ Add a key-value pair using any method you wish, and print D2 <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1, 1, 2, 3, 4, 5, 6)
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Getting elements from a tuple</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">tuple4</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
 </pre></div>
 </div>
 </div>
@@ -1356,22 +1142,12 @@ Add a key-value pair using any method you wish, and print D2 <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Index Method: Finds the first occurence of a given element, and returns its position</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">tuple4</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -1395,12 +1171,6 @@ Add a key-value pair using any method you wish, and print D2 <br /></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([(&#39;a&#39;, &#39;b&#39;), (1, 2, 3, 4), (&#39;Hello&#39;, 6, 7, 8)])
-dict_values([1, 2, 3])
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id='Tuple_Unpacking'></a></p>
 </div>
@@ -1419,15 +1189,6 @@ dict_values([1, 2, 3])
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">birth_year</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>James 
-
-23 
-
-1995 
 </pre></div>
 </div>
 </div>
@@ -1501,6 +1262,7 @@ dict_values([1, 2, 3])
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html" title="previous page">Python - Loops and Iteration</a>
+    <a class='right-next' id="next-link" href="../../../afterword.html" title="next page">Afterword</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -1509,7 +1271,7 @@ dict_values([1, 2, 3])
         
           By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
       </p>
     </div>
   </footer>

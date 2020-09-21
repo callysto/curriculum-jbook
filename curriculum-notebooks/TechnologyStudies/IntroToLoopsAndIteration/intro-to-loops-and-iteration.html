@@ -39,6 +39,7 @@
     <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
     <link rel="next" title="Python - Lists and Dictionaries" href="../IntroductionToDataStructures/introduction-to-data-structures.html" />
     <link rel="prev" title="Python - Classes" href="../IntroductionToPython/introduction-to-python-classes.html" />
 
@@ -82,8 +83,8 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../README.html">
-   Curriculum Notebooks
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -119,6 +120,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
    Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Statistics.html">
+   Statistics Section
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -167,6 +173,11 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
  </li>
 </ul>
 
@@ -394,20 +405,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-</pre></div>
-</div>
-</div>
 </div>
 <p>Another example. Since <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&lt;</span> <span class="pre">0</span></code> to start, the <code class="docutils literal notranslate"><span class="pre">while</span></code> condition is not satisfied.</p>
 <div class="cell docutils container">
@@ -418,11 +415,6 @@
     <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
     
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;n is less than&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n is less than 0
 </pre></div>
 </div>
 </div>
@@ -446,13 +438,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Current Letter: D
-Current Letter: o
-Current Letter: g
-</pre></div>
-</div>
-</div>
 </div>
 <p>Another example of iterating over a string. The same idea as above, but now the elements assigned to the variable are from a list.</p>
 <div class="cell docutils container">
@@ -460,13 +445,6 @@ Current Letter: g
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;mango&quot;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current fruit:&quot;</span><span class="p">,</span> <span class="n">fruit</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Current fruit: banana
-Current fruit: apple
-Current fruit: mango
 </pre></div>
 </div>
 </div>
@@ -484,27 +462,11 @@ Current fruit: mango
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-1
-2
-3
-4
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
-4
-5
 </pre></div>
 </div>
 </div>
@@ -516,27 +478,11 @@ Current fruit: mango
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-6
-8
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
--2
--4
--6
--8
 </pre></div>
 </div>
 </div>
@@ -555,13 +501,6 @@ Current fruit: mango
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Current fruit: banana
-Current fruit: apple
-Current fruit: mango
-</pre></div>
-</div>
-</div>
 </div>
 <p>An example of iteration on a dictionary.</p>
 <div class="cell docutils container">
@@ -569,13 +508,6 @@ Current fruit: mango
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;z&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s2">&quot;corresponds to&quot;</span><span class="p">,</span> <span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x corresponds to 1
-y corresponds to 2
-z corresponds to 3
 </pre></div>
 </div>
 </div>
@@ -602,11 +534,6 @@ z corresponds to 3
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[542, 869, 661, 482, 564, 829, 142]
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id='Break_Statement'></a></p>
 </div>
@@ -628,21 +555,6 @@ z corresponds to 3
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-Done!
-</pre></div>
-</div>
-</div>
 </div>
 <p>Another example, this time iterating through the letters in a string, and breaking out if the letter is equal to <code class="docutils literal notranslate"><span class="pre">h</span></code>. Notice the <code class="docutils literal notranslate"><span class="pre">==</span></code> to check for equality.</p>
 <div class="cell docutils container">
@@ -653,14 +565,6 @@ Done!
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Letter:&quot;</span><span class="p">,</span> <span class="n">letter</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done!&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Current Letter: P
-Current Letter: y
-Current Letter: t
-Done!
 </pre></div>
 </div>
 </div>
@@ -696,16 +600,6 @@ Done!
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
-4
-3
-2
-1
-Blastoff!
-</pre></div>
-</div>
-</div>
 </div>
 <p>To increment or decrement we can also use the short form <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">+=</span> <span class="pre">1</span></code> or <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">-=</span> <span class="pre">1</span></code>.</p>
 <div class="cell docutils container">
@@ -719,16 +613,6 @@ Blastoff!
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-4
-6
-8
-10
-Done!
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -736,20 +620,6 @@ Done!
 <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
     <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
-9
-8
-7
-6
-5
-4
-3
-2
-1
 </pre></div>
 </div>
 </div>
@@ -773,24 +643,6 @@ Done!
 <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">list_of_words</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
     <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loop 1:
-zero
-one
-two
-three
-four
-
-Loop 2:
-zero
-one
-two
-three
-four
-five
 </pre></div>
 </div>
 </div>
@@ -825,16 +677,6 @@ five
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10 is even.
-11 is odd.
-12 is even.
-13 is odd.
-14 is even.
-15 is odd.
-</pre></div>
-</div>
-</div>
 </div>
 <p><a id='Nested_Loops'></a></p>
 </div>
@@ -859,40 +701,6 @@ five
             <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;is even&#39;</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;is odd&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Counting up to 3
-1 is odd
-2 is even
-3 is odd
-Counting up to 4
-1 is odd
-2 is even
-3 is odd
-4 is even
-Counting up to 5
-1 is odd
-2 is even
-3 is odd
-4 is even
-5 is odd
-Counting up to 6
-1 is odd
-2 is even
-3 is odd
-4 is even
-5 is odd
-6 is even
-Counting up to 7
-1 is odd
-2 is even
-3 is odd
-4 is even
-5 is odd
-6 is even
-7 is odd
 </pre></div>
 </div>
 </div>
@@ -958,7 +766,7 @@ Counting up to 7
         
           By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
       </p>
     </div>
   </footer>

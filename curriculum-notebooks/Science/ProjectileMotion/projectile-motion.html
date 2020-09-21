@@ -39,6 +39,7 @@
     <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
     <link rel="next" title="Nuclear Radiation: Alpha, Beta, and Gamma" href="../RadiationAnimations/radiation-animations.html" />
     <link rel="prev" title="Nuclear Decay - Half Life" href="../NuclearDecay/nuclear-decay.html" />
 
@@ -82,8 +83,8 @@
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../README.html">
-   Curriculum Notebooks
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -274,8 +275,18 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Statistics.html">
+   Statistics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../../TechnologyStudies/Technology.html">
    Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
   </a>
  </li>
 </ul>
@@ -483,16 +494,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<iframe
-    width="718"
-    height="404"
-    src="https://www.youtube.com/embed/2OSrvzNW9FE?start=24&end=35&mute=True"
-    frameborder="0"
-    allowfullscreen
-></iframe>
-</div><div class="output text_html"><p style="text-align: center;"> Basketball toss demonstrating the Magnus effect (https://www.youtube.com/watch?v=2OSrvzNW9FE) </p></div></div>
 </div>
 <p>However, in order to understand these complex cases, we must first strip away the layer of friction and look at how objects travel solely under the force gravity.</p>
 </div>
@@ -510,13 +511,13 @@
 <h3>Vertical Component<a class="headerlink" href="#vertical-component" title="Permalink to this headline">¶</a></h3>
 <p>Due to the force of gravity, the object will accelerate towards the center of the Earth. This means that its initial velocity will be different from its final velocity.
 There are 5 variables involved in the vertical component: acceleration, initial velocity, final velocity, <em>altitude</em> (distance travelled vertically), and time. We will assume <span class="math notranslate nohighlight">\( \vec a \)</span> is constant for projectile motion and equivalent to <span class="math notranslate nohighlight">\( 9.81  m/s^2\)</span>.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-922bf909-76db-4a61-9d22-bcb3dc99dd77">
-<span class="eqno">(73)<a class="headerlink" href="#equation-922bf909-76db-4a61-9d22-bcb3dc99dd77" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-94646a76-95de-401c-a35c-97302fbf38dc">
+<span class="eqno">(67)<a class="headerlink" href="#equation-94646a76-95de-401c-a35c-97302fbf38dc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec a , \vec v_i , \vec v_f , \vec d_y , t
 \end{equation}\]</div>
 <p>There are 5 kinematic equations for uniform acceleration where each one contains 4 of the 5 variables listed above. Given 3 of the variables in a problem, the other 2 can each be found by picking an appropriate equation. *Note: If the object is initially launched horizontally, then <span class="math notranslate nohighlight">\(\vec v_i \)</span> = 0 *</p>
-<div class="amsmath math notranslate nohighlight" id="equation-73962fba-f692-4cb0-95d6-bf6fefd78d47">
-<span class="eqno">(74)<a class="headerlink" href="#equation-73962fba-f692-4cb0-95d6-bf6fefd78d47" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-cf52154e-893a-42cd-8cfd-42f3520429b0">
+<span class="eqno">(68)<a class="headerlink" href="#equation-cf52154e-893a-42cd-8cfd-42f3520429b0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec a_{ave} = \frac{\vec v_f - \vec v_i}{t}  \\
 \vec d = \vec v_i t + \frac12\ \vec a t^2  \\
 \vec d = \vec v_f t - \frac12\ \vec a t^2  \\
@@ -541,8 +542,8 @@ __Solution__  <br>
 </ol>
 <blockquote>
 The rock is released from rest so $ \vec v_i = 0 $. Based on the information given and our sign convention, we can state the following:  <br><br>
-<div class="amsmath math notranslate nohighlight" id="equation-1874b4cf-9976-4ffc-b0ca-f4f2ba7ae268">
-<span class="eqno">(75)<a class="headerlink" href="#equation-1874b4cf-9976-4ffc-b0ca-f4f2ba7ae268" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5f8fb269-9fa7-476f-a594-ed694aaa429a">
+<span class="eqno">(69)<a class="headerlink" href="#equation-5f8fb269-9fa7-476f-a594-ed694aaa429a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_i = 0 \\
 \vec a = +9.81 \ m/s \\
 t = 1.62\ s \\
@@ -550,13 +551,13 @@ t = 1.62\ s \\
 \vec v_f = \ ? \\
 \end{equation}\]</div>
 <p>We have 3 known variables and 2 unknown variables in the problem. However, in this case we’re looking for <span class="math notranslate nohighlight">\( \vec d_y \)</span> so we don’t care what <span class="math notranslate nohighlight">\( \vec v_f \)</span> is. If we take a look at the 5 vertical component equations, we see that the following equation has the 3 variables we know and the one we’re looking for:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-14679401-3660-4bc7-b457-a83273fef47f">
-<span class="eqno">(76)<a class="headerlink" href="#equation-14679401-3660-4bc7-b457-a83273fef47f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-630ad441-89c0-4e8f-95d2-ba052fe5f511">
+<span class="eqno">(70)<a class="headerlink" href="#equation-630ad441-89c0-4e8f-95d2-ba052fe5f511" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d_y = \vec v_i t + \frac12\ \vec a t^2  \\
 \end{equation}\]</div>
 <p>We don’t want one with <span class="math notranslate nohighlight">\( \vec v_f \)</span> because we don’t know its value. Using this equation we can solve for <span class="math notranslate nohighlight">\( \vec d_y \)</span>:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-64f7cb45-d0ec-4e70-8754-b0379999982a">
-<span class="eqno">(77)<a class="headerlink" href="#equation-64f7cb45-d0ec-4e70-8754-b0379999982a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-55bed847-0ca6-42c5-88ce-6d2e393039c2">
+<span class="eqno">(71)<a class="headerlink" href="#equation-55bed847-0ca6-42c5-88ce-6d2e393039c2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d_y = (0)(2.62\ s) + \frac12\ (+9.81\ m/s^2) (1.62\ s)^2  \\
 \vec d_y = +12.8727\ m \\
 \vec d_y = +12.9\ m \\
@@ -570,13 +571,13 @@ t = 1.62\ s \\
 <h3>Horizontal Component<a class="headerlink" href="#horizontal-component" title="Permalink to this headline">¶</a></h3>
 <p>There is no force acting horizontally. Therefore there is no acceleration so it is <strong>uniform motion</strong> (<span class="math notranslate nohighlight">\( \vec v_i = \vec v_f = \vec v_x \)</span>).</p>
 <p>Horizontal uniform motion is governed by 3 variables: velocity, <em>range</em> (distance travelled horizontally), and time.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1f2f32e4-d009-4a5c-ab79-b5e7bfaf1704">
-<span class="eqno">(78)<a class="headerlink" href="#equation-1f2f32e4-d009-4a5c-ab79-b5e7bfaf1704" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b1e5e119-471f-48b5-82d8-32f3864a9533">
+<span class="eqno">(72)<a class="headerlink" href="#equation-b1e5e119-471f-48b5-82d8-32f3864a9533" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x , \vec d_x , t
 \end{equation}\]</div>
 <p>These 3 variables are related by the uniform motion equation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a35edd1a-5667-4839-85ae-5c66ee73160e">
-<span class="eqno">(79)<a class="headerlink" href="#equation-a35edd1a-5667-4839-85ae-5c66ee73160e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c500c7d6-cbb6-423e-ac6e-7e112db0eda1">
+<span class="eqno">(73)<a class="headerlink" href="#equation-c500c7d6-cbb6-423e-ac6e-7e112db0eda1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac {\vec d_x}{t}
 \end{equation}\]</div>
 <p>Let’s do some practice to solidify the concepts.</p>
@@ -597,15 +598,15 @@ __Solution__  <br>
 </ol>
 <blockquote>
 The horizontal component is easier than the vertical component because there's only one equation with 3 variables. List the 2 variables you know and the one you're trying to find:  <br><br>
-<div class="amsmath math notranslate nohighlight" id="equation-7480506f-75c3-4f03-8541-4f50adffa7cb">
-<span class="eqno">(80)<a class="headerlink" href="#equation-7480506f-75c3-4f03-8541-4f50adffa7cb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a3de217e-e34a-4557-82b5-35c84d13602d">
+<span class="eqno">(74)<a class="headerlink" href="#equation-a3de217e-e34a-4557-82b5-35c84d13602d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = +30.0\ km/h =\ +8.3333\ m/s \\
 t = 1.62\ s \\
 \vec d_x = \ ? \\
 \end{equation}\]</div>
 <p>Rearrange the uniform motion equation for the unknown and solve:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-aed83e8c-353a-4c47-b860-6ac960eafd5e">
-<span class="eqno">(81)<a class="headerlink" href="#equation-aed83e8c-353a-4c47-b860-6ac960eafd5e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-9effabb4-cbca-4ff8-a5db-73844489640c">
+<span class="eqno">(75)<a class="headerlink" href="#equation-9effabb4-cbca-4ff8-a5db-73844489640c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac {\vec d_x}{t} \\
 \vec d_x = \vec v_x t = (+8.3333\ m/s)(1.62\ s) \\
 \vec d_x = +13.5\ m \\
@@ -639,24 +640,24 @@ x &amp;y \ \hline
 $<span class="math notranslate nohighlight">\( t =\ ? \)</span>$  <br></p>
 <p>Note that <span class="math notranslate nohighlight">\( \vec v_i = 0 \)</span> because the projectile is launched horizontally, and <span class="math notranslate nohighlight">\( t \)</span> is common to both x &amp; y. <br></p>
 <p>To find <span class="math notranslate nohighlight">\( \vec v_x \)</span>, we need <span class="math notranslate nohighlight">\( \vec d_x \)</span> and <span class="math notranslate nohighlight">\( t \)</span>. We know <span class="math notranslate nohighlight">\( \vec d_x \)</span> but we’re missing <span class="math notranslate nohighlight">\( t \)</span> so we’ll need to use the vertical data to solve for <span class="math notranslate nohighlight">\( t \)</span>. Because we know <span class="math notranslate nohighlight">\( \vec d_y, \vec a, \)</span> and <span class="math notranslate nohighlight">\( \vec v_i \)</span>, and we’re looking for <span class="math notranslate nohighlight">\( t \)</span>, we’ll use the following equation because we can solve for <span class="math notranslate nohighlight">\( t \)</span> using the variables we know:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-02438ba7-3975-4501-8e9f-88b59ee83fed">
-<span class="eqno">(82)<a class="headerlink" href="#equation-02438ba7-3975-4501-8e9f-88b59ee83fed" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a00d046d-fa56-49d9-915a-70f61f592f0b">
+<span class="eqno">(76)<a class="headerlink" href="#equation-a00d046d-fa56-49d9-915a-70f61f592f0b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d = \vec v_i t + \frac12\ \vec a t^2  \\
 \end{equation}\]</div>
 <p>Because <span class="math notranslate nohighlight">\( \vec v_i = 0 \)</span>, the first term goes to 0 and the resulting equation can be rearranged to solve for <span class="math notranslate nohighlight">\( t \)</span>:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-fd520dbf-de3e-45de-8ad3-10baa515f3ad">
-<span class="eqno">(83)<a class="headerlink" href="#equation-fd520dbf-de3e-45de-8ad3-10baa515f3ad" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e6687478-7608-4dde-9f17-e4f404d595e2">
+<span class="eqno">(77)<a class="headerlink" href="#equation-e6687478-7608-4dde-9f17-e4f404d595e2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d = \frac12\ \vec a t^2  \\
 t = \sqrt{\frac{2 \vec d_y}{\vec a}} \\
 \end{equation}\]</div>
 <p>Plug in values to find <span class="math notranslate nohighlight">\( t \)</span>:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-6362dbe0-5de7-4008-8885-a9a2bc093946">
-<span class="eqno">(84)<a class="headerlink" href="#equation-6362dbe0-5de7-4008-8885-a9a2bc093946" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5add7724-cb2a-4c0d-8fad-66dd32629f69">
+<span class="eqno">(78)<a class="headerlink" href="#equation-5add7724-cb2a-4c0d-8fad-66dd32629f69" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 t = \sqrt{\frac{2 (-50.0\ m)}{(-9.81\ m/s^2)}} = 3.1928\ s
 \end{equation}\]</div>
 <p>Now that <span class="math notranslate nohighlight">\( t \)</span> is known we can solve for  <span class="math notranslate nohighlight">\( \vec v_x \)</span> using the uniform motion equation:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-0915ab47-6b1a-4fc4-9ee4-af3c509365ba">
-<span class="eqno">(85)<a class="headerlink" href="#equation-0915ab47-6b1a-4fc4-9ee4-af3c509365ba" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2c08680c-a2cb-4375-8087-074ad938758a">
+<span class="eqno">(79)<a class="headerlink" href="#equation-2c08680c-a2cb-4375-8087-074ad938758a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac {\vec d_x}{t} = \frac {(+90.0\ m)}{(3.1928\ s)} = +28.2\ m/s \ \ (+101.5\ km/h)
 \end{equation}\]</div>
 </blockquote>
@@ -723,13 +724,13 @@ x &amp;y \ \hline
 \end{array}
 $<span class="math notranslate nohighlight">\( t =\ ? \)</span>$  <br></p>
 <p>Looking at our table, we have 3 knowns and 1 unknown in the vertical column. That means we can solve for <span class="math notranslate nohighlight">\( \vec d_y \)</span>. Looking at our vertical component equations, the one that contains our 3 known variables and <span class="math notranslate nohighlight">\( \vec d_y \)</span> is: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-418ae6e0-6cad-4ac3-b2b4-b500e5c419f6">
-<span class="eqno">(86)<a class="headerlink" href="#equation-418ae6e0-6cad-4ac3-b2b4-b500e5c419f6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-561bc865-1c6f-46c1-aa9c-f9e8567a9aa1">
+<span class="eqno">(80)<a class="headerlink" href="#equation-561bc865-1c6f-46c1-aa9c-f9e8567a9aa1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 v_f^2 = v_i^2 + 2 a d
 \end{equation}\]</div>
 <p><span class="math notranslate nohighlight">\( \vec v_f = 0 \)</span> so we can rearrange and solve for <span class="math notranslate nohighlight">\( \vec d_y \)</span>: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-d8d52dc8-db3f-4696-88da-4a911786cdca">
-<span class="eqno">(87)<a class="headerlink" href="#equation-d8d52dc8-db3f-4696-88da-4a911786cdca" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8009a2a6-5a11-42b3-9599-fb555a67d6b6">
+<span class="eqno">(81)<a class="headerlink" href="#equation-8009a2a6-5a11-42b3-9599-fb555a67d6b6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d_y = -\frac{\vec v_i^2}{2 \vec a} = -\frac{(+23.7474\ m/s)^2}{2\ (-9.81\ m/s^2)} \\
 \vec d_y = +28.7431\ m \\
 \vec d_y = +28.7\ m \\
@@ -751,13 +752,13 @@ x &amp;y \ \hline
 \end{array}
 $<span class="math notranslate nohighlight">\( t =\ ? \)</span>$  <br></p>
 <p>Now, we’re looking for <span class="math notranslate nohighlight">\( t \)</span> but we don’t have enough horizontal data to solve with uniform motion. However, we know 4 out of the 5 vertical variables which means we have lots of options for the vertical equation. Any of the first 4 equations will do but the second and third will require solving a quadratic equation. To make life easy, we’ll use the first one: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-8754e560-d172-40d1-8a9b-2fe07d20dc61">
-<span class="eqno">(88)<a class="headerlink" href="#equation-8754e560-d172-40d1-8a9b-2fe07d20dc61" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-870e7b44-12a4-4649-bf5c-c00197210802">
+<span class="eqno">(82)<a class="headerlink" href="#equation-870e7b44-12a4-4649-bf5c-c00197210802" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec a_{ave} = \frac{\vec v_f - \vec v_i}{t}
 \end{equation}\]</div>
 <p>Rearrange and solve for <span class="math notranslate nohighlight">\( t \)</span> (Remember to keep your sign convention. If you don’t you could end up with 0 here!): <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-12378ae1-192a-48e2-b7cc-f0e1bfd97b4d">
-<span class="eqno">(89)<a class="headerlink" href="#equation-12378ae1-192a-48e2-b7cc-f0e1bfd97b4d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-80ea5234-2620-4ffd-a849-29f17e6cb354">
+<span class="eqno">(83)<a class="headerlink" href="#equation-80ea5234-2620-4ffd-a849-29f17e6cb354" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 t = \frac{\vec v_f - \vec v_i}{\vec a_{ave}} = \frac{(-23.7474\ m/s) - (+23.7474\ m/s)}{(-9.81\ m/s^2)} \\
 t = 4.8415\ s \\
 t = 4.84\ s 
@@ -766,8 +767,8 @@ t = 4.84\ s
 <p><strong>c)</strong>  <br></p>
 <blockquote>
 Now that we have the flight time and $ \vec v_x $, we can use the uniform motion equation to solve for range: <br><br>
-<div class="amsmath math notranslate nohighlight" id="equation-0a5c03e6-a311-49a0-834b-2af2db3bd5d3">
-<span class="eqno">(90)<a class="headerlink" href="#equation-0a5c03e6-a311-49a0-834b-2af2db3bd5d3" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6765a3da-e083-4c38-812c-eb0841566fd1">
+<span class="eqno">(84)<a class="headerlink" href="#equation-6765a3da-e083-4c38-812c-eb0841566fd1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac {\vec d_x}{t} \\
 \vec d_x = \vec v_x \ t = (+19.9264\ m/s)\ (4.8415\ s) = +96.4730\ m \\
 \vec d_x = +96.5\ m
@@ -790,8 +791,8 @@ Because $ \vec d_y = 0 $ for the full flight path, $ \vec v_f = -\vec v_i = -23.
 <blockquote>
 <img src="./images/qu_5-4.jpg" alt="Drawing" style="width: 200px;"/> 
 </blockquote>
-<div class="amsmath math notranslate nohighlight" id="equation-fc1dd98d-afc6-4a80-82bd-da10182fabaa">
-<span class="eqno">(91)<a class="headerlink" href="#equation-fc1dd98d-afc6-4a80-82bd-da10182fabaa" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-27ba91fc-4e5d-4c5a-bb04-9179b507979b">
+<span class="eqno">(85)<a class="headerlink" href="#equation-27ba91fc-4e5d-4c5a-bb04-9179b507979b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_f = 31.0\ m/s\ \  at -50.0^{\circ}
 \end{equation}\]</div>
 </blockquote>
@@ -865,42 +866,12 @@ Because $ \vec d_y = 0 $ for the full flight path, $ \vec v_f = -\vec v_i = -23.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><script>
-code_show=true; 
-function code_toggle() {
-  if (code_show) {
-    $('div.input').each(function(id) {
-      el = $(this).find('.cm-variable:first');
-      if (id == 0 || el.text() == 'hide_me') {
-        $(this).hide();
-      }
-    });
-    $('div.output_prompt').css('opacity', 0);
-  } else {
-    $('div.input').each(function(id) {
-      $(this).show();
-    });
-    $('div.output_prompt').css('opacity', 1);
-  }
-  code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-</script>
-<form action="javascript:code_toggle()"><input style="opacity:0" type="submit" value="Click here to toggle on/off the raw code."></form></div></div>
 </div>
 <p>The scenario in Question 5 can be modelled by a graph using Python. The following code block creates an interactive graph where you can modify the initial velocity <span class="math notranslate nohighlight">\( \vec v_i \)</span> and launch angle <span class="math notranslate nohighlight">\( \theta \)</span> to see how the projectile’s trajectory changes.  <br></p>
 <p>Modify <code class="docutils literal notranslate"><span class="pre">theta</span></code> and <code class="docutils literal notranslate"><span class="pre">v_i</span></code> to recreate the scenario in Question 5 and use the graph to verify your answers for Parts (a) and (c) line up.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">theta</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">v_i</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">31</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "e765a2ba9ca04809962e2679d08b5dc7"}
-</script><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function __main__.f(theta, v_i)&gt;
 </pre></div>
 </div>
 </div>
@@ -946,19 +917,19 @@ x &amp;y \ \hline
 $<span class="math notranslate nohighlight">\( t =\ ? \)</span>$  <br></p>
 <p>Acceleration is written as <span class="math notranslate nohighlight">\( -g = -9.81 m/s^2 \)</span> for simplicity. Note that this is a constant written as a letter, <strong>not a variable.</strong> <br></p>
 <p>In order to come up with an equation for <span class="math notranslate nohighlight">\( \vec d_x \)</span>, we first need an equation for <span class="math notranslate nohighlight">\( t \)</span> in terms of the given variables <span class="math notranslate nohighlight">\( \vec v_i \)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>. Considering we know or have expressions for 4 of the vertical values, we will choose the first equation which makes it easy to solve for t: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-becbeecb-8291-4bf1-a4ea-1de53aec679b">
-<span class="eqno">(92)<a class="headerlink" href="#equation-becbeecb-8291-4bf1-a4ea-1de53aec679b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c569d82f-97c4-4092-bdb1-b2d3238a49cc">
+<span class="eqno">(86)<a class="headerlink" href="#equation-c569d82f-97c4-4092-bdb1-b2d3238a49cc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec a_{ave} = \frac{\vec v_f - \vec v_i}{t}
 \end{equation}\]</div>
 <p>Rearrange and solve for <span class="math notranslate nohighlight">\( t \)</span>: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-4d3664fc-43e7-4ba0-8677-251a03a1ca3a">
-<span class="eqno">(93)<a class="headerlink" href="#equation-4d3664fc-43e7-4ba0-8677-251a03a1ca3a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f7ded0ac-bc6e-437b-93c2-ca06d2bab799">
+<span class="eqno">(87)<a class="headerlink" href="#equation-f7ded0ac-bc6e-437b-93c2-ca06d2bab799" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 t = \frac{\vec v_f - \vec v_i}{\vec a_{ave}} = \frac{(-v_i sin(\theta)) - (v_i sin(\theta))}{(-g)} \\
 t = \frac{2 v_i sin(\theta)}{g} \\
 \end{equation}\]</div>
 <p>This expression can be applied to the horizontal component to come up with an equation for <span class="math notranslate nohighlight">\( \vec d_x \)</span>: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-6c4fa7de-ad9e-440e-bea0-8dddd6db8b79">
-<span class="eqno">(94)<a class="headerlink" href="#equation-6c4fa7de-ad9e-440e-bea0-8dddd6db8b79" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c4017fe0-1518-44a4-8e94-2346fe5b58c6">
+<span class="eqno">(88)<a class="headerlink" href="#equation-c4017fe0-1518-44a4-8e94-2346fe5b58c6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac{\vec d_x}{t} \\
 \vec d_x = \vec v_x t \\
 \vec d_x = (v_i cos(\theta)) (\frac{2 v_i sin(\theta)}{g}) \\
@@ -1000,11 +971,6 @@ After required modules have been imported into our script, we’re ready to get 
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>theta =  [ 0.  22.5 45.  67.5 90. ]
-</pre></div>
-</div>
-</div>
 </div>
 <p>This creates a <strong>list</strong> of numbers called <code class="docutils literal notranslate"><span class="pre">theta</span></code> which consists of 5 numbers evenly spaced in the domain <span class="math notranslate nohighlight">\([0,90]\)</span> that we’ll use to plot our function. The <code class="docutils literal notranslate"><span class="pre">print</span></code> function is a standard python function that simply displays our variables to the screen as either numbers or characters. In order to plot our functions, we type the following. Note that we’ve increased the number of points in <code class="docutils literal notranslate"><span class="pre">theta</span></code> to create a smoother plot. Feel free to change the number <code class="docutils literal notranslate"><span class="pre">100</span></code> to something smaller and observe how the plot changes. We also assigned a value to <code class="docutils literal notranslate"><span class="pre">v_i</span></code> and <code class="docutils literal notranslate"><span class="pre">g</span></code> so that the computer can plot the function numerically. Likewise, play around with these numbers and see how your range changes.</p>
 <div class="cell docutils container">
@@ -1016,9 +982,6 @@ After required modules have been imported into our script, we’re ready to get 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/projectile-motion_31_0.png" src="../../../_images/projectile-motion_31_0.png" />
 </div>
 </div>
 <p>There’s a fair bit going on in that last line of code that should be noted. First, by using <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code> we’re calling a function from <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> (that we called <code class="docutils literal notranslate"><span class="pre">plt</span></code>) called <code class="docutils literal notranslate"><span class="pre">plot</span></code>. This function, unsurprisingly, is used to tell Python what to plot. We then pass this function a number of arguments (AKA inputs). The first argument <code class="docutils literal notranslate"><span class="pre">theta</span></code> is the list of numbers we generated earlier. The second argument <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">/</span> <span class="pre">g</span> <span class="pre">*</span> <span class="pre">(v_i**2)</span> <span class="pre">*</span> <span class="pre">np.sin(np.deg2rad(theta))</span> <span class="pre">*</span> <span class="pre">np.cos(np.deg2rad(theta))</span></code> is the mathematical function we’re going to plot. Here <code class="docutils literal notranslate"><span class="pre">theta</span></code> is the variable we’re going to plot, and also the list of points that we generated earlier. The <code class="docutils literal notranslate"><span class="pre">**</span></code> is the Python way of saying “to the power of”. Because <code class="docutils literal notranslate"><span class="pre">sin</span></code> and <code class="docutils literal notranslate"><span class="pre">cos</span></code> functions take radians as an input and not degrees, we use <code class="docutils literal notranslate"><span class="pre">np.deg2rad</span></code> which is a function that converts degrees to radians. <br></p>
@@ -1035,9 +998,6 @@ After required modules have been imported into our script, we’re ready to get 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/projectile-motion_33_0.png" src="../../../_images/projectile-motion_33_0.png" />
 </div>
 </div>
 <p>where the <code class="docutils literal notranslate"><span class="pre">plt.</span></code> calls are still calling functions from <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> however this time we’re creating x axes labels with <code class="docutils literal notranslate"><span class="pre">plt.xlabel</span></code> and y axes labels with <code class="docutils literal notranslate"><span class="pre">plt.ylabel</span></code>. <code class="docutils literal notranslate"><span class="pre">plt.margins(0)</span></code> removes any unnecessary blank space around the graph and <code class="docutils literal notranslate"><span class="pre">plt.grid()</span></code> adds a nice grid to visually locate points on the graph easier. Finally, <code class="docutils literal notranslate"><span class="pre">plt.title</span></code> adds a title bar to our graph. The dollar signs and “r” characters are just there to make the lettering look nice. Play around with the code and see if you can change the title bar, label font sizes, and margins.  <br></p>
@@ -1057,12 +1017,6 @@ After required modules have been imported into our script, we’re ready to get 
 </div>
 </div>
 </div>
-
-
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"49a5352e7e2b4ec1bc00254cc61b651c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e765a2ba9ca04809962e2679d08b5dc7": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_0ae4256a673147478502220643cb54bc", "IPY_MODEL_0985095d61234a8c98fe8cdf6e92a34b", "IPY_MODEL_253631378f7244ab8b181448573ed366"], "layout": "IPY_MODEL_49a5352e7e2b4ec1bc00254cc61b651c"}}, "eb292546cc464da4ac956cbc7c95bbef": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "57c74179a8d74bdcbcebcf1e653e3d1d": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "0ae4256a673147478502220643cb54bc": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "theta", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_eb292546cc464da4ac956cbc7c95bbef", "max": 90, "min": 0, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 5, "style": "IPY_MODEL_57c74179a8d74bdcbcebcf1e653e3d1d", "value": 45}}, "46e277d079614dcab09958639ba92510": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9e4fe72b33154ef180c242c93aef01f9": {"model_name": "SliderStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "0985095d61234a8c98fe8cdf6e92a34b": {"model_name": "IntSliderModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "v_i", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_46e277d079614dcab09958639ba92510", "max": 31, "min": 0, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_9e4fe72b33154ef180c242c93aef01f9", "value": 15}}, "97d375bf9d854fb79b52b1a7657b319e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "253631378f7244ab8b181448573ed366": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_97d375bf9d854fb79b52b1a7657b319e", "msg_id": "", "outputs": [{"output_type": "display_data", "metadata": {"needs_background": "light"}, "data": {"text/plain": "<Figure size 432x288 with 1 Axes>", "image/png": "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\n"}}]}}}, "version_major": 2, "version_minor": 0}
-</script>
-
 
     <script type="text/x-thebe-config">
     {
@@ -1102,7 +1056,7 @@ After required modules have been imported into our script, we’re ready to get 
         
           By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
       </p>
     </div>
   </footer>
