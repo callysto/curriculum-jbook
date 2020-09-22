@@ -32,7 +32,7 @@ function code_toggle() {
 } 
 $( document ).ready(code_toggle);
 </script>
-<form action="javascript:code_toggle()"><input style="opacity:0" type="submit" value="Click here to toggle on/off the raw code."></form>''')
+<form action="javascript:code_toggle()"><input style="opacity:1" type="submit" value="Click here to toggle on/off the raw code."></form>''')
 
 ## Basic: Python Programming
 

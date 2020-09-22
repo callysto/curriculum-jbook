@@ -25,11 +25,8 @@ Galileo, one of the great fathers of astronomy and modern science, created proje
 
 For the purposes of understanding the fundamentals, the effects of air resistance will be ignored. While it makes our lives simpler, it is wrong to assume that projectiles only experience the force of gravity - air resistance can play a significant role in many cases. Air resistance is responsible for lower projectile speeds and distances but it is also critical to helping airplanes slow down, keeping race cars grounded at high speeds (which is why they have spoilers), and causing crazy phenomena like the Magnus effect shown below. 
 
-from IPython.lib.display import YouTubeVideo
-from IPython.display import HTML
-
-display(YouTubeVideo('2OSrvzNW9FE', start=24, end=35, mute=True, width=718, height=404))
-display(HTML('''<p style="text-align: center;"> Basketball toss demonstrating the Magnus effect (https://www.youtube.com/watch?v=2OSrvzNW9FE) </p>'''))
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 However, in order to understand these complex cases, we must first strip away the layer of friction and look at how objects travel solely under the force gravity.  
 
@@ -283,6 +280,7 @@ According to [Angelo Armenti's The Physics of Sports](https://www.livestrong.com
 
 The horizontal velocity $ \vec v_x $ will remain the same throughout the flight (uniform motion) while $ \vec v_y $ will decrease to the top of its trajectory and then increase downwards. __Note: If the initial launch height and final landing height are the same ($ \vec d_y $ = 0), then the projectile will land with the same initial speed and angle!__ The initial horizontal and vertical velocities can be solved with some simple trigonometry:
 
+$$
 \begin{array}{cc}
 x &y \\ 
 cos(50^{\circ}) = \frac{adj}{hyp} = \frac{\vec v_x}{31\ m/s} &sin(50^{\circ}) = \frac{opp}{hyp} = \frac{\vec v_y}{31\ m/s} \\
@@ -290,6 +288,7 @@ cos(50^{\circ}) = \frac{adj}{hyp} = \frac{\vec v_x}{31\ m/s} &sin(50^{\circ}) = 
 \vec v_x = +19.9264\ m/s &\vec v_y = +23.7474\ m/s \\ 
 \vec v_x = +20\ m/s &\vec v_y = +24\ m/s \\ 
 \end{array}
+$$
 
 
 <details> 
@@ -504,7 +503,7 @@ The scenario in Question 5 can be modelled by a graph using Python. The followin
 
 Modify `theta` and `v_i` to recreate the scenario in Question 5 and use the graph to verify your answers for Parts (a) and (c) line up.
 
-interact(f,theta = (0,90,5), v_i = (0,31,1))
+interact(f,theta = (0,90,5), v_i = (0,31,1));
 
 Pretty cool, huh? If you want to learn how to make graphs using Python, Part (b) of Question 6 will give you a step-by-step breakdown on how to make simple static graphs. 
 

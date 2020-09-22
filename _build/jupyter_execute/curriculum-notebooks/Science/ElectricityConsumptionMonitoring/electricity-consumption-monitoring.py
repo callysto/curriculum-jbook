@@ -373,7 +373,7 @@ You can use such devices to monitor the energy consumption of appliances in your
 
 Now that we have covered what electricity is, the various electrical devices and how it is monitored let's take a look at **circuit diagrams**. A circuit diagram is a graphical representation of an **electrical circuit**. An electrical circuit  is a network of electrical devices connected together. All of the electronic devices in your home make up a very complicated electrical circuit that can be represented with a circuit diagram. We are just starting to learn about circuit diagrams so we will be using simple examples such a light bulb connected to a battery that you can see below.
 
-<img src="images/circuit1.png" alt="" width=500 align=middle>
+<img src="images/circuit1.png"  width=500 >
 
 We will cover six different circuit components that can make up a circuit, namely switches, power sources, resistors, lights, motors and wires. 
 

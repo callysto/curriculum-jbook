@@ -129,7 +129,7 @@ The goal of this notebook is to discuss the following:
 - The temperature of a substance is a measure of the average kinetic energy of the particles.
 - There are spaces between particles of matter. The average amount of empty space between molecules gets progressively larger as a sample of matter moves from solid to the liquid and gas phases.
 
-<img style="float: center;" src="images/particles.svg" height="1800" width="400">
+<img style="float: center;" src="images/particles.svg" width="400">
 
 start_bold = "\033[1m"; end_bold = "\033[0;0m"
 question = start_bold + "Key Question: " + end_bold + \
@@ -149,7 +149,7 @@ multiple_choice(option_1, option_2, option_3, option_4)
 
 **Goal:** Given any solid, we wish to **predict** how much the solid will expand with a change in temperature; i.e. how do we predict the *change in length* ($\Delta L$) of a solid due to an increase in temperature?
 
-<img style="float: center;" src="images/RodExpanding.svg" height="1800" width="400">
+<img style="float: center;" src="images/RodExpanding.svg"  width="400">
 
 start_bold = "\033[1m"; end_bold = "\033[0;0m"
 question = start_bold + "Key Question: " + end_bold + "What " + start_bold + "variable(s)" + end_bold + " would you need know to predict how much a substance will expand when heat is added?"
@@ -179,7 +179,7 @@ Some values for the coefficient of linear expansion are shown in the table below
 
 The following formula relates these **four quantities variables** together: 
 
-<h2><center>$\Delta L = \alpha L \Delta T$</center></h2>
+$$\Delta L = \alpha L \Delta T$$
 
 We will derive this formula later on in the notebook. Before that, let's get accustomed to using this formula in practical situations.
 
@@ -482,11 +482,11 @@ Simply knowing the initial length ($L$) and change in temperature ($\Delta T$) i
 
 The above simulation and questions indicates that the relationship between $L$, $\Delta T$, and $\Delta L$ is direct rather than inverse ($1/\Delta T$ or $1/L$). Since $\Delta L$ becomes larger as both $L$ and $\Delta T$ become larger, we guess that their relationship is multiplicative. Hence, we begin by writing down the following formula that we want:
 
-<h2><center>$\Delta L$ = <span style="color: red"> $\alpha$</span> $L \Delta T$</center></h2>
+$$\Delta L = \alpha L \Delta T$$
 
-The <span style="color: red"> $\alpha$</span> is the constant that we need, but do not know. However, we measured $\Delta L$ and we know both $L$ and $\Delta T$, so computing <span style="color: red"> $\alpha$</span> is easy:
+The $\alpha$ is the constant that we need, but do not know. However, we measured $\Delta L$ and we know both $L$ and $\Delta T$, so computing $\alpha$ is easy:
 
-<h2><center><span style="color: red"> $\alpha$</span> $ = \dfrac{\Delta L}{L \Delta T}$</center></h2>
+$$\alpha  = \dfrac{\Delta L}{L \Delta T}$$
     
 Using the sliders below, input the change in length ($\Delta L$) for both materials 1 and 2 from the above experimental simulation to compute $\alpha$ for each material. **Hint:** Use your *arrow keys* on your keyboard to use the sliders with precision.
 
@@ -521,7 +521,7 @@ display(out_text)
 
 As we've just seen, the formula $\Delta L = \alpha L \Delta T$ is not always used to find $\Delta L$. Often, we can experimentally measure $\Delta L$. Depending on the application, we can then theoretically compute one of the other quantities (assuming we know the value of two of the other quantities). It is worth noting the three variations of the thermal expansion formula:
 
-<h1><center>$\alpha = \dfrac{\Delta L}{L \Delta T}$ &emsp; $L = \dfrac{\Delta L}{\alpha \Delta T}$ &emsp; $\Delta T = \dfrac{\Delta L}{\alpha L}$</center></h1>
+$$\alpha = \dfrac{\Delta L}{L \Delta T} \qquad L = \dfrac{\Delta L}{\alpha \Delta T} \qquad \Delta T = \dfrac{\Delta L}{\alpha L}$$
 
 **Note:** This is **one** formula being displayed in **three** different ways. It is convenient to make use of the variation that corresponds to the unknown value that you wish to determine.
 
@@ -653,7 +653,7 @@ Aircraft materials often require *specialized properties* in order to operate in
 
 An unknown metal alloy is being tested to discover its thermal properties to see if it suitable for use as a *spar*, which is a component of an airplane wing (shown in red below). The alloy is formed into a bar measuring 1.00 metre in length and it is then heated from its starting temperature of 30 °C to a final temperature of 100.0 °C. The length of the heated bar is measured to be exactly 1.002 metres in length. **What is the coefficient of thermal expansion of the alloy? Round your answer to two significant figures.**
 
-<img style="float: center;" src="images/WingSpar.svg" height="1200" width="600">
+<img style="float: center;" src="images/WingSpar.svg" width="600">
 
 option_1 = str(0.000029) + " °C" + chr(0x207B) + chr(0x00B9)
 option_2 = str(0.014) + " °C" + chr(0x207B) + chr(0x00B9)

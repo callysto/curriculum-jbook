@@ -34,8 +34,8 @@ import pandas as pd
 
 Grade 11
 
-> <img src="images\motion.gif" width="500" height="400" />
->
+ <img src="images/motion.gif" width="500" height="400" />
+
 <font size = 1 > <center> https://giphy.com/gifs/usain-bolt-sgjJkkJutglMY </center> </font>
 
 ## Introduction
@@ -54,17 +54,16 @@ To begin, let us outline the difference between distance and displacement.
 
 Below is a video which demonstrates the difference between distance and displacement:
 
-hide_me
-
-from IPython.display import HTML
-# Youtube
-HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/u60JlEAGGWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u60JlEAGGWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **Practise**
 
-Calculate the distance and displacement based on the image below. Imagine you start at  point $\textrm{A}$ and you move around the field in the following order $\textrm{A} \rightarrow \textrm{B} \rightarrow \textrm{C} \rightarrow \textrm{D} \rightarrow \textrm{E} \rightarrow \textrm{A}$:
+Calculate the distance and displacement based on the image below. Imagine you start at  point $\textrm{A}$ and you move around the field in the following order 
 
-<img src="images\distance.JPG" alt="Callysto" width=700 height=500 align = "left">
+$$\textrm{A} \rightarrow \textrm{B} \rightarrow \textrm{C} \rightarrow \textrm{D} \rightarrow \textrm{E} \rightarrow \textrm{A}$$
+
+<img src="images/distance.JPG" width=700 height=500 align = "left">
 
 hide_me
 
@@ -77,7 +76,7 @@ def q_1(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("Calculate the distance and displacement at point B?"))
+display("Calculate the distance and displacement at point B?")
 
 a1 = 'Distance: 2m and Displacement: 2m'
 a2 = "Distance: 2m and Displacement: 2m East"
@@ -95,7 +94,7 @@ def q_2(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("Calculate the distance and displacement at point E?"))
+display("Calculate the distance and displacement at point E?")
 
 a1 = 'Distance: 9m and Displacement: 7m'
 a2 = "Distance: 3m and Displacement: 2.2m NW"
@@ -108,16 +107,20 @@ Analogous to distance and displacement are speed and velocity, however now these
 
 Speed is the rate of change of distance over time.
 
+$$
 \begin{equation}
 \textrm{speed } = \frac{\textrm{change} \ \textrm{of} \ \textrm{distance (m)}}{\textrm{time (s)}}
 \end{equation}
+$$
 
 Velocity is the rate of change of displacement over time.
 
+$$
 \begin{equation}
 \textrm{velocity, } \vec{v} = \frac{\textrm{change} \textrm{ of} \textrm{ displacement (m)}}{\textrm{time (s)}} \\
 \textrm{m} = \textrm{meter } \textrm{and} \textrm{ s} = \textrm{second}
 \end{equation}
+$$
 
 **Practise**
 
@@ -130,7 +133,7 @@ Now, let's repeat a similar question as we did with displacement and distance, b
 
 
 
-<img src="images\speed.JPG" alt="Callysto" width=700 height=500 align = "left">
+<img src="images/speed.JPG" alt="Callysto" width=700 height=500 align = "left">
 
 hide_me
 
@@ -143,7 +146,7 @@ def q_1(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("Calculate the speed and velocity at point C?"))
+display("Calculate the speed and velocity at point C?")
 
 a1 = 'Speed: 0.75 m/s and Velocity: 0.55 m/s NE'
 a2 = "Speed: 0.55 m/s and Velocity: 0.75 m/s NE"
@@ -161,7 +164,7 @@ def q_2(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("Calculate the speed and velocity at point D?"))
+display("Calculate the speed and velocity at point D?")
 
 a1 = 'Speed: 0.80 m/s and Velocity: 0.60 m/s South'
 a2 = "Speed: 0.60 m/s and Velocity: 0.20 m/s South"
@@ -172,14 +175,16 @@ interact(q_2, val = widgets.Dropdown(options=[' ',a1 ,a2, a3 ],value = ' ',descr
 
 Velocity can also change with respect to time. A change in velocity requires _acceleration_, which is defined as rate of change of velocity over time. As acceleration depends on the change in the vector quantity velocity, acceleration is also a vector. Below is an example of acceleration.
 
-<img src="images\acceleration.gif" width="500" height="400"/>
+<img src="images/acceleration.gif" width="500" height="400"/>
 <font size = 1 > <center>https://giphy.com/gifs/cell-concept-acceleration-139Qnnkbg2pefe</center> </font>
 
  Acceleration is the rate of change of velocity over time. Acceleration is a vector quantity as it depends on velocity. 
 
+$$
 \begin{equation}
 \textrm{acceleration, } \vec{a} = \frac{\textrm{change} \textrm{ of} \textrm{ velocity } (\frac{\text{m}}{\text{s}}) } {\textrm{time (s)}} 
 \end{equation}
+$$
 
  [Here is an interactive animation demonstrating acceleration further.](https://faraday.physics.utoronto.ca/PVB/Harrison/Flash/ClassMechanics/MotionDiagram/MotionDiagram.html)
 
@@ -187,7 +192,7 @@ Velocity can also change with respect to time. A change in velocity requires _ac
 
 Let's go back to our field example and think about where we may see acceleration. Once again we are traveling from $\textrm{A} \rightarrow \textrm{B} \rightarrow \textrm{C} \rightarrow \textrm{D} \rightarrow \textrm{E} \rightarrow \textrm{A}$​: 
 
-<img src="images\acceleration-img.JPG" alt="Callysto" width=700 height=500 align = "left">
+<img src="images/acceleration-img.JPG" alt="Callysto" width=700 height=500 align = "left">
 
 
 hide_me
@@ -201,7 +206,7 @@ def q_1(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("Calculate the acceleration at point B?"))
+display("Calculate the acceleration at point B?")
 
 a1 = 'Acceleration: 0 m/s\u00b2 East'
 a2 = "Acceleration: 1 m/s\u00b2 East"
@@ -218,7 +223,7 @@ def q_1(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("Does a change in direction imply that there was acceleration?"))
+display("Does a change in direction imply that there was acceleration?")
 
 a1 = 'Yes'
 a2 = "No"
@@ -254,7 +259,7 @@ Uniform motion has the following two properties:
 
 Consider the blue car in the animation below
 
-<img src="images\uniform-motion.gif" width="500" height="400"/>
+<img src="images/uniform-motion.gif" width="500" height="400"/>
 <font size = 1 > <center>http://www.ninetyeast.net/physics/grade-9-10-gcse-hsc/forces/newtons-laws-of-motion/newtons-first-law-of-motion</center> </font>
 
 The blue car is travelling at a velocity of $10 \textrm{ ms}^{-1}$ to the right. That means every second the car is travelling $10 \textrm{ m}$. If we record this car's displacement and velocity for $10 \textrm{ sec}$, we get the following table. 
@@ -320,9 +325,11 @@ HTML(ani.to_html5_video())
 
 From the table and animations, we find that the blue car's displacement is changing and its velocity is constant. This is an example of uniform motion. The car travels equal distance in equal time.
 
+$$
 \begin{equation}
 \textrm{velocity, } \vec{v} = \frac{\textrm{change} \ \textrm{of} \ \textrm{displacement (m)}}{\textrm{time (s)}} = \textrm{constant}
 \end{equation}
+$$
 
 **Based on your knowledge of uniform motion, what is the blue car's acceleration?**
 
@@ -350,7 +357,10 @@ hide_me
 
 from IPython.display import HTML
 # Youtube
-HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/JLm3JrCPtWs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+#HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/JLm3JrCPtWs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JLm3JrCPtWs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Uniformly accelerated motion is a little different than the uniform motion we discussed earlier. In the case of uniformly accelerated motion, your velocity is increasing constantly and equally in time. Your velocity is changing in a way similar to how displacement changes if you're traveling at constant velocity. Suppose you start at rest and begin running in order to catch a ball. In this scenario, you will need to _accelerate_. Suppose after each second, you are traveling 2 $\frac{\textrm{m}}{\textrm{s}}$ faster than the second previous. In such a case, you have a uniform acceleration of 2 $\frac{\textrm{m}}{\textrm{s}^2}$ (the seconds are squared in the units of acceleration as you are increasing your velocity constantly - i.e. you gain more velocity per second). Let's write down displacement, velocity and acceleration as you try to catch this ball in a table:
 
@@ -426,18 +436,20 @@ Using our relationships between displacement, velocity, acceleration and time, w
 
 Suppose an object with initial velocity $\vec{\textrm{v}}_i$ $\textrm{ms}^{-1}$ is travelling with uniform acceleration $\vec{\textrm{a}}$ $\textrm{ms}^{-2}$. After traveling a displacement $\vec{\textrm{s}}$ in time $\textrm{t}$ the object's final velocity would be $\vec{\textrm{v}_f}$ $\textrm{ms}^{-1}$, these quantities are described by the following equations
 
+$$
 \begin{align}
    \vec{\textrm{v}_f}=\vec{\textrm{v}_i}+\vec{\textrm{a}} \textrm{t} \ \ \ \ \ \ \ \  (1) \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ 
    \vec{\textrm{s}} = (\frac{\vec{\textrm{v}_i}+\vec{\textrm{v}_f}}{2})\textrm{t} \; \; (2)
 \end{align}
+$$
 
 
-
+$$
 \begin{align}
 \vec{\textrm{s}} = \vec{\textrm{v}_i}\textrm{t}+\frac{1}{2}\vec{\textrm{a}}\textrm{t}^{2} \; (3) \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ 
 \vec{\textrm{v}_f} = \textrm{v}_i^{2}+2 \vec{\textrm{a}} \; \vec{\textrm{s}} \; \; \; \;  (4)
 \end{align}
-
+$$
 
 
 The equations above describe both uniform motion and uniformly accelerated motion. Equation (1) describes your final velocity given an intial velocity, and an acceleration over time. Notice how this is the equation of a line. This is what we see in the center plot of the animation above. Equation (3) describes your displacement moving at some initial velocity and accelerating uniformly for some time. Notice how time is squared in this equation. This means that this is the equation of a parabola. Equation (3) is what we see in the first plot of the animation above. 
@@ -475,6 +487,7 @@ In this problem, the value of $\vec{\textrm{v}_i}$, $\vec{\textrm{v}_f}$ and $\v
 
 **Step 3:** After checking all the units of the given variable $\textrm{v}_i$, $\textrm{v}_f$ and $\textrm{a}$, we find that they are correct. Then fill them in selected equation:
 
+$$
 \begin{equation}
 \vec{\textrm{v}_f} = \vec{\textrm{v}_i}+\vec{\textrm{a}}\textrm{t} \\
 \Rightarrow \vec{\textrm{a}}\textrm{t} = \vec{\textrm{v}_f} - \vec{\textrm{v}_i} \\
@@ -482,6 +495,7 @@ In this problem, the value of $\vec{\textrm{v}_i}$, $\vec{\textrm{v}_f}$ and $\v
 \Rightarrow \textrm{t} = \frac{40\textrm{ms}^{-1}-0\textrm{ms}^{-1}}{4\textrm{ms}^{-2}} \\
 \Rightarrow \textrm{t} = 10\textrm{ s}
 \end{equation}
+$$
 
 **Step 4:**
 
@@ -553,7 +567,7 @@ Try yourself!
 
 hide_me
 
-display(Latex('Which equation can be chosen to solve this problem?'))
+display('Which equation can be chosen to solve this problem?')
 
 #Create the box to select m=Motion of Equations
 a=widgets.Checkbox(
@@ -609,7 +623,7 @@ def q_1(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("What is your final displacement?"))
+display("What is your final displacement?")
 
 a1 = '84.94 m'
 a2 = '65.26 m'
@@ -642,7 +656,7 @@ $\textrm{displacement}, \vec{\textrm{s}} = ?$
 
 hide_me
 
-display(Latex('Which equations can be chosen to solve this problem?'))
+display('Which equations can be chosen to solve this problem?')
 
 #Create the box to select m=Motion of Equations
 a=widgets.Checkbox(
@@ -689,33 +703,41 @@ button_check.on_click(check_button)
 
 **Step 3:**
 
+$$
 \begin{equation}
 \textrm{initial} \ \textrm{velocity,} \vec{\textrm{v}_i} = 72 \ \textrm{km/h} N = \frac{72\times1000}{3600} \ \textrm{m/s} = 20 \ \textrm{m/s} \; N 
 \end{equation}
+$$
 
 Calculate final velocity,
 
+$$
 \begin{equation}
 \vec{\textrm{v}_f} = \vec{\textrm{v}_i}+\vec{\textrm{a}}\textrm{t} \\
 \vec{\textrm{v}_f}= 20+(5\times10) \\
 \vec{\textrm{v}_f}= 70 \ \textrm{m/s} N
 \end{equation}
+$$
 
 Calculate displacement,
 
+$$
 \begin{equation}
 \vec{\textrm{s}} = \vec{\textrm{v}_i}\textrm{t}+\frac{1}{2}{\vec{\textrm{a}}}{\textrm{t}^{2}} \\
 \vec{\textrm{s}}=20\times10+\frac{1}{2}{5\times}{10^{2}} \\
 \vec{\textrm{s}}=(200+250)\ \textrm{m} \\
 \vec{\textrm{s}}=450 \ \textrm{m} \; N
 \end{equation}
+$$
 
 **Step 4:**
 
+$$
 \begin{align}
 \textrm{final} \ \textrm{velocity}, \vec{\textrm{v}_f}=70 \ \textrm{m/s}\ \; N \;\;(Ans) \\
 \textrm{displacement} = 84.94 \ \textrm{m} \ \; N \;\; (Ans)
 \end{align}
+$$
 
 #### Problem 4
 
@@ -727,7 +749,7 @@ An Air Canada plane requires a takeoff speed of $78.5 \ \textrm{m/s}$ and $1690 
 
 hide_me
 
-display(Latex('Which values are given in this problem?'))
+display('Which values are given in this problem?')
 
 #Create the box to select m=Motion of Equations
 a=widgets.Checkbox(
@@ -782,10 +804,12 @@ button_check.on_click(check_button)
 
 **Step 2:**
 
+$$
 \begin{align}
 \textrm{Motion} \ \textrm{equation,  } \vec{\textrm{v}_f} = \vec{\textrm{v}_i}^{2}+2 \vec{\textrm{a}} \; \vec{\textrm{s}} \textrm{ and }
 \vec{\textrm{v}_f}=\vec{\textrm{v}_i}+\vec{\textrm{a}} \textrm{t}
 \end{align}
+$$
 
 **Step 3**
 
@@ -801,7 +825,7 @@ def q_1(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("What is the plane's required acceleration, and how long was it accelerating?"))
+display("What is the plane's required acceleration, and how long was it accelerating?")
 
 a1 = 'acceleration = 1.91 ms\u00b2 and time = 48.1 s'
 a2 = 'acceleration = 1.82 ms\u00b2 and time = 43.06 s'

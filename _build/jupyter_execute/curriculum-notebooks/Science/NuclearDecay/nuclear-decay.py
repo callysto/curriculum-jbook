@@ -497,7 +497,7 @@ In the figure above you can use the drop down menus to adjust the number of neut
 1. Which way does the nucleon move on the path for neutron capture? $\beta^+$ decay? $\beta^-$ decay? 
 2. What does the path look like when you increase the probability of proton decay to fifty percent or more? Why? Be sure that `ProtonDecayAllowed` is clicked, and that you have at least 40 protons.
 
-## Conclusion
+## Conclusion  
 
 In conclusion we covered the idea of radioactive decay as well as several modes of decay. We covered the general formulas for alpha and both flavors of beta decay. Using these ideas, we created a model which simulated the counts we might actually observe in nuclear decay and compared them to the theoretical curve for many unstable elements. This showed us that while the theory may predict smooth and equal counts, actual observation may be a little messier. This simulation can be used as preparation for actual experiments and to help understand what you would observe.
 

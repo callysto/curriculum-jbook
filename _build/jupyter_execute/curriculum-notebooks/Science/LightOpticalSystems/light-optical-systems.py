@@ -78,8 +78,9 @@ Sir Isaac Newton has made contributions to many fields of science and mathematic
 
 Using a small slit in his window shutters, Newton passed a narrow beam of sunlight through a glass prism. The light travelled through the prism, and projected a rainbow of color on the other side!
 
-<img src="http://lightingmatters.com.au/wp/wp-content/uploads/2015/09/White-Light-Prism-Experiment.jpg" alt="Drawing" style="width: 500px;"/>
-<center>Picture taken from http://lightingmatters.com.au/wp/what-is-the-colour-of-white/white-light-prism-experiment/, July 30th, 2018.</center>
+<img src="http://media.web.britannica.com/eb-media/10/7710-050-36C066AC.jpg" >
+
+<center>Picture taken from http://media.web.britannica.com/eb-media/10/7710-050-36C066AC.jpg.</center>
 <center> Figure 2: This picture shows how a prism can create a spectrum of color. This is what Newton would have seen in 1666.</center>
 
 Later on, scientists determined that the prism was actually splitting light into its component parts. This phenomenon is called **dispersion**.
@@ -124,7 +125,11 @@ When incoming light rays encounter a reflective surface, they bounce off the sur
 
 On the animation below, click on the flashlight to turn it on, and move your mouse to change the angle of incidence.
 
-IFrame('Animations/reflect.html',width=500,height=320)
+#IFrame('Animations/reflect.html',width=500,height=320)
+
+%%html
+<iframe src='Animations/reflect.html' width=500 height=350></iframe>
+
 
 As seen above, the **normal** is what we call the line that forms a 90$^{\circ}$ angle with  the surface. The **angle of incidence** is what we call the angle between the flash lights beam and the normal. Similarly, the **angle of reflection** is the angle that the newly reflected light beam makes with the normal. The law of reflection states that these two angles will always be equal.
 
@@ -144,7 +149,11 @@ The **index of refraction** is a value that we use to show how much light will b
 
 Use the animation below to see how light refracts when passing from air to water. Click on the flashlight to turn it on.
 
-IFrame('Animations/refract.html',width=520,height=320)
+#IFrame('Animations/refract.html',width=520,height=320)
+
+%%html
+<iframe src='Animations/refract.html' width=520 height=320></iframe>
+
 
 Mathematically, reflection can be described using the following equation, known as Snell's Law:
 
@@ -194,7 +203,11 @@ Generally speaking, there are two types of lenses: **convex** and **concave**.
 
 To see how each type of lens affects light, use the following animation.
 
-IFrame('Animations/convex.html',width=520,height=420)
+#IFrame('Animations/convex.html',width=520,height=420)
+
+%%html
+<iframe src='Animations/convex.html' width=520 height=430></iframe>
+
 
 As seen above, a convex lens focuses light towards a specific point, while a concave lens will spread light away from a point. These lenses can be combined in many ways in order to produce different effects. For example, a camera lens uses a series of both convex and concave lenses in order to direct incoming light towards the back of the camera.
 

@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -148,8 +146,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -486,6 +484,25 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form></div></div>
 </div>
 <div class="section" id="newton-s-second-law">
 <h1>Newton’s Second Law<a class="headerlink" href="#newton-s-second-law" title="Permalink to this headline">¶</a></h1>
@@ -504,6 +521,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Newtons_First.html' width = "920px" height = "320px" frameBorder="0"></iframe>
+</div></div>
 </div>
 <p>But how can we quantify what this force is doing when it acts on the ball? This can be described with Newton’s Second Law.</p>
 </div>
@@ -545,6 +565,8 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table><tr><td><img src='images/Vector_3.png'></td><td><img src='images/Vector_4.png'></td></tr></table></div></div>
 </div>
 <p>The net force is merely calculated using vector addition principles, which we will not cover here, but should help to intuitively visualize a net force.</p>
 </div>
@@ -560,6 +582,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Gravity.html' width = "920px" height = "420px" frameBorder="0"></iframe>
+</div></div>
 </div>
 <p>They all fell at the exact same rate! This is because the force of gravity is known to be</p>
 <p><span class="math notranslate nohighlight">\(\vec{F}_g = -m\vec{g}\)</span></p>
@@ -588,6 +613,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Drag.html' width = "900px" height = "620px" frameBorder="0"></iframe>
+</div></div>
 </div>
 <p>The smaller balls fall at a slower rate than the larger ones do once they hit the material. This is because our drag term in the acceleration, <span class="math notranslate nohighlight">\(\frac{1}{m}c_0\vec{v}^2 C_D\)</span>, has an inverse dependence on the mass of the ball. Therefore, if you were to <strong>decrease</strong> the mass of the ball, the drag force will <strong>increase</strong> the acceleration in a positive, upwards direction, counteracting the effect of the gravitational effect. Thus, the heavier balls will experience “more” of the gravitational force and fall downwards at a faster rate.</p>
 </div>
@@ -605,6 +633,16 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/f9rBJDajwPc"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
 </div>
 <p>Now back to the gravitational force and its role in all of this. Without the constant gravitational acceleration inwards, the planets would merely fling off their elliptical orbits and off into interstellar space. Let’s see what this looks like with some vectors indicating how all these effects are working together.</p>
 <div class="cell docutils container">
@@ -614,6 +652,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Orbit.html' width = "620px" height = "550px" frameBorder="0"></iframe>
+</div></div>
 </div>
 </div>
 <div class="section" id="questions">
@@ -626,6 +667,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src = 'p5_animations/Vector_Q1.html' width = "480px" height = "430px" frameBorder="0"></iframe>
+</div></div>
 </div>
 <p>Q2. If a force <span class="math notranslate nohighlight">\(F = \frac{\large kq_1q_2}{\large r^2}\)</span> is applied to 2 objects, one with mass <span class="math notranslate nohighlight">\(m_1\)</span> and the other with mass <span class="math notranslate nohighlight">\(m_2\)</span>, where <span class="math notranslate nohighlight">\(m_2 &gt; m_1\)</span>, which object will <strong>accelerate faster</strong>? Object 1 with mass <span class="math notranslate nohighlight">\(m_1\)</span> or object 2 with mass <span class="math notranslate nohighlight">\(m_2\)</span> ? To start off, try equating <span class="math notranslate nohighlight">\(F=ma\)</span> to <span class="math notranslate nohighlight">\(F=\frac{\large kq_1q_2}{\large r^2}\)</span> and then solve for the acceleration and see how it behaves with respect to the mass.</p>
 <p>Click on Run Interact to check your answer.</p>
@@ -655,6 +699,10 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e592d099845b4114ab0728bb9826ede8", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="conclusion">

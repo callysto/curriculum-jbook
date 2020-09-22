@@ -508,18 +508,18 @@ Before defining what a limiting reactant is, we first present a very simple exam
 - Ch = cheese
 - Bd$_2$Ch = sandwich
 
-<img style="float: center;" src="images/BreadCheese.PNG" height="300" width="200">
+<img style="float: center;" src="images/BreadCheese.PNG" width="200">
 
 So then we have the following equation:
-<br />
-<center> 2Bd + Ch $\rightarrow$ Bd$_2$Ch</center>
+
+$$2\text{Bd + Ch} \rightarrow \text{ Bd}_2 \text{Ch}$$
 
 **Problem:** *If you have 10 slices of bread and 7 slices of cheese, how many sandwiches can you make? What will be leftover?*
 
 **Solution:** This can be done mentally; however, here's the basic computation that is required:
 
-<br />
-<div style="text-align: left"> 10 Bd$\bigg(\dfrac{1\: \text{Bd}_2\text{Ch}}{2\: \text{Bd}}\bigg) =$ 5 Bd$_2$Ch </div>
+
+$$10 \text{Bd} \bigg(\dfrac{1\: \text{Bd}_2\text{Ch}}{2\: \text{Bd}}\bigg) = 5 \text{Bd}_2\text{Ch} $$
 
 Therefore, we can make 5 sandwiches and so 2 slices of cheese are leftover.
 
@@ -534,7 +534,7 @@ In the previous question, which was limiting? Will the *bread* run out first or 
 Let's choose the first value to work with. So we'll start with 10 slices of bread.
 2. *Using stoichiometry, start with your chosen value and convert that value (using the appropriate molar ratio) into the other reactant.*
 
-<div style="text-align: left"> 10 Bd$\bigg(\dfrac{1\: \text{Ch}}{2\: \text{Bd}}\bigg) =$ 5 Ch </div>
+$$10 \text{Bd}\bigg(\dfrac{1\: \text{Ch}}{2\: \text{Bd}}\bigg) = 5 \text{Ch}$$
 
 3. *Compare the result from Step 2 with the corresponding value that you are given in the question. Step 2 tells us **how much we need** of the other reactant for a perfect reaction; i.e. if we are given **more** than what Step 2 gives us, then that reactant is in excess.*
 
@@ -544,8 +544,8 @@ We are given **7 slices of cheese**. From Step 2, we calculated that (given 10 s
 
 Consider the following synthesis reaction:
 
-<br />
-<center>____ Fe + ____ Cl$_2$ $\rightarrow$ ____ FeCl$_3$</center>
+
+$$\text{____ Fe + ____ Cl}_2 \rightarrow \text{ ____ FeCl}_3$$
 
 If 11.2 g of iron is reacted with 23.4 g of chlorine, iron (III) chloride is formed.
 
@@ -662,8 +662,7 @@ button5_step4.on_click(on_button5_step4_clicked)
 
 Because we chose to work with Fe first (which was a completely random choice) we calculated that we require exactly 21.3 g of Cl$_2$ for a perfect reaction. Also, it worked out that Cl$_2$ is in excess, which means that we simply perform the following subtraction:
 
-<br />
-<center> 23.4 g - 21.3 g = 2.1 g Cl$_2$ </center>
+$$23.4 g - 21.3 g = 2.1 g \text{ Cl}_2$$
 
 Note: If we chose to work with Cl$_2$ first (instead of Fe) then, while we would still have been able to find which is limiting (see "NOTE" above), we would have to perform the calculation to find 21.3 g of Cl$_2$ required for a perfect reaction.
 
@@ -673,15 +672,13 @@ The whole point of determining which reactant is limiting is precisely to find h
 
 Since Fe is the LR, we must start with that mass and convert it to the mass of the product (FeCl$_3$):
 
-<br />
-<center> 11.2 g Fe $\bigg(\dfrac{1\text{ mol}}{55.85\text{ g}}\bigg)\bigg(\dfrac{2\text{ mol FeCl}_3}{2\text{ mol Fe}}\bigg)\bigg(\dfrac{162.2\text{ g}}{1\text{ mol}}\bigg)=$ 32.5 g FeCl$_3$ </center>
+$$ 11.2 g \text{ Fe}\bigg(\dfrac{1\text{ mol}}{55.85\text{ g}}\bigg)\bigg(\dfrac{2\text{ mol FeCl}_3}{2\text{ mol Fe}}\bigg)\bigg(\dfrac{162.2\text{ g}}{1\text{ mol}}\bigg)= 32.5 g \text{ FeCl}_3$$
 
 ### Interactive Example
 
 Recall the chemical reaction (from above):
 
-<br />
-<center> 2Fe + 3Cl$_2$ $\rightarrow$ 2FeCl$_3$</center>
+$$2\text{Fe + 3Cl}_2 \rightarrow  2\text{FeCl}_3$$
 
 Use the sliders below to dynamically adjust the mass of both reactants. As you adjust the mass of the reactants, observe the changes in limiting reactant, mass of excess, and the mass of product.
 
@@ -733,8 +730,7 @@ display(out_text)
 
 Given the following reaction:
 
-<br />
-<center> 2H$_2$ + O$_2$ $\rightarrow$ 2H$_2$O</center>
+$$ 2\text{H}_2 + \text{O}_2 \rightarrow 2\text{H}_2 O$$
 
 Determine which reactant is in excess and which is limiting and calculate the mass of the excess and product. Round all answers to one decimal place. The mass of the reactants are given below.
 

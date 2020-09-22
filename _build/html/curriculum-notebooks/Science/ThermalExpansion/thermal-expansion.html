@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -148,8 +146,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -460,7 +458,7 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/ThermalExpansion/thermal-expansion.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
@@ -485,8 +483,29 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+</div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">Output</span><span class="p">,</span> <span class="n">IntSlider</span><span class="p">,</span> <span class="n">VBox</span><span class="p">,</span> <span class="n">Layout</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Javascript</span><span class="p">,</span><span class="n">clear_output</span><span class="p">,</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
@@ -579,6 +598,23 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-latest.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+</div></div>
 </div>
 <div class="section" id="thermal-linear-expansion">
 <h1>Thermal Linear Expansion<a class="headerlink" href="#thermal-linear-expansion" title="Permalink to this headline">¶</a></h1>
@@ -599,8 +635,8 @@
 <li><p>The temperature of a substance is a measure of the average kinetic energy of the particles.</p></li>
 <li><p>There are spaces between particles of matter. The average amount of empty space between molecules gets progressively larger as a sample of matter moves from solid to the liquid and gas phases.</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../../_images/particles.svg"><img alt="../../../_images/particles.svg" height="1800" src="../../../_images/particles.svg" width="400" /></a>
-<div class="cell docutils container">
+<a class="reference internal image-reference" href="../../../_images/particles.svg"><img alt="../../../_images/particles.svg" src="../../../_images/particles.svg" width="400" /></a>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">start_bold</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1m&quot;</span><span class="p">;</span> <span class="n">end_bold</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[0;0m&quot;</span>
 <span class="n">question</span> <span class="o">=</span> <span class="n">start_bold</span> <span class="o">+</span> <span class="s2">&quot;Key Question: &quot;</span> <span class="o">+</span> <span class="n">end_bold</span> <span class="o">+</span> \
@@ -616,14 +652,29 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Key Question: </span>Most solids <span class=" -Color -Color-Bold">expand</span> when heated. Based on the points above, <span class=" -Color -Color-Bold">why is this the case?</span>
+
+<span class=" -Color -Color-Bold">(A) </span>When heat is added to a substance, the molecules vibrate faster causing the space between molecules to increase.
+<span class=" -Color -Color-Bold">(B) </span>As objects become hotter, they contract and the molecules increase their speed.
+<span class=" -Color -Color-Bold">(C) </span>An increase in temperature causes the molecules to loosen up and move freely but slowly around.
+<span class=" -Color -Color-Bold">(D) </span>An increase in temperature causes the molecules to tighten up and move in a constricted manner.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5f85c5bb74e7459098396206af543f1d", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="id1">
 <h2>Thermal Linear Expansion<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p><strong>Definition:</strong> The increase in length of a solid in one direction (due to an increase in temperature) is called <em>thermal linear expansion</em>.</p>
 <p><strong>Goal:</strong> Given any solid, we wish to <strong>predict</strong> how much the solid will expand with a change in temperature; i.e. how do we predict the <em>change in length</em> (<span class="math notranslate nohighlight">\(\Delta L\)</span>) of a solid due to an increase in temperature?</p>
-<a class="reference internal image-reference" href="../../../_images/RodExpanding.svg"><img alt="../../../_images/RodExpanding.svg" height="1800" src="../../../_images/RodExpanding.svg" width="400" /></a>
-<div class="cell docutils container">
+<a class="reference internal image-reference" href="../../../_images/RodExpanding.svg"><img alt="../../../_images/RodExpanding.svg" src="../../../_images/RodExpanding.svg" width="400" /></a>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">start_bold</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1m&quot;</span><span class="p">;</span> <span class="n">end_bold</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[0;0m&quot;</span>
 <span class="n">question</span> <span class="o">=</span> <span class="n">start_bold</span> <span class="o">+</span> <span class="s2">&quot;Key Question: &quot;</span> <span class="o">+</span> <span class="n">end_bold</span> <span class="o">+</span> <span class="s2">&quot;What &quot;</span> <span class="o">+</span> <span class="n">start_bold</span> <span class="o">+</span> <span class="s2">&quot;variable(s)&quot;</span> <span class="o">+</span> <span class="n">end_bold</span> <span class="o">+</span> <span class="s2">&quot; would you need know to predict how much a substance will expand when heat is added?&quot;</span>
@@ -635,6 +686,21 @@
 <span class="n">option_4</span> <span class="o">=</span> <span class="s2">&quot;Roughness of the material, Type of material&quot;</span>
 
 <span class="n">multiple_choice</span><span class="p">(</span><span class="n">option_1</span><span class="p">,</span> <span class="n">option_2</span><span class="p">,</span> <span class="n">option_3</span><span class="p">,</span> <span class="n">option_4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Key Question: </span>What <span class=" -Color -Color-Bold">variable(s)</span> would you need know to predict how much a substance will expand when heat is added?
+
+<span class=" -Color -Color-Bold">(A) </span>Type of material, Amount of heat added
+<span class=" -Color -Color-Bold">(B) </span>Type of material, Initial length/size, Amount of heat added
+<span class=" -Color -Color-Bold">(C) </span>Pressure acting material, Amount of heat added
+<span class=" -Color -Color-Bold">(D) </span>Roughness of the material, Type of material
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "67561fb11e464d8db31c13a47fe0a955", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -671,12 +737,13 @@
 </tbody>
 </table>
 <p>The following formula relates these <strong>four quantities variables</strong> together:</p>
-<h2><center>$\Delta L = \alpha L \Delta T$</center></h2>
+<div class="math notranslate nohighlight">
+\[\Delta L = \alpha L \Delta T\]</div>
 <p>We will derive this formula later on in the notebook. Before that, let’s get accustomed to using this formula in practical situations.</p>
 <div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
 <p>The longest continuous bridge in Saskatchewan is a 380 m long steel bridge in North Battleford. The temperature in the area varies from -40.0 <span class="math notranslate nohighlight">\(^\circ\)</span>C to 30.0 <span class="math notranslate nohighlight">\(^\circ\)</span>C. What is the <em>change in length of the bridge</em>? Round to two significant figures.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out1</span> <span class="o">=</span> <span class="n">Output</span><span class="p">()</span>
 <span class="n">Step1B</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;STEP 1&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;20%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">))</span>
@@ -703,8 +770,12 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "72aa5760a9074b14a526848181a2f0d3", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out2</span> <span class="o">=</span> <span class="n">Output</span><span class="p">()</span>
 <span class="n">Step2B</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;STEP 2&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;20%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">))</span>
@@ -726,8 +797,12 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6d8a308dac4f40daa4261fc27b0d8839", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out3</span> <span class="o">=</span> <span class="n">Output</span><span class="p">()</span>
 <span class="n">Step3B</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;STEP 3&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;20%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">))</span>
@@ -749,12 +824,16 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b5ffb62d3e194faa9f7934593d4cb519", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="practice">
 <h3>Practice<a class="headerlink" href="#practice" title="Permalink to this headline">¶</a></h3>
 <p>Try multiple practice problems by clicking the ‘Generate New Question’ button upon completing a problem.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Generate New Question&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;20%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">))</span>
 <span class="n">button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">run_all</span><span class="p">)</span>
@@ -796,6 +875,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "bb6063096b2941b997d0d4d05226be15", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A piece of glass (pyrex) is 2.8 m on a cold winter day (-24.5 °C). How much longer is it on a very hot summer day (31.5 °C)? Round to two decimal places.
+<span class=" -Color -Color-Bold">(A) </span>0.56 cm
+<span class=" -Color -Color-Bold">(B) </span>0.98 cm
+<span class=" -Color -Color-Bold">(C) </span>0.05 cm
+<span class=" -Color -Color-Bold">(D) </span>0.18 cm
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "dd4f0b273c8f43d588db8e80b5e018b5", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -803,7 +898,7 @@
 <h2>Deriving the Formula<a class="headerlink" href="#deriving-the-formula" title="Permalink to this headline">¶</a></h2>
 <p>Now that you are comfortable using the thermal expansion formula, we now discuss how it is derived experimentally. Of the four quantities in the equation, <span class="math notranslate nohighlight">\(\Delta L = \alpha L \Delta T\)</span>, it is the coefficient of linear expansion (<span class="math notranslate nohighlight">\(\alpha\)</span>) that may be still be mysterious in how it is measured. Previously, we have referenced a table of values to determine <span class="math notranslate nohighlight">\(\alpha\)</span>, but <em>where do these values come from?</em></p>
 <p>We demonstrate how to calculate <span class="math notranslate nohighlight">\(\alpha\)</span> experimentally below. We will require two different materials so we can compare each expansion (which you can select in the dropdown menus below). We then apply <em>the exact same amount of heat to both materials</em> (which you can adjust using the slider). When you are ready, click the “Calculate Linear Expansion” button below.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">coefficients</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Aluminum&quot;</span><span class="p">:</span> <span class="mf">0.000025</span><span class="p">,</span> <span class="s2">&quot;Iron&quot;</span><span class="p">:</span> <span class="mf">0.000012</span><span class="p">,</span> <span class="s2">&quot;Steel&quot;</span><span class="p">:</span> <span class="mf">0.000012</span><span class="p">,</span> <span class="s2">&quot;Glass (soft)&quot;</span><span class="p">:</span> <span class="mf">0.000009</span><span class="p">,</span> <span class="s2">&quot;Glass (Pyrex)&quot;</span><span class="p">:</span> <span class="mf">0.000003</span><span class="p">,</span> <span class="s2">&quot;Concrete&quot;</span><span class="p">:</span> <span class="mf">0.000012</span><span class="p">,</span> <span class="s2">&quot;Platinum&quot;</span><span class="p">:</span> <span class="mf">0.000009</span><span class="p">,</span> <span class="s2">&quot;Copper&quot;</span><span class="p">:</span> <span class="mf">0.000016</span><span class="p">}</span>
 
@@ -964,9 +1059,17 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "50bfd965a944407294abfce2ed08365e", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0e804e8be3254650b812995a2cd5225a", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "dfcb5e88c3024cd0a868f7082461527a", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><em>Use the interactive simulation above to answer the following two questions.</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">start_bold</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1m&quot;</span><span class="p">;</span> <span class="n">end_bold</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[0;0m&quot;</span>
 <span class="n">question</span> <span class="o">=</span> <span class="s2">&quot;Keep ΔT fixed and only adjust L. Run the simulation many times, each with a different value for L (but the same value for ΔT). What happens to ΔL?&quot;</span>
@@ -981,8 +1084,23 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Keep ΔT fixed and only adjust L. Run the simulation many times, each with a different value for L (but the same value for ΔT). What happens to ΔL?
+
+<span class=" -Color -Color-Bold">(A) </span>There is no relationship between ΔL and L.
+<span class=" -Color -Color-Bold">(B) </span>ΔL increases as L decreases and ΔL decreases as L increases.
+<span class=" -Color -Color-Bold">(C) </span>When L decreases or increases, ΔL remains constant.
+<span class=" -Color -Color-Bold">(D) </span>ΔL increases as L increases and ΔL decreases as L decreases.
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b65ba7fb88704054b9d7d2f532107525", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">start_bold</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1m&quot;</span><span class="p">;</span> <span class="n">end_bold</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[0;0m&quot;</span>
 <span class="n">question</span> <span class="o">=</span> <span class="s2">&quot;Now, keep L fixed and only adjust ΔT. Again, run the simulation many times, each with a different value for ΔT (but the same value for L). What happens to ΔL?&quot;</span>
@@ -997,16 +1115,33 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Now, keep L fixed and only adjust ΔT. Again, run the simulation many times, each with a different value for ΔT (but the same value for L). What happens to ΔL?
+
+<span class=" -Color -Color-Bold">(A) </span>ΔL increases as ΔT decreases and ΔL decreases as ΔT increases.
+<span class=" -Color -Color-Bold">(B) </span>When ΔT decreases or increases, ΔL remains constant.
+<span class=" -Color -Color-Bold">(C) </span>There is no relationship between ΔL and ΔT.
+<span class=" -Color -Color-Bold">(D) </span>ΔL increases as ΔT increases and ΔL decreases as ΔT decreases.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7c964b0f94ed4492a076bf292ab9dcdf", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>Goal:</strong> To establish a thermal expansion formula capable of accurately predicting how much a material will expand linearly when heat is applied.</p>
 <p>Observe how <span class="math notranslate nohighlight">\(\Delta L\)</span> is different for some materials (aluminum versus platinum), but the same for others (steel versus iron). This is due to similarities and differences between the chemical composition of each material. For example, steel is comprised of around 90-95% iron, which accounts for both materials’ identical rate of thermal expansion.</p>
 <p>Simply knowing the initial length (<span class="math notranslate nohighlight">\(L\)</span>) and change in temperature (<span class="math notranslate nohighlight">\(\Delta T\)</span>) is clearly not enough to predict change in length (<span class="math notranslate nohighlight">\(\Delta L\)</span>). We can see this above: when both materials share the same values of <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(\Delta T\)</span>, their <span class="math notranslate nohighlight">\(\Delta L\)</span> is often different. We somehow must assign a <em>constant</em> value (which we call <span class="math notranslate nohighlight">\(\alpha\)</span>) for each material that we can use alongside <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(\Delta T\)</span> to compute <span class="math notranslate nohighlight">\(\Delta L\)</span>. Since we experimentally measured <span class="math notranslate nohighlight">\(\Delta L\)</span> above, we in fact have all the information we need to establish such a constant.</p>
 <p>The above simulation and questions indicates that the relationship between <span class="math notranslate nohighlight">\(L\)</span>, <span class="math notranslate nohighlight">\(\Delta T\)</span>, and <span class="math notranslate nohighlight">\(\Delta L\)</span> is direct rather than inverse (<span class="math notranslate nohighlight">\(1/\Delta T\)</span> or <span class="math notranslate nohighlight">\(1/L\)</span>). Since <span class="math notranslate nohighlight">\(\Delta L\)</span> becomes larger as both <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(\Delta T\)</span> become larger, we guess that their relationship is multiplicative. Hence, we begin by writing down the following formula that we want:</p>
-<h2><center>$\Delta L$ = <span style="color: red"> $\alpha$</span> $L \Delta T$</center></h2>
-<p>The <span style="color: red"> <span class="math notranslate nohighlight">\(\alpha\)</span></span> is the constant that we need, but do not know. However, we measured <span class="math notranslate nohighlight">\(\Delta L\)</span> and we know both <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(\Delta T\)</span>, so computing <span style="color: red"> <span class="math notranslate nohighlight">\(\alpha\)</span></span> is easy:</p>
-<h2><center><span style="color: red"> $\alpha$</span> $ = \dfrac{\Delta L}{L \Delta T}$</center></h2>
+<div class="math notranslate nohighlight">
+\[\Delta L = \alpha L \Delta T\]</div>
+<p>The <span class="math notranslate nohighlight">\(\alpha\)</span> is the constant that we need, but do not know. However, we measured <span class="math notranslate nohighlight">\(\Delta L\)</span> and we know both <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(\Delta T\)</span>, so computing <span class="math notranslate nohighlight">\(\alpha\)</span> is easy:</p>
+<div class="math notranslate nohighlight">
+\[\alpha  = \dfrac{\Delta L}{L \Delta T}\]</div>
 <p>Using the sliders below, input the change in length (<span class="math notranslate nohighlight">\(\Delta L\)</span>) for both materials 1 and 2 from the above experimental simulation to compute <span class="math notranslate nohighlight">\(\alpha\)</span> for each material. <strong>Hint:</strong> Use your <em>arrow keys</em> on your keyboard to use the sliders with precision.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out_text</span> <span class="o">=</span> <span class="n">Output</span><span class="p">()</span>
 
@@ -1037,17 +1172,24 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "57fde156acfa4d809eb99f86c255c077", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b753b0624e31461cb7e635a9f97719ef", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="variations-on-the-thermal-expansion-formula">
 <h2>Variations on the Thermal Expansion Formula<a class="headerlink" href="#variations-on-the-thermal-expansion-formula" title="Permalink to this headline">¶</a></h2>
 <p>As we’ve just seen, the formula <span class="math notranslate nohighlight">\(\Delta L = \alpha L \Delta T\)</span> is not always used to find <span class="math notranslate nohighlight">\(\Delta L\)</span>. Often, we can experimentally measure <span class="math notranslate nohighlight">\(\Delta L\)</span>. Depending on the application, we can then theoretically compute one of the other quantities (assuming we know the value of two of the other quantities). It is worth noting the three variations of the thermal expansion formula:</p>
-<h1><center>$\alpha = \dfrac{\Delta L}{L \Delta T}$ &emsp; $L = \dfrac{\Delta L}{\alpha \Delta T}$ &emsp; $\Delta T = \dfrac{\Delta L}{\alpha L}$</center></h1>
+<div class="math notranslate nohighlight">
+\[\alpha = \dfrac{\Delta L}{L \Delta T} \qquad L = \dfrac{\Delta L}{\alpha \Delta T} \qquad \Delta T = \dfrac{\Delta L}{\alpha L}\]</div>
 <p><strong>Note:</strong> This is <strong>one</strong> formula being displayed in <strong>three</strong> different ways. It is convenient to make use of the variation that corresponds to the unknown value that you wish to determine.</p>
 <div class="section" id="id2">
 <h3>Practice<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>Try the three different types of questions using the above variations of the thermal expansion formula. Use the ‘Generate New Question’ button to complete additional practice problems.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">button1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Generate New Question&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;20%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">))</span>
 <span class="n">button1</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">run_all</span><span class="p">)</span>
@@ -1086,8 +1228,24 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "fc1f3994d3884bbbada739f0de881adb", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>An newly made synthetic material 2.6 m long expands 0.27 mm when heated from 20.1°C to 123.4°C. What is the coefficient of linear expansion of this new material?
+<span class=" -Color -Color-Bold">(A) </span>1.01e-06 °C⁻¹
+<span class=" -Color -Color-Bold">(B) </span>8.85e-06 °C⁻¹
+<span class=" -Color -Color-Bold">(C) </span>2.9e-06 °C⁻¹
+<span class=" -Color -Color-Bold">(D) </span>5.18e-06 °C⁻¹
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c7b4937e16524ca982af9ea2b3dbd672", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">button2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Generate New Question&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;20%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">))</span>
 <span class="n">button2</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">run_all</span><span class="p">)</span>
@@ -1129,8 +1287,24 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "444d6e4d1adf433495e5a25094599a87", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A piece of aluminum changes in length by 1.13 m. The initial temperature was 23.2°C and the final temperature was 132.4°C. Determine the original length of the material. Leave your answer unrounded.
+<span class=" -Color -Color-Bold">(A) </span>802.00 m
+<span class=" -Color -Color-Bold">(B) </span>413.92 m
+<span class=" -Color -Color-Bold">(C) </span>1155.00 m
+<span class=" -Color -Color-Bold">(D) </span>1303.00 m
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "328339b4a8d941f2bcc3c187b5742033", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">button3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Generate New Question&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;20%&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">))</span>
 <span class="n">button3</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">run_all</span><span class="p">)</span>
@@ -1172,6 +1346,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e690068b6dc54fa7bca04618f2a11249", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>By how much would you need to heat a 100.8 inch glass (pyrex) sample to make it expand by 1.27 inches? Round to the nearest degree Celsius.
+<span class=" -Color -Color-Bold">(A) </span>2229 °C
+<span class=" -Color -Color-Bold">(B) </span>2734 °C
+<span class=" -Color -Color-Bold">(C) </span>4199 °C
+<span class=" -Color -Color-Bold">(D) </span>1855 °C
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e66cf5f8a6b5404fb4998b6396135d62", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1187,8 +1377,8 @@
 <div class="section" id="problem">
 <h3>Problem<a class="headerlink" href="#problem" title="Permalink to this headline">¶</a></h3>
 <p>An unknown metal alloy is being tested to discover its thermal properties to see if it suitable for use as a <em>spar</em>, which is a component of an airplane wing (shown in red below). The alloy is formed into a bar measuring 1.00 metre in length and it is then heated from its starting temperature of 30 °C to a final temperature of 100.0 °C. The length of the heated bar is measured to be exactly 1.002 metres in length. <strong>What is the coefficient of thermal expansion of the alloy? Round your answer to two significant figures.</strong></p>
-<a class="reference internal image-reference" href="../../../_images/WingSpar.svg"><img alt="../../../_images/WingSpar.svg" height="1200" src="../../../_images/WingSpar.svg" width="600" /></a>
-<div class="cell docutils container">
+<a class="reference internal image-reference" href="../../../_images/WingSpar.svg"><img alt="../../../_images/WingSpar.svg" src="../../../_images/WingSpar.svg" width="600" /></a>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">option_1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mf">0.000029</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; °C&quot;</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="mh">0x207B</span><span class="p">)</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="mh">0x00B9</span><span class="p">)</span>
 <span class="n">option_2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mf">0.014</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; °C&quot;</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="mh">0x207B</span><span class="p">)</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="mh">0x00B9</span><span class="p">)</span>
@@ -1199,10 +1389,23 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>2.9e-05 °C⁻¹
+<span class=" -Color -Color-Bold">(B) </span>3.2e-05 °C⁻¹
+<span class=" -Color -Color-Bold">(C) </span>0.014 °C⁻¹
+<span class=" -Color -Color-Bold">(D) </span>0.014 °C⁻¹
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "1d7c56f619744ddc99b732f8017e729c", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 <p>The aircraft wing (from above) experiences temperature extremes that span 210 ℃. The spar for the wing will have a length of 18.0 metres. Testing indicates that the aircraft wing will remain stable only if the spar never expands to a length larger than 18.103 metres. <strong>If the component is made from the metal alloy in question, will it meet this requirement?</strong></p>
 <p><strong>Hint:</strong> Use the sliders below to calculate the linear expansion of the spar.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">################ Widgets #################</span>
 <span class="n">app_out</span> <span class="o">=</span> <span class="n">Output</span><span class="p">()</span>
@@ -1316,8 +1519,16 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "477c7abf823a4d58bbfa22151e76f461", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b70b96148e734002887bfdc12c48b10b", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e7828225a495448196a05050e8492726", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">option_1</span> <span class="o">=</span> <span class="s2">&quot;The final length of the spar is 18.10962 m; therefore, it fails the requirement.&quot;</span>
 <span class="n">option_2</span> <span class="o">=</span> <span class="s2">&quot;The final length of the spar is 10.962 cm; therefore, it passes the requirement.&quot;</span>
@@ -1325,6 +1536,19 @@
 <span class="n">option_4</span> <span class="o">=</span> <span class="s2">&quot;The final length of the spar is 28.962 m; therefore, it fails the requirement.&quot;</span>
 
 <span class="n">multiple_choice</span><span class="p">(</span><span class="n">option_1</span><span class="p">,</span> <span class="n">option_2</span><span class="p">,</span> <span class="n">option_3</span><span class="p">,</span> <span class="n">option_4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>The final length of the spar is 28.962 m; therefore, it fails the requirement.
+<span class=" -Color -Color-Bold">(B) </span>The final length of the spar is 18.10962 m; therefore, it fails the requirement.
+<span class=" -Color -Color-Bold">(C) </span>The final length of the spar is 18.103 m; therefore, it passes the requirement.
+<span class=" -Color -Color-Bold">(D) </span>The final length of the spar is 10.962 cm; therefore, it passes the requirement.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0807c9069f7c44b29300b86c65cf29a8", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
 </pre></div>
 </div>
 </div>

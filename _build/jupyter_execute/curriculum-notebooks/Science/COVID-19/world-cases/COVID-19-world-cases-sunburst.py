@@ -18,10 +18,10 @@ Note: You only need to install dependencies once. If you receive Success! after 
     # !pip install pandas
     # !pip install plotly
 
-!pip install pycountry_convert 
-!pip install requests 
-!pip install pandas 
-!pip install plotly 
+#!pip install pycountry_convert 
+#!pip install requests 
+#!pip install pandas 
+#!pip install plotly 
 import requests as r
 import pandas as pd
 # Need to remove this if we upgrade to pandas 1.0.1 

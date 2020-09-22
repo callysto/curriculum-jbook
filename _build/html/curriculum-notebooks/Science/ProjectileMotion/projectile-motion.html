@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -148,8 +146,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -486,14 +484,14 @@
 <p>For the purposes of understanding the fundamentals, the effects of air resistance will be ignored. While it makes our lives simpler, it is wrong to assume that projectiles only experience the force of gravity - air resistance can play a significant role in many cases. Air resistance is responsible for lower projectile speeds and distances but it is also critical to helping airplanes slow down, keeping race cars grounded at high speeds (which is why they have spoilers), and causing crazy phenomena like the Magnus effect shown below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.lib.display</span> <span class="k">import</span> <span class="n">YouTubeVideo</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
-
-<span class="n">display</span><span class="p">(</span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;2OSrvzNW9FE&#39;</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="mi">35</span><span class="p">,</span> <span class="n">mute</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">718</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">404</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;p style=&quot;text-align: center;&quot;&gt; Basketball toss demonstrating the Magnus effect (https://www.youtube.com/watch?v=2OSrvzNW9FE) &lt;/p&gt;&#39;&#39;&#39;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;560&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;315&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/embed/2OSrvzNW9FE&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allow</span><span class="o">=</span><span class="s">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="na">allowfullscreen</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/2OSrvzNW9FE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
 </div>
 <p>However, in order to understand these complex cases, we must first strip away the layer of friction and look at how objects travel solely under the force gravity.</p>
 </div>
@@ -511,13 +509,13 @@
 <h3>Vertical Component<a class="headerlink" href="#vertical-component" title="Permalink to this headline">¶</a></h3>
 <p>Due to the force of gravity, the object will accelerate towards the center of the Earth. This means that its initial velocity will be different from its final velocity.
 There are 5 variables involved in the vertical component: acceleration, initial velocity, final velocity, <em>altitude</em> (distance travelled vertically), and time. We will assume <span class="math notranslate nohighlight">\( \vec a \)</span> is constant for projectile motion and equivalent to <span class="math notranslate nohighlight">\( 9.81  m/s^2\)</span>.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-94646a76-95de-401c-a35c-97302fbf38dc">
-<span class="eqno">(67)<a class="headerlink" href="#equation-94646a76-95de-401c-a35c-97302fbf38dc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-68644d69-6407-4ca5-a357-823a83ef929c">
+<span class="eqno">(67)<a class="headerlink" href="#equation-68644d69-6407-4ca5-a357-823a83ef929c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec a , \vec v_i , \vec v_f , \vec d_y , t
 \end{equation}\]</div>
 <p>There are 5 kinematic equations for uniform acceleration where each one contains 4 of the 5 variables listed above. Given 3 of the variables in a problem, the other 2 can each be found by picking an appropriate equation. *Note: If the object is initially launched horizontally, then <span class="math notranslate nohighlight">\(\vec v_i \)</span> = 0 *</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cf52154e-893a-42cd-8cfd-42f3520429b0">
-<span class="eqno">(68)<a class="headerlink" href="#equation-cf52154e-893a-42cd-8cfd-42f3520429b0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-bf0eea85-0475-4dd9-b15b-768998b2e4ec">
+<span class="eqno">(68)<a class="headerlink" href="#equation-bf0eea85-0475-4dd9-b15b-768998b2e4ec" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec a_{ave} = \frac{\vec v_f - \vec v_i}{t}  \\
 \vec d = \vec v_i t + \frac12\ \vec a t^2  \\
 \vec d = \vec v_f t - \frac12\ \vec a t^2  \\
@@ -542,8 +540,8 @@ __Solution__  <br>
 </ol>
 <blockquote>
 The rock is released from rest so $ \vec v_i = 0 $. Based on the information given and our sign convention, we can state the following:  <br><br>
-<div class="amsmath math notranslate nohighlight" id="equation-5f8fb269-9fa7-476f-a594-ed694aaa429a">
-<span class="eqno">(69)<a class="headerlink" href="#equation-5f8fb269-9fa7-476f-a594-ed694aaa429a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-771902e3-acbc-4977-b21d-8397a92189f3">
+<span class="eqno">(69)<a class="headerlink" href="#equation-771902e3-acbc-4977-b21d-8397a92189f3" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_i = 0 \\
 \vec a = +9.81 \ m/s \\
 t = 1.62\ s \\
@@ -551,13 +549,13 @@ t = 1.62\ s \\
 \vec v_f = \ ? \\
 \end{equation}\]</div>
 <p>We have 3 known variables and 2 unknown variables in the problem. However, in this case we’re looking for <span class="math notranslate nohighlight">\( \vec d_y \)</span> so we don’t care what <span class="math notranslate nohighlight">\( \vec v_f \)</span> is. If we take a look at the 5 vertical component equations, we see that the following equation has the 3 variables we know and the one we’re looking for:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-630ad441-89c0-4e8f-95d2-ba052fe5f511">
-<span class="eqno">(70)<a class="headerlink" href="#equation-630ad441-89c0-4e8f-95d2-ba052fe5f511" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c070a04c-57a9-4d4a-88a9-5870891eb5ff">
+<span class="eqno">(70)<a class="headerlink" href="#equation-c070a04c-57a9-4d4a-88a9-5870891eb5ff" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d_y = \vec v_i t + \frac12\ \vec a t^2  \\
 \end{equation}\]</div>
 <p>We don’t want one with <span class="math notranslate nohighlight">\( \vec v_f \)</span> because we don’t know its value. Using this equation we can solve for <span class="math notranslate nohighlight">\( \vec d_y \)</span>:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-55bed847-0ca6-42c5-88ce-6d2e393039c2">
-<span class="eqno">(71)<a class="headerlink" href="#equation-55bed847-0ca6-42c5-88ce-6d2e393039c2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c2383234-9afc-429d-9d0f-e9e59387e7a8">
+<span class="eqno">(71)<a class="headerlink" href="#equation-c2383234-9afc-429d-9d0f-e9e59387e7a8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d_y = (0)(2.62\ s) + \frac12\ (+9.81\ m/s^2) (1.62\ s)^2  \\
 \vec d_y = +12.8727\ m \\
 \vec d_y = +12.9\ m \\
@@ -571,13 +569,13 @@ t = 1.62\ s \\
 <h3>Horizontal Component<a class="headerlink" href="#horizontal-component" title="Permalink to this headline">¶</a></h3>
 <p>There is no force acting horizontally. Therefore there is no acceleration so it is <strong>uniform motion</strong> (<span class="math notranslate nohighlight">\( \vec v_i = \vec v_f = \vec v_x \)</span>).</p>
 <p>Horizontal uniform motion is governed by 3 variables: velocity, <em>range</em> (distance travelled horizontally), and time.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b1e5e119-471f-48b5-82d8-32f3864a9533">
-<span class="eqno">(72)<a class="headerlink" href="#equation-b1e5e119-471f-48b5-82d8-32f3864a9533" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2ee4b59a-5f9c-4eb8-8606-e92b1065816e">
+<span class="eqno">(72)<a class="headerlink" href="#equation-2ee4b59a-5f9c-4eb8-8606-e92b1065816e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x , \vec d_x , t
 \end{equation}\]</div>
 <p>These 3 variables are related by the uniform motion equation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c500c7d6-cbb6-423e-ac6e-7e112db0eda1">
-<span class="eqno">(73)<a class="headerlink" href="#equation-c500c7d6-cbb6-423e-ac6e-7e112db0eda1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-63063d26-5444-47d4-8115-3fe2de6d0aa9">
+<span class="eqno">(73)<a class="headerlink" href="#equation-63063d26-5444-47d4-8115-3fe2de6d0aa9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac {\vec d_x}{t}
 \end{equation}\]</div>
 <p>Let’s do some practice to solidify the concepts.</p>
@@ -598,15 +596,15 @@ __Solution__  <br>
 </ol>
 <blockquote>
 The horizontal component is easier than the vertical component because there's only one equation with 3 variables. List the 2 variables you know and the one you're trying to find:  <br><br>
-<div class="amsmath math notranslate nohighlight" id="equation-a3de217e-e34a-4557-82b5-35c84d13602d">
-<span class="eqno">(74)<a class="headerlink" href="#equation-a3de217e-e34a-4557-82b5-35c84d13602d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b1576625-6f23-40d4-961e-4aaccbbdb4df">
+<span class="eqno">(74)<a class="headerlink" href="#equation-b1576625-6f23-40d4-961e-4aaccbbdb4df" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = +30.0\ km/h =\ +8.3333\ m/s \\
 t = 1.62\ s \\
 \vec d_x = \ ? \\
 \end{equation}\]</div>
 <p>Rearrange the uniform motion equation for the unknown and solve:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-9effabb4-cbca-4ff8-a5db-73844489640c">
-<span class="eqno">(75)<a class="headerlink" href="#equation-9effabb4-cbca-4ff8-a5db-73844489640c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-753492f8-fa0a-47c9-a94a-3caca5a58945">
+<span class="eqno">(75)<a class="headerlink" href="#equation-753492f8-fa0a-47c9-a94a-3caca5a58945" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac {\vec d_x}{t} \\
 \vec d_x = \vec v_x t = (+8.3333\ m/s)(1.62\ s) \\
 \vec d_x = +13.5\ m \\
@@ -640,24 +638,24 @@ x &amp;y \ \hline
 $<span class="math notranslate nohighlight">\( t =\ ? \)</span>$  <br></p>
 <p>Note that <span class="math notranslate nohighlight">\( \vec v_i = 0 \)</span> because the projectile is launched horizontally, and <span class="math notranslate nohighlight">\( t \)</span> is common to both x &amp; y. <br></p>
 <p>To find <span class="math notranslate nohighlight">\( \vec v_x \)</span>, we need <span class="math notranslate nohighlight">\( \vec d_x \)</span> and <span class="math notranslate nohighlight">\( t \)</span>. We know <span class="math notranslate nohighlight">\( \vec d_x \)</span> but we’re missing <span class="math notranslate nohighlight">\( t \)</span> so we’ll need to use the vertical data to solve for <span class="math notranslate nohighlight">\( t \)</span>. Because we know <span class="math notranslate nohighlight">\( \vec d_y, \vec a, \)</span> and <span class="math notranslate nohighlight">\( \vec v_i \)</span>, and we’re looking for <span class="math notranslate nohighlight">\( t \)</span>, we’ll use the following equation because we can solve for <span class="math notranslate nohighlight">\( t \)</span> using the variables we know:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-a00d046d-fa56-49d9-915a-70f61f592f0b">
-<span class="eqno">(76)<a class="headerlink" href="#equation-a00d046d-fa56-49d9-915a-70f61f592f0b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-76d1bfba-9b7f-405e-b1bc-f7de89e4e285">
+<span class="eqno">(76)<a class="headerlink" href="#equation-76d1bfba-9b7f-405e-b1bc-f7de89e4e285" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d = \vec v_i t + \frac12\ \vec a t^2  \\
 \end{equation}\]</div>
 <p>Because <span class="math notranslate nohighlight">\( \vec v_i = 0 \)</span>, the first term goes to 0 and the resulting equation can be rearranged to solve for <span class="math notranslate nohighlight">\( t \)</span>:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-e6687478-7608-4dde-9f17-e4f404d595e2">
-<span class="eqno">(77)<a class="headerlink" href="#equation-e6687478-7608-4dde-9f17-e4f404d595e2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ef5cc557-6342-4e8d-9cb0-a25955257fe0">
+<span class="eqno">(77)<a class="headerlink" href="#equation-ef5cc557-6342-4e8d-9cb0-a25955257fe0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d = \frac12\ \vec a t^2  \\
 t = \sqrt{\frac{2 \vec d_y}{\vec a}} \\
 \end{equation}\]</div>
 <p>Plug in values to find <span class="math notranslate nohighlight">\( t \)</span>:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-5add7724-cb2a-4c0d-8fad-66dd32629f69">
-<span class="eqno">(78)<a class="headerlink" href="#equation-5add7724-cb2a-4c0d-8fad-66dd32629f69" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-84e8c747-57c1-4177-92cb-f4822c8095e0">
+<span class="eqno">(78)<a class="headerlink" href="#equation-84e8c747-57c1-4177-92cb-f4822c8095e0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 t = \sqrt{\frac{2 (-50.0\ m)}{(-9.81\ m/s^2)}} = 3.1928\ s
 \end{equation}\]</div>
 <p>Now that <span class="math notranslate nohighlight">\( t \)</span> is known we can solve for  <span class="math notranslate nohighlight">\( \vec v_x \)</span> using the uniform motion equation:  <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-2c08680c-a2cb-4375-8087-074ad938758a">
-<span class="eqno">(79)<a class="headerlink" href="#equation-2c08680c-a2cb-4375-8087-074ad938758a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a6e6c1b4-39f2-4290-b3fc-2e56b7feb614">
+<span class="eqno">(79)<a class="headerlink" href="#equation-a6e6c1b4-39f2-4290-b3fc-2e56b7feb614" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac {\vec d_x}{t} = \frac {(+90.0\ m)}{(3.1928\ s)} = +28.2\ m/s \ \ (+101.5\ km/h)
 \end{equation}\]</div>
 </blockquote>
@@ -687,13 +685,16 @@ __Solution__  <br>
 <img src="./images/proj_angle_1.jpg" alt="Drawing" style="width: 500px;"/>
 </blockquote>
 <p>The horizontal velocity <span class="math notranslate nohighlight">\( \vec v_x \)</span> will remain the same throughout the flight (uniform motion) while <span class="math notranslate nohighlight">\( \vec v_y \)</span> will decrease to the top of its trajectory and then increase downwards. <strong>Note: If the initial launch height and final landing height are the same (<span class="math notranslate nohighlight">\( \vec d_y \)</span> = 0), then the projectile will land with the same initial speed and angle!</strong> The initial horizontal and vertical velocities can be solved with some simple trigonometry:</p>
-<p>\begin{array}{cc}
-x &amp;y \
-cos(50^{\circ}) = \frac{adj}{hyp} = \frac{\vec v_x}{31\ m/s} &amp;sin(50^{\circ}) = \frac{opp}{hyp} = \frac{\vec v_y}{31\ m/s} \
-\vec v_x = (31\ m/s)\ cos(50^{\circ}) &amp;\vec v_y = (31\ m/s)\ sin(50^{\circ}) \
-\vec v_x = +19.9264\ m/s &amp;\vec v_y = +23.7474\ m/s \
-\vec v_x = +20\ m/s &amp;\vec v_y = +24\ m/s \
-\end{array}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x &amp;y \\ 
+cos(50^{\circ}) = \frac{adj}{hyp} = \frac{\vec v_x}{31\ m/s} &amp;sin(50^{\circ}) = \frac{opp}{hyp} = \frac{\vec v_y}{31\ m/s} \\
+\vec v_x = (31\ m/s)\ cos(50^{\circ}) &amp;\vec v_y = (31\ m/s)\ sin(50^{\circ}) \\ 
+\vec v_x = +19.9264\ m/s &amp;\vec v_y = +23.7474\ m/s \\ 
+\vec v_x = +20\ m/s &amp;\vec v_y = +24\ m/s \\ 
+\end{array}
+\end{split}\]</div>
 <details> 
 <summary>
 __Question 5__  <br>
@@ -724,13 +725,13 @@ x &amp;y \ \hline
 \end{array}
 $<span class="math notranslate nohighlight">\( t =\ ? \)</span>$  <br></p>
 <p>Looking at our table, we have 3 knowns and 1 unknown in the vertical column. That means we can solve for <span class="math notranslate nohighlight">\( \vec d_y \)</span>. Looking at our vertical component equations, the one that contains our 3 known variables and <span class="math notranslate nohighlight">\( \vec d_y \)</span> is: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-561bc865-1c6f-46c1-aa9c-f9e8567a9aa1">
-<span class="eqno">(80)<a class="headerlink" href="#equation-561bc865-1c6f-46c1-aa9c-f9e8567a9aa1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6c704a78-8f89-466b-82df-4f61d51f8944">
+<span class="eqno">(80)<a class="headerlink" href="#equation-6c704a78-8f89-466b-82df-4f61d51f8944" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 v_f^2 = v_i^2 + 2 a d
 \end{equation}\]</div>
 <p><span class="math notranslate nohighlight">\( \vec v_f = 0 \)</span> so we can rearrange and solve for <span class="math notranslate nohighlight">\( \vec d_y \)</span>: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-8009a2a6-5a11-42b3-9599-fb555a67d6b6">
-<span class="eqno">(81)<a class="headerlink" href="#equation-8009a2a6-5a11-42b3-9599-fb555a67d6b6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7be94625-d5e4-40cd-9dd3-48bb951b42fc">
+<span class="eqno">(81)<a class="headerlink" href="#equation-7be94625-d5e4-40cd-9dd3-48bb951b42fc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec d_y = -\frac{\vec v_i^2}{2 \vec a} = -\frac{(+23.7474\ m/s)^2}{2\ (-9.81\ m/s^2)} \\
 \vec d_y = +28.7431\ m \\
 \vec d_y = +28.7\ m \\
@@ -752,13 +753,13 @@ x &amp;y \ \hline
 \end{array}
 $<span class="math notranslate nohighlight">\( t =\ ? \)</span>$  <br></p>
 <p>Now, we’re looking for <span class="math notranslate nohighlight">\( t \)</span> but we don’t have enough horizontal data to solve with uniform motion. However, we know 4 out of the 5 vertical variables which means we have lots of options for the vertical equation. Any of the first 4 equations will do but the second and third will require solving a quadratic equation. To make life easy, we’ll use the first one: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-870e7b44-12a4-4649-bf5c-c00197210802">
-<span class="eqno">(82)<a class="headerlink" href="#equation-870e7b44-12a4-4649-bf5c-c00197210802" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-952b39ba-af61-4a09-a2f9-be56097a21b0">
+<span class="eqno">(82)<a class="headerlink" href="#equation-952b39ba-af61-4a09-a2f9-be56097a21b0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec a_{ave} = \frac{\vec v_f - \vec v_i}{t}
 \end{equation}\]</div>
 <p>Rearrange and solve for <span class="math notranslate nohighlight">\( t \)</span> (Remember to keep your sign convention. If you don’t you could end up with 0 here!): <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-80ea5234-2620-4ffd-a849-29f17e6cb354">
-<span class="eqno">(83)<a class="headerlink" href="#equation-80ea5234-2620-4ffd-a849-29f17e6cb354" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-45cfbdbb-f045-42c1-9557-e88e52bd5e0f">
+<span class="eqno">(83)<a class="headerlink" href="#equation-45cfbdbb-f045-42c1-9557-e88e52bd5e0f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 t = \frac{\vec v_f - \vec v_i}{\vec a_{ave}} = \frac{(-23.7474\ m/s) - (+23.7474\ m/s)}{(-9.81\ m/s^2)} \\
 t = 4.8415\ s \\
 t = 4.84\ s 
@@ -767,8 +768,8 @@ t = 4.84\ s
 <p><strong>c)</strong>  <br></p>
 <blockquote>
 Now that we have the flight time and $ \vec v_x $, we can use the uniform motion equation to solve for range: <br><br>
-<div class="amsmath math notranslate nohighlight" id="equation-6765a3da-e083-4c38-812c-eb0841566fd1">
-<span class="eqno">(84)<a class="headerlink" href="#equation-6765a3da-e083-4c38-812c-eb0841566fd1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7e4b2573-1edb-4fbf-9c5f-5406d44348e6">
+<span class="eqno">(84)<a class="headerlink" href="#equation-7e4b2573-1edb-4fbf-9c5f-5406d44348e6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac {\vec d_x}{t} \\
 \vec d_x = \vec v_x \ t = (+19.9264\ m/s)\ (4.8415\ s) = +96.4730\ m \\
 \vec d_x = +96.5\ m
@@ -791,13 +792,13 @@ Because $ \vec d_y = 0 $ for the full flight path, $ \vec v_f = -\vec v_i = -23.
 <blockquote>
 <img src="./images/qu_5-4.jpg" alt="Drawing" style="width: 200px;"/> 
 </blockquote>
-<div class="amsmath math notranslate nohighlight" id="equation-27ba91fc-4e5d-4c5a-bb04-9179b507979b">
-<span class="eqno">(85)<a class="headerlink" href="#equation-27ba91fc-4e5d-4c5a-bb04-9179b507979b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e808eba8-3afb-45c8-96cb-81920715a58e">
+<span class="eqno">(85)<a class="headerlink" href="#equation-e808eba8-3afb-45c8-96cb-81920715a58e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_f = 31.0\ m/s\ \  at -50.0^{\circ}
 \end{equation}\]</div>
 </blockquote>
 </blockquote>
-</details><p style="text-align: center;"> __----- Continue on only after attempting Question 5. -----__ </p><div class="cell docutils container">
+</details><p style="text-align: center;"> __----- Continue on only after attempting Question 5. -----__ </p><div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">If this block of code has suddenly popped up, don&#39;t worry! You&#39;ve found the code </span>
@@ -866,15 +867,42 @@ Because $ \vec d_y = 0 $ for the full flight path, $ \vec v_f = -\vec v_i = -23.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+code_show=true; 
+function code_toggle() {
+  if (code_show) {
+    $('div.input').each(function(id) {
+      el = $(this).find('.cm-variable:first');
+      if (id == 0 || el.text() == 'hide_me') {
+        $(this).hide();
+      }
+    });
+    $('div.output_prompt').css('opacity', 0);
+  } else {
+    $('div.input').each(function(id) {
+      $(this).show();
+    });
+    $('div.output_prompt').css('opacity', 1);
+  }
+  code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script>
+<form action="javascript:code_toggle()"><input style="opacity:0" type="submit" value="Click here to toggle on/off the raw code."></form></div></div>
 </div>
 <p>The scenario in Question 5 can be modelled by a graph using Python. The following code block creates an interactive graph where you can modify the initial velocity <span class="math notranslate nohighlight">\( \vec v_i \)</span> and launch angle <span class="math notranslate nohighlight">\( \theta \)</span> to see how the projectile’s trajectory changes.  <br></p>
 <p>Modify <code class="docutils literal notranslate"><span class="pre">theta</span></code> and <code class="docutils literal notranslate"><span class="pre">v_i</span></code> to recreate the scenario in Question 5 and use the graph to verify your answers for Parts (a) and (c) line up.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">theta</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">v_i</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">31</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">theta</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">v_i</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">31</span><span class="p">,</span><span class="mi">1</span><span class="p">));</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "9ad629d3529841628dc2748a9bbd8088", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p>Pretty cool, huh? If you want to learn how to make graphs using Python, Part (b) of Question 6 will give you a step-by-step breakdown on how to make simple static graphs.</p>
 </div>
@@ -917,19 +945,19 @@ x &amp;y \ \hline
 $<span class="math notranslate nohighlight">\( t =\ ? \)</span>$  <br></p>
 <p>Acceleration is written as <span class="math notranslate nohighlight">\( -g = -9.81 m/s^2 \)</span> for simplicity. Note that this is a constant written as a letter, <strong>not a variable.</strong> <br></p>
 <p>In order to come up with an equation for <span class="math notranslate nohighlight">\( \vec d_x \)</span>, we first need an equation for <span class="math notranslate nohighlight">\( t \)</span> in terms of the given variables <span class="math notranslate nohighlight">\( \vec v_i \)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>. Considering we know or have expressions for 4 of the vertical values, we will choose the first equation which makes it easy to solve for t: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-c569d82f-97c4-4092-bdb1-b2d3238a49cc">
-<span class="eqno">(86)<a class="headerlink" href="#equation-c569d82f-97c4-4092-bdb1-b2d3238a49cc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7aac6663-b3f1-4acb-939f-8f91193c2b20">
+<span class="eqno">(86)<a class="headerlink" href="#equation-7aac6663-b3f1-4acb-939f-8f91193c2b20" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec a_{ave} = \frac{\vec v_f - \vec v_i}{t}
 \end{equation}\]</div>
 <p>Rearrange and solve for <span class="math notranslate nohighlight">\( t \)</span>: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-f7ded0ac-bc6e-437b-93c2-ca06d2bab799">
-<span class="eqno">(87)<a class="headerlink" href="#equation-f7ded0ac-bc6e-437b-93c2-ca06d2bab799" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-bc497e5c-37c4-48b9-8b37-c543cb43da4f">
+<span class="eqno">(87)<a class="headerlink" href="#equation-bc497e5c-37c4-48b9-8b37-c543cb43da4f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 t = \frac{\vec v_f - \vec v_i}{\vec a_{ave}} = \frac{(-v_i sin(\theta)) - (v_i sin(\theta))}{(-g)} \\
 t = \frac{2 v_i sin(\theta)}{g} \\
 \end{equation}\]</div>
 <p>This expression can be applied to the horizontal component to come up with an equation for <span class="math notranslate nohighlight">\( \vec d_x \)</span>: <br><br></p>
-<div class="amsmath math notranslate nohighlight" id="equation-c4017fe0-1518-44a4-8e94-2346fe5b58c6">
-<span class="eqno">(88)<a class="headerlink" href="#equation-c4017fe0-1518-44a4-8e94-2346fe5b58c6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1a8fb126-5d37-41ba-a0ee-7bcb66ad3c8d">
+<span class="eqno">(88)<a class="headerlink" href="#equation-1a8fb126-5d37-41ba-a0ee-7bcb66ad3c8d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \vec v_x = \frac{\vec d_x}{t} \\
 \vec d_x = \vec v_x t \\
 \vec d_x = (v_i cos(\theta)) (\frac{2 v_i sin(\theta)}{g}) \\
@@ -971,6 +999,11 @@ After required modules have been imported into our script, we’re ready to get 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>theta =  [ 0.  22.5 45.  67.5 90. ]
+</pre></div>
+</div>
+</div>
 </div>
 <p>This creates a <strong>list</strong> of numbers called <code class="docutils literal notranslate"><span class="pre">theta</span></code> which consists of 5 numbers evenly spaced in the domain <span class="math notranslate nohighlight">\([0,90]\)</span> that we’ll use to plot our function. The <code class="docutils literal notranslate"><span class="pre">print</span></code> function is a standard python function that simply displays our variables to the screen as either numbers or characters. In order to plot our functions, we type the following. Note that we’ve increased the number of points in <code class="docutils literal notranslate"><span class="pre">theta</span></code> to create a smoother plot. Feel free to change the number <code class="docutils literal notranslate"><span class="pre">100</span></code> to something smaller and observe how the plot changes. We also assigned a value to <code class="docutils literal notranslate"><span class="pre">v_i</span></code> and <code class="docutils literal notranslate"><span class="pre">g</span></code> so that the computer can plot the function numerically. Likewise, play around with these numbers and see how your range changes.</p>
 <div class="cell docutils container">
@@ -982,6 +1015,9 @@ After required modules have been imported into our script, we’re ready to get 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/projectile-motion_31_0.png" src="../../../_images/projectile-motion_31_0.png" />
 </div>
 </div>
 <p>There’s a fair bit going on in that last line of code that should be noted. First, by using <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code> we’re calling a function from <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> (that we called <code class="docutils literal notranslate"><span class="pre">plt</span></code>) called <code class="docutils literal notranslate"><span class="pre">plot</span></code>. This function, unsurprisingly, is used to tell Python what to plot. We then pass this function a number of arguments (AKA inputs). The first argument <code class="docutils literal notranslate"><span class="pre">theta</span></code> is the list of numbers we generated earlier. The second argument <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">/</span> <span class="pre">g</span> <span class="pre">*</span> <span class="pre">(v_i**2)</span> <span class="pre">*</span> <span class="pre">np.sin(np.deg2rad(theta))</span> <span class="pre">*</span> <span class="pre">np.cos(np.deg2rad(theta))</span></code> is the mathematical function we’re going to plot. Here <code class="docutils literal notranslate"><span class="pre">theta</span></code> is the variable we’re going to plot, and also the list of points that we generated earlier. The <code class="docutils literal notranslate"><span class="pre">**</span></code> is the Python way of saying “to the power of”. Because <code class="docutils literal notranslate"><span class="pre">sin</span></code> and <code class="docutils literal notranslate"><span class="pre">cos</span></code> functions take radians as an input and not degrees, we use <code class="docutils literal notranslate"><span class="pre">np.deg2rad</span></code> which is a function that converts degrees to radians. <br></p>
@@ -998,6 +1034,9 @@ After required modules have been imported into our script, we’re ready to get 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/projectile-motion_33_0.png" src="../../../_images/projectile-motion_33_0.png" />
 </div>
 </div>
 <p>where the <code class="docutils literal notranslate"><span class="pre">plt.</span></code> calls are still calling functions from <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> however this time we’re creating x axes labels with <code class="docutils literal notranslate"><span class="pre">plt.xlabel</span></code> and y axes labels with <code class="docutils literal notranslate"><span class="pre">plt.ylabel</span></code>. <code class="docutils literal notranslate"><span class="pre">plt.margins(0)</span></code> removes any unnecessary blank space around the graph and <code class="docutils literal notranslate"><span class="pre">plt.grid()</span></code> adds a nice grid to visually locate points on the graph easier. Finally, <code class="docutils literal notranslate"><span class="pre">plt.title</span></code> adds a title bar to our graph. The dollar signs and “r” characters are just there to make the lettering look nice. Play around with the code and see if you can change the title bar, label font sizes, and margins.  <br></p>

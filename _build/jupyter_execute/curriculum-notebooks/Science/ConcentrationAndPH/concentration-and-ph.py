@@ -55,7 +55,7 @@ Take milk for example. The label 1% on a carton of milk tells us that 1% of the 
 
 This means that in every 100 mL of milk, there is 1 mL of milk fat, so a 1 litre (1000 mL) carton contains 10 mL of milk fat. 
 
-![milk](./images/milktypes.jpg)
+<img src="./images/milktypes.jpg" width=400>
 [source](https://www.usdairy.com/news-articles/what-do-milk-fat-percentages-mean)
 
 When we say how much of one substance is contained in a certain amount of another, we are giving a **concentration**.
@@ -124,7 +124,7 @@ It turns out that too much of anything can kill an organism. 90,000 ppm of water
 
 ### Case Study: DDT
 
-![](./images/biomagnification.jpg)
+<img src="./images/biomagnification.jpg" width=400>
 Source: https://iwashkoapes.wordpress.com/2014/06/01/biomagnification/
 
 DDT, or dichlorodiphenyltrichloroethane, is a pesticide originally created to kill lice, which spread the disease typhus.
@@ -141,7 +141,7 @@ Then the small fish that eat zooplankton and plankton consume the DDT as well, a
 At each step in the food chain, some of these organisms die because they consumed too much DDT and couldn't digest it.
 Humans have even been found to have small concentrations of DDT in our systems too, as we eat animals which have ingested DDT. We track the spread of DDT by calculating its concentration in certain areas and species.
 
-# Acids and Bases
+## Acids and Bases
 
 The main factor that defines an acid or a base is its pH. pH stands for "power of hydrogen", and it measures the concentration of hydrogen ions (H+) in a solution. The more hydrogen ions there are in a solution, the more acidic a solution is. The pH scale is from 0 to 14 to indicate how strong or weak an acid or base is.
 
@@ -254,8 +254,8 @@ answers5.observe(check5, 'value')
 
 Now that we know a few acids and bases that you can find in your house, let's extend this to the environment. Normal rain has a pH of around 5.6, while pure water has a pH around 7, and ocean water has a pH around 8. Tap water has a pH around 7.5 to prevent corrosion of pipes, but varies because of human influence and natural processes. But sometimes air pollutants can create more acid when it reacts with water in the air, creating acid rain. Acid rain has a pH less than 5.6 and is not healthy for the environment. This video from National Geographic explains acid rain, its effects, and what we can do to help.
 
-from IPython.display import YouTubeVideo
-YouTubeVideo('1PDjVDIrFec')
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1PDjVDIrFec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 answers4 = widgets.RadioButtons(options=['Sea water', 'Fresh water', 'Pure/distilled water', 'Acid rain'],
             value=None)
@@ -281,7 +281,7 @@ Every substance has a pH. If this pH is changed, it affects organisms that use o
 
 ### The full scale
 
-<img src="http://phhsbiology.weebly.com/uploads/3/0/1/0/30101179/ph_scale.jpg" width="500" height="600">
+<img src="http://phhsbiology.weebly.com/uploads/3/0/1/0/30101179/ph_scale.jpg" width="500" >
 
 ### How do we measure pH?
 
@@ -438,7 +438,8 @@ answers8.observe(check8, 'value')
 
 The video below is a company in Victoria, Australia that measures the air quality. Try to find all the substances they measure the concentration of.
 
-YouTubeVideo('mp3kztZy7ow', start=19)
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mp3kztZy7ow?start=19" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 They measure the concentration of carbon monoxide (from car exhaust) which is harmful in large amounts. They also measure the amount of ozone close to the earth. Ozone is good for us when it's 6-10 miles from the ground as it protects us from the sun's ultraviolet rays. But near the ground, ozone reacts with other chemicals to create harmful substances. If you've ever seen smog, ozone is one of its main components.
 

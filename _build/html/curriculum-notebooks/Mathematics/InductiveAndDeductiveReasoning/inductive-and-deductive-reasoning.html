@@ -661,13 +661,6 @@
 <p>Here is a simple applet to help visualize the problem. The slider at the bottom controls the number of dots along the edge (from <span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(6\)</span>). I’ve labeled each region with a number to make them easier to count.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#ggb.file(&#39;./applets/cc-20-chords.ggb&#39;).draw()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;cc-20-chords&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.geogebra.org/material/iframe/id/d4uwgs5k/width/700/height/700/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;700px&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;700px&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border:0px;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
@@ -815,7 +808,7 @@
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "918cf341a82d4e49addb8e72585b1d6e", "version_major": 2, "version_minor": 0}
+{"model_id": "2bee96ea1da64fed9c646bf6aa0606e9", "version_major": 2, "version_minor": 0}
 </script></div>
 </div>
 <p>Now that we have a conjecture it is typically very helpful if we’re able to take it further and come up with some guesses about <strong>why</strong> the conjecture holds. In this case the trick is to realize that we can compute the sum of the first <span class="math notranslate nohighlight">\(n\)</span> odd integers by taking the sum of the first <span class="math notranslate nohighlight">\(n-1\)</span> odd integers and adding the <span class="math notranslate nohighlight">\(n\)</span>’th odd. In other words:</p>
@@ -880,7 +873,7 @@ $<span class="math notranslate nohighlight">\(T(n)=\frac{(n)(n+1)}{2}.\)</span>$
 <div class="section" id="one-weird-trick">
 <h3>One Weird Trick<a class="headerlink" href="#one-weird-trick" title="Permalink to this headline">¶</a></h3>
 <p>From time to time neat computational tricks like this will go viral on social media. Unfortunately the people presenting them will typically only show a few flashy examples and leave the readers feeling completely mystified about <strong>why</strong> the trick works (or worse, feeling betrayed when it fails).</p>
-<p><img alt="One Weird Trick" src="curriculum-notebooks/Mathematics/InductiveAndDeductiveReasoning/./images/trick2.jpg" /></p>
+<p><img alt="One Weird Trick" src="../../../_images/trick2.png" /></p>
 <center>https://brightside.me/article/nine-simple-math-tricks-youll-wish-you-had-always-known-92805/</center>
 <p>Before we start lets first rephrase what the picture is saying:</p>
 <p>To compute <span class="math notranslate nohighlight">\((97)(96)\)</span>:</p>
@@ -965,7 +958,7 @@ $<span class="math notranslate nohighlight">\(T(n)=\frac{(n)(n+1)}{2}.\)</span>$
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "9fc83f6628c1472abbae770862ee2516", "version_major": 2, "version_minor": 0}
+{"model_id": "0fce789d7f0d4f12894967a9bcd5bd73", "version_major": 2, "version_minor": 0}
 </script></div>
 </div>
 <p>Playing around with the sliders it seems that the algorithm fails in two cases:</p>
@@ -1039,7 +1032,7 @@ $<span class="math notranslate nohighlight">\(T(n)=\frac{(n)(n+1)}{2}.\)</span>$
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "32b152addd6747c58db677d47b078867", "version_major": 2, "version_minor": 0}
+{"model_id": "99525ba8f49e49649ed39a72690a89da", "version_major": 2, "version_minor": 0}
 </script></div>
 </div>
 <p>For the two failing examples mentioned above we now get:</p>
@@ -1056,13 +1049,6 @@ ab &amp;= [a-(100-b)](100) + (100-b)(100-a) \\
 \end{align}
 \end{split}\]</div>
 <p>We can visualize this:</p>
-<div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#box = ggb.file(&#39;./applets/cc-20-weird-trick.ggb&#39;).draw()</span>
-</pre></div>
-</div>
-</div>
-</div>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>

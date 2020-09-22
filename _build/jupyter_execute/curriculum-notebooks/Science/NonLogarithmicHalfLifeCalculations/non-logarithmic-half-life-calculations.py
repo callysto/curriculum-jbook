@@ -161,32 +161,36 @@ We can also use the concept of half-life to determine how long it will take for 
 
 (*Ex 16.12, Pearson Physics*) Consider carbon-14, which has a half-life of 5730 years. How long will it take for there to be 1/8 the original amount of carbon-14 remaining in a sample?
 
->We know that the half-life of carbon-14 is 5730 years, and that from the decay equation:
+**ANSWER**
+
+We know that the half-life of carbon-14 is 5730 years, and that from the decay equation:
 $N = N_0\left(\frac{1}{2}\right)^{t/t_{1/2}} = \frac{1}{8}N_0$
->
->Thus for one-eighth to remain:
-$\left(\frac{1}{2}\right)^{t/t_{1/2}} = \frac{1}{8}$
->
->If we think in terms of half-lives, we can see that **three** half-lives will reduce the quantity by one-eighth, since
-$\frac{1}{2}\times\frac{1}{2}\times\frac{1}{2} = \frac{1}{8}$
->
->Thus, 
->
-><center>$\frac{t}{t_{1/2}} = 3$
->
-><center>$t = 3 \ t_{1/2}$
->
-><center>$t = 3\times(5730~\text{years})$
->
-><center>$t = 17 190$ years
->
->It will take over 17 thousand years for $7/8$ of carbon-14 to decay!
+
+Thus for one-eighth to remain:
+
+$$\left(\frac{1}{2}\right)^{t/t_{1/2}} = \frac{1}{8}$$
+
+If we think in terms of half-lives, we can see that **three** half-lives will reduce the quantity by one-eighth, since
+
+$$\frac{1}{2}\times\frac{1}{2}\times\frac{1}{2} = \frac{1}{8}$$
+
+Thus, 
+
+$$\frac{t}{t_{1/2}} = 3$$
+
+$$t = 3 \ t_{1/2}$$
+
+$$t = 3\times(5730~\text{ years})$$
+
+$$t = 17,190 \text{ years}$$
+
+It will take over 17 thousand years for $7/8$ of carbon-14 to decay!
 
 We could also solve this problem by looking at the decay curve of carbon-14.
 
 %matplotlib inline
 
-display(Latex('Here is the decay curve of carbon-14. We will use this graph to roughly determine how long it will take for 1/8 of the original amount to remain, or 12.5%.'))
+display('Here is the decay curve of carbon-14. We will use this graph to roughly determine how long it will take for 1/8 of the original amount to remain, or 12.5%.')
 
 x=np.linspace(0,40000,1000)
 plt.figure(figsize=(11,7));
@@ -201,7 +205,7 @@ plt.xlim([0,40000]);
 plt.ylim([0,100]);
 plt.grid(alpha=0.8, linestyle = '--');
 
-display(Latex("Let's pretend we don't know what the half-life of carbon-14 is. However, we do still know that after one half-life, 50% of our carbon-14 will remain. Let's mark this point on the graph."))
+display("Let's pretend we don't know what the half-life of carbon-14 is. However, we do still know that after one half-life, 50% of our carbon-14 will remain. Let's mark this point on the graph.")
 
 button_1 = widgets.Button(description='First half-life', disabled=False, tooltip='click me to continue', icon='')
 
@@ -227,7 +231,7 @@ def click_button_1(*args):
 button_1.on_click(click_button_1)
 display(button_1)    
 
-display(Latex('After another half-life, another 50% of the remaining carbon-14 will decay. This means we will have 25% of the original amount we started out with.'))
+display('After another half-life, another 50% of the remaining carbon-14 will decay. This means we will have 25% of the original amount we started out with.')
 
 button_2 = widgets.Button(description='Second half-life', disabled=False, tooltip='click me to continue', icon='')
 
@@ -255,7 +259,7 @@ def click_button_2(*args):
 button_2.on_click(click_button_2)
 display(button_2)
 
-display(Latex('After yet another half-life, another half of the remaining carbon-14 will decay. This means we will have 12.5% of the original amount we started out with - this is the quantity we are looking for!'))
+display('After yet another half-life, another half of the remaining carbon-14 will decay. This means we will have 12.5% of the original amount we started out with - this is the quantity we are looking for!')
 button_3 = widgets.Button(description='Third half-life', disabled=False, tooltip='click me to continue', icon='')
 html_w=widgets.HTML()
 
@@ -424,9 +428,9 @@ The following table shows the activity of a sample isotope at various times. Gra
 
 
 
-display(Latex('To make a plot of the data, we need to first enter it in a form python can read. Input the time data with the following syntax:'))
+display('To make a plot of the data, we need to first enter it in a form python can read. Input the time data with the following syntax:')
 print('time = [25, 50, ...]')
-display(Latex('Make sure that you enter the time entries in order from the top of the table to the bottom.'))
+display('Make sure that you enter the time entries in order from the top of the table to the bottom.')
 time_check = 'time=[25,50,75,100,125,150,175,200]'
 a = widgets.Text(placeholder = "Enter the time here")
 counter4 = 0
@@ -453,7 +457,7 @@ a.on_submit(callback)
 
 *You'll use the box below in the next part of the question*
 
-display(Latex('Next, enter the amount of isotope remaining. Input the data with the following syntax:'))
+display('Next, enter the amount of isotope remaining. Input the data with the following syntax:')
 print('amnt = [3.04,2.32, ...]')
 amnt_check = 'amnt=[3.04,2.32,1.76,1.32,1.00,0.76,0.58,0.44]'
 b = widgets.Text(placeholder = "Enter the amount here")
@@ -479,11 +483,11 @@ def callback(j):
 display(b)
 b.on_submit(callback)
 
-display(Latex('Now we can plot the data that you have enterd. We do this with the matplotlib library, which has already been imported into the notebook.'))
-display(Latex('To make a plot, we can call the "plot" function from the matplotlib library with the following command:'))
+display('Now we can plot the data that you have enterd. We do this with the matplotlib library, which has already been imported into the notebook.')
+display('To make a plot, we can call the "plot" function from the matplotlib library with the following command:')
 print("plt.plot(time, amnt, linestyle='', marker = 'o', color = 'orange', markersize = 6)")
-display(Latex("Try creating your own plot now with this command. Make sure you enter the correct variable for 'x' and 'y'! (i.e. 'time' and 'amnt')"))
-display(Latex("Feel free to try a different color or marker syle."))
+display("Try creating your own plot now with this command. Make sure you enter the correct variable for 'x' and 'y'! (i.e. 'time' and 'amnt')")
+display("Feel free to try a different color or marker syle.")
 P = widgets.Text(placeholder = "Define plot style here")
 plot_rendered = False
 
@@ -514,8 +518,8 @@ def callback(b):
 display(P)
 P.on_submit(callback)
 
-display(Latex('You will need to use the plot generated from the example in the cell above this one to answer the following questions. Make sure you go back and complete this question before moving on.'))
-display(Latex('(a) What is the half-life of the sample?'))
+display('You will need to use the plot generated from the example in the cell above this one to answer the following questions. Make sure you go back and complete this question before moving on.')
+display('(a) What is the half-life of the sample?')
 
 h = widgets.Text(placeholder = "Submit your answer here")
 counter6 = 0
@@ -535,7 +539,7 @@ def callback(b):
 display(h)
 h.on_submit(callback)
 
-display(Latex('(b) What was the initial quantity of the sample at t=0?'))
+display('(b) What was the initial quantity of the sample at t=0?')
 a = widgets.Text(placeholder = "Submit your answer here")
 counter7 = 0
 

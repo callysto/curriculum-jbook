@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -148,8 +146,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -499,7 +497,7 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/ReflectionsOfLightByPlaneAndSphericalMirrors/reflections-of-light-by-plane-and-spherical-mirrors.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">HTML</span>
 <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
@@ -523,8 +521,27 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form></div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">helper</span> <span class="k">import</span> <span class="o">*</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -548,7 +565,7 @@
 <div class="math notranslate nohighlight">
 \[\theta_{r} = \theta_{i}\]</div>
 <p>Use the slider below to change the angle of incidence. This changes the angle between the incident ray and the normal. Notice how the angle of reflection also changes when the slider is moved.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interactive_plot</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">interactive</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">Angle</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 <span class="n">output</span> <span class="o">=</span> <span class="n">interactive_plot</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -557,9 +574,13 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e2be9cbc5db441fb92fb9fbfd9500ec1", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Question:</strong> <em>When the angle of incidence increases, what happens to the angle of reflection?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Assign each multiple choice to these four variables</span>
 <span class="c1">#Option_1 contains the answer</span>
@@ -572,6 +593,19 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>The angle of reflection decreases.
+<span class=" -Color -Color-Bold">(B) </span>The angle of reflection remains constant.
+<span class=" -Color -Color-Bold">(C) </span>The angle of reflection equals zero.
+<span class=" -Color -Color-Bold">(D) </span>The angle of reflection increases.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "05de0a87ecbe4b488a2a6b7a34568a5f", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="specular-and-diffuse-reflections">
@@ -580,7 +614,7 @@
 <a class="reference internal image-reference" href="../../../_images/specular_diffuse_reflections.svg"><img alt="../../../_images/specular_diffuse_reflections.svg" src="../../../_images/specular_diffuse_reflections.svg" width="70%" /></a>
 <p><strong>Note:</strong> The law of reflection still applies to diffuse reflections, even though the reflected rays are pointing in various directions. We can imagine that each small section of the rough surface is like a flat plane orientated differently than the sections around it. Since each of these sections is orientated differently, the angle of incidence is different at each section. This causes the reflected rays to scatter.</p>
 <p><strong>Question:</strong> <em>Which of the following is an example of a specular reflection?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Assign each multiple choice to these four variables</span>
 <span class="c1">#Option_1 contains the answer</span>
@@ -593,9 +627,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>The reflection off a wooden deck.
+<span class=" -Color -Color-Bold">(B) </span>The reflection off a clean window.
+<span class=" -Color -Color-Bold">(C) </span>The reflection off a carpet floor.
+<span class=" -Color -Color-Bold">(D) </span>The reflection off a table cloth.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "07447ac7057744c7b78ed3c2e46c59c2", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 <p><strong>Question:</strong> <em>Which of the following is an example of a diffuse reflection?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Assign each multiple choice to these four variables</span>
 <span class="c1">#Option_1 contains the answer</span>
@@ -608,6 +655,19 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>The reflection off the surface of a still lake.
+<span class=" -Color -Color-Bold">(B) </span>The reflection off a polished sheet of metal.
+<span class=" -Color -Color-Bold">(C) </span>The reflection off a concrete sidewalk.
+<span class=" -Color -Color-Bold">(D) </span>The reflection off a mirror.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8f62afa75b46490088bd0db28bc35d38", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="image-formation-by-plane-mirrors">
@@ -617,7 +677,7 @@
 <p>Notice in the figure above that the light rays do not actually converge at the location where the image appears to be formed (behind the mirror). Since the light rays do not actually go behind the mirror, they are represented as projections using dashed lines. If a film were placed at the image location behind the mirror, it would not be able to capture the image. As a result, this type of image is called a <strong>virtual image</strong>.</p>
 <p>For objects reflected in a plane mirror, the distance of the image from the mirror, <span class="math notranslate nohighlight">\(d_{i}\)</span>, is always equal to the distance of the object from the mirror, <span class="math notranslate nohighlight">\(d_{o}\)</span>. If the object is moved toward the mirror, the image of the object will also move toward the mirror such that the object and the image are always equidistant from the surface of the mirror.</p>
 <p>Use the slider below to change the object distance. Notice how the image distance also changes when the slider is moved.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interactive_plot</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">interactive</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">Distance</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span><span class="nb">min</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 <span class="n">output</span> <span class="o">=</span> <span class="n">interactive_plot</span><span class="o">.</span><span class="n">children</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -626,8 +686,12 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "98ec5922dcac4f1084a8d7b7d3d3e6b9", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Print question</span>
 <span class="n">distance</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
@@ -647,8 +711,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>If you stand 6.0 m in front of a plane mirror, how many metres behind the mirror is your virtual image?
+<span class=" -Color -Color-Bold">(A) </span>12.0 m
+<span class=" -Color -Color-Bold">(B) </span>1.5 m
+<span class=" -Color -Color-Bold">(C) </span>6.0 m
+<span class=" -Color -Color-Bold">(D) </span>3.0 m
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "ffa6a807868b48a481f70bcd9a791f9e", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Print question</span>
 <span class="n">distance</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
@@ -668,6 +746,20 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>If you stand 6.8 m in front of a plane mirror, how many metres will separate you from your virtual image?
+<span class=" -Color -Color-Bold">(A) </span>13.6 m
+<span class=" -Color -Color-Bold">(B) </span>6.8 m
+<span class=" -Color -Color-Bold">(C) </span>27.2 m
+<span class=" -Color -Color-Bold">(D) </span>3.4 m
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c4c54ebcea484daab8933aec6be44fac", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="spherical-mirrors">
@@ -679,7 +771,7 @@
 <p><strong>Note:</strong> The distance from the centre of curvature to the vertex is equal to the <strong>radius, <span class="math notranslate nohighlight">\(R\)</span>,</strong> of the sphere used to create the mirror. Any straight line drawn from the centre to any point on the surface of a spherical mirror will have a length equal to the radius. The distance from the vertex to the focus is called the <strong>focal length, <span class="math notranslate nohighlight">\(f\)</span></strong>. This distance is equal to half the distance of the radius.</p>
 <div class="math notranslate nohighlight">
 \[f = \frac{R}{2}\]</div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Print question</span>
 <span class="n">radius</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">30</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
@@ -699,8 +791,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>If the radius of a curved mirror is 26.6 cm, how many centimetres is the focal length?
+<span class=" -Color -Color-Bold">(A) </span>53.2 cm
+<span class=" -Color -Color-Bold">(B) </span>6.7 cm
+<span class=" -Color -Color-Bold">(C) </span>13.3 cm
+<span class=" -Color -Color-Bold">(D) </span>26.6 cm
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0a3ec1af38684f76874881b22f17ecb2", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Print question</span>
 <span class="n">focal_length</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">15</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
@@ -717,6 +823,20 @@
 <span class="n">option_4</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">((</span><span class="n">answer</span> <span class="o">/</span> <span class="mi">4</span><span class="p">),</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; cm&quot;</span>
 
 <span class="n">multiple_choice</span><span class="p">(</span><span class="n">option_1</span><span class="p">,</span> <span class="n">option_2</span><span class="p">,</span> <span class="n">option_3</span><span class="p">,</span> <span class="n">option_4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>If the focal length of a curved mirror is 6.1 cm, how many centimetres is the radius of curvature?
+<span class=" -Color -Color-Bold">(A) </span>3.0 cm
+<span class=" -Color -Color-Bold">(B) </span>24.4 cm
+<span class=" -Color -Color-Bold">(C) </span>6.1 cm
+<span class=" -Color -Color-Bold">(D) </span>12.2 cm
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "abd9e384daf34bd98593109462cdad48", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -739,7 +859,7 @@
 <h3>Case 1: Object Located at a Distance Greater than <span class="math notranslate nohighlight">\(C\)</span><a class="headerlink" href="#case-1-object-located-at-a-distance-greater-than-c" title="Permalink to this headline">¶</a></h3>
 <p>In the first case, the distance of the object from the mirror is greater than the radius used to define the centre of curvature. In other words, the object is further away from the mirror than the centre of curvature. In this example, we can draw any two of the three rays mentioned above to find the image of the reflected object.</p>
 <p><strong>Note:</strong> You only need to draw two of the three rays to find the image of the reflected object.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output_case_1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
 <span class="n">frame_case_1</span> <span class="o">=</span> <span class="mi">1</span>
@@ -776,9 +896,15 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "daaf2ca06147488da16e9d0f68ad3cc7", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "19f7254a5068457ea9fd6ad93997c7c0", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Question:</strong> <em>Which options from the dropdown menus best describe the image formed by the reflected rays shown above?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Create dropdown menus</span>
 <span class="n">dropdown1_1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39; &#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Beyond C&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;At C&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Between C and F&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;At F&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;Between F and V&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Beyond V&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;Not applicable (no image)&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">},</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Position&#39;</span><span class="p">,)</span>
@@ -812,13 +938,20 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "3f24c63cab6c400c803c5d1c39158451", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="case-2-object-located-at-c">
 <h3>Case 2: Object Located at <span class="math notranslate nohighlight">\(C\)</span><a class="headerlink" href="#case-2-object-located-at-c" title="Permalink to this headline">¶</a></h3>
 <p>In the second case, the distance of the object from the mirror is equal to the radius used to define the centre of curvature.
 In other words, the object is located at the centre of curvature. In this case, we can draw only two rays to find the image of the reflected object. We cannot draw a ray passing through the centre of curvature because the object is located at <span class="math notranslate nohighlight">\(C\)</span>.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output_case_2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
 <span class="n">frame_case_2</span> <span class="o">=</span> <span class="mi">1</span>
@@ -852,9 +985,15 @@ In other words, the object is located at the centre of curvature. In this case, 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c8bb3ba498ba4201b8bb2b9de8fb6079", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "900a460829ab43158661c72e117fab2a", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Question:</strong> <em>Which options from the dropdown menus best describe the image formed by the reflected rays shown above?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Create dropdown menus</span>
 <span class="n">dropdown2_1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39; &#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Beyond C&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;At C&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Between C and F&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;At F&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;Between F and V&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Beyond V&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;Not applicable (no image)&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">},</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Position&#39;</span><span class="p">,)</span>
@@ -888,12 +1027,19 @@ In other words, the object is located at the centre of curvature. In this case, 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5105aa55478a4c9f9a9813669b8a9e2e", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="case-3-object-located-between-c-and-f">
 <h3>Case 3: Object Located between <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(F\)</span><a class="headerlink" href="#case-3-object-located-between-c-and-f" title="Permalink to this headline">¶</a></h3>
 <p>In the third case, the distance of the object from the mirror is less than the radius used to define the centre of curvature, but greater than the focal length. In other words, the object is located between <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(C\)</span>. In this case, we can find the image of the reflected object using two rays as shown below. If the mirror is large enough, a third ray that passes through <span class="math notranslate nohighlight">\(C\)</span> can also be drawn.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output_case_3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
 <span class="n">frame_case_3</span> <span class="o">=</span> <span class="mi">1</span>
@@ -927,9 +1073,15 @@ In other words, the object is located at the centre of curvature. In this case, 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b73a0c548123414dba466739c061f11e", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "27cbbbe6187244949fe7e4f5339a4635", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Question:</strong> <em>Which options from the dropdown menus best describe the image formed by the reflected rays shown above?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Create dropdown menus</span>
 <span class="n">dropdown3_1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39; &#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Beyond C&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;At C&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Between C and F&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;At F&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;Between F and V&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Beyond V&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;Not applicable (no image)&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">},</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Position&#39;</span><span class="p">,)</span>
@@ -963,12 +1115,19 @@ In other words, the object is located at the centre of curvature. In this case, 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "615d709ac6a7431dace7b4af38d66a64", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="case-4-object-located-at-f">
 <h3>Case 4: Object Located at <span class="math notranslate nohighlight">\(F\)</span><a class="headerlink" href="#case-4-object-located-at-f" title="Permalink to this headline">¶</a></h3>
 <p>In the fourth case, the distance of the object from the mirror is equal to the focal length. In other words, the object is located at the focus. In this case, we can draw only two rays to find the image of the reflected object. We cannot draw a ray passing through the focus because the object is located at <span class="math notranslate nohighlight">\(F\)</span>. Notice that the reflected rays are parallel and therefore do not intersect. As a consequence, no image is formed.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output_case_4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
 <span class="n">frame_case_4</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1002,9 +1161,15 @@ In other words, the object is located at the centre of curvature. In this case, 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "735f25e6343841a6800013b3a16fb670", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6e68e3c6233c43d3a31f5d5d2b46c4a0", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Question:</strong> <em>Which options from the dropdown menus best describe the image formed by the reflected rays shown above?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import ipywidgets as widgets</span>
 
@@ -1040,12 +1205,19 @@ In other words, the object is located at the centre of curvature. In this case, 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "bbfbb3fe505444c9ae4e2b7f79100b2d", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="case-5-object-located-between-f-and-v">
 <h3>Case 5: Object Located between <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(V\)</span><a class="headerlink" href="#case-5-object-located-between-f-and-v" title="Permalink to this headline">¶</a></h3>
 <p>In the fifth case, the distance of the object from the mirror is less than the focal length. In other words, the object is located between <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(V\)</span>. In this case, we can find the image of the reflected object using two rays as shown below. Notice that the reflected rays do not actually converge. However, the projections of the reflected rays <em>do</em> converge behind the mirror. Therefore, a virtual image is formed.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output_case_5</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
 <span class="n">frame_case_5</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1079,9 +1251,15 @@ In other words, the object is located at the centre of curvature. In this case, 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e89db3dfb15840f6a77b2567d5f27d9d", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0b55574ad94c4f27b7759311591d7a08", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Question:</strong> <em>Which options from the dropdown menus best describe the image formed by the reflected rays shown above?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Create dropdown menus</span>
 <span class="n">dropdown5_1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39; &#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Beyond C&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;At C&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Between C and F&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;At F&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;Between F and V&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Beyond V&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;Not applicable (no image)&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">},</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Position&#39;</span><span class="p">,)</span>
@@ -1115,12 +1293,19 @@ In other words, the object is located at the centre of curvature. In this case, 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "2caa7080e90c4468a82c66ae39f62c8c", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="convex-mirrors">
 <h3>Convex Mirrors<a class="headerlink" href="#convex-mirrors" title="Permalink to this headline">¶</a></h3>
 <p>For reflections in convex mirrors, the location of the object does not change the general characteristics of the image. The image will always be between F and V, smaller than the object, upright, and virtual.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output_convex</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
 <span class="n">frame_convex</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1154,9 +1339,15 @@ In other words, the object is located at the centre of curvature. In this case, 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "18456d9fdfad477b97003fc7c521b078", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b72d6e74912d4220a6e4d32f23f7cc4a", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Question:</strong> <em>Which options from the dropdown menus best describe the image formed by the reflected rays shown above?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Create dropdown menus</span>
 <span class="n">dropdown6_1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39; &#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Beyond C&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;At C&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Between C and F&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;At F&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;Between F and V&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Beyond V&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;Not applicable (no image)&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">},</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Position&#39;</span><span class="p">,)</span>
@@ -1187,6 +1378,13 @@ In other words, the object is located at the centre of curvature. In this case, 
 <span class="n">dropdown6_2</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check_answer6</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
 <span class="n">dropdown6_3</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check_answer6</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
 <span class="n">dropdown6_4</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check_answer6</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "1f6ac7dfa02f440f903f65100b7465b0", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
 </pre></div>
 </div>
 </div>

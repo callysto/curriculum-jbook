@@ -300,7 +300,7 @@ HTML('''
 
 ## The Fibonacci Sequence
 
-![](img/frazzComic.gif)
+![](images/frazzComic.gif)
 
 We have just scratched the surface of patterns. While arithmetic and geometric sequences are quite useful, there are also other unique patterns which are quite interesting to look at. One of the most famous patterns is called the Fibonacci Sequence. We can find examples of it all throughout nature. That green gif at the beginning of this notebook is a Romanesco Broccoli, and the number of spirals on one head is a Fibonacci number. A **Fibonacci number** is any number which appears in the Fibonacci sequence. More locally, the Fibonacci sequence arises if we look at the cones of a pine tree. The rule for the Fibonacci sequence is a bit more complex than the previous sequences we've looked at, as it's not increasing by a constant or a constant ratio. Instead, to get the next term in the sequence, we add the previous two terms together. Here's the rule expressed mathematically:
 
@@ -366,7 +366,7 @@ The rule for the triangle numbers arises in many places, for example if you want
 
 * How many dots are in the following triangle? Remember that we can use the rule described above to save a lot of time and frustration counting! (Hint: Start by figuring out what your n value is, what does n mean? )
 
-![]( img/big_triang.svg )
+![]( images/big_triang.svg )
 
 ## Conclusion 
 

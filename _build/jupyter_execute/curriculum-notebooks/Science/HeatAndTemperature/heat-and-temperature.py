@@ -4,9 +4,8 @@
 
 # Heat and Temperature
 
-## INSTRUCTIONS BEFORE YOU START:
-### Once the notebook has loaded click the fast forward button ">>" in the menu bar above. Click "Yes" to restart and run. 
-### If the "Run All Cells" button has loaded the reader can also click it to run all the cells.
+## Instructions before you start:
+### Click the fast forward button ">>" in the menu bar above. Click "Yes" to restart and run. 
 
 %%html
 <button onclick="run_all()">Run All Cells</button> 

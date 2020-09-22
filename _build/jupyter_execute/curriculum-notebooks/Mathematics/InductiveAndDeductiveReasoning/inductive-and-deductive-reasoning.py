@@ -55,8 +55,6 @@ Consider a circle. Suppose we were to add a certain number of dots to the edge o
 
 Here is a simple applet to help visualize the problem. The slider at the bottom controls the number of dots along the edge (from $1$ to $6$). I've labeled each region with a number to make them easier to count.
 
-#ggb.file('./applets/cc-20-chords.ggb').draw()
-
 %%html
 <iframe scrolling="no" title="cc-20-chords" src="https://www.geogebra.org/material/iframe/id/d4uwgs5k/width/700/height/700/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="700px" style="border:0px;"> </iframe>
 
@@ -235,7 +233,7 @@ Unfortunately we once again lack the advanced proof technique we need to prove (
 
 From time to time neat computational tricks like this will go viral on social media. Unfortunately the people presenting them will typically only show a few flashy examples and leave the readers feeling completely mystified about __why__ the trick works (or worse, feeling betrayed when it fails).
 
-![One Weird Trick](./images/trick2.jpg "Mathematicians hate him")
+![One Weird Trick](./images/trick2.png "Mathematicians hate him")
 <center>https://brightside.me/article/nine-simple-math-tricks-youll-wish-you-had-always-known-92805/</center>
 
 Before we start lets first rephrase what the picture is saying:
@@ -351,8 +349,6 @@ ab &= [a-(100-b)](100) + (100-b)(100-a) \\
 $$
 
 We can visualize this:
-
-#box = ggb.file('./applets/cc-20-weird-trick.ggb').draw()
 
 %%html
 <iframe scrolling="no" title="cc-20-weird-trick" src="https://www.geogebra.org/material/iframe/id/cb88dnrd/width/732/height/415/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="732px" height="415px" style="border:0px;"> </iframe>

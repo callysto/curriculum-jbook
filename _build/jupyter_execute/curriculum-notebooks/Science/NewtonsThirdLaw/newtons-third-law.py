@@ -123,6 +123,9 @@ So when a small ball hits a big ball, there is a force acting on each ball, in e
 from IPython.display import IFrame
 IFrame('C3.html',500,500)
 
+%%html
+<iframe src="C3.html" width=500 height=500></iframe>
+
 ## Second and Third Law together
 
 

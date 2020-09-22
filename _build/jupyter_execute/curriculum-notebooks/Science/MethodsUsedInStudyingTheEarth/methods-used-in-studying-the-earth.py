@@ -32,7 +32,7 @@ from ipywidgets import interact, interactive, fixed, interact_manual
 import ipywidgets as widgets
 import random
 
-<img src="https://www.sciencealert.com/images/parks-plates_cascadia_subduction_zone_revised-01.jpg" alt="Volcano" width="420" height="200"/>
+<img src="https://www.sciencealert.com/images/parks-plates_cascadia_subduction_zone_revised-01.jpg" alt="Volcano" width="420" />
 
 Figure 1: Cross section of the volcano. One plate is being subducted underneath the other. The subducted plate is melting by the hot mantle which causes lava to reach the surface and escape through the surface in a volcanic eruption. This process can also cause earthquakes. (ScienceAlert)
 

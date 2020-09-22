@@ -243,7 +243,7 @@ button_step3.on_click(on_button_step3_clicked)
 
 The heat transfer equation shown above may be rearranged to solve for each variable in the equation. These rearrangements are shown below:
 
-<h4><center>$Q = mC\Delta T \qquad m = \dfrac{Q}{C \Delta T} \qquad C = \dfrac{Q}{m \Delta T} \qquad \Delta T = \dfrac{Q}{mC}$</center></h4>
+$$Q = mC\Delta T \qquad m = \dfrac{Q}{C \Delta T} \qquad C = \dfrac{Q}{m \Delta T} \qquad \Delta T = \dfrac{Q}{mC}$$
 
 Try the four different practice problems below. Each question will require the use of one or more formula above. Use the *Generate New Question* button to generate additional practice problems.
 
@@ -612,7 +612,8 @@ Materials                  | Heat of Fusion (J/kg) |Heat of Vaporization (J/kg)
 
 The following formulae are used to calculate the amount of heat needed to change a material from a solid to a liquid (fusion), or from a liquid to a gas (vaporization):
 
-<h4><center>$Q_f = mH_f \qquad Q_v = mH_v$</center></h4>
+$$Q_f = mH_f \qquad Q_v = mH_v$$
+
 
 ### Example (revisited)
 

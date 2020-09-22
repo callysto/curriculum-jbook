@@ -116,11 +116,9 @@ This notebook will outline and explain the following concepts:
 [Back to Top](#Top)
 
 Make reference to the following periodic table throughout this notebook:
-<br>
-<br>
-<img src="Images/PeriodicTable Final.svg" width="100%"/>
-<br>
-<br>
+
+<img src="Images/PeriodicTableFinal.svg" width="100%">
+
 
 Note: The content covered in the following multiple choice is review material (concepts that you should already be familiar with).
 
@@ -151,6 +149,7 @@ option_4 = "Nucleus"
 multiple_choice(option_1, option_2, option_3, option_4)
 
 **Question 3:** What is the name of the atomic model below?
+
 <img src="Images/Bohr.svg" width="25%"/>
 
 #import ipywidgets as widgets

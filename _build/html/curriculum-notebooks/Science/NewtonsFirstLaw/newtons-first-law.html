@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -148,8 +146,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -450,7 +448,7 @@
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/NewtonsFirstLaw/NewtonsFirstLaw.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <div class="section" id="newton-s-first-law">
 <h1>Newton’s First Law<a class="headerlink" href="#newton-s-first-law" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
@@ -480,14 +478,25 @@
 <div class="section" id="curling">
 <h2>Curling<a class="headerlink" href="#curling" title="Permalink to this headline">¶</a></h2>
 <p>As a demonstration of Newton’s laws. Watch how the rocks move in straight lines, then bounce when they hit.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#from IPython.display import HTML</span>
 
-<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;H1&gt; Curling in Canada &lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Kwz-cicOUFk?rel=0&amp;amp;start=9;showinfo=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;/p&gt;&#39;</span> <span class="p">)</span>
+<span class="c1">#HTML(&#39;&lt;H1&gt; Curling in Canada &lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Kwz-cicOUFk?rel=0&amp;amp;start=9;showinfo=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;/p&gt;&#39; )</span>
 </pre></div>
 </div>
 </div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;560&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;315&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/embed/Kwz-cicOUFk?start=9&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allow</span><span class="o">=</span><span class="s">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="na">allowfullscreen</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/Kwz-cicOUFk?start=9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
 </div>
 <div class="section" id="the-curling-video-demonstrates-newton-s-three-laws">
 <h3>The curling video demonstrates Newton’s three laws:<a class="headerlink" href="#the-curling-video-demonstrates-newton-s-three-laws" title="Permalink to this headline">¶</a></h3>
@@ -522,28 +531,39 @@
 <p>Below, we have four circles (curling stones) in a line. They will not move, until some force acts on them. (The first law).</p>
 <p>We see a fifth stone comes in from the left, hits the first stone in the line and causes it to move. Then one stone hits the other, and the other, and the other, until the last one shoots out the end.</p>
 <p>The simulations will repeat every few seconds.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#from IPython.display import IFrame</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#IFrame(&#39;C1.html&#39;,500,500)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;C1.html&#39;</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;C1.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">500</span> <span class="na">height</span><span class="o">=</span><span class="s">500</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src="C1.html" width=500 height=500></iframe>
+</div></div>
 </div>
 </div>
 <div class="section" id="a-better-simulation">
 <h2>A better simulation<a class="headerlink" href="#a-better-simulation" title="Permalink to this headline">¶</a></h2>
 <p>Of course, this is a “perfect” simulation, where all five stones are in a perfectly straight line. A more realistic situation will have the stones slightly misaligned. In the simulation below, the first stone in the line is slightly out of place. A much more interesting collision is the result.</p>
 <p>Notice, however, once a stone is hit, it moves in a straight line, at a constant speed. This is also in the statement of Newton’s first law. If there is no force acting on the object, it will move at uniform speed in a constant direction.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;C2.html&#39;</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#IFrame(&#39;C2.html&#39;,500,500)</span>
 </pre></div>
 </div>
 </div>
@@ -579,9 +599,17 @@
 <li><p>friction forces, which causes the pendulums to slowly die down and stop.</p></li>
 </ul>
 <p>Note you can use the mouse to “grab” a pendulum and position it where you want. See if you can cause motions that highlight each of these forces.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;C3.html&#39;</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#IFrame(&#39;C3.html&#39;,500,500)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#%%html</span>
+<span class="c1">#&lt;iframe src=&quot;C3.html&quot; width=500 height=500&gt;&lt;/iframe&gt;</span>
 </pre></div>
 </div>
 </div>

@@ -1061,7 +1061,7 @@ html_template = """
 html_code = html_template.format(utils_code+beta_plus_code)
 HTML(html_code)
 
-<center> Figure 8: $\beta^+$ decay involves a proton changing into a neutron. The ejected particles travel at the same speed as those in $\beta^-$ decay.</center>
+Figure 8: $\beta^+$ decay involves a proton changing into a neutron. The ejected particles travel at the same speed as those in $\beta^-$ decay.
 
 ### Physical Properties
 
@@ -1416,7 +1416,7 @@ def q_1(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("What is it that makes radiation dangerous?"))
+display("What is it that makes radiation dangerous?")
 
 a1 = 'Radiation is not biodegradable.'
 a2 = "Radiation has the potential to ionize atoms."
@@ -1433,7 +1433,7 @@ def q_2(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("Which type of radiation has the highest penetrative power?"))
+display("Which type of radiation has the highest penetrative power?")
 
 a1 = 'Alpha radiation'
 a2 = "Beta radiation"
@@ -1450,7 +1450,7 @@ def q_3(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("Which type of beta decay involves the conversion of a neutron into a proton?"))
+display("Which type of beta decay involves the conversion of a neutron into a proton?")
 
 a1 = 'Beta minus'
 a2 = "Beta plus"
@@ -1467,7 +1467,7 @@ def q_4(val):
     else:
         display(Latex("Try Again!"))
 
-display(Latex("An alpha particle is identical to what type of nucleus?"))
+display("An alpha particle is identical to what type of nucleus?")
 
 a1 = 'Lithium'
 a2 = "Carbon-14"

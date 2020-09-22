@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -148,8 +146,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -482,7 +480,7 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/LightOpticalSystems/light-optical-systems.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">plotly</span> <span class="k">as</span> <span class="nn">py</span>
@@ -532,6 +530,40 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-latest.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+</div><div class="output text_html"><script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form></div></div>
 </div>
 <hr class="docutils" />
 <div class="section" id="light-and-optics">
@@ -553,7 +585,9 @@
 </div>
 <p>Sir Isaac Newton has made contributions to many fields of science and mathematics. In 1666, while spending time at his childhood home in Lincolnshire, England, Newton began experimenting with light.</p>
 <p>Using a small slit in his window shutters, Newton passed a narrow beam of sunlight through a glass prism. The light travelled through the prism, and projected a rainbow of color on the other side!</p>
-<img alt="Drawing" src="http://lightingmatters.com.au/wp/wp-content/uploads/2015/09/White-Light-Prism-Experiment.jpg" />
+<img alt="http://media.web.britannica.com/eb-media/10/7710-050-36C066AC.jpg" src="http://media.web.britannica.com/eb-media/10/7710-050-36C066AC.jpg" />
+<center>Picture taken from http://media.web.britannica.com/eb-media/10/7710-050-36C066AC.jpg.</center>
+<center> Figure 2: This picture shows how a prism can create a spectrum of color. This is what Newton would have seen in 1666.</center>
 <p>Later on, scientists determined that the prism was actually splitting light into its component parts. This phenomenon is called <strong>dispersion</strong>.</p>
 <p>Through this experiment, Newton demonstrated that white light was actually made up of all the individual colors of the rainbow!</p>
 <div class="section" id="ole-romer-and-the-speed-of-light">
@@ -579,17 +613,28 @@
 <p>We are all familiar with reflection; chances are, you look at your reflection more than once a day. But have you ever stopped to wonder what is really going on?</p>
 <p>Reflection is the term used to describe how light can change direction when it comes into contact with certain surfaces.</p>
 <p>When incoming light rays encounter a reflective surface, they bounce off the surface and continue moving in a new direction. The new direction in which it moves is determined by the <strong>law of reflection</strong>.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-43551b70-cb36-4859-8e91-a299e0e4a668">
-<span class="eqno">(50)<a class="headerlink" href="#equation-43551b70-cb36-4859-8e91-a299e0e4a668" title="Permalink to this equation">¶</a></span>\[\begin{equation} 
+<div class="amsmath math notranslate nohighlight" id="equation-08e4bbfa-38dd-4fbd-a065-52c28e33c31c">
+<span class="eqno">(50)<a class="headerlink" href="#equation-08e4bbfa-38dd-4fbd-a065-52c28e33c31c" title="Permalink to this equation">¶</a></span>\[\begin{equation} 
 \rm Law\: of\: Reflection: Angle\: of\: Incidence = Angle\: of\: Reflection
 \end{equation}\]</div>
 <p>On the animation below, click on the flashlight to turn it on, and move your mouse to change the angle of incidence.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;Animations/reflect.html&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">320</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#IFrame(&#39;Animations/reflect.html&#39;,width=500,height=320)</span>
 </pre></div>
 </div>
 </div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;Animations/reflect.html&#39;</span> <span class="na">width</span><span class="o">=</span><span class="s">500</span> <span class="na">height</span><span class="o">=</span><span class="s">350</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src='Animations/reflect.html' width=500 height=350></iframe>
+</div></div>
 </div>
 <p>As seen above, the <strong>normal</strong> is what we call the line that forms a 90<span class="math notranslate nohighlight">\(^{\circ}\)</span> angle with  the surface. The <strong>angle of incidence</strong> is what we call the angle between the flash lights beam and the normal. Similarly, the <strong>angle of reflection</strong> is the angle that the newly reflected light beam makes with the normal. The law of reflection states that these two angles will always be equal.</p>
 </div>
@@ -600,16 +645,27 @@
 <p>This phenomenon occurs because the light travelling to your eyes from the bottom of the pool <strong>refracts</strong>, or changes its direction of travel, when it transitions from water to air.</p>
 <p>The <strong>index of refraction</strong> is a value that we use to show how much light will bend when travelling through a substance. For example, the index of refraction for air is approximately 1.00, and the index of refraction for water is about 1.33. Because these indexes are different, light will bend when passing from water to air, or vice versa.</p>
 <p>Use the animation below to see how light refracts when passing from air to water. Click on the flashlight to turn it on.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;Animations/refract.html&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">520</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">320</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#IFrame(&#39;Animations/refract.html&#39;,width=520,height=320)</span>
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;Animations/refract.html&#39;</span> <span class="na">width</span><span class="o">=</span><span class="s">520</span> <span class="na">height</span><span class="o">=</span><span class="s">320</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src='Animations/refract.html' width=520 height=320></iframe>
+</div></div>
+</div>
 <p>Mathematically, reflection can be described using the following equation, known as Snell’s Law:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e5c538ce-9cb0-4ff9-bb37-c8ffabdf4e1d">
-<span class="eqno">(51)<a class="headerlink" href="#equation-e5c538ce-9cb0-4ff9-bb37-c8ffabdf4e1d" title="Permalink to this equation">¶</a></span>\[\begin{equation} 
+<div class="amsmath math notranslate nohighlight" id="equation-f8fb6c2b-6cae-4c3d-9618-36a65a93ee52">
+<span class="eqno">(51)<a class="headerlink" href="#equation-f8fb6c2b-6cae-4c3d-9618-36a65a93ee52" title="Permalink to this equation">¶</a></span>\[\begin{equation} 
 \textrm{Snells Law:}\: n_1\sin(\theta_1) = n_2\sin(\theta_2)
 \end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(n_1\)</span> is the index of refraction for the first medium, <span class="math notranslate nohighlight">\(\theta_1\)</span> is the incident angle, <span class="math notranslate nohighlight">\(n_2\)</span> is the index of refraction for the second medium, and <span class="math notranslate nohighlight">\(\theta_2\)</span> is the angle of refraction.</p>
@@ -638,12 +694,16 @@ Mirages also occur because of refraction, but they do not result in a display of
 <p>If you have glasses, or contact lenses, then you are constantly using refraction in order to help you see! Lenses use refraction to point light in specific directions.</p>
 <p>Generally speaking, there are two types of lenses: <strong>convex</strong> and <strong>concave</strong>.</p>
 <p>To see how each type of lens affects light, use the following animation.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;Animations/convex.html&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">520</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">420</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;Animations/convex.html&#39;</span> <span class="na">width</span><span class="o">=</span><span class="s">520</span> <span class="na">height</span><span class="o">=</span><span class="s">430</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe src='Animations/convex.html' width=520 height=430></iframe>
+</div></div>
 </div>
 <p>As seen above, a convex lens focuses light towards a specific point, while a concave lens will spread light away from a point. These lenses can be combined in many ways in order to produce different effects. For example, a camera lens uses a series of both convex and concave lenses in order to direct incoming light towards the back of the camera.</p>
 <img alt="Drawing" src="http://i.imgur.com/IH2ymaj.jpg" />

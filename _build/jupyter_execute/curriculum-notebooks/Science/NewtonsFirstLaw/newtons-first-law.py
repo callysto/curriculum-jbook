@@ -31,9 +31,12 @@
 
 As a demonstration of Newton's laws. Watch how the rocks move in straight lines, then bounce when they hit.
 
-from IPython.display import HTML
+#from IPython.display import HTML
 
-HTML('<H1> Curling in Canada <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Kwz-cicOUFk?rel=0&amp;start=9;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe></p>' )
+#HTML('<H1> Curling in Canada <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Kwz-cicOUFk?rel=0&amp;start=9;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe></p>' )
+
+%%html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kwz-cicOUFk?start=9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### The curling video demonstrates Newton's three laws:
 
@@ -81,9 +84,12 @@ We see a fifth stone comes in from the left, hits the first stone in the line an
 
 The simulations will repeat every few seconds. 
 
-from IPython.display import IFrame
+#from IPython.display import IFrame
 
-IFrame('C1.html',500,500)
+#IFrame('C1.html',500,500)
+
+%%html
+<iframe src="C1.html" width=500 height=500></iframe>
 
 ## A better simulation
 
@@ -93,7 +99,7 @@ Notice, however, once a stone is hit, it moves in a straight line, at a constant
 
 
 
-IFrame('C2.html',500,500)
+#IFrame('C2.html',500,500)
 
 ## Consequence of the First Law
 
@@ -135,7 +141,10 @@ Note you can use the mouse to "grab" a pendulum and position it where you want. 
 
 
 
-IFrame('C3.html',500,500)
+#IFrame('C3.html',500,500)
+
+#%%html
+#<iframe src="C3.html" width=500 height=500></iframe>
 
 ## Summary of Newton's first law
 
