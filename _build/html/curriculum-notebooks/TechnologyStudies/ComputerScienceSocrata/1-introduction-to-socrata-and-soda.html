@@ -1,0 +1,884 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Socrata and Soda &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Plotly - introduction" href="2-introduction-to-plotly.html" />
+    <link rel="prev" title="Technology Section" href="../Technology.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Statistics.html">
+   Statistics Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Technology.html">
+   Technology Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Socrata and Soda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2-introduction-to-plotly.html">
+     Plotly - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3-joining-datasets.html">
+     Joining Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="4-filtering-datasets.html">
+     Filtering Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python.html">
+     Python - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python-classes.html">
+     Python - Classes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">
+     Python - Loops and Iteration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToDataStructures/introduction-to-data-structures.html">
+     Python - Lists and Dictionaries
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/1-introduction-to-socrata-and-soda.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/1-introduction-to-socrata-and-soda.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/1-introduction-to-socrata-and-soda.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/1-introduction-to-socrata-and-soda.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-soda-api">
+   The SODA API
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-city-of-calgary-datasets">
+   The City of Calgary datasets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#queries-in-soda">
+   Queries in SODA
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-tools">
+   Python tools
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-terminology-and-a-helper-function">
+   Some terminology and a helper function
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ready-lets-query-some-data">
+   READY? Lets query some data!
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simple-query">
+     simple query
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#note">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#limiting-the-amount-of-data">
+     limiting the amount of data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#paging-through-data">
+     paging through data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#select-a-limited-number-of-fields">
+     select a limited number of fields
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#providing-an-alias-for-a-field">
+     providing an alias for a field
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-transform-functions">
+     data transform functions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#where-clause">
+     WHERE clause
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#order-by-clause">
+     ORDER BY clause
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#group-by-clause">
+     GROUP BY clause
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Note:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Note:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#an-important-distinction">
+     AN IMPORTANT DISTINCTION
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=TechnologyStudies/ComputerScienceSocrata/1-introduction-to-socrata-and-soda.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="section" id="socrata-and-soda">
+<h1>Socrata and Soda<a class="headerlink" href="#socrata-and-soda" title="Permalink to this headline">¶</a></h1>
+<p>by Gustaaf J Wehnes, Calgary Board of Education</p>
+<p>We will be using Socrata open data for our forays into the rapidly emerging field of data science. Socrata is used by many governments and organisations, including our own City of Calgary. Take some time to familiarize yourself with the technology through their <a class="reference external" href="https://dev.socrata.com/data/">home page</a></p>
+<div class="section" id="the-soda-api">
+<h2>The SODA API<a class="headerlink" href="#the-soda-api" title="Permalink to this headline">¶</a></h2>
+<p>As programmers, we will want to know how to <em>programatically</em> interact with open data sources. will be using an API (Application Programming Interface) developed  Thus, you will also want to bookmark the <a class="reference external" href="https://dev.socrata.com/">Socrata Open Data API (aka SODA)</a>. Pay particular attention to the <a class="reference external" href="https://dev.socrata.com/consumers/getting-started.html">Getting Started</a> and the <a class="reference external" href="https://dev.socrata.com/docs/endpoints.html">API Docs</a> pages.</p>
+<p>If you don’t know what an API is, here is a <a class="reference external" href="https://www.webopedia.com/TERM/A/API.html">definition</a></p>
+</div>
+<div class="section" id="the-city-of-calgary-datasets">
+<h2>The City of Calgary datasets<a class="headerlink" href="#the-city-of-calgary-datasets" title="Permalink to this headline">¶</a></h2>
+<p>Also have a look at <a class="reference external" href="https://data.calgary.ca/">The City of Calgary’s Open Data Portal</a>. There are all kinds of cool data sets here, along with tools for visualizing this data. Hopefully you can already start seeing how open data provides a massive opportunity for app developers and researchers.</p>
+<p>In particular, have a look at three datasets we will be using in our journey: <a class="reference external" href="https://data.calgary.ca/Environment/River-Levels-and-Flows/5fdg-ifgr">River Levels and Flows</a>, <a class="reference external" href="https://data.calgary.ca/Services-and-Amenities/School-Locations/fd9t-tdn2">School Locations</a>, and <a class="reference external" href="https://data.calgary.ca/Demographics/School-Enrolment-Data/9qye-mibh">School Enrolment</a>.</p>
+<p>https://dev.socrata.com/docs/functions/#,</p>
+<p>https://data.calgary.ca/Environment/River-Levels-and-Flows/5fdg-ifgr</p>
+</div>
+<div class="section" id="queries-in-soda">
+<h2>Queries in SODA<a class="headerlink" href="#queries-in-soda" title="Permalink to this headline">¶</a></h2>
+<p>The Socrata interface allows the building of SQL-like queries: <a class="reference external" href="https://dev.socrata.com/docs/queries/query.html">query Parameter</a>. Theses queries are much more readable than the queries we were writing before using keywords in a URL</p>
+<p>To allow the potential running of multiple queries, let’s take the time to create a function that does some of the dirty work for us. We use the requests library to obtain data from an internet request based on the domain, uuid, and query. The get method returns a byte array, which we then have to convert to a dataframe</p>
+<p><strong>function</strong> <em>run_query</em></p>
+<p><strong>parameter</strong> <em>domain</em>: refers to the organization that supplies the data</p>
+<p><strong>parameter</strong> <em>uuid</em>: universal unique ID; refers to the specific dataset.</p>
+<p><strong>parameter</strong> <em>query</em>: SODA query</p>
+<p><strong>returns</strong>: pandas dataframe</p>
+</div>
+<div class="section" id="python-tools">
+<h2>Python tools<a class="headerlink" href="#python-tools" title="Permalink to this headline">¶</a></h2>
+<p>The last few pieces that needs introducing are the Python libraries that we will use. Again, take some time to have a look.  The first is an open source data analysis and manipulation tool called <a class="reference external" href="https://pandas.pydata.org/">pandas</a>. Two other libraries, which you only need a passing familiarity with, are <a class="reference external" href="https://requests.readthedocs.io/en/master/">requests</a> and <a class="reference external" href="https://docs.python.org/3/library/io.html">Python io</a>.</p>
+<p>Don’t get overwhelmed; there is a lot of functionality here, and just like me, you will just learn it as you go.</p>
+<p>The beauty of using Jupyter is that these tools are pre-installed! So, no messing with downloading and installing. We simply import them :-)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">io</span> <span class="k">as</span> <span class="nn">io</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="some-terminology-and-a-helper-function">
+<h2>Some terminology and a helper function<a class="headerlink" href="#some-terminology-and-a-helper-function" title="Permalink to this headline">¶</a></h2>
+<p>To simplify the execution of multiple queries, let’s take the time to create a function that does some of the dirty work for us. We use the requests library to obtain data from an internet request based on the <a class="reference external" href="https://www.webopedia.com/TERM/D/domain_name.html">domain</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Universally_unique_identifier">uuid</a> of the dataset, and the <em>query</em> itself. A ‘session’ object is created with the requests library; the get method is used to return a byte array from an <a class="reference external" href="https://www.webopedia.com/TERM/H/HTTP.html">http</a> source, and we then covert that array to a <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html">pandas dataframe object</a>. Note that we also import the four libraries previously mentioned.</p>
+<p><strong>function</strong> <em>run_query</em></p>
+<p><strong>parameter</strong> <em>domain</em>: refers to the organization that supplies the data</p>
+<p><strong>parameter</strong> <em>uuid</em>: universal unique ID; refers to the specific dataset.</p>
+<p><strong>parameter</strong> <em>query</em>: SODA query</p>
+<p><strong>returns</strong>: pandas dataframe</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+    <span class="n">session</span> <span class="o">=</span> <span class="n">rq</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span> <span class="o">+</span> <span class="n">uuid</span> <span class="o">+</span><span class="s2">&quot;.csv?$query=&quot;</span> <span class="o">+</span> <span class="n">query</span><span class="p">)</span>
+    <span class="n">dataframe</span> <span class="o">=</span>  <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)))</span>
+    <span class="k">return</span> <span class="n">dataframe</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ready-lets-query-some-data">
+<h2>READY? Lets query some data!<a class="headerlink" href="#ready-lets-query-some-data" title="Permalink to this headline">¶</a></h2>
+<p>You may already have come across the documentation for the SODA <a class="reference external" href="https://dev.socrata.com/docs/queries/query.html">query</a>. This will look quite familiar to the SQL statements that you have already learned about. Let’s run through a pile of examples, where you can see how you can use the tools to obtain data in CSV (or JSON) format.</p>
+<div class="section" id="simple-query">
+<h3>simple query<a class="headerlink" href="#simple-query" title="Permalink to this headline">¶</a></h3>
+<p>Retrieve the entire dataset.</p>
+<div class="section" id="note">
+<h4>Note:<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>A maximum of 1000 records are returned. That is probably a good thing, as the dataset itself is <em>huge</em> (5.48 million records as of April 2020, and ever growing).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">domain</span> <span class="o">=</span> <span class="s2">&quot;https://data.calgary.ca/resource/&quot;</span>
+
+<span class="n">uuid_river_levels</span> <span class="o">=</span> <span class="s2">&quot;5fdg-ifgr&quot;</span>
+<span class="n">uuid_school_enrollment</span> <span class="o">=</span> <span class="s2">&quot;9qye-mibh&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT *</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">river_levels</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_river_levels</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">river_levels</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="limiting-the-amount-of-data">
+<h3>limiting the amount of data<a class="headerlink" href="#limiting-the-amount-of-data" title="Permalink to this headline">¶</a></h3>
+<p>Retrieve only the first 100 record of the dataset.</p>
+<div class="section" id="id1">
+<h4>Note:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>You can set any limit that you like, but be aware of how much data you are going to get back. Obviously, the larger the dataset (rows * columns) the longer the download time (and the data used).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    *</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    100</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">river_levels</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_river_levels</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">river_levels</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="paging-through-data">
+<h3>paging through data<a class="headerlink" href="#paging-through-data" title="Permalink to this headline">¶</a></h3>
+<p>Retrieve records 101 to 200. You will again receive 100 record.</p>
+<div class="section" id="id2">
+<h4>Note:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>This is known as <a class="reference external" href="https://dev.socrata.com/docs/paging.html">paging</a>. You could, if you want, retrieve the data in small chunks. We will not be doing this in this course, but it is good to know that it can be done.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    *</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    100</span>
+<span class="s2">OFFSET</span>
+<span class="s2">    100</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">river_levels</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_river_levels</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">river_levels</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="select-a-limited-number-of-fields">
+<h3>select a limited number of fields<a class="headerlink" href="#select-a-limited-number-of-fields" title="Permalink to this headline">¶</a></h3>
+<p>This can dramatically reduce the amount of data returned (as the dataframe is like a table, so rows x columns).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    station_number,</span>
+<span class="s2">    timestamp,</span>
+<span class="s2">    level</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    100    </span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">river_levels</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_river_levels</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">river_levels</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="providing-an-alias-for-a-field">
+<h3>providing an alias for a field<a class="headerlink" href="#providing-an-alias-for-a-field" title="Permalink to this headline">¶</a></h3>
+<p>You can rename a field with a custom name. This will be useful later when we calculate our own fields; for now, you can see the syntax is simple. Observe that the dataframe has the desired field names.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    station_number as station,</span>
+<span class="s2">    timestamp as time,</span>
+<span class="s2">    level as river_level</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    100    </span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">river_levels</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_river_levels</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">river_levels</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="data-transform-functions">
+<h3>data transform functions<a class="headerlink" href="#data-transform-functions" title="Permalink to this headline">¶</a></h3>
+<p>If you look at the dataset ‘meta’ data on the City of Calgary’s website, you will notice that all of the fields have a type. This is no different than in most programming languages: you have text, integers, and even date types.</p>
+<p>Unfortunately, fields are sometimes not of the desired type. This may be due to the dataset not being well designed, or for reasons of saving space. Fortunately, SODA provides a series of <a class="reference external" href="https://dev.socrata.com/docs/transforms/">Data Transform functions</a> which allow you to transform (or ‘cast’) the field to a different type.</p>
+<div class="section" id="id3">
+<h4>Note:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Subclauses in the WHERE clause are separated by AND instead of commas, to reflect that these are boolean expressions</p></li>
+<li><p>OR could be used as well</p></li>
+<li><p>at this time, I am not certain why I cannot convert level to a number using the to_number function.  Stay tuned…</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    station_name,</span>
+<span class="s2">    timestamp,</span>
+<span class="s2">    date_extract_y(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as year,</span>
+<span class="s2">    date_extract_m(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as month,</span>
+<span class="s2">    date_extract_d(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as day,</span>
+<span class="s2">    date_extract_hh(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as hour,</span>
+<span class="s2">    date_extract_mm(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as minute,</span>
+<span class="s2">    date_extract_ss(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as second,</span>
+<span class="s2">    level</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    10</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">river_levels</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_river_levels</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">river_levels</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="where-clause">
+<h3>WHERE clause<a class="headerlink" href="#where-clause" title="Permalink to this headline">¶</a></h3>
+<p>Just like in SQL, we can filter the records returned using the WHERE clause. There are a lot of powerful operators available, as per the <a class="reference external" href="https://dev.socrata.com/docs/queries/where.html">documentation</a>. <strong>Don’t hesitate to experiment!</strong></p>
+<div class="section" id="id4">
+<h4>Note:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Subclauses in the WHERE clause are separated by AND instead of commas, to reflect that these are boolean expressions</p></li>
+<li><p>OR could be used as well</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    station_name,</span>
+<span class="s2">    timestamp,</span>
+<span class="s2">    date_extract_y(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as year,</span>
+<span class="s2">    date_extract_m(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as month,</span>
+<span class="s2">    date_extract_d(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as day,</span>
+<span class="s2">    date_extract_hh(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as hour,</span>
+<span class="s2">    date_extract_mm(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as minute,</span>
+<span class="s2">    date_extract_ss(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as second,</span>
+<span class="s2">    level</span>
+<span class="s2">WHERE</span>
+<span class="s2">    station_name = &#39;Bow River at Calgary&#39; AND</span>
+<span class="s2">    year = 2004 AND</span>
+<span class="s2">    (month between 4 AND 5 OR month between 9 AND 10) AND</span>
+<span class="s2">    day = 1 AND</span>
+<span class="s2">    hour = 0 AND</span>
+<span class="s2">    minute = 0</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    10</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">river_levels</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_river_levels</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">river_levels</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="order-by-clause">
+<h3>ORDER BY clause<a class="headerlink" href="#order-by-clause" title="Permalink to this headline">¶</a></h3>
+<p>Just like in SQL, we can order the records returned using the ORDER BY clause. You can specify multiple fields in order to create a secondary order.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    station_name,</span>
+<span class="s2">    timestamp,</span>
+<span class="s2">    date_extract_y(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as year,</span>
+<span class="s2">    date_extract_m(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as month,</span>
+<span class="s2">    date_extract_d(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as day,</span>
+<span class="s2">    date_extract_hh(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as hour,</span>
+<span class="s2">    date_extract_mm(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as minute,</span>
+<span class="s2">    date_extract_ss(to_floating_timestamp(timestamp,&#39;UTC&#39;)) as second,</span>
+<span class="s2">    level</span>
+<span class="s2">WHERE</span>
+<span class="s2">    station_name = &#39;Bow River at Calgary&#39; AND</span>
+<span class="s2">    year = 2004 AND</span>
+<span class="s2">    (month between 4 AND 5 OR month between 9 AND 10) AND</span>
+<span class="s2">    (day = 1 OR day = 15) AND</span>
+<span class="s2">    hour = 0 AND</span>
+<span class="s2">    minute = 0</span>
+<span class="s2">ORDER BY</span>
+<span class="s2">    month DESC,</span>
+<span class="s2">    day DESC</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    10</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">river_levels</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_river_levels</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">river_levels</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="group-by-clause">
+<h3>GROUP BY clause<a class="headerlink" href="#group-by-clause" title="Permalink to this headline">¶</a></h3>
+<p>This is where things get interesting, as you would know if you’ve gone through the <a class="reference external" href="https://www.w3schools.com/sql/default.asp">w3schools’scourse</a> on SQL. As this <a class="reference external" href="https://www.w3schools.com/sql/sql_groupby.asp">group by section</a>  explains, grouping is most often used along with aggregate functions (COUNT, MAX, MIN, SUM, AVG).</p>
+<p>For these next examples, we will use the school enrollment dataset. The first example below will check how many high schools existed for each school authority over three years.</p>
+<p>You can think of grouping as collapsing the data that would be returned if you ran the query without the GROUP BY clause. All of the records that share the same values for all of the fields are aggregated (collapsed) into a single row. The fields that you are <em>not</em> grouping by thus need to have an aggregate function of some sort in the WHERE clause: hence COUNT(level), which will do exactly that.</p>
+<div class="section" id="id5">
+<h4>Note:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Observe how the aggregated field is automatically named</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    school_authority_name,</span>
+<span class="s2">    school_year,</span>
+<span class="s2">    COUNT(school_name)</span>
+<span class="s2">WHERE</span>
+<span class="s2">    (school_year = &quot;2018_2019&quot; OR school_year = &quot;2017_2018&quot; OR school_year = &quot;2016_2017&quot; OR school_year = &quot;2015_2016&quot;) AND</span>
+<span class="s2">    grade_12 &gt; 0</span>
+<span class="s2">GROUP BY</span>
+<span class="s2">    school_authority_name,</span>
+<span class="s2">    school_year</span>
+<span class="s2">ORDER BY</span>
+<span class="s2">    school_authority_name,</span>
+<span class="s2">    school_year</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    60</span>
+<span class="s2">&quot;&quot;&quot;</span>
+    
+<span class="n">school_enrollment</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_school_enrollment</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">school_enrollment</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can also try the MAX, MIN, AVG, and SUM functions. In this case, let’s only run the query on schools that have Grade 12 students.</p>
+</div>
+<div class="section" id="id6">
+<h4>Note:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>We will provide slightly more descriptive field aliases.</p></li>
+<li><p>You can re-use a field to get multiple aggregations.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    school_authority_name,</span>
+<span class="s2">    COUNT(school_name) as total_schools,</span>
+<span class="s2">    MAX(grade_12) as max_grade_12,</span>
+<span class="s2">    AVG(grade_12) as avg_grade_12,</span>
+<span class="s2">    MIN(grade_12) as min_grade_12,</span>
+<span class="s2">    SUM(grade_12) as total_grade12</span>
+<span class="s2">WHERE</span>
+<span class="s2">    school_year = &quot;2018_2019&quot; AND</span>
+<span class="s2">    grade_12 &gt; 0</span>
+<span class="s2">GROUP BY</span>
+<span class="s2">    school_authority_name</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    50</span>
+<span class="s2">&quot;&quot;&quot;</span>
+    
+<span class="n">school_enrollment</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_school_enrollment</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">school_enrollment</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="an-important-distinction">
+<h3>AN IMPORTANT DISTINCTION<a class="headerlink" href="#an-important-distinction" title="Permalink to this headline">¶</a></h3>
+<p>The data above begs the question of what the largest Grade 12 class in the city is! However, you do not have to use the MAX function to find this. Rather, you could simply use the SORT BY and the LIMIT function. This gets around the difficulty of having to either group or aggregate on all fields. If you grouped the above query by school_name, you would receive a maximum for each school. If you were to use an aggregate function instead, you would not get the right school name!</p>
+<p>This also allows me to quickly discuss the <a class="reference external" href="https://www.python-course.eu/dealing_with_NaN_in_python.php">NaN</a> value, which can be though of like a null. If you do not include the WHERE clause in the query below, you will get a record with NaN,</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    COUNT(school_name) as total_schools,</span>
+<span class="s2">    MAX(grade_12) as max_grade_12</span>
+<span class="s2">WHERE</span>
+<span class="s2">    school_year = &quot;2018_2019&quot; AND</span>
+<span class="s2">    grade_12 &gt; 0</span>
+<span class="s2">LIMIT</span>
+<span class="s2">    1</span>
+<span class="s2">&quot;&quot;&quot;</span>
+    
+<span class="n">school_enrollment</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_school_enrollment</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">school_enrollment</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>This notebook introduced Socrata and the SODA API. Up next is an <a class="reference internal" href="2-introduction-to-plotly.html"><span class="doc std std-doc">Introduction to Plotly</span></a>.</p>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../Technology.html" title="previous page">Technology Section</a>
+    <a class='right-next' id="next-link" href="2-introduction-to-plotly.html" title="next page">Plotly - introduction</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

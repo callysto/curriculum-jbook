@@ -1,0 +1,532 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Filtering Datasets &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Python - introduction" href="../IntroductionToPython/introduction-to-python.html" />
+    <link rel="prev" title="Joining Datasets" href="3-joining-datasets.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Statistics.html">
+   Statistics Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Technology.html">
+   Technology Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="1-introduction-to-socrata-and-soda.html">
+     Socrata and Soda
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2-introduction-to-plotly.html">
+     Plotly - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3-joining-datasets.html">
+     Joining Datasets
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Filtering Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python.html">
+     Python - introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPython/introduction-to-python-classes.html">
+     Python - Classes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroToLoopsAndIteration/intro-to-loops-and-iteration.html">
+     Python - Loops and Iteration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToDataStructures/introduction-to-data-structures.html">
+     Python - Lists and Dictionaries
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/4-filtering-datasets.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/4-filtering-datasets.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/4-filtering-datasets.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata/4-filtering-datasets.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#server-side-filtering">
+   Server-side filtering
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#note">
+     Note
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#client-side-filtering">
+   Client-side filtering
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualization">
+   Visualization
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Note
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#which-approach-is-best">
+   Which approach is best?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#final-thoughts">
+   Final Thoughts
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=TechnologyStudies/ComputerScienceSocrata/4-filtering-datasets.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="section" id="filtering-datasets">
+<h1>Filtering Datasets<a class="headerlink" href="#filtering-datasets" title="Permalink to this headline">¶</a></h1>
+<p>We have experimented with visualizing open source data in a browser. However, lets broaden our perspective and consider how designing queries is an important part of designing any data-drive applications, including many of those that run on phones and tablets. For example, consider a mobile app that plots schools within walking distance to the user on a map. We want to plot only a small subset of all schools in Calgary. How should this application filter the data?</p>
+<p>There are two general approaches, named after the location where the data actually gets filtered: the server (i.e. where the data is stored) or the client (where the data is used). These may be on same device, or they may be separated. They are also very likely running on different technologies. Filtering on either side has its pros and cons:</p>
+<div class="section" id="server-side-filtering">
+<h2>Server-side filtering<a class="headerlink" href="#server-side-filtering" title="Permalink to this headline">¶</a></h2>
+<p>You have already seen this type of filter through the use of tht WHERE clause in SODA. This approach reduces the amount of data that you receive from wherever that data is stored. The data is likely being sent across a network (in the case of cloud-based data) or from a different application (in the case of a more traditional database system). If the speed of the data transmission is limited (e.g. slow internet) or if the data transmission is costly (e.g. the user’s data plan is limited), then you may very well wish to use a server-side filter.</p>
+<p>For example, below is our familiar SODA query for obtaining all schools within Calgary. I’ve created a WHERE clause that finds all schools within a ‘square’ around the ‘current’ location, which we will assume to be William Aberhart High School (51.07866950960592°, -114.11533747920511°). To keep things simple, I will make my square 2 <span class="math notranslate nohighlight">\(\times\)</span> 0.01 degree latitude by 2 <span class="math notranslate nohighlight">\(\times\)</span> 0.01 degree longitude.</p>
+<p>if you are curious, according to <a class="reference external" href="http://www.csgnetwork.com/degreelenllavcalc.html">this calculator</a>, 0.01 degree latitude equals about 1.112 km, and one minute longitude at Calgary’s latitude equals about 0.702 kilometres, so this would be a box about 2.2 by 1.4 km</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">io</span> <span class="k">as</span> <span class="nn">io</span>
+
+<span class="n">domain</span> <span class="o">=</span> <span class="s2">&quot;https://data.calgary.ca/resource/&quot;</span>
+<span class="n">uuid_school_locations</span> <span class="o">=</span> <span class="s2">&quot;fd9t-tdn2&quot;</span>
+
+<span class="k">def</span> <span class="nf">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+    <span class="n">session</span> <span class="o">=</span> <span class="n">rq</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">domain</span> <span class="o">+</span> <span class="n">uuid</span> <span class="o">+</span><span class="s2">&quot;.csv?$query=&quot;</span> <span class="o">+</span> <span class="n">query</span><span class="p">)</span>
+    <span class="n">dataframe</span> <span class="o">=</span>  <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)))</span>
+    <span class="k">return</span> <span class="n">dataframe</span>
+
+<span class="n">latitude</span> <span class="o">=</span> <span class="mf">51.07866950960592</span>
+<span class="n">longitude</span> <span class="o">=</span> <span class="o">-</span><span class="mf">114.11533747920511</span>
+
+<span class="n">query_template</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    *</span>
+<span class="s2">WHERE</span>
+<span class="s2">    latitude BETWEEN &#39;</span><span class="si">{0}</span><span class="s2">&#39; AND &#39;</span><span class="si">{1}</span><span class="s2">&#39; AND</span>
+<span class="s2">    longitude BETWEEN &#39;</span><span class="si">{2}</span><span class="s2">&#39; AND &#39;</span><span class="si">{3}</span><span class="s2">&#39;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="c1">#    longitude BETWEEN &#39;-114.10533747920511&#39; AND &#39;-114.12533747920511&#39;</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="n">query_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">latitude</span> <span class="o">-</span> <span class="mf">0.01</span><span class="p">,</span> <span class="n">latitude</span> <span class="o">+</span> <span class="mf">0.01</span><span class="p">,</span> <span class="n">longitude</span> <span class="o">+</span> <span class="mf">0.01</span><span class="p">,</span> <span class="n">longitude</span> <span class="o">-</span> <span class="mf">0.01</span><span class="p">)</span>
+
+<span class="n">local_schools</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_school_locations</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+<span class="n">local_schools</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="note">
+<h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>We can easily re-create the query by changing the latitude and the longitude, and creating a newly formatted query using the <code class="docutils literal notranslate"><span class="pre">query_template</span></code>.</p></li>
+<li><p>But then we would have to resubmit the query, and this may take quite some time.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="client-side-filtering">
+<h2>Client-side filtering<a class="headerlink" href="#client-side-filtering" title="Permalink to this headline">¶</a></h2>
+<p>The opposite approach is to obtain an entire dataset and to then programatically filter using your native language. The pandas library provides various tools that allow you to easily select specific records in a dataframe. In this case, we will use the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html">panda dataframe’s <strong>loc</strong> function</a> on  the <em>entire</em> dataset. The output should be equivalent to the server-side filter’s output</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    *</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">all_schools</span> <span class="o">=</span> <span class="n">run_query</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">uuid_school_locations</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+
+<span class="n">local_schools</span> <span class="o">=</span> <span class="n">all_schools</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">latitude</span> <span class="o">-</span> <span class="mf">0.01</span><span class="p">)</span> 
+                                <span class="o">&amp;</span> <span class="p">(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">latitude</span> <span class="o">+</span> <span class="mf">0.01</span><span class="p">)</span>
+                                <span class="o">&amp;</span> <span class="p">(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">longitude</span> <span class="o">-</span> <span class="mf">0.01</span><span class="p">)</span>
+                                <span class="o">&amp;</span> <span class="p">(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">longitude</span> <span class="o">+</span> <span class="mf">0.01</span><span class="p">)]</span>
+<span class="n">local_schools</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h2>
+<p>So, with all that work done, let’s do the visualization.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+
+<span class="n">figure1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span><span class="n">local_schools</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span>
+                            <span class="n">color_discrete_sequence</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;blue&quot;</span><span class="p">],</span>
+                            <span class="n">zoom</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+                            <span class="n">size</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span>
+                            <span class="n">size_max</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span>
+                            <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;name&quot;</span><span class="p">,</span>
+                            <span class="n">hover_data</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="s2">&quot;grades&quot;</span><span class="p">,</span> <span class="s2">&quot;address_ab&quot;</span><span class="p">],)</span>
+
+<span class="n">figure1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">mapbox_style</span><span class="o">=</span><span class="s2">&quot;open-street-map&quot;</span><span class="p">)</span>
+<span class="n">figure1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;r&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>But if we then changed our current location to be Sir Winston Churchill High School (51.10011269545306°, -114.1399900255147°), we can very quickly change our results without having to re-query the City of Calgary server! It may still take some time to re-plot the data, but latency is not a concern.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">local_schools2</span> <span class="o">=</span> <span class="n">all_schools</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">51.09011269545306</span><span class="p">)</span> 
+                                <span class="o">&amp;</span> <span class="p">(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">51.11011269545306</span><span class="p">)</span>
+                                <span class="o">&amp;</span> <span class="p">(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">114.1299900255147</span><span class="p">)</span>
+                                <span class="o">&amp;</span> <span class="p">(</span><span class="n">all_schools</span> <span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mf">114.1499900255147</span><span class="p">)]</span>
+<span class="n">local_schools2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">figure1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span><span class="n">local_schools2</span><span class="p">,</span> <span class="n">lat</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span>
+                            <span class="n">color_discrete_sequence</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;blue&quot;</span><span class="p">],</span>
+                            <span class="n">zoom</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+                            <span class="n">size</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span>
+                            <span class="n">size_max</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span>
+                            <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;name&quot;</span><span class="p">,</span>
+                            <span class="n">hover_data</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="s2">&quot;grades&quot;</span><span class="p">,</span> <span class="s2">&quot;address_ab&quot;</span><span class="p">],)</span>
+
+<span class="n">figure1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">mapbox_style</span><span class="o">=</span><span class="s2">&quot;open-street-map&quot;</span><span class="p">)</span>
+<span class="n">figure1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;r&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h3>Note<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>There are many many functions within the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/frame.html">pandas dataframe class</a> that allow you to filter, combine, and transform data. Learning these would take time, and is outside of our scope here. This course is about learning how to query for data.</p>
+</div>
+</div>
+<div class="section" id="which-approach-is-best">
+<h2>Which approach is best?<a class="headerlink" href="#which-approach-is-best" title="Permalink to this headline">¶</a></h2>
+<p>That depends, of course!</p>
+<p>If your application will show multiple views of the data set within a short time, it makes sense to download it once in its entirety. Re-querying for the data for each view would obviously be inefficient.</p>
+<p>However, loading the data in its entirety will cost more bandwidth, and may take time up front. Also, your data will at some point go stale; hence the ‘within a short time’ qualifier.</p>
+<p>So why not just query for little chunks of data only when needed? Well, you probably have already noticed that executing a query takes some time. The query has to pass from your local device to a remote server, the server has to retrieve the data and format it, and the the server has to pass it back across a network. The lag in time between query and response is known as <em>latency</em>. Latency may make your application appear to freeze. This may be frustrating to your user. Never mind what your user may experience if they lose their network connection completely.</p>
+<p>The time gaps in between the various steps may be fractions of seconds, but that is an eternity compared to how fast your local device can process locally stored data. Thus, loading your data up front <em>may</em> be a good design decision.</p>
+<p>In the above example, the client-side approach would probably be best. The dataset is relatively small, so data usage is reasonable, unless the data plan really is restrictive. Also, the data is highly static, as not many schools will get added in the next month, and none will change location. Thus, it would be good design to download the dataset, and perhaps even store it locally in a csv file. You can then move all around the city, and the map can be updated very quickly and without extra data transmission. Of course, your app will still want to update the dataset once in a while, and may need to load the Edmonton data if we change cities!</p>
+<p>An alternate example could be an app that checks if any of your friends are within walking distance. Perhaps this app has a few million users, and their locations are being stored on a server somewhere in Silicon Valley. You would not want to download the entire dataset, as 99.99% of it would be useless to you. Furthermore, the data is highly dynamic, and if you don’t update continuously, you will have a useless app. In this example, the server-side approach would undoubtedly be best.</p>
+</div>
+<div class="section" id="final-thoughts">
+<h2>Final Thoughts<a class="headerlink" href="#final-thoughts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Hopefully you appreciate the point that you can ‘massage’ your data both locally and remotely. and that you choose which way you go based on performance.</p></li>
+<li><p>The technology you work with will also have an impact on which approach you take. Other open data APIs do not have the ability to perform server-side filtering (and aggregation), and you may be forced to go client-side.</p></li>
+<li><p>To be quite honest, there will also be times where it is just easier to do your filtering (and aggregation) on the client side, instead of breaking your brain in writing the perfect SQL statement!</p></li>
+<li><p>Whereas the previous lessons dealt with ‘big data’ (aggregating finding patterns in large sets), this lesson dealt with ‘specific data’ (querying for specific information).</p></li>
+</ul>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/TechnologyStudies/ComputerScienceSocrata"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="3-joining-datasets.html" title="previous page">Joining Datasets</a>
+    <a class='right-next' id="next-link" href="../IntroductionToPython/introduction-to-python.html" title="next page">Python - introduction</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1985 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Perimeter - Triangles and Rectangles &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Pi Day" href="../PiDay/pi-day.html" />
+    <link rel="prev" title="Perimeter - Irregular Shapes" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Shape and Space: Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Triangles: Area
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Statistics.html">
+   Statistics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Mathematics/PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#perimeter-background">
+   Perimeter Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#squares">
+   Squares
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calculator-for-perimeter-of-a-square">
+     Calculator for Perimeter of a Square
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rectangles">
+   Rectangles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calculator-for-perimeter-of-a-rectangle">
+     Calculator for Perimeter of a Rectangle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quadrilaterals">
+   Quadrilaterals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-problem-1">
+     Practice Problem 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-problem-2">
+     Practice Problem 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-problem-3">
+     Practice Problem 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#triangles">
+   Triangles
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pythagorean-theorem">
+   Pythagorean Theorem
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-problem-4">
+     Practice Problem 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-problem-5">
+     Practice Problem 5
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion:
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">code_show=true; </span>
+<span class="s1">function code_toggle() {</span>
+<span class="s1"> if (code_show){</span>
+<span class="s1"> $(&#39;div.input&#39;).hide();</span>
+<span class="s1"> } else {</span>
+<span class="s1"> $(&#39;div.input&#39;).show();</span>
+<span class="s1"> }</span>
+<span class="s1"> code_show = !code_show</span>
+<span class="s1">} </span>
+<span class="s1">$( document ).ready(code_toggle);</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">The raw code for this IPython notebook is by default hidden for easier reading.</span>
+<span class="s1">To toggle on/off the raw code, click &lt;a href=&quot;javascript:code_toggle()&quot;&gt;here&lt;/a&gt;.&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+code_show=true; 
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script>
+The raw code for this IPython notebook is by default hidden for easier reading.
+To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>.</div></div>
+</div>
+<div class="section" id="perimeter-triangles-and-rectangles">
+<h1>Perimeter - Triangles and Rectangles<a class="headerlink" href="#perimeter-triangles-and-rectangles" title="Permalink to this headline">¶</a></h1>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">widgets</span><span class="p">,</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interact_manual</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">Layout</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Javascript</span><span class="p">,</span> <span class="n">display</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">clear_output</span><span class="p">,</span> <span class="n">Markdown</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Geometry is one of the most valuable topics of everyday life. It is important for driving, cooking, drawing, decorating, and many other tasks. It is also instinctive to human beings. Babies use geometry when deciding that circular pieces fit in circular holes. So, this notebook is describing the math behind natural activities.</p>
+<p>In this notebook, you will learn how to find the perimeter of quadrilaterals and triangles. These topics will be taught through visual aids and interactive models.</p>
+<div class="section" id="perimeter-background">
+<h2>Perimeter Background<a class="headerlink" href="#perimeter-background" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="squares">
+<h2>Squares<a class="headerlink" href="#squares" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>perimeter</strong> is: “The continuous line that forms a boundary around a shape.” This means that a perimeter is the <em>length of every edge of a shape added together</em>. So, let’s say we want to find the <strong>perimeter of a square</strong>:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;370&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;30&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;200&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;200&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;red&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+#The following text is for the &quot;4cm&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;455&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>4cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+<rect x="370" y="30" width="200" height="200" stroke="black" fill="red" stroke-width="5"/>
+
+#The following text is for the "4cm" at the top of the shape
+<text x="455" y="20" fill="black">4cm</text>
+
+</svg>
+</div></div>
+</div>
+<p>To calculate the perimeter of a square, add the length of all the edges together:</p>
+<div class="math notranslate nohighlight">
+\[
+\rm (Length) + (Length) + (Length) + (Length) = Perimeter 
+\]</div>
+<p>But, we know that the length of every edge on a square is the same. So, we can do:</p>
+<div class="math notranslate nohighlight">
+\[
+ \rm 4 \times (Length) = Perimeter 
+\]</div>
+<p>So, the perimeter of the square above is:</p>
+<div class="math notranslate nohighlight">
+\[
+\rm 4 \times (4cm) = 16cm 
+\]</div>
+<div class="section" id="calculator-for-perimeter-of-a-square">
+<h3>Calculator for Perimeter of a Square<a class="headerlink" href="#calculator-for-perimeter-of-a-square" title="Permalink to this headline">¶</a></h3>
+<p>The following is an interactive calculator for getting the perimeter of any square:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interactive</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1">#Used to ensure the description text doesn&#39;t get cut off.</span>
+<span class="n">stl</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">sqrLength</span><span class="p">):</span>
+    <span class="c1">#Draw a square using the sqrLength input</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">sqrLength</span><span class="p">,</span> <span class="n">sqrLength</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">sqrLength</span><span class="p">,</span> <span class="n">sqrLength</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+    
+    <span class="c1">#Scale the plot to look like a square at all times</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;scaled&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    
+    <span class="c1">#Calculate the perimeter of the square by multiplying the length of the square by 4</span>
+    <span class="n">sqrPerimeter</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">sqrLength</span>
+    
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Given a length of $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sqrLength</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$, the perimeter is $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sqrPerimeter</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+
+<span class="c1">#Create an interactive plot with the f function and an IntSlider as input. The IntSlider</span>
+<span class="c1"># will determine the length of a square.</span>
+<span class="n">interactive_plot</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">sqrLength</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> \
+                               <span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Square length:&#39;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">stl</span><span class="p">))</span>
+
+<span class="n">interactive_plot</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "13980de378944a958d4d30f274c81e31", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+</div>
+<div class="section" id="rectangles">
+<h2>Rectangles<a class="headerlink" href="#rectangles" title="Permalink to this headline">¶</a></h2>
+<p>Now, let’s say we have to find the <strong>perimeter of a rectangle</strong>:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;300&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;30&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;370&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;170&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;orange&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+#The following text is for the &quot;9cm&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;470&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>9cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;4cm&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;290&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;130&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-90 290,130)&quot;</span><span class="p">&gt;</span>4cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+<rect x="300" y="30" width="370" height="170" stroke="black" fill="orange" stroke-width="5"/>
+
+#The following text is for the "9cm" at the top of the shape
+<text x="470" y="20" fill="black">9cm</text>
+
+#The following text is for the "4cm" at the bottom of the shape
+<text x="290" y="130" fill="black" transform="rotate(-90 290,130)">4cm</text>
+</svg>
+</div></div>
+</div>
+<p>To calculate the perimeter of a rectangle, add the length of all the edges together:</p>
+<div class="math notranslate nohighlight">
+\[
+\rm (Length) + (Length) + (Height) + (Height) = Perimeter 
+\]</div>
+<p>But, we know that a rectangle has 4 edges, and every edge is equal to another.</p>
+<p>This means that <em>the length of the edge on the bottom is equal to the length of the edge on the top</em>. This also means that <em>the length of the edge on the right side is equal to the length of the edge on the left</em>.</p>
+<p>So, we can do:</p>
+<div class="math notranslate nohighlight">
+\[
+\rm 2 \times (Length) + 2 \times (Height) = Perimeter $
+\]</div>
+<p>So, the perimeter of the rectangle above is:</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\rm 2 \times (9cm) + 2 \times (4cm) = 26cm
+\end{align*}
+\]</div>
+<div class="section" id="calculator-for-perimeter-of-a-rectangle">
+<h3>Calculator for Perimeter of a Rectangle<a class="headerlink" href="#calculator-for-perimeter-of-a-rectangle" title="Permalink to this headline">¶</a></h3>
+<p>The following is an interactive calculator for getting the perimeter of any rectangle:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interactive</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1">#Used to ensure the description text doesn&#39;t get cut off.</span>
+<span class="n">stl</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">rectLength</span><span class="p">,</span> <span class="n">rectHeight</span><span class="p">):</span>
+    <span class="c1">#Draw a rectangle using the rectLength as the length and the rectHeight as the height</span>
+    <span class="n">rect</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">rectLength</span><span class="p">,</span> <span class="n">rectLength</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rectHeight</span><span class="p">,</span> <span class="n">rectHeight</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+    
+    <span class="c1">#Scale the plot to look like a rectangle at all times</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;scaled&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    
+    <span class="c1">#Calculate the perimeter of the rectangle by adding the product of 2 times the length </span>
+    <span class="c1"># and 2 times the height together</span>
+    <span class="n">rectPerimeter</span> <span class="o">=</span> <span class="p">(</span><span class="n">rectLength</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">rectHeight</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+
+    <span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Given a length of $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rectLength</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$, and a height of $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rectHeight</span><span class="p">)</span> <span class="o">+</span> \
+          <span class="s2">&quot;$, the perimeter of a rectangle is $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rectPerimeter</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+
+<span class="c1">#Create an interactive plot with the f function and two IntSliders as input. One for the </span>
+<span class="c1"># rectangle&#39;s length, (rectLength) and the other for the rectangle&#39;s height, (rectHeight)</span>
+<span class="n">interactive_plot</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">rectLength</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> \
+                               <span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Rectangle Length:&#39;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">stl</span><span class="p">),</span> \
+                               <span class="n">rectHeight</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> \
+                               <span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Rectangle Height:&#39;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">stl</span><span class="p">))</span>
+
+<span class="n">interactive_plot</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "1356cdb841e347659e061e87b2548287", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+</div>
+<div class="section" id="quadrilaterals">
+<h2>Quadrilaterals<a class="headerlink" href="#quadrilaterals" title="Permalink to this headline">¶</a></h2>
+<p>Now, let’s say we have to find the <strong>perimeter of some quadrilateral shape</strong> that isn’t a square or rectangle. For example, how do you find the perimeter of the following quadrilateral?</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+#First point is at x = 300 and y = 80
+#Second point at x = 500 and y = 40
+#Third point at x = 650 and y = 200
+#Fourth point at x = 260 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;300 80 500 40 650 200 260 200&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;midnightblue&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+#The following text is for the &quot;4cm&quot; at the left side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;265&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;150&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-70 265,150)&quot;</span><span class="p">&gt;</span>4cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;6cm&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;380&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;55&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-10 380,55)&quot;</span><span class="p">&gt;</span>6cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;7cm&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;570&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(50 570,100)&quot;</span><span class="p">&gt;</span>7cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;9cm&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;430&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;220&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>9cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+#First point is at x = 300 and y = 80
+#Second point at x = 500 and y = 40
+#Third point at x = 650 and y = 200
+#Fourth point at x = 260 and y = 200
+<polygon points="300 80 500 40 650 200 260 200" 
+ stroke="black" fill="midnightblue" stroke-width="5"/>
+
+#The following text is for the "4cm" at the left side of the shape
+<text x="265" y="150" fill="black" transform="rotate(-70 265,150)">4cm</text>
+
+#The following text is for the "6cm" at the top of the shape
+<text x="380" y="55" fill="black" transform="rotate(-10 380,55)">6cm</text>
+
+#The following text is for the "7cm" at the right side of the shape
+<text x="570" y="100" fill="black" transform="rotate(50 570,100)">7cm</text>
+
+#The following text is for the "9cm" at the bottom of the shape
+<text x="430" y="220" fill="black">9cm</text>
+
+</svg>
+</div></div>
+</div>
+<p>In this situation, we can’t simplify the original formula. This is because the shape is neither a square or rectangle. So, the only way we can find the perimeter is by adding the length of each side together.</p>
+<p>&lt;$<span class="math notranslate nohighlight">\(
+\rm (Length) + (Length) + (Length) + (Length) = (Perimeter) 
+\)</span>$</p>
+<p>So, the perimeter of the quadrilateral above is:</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\rm (4cm) + (6cm) + (7cm) + (9cm) = 26cm
+\end{align*}
+\]</div>
+<div class="section" id="practice-problem-1">
+<h3>Practice Problem 1<a class="headerlink" href="#practice-problem-1" title="Permalink to this headline">¶</a></h3>
+<p>What is the perimeter of the following quadrilateral?</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+#First point at x = 350 and y = 100
+#Second point at x = 500 and y = 60
+#Third point at x = 650 and y = 220
+#Fourth point at x = 350 and y = 150
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;350 100 500 60 650 220 350 150&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;mediumblue&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+#The following text is for the &quot;7cm&quot; at the left side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;340&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;140&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-90 340,140)&quot;</span><span class="p">&gt;</span>7cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;17cm&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;410&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;75&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-15 410,75)&quot;</span><span class="p">&gt;</span>17cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;10cm&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;570&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;120&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(50 570,120)&quot;</span><span class="p">&gt;</span>25cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;34cm&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;460&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;195&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(12 460,195)&quot;</span><span class="p">&gt;</span>34cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+#First point at x = 350 and y = 100
+#Second point at x = 500 and y = 60
+#Third point at x = 650 and y = 220
+#Fourth point at x = 350 and y = 150
+<polygon points="350 100 500 60 650 220 350 150" 
+ stroke="black" fill="mediumblue" stroke-width="5"/>
+
+#The following text is for the "7cm" at the left side of the shape
+<text x="340" y="140" fill="black" transform="rotate(-90 340,140)">7cm</text>
+
+#The following text is for the "17cm" at the top of the shape
+<text x="410" y="75" fill="black" transform="rotate(-15 410,75)">17cm</text>
+
+#The following text is for the "10cm" at the right side of the shape
+<text x="570" y="120" fill="black" transform="rotate(50 570,120)">25cm</text>
+
+#The following text is for the "34cm" at the bottom of the shape
+<text x="460" y="195" fill="black" transform="rotate(12 460,195)">34cm</text>
+
+</svg>
+</div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Used to ensure the description text doesn&#39;t get cut off.</span>
+<span class="n">style</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+
+<span class="c1">#Create an input integer widget</span>
+<span class="n">question1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Input your perimeter here: &#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">style</span> <span class="o">=</span> <span class="n">style</span>
+    <span class="p">)</span>
+
+<span class="c1">#Create a button titled &quot;Check Answer&quot;</span>
+<span class="n">checkButton1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">checkAnswer</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="c1">#questionAnswer will be the input given by the user.</span>
+    <span class="n">questionAnswer</span> <span class="o">=</span> <span class="n">question1</span><span class="o">.</span><span class="n">value</span>
+    
+    <span class="c1">#answers is a list of possible answers that can be inputted. </span>
+    <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">83</span><span class="p">]</span>
+    
+    <span class="c1">#Check if the input is in the list of answers. If this is the case:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="ow">in</span> <span class="n">answers</span><span class="p">):</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give an explenation for the answer.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Well done! &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         We get this answer by doing: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ ($Length$) + ($Length$) + ($Length$) + ($Length$) </span><span class="se">\</span>
+<span class="s2">                         = ($Perimeter$) $&lt;/h3&gt; &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         So: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ (7$cm$) + (17$cm$) + (25$cm$) + (34$cm$) = 83$cm &lt;/h3&gt;&quot;</span><span class="p">))</span>
+        
+    <span class="c1">#Otherwise, if no answer has been given, do nothing.</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="kc">None</span>
+    
+    <span class="c1">#Lastly, if the answer is wrong, give the user a hint.</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Display the input integer and check button widgets</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">question1</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">checkButton1</span><span class="p">)</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give a hint for the question</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Not quite. &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      Remember, to find the perimeter of a quadrilateral you must add all the </span><span class="se">\</span>
+<span class="s2">                      lengths together: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      &lt;h3 align=&#39;center&#39;&gt;$\ ($Length$) + ($Length$) + ($Length$) + ($Length$) </span><span class="se">\</span>
+<span class="s2">                      = ($Perimeter$) $&lt;/h3&gt;&quot;</span><span class="p">))</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">question1</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">checkButton1</span><span class="p">)</span>
+
+<span class="n">checkButton1</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">checkAnswer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "2aac3b0a228048bab4ed66e844b1b252", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7e31b66303d547e496013ec1b97bd715", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+<div class="section" id="practice-problem-2">
+<h3>Practice Problem 2<a class="headerlink" href="#practice-problem-2" title="Permalink to this headline">¶</a></h3>
+<p>If the perimeter is <span class="math notranslate nohighlight">\(34\)</span>cm for the following quadrilateral, then what is the length of side <strong>A</strong>?</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+#First point at x = 340 and y = 30
+#Second point at x = 600 and y = 60
+#Third point at x = 450 and y = 220
+#Fourth point at x = 360 and y = 150
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;340 30 600 60 450 220 360 150&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;cornflowerblue&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+#The following text is for the &quot;A&quot; at the left side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;332&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;95&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;9cm&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;440&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;35&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(5 440,35)&quot;</span><span class="p">&gt;</span>14cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;10cm&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;525&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;170&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-50 525,170)&quot;</span><span class="p">&gt;</span>10cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;5cm&quot; at the bottom left side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;380&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;190&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(38 380,190)&quot;</span><span class="p">&gt;</span>5cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+#First point at x = 340 and y = 30
+#Second point at x = 600 and y = 60
+#Third point at x = 450 and y = 220
+#Fourth point at x = 360 and y = 150
+<polygon points="340 30 600 60 450 220 360 150" 
+ stroke="black" fill="cornflowerblue" stroke-width="5"/>
+
+#The following text is for the "A" at the left side of the shape
+<text x="332" y="95" fill="black">A</text>
+
+#The following text is for the "9cm" at the top of the shape
+<text x="440" y="35" fill="black" transform="rotate(5 440,35)">14cm</text>
+
+#The following text is for the "10cm" at the right side of the shape
+<text x="525" y="170" fill="black" transform="rotate(-50 525,170)">10cm</text>
+
+#The following text is for the "5cm" at the bottom left side of the shape
+<text x="380" y="190" fill="black" transform="rotate(38 380,190)">5cm</text>
+
+</svg>
+</div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Used to ensure the description text doesn&#39;t get cut off.</span>
+<span class="n">style</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+
+<span class="c1">#Create an input integer widget</span>
+<span class="n">question2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Input your length here: &#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">style</span> <span class="o">=</span> <span class="n">style</span>
+    <span class="p">)</span>
+
+<span class="c1">#Create a button titled &quot;Check Answer&quot;</span>
+<span class="n">checkButton2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">checkAnswer</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="c1">#questionAnswer will be the input given by the user.</span>
+    <span class="n">questionAnswer</span> <span class="o">=</span> <span class="n">question2</span><span class="o">.</span><span class="n">value</span>
+    
+    <span class="c1">#answers is a list of possible answers that can be inputted. </span>
+    <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+    
+    <span class="c1">#Check if the input is in the list of answers. If this is the case:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="ow">in</span> <span class="n">answers</span><span class="p">):</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give an explenation for the answer.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Well done! &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         We get this answer by doing: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ ($Perimeter$) - ($Length$) - ($Length$) - ($Length$) </span><span class="se">\</span>
+<span class="s2">                         = A $&lt;/h3&gt; &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         So: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ (34$cm$) - (14$cm$) - (10$cm$) - (5$cm$) = 5$cm$ $&lt;/h3&gt;&quot;</span><span class="p">))</span>
+        
+    <span class="c1">#Otherwise, if no answer has been given, do nothing.</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="kc">None</span>
+    
+    <span class="c1">#Lastly, if the answer is wrong, give the user a hint.</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Display the input integer and check button widgets</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">question2</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">checkButton2</span><span class="p">)</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give a hint for the question</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Not quite. &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      Remember, the formula for finding the perimeter of a quadrilateral is: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      &lt;h3 align=&#39;center&#39;&gt;$\ ($Length$) + ($Length$) + ($Length$) + ($Length$) = </span><span class="se">\</span>
+<span class="s2">                      ($Perimeter$) $&lt;/h3&gt; &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      We can rearrange this formula to find length $A$ by doing: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      &lt;h3 align=&#39;center&#39;&gt;$\ A = ($Perimeter$) - ($Length$) - ($Length$) - ($Length$) $&lt;/h3&gt;&quot;</span><span class="p">))</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">question2</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">checkButton2</span><span class="p">)</span>
+
+<span class="n">checkButton2</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">checkAnswer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "15a29e8e7deb4cb49cb42df31ee0a3b1", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "32e6174d86d445d891060c9d4f9b3793", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+<div class="section" id="practice-problem-3">
+<h3>Practice Problem 3<a class="headerlink" href="#practice-problem-3" title="Permalink to this headline">¶</a></h3>
+<p>What is the perimeter of the following quadrilateral?</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+#First point at x = 230 and y = 30
+#Second point at x = 580 and y = 30
+#Third point at x = 730 and y = 200
+#Fourth point at x = 380 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;230 30 580 30 730 200 380 200&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;deepskyblue&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+    
+#The following text is for the &quot;9cm&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>9cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;7cm&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;655&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(50 655,100)&quot;</span><span class="p">&gt;</span>7cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+#First point at x = 230 and y = 30
+#Second point at x = 580 and y = 30
+#Third point at x = 730 and y = 200
+#Fourth point at x = 380 and y = 200
+<polygon points="230 30 580 30 730 200 380 200" 
+ stroke="black" fill="deepskyblue" stroke-width="5"/>
+
+#The following text is for the "9cm" at the top of the shape
+<text x="400" y="20" fill="black">9cm</text>
+
+#The following text is for the "7cm" at the right side of the shape
+<text x="655" y="100" fill="black" transform="rotate(50 655,100)">7cm</text>
+
+</svg>
+</div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Used to ensure the description text doesn&#39;t get cut off.</span>
+<span class="n">style</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+
+<span class="c1">#Create an input integer widget</span>
+<span class="n">question3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Input your perimeter here: &#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">style</span> <span class="o">=</span> <span class="n">style</span>
+    <span class="p">)</span>
+
+<span class="c1">#Create a button titled &quot;Check Answer&quot;</span>
+<span class="n">checkButton3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">checkAnswer</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="c1">#questionAnswer will be the input given by the user.</span>
+    <span class="n">questionAnswer</span> <span class="o">=</span> <span class="n">question3</span><span class="o">.</span><span class="n">value</span>
+    
+    <span class="c1">#answers is a list of possible answers that can be inputted. </span>
+    <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">32</span><span class="p">]</span>
+    
+    <span class="c1">#Check if the input is in the list of answers. If this is the case:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="ow">in</span> <span class="n">answers</span><span class="p">):</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give an explenation for the answer.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Well done! &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         We get this answer by doing: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ 2 × ($Length$) + 2 × ($Length$) = ($Perimeter$) $&lt;/h3&gt; &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         So: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ 2 × (9$cm$) + 2 × (7$cm$) = 32$cm&lt;/h3&gt;&quot;</span><span class="p">))</span>
+        
+    <span class="c1">#Otherwise, if no answer has been given, do nothing.</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="kc">None</span>
+    
+    <span class="c1">#Lastly, if the answer is wrong, give the user a hint.</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Display the input integer and check button widgets</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">question3</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">checkButton3</span><span class="p">)</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give a hint for the question</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Not quite. &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      Remember, the formula for finding the perimeter of a quadrilateral is: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      &lt;h3 align=&#39;center&#39;&gt;$\ ($Length$) + ($Length$) + ($Length$) + ($Length$) = </span><span class="se">\</span>
+<span class="s2">                      ($Perimeter$) $&lt;/h3&gt; &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      But, the shape we were given *has two sides that are equal*. This means that the top edge </span><span class="se">\</span>
+<span class="s2">                      of the shape is the same length as the bottom edge. This also means that the left side </span><span class="se">\</span>
+<span class="s2">                      of the shape is the same length as the right side. So, we can use the formula: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      &lt;h3 align=&#39;center&#39;&gt;$\  2 × ($Length$) + 2 × ($Length$) = ($Perimeter$) $&lt;/h3&gt;&quot;</span><span class="p">))</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">question3</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">checkButton3</span><span class="p">)</span>
+
+<span class="n">checkButton3</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">checkAnswer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "37b33a6023a245c6a471d2fcb80f555f", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "d6f560efd13b4b88b05609e5deb64d32", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+</div>
+<div class="section" id="triangles">
+<h2>Triangles<a class="headerlink" href="#triangles" title="Permalink to this headline">¶</a></h2>
+<p>For our next topic, we will cover how to find the <strong>perimeter of a triangle</strong>. If we are given the length of every edge on a triangle:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+#First point at x = 480 and y = 30
+#Second point at x = 630 and y = 200
+#Third point at x = 280 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;480 30 630 200 280 200&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;darkmagenta&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+    
+#The following text is for the &quot;15cm&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;365&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;120&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-45 365,120)&quot;</span><span class="p">&gt;</span>15cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;12cm&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;555&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(50 555,100)&quot;</span><span class="p">&gt;</span>12cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;17cm&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;440&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;218&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>17cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+#First point at x = 480 and y = 30
+#Second point at x = 630 and y = 200
+#Third point at x = 280 and y = 200
+<polygon points="480 30 630 200 280 200" 
+ stroke="black" fill="darkmagenta" stroke-width="5"/>
+
+#The following text is for the "15cm" at the top of the shape
+<text x="365" y="120" fill="black" transform="rotate(-45 365,120)">15cm</text>
+
+#The following text is for the "12cm" at the right side of the shape
+<text x="555" y="100" fill="black" transform="rotate(50 555,100)">12cm</text>
+
+#The following text is for the "17cm" at the bottom of the shape
+<text x="440" y="218" fill="black">17cm</text>
+
+</svg>
+</div></div>
+</div>
+<p>Then the process for finding the perimeter is simple. We must add the length of all the edges together:</p>
+<div class="math notranslate nohighlight">
+\[
+\rm (Length) + (Length) + (Length) = (Perimeter) 
+\]</div>
+<p>So, the perimeter of the above triangle is:</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\rm (15cm) + (12cm) + (17cm) = 44cm
+\end{align*}
+\]</div>
+<p>But, if we are not given the length of all the edges, we must add another step. If we are missing the edge of a right angle triangle, we can use the <strong>Pythagorean theorem</strong> to help us.</p>
+</div>
+<div class="section" id="pythagorean-theorem">
+<h2>Pythagorean Theorem<a class="headerlink" href="#pythagorean-theorem" title="Permalink to this headline">¶</a></h2>
+<p>The Pythagorean theorem is one of the most important theorems you will learn. <span class="xref myst">This notebook</span> provides an in-depth lesson on the Pythagorean theorem. The following will be a review of this material.</p>
+<p>The theorem begins with a <em>right angle triangle</em>:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;400 50 570 200 400 200&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;Gray&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+    
+#The following text is for the &quot;A&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;390&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;130&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-90 390,130)&quot;</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;C&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;490&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;120&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(40 490,120)&quot;</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;B&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;475&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;218&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+###The following code is for the right angle mark inside the gray triangle.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;180&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;20&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">None</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">/&gt;</span>
+
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<polygon points="400 50 570 200 400 200" 
+ stroke="black" fill="Gray" stroke-width="5"/>
+
+#The following text is for the "A" at the top of the shape
+<text x="390" y="130" fill="black" transform="rotate(-90 390,130)">A</text>
+
+#The following text is for the "C" at the right side of the shape
+<text x="490" y="120" fill="black" transform="rotate(40 490,120)">C</text>
+
+#The following text is for the "B" at the bottom of the shape
+<text x="475" y="218" fill="black">B</text>
+
+###The following code is for the right angle mark inside the gray triangle.
+<rect x="400" y="180" width="20" height="20"
+ stroke="black" fill=None stroke-width="2"/>
+
+
+</svg>
+</div></div>
+</div>
+<p>This is a crucial step when using the Pythagorean theorem. <em>If the triangle you are using does not have a right angle, then the theorem will not work</em>.</p>
+<p>Next, we will create squares using the <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> sides of the triangle:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;700&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;400 50 570 200 400 200&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;Gray&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+#The following text is for the &quot;A&quot; at the left side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;390&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;155&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-90 390,130)&quot;</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;C&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;490&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;120&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(40 490,120)&quot;</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;B&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;475&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;195&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+###The following code is for the right angle mark inside the gray triangle.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;180&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;20&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">None</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">/&gt;</span>
+
+###The following code is for the square created by the A edge.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;243&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;47&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;153&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;153&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;deeppink&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+###The following code is for the square created by the B edge.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;205&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;173&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;173&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;hotpink&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="700" width="1500">
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<polygon points="400 50 570 200 400 200" 
+ stroke="black" fill="Gray" stroke-width="5"/>
+
+#The following text is for the "A" at the left side of the shape
+<text x="390" y="155" fill="black" transform="rotate(-90 390,130)">A</text>
+
+#The following text is for the "C" at the right side of the shape
+<text x="490" y="120" fill="black" transform="rotate(40 490,120)">C</text>
+
+#The following text is for the "B" at the bottom of the shape
+<text x="475" y="195" fill="black">B</text>
+
+###The following code is for the right angle mark inside the gray triangle.
+<rect x="400" y="180" width="20" height="20"
+ stroke="black" fill=None stroke-width="2"/>
+
+###The following code is for the square created by the A edge.
+<rect x="243" y="47" width="153" height="153"
+ stroke="black" fill="deeppink" stroke-width="5"/>
+
+###The following code is for the square created by the B edge.
+<rect x="400" y="205" width="173" height="173"
+ stroke="black" fill="hotpink" stroke-width="5"/>
+
+</svg>
+</div></div>
+</div>
+<p>Finally, we will create a square using the <span class="math notranslate nohighlight">\(C\)</span> side of the triangle:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;850&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;400 190 570 340 400 340&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;Gray&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+###The following code is for the square created by the A edge.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;243&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;187&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;153&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;153&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;deeppink&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+
+###The following code is for the square created by the B edge.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;344&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;173&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;173&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;hotpink&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+    
+###The following code is for the square created by the C edge.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;552&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;10&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;234&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;234&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;lightpink&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(41.5 555,10)&quot;</span><span class="p">/&gt;</span>    
+
+#The following text is for the &quot;A&quot; at the left side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;385&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;295&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-90 390,270)&quot;</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;B&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;475&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;335&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;C&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;470&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;275&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(40 470,275)&quot;</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+###The following code is for the right angle mark inside the gray triangle.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;320&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;20&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">None</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">/&gt;</span>
+    
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="850" width="1500">
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<polygon points="400 190 570 340 400 340" 
+ stroke="black" fill="Gray" stroke-width="5"/>
+
+###The following code is for the square created by the A edge.
+<rect x="243" y="187" width="153" height="153"
+ stroke="black" fill="deeppink" stroke-width="5"/>
+
+###The following code is for the square created by the B edge.
+<rect x="400" y="344" width="173" height="173"
+ stroke="black" fill="hotpink" stroke-width="5"/>
+
+###The following code is for the square created by the C edge.
+<rect x="552" y="10" width="234" height="234"
+ stroke="black" fill="lightpink" stroke-width="5" transform="rotate(41.5 555,10)"/>    
+
+#The following text is for the "A" at the left side of the shape
+<text x="385" y="295" fill="black" transform="rotate(-90 390,270)">A</text>
+
+#The following text is for the "B" at the bottom of the shape
+<text x="475" y="335" fill="black">B</text>
+
+#The following text is for the "C" at the right side of the shape
+<text x="470" y="275" fill="black" transform="rotate(40 470,275)">C</text>
+
+###The following code is for the right angle mark inside the gray triangle.
+<rect x="400" y="320" width="20" height="20"
+ stroke="black" fill=None stroke-width="2"/>
+
+</svg>
+</div></div>
+</div>
+<p>The Pythagorean theorem states that the area of the square made by <span class="math notranslate nohighlight">\(C\)</span> is equal to the areas of the squares <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+C^2 = A^2 + B^2 
+\]</div>
+<p>So, we can get the length of <span class="math notranslate nohighlight">\(C\)</span> by doing:</p>
+<div class="math notranslate nohighlight">
+\[ 
+C = \sqrt {A^2 + B^2} 
+\]</div>
+<p>Let’s give the triangle above numbers so we can try our formula on it:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;400 50 570 200 400 200&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;Gray&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+    
+#The following text is for the &quot;10cm&quot; at the left side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;390&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;140&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-90 390,140)&quot;</span><span class="p">&gt;</span>10cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;C&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;490&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;120&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(40 490,120)&quot;</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;10cm&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;465&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;218&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>10cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+###The following code is for the right angle mark inside the gray triangle.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;180&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;20&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">None</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">/&gt;</span>
+
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<polygon points="400 50 570 200 400 200" 
+ stroke="black" fill="Gray" stroke-width="5"/>
+
+#The following text is for the "10cm" at the left side of the shape
+<text x="390" y="140" fill="black" transform="rotate(-90 390,140)">10cm</text>
+
+#The following text is for the "C" at the right side of the shape
+<text x="490" y="120" fill="black" transform="rotate(40 490,120)">C</text>
+
+#The following text is for the "10cm" at the bottom of the shape
+<text x="465" y="218" fill="black">10cm</text>
+
+###The following code is for the right angle mark inside the gray triangle.
+<rect x="400" y="180" width="20" height="20"
+ stroke="black" fill=None stroke-width="2"/>
+
+
+</svg>
+</div></div>
+</div>
+<p>Now, we can calculate the length of <span class="math notranslate nohighlight">\(C\)</span> by doing:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+C &amp;= \sqrt {(10\textrm{cm})^2 + (10\textrm{cm})^2} \\
+&amp;= \sqrt {100\textrm{cm}^2 + 100\textrm{cm}^2}\\
+&amp;= \sqrt {200\textrm{cm}^2}
+\end{align*}
+\end{split}\]</div>
+<p>Finally, we know that the length of <span class="math notranslate nohighlight">\(C \approx 14\textrm{cm}\)</span></p>
+<p>But, let’s say you didn’t have the length of side <span class="math notranslate nohighlight">\(A\)</span> instead:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;400 50 570 200 400 200&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;Gray&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+    
+#The following text is for the &quot;A&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;390&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;130&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-90 390,130)&quot;</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;14cm&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;470&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;120&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(40 490,120)&quot;</span><span class="p">&gt;</span> 14cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;10cm&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;465&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;218&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>10cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+###The following code is for the right angle mark inside the gray triangle.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;180&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;20&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">None</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">/&gt;</span>
+
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 570 and y = 200
+#Third point at x = 400 and y = 200
+<polygon points="400 50 570 200 400 200" 
+ stroke="black" fill="Gray" stroke-width="5"/>
+
+#The following text is for the "A" at the top of the shape
+<text x="390" y="130" fill="black" transform="rotate(-90 390,130)">A</text>
+
+#The following text is for the "14cm" at the right side of the shape
+<text x="470" y="120" fill="black" transform="rotate(40 490,120)"> 14cm</text>
+
+#The following text is for the "10cm" at the bottom of the shape
+<text x="465" y="218" fill="black">10cm</text>
+
+###The following code is for the right angle mark inside the gray triangle.
+<rect x="400" y="180" width="20" height="20"
+ stroke="black" fill=None stroke-width="2"/>
+
+
+</svg>
+</div></div>
+</div>
+<p>Then, we can rearrange our original formula of:</p>
+<div class="math notranslate nohighlight">
+\[
+C^2 = A^2 + B^2 
+\]</div>
+<p>To the formula:</p>
+<div class="math notranslate nohighlight">
+\[ 
+A^2 = C^2 - B^2 
+\]</div>
+<p>So that:</p>
+<div class="math notranslate nohighlight">
+\[ 
+A = \sqrt{C^2 - B^2} 
+\]</div>
+<p>So, we can calculate the length of <span class="math notranslate nohighlight">\(A\)</span> by doing:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+A &amp;= \sqrt {(14\textrm{cm})^2 - (10\textrm{cm})^2} \\
+&amp;= \sqrt {196\textrm{cm}^2 - 100\textrm{cm}^2}\\
+&amp;= \sqrt {96\textrm{cm}^2}
+\end{align*}
+\end{split}\]</div>
+<p>Finally, we know that the length of <span class="math notranslate nohighlight">\(A \approx 10\textrm{cm}\)</span></p>
+<div class="section" id="practice-problem-4">
+<h3>Practice Problem 4<a class="headerlink" href="#practice-problem-4" title="Permalink to this headline">¶</a></h3>
+<p>Daniel’s school has an uneven baseball diamond:</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+#First point at x = 480 and y = 30
+#Second point at x = 600 and y = 200
+#Third point at x = 350 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;480 30 600 200 350 200&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;orchid&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+    
+#The following text is for the &quot;70m&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;395&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;120&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-50 395,120)&quot;</span><span class="p">&gt;</span>70m<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;60m&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;540&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(52 540,100)&quot;</span><span class="p">&gt;</span>60m<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;90m&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;460&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;218&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>90m<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+#First point at x = 480 and y = 30
+#Second point at x = 600 and y = 200
+#Third point at x = 350 and y = 200
+<polygon points="480 30 600 200 350 200" 
+ stroke="black" fill="orchid" stroke-width="5"/>
+
+#The following text is for the "70m" at the top of the shape
+<text x="395" y="120" fill="black" transform="rotate(-50 395,120)">70m</text>
+
+#The following text is for the "60m" at the right side of the shape
+<text x="540" y="100" fill="black" transform="rotate(52 540,100)">60m</text>
+
+#The following text is for the "90m" at the bottom of the shape
+<text x="460" y="218" fill="black">90m</text>
+
+</svg>
+</div></div>
+</div>
+<p>How many meters would Daniel have to run to score a home run?</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Used to ensure the description text doesn&#39;t get cut off.</span>
+<span class="n">style</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+
+<span class="c1">#Create an input integer widget</span>
+<span class="n">question4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Input your answer here: &#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">style</span> <span class="o">=</span> <span class="n">style</span>
+    <span class="p">)</span>
+
+<span class="c1">#Create a button titled &quot;Check Answer&quot;</span>
+<span class="n">checkButton4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">checkAnswer</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="c1">#questionAnswer will be the input given by the user.</span>
+    <span class="n">questionAnswer</span> <span class="o">=</span> <span class="n">question4</span><span class="o">.</span><span class="n">value</span>
+    
+    <span class="c1">#answers is a list of possible answers that can be inputted. </span>
+    <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">220</span><span class="p">]</span>
+    
+    <span class="c1">#Check if the input is in the list of answers. If this is the case:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="ow">in</span> <span class="n">answers</span><span class="p">):</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give an explenation for the answer.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Well done! &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         We get this answer by doing: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ ($Length$) + ($Length$) + ($Length$) = ($Perimeter$) $&lt;/h3&gt; &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         So, Daniel would have to run: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ (90$m$) + (60$m$) + (70$m$) = 220$m&lt;/h3&gt;&quot;</span><span class="p">))</span>
+        
+    <span class="c1">#Otherwise, if no answer has been given, do nothing.</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="kc">None</span>
+    
+    <span class="c1">#Lastly, if the answer is wrong, give the user a hint.</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Display the input integer and check button widgets</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">question4</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">checkButton4</span><span class="p">)</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give a hint for the question</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Not quite. &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      Remember, the formula for finding the perimeter of a triangle is: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      &lt;h3 align=&#39;center&#39;&gt;$\ ($Length$) + ($Length$) + ($Length$) = ($Perimeter$) $&lt;/h3&gt;&quot;</span><span class="p">))</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">question4</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">checkButton4</span><span class="p">)</span>
+
+<span class="n">checkButton4</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">checkAnswer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a6a41f408a794ef9a076dec2e9bce5d0", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8484ca30b34048a197b3e2865466f6c3", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+<div class="section" id="practice-problem-5">
+<h3>Practice Problem 5<a class="headerlink" href="#practice-problem-5" title="Permalink to this headline">¶</a></h3>
+<p>What is the length of side <span class="math notranslate nohighlight">\(B\)</span> in the following triangle?</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1500&quot;</span><span class="p">&gt;</span>
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 480 and y = 200
+#Third point at x = 400 and y = 200
+<span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;400 50 480 200 400 200&quot;</span> 
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;pink&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+    
+#The following text is for the &quot;12cm&quot; at the top of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;390&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;150&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(-90 390,150)&quot;</span><span class="p">&gt;</span>12cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;13cm&quot; at the right side of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;445&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;115&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">transform</span><span class="o">=</span><span class="s">&quot;rotate(60 445,115)&quot;</span><span class="p">&gt;</span>13cm<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+#The following text is for the &quot;B&quot; at the bottom of the shape
+<span class="p">&lt;</span><span class="nt">text</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;435&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;218&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;black&quot;</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">text</span><span class="p">&gt;</span>
+
+###The following code is for the right angle mark inside the gray triangle.
+<span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;180&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;20&quot;</span>
+ <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">None</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">/&gt;</span>
+
+
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><svg height="400" width="1500">
+
+### The following code is for the triangle gray triangle
+#First point at x = 400 and y = 50
+#Second point at x = 480 and y = 200
+#Third point at x = 400 and y = 200
+<polygon points="400 50 480 200 400 200" 
+ stroke="black" fill="pink" stroke-width="5"/>
+
+#The following text is for the "12cm" at the top of the shape
+<text x="390" y="150" fill="black" transform="rotate(-90 390,150)">12cm</text>
+
+#The following text is for the "13cm" at the right side of the shape
+<text x="445" y="115" fill="black" transform="rotate(60 445,115)">13cm</text>
+
+#The following text is for the "B" at the bottom of the shape
+<text x="435" y="218" fill="black">B</text>
+
+###The following code is for the right angle mark inside the gray triangle.
+<rect x="400" y="180" width="20" height="20"
+ stroke="black" fill=None stroke-width="2"/>
+
+
+</svg>
+</div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Used to ensure the description text doesn&#39;t get cut off.</span>
+<span class="n">style</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+
+<span class="c1">#Create an input integer widget</span>
+<span class="n">question5</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntText</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Input your B value here: &#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">style</span> <span class="o">=</span> <span class="n">style</span>
+    <span class="p">)</span>
+
+<span class="c1">#Create a button titled &quot;Check Answer&quot;</span>
+<span class="n">checkButton5</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Check Answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">checkAnswer</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="c1">#questionAnswer will be the input given by the user.</span>
+    <span class="n">questionAnswer</span> <span class="o">=</span> <span class="n">question5</span><span class="o">.</span><span class="n">value</span>
+    
+    <span class="c1">#answers is a list of possible answers that can be inputted. </span>
+    <span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+    
+    <span class="c1">#Check if the input is in the list of answers. If this is the case:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="ow">in</span> <span class="n">answers</span><span class="p">):</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give an explenation for the answer.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Well done! &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         We get this answer by using the formula: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ (C)^2 - (A)^2 = (B)^2 $&lt;/h3&gt; &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         Then, we fill in the values: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$\ (13$cm$)^2 - (12$cm$)^2 = 25$cm$^2 = (B)^2 $&lt;/h3&gt; &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         And after taking the square root, we get that: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                         &lt;h3 align=&#39;center&#39;&gt;$ B = 5$cm$ $&lt;/h3&gt; &lt;br&gt;&quot;</span><span class="p">))</span>
+        
+    <span class="c1">#Otherwise, if no answer has been given, do nothing.</span>
+    <span class="k">elif</span> <span class="p">(</span><span class="n">questionAnswer</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="kc">None</span>
+    
+    <span class="c1">#Lastly, if the answer is wrong, give the user a hint.</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1">#Clear the output</span>
+        <span class="n">clear_output</span><span class="p">()</span>
+        
+        <span class="c1">#Display the input integer and check button widgets</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">question5</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">checkButton5</span><span class="p">)</span>
+        
+        <span class="c1">#Let the user know what they inputed.</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;You answered: $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questionAnswer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;$&quot;</span><span class="p">))</span>
+        
+        <span class="c1">#Give a hint for the question</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Not quite. &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      Remember, the formula for finding a missing length of a 90 degree triangle is: &lt;br&gt; </span><span class="se">\</span>
+<span class="s2">                      &lt;h3 align=&#39;center&#39;&gt;$\ (C)^2 - (A)^2 = (B)^2 $&lt;/h3&gt;&quot;</span><span class="p">))</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">question5</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">checkButton5</span><span class="p">)</span>
+
+<span class="n">checkButton5</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">checkAnswer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "069090e8d34d44a89f03d3eb79337e59", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5e050c3f628f42e0b20a7163f9b5392b", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion:<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>In this notebook, you will have learned:</p>
+<ul class="simple">
+<li><p>How to find the <strong>perimeter</strong> of <em>quadrilaterals</em> and <em>triangles</em>.</p></li>
+</ul>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/PerimeterTrianglesRectangles"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html" title="previous page">Perimeter - Irregular Shapes</a>
+    <a class='right-next' id="next-link" href="../PiDay/pi-day.html" title="next page">Pi Day</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

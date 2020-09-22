@@ -1,0 +1,1725 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fruit Tree Popularity &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../../copyright.html" />
+    <link rel="next" title="Gapminder Data" href="gapminder.html" />
+    <link rel="prev" title="Monthly Climate Data" href="climate-monthly.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../../index.html">
+  
+  <img src="../../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../../Statistics.html">
+   Statistics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="climate-monthly.html">
+     Monthly Climate Data
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Fruit Tree Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gapminder.html">
+     Gapminder Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gapminder.html#life-expectancy">
+     Life Expectancy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="google-ngram-viewer.html">
+     Google Ngram Viewer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="google-search-trends.html">
+     Google Trends
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="library-indicators.html">
+     Public Library Performance Indicators
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mapping-tree-locations.html">
+     Mapping Tree Locations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="movie-theatre-releases.html">
+     Movie Theatre Release Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nba.html">
+     National Basketball Association
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nhl.html">
+     National Hockey League Statistics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="olympics.html">
+     Olympics Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pet-popularity.html">
+     Pet Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="spotify-popularity.html">
+     Spotify Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="weather-hourly-canada.html">
+     Hourly Weather in Canada
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="wikipedia-mars-missions.html">
+     Mars Missions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../../_sources/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/fruit-tree-popularity.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/fruit-tree-popularity.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/fruit-tree-popularity.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/fruit-tree-popularity.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/StatisticsProject/AccessingData/fruit-tree-popularity.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="section" id="fruit-tree-popularity">
+<h1>Fruit Tree Popularity<a class="headerlink" href="#fruit-tree-popularity" title="Permalink to this headline">¶</a></h1>
+<p>Using <a class="reference external" href="https://opendata.vancouver.ca/explore/dataset/community-gardens-and-food-trees/export/">tree data from Vancover Open Data</a> we can see which public fruit trees are the most common.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">csv_url</span> <span class="o">=</span> <span class="s1">&#39;https://opendata.vancouver.ca/explore/dataset/community-gardens-and-food-trees/download/?format=csv&#39;</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span>  <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_url</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span> <span class="c1"># Vancouver Open Data uses a ; between each column instead of a ,</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;food_tree_varieties&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># drop a row if it is NA in that column</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mapid</th>
+      <th>year_created</th>
+      <th>name</th>
+      <th>street_number</th>
+      <th>street_direction</th>
+      <th>street_name</th>
+      <th>street_type</th>
+      <th>merged_address</th>
+      <th>number_of_plots</th>
+      <th>number_of_food_trees</th>
+      <th>notes</th>
+      <th>food_tree_varieties</th>
+      <th>other_food_assets</th>
+      <th>jurisdiction</th>
+      <th>steward_or_managing_organization</th>
+      <th>public_e_mail</th>
+      <th>website</th>
+      <th>geo_local_area</th>
+      <th>geom</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>FA006</td>
+      <td>2011</td>
+      <td>Adanac Park Community Garden</td>
+      <td>1025.0</td>
+      <td>NaN</td>
+      <td>Boundary</td>
+      <td>Road</td>
+      <td>1025 Boundary Road, Vancouver, BC</td>
+      <td>30.0</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>1 Early McIntosh Apple; 1 Jonagold apple; 2 it...</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Kiwassa Neighbourhood Services Association</td>
+      <td>adanac.park.garden@gmail.com</td>
+      <td>http://adanacparkcommunitygarden.blogspot.ca/</td>
+      <td>Hastings-Sunrise</td>
+      <td>{"type": "Point", "coordinates": [-123.0243945...</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>FA017</td>
+      <td>NaN</td>
+      <td>Carnarvon Park</td>
+      <td>2995.0</td>
+      <td>W</td>
+      <td>19th</td>
+      <td>Av</td>
+      <td>2995 W 19th Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>15</td>
+      <td>NaN</td>
+      <td>Apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Arbutus-Ridge</td>
+      <td>{"type": "Point", "coordinates": [-123.171486,...</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>FA024</td>
+      <td>NaN</td>
+      <td>Charles Park</td>
+      <td>3400.0</td>
+      <td>NaN</td>
+      <td>Charles</td>
+      <td>St</td>
+      <td>3400 Charles St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>Crabapple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hastings-Sunrise</td>
+      <td>{"type": "Point", "coordinates": [-123.0308947...</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>FA027</td>
+      <td>2010</td>
+      <td>Cheyenne Community Garden</td>
+      <td>2755.0</td>
+      <td>NaN</td>
+      <td>Cheyenne</td>
+      <td>Av</td>
+      <td>2755 Cheyenne Av, Vancouver, BC</td>
+      <td>35.0</td>
+      <td>5</td>
+      <td>inc by 3 plots in 2016</td>
+      <td>Plums, heritage apples</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>Collingwood Neighbourhood House Society</td>
+      <td>foodsecurity@cnh.bc.ca</td>
+      <td>http://rcfsi.blogspot.ca</td>
+      <td>Renfrew-Collingwood</td>
+      <td>{"type": "Point", "coordinates": [-123.0480587...</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>FA029</td>
+      <td>2008</td>
+      <td>China Creek Community Garden</td>
+      <td>1255.0</td>
+      <td>E</td>
+      <td>10th</td>
+      <td>Av</td>
+      <td>1255 E 10th Av, Vancouver, BC</td>
+      <td>23.0</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>2 apple, 1 plum, and raspberry bushes</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Urban Diggers Society</td>
+      <td>dig@vcn.bc.ca\n604-734-4673.</td>
+      <td>NaN</td>
+      <td>Mount Pleasant</td>
+      <td>{"type": "Point", "coordinates": [-123.0788681...</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>FA035</td>
+      <td>2009</td>
+      <td>City Hall Lawn Garden</td>
+      <td>453.0</td>
+      <td>W</td>
+      <td>12th</td>
+      <td>Av</td>
+      <td>453 W 12th Av, Vancouver, BC</td>
+      <td>38.0</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>Apple</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>Vancouver City Hall Community Garden Association</td>
+      <td>vancouvercityhallgarden@gmail.com</td>
+      <td>NaN</td>
+      <td>Mount Pleasant</td>
+      <td>{"type": "Point", "coordinates": [-123.1139357...</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>FA041</td>
+      <td>1992</td>
+      <td>Cottonwood Community Garden</td>
+      <td>857.0</td>
+      <td>NaN</td>
+      <td>Malkin</td>
+      <td>Av</td>
+      <td>857 Malkin Av, Vancouver, BC</td>
+      <td>139.0</td>
+      <td>26</td>
+      <td>Expansion in 2010 - 50 beds with improved acce...</td>
+      <td>Apple, cherry, plum, fig, Asian pear, hazelnut...</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Strathcona Community Gardeners Society</td>
+      <td>cottonwoodgarden@gmail.com</td>
+      <td>http://www.cottonwoodgarden.com/</td>
+      <td>Strathcona</td>
+      <td>{"type": "Point", "coordinates": [-123.0837543...</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>FA046</td>
+      <td>NaN</td>
+      <td>Delamont Park</td>
+      <td>2091.0</td>
+      <td>W</td>
+      <td>7th</td>
+      <td>Av</td>
+      <td>2091 W 7th Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>Cherry, Asian pear, plum, hazelnut</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kitsilano</td>
+      <td>{"type": "Point", "coordinates": [-123.152619,...</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>FA047</td>
+      <td>2006</td>
+      <td>Douglas Park</td>
+      <td>801.0</td>
+      <td>W</td>
+      <td>22nd</td>
+      <td>Av</td>
+      <td>801 W 22nd Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>13</td>
+      <td>NaN</td>
+      <td>Pear, apple, plum, cherry</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>South Cambie</td>
+      <td>{"type": "Point", "coordinates": [-123.1222139...</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>FA051</td>
+      <td>2013</td>
+      <td>Dundee Community Garden</td>
+      <td>5395.0</td>
+      <td>NaN</td>
+      <td>Dundee</td>
+      <td>St</td>
+      <td>5395 Dundee St, Vancouver, BC</td>
+      <td>23.0</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>Apple</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>Dundee Court Housing Co-op</td>
+      <td>dundeegardens@hotmail.com</td>
+      <td>NaN</td>
+      <td>Renfrew-Collingwood</td>
+      <td>{"type": "Point", "coordinates": [-123.0479743...</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>FA052</td>
+      <td>1996</td>
+      <td>Elisabeth Rogers Community Garden</td>
+      <td>110.0</td>
+      <td>W</td>
+      <td>7th</td>
+      <td>Av</td>
+      <td>110 W 7th  Av, Vancouver, BC</td>
+      <td>56.0</td>
+      <td>12</td>
+      <td>NaN</td>
+      <td>Fuji (red sport), Jonagold, Nova Mac, Italian ...</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Urban Diggers Society</td>
+      <td>waitlist.ercg@gmail.com\ninfo.ercg@gmail.com  ...</td>
+      <td>http://dig.vcn.bc.ca/Elizabeth_Rogers</td>
+      <td>Mount Pleasant</td>
+      <td>{"type": "Point", "coordinates": [-123.1072231...</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>FA055</td>
+      <td>NaN</td>
+      <td>Everett Crowley Park</td>
+      <td>8200.0</td>
+      <td>NaN</td>
+      <td>Kerr</td>
+      <td>St</td>
+      <td>8200 Kerr St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>Cherry, pear</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Killarney</td>
+      <td>{"type": "Point", "coordinates": [-123.0380764...</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>FA057</td>
+      <td>1986</td>
+      <td>Fraser River Park</td>
+      <td>8705.0</td>
+      <td>NaN</td>
+      <td>Angus</td>
+      <td>Drive</td>
+      <td>8705 Angus Drive, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>36</td>
+      <td>NaN</td>
+      <td>Native Crabapple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kerrisdale</td>
+      <td>{"type": "Point", "coordinates": [-123.1518406...</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>FA059</td>
+      <td>2010</td>
+      <td>Fraserview Golf Course</td>
+      <td>7800.0</td>
+      <td>NaN</td>
+      <td>Vivian</td>
+      <td>Drive</td>
+      <td>7800 Vivian Drive, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>30</td>
+      <td>NaN</td>
+      <td>Apple, cherry</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Victoria-Fraserview</td>
+      <td>{"type": "Point", "coordinates": [-123.0539872...</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>FA066</td>
+      <td>pre 2000</td>
+      <td>Grandview Elementary Community Garden</td>
+      <td>2055.0</td>
+      <td>NaN</td>
+      <td>Woodland</td>
+      <td>Drive</td>
+      <td>2055 Woodland Drive, Vancouver, BC</td>
+      <td>24.0</td>
+      <td>5</td>
+      <td>3mx3m community plots in addition to school ga...</td>
+      <td>yes</td>
+      <td>Earth Tub composter</td>
+      <td>Private</td>
+      <td>Grandview Garden Coordinator (VCH SMART funding)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Strathcona</td>
+      <td>{"type": "Point", "coordinates": [-123.07831, ...</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>FA126</td>
+      <td>1978</td>
+      <td>Sparwood Park</td>
+      <td>6998.0</td>
+      <td>NaN</td>
+      <td>Arlington</td>
+      <td>St</td>
+      <td>6998 Arlington St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>17</td>
+      <td>NaN</td>
+      <td>Crabapple, hazelnut</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Killarney</td>
+      <td>{"type": "Point", "coordinates": [-123.0293224...</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>FA135</td>
+      <td>2002</td>
+      <td>Tea Swamp Community Garden</td>
+      <td>255.0</td>
+      <td>E</td>
+      <td>16th</td>
+      <td>Av</td>
+      <td>255 E 16th Av, Vancouver, BC</td>
+      <td>20.0</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>2 apple, 2 fig, raspberry canes, blueberry, grape</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Urban Diggers Society</td>
+      <td>teaswampgarden@gmail.com</td>
+      <td>http://dig.vcn.bc.ca/teaswampgarden</td>
+      <td>Mount Pleasant</td>
+      <td>{"type": "Point", "coordinates": [-123.0990112...</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>FA144</td>
+      <td>pre-1970</td>
+      <td>Valdez Park</td>
+      <td>3210.0</td>
+      <td>W</td>
+      <td>22nd</td>
+      <td>Av</td>
+      <td>3210 W 22nd Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>Apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Dunbar-Southlands</td>
+      <td>{"type": "Point", "coordinates": [-123.1764742...</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>FA149</td>
+      <td>2013</td>
+      <td>Woodland Park Community Garden</td>
+      <td>705.0</td>
+      <td>NaN</td>
+      <td>Woodland</td>
+      <td>Drive</td>
+      <td>705 Woodland Drive, Vancouver, BC</td>
+      <td>64.0</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>Jonamac Apple, Italian Prune, Pacific Crabapple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Village Vancouver Transition Society</td>
+      <td>woodlandparkgarden@gmail.com</td>
+      <td>http://woodlandcommunitygarden.wordpress.com</td>
+      <td>Grandview-Woodland</td>
+      <td>{"type": "Point", "coordinates": [-123.0738382...</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>FA008</td>
+      <td>NaN</td>
+      <td>Arbutus Village Park</td>
+      <td>4202.0</td>
+      <td>NaN</td>
+      <td>Valley</td>
+      <td>Drive</td>
+      <td>4202 Valley Drive, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>9</td>
+      <td>NaN</td>
+      <td>Crabapple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Arbutus-Ridge</td>
+      <td>{"type": "Point", "coordinates": [-123.1549951...</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>FA013</td>
+      <td>2012</td>
+      <td>Brewery Creek Community Garden</td>
+      <td>2390.0</td>
+      <td>NaN</td>
+      <td>Brunswick</td>
+      <td>St</td>
+      <td>2390 Brunswick St, Vancouver, BC</td>
+      <td>40.0</td>
+      <td>11</td>
+      <td>NaN</td>
+      <td>Bramley's seedling apple; cortland apple; earl...</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Urban Diggers Society</td>
+      <td>brewerycreekgarden@gmail.com</td>
+      <td>http://brewerycreekgarden.wix.com/home</td>
+      <td>Mount Pleasant</td>
+      <td>{"type": "Point", "coordinates": [-123.0957332...</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>FA014</td>
+      <td>NaN</td>
+      <td>Burrard View Park</td>
+      <td>650.0</td>
+      <td>N</td>
+      <td>Penticton</td>
+      <td>St</td>
+      <td>650 N Penticton St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>Cherry</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hastings-Sunrise</td>
+      <td>{"type": "Point", "coordinates": [-123.0519175...</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>FA015</td>
+      <td>pre-1970</td>
+      <td>Callister Park</td>
+      <td>2875.0</td>
+      <td>NaN</td>
+      <td>Oxford</td>
+      <td>St</td>
+      <td>2875 Oxford St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>Apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hastings-Sunrise</td>
+      <td>{"type": "Point", "coordinates": [-123.0453833...</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>FA036</td>
+      <td>2008</td>
+      <td>Cityview Baptist Church</td>
+      <td>4370.0</td>
+      <td>NaN</td>
+      <td>Sophia</td>
+      <td>St</td>
+      <td>4370 Sophia  St, Vancouver, BC</td>
+      <td>6.0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>Heritage apple</td>
+      <td>NaN</td>
+      <td>Private</td>
+      <td>Neighbours</td>
+      <td>cityview.community.garden@gmail.com</td>
+      <td>http://cityviewchurch.ca/</td>
+      <td>Riley Park</td>
+      <td>{"type": "Point", "coordinates": [-123.099148,...</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>FA040</td>
+      <td>2012</td>
+      <td>Copley Community Orchard</td>
+      <td>3590.0</td>
+      <td>NaN</td>
+      <td>Copley</td>
+      <td>St</td>
+      <td>3590 Copley St, Vancouver, BC</td>
+      <td>3.0</td>
+      <td>100</td>
+      <td>NaN</td>
+      <td>range of varieties of perenial fruit and veget...</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>Copley Community Orchard Society</td>
+      <td>membership@copleycommunityorchard.com</td>
+      <td>http://www.copleycommunityorchard.com</td>
+      <td>Kensington-Cedar Cottage</td>
+      <td>{"type": "Point", "coordinates": [-123.0578738...</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>FA056</td>
+      <td>2010</td>
+      <td>Falaise Park</td>
+      <td>3434.0</td>
+      <td>NaN</td>
+      <td>Falaise</td>
+      <td>Av</td>
+      <td>3434 Falaise Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>25</td>
+      <td>NaN</td>
+      <td>Apple, cherry, plum, pear, peach</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Vancouver Christian School</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Renfrew-Collingwood</td>
+      <td>{"type": "Point", "coordinates": [-123.0300574...</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>FA063</td>
+      <td>2011</td>
+      <td>Gaston Park</td>
+      <td>3470.0</td>
+      <td>NaN</td>
+      <td>Crowley</td>
+      <td>Drive</td>
+      <td>3470 Crowley  Drive, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>11</td>
+      <td>NaN</td>
+      <td>quince, Asian pear, Saskatoon berry, Italian p...</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Renfrew Collingwood Food Security Institute</td>
+      <td>foodsecurity@cnh.bc.ca</td>
+      <td>https://rcfood.wordpress.com/</td>
+      <td>Renfrew-Collingwood</td>
+      <td>{"type": "Point", "coordinates": [-123.0311899...</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>FA067</td>
+      <td>2011</td>
+      <td>Grandview Park</td>
+      <td>1657.0</td>
+      <td>NaN</td>
+      <td>Charles</td>
+      <td>St</td>
+      <td>1657 Charles St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>yes</td>
+      <td>NaN</td>
+      <td>Plum espalier</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Grandview-Woodland</td>
+      <td>{"type": "Point", "coordinates": [-123.0705385...</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>FA077</td>
+      <td>2013</td>
+      <td>The World in a Garden</td>
+      <td>7249.0</td>
+      <td>NaN</td>
+      <td>Cypress</td>
+      <td>St</td>
+      <td>7249 Cypress St, Vancouver, BC</td>
+      <td>12.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>9</td>
+      <td>pear, apple, fig, plum, almond</td>
+      <td>City</td>
+      <td>World in a Garden</td>
+      <td>devorahtradburks@gmail.com</td>
+      <td>http://www.theworldinagarden.com</td>
+      <td>Kerrisdale</td>
+      <td>{"type": "Point", "coordinates": [-123.150444,...</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>FA082</td>
+      <td>2011</td>
+      <td>Kits Village Collaborative Garden</td>
+      <td>1407.0</td>
+      <td>NaN</td>
+      <td>Laburnum</td>
+      <td>St</td>
+      <td>1407 Laburnum St, Vancouver, BC</td>
+      <td>NaN</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>Cortland apple; Golden Reinette Apple; dwaf An...</td>
+      <td>NaN</td>
+      <td>Private</td>
+      <td>Village Vancouver</td>
+      <td>ross@villagevancouver.ca</td>
+      <td>NaN</td>
+      <td>Kitsilano</td>
+      <td>{"type": "Point", "coordinates": [-123.1514277...</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>FA088</td>
+      <td>2010</td>
+      <td>Ladybug Garden</td>
+      <td>1688.0</td>
+      <td>E</td>
+      <td>8th</td>
+      <td>Av</td>
+      <td>1688 E 8th Av, Vancouver, BC</td>
+      <td>48.0</td>
+      <td>7</td>
+      <td>6</td>
+      <td>plum, apple, crab apple, fig</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>The Britannia Community Services Centre Society</td>
+      <td>gwfcnetwork@gmail.com</td>
+      <td>http://facebook.com/ladybugcommunitygarden</td>
+      <td>Grandview-Woodland</td>
+      <td>{"type": "Point", "coordinates": [-123.0703978...</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>FA093</td>
+      <td>1996</td>
+      <td>Maple Community Garden</td>
+      <td>1900.0</td>
+      <td>W</td>
+      <td>6th</td>
+      <td>Av</td>
+      <td>1900 W 6th Av, Vancouver, BC</td>
+      <td>53.0</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>Fig, Apple, Plum</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>None</td>
+      <td>info@maplecommunitygarden.ca</td>
+      <td>http://maplecommunitygarden.ca/</td>
+      <td>Kitsilano</td>
+      <td>{"type": "Point", "coordinates": [-123.148045,...</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>FA100</td>
+      <td>2011</td>
+      <td>Memorial West Park</td>
+      <td>4701.0</td>
+      <td>NaN</td>
+      <td>Dunbar</td>
+      <td>St</td>
+      <td>4701 Dunbar St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>15</td>
+      <td>NaN</td>
+      <td>Apple, pear, cherry</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Dunbar-Southlands</td>
+      <td>{"type": "Point", "coordinates": [-123.1852852...</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>FA105</td>
+      <td>2012</td>
+      <td>Mount Pleasant Community Garden</td>
+      <td>3161.0</td>
+      <td>NaN</td>
+      <td>Ontario</td>
+      <td>St</td>
+      <td>3161 Ontario St, Vancouver, BC</td>
+      <td>30.0</td>
+      <td>16</td>
+      <td>NaN</td>
+      <td>1 early macintosh apple; 1 fuji red sport appl...</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Urban Diggers Society</td>
+      <td>mtpleasantcommunitygarden@gmail.com</td>
+      <td>https://www.facebook.com/MountPleasantCommunit...</td>
+      <td>Mount Pleasant</td>
+      <td>{"type": "Point", "coordinates": [-123.1056414...</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>FA108</td>
+      <td>2011</td>
+      <td>Norquay Community Learning Orchard</td>
+      <td>2732.0</td>
+      <td>NaN</td>
+      <td>Horley</td>
+      <td>St</td>
+      <td>2732 Horley St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>Heritage apples, pears, Asian pear, cherry, pl...</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>Collingwood Neighbourhood House Society</td>
+      <td>foodsecurity@cnh.bc.ca</td>
+      <td>https://rcfood.wordpress.com/norquay-orchard/</td>
+      <td>Renfrew-Collingwood</td>
+      <td>{"type": "Point", "coordinates": [-123.0491218...</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>FA110</td>
+      <td>2009</td>
+      <td>Pandora Park Community Garden</td>
+      <td>2325.0</td>
+      <td>NaN</td>
+      <td>Franklin</td>
+      <td>St</td>
+      <td>2325 Franklin St, Vancouver, BC</td>
+      <td>66.0</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>2 apple, 2 plum</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Pandora Park Community Garden Society</td>
+      <td>pandoraparkcommunitygarden@gmail.com</td>
+      <td>http://pandoraparkgarden.wordpress.com/</td>
+      <td>Grandview-Woodland</td>
+      <td>{"type": "Point", "coordinates": [-123.0593773...</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>FA114</td>
+      <td>2015</td>
+      <td>Pine Street Community Garden (6th and Fir Park)</td>
+      <td>1605.0</td>
+      <td>W</td>
+      <td>6th</td>
+      <td>Av</td>
+      <td>1605 W 6th Av, Vancouver, BC</td>
+      <td>16.0</td>
+      <td>16</td>
+      <td>NaN</td>
+      <td>Apple, pear, plum, cherry</td>
+      <td>NaN</td>
+      <td>City and Park Board</td>
+      <td>Pine Street Community Garden Society</td>
+      <td>pinestreetcommunitygardens@gmail.com</td>
+      <td>http://pinestreetgardens.org/</td>
+      <td>Fairview</td>
+      <td>{"type": "Point", "coordinates": [-123.1420845...</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>FA120</td>
+      <td>2011</td>
+      <td>Ross Park</td>
+      <td>7402.0</td>
+      <td>NaN</td>
+      <td>Ross</td>
+      <td>St</td>
+      <td>7402 Ross St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>15</td>
+      <td>NaN</td>
+      <td>Apple, pear, cherry</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Sunset</td>
+      <td>{"type": "Point", "coordinates": [-123.0817007...</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>FA134</td>
+      <td>2009</td>
+      <td>Sunset Park</td>
+      <td>404.0</td>
+      <td>E</td>
+      <td>51st</td>
+      <td>Av</td>
+      <td>404 E 51st Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>29</td>
+      <td>NaN</td>
+      <td>Fruit</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>ki.plants@gmail.com</td>
+      <td>https://mysunset.net/</td>
+      <td>Sunset</td>
+      <td>{"type": "Point", "coordinates": [-123.0979535...</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>FA141</td>
+      <td>2011</td>
+      <td>Tupper Neighbourhood Greenway</td>
+      <td>400.0</td>
+      <td>E</td>
+      <td>23rd</td>
+      <td>Av</td>
+      <td>400 E 23rd Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>apple trees, berry bushes and fruit vines</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>Tupper Greenway Urban Orchard Project</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Riley Park</td>
+      <td>{"type": "Point", "coordinates": [-123.093947,...</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>FA145</td>
+      <td>NaN</td>
+      <td>Van Dusen Botanical Gardens</td>
+      <td>5251.0</td>
+      <td>NaN</td>
+      <td>Oak</td>
+      <td>St</td>
+      <td>5251 Oak St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>yes</td>
+      <td>NaN</td>
+      <td>Heritage apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Van Dusen Botanical Garden Association</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Shaughnessy</td>
+      <td>{"type": "Point", "coordinates": [-123.1280384...</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>FA010</td>
+      <td>NaN</td>
+      <td>Barclay Heritage Square</td>
+      <td>1433.0</td>
+      <td>NaN</td>
+      <td>Barclay</td>
+      <td>St</td>
+      <td>1433 Barclay St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>Apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>West End</td>
+      <td>{"type": "Point", "coordinates": [-123.1328450...</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>FA018</td>
+      <td>2011</td>
+      <td>Cartier Park</td>
+      <td>390.0</td>
+      <td>E</td>
+      <td>36th</td>
+      <td>Av</td>
+      <td>390 E 36th Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>Apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Riley Park</td>
+      <td>{"type": "Point", "coordinates": [-123.0975115...</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>FA019</td>
+      <td>2008</td>
+      <td>Cedar Cottage Community Garden</td>
+      <td>2021.0</td>
+      <td>NaN</td>
+      <td>Stainsbury</td>
+      <td>Av</td>
+      <td>2021 Stainsbury  Av, Vancouver, BC</td>
+      <td>61.0</td>
+      <td>13</td>
+      <td>NaN</td>
+      <td>EARLY MCINTOSH; GOLDEN DELICIOUS SMOOTHEE APPL...</td>
+      <td>NaN</td>
+      <td>Translink</td>
+      <td>Cedar Cottage Garden Society</td>
+      <td>themembershipteam@cedarcottagegarden.org</td>
+      <td>http://www.cedarcottagegarden.org</td>
+      <td>Kensington-Cedar Cottage</td>
+      <td>{"type": "Point", "coordinates": [-123.0642552...</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>FA022</td>
+      <td>NaN</td>
+      <td>Champlain Heights Park</td>
+      <td>3351.0</td>
+      <td>NaN</td>
+      <td>Maquinna</td>
+      <td>Drive</td>
+      <td>3351 Maquinna  Drive, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>Apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Killarney</td>
+      <td>{"type": "Point", "coordinates": [-123.0326603...</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>FA026</td>
+      <td>2009</td>
+      <td>Chester's Field Garden</td>
+      <td>5333.0</td>
+      <td>NaN</td>
+      <td>Chester</td>
+      <td>St</td>
+      <td>5333 Chester  St, Vancouver, BC</td>
+      <td>11.0</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>anjou dwarf pear; conference dwarf pear</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>Fraser Kensington Community Garden Society</td>
+      <td>chestersfield@gmail.com</td>
+      <td>https://www.facebook.com/chestersfieldgarden?f...</td>
+      <td>Kensington-Cedar Cottage</td>
+      <td>{"type": "Point", "coordinates": [-123.0896066...</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>FA031</td>
+      <td>2006</td>
+      <td>China Creek North Park</td>
+      <td>1001.0</td>
+      <td>E</td>
+      <td>7th</td>
+      <td>Av</td>
+      <td>1001 E 7th Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>38</td>
+      <td>NaN</td>
+      <td>Apple, cherry, pear, plum</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Mount Pleasant</td>
+      <td>{"type": "Point", "coordinates": [-123.07798, ...</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>FA044</td>
+      <td>1995</td>
+      <td>Cypress Community Garden</td>
+      <td>1800.0</td>
+      <td>W</td>
+      <td>6th</td>
+      <td>Av</td>
+      <td>1800 W 6th Av, Vancouver, BC</td>
+      <td>55.0</td>
+      <td>15</td>
+      <td>NaN</td>
+      <td>Clapp's Favourite Pear, dwarf</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>NaN</td>
+      <td>cypress@vcn.bc.ca</td>
+      <td>http://www.cypresscommunitygarden.ca/</td>
+      <td>Kitsilano</td>
+      <td>{"type": "Point", "coordinates": [-123.1456636...</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>FA080</td>
+      <td>2010</td>
+      <td>Kerrisdale Community Garden</td>
+      <td>7500.0</td>
+      <td>NaN</td>
+      <td>Angus</td>
+      <td>Drive</td>
+      <td>7500 Angus Drive, Vancouver, BC</td>
+      <td>22.0</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>anjou dwarf pear, compact stella, shamrock, pe...</td>
+      <td>NaN</td>
+      <td>City</td>
+      <td>Kerrisdale Community Garden Committee (under K...</td>
+      <td>kerrisdalecommunitygarden@gmail.com</td>
+      <td>http://kerrisdalecommunitygarden.com</td>
+      <td>Marpole</td>
+      <td>{"type": "Point", "coordinates": [-123.1482727...</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>FA085</td>
+      <td>1986</td>
+      <td>Kitsilano Community Garden</td>
+      <td>2027.0</td>
+      <td>W</td>
+      <td>6th</td>
+      <td>Av</td>
+      <td>2027 W 6th Av, Vancouver, BC</td>
+      <td>55.0</td>
+      <td>15</td>
+      <td>NaN</td>
+      <td>Apple (2), Pear (2), Cheery (2), Plum (4), Apr...</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Kitsilano Community Garden Association</td>
+      <td>kitsilanogarden@telus.net\nKitsgarden.membersh...</td>
+      <td>http://kitsilanocommunitygarden.blogspot.ca/</td>
+      <td>Kitsilano</td>
+      <td>{"type": "Point", "coordinates": [-123.1510237...</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>FA097</td>
+      <td>2009</td>
+      <td>McCleery Golf Course</td>
+      <td>7188.0</td>
+      <td>NaN</td>
+      <td>Macdonald</td>
+      <td>St</td>
+      <td>7188 Macdonald  St, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>Cherry, apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kerrisdale</td>
+      <td>{"type": "Point", "coordinates": [-123.1683146...</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>FA099</td>
+      <td>2006</td>
+      <td>Means of Production Garden</td>
+      <td>1001.0</td>
+      <td>E</td>
+      <td>7th</td>
+      <td>Av</td>
+      <td>1001 E 7th Av, Vancouver, BC</td>
+      <td>20.0</td>
+      <td>25</td>
+      <td>NaN</td>
+      <td>Mix of cherry, plum, apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Environmental Youth Alliance</td>
+      <td>earthandgleaners@gmail.com</td>
+      <td>https://moparrc.com/</td>
+      <td>Mount Pleasant</td>
+      <td>{"type": "Point", "coordinates": [-123.0850195...</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>FA104</td>
+      <td>2003</td>
+      <td>Mole Hill</td>
+      <td>1169.0</td>
+      <td>NaN</td>
+      <td>Pendrell</td>
+      <td>St</td>
+      <td>1169 Pendrell St, Vancouver, BC</td>
+      <td>70.0</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>Italian Prune Plum</td>
+      <td>NaN</td>
+      <td>Private</td>
+      <td>Mole Hill Community Housing Society</td>
+      <td>admin@molehillhousing.ca</td>
+      <td>http://www.molehillhousing.ca</td>
+      <td>West End</td>
+      <td>{"type": "Point", "coordinates": [-123.1316422...</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>FA107</td>
+      <td>2008</td>
+      <td>New Brighton Park</td>
+      <td>3201.0</td>
+      <td>NaN</td>
+      <td>New Brighton</td>
+      <td>Road</td>
+      <td>3201 New Brighton Road, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>50</td>
+      <td>NaN</td>
+      <td>Apple, pear, cherry</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hastings-Sunrise</td>
+      <td>{"type": "Point", "coordinates": [-123.0361825...</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>FA133</td>
+      <td>1985</td>
+      <td>Strathcona Community Garden</td>
+      <td>857.0</td>
+      <td>NaN</td>
+      <td>Malkin</td>
+      <td>Av</td>
+      <td>857 Malkin Av, Vancouver, BC</td>
+      <td>200.0</td>
+      <td>104</td>
+      <td>NaN</td>
+      <td>Bramley's seedling apple; cannor select; cortl...</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>Strathcona Community Gardeners Soc.</td>
+      <td>strathcona.garden.info@gmail.com</td>
+      <td>http://strathconagardens.ca/</td>
+      <td>Strathcona</td>
+      <td>{"type": "Point", "coordinates": [-123.0879717...</td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td>FA148</td>
+      <td>NaN</td>
+      <td>Westmount Park</td>
+      <td>4651.0</td>
+      <td>W</td>
+      <td>2nd</td>
+      <td>Av</td>
+      <td>4651 W 2nd Av, Vancouver, BC</td>
+      <td>0.0</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>Apple</td>
+      <td>NaN</td>
+      <td>Park Board</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>West Point Grey</td>
+      <td>{"type": "Point", "coordinates": [-123.2144218...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/StatisticsProject/AccessingData"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="climate-monthly.html" title="previous page">Monthly Climate Data</a>
+    <a class='right-next' id="next-link" href="gapminder.html" title="next page">Gapminder Data</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

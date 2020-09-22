@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shakespeare and Statistics &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Health Section" href="../../Health/Health.html" />
+    <link rel="prev" title="Poetry - Introduction" href="../IntroductionToPoetry/poetry-introduction.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntroductionToPoetry/poetry-introduction.html">
+     Poetry - Introduction
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Shakespeare and Statistics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics/Statistics.html">
+   Statistics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/EnglishLanguageArts/ShakespeareStatistics/shakespeare-and-statistics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/EnglishLanguageArts/ShakespeareStatistics/shakespeare-and-statistics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/EnglishLanguageArts/ShakespeareStatistics/shakespeare-and-statistics.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/EnglishLanguageArts/ShakespeareStatistics/shakespeare-and-statistics.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-are-the-top-20-phrases-in-shakespeare-s-macbeth">
+   What are the top 20 phrases in Shakespeare’s Macbeth?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loading-the-text">
+   Loading the text
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#crunching-the-text">
+   Crunching the text
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#counting-everything-up">
+   Counting everything up
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#plotting-the-results">
+   Plotting the results
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#thinking-about-the-results">
+   Thinking about the results
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#looking-at-hamlet">
+   Looking at Hamlet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&urlpath=notebooks/curriculum-notebooks/EnglishLanguageArts/ShakespeareStatistics/shakespeare-and-statistics.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"></a></p>
+<div class="section" id="shakespeare-and-statistics">
+<h1>Shakespeare and Statistics<a class="headerlink" href="#shakespeare-and-statistics" title="Permalink to this headline">¶</a></h1>
+<p><img alt="Shakespeare and a chart" src="../../../_images/shakespeare-n-stats.png" />
+<em>Image from https://en.wikipedia.org/wiki/Droeshout_portrait</em></p>
+<p>Can art and science be combined? Natural language processing allows us to use the same statistical skills you might learn in a science class, such as counting up members of a population and looking at their distribution, to gain insight into the written word. Here’s an example of what you can do. Let’s consider the following question:</p>
+<div class="section" id="what-are-the-top-20-phrases-in-shakespeare-s-macbeth">
+<h2>What are the top 20 phrases in Shakespeare’s Macbeth?<a class="headerlink" href="#what-are-the-top-20-phrases-in-shakespeare-s-macbeth" title="Permalink to this headline">¶</a></h2>
+<p>Normally when we study Shakespeare we critically read his plays and study the plot, characters, and themes. While this is definitely interesting and useful, we can gain very different insights by taking a multidisciplinary approach.</p>
+<p>This is something we would probably never want to do if we had to do it by hand. Imagine getting out your clipboard, writing down every different word or phrase you come across and then counting how many times that same word or phrase reappears. Check out how quickly it can be done using Python code in this Jupyter notebook.</p>
+</div>
+<div class="section" id="loading-the-text">
+<h2>Loading the text<a class="headerlink" href="#loading-the-text" title="Permalink to this headline">¶</a></h2>
+<p>There are many public domain works available at <a class="reference external" href="http://www.gutenberg.org">Project Gutenberg</a>. You can <a class="reference external" href="http://www.gutenberg.org/ebooks">search</a> or <a class="reference external" href="http://www.gutenberg.org/catalog">browse</a> to find works that you are interested in analysing.</p>
+<p>We are going to search for the play <em>Macbeth</em> by William Shakespeare. On the <strong>Download This eBook</strong> page we’ll copy the <code class="docutils literal notranslate"><span class="pre">Plain</span> <span class="pre">Text</span> <span class="pre">UTF-8</span></code> link, then use the <code class="docutils literal notranslate"><span class="pre">Requests</span></code> Python library to download it into a variable called <code class="docutils literal notranslate"><span class="pre">macbeth</span></code>. We can then refer to it by using <code class="docutils literal notranslate"><span class="pre">macbeth</span></code> at any point from here on</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">text_link</span> <span class="o">=</span> <span class="s1">&#39;http://www.gutenberg.org/files/1533/1533-0.txt&#39;</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">text_link</span><span class="p">)</span> <span class="c1"># get the online book file</span>
+<span class="n">r</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span> <span class="c1"># specify the type of text encoding in the file</span>
+<span class="n">macbeth</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;***&#39;</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># get the part after the header</span>
+<span class="n">macbeth</span> <span class="o">=</span> <span class="n">macbeth</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;’&quot;</span><span class="p">,</span><span class="s2">&quot;&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;“&quot;</span><span class="p">,</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;”&quot;</span><span class="p">,</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span> <span class="c1"># replace any &#39;smart quotes&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For example, we can just print out the first 1000 letters to see that we’ve grabbed the correct document.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">macbeth</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1000</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This etext was prepared by the PG Shakespeare Team,
+a team of about twenty Project Gutenberg volunteers.
+
+
+
+cover 
+
+
+
+MACBETH
+
+by William Shakespeare
+
+Contents
+
+ACT I
+Scene I. An open Place.
+Scene II. A Camp near Forres.
+Scene III. A heath.
+Scene IV. Forres. A Room in the Palace.
+Scene V. Inverness. A Room in Macbeth&#39;s Castle.
+Scene VI. The same. Before the Castle.
+Scene VII. The same. A Lobby in the Castle.
+
+
+ACT II
+Scene I. Inverness. Court within the Castle.
+Scene II. The same.
+Scene III. The same.
+Scene IV. The same. Without the Castle.
+
+
+ACT III
+Scene I. Forres. A Room in the Palace.
+Scene II. The same. Another Room in the Palace.
+Scene III. The same. A Park or Lawn, with a gate leading to the Palace.
+Scene IV. The same. A Room of state in the Palace.
+Scene V. The heath.
+Scene VI. Forres. A Room in the Palace.
+
+
+ACT IV
+Scene I. A dark Cave. In the middle, a Cauldron Boiling.
+Scene II. Fife. A Room in Macduff&#39;s Castle.
+Scene III. 
+</pre></div>
+</div>
+</div>
+</div>
+<p>Looks good! But that’s a lot of reading to do. And a lot of phrases to count and keep track of. Here’s where some Python libraries come into play.</p>
+</div>
+<div class="section" id="crunching-the-text">
+<h2>Crunching the text<a class="headerlink" href="#crunching-the-text" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">noun_phrases</span></code> will grab groups of words that have been identified as phrases containing nouns. This isn’t always 100% correct. English can be a challenging language even for machines, and sometimes the files on <a class="reference external" href="http://www.gutenberg.org">Project Gutenberg</a> contain errors that make it even harder, but it can usually do a pretty good job.</p>
+<p>This code cell installs two Python libraries for natural language processing, <a class="reference external" href="https://textblob.readthedocs.io/en/dev">textblob</a> and <a class="reference external" href="https://www.nltk.org">nltk</a>, then downloads a <a class="reference external" href="http://www.nltk.org/nltk_data">corpora data file</a> that will allow us to process the text.</p>
+<p>This may take a while to run. On the left you will see <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[*]:</span></code> while it is running. Once it finishes you should see the output printed on the screen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install textblob --user
+<span class="o">!</span>pip install nltk --user
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">nltk</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;tokenizers/punkt&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">LookupError</span><span class="p">:</span>
+    <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">nltk</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;tokenizers/brown&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">LookupError</span><span class="p">:</span>
+    <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;brown&#39;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">textblob</span> <span class="k">import</span> <span class="n">TextBlob</span>
+<span class="n">macbeth_phrases</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">macbeth</span><span class="p">)</span><span class="o">.</span><span class="n">noun_phrases</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">macbeth_phrases</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>What you’re seeing is no longer raw text. It’s now a list of strings. How long is the list? Let’s find out. <code class="docutils literal notranslate"><span class="pre">len</span></code> is short for “length”, and it will tell you how many items are in any list.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">macbeth_phrases</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Looks like we have over 3000 noun phrases. We don’t yet know how many of them are repeated.</p>
+</div>
+<div class="section" id="counting-everything-up">
+<h2>Counting everything up<a class="headerlink" href="#counting-everything-up" title="Permalink to this headline">¶</a></h2>
+<p>Here’s where this starts to look like a real science project! Let’s count the unique phrases and create a table of how many times they occur. They’ll be sorted from most to least frequent.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">unique_texts</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">macbeth_phrases</span><span class="p">))</span>
+<span class="n">text_counts</span> <span class="o">=</span>  <span class="p">{</span><span class="n">text</span><span class="p">:</span> <span class="n">macbeth_phrases</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">unique_texts</span><span class="p">}</span>
+<span class="n">sorted_texts</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">text_counts</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">macbeth_counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">sorted_texts</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">])</span>
+<span class="n">macbeth_counts</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>There are a lot of them, so we’ll use <code class="docutils literal notranslate"><span class="pre">.head(20)</span></code> which means show the top twenty. In these lists, the first item is always number 0.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">macbeth_counts</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>There we have it! The top 20 phrases in Macbeth! Let’s put those in a plot.</p>
+</div>
+<div class="section" id="plotting-the-results">
+<h2>Plotting the results<a class="headerlink" href="#plotting-the-results" title="Permalink to this headline">¶</a></h2>
+<p>You can do almost any kind of plot or other visual representation of observations like this you could think of in Callysto. We’ll use the <code class="docutils literal notranslate"><span class="pre">cufflinks</span></code> library to produce a horizontal bar plot, ordered from most to least frequent word.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cufflinks</span> <span class="k">as</span> <span class="nn">cf</span>
+<span class="n">cf</span><span class="o">.</span><span class="n">go_offline</span><span class="p">()</span>
+<span class="n">macbeth_counts_sorted</span> <span class="o">=</span> <span class="n">macbeth_counts</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">macbeth_counts_sorted</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Phrase Frequencies in MacBeth&#39;</span><span class="p">,</span> <span class="n">xTitle</span><span class="o">=</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Surprise, surprise. <em>Macbeth</em> is the top phrase in Macbeth. Our main character is mentioned more than twice the number of times as the next most frequent phrase, <em>Macduff</em>, and more than three times the frequency that <em>Lady Macbeth</em> is mentioned.</p>
+</div>
+<div class="section" id="thinking-about-the-results">
+<h2>Thinking about the results<a class="headerlink" href="#thinking-about-the-results" title="Permalink to this headline">¶</a></h2>
+<p>One of the first things we might realize from this simple investigation is the importance of proper nouns. Phrases containing the main characters occur far more frequently than other phrases, and the main character of the play is mentioned far more times than any other characters.</p>
+<p>Are these observations particular to Macbeth? Or to Shakespeare’s plays? Or are they more universal?</p>
+<p>Now that we’ve gone through Macbeth, how hard could it be to look at other texts?</p>
+<p>Let’s define a function to to download an ebook from a text url, pull out all the noun phrases, count them up, and plot them. We can then use this for any ebook text that we would like to visualize.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">word_frequency_plot</span><span class="p">(</span><span class="n">text_url</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">text_url</span><span class="p">)</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span>
+    <span class="k">if</span> <span class="s1">&#39;gutenberg&#39;</span> <span class="ow">in</span> <span class="n">text_url</span><span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;***&#39;</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;’&quot;</span><span class="p">,</span><span class="s2">&quot;&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;“&quot;</span><span class="p">,</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;”&quot;</span><span class="p">,</span><span class="s1">&#39;&quot;&#39;</span><span class="p">)</span>
+    <span class="n">phrases</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">text</span><span class="p">)</span><span class="o">.</span><span class="n">noun_phrases</span>
+    <span class="n">unique_texts</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">phrases</span><span class="p">))</span>
+    <span class="n">text_counts</span> <span class="o">=</span>  <span class="p">{</span><span class="n">text</span><span class="p">:</span> <span class="n">phrases</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">unique_texts</span><span class="p">}</span>
+    <span class="n">sorted_texts</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">text_counts</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">sorted_texts</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">])</span>
+    <span class="n">counts_sorted</span> <span class="o">=</span> <span class="n">counts</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">counts_sorted</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Phrase Frequencies&#39;</span><span class="p">,</span> <span class="n">xTitle</span><span class="o">=</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Word frequency plot function defined.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="looking-at-hamlet">
+<h2>Looking at Hamlet<a class="headerlink" href="#looking-at-hamlet" title="Permalink to this headline">¶</a></h2>
+<p><strong>Hamlet</strong> can be found on <a class="reference external" href="http://www.gutenberg.org">Project Gutenberg</a> under <a class="reference external" href="http://www.gutenberg.org/ebooks/1524">EBook-No. 1524</a>.</p>
+<p>Run the following code to download <strong>Hamlet</strong>, pull out all the noun phrases, count them up, and plot them out.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">word_frequency_plot</span><span class="p">(</span><span class="s1">&#39;http://www.gutenberg.org/files/1524/1524-0.txt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have a function to plot word frequency, you can try this with other ebooks from <a class="reference external" href="http://www.gutenberg.org">Project Gutenberg</a>. You could also try running this on news articles or any other text, although there may be some tweaks required.</p>
+<p>However this example is only scratching the surface of natural language processing. Libraries such as <a class="reference external" href="https://spacy.io">spaCy</a> can be used to identify <a class="reference external" href="https://spacy.io/api/annotation#pos-tagging">parts of speech</a>, <a class="reference external" href="https://github.com/cjhutto/vaderSentiment">vaderSentiment</a> can categorize text based on its tone, and <a class="reference external" href="https://github.com/shivam5992/textstat">textstat</a> can check the readability and complexity of text. Examples can be found <a class="reference external" href="https://github.com/callysto/interesting-problems/blob/main/notebooks/analysing-text-statistics.ipynb">here</a>.</p>
+<p>You could use these libraries to compare different writers or different times in history, see if you can trends in sentiment or <a class="reference external" href="https://books.google.com/ngrams">word usage</a>, or investigate changes in language and style.</p>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/EnglishLanguageArts/ShakespeareStatistics"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../IntroductionToPoetry/poetry-introduction.html" title="previous page">Poetry - Introduction</a>
+    <a class='right-next' id="next-link" href="../../Health/Health.html" title="next page">Health Section</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Monthly Climate Data &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../../copyright.html" />
+    <link rel="next" title="Fruit Tree Popularity" href="fruit-tree-popularity.html" />
+    <link rel="prev" title="Stats Project - Income Per Person" href="../example-project-income-per-person.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../../index.html">
+  
+  <img src="../../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../../Statistics.html">
+   Statistics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Monthly Climate Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fruit-tree-popularity.html">
+     Fruit Tree Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gapminder.html">
+     Gapminder Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gapminder.html#life-expectancy">
+     Life Expectancy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="google-ngram-viewer.html">
+     Google Ngram Viewer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="google-search-trends.html">
+     Google Trends
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="library-indicators.html">
+     Public Library Performance Indicators
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mapping-tree-locations.html">
+     Mapping Tree Locations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="movie-theatre-releases.html">
+     Movie Theatre Release Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nba.html">
+     National Basketball Association
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nhl.html">
+     National Hockey League Statistics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="olympics.html">
+     Olympics Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pet-popularity.html">
+     Pet Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="spotify-popularity.html">
+     Spotify Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="weather-hourly-canada.html">
+     Hourly Weather in Canada
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="wikipedia-mars-missions.html">
+     Mars Missions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../../_sources/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/climate-monthly.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/climate-monthly.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/climate-monthly.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/StatisticsProject/AccessingData/climate-monthly.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/StatisticsProject/AccessingData/climate-monthly.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="section" id="monthly-climate-data">
+<h1>Monthly Climate Data<a class="headerlink" href="#monthly-climate-data" title="Permalink to this headline">¶</a></h1>
+<p>We can get temperature and precipitation data averaged by month for 1901 to 2016 from <a class="reference external" href="https://climateknowledgeportal.worldbank.org">World Bank Climate Change Knowledge Portal</a>. You will need the latitude and longitude of a location from a site such as <a class="reference external" href="https://www.latlong.net">latlong.net</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">latitude</span> <span class="o">=</span> <span class="mf">43.7521</span>
+<span class="n">longitude</span> <span class="o">=</span> <span class="o">-</span><span class="mf">79.7614</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">temperature_url</span> <span class="o">=</span> <span class="s1">&#39;https://climateknowledgeportal.worldbank.org/api/data/get-download-data/historical/tas/1901-2016/&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;$cckp$&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">longitude</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;$cckp$&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">longitude</span><span class="p">)</span>
+<span class="n">temperature_all</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">temperature_url</span><span class="p">)</span>
+<span class="n">temperature</span> <span class="o">=</span> <span class="n">temperature_all</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; Average&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Temperature - (Celsius)&#39;</span><span class="p">:</span><span class="s1">&#39;Temperature (°C)&#39;</span><span class="p">,</span> <span class="s1">&#39; Statistics&#39;</span><span class="p">:</span><span class="s1">&#39;Month&#39;</span><span class="p">})</span>
+<span class="n">precipitation_url</span> <span class="o">=</span> <span class="s1">&#39;https://climateknowledgeportal.worldbank.org/api/data/get-download-data/historical/pr/1901-2016/&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;$cckp$&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">longitude</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;$cckp$&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">longitude</span><span class="p">)</span>
+<span class="n">precipitation_all</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">precipitation_url</span><span class="p">)</span>
+<span class="n">precipitation</span> <span class="o">=</span> <span class="n">precipitation_all</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; Average&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Rainfall - (MM)&#39;</span><span class="p">:</span><span class="s1">&#39;Precipitation (mm)&#39;</span><span class="p">,</span> <span class="s1">&#39; Statistics&#39;</span><span class="p">:</span><span class="s1">&#39;Month&#39;</span><span class="p">})</span>
+<span class="n">climate</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">precipitation</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39; Longitude&#39;</span><span class="p">,</span><span class="s1">&#39; Latitude&#39;</span><span class="p">])</span>
+<span class="n">climate</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Temperature (°C)</th>
+      <th>Year</th>
+      <th>Month</th>
+      <th>Precipitation (mm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-6.300000</td>
+      <td>1901</td>
+      <td>Jan</td>
+      <td>44.600002</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-9.900001</td>
+      <td>1901</td>
+      <td>Feb</td>
+      <td>56.900002</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-2.700000</td>
+      <td>1901</td>
+      <td>Mar</td>
+      <td>57.600002</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>6.700000</td>
+      <td>1901</td>
+      <td>Apr</td>
+      <td>56.799999</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>11.900001</td>
+      <td>1901</td>
+      <td>May</td>
+      <td>80.300003</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>1387</td>
+      <td>22.400000</td>
+      <td>2016</td>
+      <td>Aug</td>
+      <td>112.900002</td>
+    </tr>
+    <tr>
+      <td>1388</td>
+      <td>17.600000</td>
+      <td>2016</td>
+      <td>Sep</td>
+      <td>79.900002</td>
+    </tr>
+    <tr>
+      <td>1389</td>
+      <td>10.500000</td>
+      <td>2016</td>
+      <td>Oct</td>
+      <td>105.700005</td>
+    </tr>
+    <tr>
+      <td>1390</td>
+      <td>5.700000</td>
+      <td>2016</td>
+      <td>Nov</td>
+      <td>60.799999</td>
+    </tr>
+    <tr>
+      <td>1391</td>
+      <td>-3.200000</td>
+      <td>2016</td>
+      <td>Dec</td>
+      <td>68.300003</td>
+    </tr>
+  </tbody>
+</table>
+<p>1392 rows × 4 columns</p>
+</div></div></div>
+</div>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/StatisticsProject/AccessingData"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../example-project-income-per-person.html" title="previous page">Stats Project - Income Per Person</a>
+    <a class='right-next' id="next-link" href="fruit-tree-popularity.html" title="next page">Fruit Tree Popularity</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

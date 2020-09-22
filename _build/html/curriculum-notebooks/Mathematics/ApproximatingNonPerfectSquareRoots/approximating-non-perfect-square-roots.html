@@ -1,0 +1,1013 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Approximating Square Roots of Non-Perfect Squares &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Binary decimal conversion" href="../BinaryDecimalConversion/binary-decimal-conversion.html" />
+    <link rel="prev" title="Appreciation of Math in Society" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OrderOfOperations/order-of-operations.html">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Shape and Space: Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Triangles: Area
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Statistics.html">
+   Statistics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Mathematics/ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-objectives-curriculum-objectives">
+   Learning Objectives/Curriculum Objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-we-need-to-approximate">
+     Why we need to approximate:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ways-to-approximate-non-perfect-squares">
+   Ways To Approximate Non-Perfect Squares
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-a-calculator">
+     Using a Calculator
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#examples">
+       Examples:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#questions">
+       Questions:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-non-perfect-square-roots-on-a-number-line">
+     Finding non-perfect square roots on a number line:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#another-way-to-estimate">
+     Another way to estimate:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#questions-practice">
+     Questions / Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#application">
+   Application:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Questions / Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion:
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%html
+
+&lt;script&gt;
+  function code_toggle() {
+    if (code_shown){
+      $(&#39;div.input&#39;).hide(&#39;500&#39;);
+      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)
+    } else {
+      $(&#39;div.input&#39;).show(&#39;500&#39;);
+      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $(&#39;div.input&#39;).hide()
+  });
+&lt;/script&gt;
+&lt;p&gt; Code is hidden for ease of viewing. Click the Show/Hide button to see. &lt;/&gt;
+&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+</div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## List of Imports ##</span>
+<span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="nn">rand</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span><span class="n">Math</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">clear_output</span><span class="p">,</span> <span class="n">Javascript</span>
+<span class="kn">from</span> <span class="nn">traitlets</span> <span class="k">import</span> <span class="n">traitlets</span>
+<span class="kn">from</span> <span class="nn">matplotlib.widgets</span> <span class="k">import</span> <span class="n">Slider</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">RadioButtons</span>
+<span class="kn">from</span> <span class="nn">fractions</span> <span class="k">import</span> <span class="n">Fraction</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randint</span>
+
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="approximating-square-roots-of-non-perfect-squares">
+<h1>Approximating Square Roots of Non-Perfect Squares<a class="headerlink" href="#approximating-square-roots-of-non-perfect-squares" title="Permalink to this headline">¶</a></h1>
+<p>Welcome! In this notebook, we will explore how to estimate the roots of non-perfect square numbers.</p>
+<p>As you progress through this math class, you will find that non-perfect squares become more prominent in finding areas and volumes, as well as in finding the side lengths of right triangles. Thus, it is important that we can approximate them, and also apply them to some geometric problems.</p>
+<div class="section" id="learning-objectives-curriculum-objectives">
+<h2>Learning Objectives/Curriculum Objectives<a class="headerlink" href="#learning-objectives-curriculum-objectives" title="Permalink to this headline">¶</a></h2>
+<p>To determine the approximate square root of numbers that are not perfect squares (limited to whole numbers).</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Recall that a <strong>perfect square</strong> is a <strong>whole number</strong> (or positive integer) that is the product of <strong>two identical integers</strong> or <strong>two other perfect squares</strong>. Note that fractions can also be a perfect square. This will happen if the numerator and the denominator are both perfect squares. For example, <span class="math notranslate nohighlight">\({\frac{4}{9}}\)</span> is a perfect square, because 4 is a perfect square, and 9 is a perfect square.</p>
+<p>We could identify whether a number was a perfect square by factoring it into its prime factors or by drawing out a square on grid paper and determining the area. Also, remember that squaring a number and taking the square root are <strong>opposite operations</strong>.</p>
+<p>Today, we will be looking at approximating <strong>non-perfect squares</strong>. Non-perfect squares are also <strong>whole numbers</strong> that are not a product of two identical integers or a product of two perfect squares. When we take the square root of these numbers, we won’t get an integer, we will get a decimal number.</p>
+<p>For example: 16 is a perfect square. Why? Well, we can either take its square root, or we can prime factorize it. If we prime factorize, we would get 16 = 2<span class="math notranslate nohighlight">\(\cdot\)</span>2<span class="math notranslate nohighlight">\(\cdot\)</span>2<span class="math notranslate nohighlight">\(\cdot\)</span>2. Now it may not look like that 16 is the product of two identical integers but it is. We can group the two’s together and get 16 = 4 <span class="math notranslate nohighlight">\(\cdot\)</span> 4. So, 16 is a perfect square. And, if we were to take the square root of 16, we would end up with <span class="math notranslate nohighlight">\({\sqrt{16} = 4}\)</span>.</p>
+<p>In contrast, if we prime factorize a non-perfect square, we would find that it has extra unpaired prime factors.</p>
+<p>To illustrate this, let’s prime factorize 72. After prime factorizing, we get: 72 = 2 <span class="math notranslate nohighlight">\(\cdot\)</span> 2 <span class="math notranslate nohighlight">\(\cdot\)</span> 2 <span class="math notranslate nohighlight">\(\cdot\)</span> 3 <span class="math notranslate nohighlight">\(\cdot\)</span> 3 or 72 = 2 <span class="math notranslate nohighlight">\(\cdot\)</span> 4 <span class="math notranslate nohighlight">\(\cdot\)</span> 9. So, we cannot write 72 as a product of perfect squares, we have a 2 which is unpaired. And we cannot write 72 as a product of identical integers either, since 2, 4, and 9 are different.</p>
+<p>Also, the prime numbers: 2, 3, 5, 7, 11, 13,… are all non-perfect squares. This is because they have no factors other than 1 and themselves.</p>
+<div class="section" id="why-we-need-to-approximate">
+<h3>Why we need to approximate:<a class="headerlink" href="#why-we-need-to-approximate" title="Permalink to this headline">¶</a></h3>
+<p>We mentioned above that taking the square roots of non-perfect squares gives us a decimal number. More specifically, we will get an <strong>irrational</strong> decimal number. Irrational numbers are numbers that you cannot represent as a fraction, and square roots of non-perfect squares are an example of irrational numbers. A famous example is <span class="math notranslate nohighlight">\(\sqrt{2} = 1.414213\ldots\)</span>. <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> is an irrational number. It has no patterns in its decimal form, and it has infinite decimal places, so we cannot write it as a fraction.</p>
+<p>Because these numbers have infinite decimal places, there is no way we can store all of the digits in a computer, we would need one with infinite storage, and that is not physically possible. So as a consequence, we can only store a limited number of decimal places, but we lose accuracy. In many areas of science, engineering and in some areas of math, we often deal with quantities that we can only approximate. An example would be the area of circle, or the volume of a cone, which will often be an irrational number.</p>
+</div>
+</div>
+<div class="section" id="ways-to-approximate-non-perfect-squares">
+<h2>Ways To Approximate Non-Perfect Squares<a class="headerlink" href="#ways-to-approximate-non-perfect-squares" title="Permalink to this headline">¶</a></h2>
+<p>To begin, we will explore estimating the square roots of non-perfect squares using a calculator.</p>
+<div class="section" id="using-a-calculator">
+<h3>Using a Calculator<a class="headerlink" href="#using-a-calculator" title="Permalink to this headline">¶</a></h3>
+<p>The quickest and easiest way to approximate a non-perfect square is to use our calculators. Take the number you wish to approximate, find the <span class="math notranslate nohighlight">\({\sqrt{}}\)</span> key, and apply it. Now, depending on how many decimal places you keep, your approximation will be better or worse.</p>
+<div class="section" id="examples">
+<h4>Examples:<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Approximate the square root of 11 to three decimal places: <br />
+We take the square root of 11 and get 3.3166247904… . If we take three decimal places, we will end up with 3.316 as our approximation. And, if we square this number, we get 10.995856. <br /></p></li>
+<li><p>Approximate the square root of 45 to five decimal places: <br />
+Applying the square root key gives us 6.7082039325… . Taking five decimal places will give us: 6.70820. If we square this number, we get 44.99994724. <br /></p></li>
+<li><p>Approximate the square root of 27 to one decimal place: <br />
+Once again applying the square root key, we obtain 5.19611524227… . If we take one decimal place, we get 5.1. Squaring this number gives us 26.01, which is not very exact at all! <br /></p></li>
+</ol>
+<p>As you can see above, taking fewer decimal places resulted in us losing accuracy.</p>
+<p>Now, we will explore the relationship between the accuracy of our estimate and the number of decimal places we keep. Choose an integer by adjusting the first slider, then choose the number of decimal places to keep with the second slider.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Label Definitions ##</span>
+<span class="n">caption1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Adjust the sliders to see how taking greater or fewer decimals affects our accuracy!&quot;</span><span class="p">)</span>
+
+<span class="c1">## Functions for accuracy activity ##</span>
+<span class="k">def</span> <span class="nf">Take_Square_Root</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">Decimals</span><span class="p">):</span>
+    <span class="n">Estimate</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Estimate</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">Integer</span><span class="p">),</span> <span class="n">Decimals</span><span class="p">)</span> <span class="c1">## Round the integer to the specified number of decimal places ##</span>
+    <span class="c1">## Some caption definitions ##</span>
+    <span class="n">caption2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Actual value: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">Integer</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
+    <span class="n">caption3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Estimate: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Estimate</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
+    <span class="n">caption4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Actual value squared: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Integer</span><span class="p">))</span>
+    <span class="n">caption5</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Estimate squared: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Estimate</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="n">caption6</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Difference: &quot;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="si">{0:.15f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">Integer</span><span class="o">-</span><span class="n">Estimate</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)))</span>
+    <span class="n">container</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">(</span><span class="n">children</span> <span class="o">=</span> <span class="p">[</span><span class="n">caption2</span><span class="p">,</span> <span class="n">caption4</span><span class="p">])</span>
+    <span class="n">container2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">(</span><span class="n">children</span> <span class="o">=</span> <span class="p">[</span><span class="n">caption3</span><span class="p">,</span> <span class="n">caption5</span><span class="p">,</span> <span class="n">caption6</span><span class="p">])</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">container</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">container2</span><span class="p">)</span>
+    
+<span class="n">display</span><span class="p">(</span><span class="n">caption1</span><span class="p">)</span>
+
+<span class="c1">#I added &quot;name = &quot; in front of the interact to stop it displaying that output under it</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">interact</span><span class="p">(</span><span class="n">Take_Square_Root</span><span class="p">,</span> <span class="n">Integer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="mi">130</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">1</span><span class="p">),</span> <span class="n">Decimals</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="mi">9</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "71c0a4d740d04995992a27b7874d6a4c", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a00ba93201e44dd0b07212ccfba28467", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+<div class="section" id="questions">
+<h4>Questions:<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h4>
+<p>What did you observe as you took more or less decimal places?
+How did the estimate differ from the exact value?</p>
+</div>
+</div>
+<div class="section" id="finding-non-perfect-square-roots-on-a-number-line">
+<h3>Finding non-perfect square roots on a number line:<a class="headerlink" href="#finding-non-perfect-square-roots-on-a-number-line" title="Permalink to this headline">¶</a></h3>
+<p>Now, we will try to approximate square roots of non-perfect squares using a number line. Suppose we want to approximate the square root of 90 by looking at a number line, denoted by the blue square.</p>
+<img alt="../../../_images/Example_Pt1.jpg" src="../../../_images/Example_Pt1.jpg" />
+<p>In order to determine an estimate for the square root of 90, we need to find the closest perfect squares to 90. Those would be 81 and 100. This also means that the square root of 90 falls in between the square root of 81 and the square root of 100, which are 9 and 10. They are shown by the red dots.</p>
+<img alt="../../../_images/Example_Pt2.jpg" src="../../../_images/Example_Pt2.jpg" />
+<p>We can see that the square root of 90 is almost halfway between 9 and 10, its just a little bit under 9.5. So, lets try guessing a number that is just a little bit smaller than 9.5, say, 9.45. Our guess is shown by the green diamond.</p>
+<img alt="../../../_images/Example_Pt3.jpg" src="../../../_images/Example_Pt3.jpg" />
+<p>Ah, we can see that our guess is close. If we check what the square root of 90 is on our calculator, we find that it equals 9.48683… . It is very difficult to achieve perfect accuracy just visually, however, for our purposes, our guess is good!</p>
+</div>
+<div class="section" id="another-way-to-estimate">
+<h3>Another way to estimate:<a class="headerlink" href="#another-way-to-estimate" title="Permalink to this headline">¶</a></h3>
+<p>Our guess of 9.45 is a good guess, but if we want more accuracy we need to use another way. Say that we want to estimate the square root of 90 again, but this time we don’t want to estimate it visually. Then, we do the following steps:</p>
+<blockquote>
+<div><ol class="simple">
+<li><p>First, we need to find what perfect squares 90 lies between. Taking a look at the number line, its 81 and 100. <br /></p></li>
+<li><p>Next, we find the difference between the larger perfect square and the smaller perfect square, which would be 100 - 81 = 19. <br /></p></li>
+<li><p>Then, we find the difference between the non-perfect square, which is 90 in this example, and the smaller perfect square, 81. So we would get 90 - 81 = 9. <br /></p></li>
+<li><p>Now, we will form a fraction, with the number we got in step three as our numerator, and the number we got in step two as our denominator. So we would have 9/19. <br /></p></li>
+<li><p>Next, we will take the square root of the smaller perfect square, in this case 81, and then add our fraction to it. So we get 9 + 9/19. In decimal form, this is 9.47368… . <br /></p></li>
+<li><p>Finally, square the number you got in step 5, in this example, we get 89.74909. <br /></p></li>
+</ol>
+</div></blockquote>
+<p>Excellent! Our guess is a lot closer now than before when we determined it visually.</p>
+<p>In this next activity, we will apply what we have learned above to finding square roots on a number line. First, find the larger and smaller perfect squares on the number line. Remember, they have to be the closest perfect squares. If you have found the two closest squares, then estimate it visually and enter your answer, click the “Check the results” button and you should see it placed on the number line. We aren’t looking for perfect accuracy, just find a value that is close to the actual answer.</p>
+<p>If you want to get a new question, click the “Restart” button.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">digit</span><span class="o">=</span><span class="n">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+
+<span class="c1">## Widget Definitions ##</span>
+<span class="n">style</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+<span class="n">dropdown_options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span><span class="s1">&#39;4&#39;</span><span class="p">,</span><span class="s1">&#39;5&#39;</span><span class="p">,</span><span class="s1">&#39;6&#39;</span><span class="p">,</span><span class="s1">&#39;7&#39;</span><span class="p">,</span><span class="s1">&#39;8&#39;</span><span class="p">,</span><span class="s1">&#39;9&#39;</span><span class="p">,</span><span class="s1">&#39;10&#39;</span><span class="p">,</span><span class="s1">&#39;11&#39;</span><span class="p">,</span> <span class="s1">&#39;12&#39;</span><span class="p">,</span> <span class="s1">&#39;13&#39;</span><span class="p">,</span><span class="s1">&#39;14&#39;</span><span class="p">,</span><span class="s1">&#39;15&#39;</span><span class="p">,</span><span class="s1">&#39;16&#39;</span><span class="p">,</span><span class="s1">&#39;17&#39;</span><span class="p">,</span><span class="s1">&#39;18&#39;</span><span class="p">,</span><span class="s1">&#39;19&#39;</span><span class="p">,</span><span class="s1">&#39;20&#39;</span><span class="p">]</span>
+<span class="n">Get_Smaller_Square</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">dropdown_options</span><span class="p">,</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Enter the smaller perfect square:&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">style</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="n">Get_Larger_Square</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">dropdown_options</span><span class="p">,</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Enter the larger perfect square:&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">style</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="n">Get_User_Estimate</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatText</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;What is your estimate?&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">style</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span><span class="p">)</span>
+<span class="n">submit_button</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Check the results&#39;</span><span class="p">,</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">reset_button</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Restart&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">warning</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">on_button_submit_clicked</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">digit</span>
+    
+    
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">Get_Larger_Square</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">Get_Smaller_Square</span><span class="o">.</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">warning</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;&lt;font color=&#39;red&#39;&gt;Try again: larger perfect square should be greater than or equal to smaller perfect square&lt;/font&gt;&quot;</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Get_User_Estimate</span><span class="o">.</span><span class="n">value</span><span class="o">&gt;=</span><span class="nb">int</span><span class="p">(</span><span class="n">Get_Smaller_Square</span><span class="o">.</span><span class="n">value</span><span class="p">))</span> <span class="o">&amp;</span><span class="p">(</span><span class="n">Get_User_Estimate</span><span class="o">.</span><span class="n">value</span><span class="o">&lt;=</span><span class="nb">int</span><span class="p">(</span><span class="n">Get_Larger_Square</span><span class="o">.</span><span class="n">value</span><span class="p">)):</span>
+
+            
+            <span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">([])</span>
+            
+            <span class="n">ax2</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">twiny</span><span class="p">()</span>
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Square Roots of Perfect Squares&quot;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+            <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Perfect Squares&quot;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+            
+            <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">ax1</span><span class="o">.</span><span class="n">get_xlim</span><span class="p">())</span>
+           
+            <span class="n">ax2</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+            <span class="n">labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">21</span><span class="p">))</span>
+            <span class="n">labels_squared</span><span class="o">=</span><span class="p">[</span><span class="n">number</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
+            <span class="n">ax1</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>    
+            <span class="n">ax2</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">labels_squared</span><span class="p">)</span>    
+
+            
+            <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+            <span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="o">*</span><span class="mi">0</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;-b&#39;</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+            
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">Get_Smaller_Square</span><span class="o">.</span><span class="n">value</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">Get_Larger_Square</span><span class="o">.</span><span class="n">value</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
+            
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Get_User_Estimate</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">)</span>
+            
+            <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+            
+            <span class="n">warning</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+            <span class="n">b</span><span class="o">.</span><span class="n">disabled</span><span class="o">=</span><span class="kc">True</span>
+            <span class="n">Get_User_Estimate</span><span class="o">.</span><span class="n">disabled</span><span class="o">=</span><span class="kc">True</span>
+            <span class="n">Get_Smaller_Square</span><span class="o">.</span><span class="n">disabled</span><span class="o">=</span><span class="kc">True</span>
+            <span class="n">Get_Larger_Square</span><span class="o">.</span><span class="n">disabled</span><span class="o">=</span><span class="kc">True</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**The actual value is**: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit</span><span class="p">))))</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**Difference**: &quot;</span><span class="o">+</span><span class="s1">&#39;</span><span class="si">{0:.15f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span><span class="o">-</span><span class="n">Get_User_Estimate</span><span class="o">.</span><span class="n">value</span><span class="p">))))</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">reset_button</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">warning</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;&lt;font color=&#39;red&#39;&gt;Try again: your estimate should be between larger and smaller perfect squares&lt;/font&gt;&quot;</span>
+    
+<span class="n">submit_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_button_submit_clicked</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">restart_cell</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Javascript</span><span class="p">(</span><span class="s1">&#39;IPython.notebook.execute_cell_range(IPython.notebook.get_selected_index(), IPython.notebook.get_selected_index()+1)&#39;</span><span class="p">))</span>
+
+<span class="n">reset_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">restart_cell</span><span class="p">)</span>
+
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">([])</span>
+            
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">twiny</span><span class="p">()</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Square Roots of Perfect Squares&quot;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Perfect Squares&quot;</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+            
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">ax1</span><span class="o">.</span><span class="n">get_xlim</span><span class="p">())</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">))</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">))</span>
+<span class="n">labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">21</span><span class="p">))</span>
+<span class="n">labels_squared</span><span class="o">=</span><span class="p">[</span><span class="n">number</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>    
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">labels_squared</span><span class="p">)</span> 
+
+
+            
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="o">*</span><span class="mi">0</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;-b&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**Estimate the square root of &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;:**&quot;</span><span class="p">))</span>
+<span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">(</span><span class="n">children</span> <span class="o">=</span> <span class="p">[</span><span class="n">Get_Smaller_Square</span><span class="p">,</span> <span class="n">Get_Larger_Square</span><span class="p">,</span> <span class="n">Get_User_Estimate</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">(</span><span class="n">children</span> <span class="o">=</span> <span class="p">[</span><span class="n">Get_Smaller_Square</span><span class="p">,</span> <span class="n">Get_Larger_Square</span><span class="p">,</span> <span class="n">Get_User_Estimate</span><span class="p">]))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">submit_button</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">warning</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/approximating-non-perfect-square-roots_13_0.png" src="../../../_images/approximating-non-perfect-square-roots_13_0.png" />
+<p><strong>Estimate the square root of 361:</strong></p>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "bc1214420ad24c87804445f6dce36a5e", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5a4ece18d0b445abb8bb69a03dee53f4", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6a3a68139d3c4bdca8ca5d47b04c5232", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+<div class="section" id="questions-practice">
+<h3>Questions / Practice:<a class="headerlink" href="#questions-practice" title="Permalink to this headline">¶</a></h3>
+<p>Did having a visual representation help in finding the square roots?
+Were your estimates close to the actual values?
+Did using the steps above create a more accurate estimate?</p>
+<p>To practice, perform this activity as many times as you want, if you think you are ready, continue on.</p>
+</div>
+</div>
+<div class="section" id="application">
+<h2>Application:<a class="headerlink" href="#application" title="Permalink to this headline">¶</a></h2>
+<p>Now, we are going to apply the knowledge we have learned to approximate the side lengths of squares.</p>
+<p>For example, say we want to approximate the side length of the square with area 130:</p>
+<img alt="../../../_images/Example2_Pt1.jpg" src="../../../_images/Example2_Pt1.jpg" />
+<p>We can see that the side lengths of this square fall between 11 and 12. So, we now create a square of side length 11, and a square of side length 12.</p>
+<img alt="../../../_images/Example2_Pt2.jpg" src="../../../_images/Example2_Pt2.jpg" />
+<p>Now we can see that the side length of the imperfect square is closer to 11 than it is to 12. Now, we can apply what we have seen from the number line activity. We can either guess the side length visually, or we can find an estimate by calculating it using the steps above. Calculating gives a better estimate, so after doing so, we find the estimated side length equal to 11.39130… .</p>
+<img alt="../../../_images/Example2_Pt3.jpg" src="../../../_images/Example2_Pt3.jpg" />
+<p>We are pretty close!</p>
+<p>In this activity, we will practice finding side lengths. First try to visually estimate the smaller and larger square sides that bound the non-perfect square. If you think you have the right squares, try to estimate the side length for the non-perfect square and press the “Check the results” button.</p>
+<p>If you are ready for a new question, press the “Restart” button.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">digit1</span><span class="o">=</span><span class="n">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+
+<span class="c1">## Widget Definitions ##</span>
+<span class="n">style</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
+<span class="n">dropdown_options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span><span class="s1">&#39;4&#39;</span><span class="p">,</span><span class="s1">&#39;5&#39;</span><span class="p">,</span><span class="s1">&#39;6&#39;</span><span class="p">,</span><span class="s1">&#39;7&#39;</span><span class="p">,</span><span class="s1">&#39;8&#39;</span><span class="p">,</span><span class="s1">&#39;9&#39;</span><span class="p">,</span><span class="s1">&#39;10&#39;</span><span class="p">,</span><span class="s1">&#39;11&#39;</span><span class="p">,</span> <span class="s1">&#39;12&#39;</span><span class="p">,</span> <span class="s1">&#39;13&#39;</span><span class="p">,</span><span class="s1">&#39;14&#39;</span><span class="p">,</span><span class="s1">&#39;15&#39;</span><span class="p">,</span><span class="s1">&#39;16&#39;</span><span class="p">,</span><span class="s1">&#39;17&#39;</span><span class="p">,</span><span class="s1">&#39;18&#39;</span><span class="p">,</span><span class="s1">&#39;19&#39;</span><span class="p">,</span><span class="s1">&#39;20&#39;</span><span class="p">]</span>
+<span class="n">Get_Smaller_Square1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">dropdown_options</span><span class="p">,</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Smaller perfect square side:&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">style</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="n">Get_Larger_Square1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">dropdown_options</span><span class="p">,</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Larger perfect square side:&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">style</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="n">Get_User_Estimate1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatText</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;What do you think the side length is?&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="n">style</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span><span class="p">)</span>
+<span class="n">submit_button1</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Check the results&#39;</span><span class="p">,</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;info&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">reset_button1</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Restart&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">warning1</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">on_button_submit1_clicked</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">digit1</span>
+    
+    
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">Get_Larger_Square1</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">Get_Smaller_Square1</span><span class="o">.</span><span class="n">value</span><span class="p">):</span>
+        <span class="n">warning</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;&lt;font color=&#39;red&#39;&gt;Try again: larger perfect square side should be greater than or equal to smaller perfect square side&lt;/font&gt;&quot;</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Get_User_Estimate1</span><span class="o">.</span><span class="n">value</span><span class="o">&gt;=</span><span class="nb">int</span><span class="p">(</span><span class="n">Get_Smaller_Square1</span><span class="o">.</span><span class="n">value</span><span class="p">))</span> <span class="o">&amp;</span><span class="p">(</span><span class="n">Get_User_Estimate1</span><span class="o">.</span><span class="n">value</span><span class="o">&lt;=</span><span class="nb">int</span><span class="p">(</span><span class="n">Get_Larger_Square1</span><span class="o">.</span><span class="n">value</span><span class="p">)):</span>
+
+            
+            <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+            
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+            
+            <span class="n">Smaller_Rectangle</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">patches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">Get_Smaller_Square1</span><span class="o">.</span><span class="n">value</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">Get_Smaller_Square1</span><span class="o">.</span><span class="n">value</span><span class="p">),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+            <span class="n">Larger_Rectangle</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">patches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">Get_Larger_Square1</span><span class="o">.</span><span class="n">value</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">Get_Larger_Square1</span><span class="o">.</span><span class="n">value</span><span class="p">),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+            <span class="n">Imperfect_Rectangle</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">patches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit1</span><span class="p">),</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit1</span><span class="p">),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+            
+            <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">Smaller_Rectangle</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">Larger_Rectangle</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">Imperfect_Rectangle</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+            
+            <span class="n">warning1</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+            <span class="n">b</span><span class="o">.</span><span class="n">disabled</span><span class="o">=</span><span class="kc">True</span>
+            <span class="n">Get_User_Estimate1</span><span class="o">.</span><span class="n">disabled</span><span class="o">=</span><span class="kc">True</span>
+            <span class="n">Get_Smaller_Square1</span><span class="o">.</span><span class="n">disabled</span><span class="o">=</span><span class="kc">True</span>
+            <span class="n">Get_Larger_Square1</span><span class="o">.</span><span class="n">disabled</span><span class="o">=</span><span class="kc">True</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**The actual side length is**: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit1</span><span class="p">))))</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**Difference**: &quot;</span><span class="o">+</span><span class="s1">&#39;</span><span class="si">{0:.15f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit1</span><span class="p">)</span><span class="o">-</span><span class="n">Get_User_Estimate1</span><span class="o">.</span><span class="n">value</span><span class="p">))))</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">reset_button</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">warning1</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;&lt;font color=&#39;red&#39;&gt;Try again: your estimate should be between larger and smaller perfect square sides&lt;/font&gt;&quot;</span>
+    
+<span class="n">submit_button1</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_button_submit1_clicked</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">restart_cell</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Javascript</span><span class="p">(</span><span class="s1">&#39;IPython.notebook.execute_cell_range(IPython.notebook.get_selected_index(), IPython.notebook.get_selected_index()+1)&#39;</span><span class="p">))</span>
+
+<span class="n">reset_button1</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">restart_cell</span><span class="p">)</span>
+
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+            
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+            
+<span class="n">Imperfect_Rectangle</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">patches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit1</span><span class="p">),</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">digit1</span><span class="p">),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+            
+<span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">Imperfect_Rectangle</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;**Find the side length of a square with area &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">digit1</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;:**&quot;</span><span class="p">))</span>
+<span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">(</span><span class="n">children</span> <span class="o">=</span> <span class="p">[</span><span class="n">Get_Smaller_Square1</span><span class="p">,</span> <span class="n">Get_Larger_Square1</span><span class="p">,</span> <span class="n">Get_User_Estimate1</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">(</span><span class="n">children</span> <span class="o">=</span> <span class="p">[</span><span class="n">Get_Smaller_Square1</span><span class="p">,</span> <span class="n">Get_Larger_Square1</span><span class="p">,</span> <span class="n">Get_User_Estimate1</span><span class="p">]))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">submit_button1</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">warning1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/approximating-non-perfect-square-roots_16_0.png" src="../../../_images/approximating-non-perfect-square-roots_16_0.png" />
+<p><strong>Find the side length of a square with area 329:</strong></p>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c26a35358a3e4094803f6431d2862225", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "265f17dd083f416f8a3c1b48b3e99d52", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "3dfb259111d34f06b39300a0499fb3e1", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="section" id="id1">
+<h3>Questions / Practice:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Practice this activity in two ways, estimate the side length visually and find the side length of the square. Then, apply the non-visual method find a better estimate.</p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion:<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>In this notebook, we have seen how to:</p>
+<blockquote>
+<div><ol class="simple">
+<li><p>Check whether or not a number is a perfect or non-perfect square through prime factorization <br /></p></li>
+<li><p>Explored how keeping more or less decimal places affects accuracy <br /></p></li>
+<li><p>Found how to use number lines to our advantage in estimating square roots <br /></p></li>
+<li><p>Applied these methods to finding unknown side lengths of squares <br /></p></li>
+</ol>
+</div></blockquote>
+<p>By now, you should be comfortable estimating the square roots of non-perfect squares, both visually and by using the formula.</p>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/ApproximatingNonPerfectSquareRoots"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html" title="previous page">Appreciation of Math in Society</a>
+    <a class='right-next' id="next-link" href="../BinaryDecimalConversion/binary-decimal-conversion.html" title="next page">Binary decimal conversion</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1275 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Central Tendency and Outliers &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Interpreting Statistical Data" href="../InterpretingStatisticalData/interpreting-statistical-data.html" />
+    <link rel="prev" title="Central Tendancy: Mean, Median, and Mode" href="../CentralTendency/central-tendency.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Statistics.html">
+   Statistics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendency/central-tendency.html">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/climate-monthly.html">
+     Monthly Climate Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/fruit-tree-popularity.html">
+     Fruit Tree Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/gapminder.html">
+     Gapminder Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/gapminder.html#life-expectancy">
+     Life Expectancy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/google-ngram-viewer.html">
+     Google Ngram Viewer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/google-search-trends.html">
+     Google Trends
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/library-indicators.html">
+     Public Library Performance Indicators
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/mapping-tree-locations.html">
+     Mapping Tree Locations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/movie-theatre-releases.html">
+     Movie Theatre Release Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/nba.html">
+     National Basketball Association
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/nhl.html">
+     National Hockey League Statistics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/olympics.html">
+     Olympics Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/pet-popularity.html">
+     Pet Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/spotify-popularity.html">
+     Spotify Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/weather-hourly-canada.html">
+     Hourly Weather in Canada
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/wikipedia-mars-missions.html">
+     Mars Missions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Mathematics/CentralTendencyAndOutlier/outliers-and-central-tendency.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/CentralTendencyAndOutlier/outliers-and-central-tendency.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CentralTendencyAndOutlier/outliers-and-central-tendency.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/CentralTendencyAndOutlier/outliers-and-central-tendency.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-an-outlier">
+   What is an outlier?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#central-tendency">
+   Central tendency
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-yourself">
+     Try it yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-bigger-set-of-data">
+   A bigger set of data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#now-try-adding-your-own-data-points-into-this-set">
+     Now try adding your own data points into this set.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#effects-of-outliers">
+     Effects of Outliers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mean">
+       Mean
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#median">
+       Median
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mode">
+       Mode
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-should-we-use-to-represent-data">
+     What should we use to represent data?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-yourself">
+   Test yourself
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#question-1">
+     Question 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#question-2">
+     Question 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#question-3">
+     Question 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extra-hard-question">
+     Extra Hard Question
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/CentralTendencyAndOutlier/outliers-and-central-tendency.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%html
+
+&lt;script&gt;
+  function code_toggle() {
+    if (code_shown){
+      $(&#39;div.input&#39;).hide(&#39;500&#39;);
+      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)
+    } else {
+      $(&#39;div.input&#39;).show(&#39;500&#39;);
+      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $(&#39;div.input&#39;).hide()
+  });
+&lt;/script&gt;
+&lt;p&gt; Code is hidden for ease of viewing. Click the Show/Hide button to see. &lt;/&gt;
+&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.mlab</span> <span class="k">as</span> <span class="nn">mlab</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">widgets</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">Layout</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">Counter</span>
+<span class="kn">from</span> <span class="nn">array</span> <span class="k">import</span> <span class="n">array</span>
+<span class="kn">from</span> <span class="nn">statistics</span> <span class="k">import</span> <span class="n">mode</span>
+<span class="kn">import</span> <span class="nn">IPython</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="k">import</span> <span class="n">Table</span>
+<span class="kn">import</span> <span class="nn">tkinter</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">pandas</span> <span class="k">import</span> <span class="n">DataFrame</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">answerList</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">answerList</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="central-tendency-and-outliers">
+<h1>Central Tendency and Outliers<a class="headerlink" href="#central-tendency-and-outliers" title="Permalink to this headline">¶</a></h1>
+<p>This notebook focuses on what an outlier is and how it affects central tendency. Remember central tendency means the mean, median, and mode of some data. If you need review on central tendency, check out this previous notebook.</p>
+<p>Things you will learn in this notebook:</p>
+<ul class="simple">
+<li><p>What an outlier is</p></li>
+<li><p>How an outlier affects mean</p></li>
+<li><p>How an outlier affects median</p></li>
+<li><p>How an outlier affects mode</p></li>
+<li><p>Why outliers can be a problem</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/PunnyOutlier.jpg"><img alt="../../../_images/PunnyOutlier.jpg" src="../../../_images/PunnyOutlier.jpg" style="width: 400px; height: 300px;" /></a>
+<div class="section" id="what-is-an-outlier">
+<h2>What is an outlier?<a class="headerlink" href="#what-is-an-outlier" title="Permalink to this headline">¶</a></h2>
+<p>An outlier is a value that “lies outside” (is much smaller or larger than) most of the other values in a set of data.</p>
+<p>Let’s look at an example: <br>
+Here is a data set: <span class="math notranslate nohighlight">\(26, 23, 27, 25, 28, 29, 24, 99 \)</span> <br>
+Lets put it in order: <span class="math notranslate nohighlight">\(23, 24, 25, 26, 27, 28, 29, 99\)</span> <br>
+<span class="math notranslate nohighlight">\(99\)</span> is larger than all the other data, by a lot. <br>
+Therefore, we can call <span class="math notranslate nohighlight">\(99\)</span> an outlier.</p>
+<p>An outlier is also data that is out of place, or that might be a mistake when it was collected.</p>
+</div>
+<div class="section" id="central-tendency">
+<h2>Central tendency<a class="headerlink" href="#central-tendency" title="Permalink to this headline">¶</a></h2>
+<p>First let’s look at the central tendency of the example above.</p>
+<p>Mean = <span class="math notranslate nohighlight">\(\frac{23+24+25+26+27+28+29+99}{8} = \frac{281}{8} = 35.125\)</span>. <br>
+The median is found between 26 and 27, so the median is 26.5. <br>
+There is no mode because none are repeated more than once.</p>
+<p>Then we will remove the outlier (99) and recalculate the central tendency.</p>
+<p>Mean = <span class="math notranslate nohighlight">\(\frac{23+24+25+26+27+28+29}{7} = \frac{182}{7} = 26\)</span>. <br>
+The median is the middle number so the median is 26. <br>
+There is no mode because none are repeated more than once.</p>
+<p>What changes do you notice? What changed the most?</p>
+<div class="section" id="try-it-yourself">
+<h3>Try it yourself<a class="headerlink" href="#try-it-yourself" title="Permalink to this headline">¶</a></h3>
+<p>Here are the ratings of a new restaurant out of 10:</p>
+<p><span class="math notranslate nohighlight">\(4.5, 7, 15, 3.5, 6, 5, 9, 10, 1\)</span></p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer622</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Yes&#39;</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">],</span> <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">answernext</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;10&#39;</span><span class="p">,</span> <span class="s1">&#39;15&#39;</span><span class="p">,</span> <span class="s1">&#39;-1&#39;</span><span class="p">],</span> <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+
+<span class="n">question622</span> <span class="o">=</span> <span class="s1">&#39;Is there an outlier?&#39;</span>
+<span class="n">questionnext</span> <span class="o">=</span> <span class="s1">&#39;Which value is the outlier?&#39;</span>
+
+<span class="k">def</span> <span class="nf">checknext</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question622</span><span class="p">,</span> <span class="n">answer622</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">questionnext</span><span class="p">,</span> <span class="n">answernext</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answernext</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;15&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You&#39;re right! 15 is an outlier because the ratings are only supposed to be out of 10.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not quite, try again.&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">check622</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question622</span><span class="p">,</span> <span class="n">answer622</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer622</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;Yes&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Actually there is an outlier.&quot;</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">questionnext</span><span class="p">,</span> <span class="n">answernext</span><span class="p">)</span>
+    <span class="n">answernext</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">checknext</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+        
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question622</span><span class="p">,</span><span class="n">answer622</span> <span class="p">)</span>
+<span class="n">answer622</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check622</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question622&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;622&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer622&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer622&quot;</span><span class="p">&gt;</span>
+An outlier is a value that does not seem to fit with the rest of the data. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+In this case, we are looking at ratings that should be between 0 and 10. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+All the values in this data set are within that range except for 15. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+So 15 must be the outlier. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+Also -1 would be an outlier if it was in the data set, but because it&#39;s not then it&#39;s not the right answer. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="a-bigger-set-of-data">
+<h2>A bigger set of data<a class="headerlink" href="#a-bigger-set-of-data" title="Permalink to this headline">¶</a></h2>
+<p>Let’s look at some data about the sodium content (amount of salt) in different common foods. Is there an outlier?</p>
+<a class="reference internal image-reference" href="../../../_images/walking-food.jpg"><img alt="../../../_images/walking-food.jpg" src="../../../_images/walking-food.jpg" style="width: 500px; height: 200px;" /></a>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;sources/exampleDataSource.csv&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">OriginalData</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;sources/exampleData.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+        <span class="n">OriginalData</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now let’s calculate the mean, median, and mode using the computer.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">computeCenTendency</span><span class="p">(</span><span class="n">dataset</span><span class="p">):</span>
+    
+    <span class="c1">#mean value</span>
+    <span class="n">mean</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean: &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+
+    <span class="c1">#median value</span>
+    <span class="c1"># First we need to sort the data in ascending order</span>
+    <span class="n">dataset</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">median</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Median: &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">median</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+    
+    <span class="c1"># Mode</span>
+    <span class="n">hits</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">:</span>
+        <span class="n">tally</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="c1">#Makes a tuple that is the number of huts paired with the relevant number</span>
+        <span class="n">values</span> <span class="o">=</span> <span class="p">(</span><span class="n">tally</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+        <span class="c1"># Only add one entry for each number in the set</span>
+        <span class="k">if</span> <span class="n">values</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">hits</span><span class="p">:</span>
+            <span class="n">hits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+    <span class="n">hits</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">hits</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">&gt;</span><span class="n">hits</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mode:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">hits</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span><span class="mi">3</span><span class="p">),</span> <span class="s2">&quot;(appeared&quot;</span><span class="p">,</span> <span class="n">hits</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;times.)&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There is no mode&quot;</span><span class="p">)</span>
+
+    <span class="n">Counter</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">mean</span><span class="p">,</span> <span class="n">median</span><span class="p">,</span> <span class="n">hits</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">centralTendency</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">centralTendency</span> <span class="o">=</span> <span class="n">computeCenTendency</span><span class="p">(</span><span class="n">OriginalData</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now let’s show this data in a graph. But not just any graph. We will display it in a histogram. This way we can group together foods that have a similar sodium content into “bins”. You can control how many bins are on the graph by using the slider below. Look how the graph changes.</p>
+<p>Can you tell if there’s an outlier when there’s only a couple bins? How about when there’s a lot of bins?</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plotHistogram</span><span class="p">(</span><span class="n">x_values</span><span class="p">,</span> <span class="n">num_bins</span><span class="p">,</span> <span class="n">xLabel</span><span class="p">,</span> <span class="n">yLabel</span><span class="p">,</span> <span class="n">histTitle</span><span class="p">):</span>
+    <span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x_values</span><span class="p">,</span> <span class="n">num_bins</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">xLabel</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="n">yLabel</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">histTitle</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    
+<span class="k">def</span> <span class="nf">callPlottingFunction</span><span class="p">(</span><span class="n">num_bins</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generating... plot for :&quot;</span><span class="p">,</span> <span class="n">num_bins</span><span class="p">)</span>
+    <span class="c1">#n, bins, patches = plt.hist(data, num_bins, facecolor=&#39;blue&#39;, alpha=0.5)</span>
+    <span class="c1">#plt.xlabel(&#39;Numberof values&#39;)</span>
+    <span class="c1">#plt.ylabel(&#39;Sodium Content&#39;)</span>
+    <span class="c1">#plt.title(&#39;Histogram of 30 products in Australian supermarkets&#39;)</span>
+    <span class="c1">#plt.show()</span>
+    <span class="n">plotHistogram</span><span class="p">(</span><span class="n">OriginalData</span><span class="p">,</span> <span class="n">num_bins</span> <span class="p">,</span> <span class="s1">&#39;Sodium Content&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">,</span> <span class="s1">&#39;Histogram of 30 products in Australian supermarkets&#39;</span><span class="p">)</span>
+
+<span class="n">interact</span><span class="p">(</span><span class="n">callPlottingFunction</span><span class="p">,</span> <span class="n">num_bins</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">value</span><span class="o">=</span><span class="mi">50</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>When there are a lot of bins, it’s really easy to see that there’s an outlier. If we look at the data, we know that’s soy sauce. So let’s remove it and see how the central tendency is affected.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataWithoutOutlier</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;sources/exampleData_NoOutlier.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+        <span class="n">dataWithoutOutlier</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+<span class="c1">#print(&quot;Sodium content read from the file: &quot;, dataWithoutOutlier)</span>
+
+<span class="n">centralTendencyWithoutOutlier</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">centralTendencyWithoutOutlier</span> <span class="o">=</span> <span class="n">computeCenTendency</span><span class="p">(</span><span class="n">dataWithoutOutlier</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">callPlottingFunctionNoOutlier</span><span class="p">(</span><span class="n">num_bins</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generating... plot for :&quot;</span><span class="p">,</span> <span class="n">num_bins</span><span class="p">)</span>
+    <span class="n">plotHistogram</span><span class="p">(</span><span class="n">dataWithoutOutlier</span><span class="p">,</span> <span class="n">num_bins</span> <span class="p">,</span> <span class="s1">&#39;Sodium Content&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">,</span> <span class="s1">&#39;Histogram of 30 products in Australian supermarkets&#39;</span><span class="p">)</span>
+
+<span class="n">interact</span><span class="p">(</span><span class="n">callPlottingFunctionNoOutlier</span><span class="p">,</span> <span class="n">num_bins</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">value</span><span class="o">=</span><span class="mi">50</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Should soy sauce be excluded though? It is a common food that many people own, so it’s not out of place in the data. It’s just very salty.</p>
+<p><strong>An outlier should really be out of place in your data set, not just a large or small value.</strong></p>
+<hr class="docutils" />
+<div class="section" id="now-try-adding-your-own-data-points-into-this-set">
+<h3>Now try adding your own data points into this set.<a class="headerlink" href="#now-try-adding-your-own-data-points-into-this-set" title="Permalink to this headline">¶</a></h3>
+<p>Try adding really big and/or really small numbers. You can also add many repeating numbers to change the mode. <br>
+<strong>Restart</strong>: press to remove all your outliers to start again.<br>
+<strong>Add Outlier</strong>: press to add a new outlier. You can add as many as you want. (value has to be less than 10,000) <br>
+<strong>Compute</strong>: press to calculate the central tendency and see a histogram of the dataset with your outlier(s).<br>
+<strong>Compare</strong>: press to see the central tendency before and after your outliers are added. How do your outliers change the central tendency?</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">global</span> <span class="n">datasetWithOutlier</span>
+<span class="k">global</span> <span class="n">centralTendencyWithOutlier</span>
+<span class="n">datasetWithOutlier</span> <span class="o">=</span> <span class="n">dataWithoutOutlier</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="n">add</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Add Outlier&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">remove</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Restart&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">outlier</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">BoundedIntText</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Outlier:&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">compute</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Calculate&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">compare</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Compare&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">displayButtons</span><span class="p">():</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">remove</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">add</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">compute</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">compare</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">addOutlier</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">datasetWithOutlier</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">remove</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">add</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">outlier</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">compute</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">compare</span><span class="p">)</span>
+    <span class="n">datasetWithOutlier</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">outlier</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Dataset:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">datasetWithOutlier</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">showOutlier</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">remove</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">add</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">outlier</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">compute</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">compare</span><span class="p">)</span>
+    <span class="n">outlier</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">addOutlier</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Dataset:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">datasetWithOutlier</span><span class="p">)</span>
+    
+<span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">displayButtons</span><span class="p">()</span>
+    <span class="n">datasetWithOutlier</span> <span class="o">=</span> <span class="n">dataWithoutOutlier</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Dataset:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">datasetWithOutlier</span><span class="p">)</span>
+    
+<span class="k">def</span> <span class="nf">callPlottingFunctionWithOutlier</span><span class="p">(</span><span class="n">num_bins</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generating... plot for :&quot;</span><span class="p">,</span> <span class="n">num_bins</span><span class="p">)</span>
+    <span class="n">plotHistogram</span><span class="p">(</span><span class="n">datasetWithOutlier</span><span class="p">,</span> <span class="n">num_bins</span><span class="p">,</span> <span class="s1">&#39;Sodium Content&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">,</span> <span class="s1">&#39;Histogram with Outliers&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">centralTendencyWithOutlier</span>
+    <span class="n">centralTendencyWithOutlier</span> <span class="o">=</span> <span class="n">computeCenTendency</span><span class="p">(</span><span class="n">datasetWithOutlier</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">centralTendencyWithOutlier</span><span class="p">)</span>
+    <span class="n">interact</span><span class="p">(</span><span class="n">callPlottingFunctionWithOutlier</span><span class="p">,</span> <span class="n">num_bins</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">value</span><span class="o">=</span><span class="mi">50</span><span class="p">));</span>
+    
+<span class="k">def</span> <span class="nf">compareTendencies</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">centralTendencyWithoutOutlierArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">centralTendencyWithoutOutlier</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">centralTendencyWithOutlierArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">centralTendencyWithOutlier</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span> 
+    <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;Central Tendency &#39;</span><span class="p">:</span>  <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s1">&#39;Mean&#39;</span><span class="p">,</span><span class="s1">&#39;Median&#39;</span><span class="p">,</span><span class="s1">&#39;Mode&#39;</span> <span class="p">]),</span>
+            <span class="s1">&#39;Before adding outlier &#39;</span><span class="p">:</span>  <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">centralTendencyWithoutOutlierArray</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>  <span class="n">centralTendencyWithoutOutlierArray</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> 
+                                            <span class="n">centralTendencyWithoutOutlierArray</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">]),</span>
+            <span class="s1">&#39;After adding outlier &#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">centralTendencyWithOutlierArray</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">centralTendencyWithOutlierArray</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                                           <span class="n">centralTendencyWithOutlierArray</span><span class="p">[</span><span class="mi">2</span><span class="p">]])}</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Table</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+    
+
+<span class="n">displayButtons</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Dataset:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">datasetWithOutlier</span><span class="p">)</span>
+<span class="n">compare</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">compareTendencies</span><span class="p">)</span>
+<span class="n">compute</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">calculate</span><span class="p">)</span>
+<span class="n">add</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">showOutlier</span><span class="p">)</span>
+<span class="n">remove</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">reset</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="effects-of-outliers">
+<h3>Effects of Outliers<a class="headerlink" href="#effects-of-outliers" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="mean">
+<h4>Mean<a class="headerlink" href="#mean" title="Permalink to this headline">¶</a></h4>
+<p>From the above results and histogram, we see that adding outliers can change the mean dramatically.<br>
+This is because we need to add all the values to determine the mean value.<br>
+Outliers are often values that are much larger or smaller than the other values.<br>
+When we add these values to the sum, the average can change a lot.</p>
+</div>
+<div class="section" id="median">
+<h4>Median<a class="headerlink" href="#median" title="Permalink to this headline">¶</a></h4>
+<p>For the median, we need to consider the middle number(s).<br>
+Adding one outlier adds a single point at the far end of our data set, so everything else shifts over only one spot. <br>
+The median might change or might not.</p>
+</div>
+<div class="section" id="mode">
+<h4>Mode<a class="headerlink" href="#mode" title="Permalink to this headline">¶</a></h4>
+<p>The mode is very unlikely to change, because mode is the most repeated value.<br>
+Unless you add many outliers, all with the same value, the mode probably won’t change.<br>
+And if there are multiple outliers with the same value, then maybe they should be kept in the dataset, they might be important.</p>
+</div>
+</div>
+<div class="section" id="what-should-we-use-to-represent-data">
+<h3>What should we use to represent data?<a class="headerlink" href="#what-should-we-use-to-represent-data" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../../../_images/median-over-mean.jpg"><img alt="../../../_images/median-over-mean.jpg" src="../../../_images/median-over-mean.jpg" style="width: 350px; height: 200px;" /></a>
+<p>The reason we use central tendency is to tell important information about the data set we want to talk about. We want to know what this data is like without saying every value in the set. Usually mean is used to represent data as it is affected by all points, but that’s not always a good thing. If there’s an outlier in the data, maybe mean is not the best way to represent the middle of the data in general. Median might be a more truthful representation of the middle in that case.</p>
+<p>In the food data, we might want to represent how much sodium is in food we eat nearly every day. If we don’t eat soy sauce often, then it would be an outlier. Then the mean will tell us we eat a lot more sodium every day than the median would tell us. If we use the mean to represent this data, someone could argue that we eat too much sodium. But its not true since we don’t eat it often. So if we use the median to represent this data, we can still include soy sauce in the data, but it would represent what we eat more truthfully.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="test-yourself">
+<h2>Test yourself<a class="headerlink" href="#test-yourself" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="question-1">
+<h3>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h3>
+<p>The Purple Tornadoes played 8 games this season and these are their scores.<br>
+15, 10, 18, 11, 1, 18, 25, 12</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer642</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;25 and 18&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;25 and 1&#39;</span><span class="p">,</span> <span class="s1">&#39;1 and 10&#39;</span><span class="p">,</span> <span class="s1">&#39;25&#39;</span><span class="p">,</span> <span class="s1">&#39;None of these&#39;</span><span class="p">],</span>
+                             <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>  <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="n">question642</span> <span class="o">=</span> <span class="s2">&quot;Which of these values could be outliers?&quot;</span>
+
+<span class="k">def</span> <span class="nf">check642</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question642</span><span class="p">,</span> <span class="n">answer642</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer642</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;25 and 1&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That&#39;s right!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not quite. Try again.&quot;</span><span class="p">)</span>
+
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question642</span><span class="p">,</span> <span class="n">answer642</span><span class="p">)</span>
+<span class="n">answer642</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check642</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question642&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;642&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer642&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer642&quot;</span><span class="p">&gt;</span>
+Outliers are values which are much bigger or smaller than the rest of the data.<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+Since there is only one value in the 20s, which is 25, that might be an outlier.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+Also there is only one value less than 10, which is 1, so that might also be an outlier.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+Everything else is pretty close together.<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+We do not know for sure if these are real outliers, but they could be, so we call them potential outliers. <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="question-2">
+<h3>Question 2<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h3>
+<p>Sam’s class recorded the height of 10 the students in the class in centimeters. This is the data they got:<br>
+120, 125, 133, 146, 180, 152, 154, 138, 122, 140<br>
+The current mean height of these 10 students is 141 cm.<br>
+The current median height is 139 cm. <br></p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">question611</span> <span class="o">=</span> <span class="s2">&quot; If we say that 180 cm is an outlier, what will happen to the central tendency?&quot;</span>
+<span class="n">answer611</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;mean will increase&#39;</span><span class="p">,</span> <span class="s1">&#39;median will stay the same&#39;</span><span class="p">,</span> <span class="s1">&#39;mean will decrease&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+                             <span class="n">value</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">checkAnswer</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question611</span><span class="p">,</span> <span class="n">answer611</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer611</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;mean will decrease&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sorry, that&#39;s not right! Try again.&quot;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">question611</span><span class="p">,</span> <span class="n">answer611</span><span class="p">)</span>
+
+<span class="n">answer611</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">checkAnswer</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%HTML</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question611&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;611&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer611&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer611&quot;</span><span class="p">&gt;</span>
+Since we are saying that the outlier is 180 cm and that is larger than the rest of the data, the mean will decrease.  <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+If the outlier was smaller than the rest of the data, the mean would increase. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+Since there was 10 values, the median was the average between the 5th and 6th values when the list is sorted. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+But if we remove one value, then the median will become the 5th value which is smaller than the average of the 5th and 6th values. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+This is only because those 2 values are not the same number, or else the median would stay the same.
+
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="question-3">
+<h3>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h3>
+<p>A teacher collected the grades of one test and these are the results:
+100, 78, 98, 78, 78, 75, 55, 86, 100.</p>
+<p>Also 4 students missed the test so they got a grade of zero.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">question612</span> <span class="o">=</span> <span class="s2">&quot; What is the mode grade for all the students in the test? &quot;</span>
+
+<span class="n">answer612</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;78&#39;</span><span class="p">,</span> <span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="s1">&#39;78 and 100&#39;</span><span class="p">,</span> <span class="s1">&#39;There is none&#39;</span><span class="p">],</span>
+                              <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">check612</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question612</span><span class="p">,</span> <span class="n">answer612</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer612</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That&#39;s right!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sorry, that&#39;s not right, try again. Don&#39;t forget the mode is the value that repeats the most.&quot;</span><span class="p">)</span>
+
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question612</span><span class="p">,</span> <span class="n">answer612</span><span class="p">)</span>
+<span class="n">answer612</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check612</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question612&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;612&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer612&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer612&quot;</span><span class="p">&gt;</span>
+Since there is 3 78s, you might think that 78 would be the mode. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+But we are also counting the 4 studetns who got a zero. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+Therefore theres 4 zeros in the dataset, so the mode is 0. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer613</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Yes, to 100&#39;</span><span class="p">,</span> <span class="s1">&#39;Yes, to 78&#39;</span><span class="p">,</span> <span class="s1">&#39;Yes, to 0&#39;</span><span class="p">,</span> <span class="s1">&#39;No, it stays the same&#39;</span><span class="p">],</span>
+                             <span class="n">value</span> <span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="n">question613</span> <span class="o">=</span> <span class="s2">&quot;If we don&#39;t count the students who missed the test, does the mode change? If so, to what?&quot;</span>
+
+<span class="k">def</span> <span class="nf">check613</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question613</span><span class="p">,</span> <span class="n">answer613</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer613</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;Yes, to 78&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You are correct!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not quite, Try again.&quot;</span><span class="p">)</span>
+        
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question613</span><span class="p">,</span> <span class="n">answer613</span><span class="p">)</span>
+<span class="n">answer613</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check613</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question613&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;613&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer613&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer613&quot;</span><span class="p">&gt;</span>
+
+When we remove the students who missed the test, since they made the mode 0, the mode will definitely change. <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+Since there is 3 78s and only 2 100s, the new mode will be 78. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+If there were 3 100s, then the mode would change to 78 and 100.
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="extra-hard-question">
+<h3>Extra Hard Question<a class="headerlink" href="#extra-hard-question" title="Permalink to this headline">¶</a></h3>
+<p>A student has gotten the following marks on his tests: 87, 95, 76, and 88. He wants a mean that is at least 85 and only has one more test.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer631</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;60&#39;</span><span class="p">,</span> <span class="s1">&#39;70&#39;</span><span class="p">,</span> <span class="s1">&#39;80&#39;</span><span class="p">,</span> <span class="s1">&#39;90&#39;</span><span class="p">],</span>
+                             <span class="n">value</span> <span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="n">question631</span> <span class="o">=</span> <span class="s2">&quot;What is the minimum mark he must get on the last test in order to achieve that average?&quot;</span>
+
+<span class="k">def</span> <span class="nf">check631</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question631</span><span class="p">,</span> <span class="n">answer631</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer631</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;80&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong answer! Try again.&quot;</span><span class="p">)</span>
+        
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question631</span><span class="p">,</span> <span class="n">answer631</span><span class="p">)</span>
+<span class="n">answer631</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check631</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question631&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;631&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer631&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer631&quot;</span><span class="p">&gt;</span>
+To find which mark he needs, we can just try these 4 numbers and see how the mean changes.<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+First, if he got 60 on the last test, his new mean would be:<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+(87 + 95 + 76 + 88 + 60) ÷ 5 = 81.2 <span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+Getting a 60 would mean he finished with an average of 81.2, so he needs something higher than that.<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+Now what if he got 70 on the last test? The new mean would be:<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+(87 + 95 + 76 + 88 + 70) ÷ 5 = 83.2 <span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+Getting a 70 would bring the average closer to 85 than getting a 60, but still not there.<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+How about if he got 80 on the last test? The new mean would be:<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+(87 + 95 + 76 + 88 + 80) ÷ 5 = 85.2 <span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+Getting an 80 would bring his average us past 85!<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>And since the next option is larger than 80, this is the smallest mark he would need to finish with 85.<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+We can still check what the mean would be if he got 90:<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+(87 + 95 + 76 + 88 + 90) ÷ 5 = 87.2 <span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+Getting a 90 would be even better for the final mean, but he does not have to get 90 to finsih with at least 85.<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>
+**You can use this with your own grades too to see how future tests can effect your final grade, if you want.
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>In this notebook, we learned how an outlier affects central tendency.</p>
+<p>When an outlier is added to (or removed from) a data set:</p>
+<ul class="simple">
+<li><p>Mean changes the most</p></li>
+<li><p>Median changes a little bit</p></li>
+<li><p>Mode doesn’t change unless there are multiple outliers with the same value</p></li>
+</ul>
+<p>Also, not all larger or smaller values should be called outliers and excluded from data. That depends more on context if some is given.</p>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/CentralTendencyAndOutlier"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../CentralTendency/central-tendency.html" title="previous page">Central Tendancy: Mean, Median, and Mode</a>
+    <a class='right-next' id="next-link" href="../InterpretingStatisticalData/interpreting-statistical-data.html" title="next page">Interpreting Statistical Data</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

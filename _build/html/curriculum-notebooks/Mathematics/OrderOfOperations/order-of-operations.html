@@ -1,0 +1,1167 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Order of Operations &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Parallelogram: Area" href="../ParallelogramArea/parallelogram-area.html" />
+    <link rel="prev" title="Patterns: Oral and written" href="../OralAndWrittenPatterns/oral-and-written-patterns.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AnalyzingRadicalFunctions/analyzing-radical-functions.html">
+     Analyzing Radical Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AppreciationOfMathematicsInSociety/appreciation-of-mathematics-in-society.html">
+     Appreciation of Math in Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ApproximatingNonPerfectSquareRoots/approximating-non-perfect-square-roots.html">
+     Approximating Square Roots of Non-Perfect Squares
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BinaryDecimalConversion/binary-decimal-conversion.html">
+     Binary decimal conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../BudgetAndBankingAssignment/budget-and-banking-assignment.html">
+     Budget and Banking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CombinedLogLaw/combined-log-law.html">
+     Combined Log Law
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompareandOrderNumbers/compare-and-order-numbers.html">
+     Compare and order numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CompositionsOfFunctions/compositions-of-functions.html">
+     Compositions of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CountingTriangles/counting-triangles.html">
+     Counting triangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CreateInterpretLineGraphs/create-label-and-interpret-line-graphs.html">
+     Creating, Labelling, and Interpreting Line Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CryptographyCyphers/cryptography-cyphers.html">
+     Cryptography and Cyphers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataAndSinusoidalFunctions/data-and-sinusoidal-functions.html">
+     Data and sinusoidal functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../DataRepresentation/data-representation.html">
+     Data Representation in Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FibonacciNumbers/fibonacci-numbers.html">
+     Fibonacci Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FlippingCoins/flipping-coins.html">
+     Flipping Coins
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionAddition/fraction-addition.html">
+     Fractions and Addition
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FractionMultiplication/fraction-multiplication.html">
+     Fractions and Multiplication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../GraphingTwoVariables/graphing-two-variables.html">
+     Graphing two variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../HorizontalAndVerticalTranslations/effects-of-horizontal-and-vertical-translations.html">
+     Horizontal and vertical translations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InductiveAndDeductiveReasoning/inductive-and-deductive-reasoning.html">
+     Inductive Reasoning and Deductive Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IntervalsAndInequalities/intervals-and-inequalities.html">
+     Intervals and inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplesAndFactors/multiples-and-factors.html">
+     Multiples and Factors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../MultiplicationDivisionFractions/multiplication-division-fractions.html">
+     Fractions: Multiplication and Division
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../OralAndWrittenPatterns/oral-and-written-patterns.html">
+     Patterns: Oral and written
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Order of Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ParallelogramArea/parallelogram-area.html">
+     Parallelogram: Area
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PatternsAndRelations/patterns-and-relations.html">
+     Patterns  and Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Percentage/percentage.html">
+     Percentages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterIrregularShapes/perimeter-irregular-shapes.html">
+     Perimeter - Irregular Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PerimeterTrianglesRectangles/perimeter-triangles-and-rectangles.html">
+     Perimeter - Triangles and Rectangles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PiDay/pi-day.html">
+     Pi Day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../PythagoreanTheorem/pythagorean-theorem.html">
+     Pythagorean Theorem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Radicands/radicands.html">
+     Radicans: Simplifying
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RatesRatiosAndProportionalReasoning/rates-ratios-and-proportional-reasoning.html">
+     Rates, Ratios, and Proportional Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Reflections/reflections.html">
+     Reflections of Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../RootFindingAlgorithms/root-finding-algorithms.html">
+     Root Finding Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ShapeAndSpace/shape-and-space.html">
+     Shape and Space: Geometry
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TellingTime/telling-time.html">
+     Telling Time
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TippingPointJobs/tipping-point-jobs.html">
+     Tipping Point - Jobs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/transformations-of-objects-and-shapes.html">
+     Transformations: Positions and Motions of Objects and Shapes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Transformations/exercises-transformations-of-objects-and-shapes.html">
+     Transformations of Objects and Shapes: Exercises
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../TriangleArea/triangle-area.html">
+     Triangles: Area
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Statistics.html">
+   Statistics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Mathematics/OrderOfOperations/order-of-operations.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/OrderOfOperations/order-of-operations.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/OrderOfOperations/order-of-operations.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/OrderOfOperations/order-of-operations.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grade-9-curriculum">
+   Grade 9 curriculum
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise">
+   Exercise
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-problem">
+   The Problem
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-order-of-operations-is">
+     The Order of Operations is:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-happens-if-there-are-multiple-operations-on-the-same-level-of-the-pyramid">
+       What happens if there are multiple operations on the same level of the pyramid?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#but-why-do-we-have-the-order-of-operations-and-why-not-a-different-order">
+     But why do we have the order of operations? And why not a different order?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example">
+   Example
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solution">
+     Solution
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mixing-things-up">
+     Mixing things up
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Exercise:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#practice-questions">
+     Practice Questions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-solving-this">
+     Try solving this:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-few-more-questions">
+     A few more questions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#back-to-our-first-problem">
+     Back to our first Problem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-did-we-learn">
+   What did we learn?
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/OrderOfOperations/order-of-operations.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="n">hide_me</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">code_show=true; </span>
+<span class="s1">function code_toggle() {</span>
+<span class="s1">  if (code_show) {</span>
+<span class="s1">    $(&#39;div.input&#39;).each(function(id) {</span>
+<span class="s1">      el = $(this).find(&#39;.cm-variable:first&#39;);</span>
+<span class="s1">      if (id == 0 || el.text() == &#39;hide_me&#39;) {</span>
+<span class="s1">        $(this).hide();</span>
+<span class="s1">      }</span>
+<span class="s1">    });</span>
+<span class="s1">    $(&#39;div.output_prompt&#39;).css(&#39;opacity&#39;, 0);</span>
+<span class="s1">  } else {</span>
+<span class="s1">    $(&#39;div.input&#39;).each(function(id) {</span>
+<span class="s1">      $(this).show();</span>
+<span class="s1">    });</span>
+<span class="s1">    $(&#39;div.output_prompt&#39;).css(&#39;opacity&#39;, 1);</span>
+<span class="s1">  }</span>
+<span class="s1">  code_show = !code_show</span>
+<span class="s1">} </span>
+<span class="s1">$( document ).ready(code_toggle);</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input style=&quot;opacity:1&quot; type=&quot;submit&quot; value=&quot;Click here to show the code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+code_show=true; 
+function code_toggle() {
+  if (code_show) {
+    $('div.input').each(function(id) {
+      el = $(this).find('.cm-variable:first');
+      if (id == 0 || el.text() == 'hide_me') {
+        $(this).hide();
+      }
+    });
+    $('div.output_prompt').css('opacity', 0);
+  } else {
+    $('div.input').each(function(id) {
+      $(this).show();
+    });
+    $('div.output_prompt').css('opacity', 1);
+  }
+  code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script>
+<form action="javascript:code_toggle()"><input style="opacity:1" type="submit" value="Click here to show the code."></form></div></div>
+</div>
+<div class="section" id="order-of-operations">
+<h1>Order of Operations<a class="headerlink" href="#order-of-operations" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="grade-9-curriculum">
+<h2>Grade 9 curriculum<a class="headerlink" href="#grade-9-curriculum" title="Permalink to this headline">¶</a></h2>
+<p>A Jupyter notebook to explore order of operations conventions for arithmetic operations.</p>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>In elementary mathematics, we have two basic operations: addition and multiplication. Each of these operations comes with an “opposite” (or, as a mathematician might say, an <em>inverse</em>) operation. The opposite of addition is subtraction, and the opposite of multiplication is division.</p>
+<p>When there is a single operation to perform, we all know what to do, including the computer. For example, we could have the computer calculate the sum <span class="math notranslate nohighlight">\(3+7\)</span> or the product <span class="math notranslate nohighlight">\(9\times 3\)</span>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">+</span><span class="mi">7</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">9</span><span class="o">*</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>27
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you want to type your expressions into an input box, the operators are:</p>
+<ul class="simple">
+<li><p>Brackets: <code class="docutils literal notranslate"><span class="pre">(</span></code> and <code class="docutils literal notranslate"><span class="pre">)</span></code></p></li>
+<li><p>Exponents: <code class="docutils literal notranslate"><span class="pre">**</span></code></p></li>
+<li><p>Division: <code class="docutils literal notranslate"><span class="pre">/</span></code></p></li>
+<li><p>Multiplication: <code class="docutils literal notranslate"><span class="pre">*</span></code></p></li>
+<li><p>Addition: <code class="docutils literal notranslate"><span class="pre">+</span></code></p></li>
+<li><p>Subtraction: <code class="docutils literal notranslate"><span class="pre">-</span></code></p></li>
+</ul>
+<p><strong>Note:</strong> all code in Jupyter is <em>live</em>, and <em>editable</em>. Feel free to go back to the last two lines and change the numbers. To get the computer to do the calculation, press <code class="docutils literal notranslate"><span class="pre">Shift</span></code>+<code class="docutils literal notranslate"><span class="pre">Enter</span></code> on your keyboard.</p>
+<p>If we wanted to undo either the addition or the multiplication, we can use their opposites:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">10</span><span class="o">-</span><span class="mi">7</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">27</span><span class="o">/</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>You might be wondering why there is a decimal in the last output. Whenever the computer does division, it uses <a class="reference external" href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">floating point arithmetic</a>, and it is allowing for the fact that division doesn’t always return a whole number.</em></p>
+<p>Now, if we need to add up a whole bunch of numbers (or multiply them), we don’t have to worry about doing it wrong, thanks to a property of arithmetic called <strong>associativity</strong>. Basically, it means if we want to compute a sum like <span class="math notranslate nohighlight">\(5+9+7\)</span>, it doesn’t matter if we first do <span class="math notranslate nohighlight">\(5+9\)</span>, and then add 7, or if we do <span class="math notranslate nohighlight">\(9+7\)</span> and then add 5. In other words, it doesn’t matter if we first <em>associate</em> 5 with 9, or <em>associate</em> 9 with 7—both ways give us the same result. (Because of this, we say addition is <em>associative</em>.) To distinguish between the two associations, we use parentheses like this:</p>
+<div class="math notranslate nohighlight">
+\[(5+9)+7 = 5+(9+7)\]</div>
+<p>In mathematics, using brackets (or parentheses) is a way of saying, “Do this first!”</p>
+<p>Go ahead and try this for yourself. Then, let the computer confirm it for you. We’ve entered the left-hand side of the above equality for you. To try the right-hand side, click on the <span class="math notranslate nohighlight">\(+\)</span> sign in the tool bar at the top to add a new cell. Type in the right-hand side yourself, and press <code class="docutils literal notranslate"><span class="pre">Shift</span></code>+<code class="docutils literal notranslate"><span class="pre">Enter</span></code> to confirm the result.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">9</span><span class="p">)</span><span class="o">+</span><span class="mi">7</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>21
+</pre></div>
+</div>
+</div>
+</div>
+<p>The same thing works for multiplication. For example, <span class="math notranslate nohighlight">\((2\cdot 4)\cdot 5 = 40 = 2\cdot (4\cdot 5)\)</span>. And of course, as well as being able to put brackets wherever we want, we can also change the order of the numbers without affecting the answer.</p>
+<p>Things get more complicated if we want to do both addition and multiplication in a single calculation, or if we want to bring subtraction or division into the picture. Consider this expression:</p>
+<div class="math notranslate nohighlight">
+\[3+7\times 4\]</div>
+<p>Which operation should we do first? The addition, or the multiplication? Or does it matter? Let’s try both ways using parentheses; as noted above, any operation in parentheses is always done first. We see the results in the two cells below:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">7</span><span class="p">)</span><span class="o">*</span><span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>40
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">+</span><span class="p">(</span><span class="mi">7</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>31
+</pre></div>
+</div>
+</div>
+</div>
+<p>Interesting! Order <em>doesn’t</em> matter when there’s only addition or only multiplication involved, but as soon as we combine the two, the order (and hence, the placement of brackets) <em>does</em> make a difference.</p>
+</div>
+<div class="section" id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<p>Does order matter for subtraction or division? Let’s see by using brackets again. In the code cells below, try a few examples to see what happens. We’ve done a couple for you to show you how they’re written. Note that you can do more than one calculation in a cell by using a comma to separate them.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">10</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="o">-</span><span class="p">(</span><span class="mi">3</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(2, 12)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">12</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">12</span><span class="o">/</span><span class="p">(</span><span class="mi">6</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1.0, 4.0)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-problem">
+<h2>The Problem<a class="headerlink" href="#the-problem" title="Permalink to this headline">¶</a></h2>
+<p>How do we (or a computer) figure out the answer to a really complicated expression like this?</p>
+<div class="math notranslate nohighlight">
+\[8 + 5/3^{2} \times (7 - 4)/(6 + 9)\]</div>
+<p>The answer is the same for both humans and computers: we need to</p>
+<ol class="simple">
+<li><p>Break the problem down into simpler steps, and</p></li>
+<li><p>Determine the order in which those steps should be performed.</p></li>
+</ol>
+<p>We know what the simpler steps should be; these are the individual arithmetic operations. How do we determine the order? The short answer is that there is an agreed-upon convention. In other words, everybody agrees to do operations in the same order so that they always get the same answer.  This order is called (conveniently) the <strong>order of operations</strong>.</p>
+<div class="section" id="the-order-of-operations-is">
+<h3>The Order of Operations is:<a class="headerlink" href="#the-order-of-operations-is" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>B</strong>rackets</p></li>
+<li><p><strong>E</strong>xponents</p></li>
+<li><p><strong>D</strong>ivision</p></li>
+<li><p><strong>M</strong>ultiplication</p></li>
+<li><p><strong>A</strong>ddition</p></li>
+<li><p><strong>S</strong>ubtraction</p></li>
+</ul>
+<p>This is commonly remembered by the acronym <strong>BEDMAS</strong>, or <strong>PEMDAS</strong> (if we use the word “parentheses” instead of “brackets”) or even <strong>BODMAS</strong> (if we use “orders” instead of “exponents”). Some people remember this order by the phrase <strong>P</strong>lease <strong>E</strong>xcuse <strong>M</strong>y <strong>D</strong>ear <strong>A</strong>unt <strong>S</strong>ally.</p>
+<p><em>Did you notice? the <strong>D</strong> and <strong>M</strong> in <strong>PEMDAS</strong> are switched around!  Doesn’t that change things?  (The answer is coming up!)</em></p>
+<p>Here’s a way to visualize the order of operations.  Higher operations are done first.</p>
+<p><img alt="Pyramid" src="http://4.bp.blogspot.com/-zfTGFH6aoZw/VU1oBBlxVVI/AAAAAAAACM0/kBKeNwlnMd0/s1600/Slide1.png" /></p>
+<div class="section" id="what-happens-if-there-are-multiple-operations-on-the-same-level-of-the-pyramid">
+<h4>What happens if there are multiple operations on the same level of the pyramid?<a class="headerlink" href="#what-happens-if-there-are-multiple-operations-on-the-same-level-of-the-pyramid" title="Permalink to this headline">¶</a></h4>
+<p>This means they have the same amount of importance, and so they’re treated as if they were the same operation.  (Technically, it means they <em>are</em> the same operation—ask your teacher why!) In other words, we do <strong>m</strong>ultiplication and <strong>d</strong>ivision at the same time, left-to-right, then we do <strong>a</strong>ddition and <strong>s</strong>ubtraction at the same time, left-to-right.</p>
+</div>
+</div>
+<div class="section" id="but-why-do-we-have-the-order-of-operations-and-why-not-a-different-order">
+<h3>But why do we have the order of operations? And why not a different order?<a class="headerlink" href="#but-why-do-we-have-the-order-of-operations-and-why-not-a-different-order" title="Permalink to this headline">¶</a></h3>
+<p>The short answer is because all operations boil down to addition and subtraction. It’s true: exponents are repeated multiplication, and multiplication itself is repeated addition. So we want to do the most complex operations first before moving on to the simpler ones. Brackets are used to show associations that might break this order, which is why they must be done first.</p>
+<p>The long answer can be found here: http://mathforum.org/library/drmath/view/52582.html</p>
+<p>Let’s try a simple calculation with two operations. If we want to explicitly tell the computer which operation to perform first, we can use brackets. First, we try doing the addition first:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span> <span class="o">*</span> <span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>48
+</pre></div>
+</div>
+</div>
+</div>
+<p>Next, let’s see what we get if we do the multiplication first:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">+</span> <span class="p">(</span><span class="mi">5</span> <span class="o">*</span> <span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>33
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, let’s input the expression without any brackets, and let the computer take care of the order.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">6</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>33
+</pre></div>
+</div>
+</div>
+</div>
+<p>What was the result? Did it match either of the calcuations above it? Based on this example, does it appear as though the computer is following the order of operations?</p>
+<hr class="docutils" />
+<p>Are all computer programs created equal? Here are two calculators, from the same company, with the same input, but different outputs! Based on the BEDMAS order, which answer is right?</p>
+<p><em>Note: 2(2+1) is the same as 2x(2+1), it’s just a different way to write it.</em><br></p>
+<div style="width: 300px;"> <img src="https://saravanderwerf.com/wp-content/uploads/2018/04/order-of-operations-on-calc.jpg"></div>
+<p>Can you figure out how to add additional brackets to reproduce each result?</p>
+</div>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>How do we evaluate the expression <span class="math notranslate nohighlight">\(2^3 \times (4 + 8)\)</span>?</p>
+<div class="section" id="solution">
+<h3>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">¶</a></h3>
+<p>Here is a step-by-step walk-through of the calculation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align*}
+2^3 \times \mathbf{(4+8)} &amp; = 2^3\times 12 \tag{Brackets first!}\\
+\mathbf{2^3}\times 12 &amp; = 8\times 12 \tag{Exponents come next}\\
+\mathbf{8\times 12} &amp; = 96 \tag{Finally, the multiplication}
+\end{align*}\end{split}\]</div>
+<p>On the computer, we expect the following steps to be carried out:</p>
+<blockquote>
+<div><p>2^3 <span class="math notranslate nohighlight">\(\times\)</span> <strong>(4 <span class="math notranslate nohighlight">\(+\)</span> 8)</strong></p>
+<p><strong>2^3</strong> <span class="math notranslate nohighlight">\(\times\)</span> 12</p>
+<p><strong>8  <span class="math notranslate nohighlight">\(\times\)</span> 12</strong></p>
+<p>96</p>
+</div></blockquote>
+<p>Let’s check to see if it works:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span> <span class="o">*</span> <span class="p">(</span><span class="mi">4</span> <span class="o">+</span> <span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>96
+</pre></div>
+</div>
+</div>
+</div>
+<p>Want to see another example? Watch this and try to solve it before they get to the solution!</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;560&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;315&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/embed/Y3CZ_JBQ0do?rel=0&amp;amp;start=17&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allow</span><span class="o">=</span><span class="s">&quot;autoplay; encrypted-media&quot;</span> <span class="na">allowfullscreen</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/Y3CZ_JBQ0do?rel=0&amp;start=17" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="mixing-things-up">
+<h3>Mixing things up<a class="headerlink" href="#mixing-things-up" title="Permalink to this headline">¶</a></h3>
+<p>Let’s start with a number and 3 operations that can be applied to the number:</p>
+<blockquote>
+<div><p>5</p>
+<p>_ <code class="docutils literal notranslate"><span class="pre">x</span></code> 4</p>
+<p>_ <code class="docutils literal notranslate"><span class="pre">+</span></code> 7</p>
+<p>_ <code class="docutils literal notranslate"><span class="pre">^</span></code> 2</p>
+</div></blockquote>
+<p>Let’s say we want to do the addition, then the exponent, then the multiplication.  What’s the answer?</p>
+<p>5 + 7 = <font color='green'>12</font>
+<font color='green'>12</font>^2 = <font color='blue'>144</font>
+<font color='blue'>144</font> x 4 = 576</p>
+<p>The answer is 576. But if we type the same series of operations into the computer, what do we get?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span><span class="o">+</span><span class="mi">7</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>201
+</pre></div>
+</div>
+</div>
+</div>
+<p>That’s not what we want! But we shouldn’t expect it to be: order of operations requires that the addition be performed last, not first!</p>
+</div>
+<div class="section" id="id1">
+<h3>Exercise:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Re-enter the above expression in the cell below, and then add brackets as needed to get the correct order of operations. Be sure that your output matches the correct answer!</p>
+<p>What output do we get by doing the exponent, then the addition, then the mulitplication?</p>
+<p>5^2 = <font color='green'>25</font>
+<font color='green'>25</font> + 7 = <font color='blue'>32</font>
+<font color='blue'>32</font> x 4 = 128</p>
+<p>How can we write these expressions in one line to get this output?</p>
+<p>Were you able to get 128 as your answer? Again, we see that the brackets are necessary. If we leave them out, then the computer follows the order of operations convention, and we get:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">7</span><span class="o">*</span><span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>53
+</pre></div>
+</div>
+</div>
+</div>
+<p>Can you think of another order to write these operations in that gives a different output?</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="practice-questions">
+<h3>Practice Questions<a class="headerlink" href="#practice-questions" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="try-solving-this">
+<h3>Try solving this:<a class="headerlink" href="#try-solving-this" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hide_me</span>
+
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">import</span> <span class="nn">IPython</span>
+
+<span class="n">answer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatText</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Your Answer&#39;</span><span class="p">)</span>
+<span class="n">op1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Addition&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiplication&#39;</span><span class="p">,</span> <span class="s1">&#39;Division&#39;</span><span class="p">,</span> <span class="s1">&#39;Brackets&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">},</span> 
+                         <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;First Operation:&#39;</span><span class="p">,)</span>
+<span class="n">op2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Addition&#39;</span><span class="p">,</span> <span class="s1">&#39;Multiplication&#39;</span><span class="p">,</span> <span class="s1">&#39;Division&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">},</span> 
+                         <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Second Operation:&#39;</span><span class="p">,)</span>
+<span class="n">op3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Addition&#39;</span><span class="p">,</span> <span class="s1">&#39;Division&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">},</span> 
+                         <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Third Operation:&#39;</span><span class="p">,)</span>
+<span class="k">def</span> <span class="nf">display</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Solve 7 * (9 - 4)/2 + 3 using the order of operations and write your answer below:&quot;</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+    
+<span class="k">def</span> <span class="nf">check2</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">op1</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span><span class="s1">&#39;&#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">if</span> <span class="n">op1</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;Brackets&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Great! What did you do next?&quot;</span><span class="p">)</span>
+        <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">op2</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Remember the B in BEDMAS is for brackets, try the question again.&quot;</span><span class="p">)</span>
+        
+<span class="k">def</span> <span class="nf">check3</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">op2</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">if</span> <span class="n">op2</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;Multiplication&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Awesome! What did you do next?&quot;</span><span class="p">)</span>
+        <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">op3</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Remember division and multiplication are done left to right when there&#39;s no brackets and before addition and subtraction.</span><span class="se">\n</span><span class="s2">Try the question again.&quot;</span><span class="p">)</span>
+        
+<span class="k">def</span> <span class="nf">check4</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">op3</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">if</span> <span class="n">op3</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;Division&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Well done! If you did not get 20.5, it must have been a calculation error, try each step again.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Remember division and multiplication are done before addition and subtraction, try the question again.&quot;</span><span class="p">)</span>
+        
+<span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">op1</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">op2</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">op3</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">answer</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="mf">20.5</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You are correct!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sorry, that&#39;s not the right answer. Which operation did you do first?&quot;</span><span class="p">)</span>
+        <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">op1</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">()</span>
+<span class="n">answer</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">op1</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check2</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">op2</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check3</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">op3</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check4</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Solve 7 * (9 - 4)/2 + 3 using the order of operations and write your answer below:
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "d86ff4067d514cabb9477ce3f17edcc7", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+<div class="section" id="a-few-more-questions">
+<h3>A few more questions<a class="headerlink" href="#a-few-more-questions" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hide_me</span>
+
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">import</span> <span class="nn">IPython</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hide_me</span>
+
+<span class="n">choice</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Easy&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hard&#39;</span><span class="p">},</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Difficulty:&#39;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">Start</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Start&quot;</span><span class="p">)</span>
+<span class="n">ans</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Answer&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">reveal</span><span class="p">(</span><span class="n">choice</span><span class="p">):</span>
+    <span class="n">click</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">choice</span><span class="o">==</span><span class="s1">&#39;Easy&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2*5+3&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;10+3&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;13&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">choice</span><span class="o">==</span><span class="s1">&#39;Medium&#39;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(1+6)*5+3&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(7)*5+3&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;35+3&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;38&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(4^2-2)/2*3^2&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(16-2)/2*3^2&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(14)/2*3^2&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(14)/2*9&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;7*9&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;63&quot;</span><span class="p">)</span> 
+
+<span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="n">choice</span><span class="p">):</span>
+    <span class="c1">#click = True</span>
+    <span class="k">if</span> <span class="n">choice</span><span class="o">==</span><span class="s1">&#39;Easy&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2*5+3&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">choice</span><span class="o">==</span><span class="s1">&#39;Medium&#39;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(1+6)*5+3&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(4^2-2)/2*3^2&quot;</span><span class="p">)</span>
+            
+<span class="k">def</span> <span class="nf">on_button</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">choice</span><span class="p">,</span> <span class="n">Start</span><span class="p">,</span> <span class="n">ans</span><span class="p">)</span>
+    <span class="n">reveal</span><span class="p">(</span><span class="n">choice</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+    
+            
+<span class="k">def</span> <span class="nf">display2</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">choice</span><span class="p">,</span> <span class="n">Start</span><span class="p">)</span>
+    <span class="n">create</span><span class="p">(</span><span class="n">choice</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
+    <span class="n">ans</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_button</span><span class="p">)</span>
+    
+    
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">choice</span><span class="p">,</span> <span class="n">Start</span><span class="p">)</span>
+<span class="n">Start</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">display2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e6ea6d759fd04621a91e32821d7a7b06", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8b45c6420f7a4b0f943e463dd5147079", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+</div>
+<div class="section" id="back-to-our-first-problem">
+<h3>Back to our first Problem<a class="headerlink" href="#back-to-our-first-problem" title="Permalink to this headline">¶</a></h3>
+<p>Now that you have some examples under your belt, let’s go back to the hard expression we saw earlier:</p>
+<div class="math notranslate nohighlight">
+\[8 + 5/3^{2} \times (7 - 4)/(6 + 9)\]</div>
+<p>What part of this problem do we do first?</p>
+<p>Can you write all the steps to solve this problem in order?</p>
+<p>What was your final answer?</p>
+</div>
+</div>
+<div class="section" id="what-did-we-learn">
+<h2>What did we learn?<a class="headerlink" href="#what-did-we-learn" title="Permalink to this headline">¶</a></h2>
+<p>In this notebook, we learned:</p>
+<ul class="simple">
+<li><p>There is a logical order to the operations</p></li>
+<li><p>The order is:</p>
+<ul>
+<li><p><strong>B</strong>rackets</p></li>
+<li><p><strong>E</strong>xponents</p></li>
+<li><p><strong>D</strong>ivision</p></li>
+<li><p><strong>M</strong>ultiplication</p></li>
+<li><p><strong>A</strong>ddition</p></li>
+<li><p><strong>S</strong>ubtraction</p></li>
+</ul>
+</li>
+<li><p>Division and multiplication have the same priority</p></li>
+<li><p>Addition and subtraction do too</p></li>
+</ul>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/OrderOfOperations"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../OralAndWrittenPatterns/oral-and-written-patterns.html" title="previous page">Patterns: Oral and written</a>
+    <a class='right-next' id="next-link" href="../ParallelogramArea/parallelogram-area.html" title="next page">Parallelogram: Area</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>

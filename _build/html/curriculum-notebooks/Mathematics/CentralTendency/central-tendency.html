@@ -1,0 +1,1870 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Central Tendancy: Mean, Median, and Mode &#8212; Callysto Curriculum Notebooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-dropdown.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/togglebutton.js"></script>
+    <script type="text/javascript" src="../../../_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../../_static/copybutton.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script type="text/javascript">
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" type="text/javascript" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Central Tendency and Outliers" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html" />
+    <link rel="prev" title="Statistics and Probability" href="../ProbabilityExperiment/probability-experiment.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/CallystoLogo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Callysto Curriculum Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../intro.html">
+   Welcome to Callysto
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../README_modified.html">
+   About the Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Arts/Arts.html">
+   Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../EnglishLanguageArts/EnglishLangArts.html">
+   English Language Arts Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Health/Health.html">
+   Health Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Languages/Languages.html">
+   Languages Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Mathematics.html">
+   Mathematics Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Science/Sciences.html">
+   Sciences Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../SocialStudies/SocialStudies.html">
+   Social Studies Section
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="../Statistics.html">
+   Statistics Section
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticalReasoning/statistical-reasoning.html">
+     Statistical Reasoning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../IndependentProbability/independent-probability.html">
+     Probability of Independent Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ProbabilityExperiment/probability-experiment.html">
+     Statistics and Probability
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Central Tendancy: Mean, Median, and Mode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html">
+     Central Tendency and Outliers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretingStatisticalData/interpreting-statistical-data.html">
+     Interpreting Statistical Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../InterpretAndAssessOdds/interpret-and-assess-odds.html">
+     Interpret and Assess the Odds
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/statistics-project.html">
+     Statistics Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-soccer.html">
+     Stats Project - Soccer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/example-project-income-per-person.html">
+     Stats Project - Income Per Person
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/climate-monthly.html">
+     Monthly Climate Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/fruit-tree-popularity.html">
+     Fruit Tree Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/gapminder.html">
+     Gapminder Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/gapminder.html#life-expectancy">
+     Life Expectancy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/google-ngram-viewer.html">
+     Google Ngram Viewer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/google-search-trends.html">
+     Google Trends
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/library-indicators.html">
+     Public Library Performance Indicators
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/mapping-tree-locations.html">
+     Mapping Tree Locations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/movie-theatre-releases.html">
+     Movie Theatre Release Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/nba.html">
+     National Basketball Association
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/nhl.html">
+     National Hockey League Statistics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/olympics.html">
+     Olympics Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/pet-popularity.html">
+     Pet Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/spotify-popularity.html">
+     Spotify Popularity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/weather-hourly-canada.html">
+     Hourly Weather in Canada
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../StatisticsProject/AccessingData/wikipedia-mars-missions.html">
+     Mars Missions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../TechnologyStudies/Technology.html">
+   Technology Section
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../afterword.html">
+   Afterword
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/curriculum-notebooks/Mathematics/CentralTendency/central-tendency.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/CentralTendency/central-tendency.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CentralTendency/central-tendency.ipynb&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/CentralTendency/central-tendency.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grade-7-statistics">
+   Grade 7 Statistics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definitions">
+   1. Definitions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-range">
+     What is range?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-mean">
+     What is ‘mean’?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example-1">
+       Example 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example-2">
+       Example 2
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-for-yourself">
+     Try for yourself!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-median">
+     What is median?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Example 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Example 2
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Try for yourself!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-mode">
+     What is mode?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Example 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Example 2
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example-3">
+       Example 3
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Try for yourself!
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactive-bar-graph">
+   2. Interactive bar graph
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instructions">
+     Instructions:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-using-a-large-dataset">
+   Example Using A Large Dataset
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mean">
+     Mean
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#median">
+     Median
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mode">
+     Mode
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-your-own-data-set">
+   Create Your Own Data Set
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-yourself">
+   Test yourself
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#let-s-summarize-what-we-have-learned-in-this-notebook">
+   Let’s summarize what we have learned in this notebook:
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
+<p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/CentralTendency/central-tendency.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%html
+
+&lt;script&gt;
+  function code_toggle() {
+    if (code_shown){
+      $(&#39;div.input&#39;).hide(&#39;500&#39;);
+      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)
+    } else {
+      $(&#39;div.input&#39;).show(&#39;500&#39;);
+      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $(&#39;div.input&#39;).hide()
+  });
+&lt;/script&gt;
+&lt;p&gt; Code is hidden for ease of viewing. Click the Show/Hide button to see. &lt;/&gt;
+&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg<span class="o">=</span>geogebra<span class="se">\&amp;</span><span class="nv">subdirectory</span><span class="o">=</span>geogebra 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting geogebra
+  Cloning git://github.com/callysto/nbplus.git to /tmp/pip-install-uac9m191/geogebra
+Building wheels for collected packages: geogebra
+  Building wheel for geogebra (setup.py) ... ?25ldone
+?25h  Created wheel for geogebra: filename=geogebra-0.0.0-py3-none-any.whl size=6210 sha256=fad11e4e2db79070385ef43a9fff5cc5fe72eaeb5a6ed258197f56f0b7ab9a07
+  Stored in directory: /tmp/pip-ephem-wheel-cache-6e42495v/wheels/a2/4f/cf/ee77bbaa35bfe141f46fc9f8153c9509b1535406d0d68b6086
+Successfully built geogebra
+Installing collected packages: geogebra
+  Attempting uninstall: geogebra
+    Found existing installation: geogebra 0.0.0
+    Uninstalling geogebra-0.0.0:
+      Successfully uninstalled geogebra-0.0.0
+Successfully installed geogebra-0.0.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.mlab</span> <span class="k">as</span> <span class="nn">mlab</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">widgets</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">Layout</span>
+
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">Counter</span>
+<span class="kn">from</span> <span class="nn">array</span> <span class="k">import</span> <span class="n">array</span>
+<span class="kn">import</span> <span class="nn">IPython</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">from</span> <span class="nn">statistics</span> <span class="k">import</span> <span class="n">mean</span><span class="p">,</span> <span class="n">median</span><span class="p">,</span> <span class="n">mode</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">answerList</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">answerList</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="central-tendancy-mean-median-and-mode">
+<h1>Central Tendancy: Mean, Median, and Mode<a class="headerlink" href="#central-tendancy-mean-median-and-mode" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="grade-7-statistics">
+<h2>Grade 7 Statistics<a class="headerlink" href="#grade-7-statistics" title="Permalink to this headline">¶</a></h2>
+<p>This notebook will cover 3 important statistics: mean, median, and mode. These three statistics are known as the measures of central tendency because they tell us where data is centered or clustered together. It will also cover the topic of range.
+Here are a few questions this notebook will answer:</p>
+<ul class="simple">
+<li><p>What is range?</p></li>
+<li><p>What is mean?</p></li>
+<li><p>What is median?</p></li>
+<li><p>What is mode?</p></li>
+<li><p>When do we use each of these statistics?</p></li>
+</ul>
+<p>If you want a good summary of this topic, check out <a class="reference external" href="https://www.mathsteacher.com.au/year8/ch17_stat/02_mean/mean.htm">this website for Australian junior high students</a> or watch the video at the end!</p>
+</div>
+<div class="section" id="definitions">
+<h2>1. Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="https://images-na.ssl-images-amazon.com/images/I/51JWOlyyH9L._SY445_.jpg"><img alt="https://images-na.ssl-images-amazon.com/images/I/51JWOlyyH9L._SY445_.jpg" src="https://images-na.ssl-images-amazon.com/images/I/51JWOlyyH9L._SY445_.jpg" style="width: 200px;" /></a>
+<div class="section" id="what-is-range">
+<h3>What is range?<a class="headerlink" href="#what-is-range" title="Permalink to this headline">¶</a></h3>
+<p>Given a set of values, the range is just the difference between the highest value and the lowest value. This quickly tells us if the values are spread apart or close together.</p>
+<div class="section" id="example">
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+<p>The time it took Avery to walk to school each day this week was 10 minutes, 15 minutes, 12 minutes, 20 minutes, and 8 minutes. What is the range of the time it takes to walk to school?</p>
+<p>range = highest value - lowest value <br>
+range = 20 minutes - 8 minutes <br>
+range = 12 minutes <br></p>
+<p>Based on the value of the range, we know that the time it takes to walk to school can be quite different.</p>
+</div>
+</div>
+<div class="section" id="what-is-mean">
+<h3>What is ‘mean’?<a class="headerlink" href="#what-is-mean" title="Permalink to this headline">¶</a></h3>
+<p>No, we don’t mean being rude to other people. A <strong>mean (sometimes called an average)</strong> of a set of numbers is the sum of all the values divided by the number of number of values.</p>
+<div class="section" id="example-1">
+<h4>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h4>
+<p>Here is a data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9\)</span>
+<br> Number of elements in this data set: <span class="math notranslate nohighlight">\(7\)</span>
+<br>So the mean is:
+$<span class="math notranslate nohighlight">\(\text{mean} = \frac{2 + 6 + 3 + 7 + 5 + 3 + 9}{7} = \frac{35}{7} = 5 \)</span>$</p>
+<p>Now these are just numbers, let’s see where the mean applies in real life.</p>
+<a class="reference internal image-reference" href="../../../_images/positive-classroom.jpg"><img alt="../../../_images/positive-classroom.jpg" src="../../../_images/positive-classroom.jpg" style="width: 300px;" /></a>
+</div>
+<div class="section" id="example-2">
+<h4>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h4>
+<p>In Rose Middle School, there’s 3 classes of Grade 8 students. The first one has 25 students, the second has 18 students, and the third has 20 students. What is the average number of students in one class?
+<br> <strong>Remember that average is the same as mean</strong></p>
+<p>Our set of data is <span class="math notranslate nohighlight">\((25, 18, 20)\)</span> and there is <span class="math notranslate nohighlight">\(3\)</span> elements in this set. Now we can calculate the mean.</p>
+<div class="math notranslate nohighlight">
+\[\text{mean} = \frac{25 + 18 + 20}{3} = \frac{63}{3} = 21 \]</div>
+<p>That means that Grade 8 students in Rose Middle School have an average of 21 students per class.</p>
+<p>Picture from <a class="reference external" href="https://www.teachhub.com/5-effective-teaching-strategies-positive-classroom">teachub.com</a></p>
+</div>
+</div>
+<div class="section" id="try-for-yourself">
+<h3>Try for yourself!<a class="headerlink" href="#try-for-yourself" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">question612</span> <span class="o">=</span> <span class="s2">&quot;What is the mean of the following numbers? </span><span class="se">\n</span><span class="s2"> 10, 91, 39, 71, 17,  39, 76, 37, 25&quot;</span>
+
+<span class="n">answer612</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;45&#39;</span><span class="p">,</span> <span class="s1">&#39;45.11&#39;</span><span class="p">,</span> <span class="s1">&#39;43.67&#39;</span><span class="p">,</span> <span class="s1">&#39;46&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+                             <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">check612</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question612</span><span class="p">,</span> <span class="n">answer612</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer612</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;45&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong answer! Try again.&quot;</span><span class="p">)</span>
+
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question612</span><span class="p">,</span> <span class="n">answer612</span><span class="p">)</span>
+<span class="n">answer612</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check612</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is the mean of the following numbers? 
+ 10, 91, 39, 71, 17,  39, 76, 37, 25
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "537c2c9b4e864a919deb96378877e0c4", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question612&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;612&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer612&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer612&quot;</span><span class="p">&gt;</span>
+To find out the mean of semester 1 we divide the sum of all data by the numbers of data.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+Therefore, Mean $=  \frac{10 + 91 +  39 + 71 + 17 +  39 + 76 + 37 + 25}{9} = 45$ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><html>
+<head>
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="question612">
+ <button id = "612"
+onclick="toggle('answer612');">Solution</button> 
+</div>
+<div style="display:none" id="answer612">
+To find out the mean of semester 1 we divide the sum of all data by the numbers of data.<br/>
+Therefore, Mean $=  \frac{10 + 91 +  39 + 71 + 17 +  39 + 76 + 37 + 25}{9} = 45$ <br/>
+
+
+</div>
+
+</body>
+</html>
+</div></div>
+</div>
+</div>
+<div class="section" id="what-is-median">
+<h3>What is median?<a class="headerlink" href="#what-is-median" title="Permalink to this headline">¶</a></h3>
+<p>Let’s play monkey in the middle!
+The <strong>median</strong> is the middle number in a sequence of numbers.To compute the median, the set needs to be ordered from smallest to largest. Then it’s easy to find the middle number!<br></p>
+<a class="reference internal image-reference" href="https://i0.wp.com/www.thegamegal.com/wp-content/uploads/2016/02/monkey-in-the-middle.png?fit=391%2C501&amp;ssl=1&amp;w=640"><img alt="https://i0.wp.com/www.thegamegal.com/wp-content/uploads/2016/02/monkey-in-the-middle.png?fit=391%2C501&amp;ssl=1&amp;w=640" src="https://i0.wp.com/www.thegamegal.com/wp-content/uploads/2016/02/monkey-in-the-middle.png?fit=391%2C501&amp;ssl=1&amp;w=640" style="width: 275px;" /></a>
+<div class="section" id="id1">
+<h4>Example 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9\)</span>
+<br> Now if we sort the data set: <span class="math notranslate nohighlight">\(2, 3, 3, 5, 6, 7, 9\)</span>
+<br> So, median will be <span class="math notranslate nohighlight">\(5\)</span> because it’s 4 numbers in from both sides</p>
+<p>Did you notice that this data set has an odd number of values? What is the problem if there’s an even number of values in a set? How can we figure out the median? We still want the middle number, so we can’t choose one closer to either the left or the right side. We can average the two numbers closest to the middle to get a true middle number for the whole set!</p>
+</div>
+<div class="section" id="id2">
+<h4>Example 2<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9, 4 \)</span> <br>
+<strong>Notice how there’s 8 values in this set</strong>
+<br> Sorted data set: <span class="math notranslate nohighlight">\(2, 3, 3, 4, 5, 6, 7, 9\)</span>
+<br> There two middle numbers are <span class="math notranslate nohighlight">\(4\)</span> and <span class="math notranslate nohighlight">\(5\)</span>
+<br> Therefore, the median will be <span class="math notranslate nohighlight">\(\frac{(4+5)}{2} = 4.5\)</span></p>
+<p>Picture from <a class="reference external" href="https://www.thegamegal.com/2016/02/02/monkey-in-the-middle-game/">thegamegal.com</a></p>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Try for yourself!<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer622</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;11&#39;</span><span class="p">,</span> <span class="s1">&#39;11.5&#39;</span><span class="p">,</span> <span class="s1">&#39;12&#39;</span><span class="p">,</span> <span class="s1">&#39;12.5&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+                             <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="n">question622</span> <span class="o">=</span> <span class="s2">&quot;Suppose, the front row in your classroom has 23 seats. If you were asked to sit in the seat </span><span class="se">\n</span><span class="s2"> in the median position, in which seat would you have to sit?&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">check622</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question622</span><span class="p">,</span> <span class="n">answer622</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer622</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;12&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong answer! Try again.&quot;</span><span class="p">)</span>
+        
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question622</span><span class="p">,</span><span class="n">answer622</span> <span class="p">)</span>
+<span class="n">answer622</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check622</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Suppose, the front row in your classroom has 23 seats. If you were asked to sit in the seat 
+ in the median position, in which seat would you have to sit?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b4124b602c074dbdba05ee927804ed36", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question622&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;622&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer622&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer622&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
+    The number of seats is odd (23). To find out the median of the seats we need to divide the total number of seats by 2 and we get 11.5. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    So, 12-th seat is in the median position in the first row. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    We can also think of it as the seat 12 has 11 seat on the left, and 11 seats on the right. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    So the correct answer is 12.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><html>
+<head>
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="question622">
+ <button id = "622"
+onclick="toggle('answer622');">Solution</button> 
+</div>
+<div style="display:none" id="answer622">
+    <br/> 
+    The number of seats is odd (23). To find out the median of the seats we need to divide the total number of seats by 2 and we get 11.5. <br/>
+    So, 12-th seat is in the median position in the first row. <br/>
+    We can also think of it as the seat 12 has 11 seat on the left, and 11 seats on the right. <br/>
+    So the correct answer is 12.<br/>
+
+</div>
+
+</body>
+</html>
+</div></div>
+</div>
+</div>
+<div class="section" id="what-is-mode">
+<h3>What is mode?<a class="headerlink" href="#what-is-mode" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>mode</strong> for a data set is the element that occurs the most often.<br>
+It’s possible for a data set to have no modes, one mode, two modes (bimodal), or even three modes (trimodal)!<br>
+To find the mode, you don’t have to sort the set, but it is very helpful to sort it as the mode(s) will be where a number is repeated and that’s easier to see when they are next to each other.</p>
+<a class="reference internal image-reference" href="https://zookyworld.files.wordpress.com/2013/03/stop-repeating.gif"><img alt="https://zookyworld.files.wordpress.com/2013/03/stop-repeating.gif" src="https://zookyworld.files.wordpress.com/2013/03/stop-repeating.gif" style="width: 400px;" /></a>
+<div class="section" id="id4">
+<h4>Example 1<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9\)</span>
+<br> Sorted data set: <span class="math notranslate nohighlight">\(2, 3, 3, 5, 6, 7, 9\)</span>
+<br> Here, only the value <span class="math notranslate nohighlight">\(3\)</span> repeats and all other values only appear once.
+<br>So, mode will be <span class="math notranslate nohighlight">\(3\)</span>.</p>
+</div>
+<div class="section" id="id5">
+<h4>Example 2<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 3, 9, 5, 3, 5, 6 \)</span>
+<br> Sorted data set: <span class="math notranslate nohighlight">\(2, 3, 3, 3,  5, 5, 5,  6, 6, 7, 9\)</span>
+<br> Values <span class="math notranslate nohighlight">\(3\)</span> and <span class="math notranslate nohighlight">\(5\)</span> have same number of repetitions.
+<br> Notice how <span class="math notranslate nohighlight">\(6\)</span> is also repeated but it is not as many times as <span class="math notranslate nohighlight">\(3\)</span> or <span class="math notranslate nohighlight">\(5\)</span> so it is not part of the mode.
+<br>So, the mode will be, <span class="math notranslate nohighlight">\(3, 5\)</span></p>
+</div>
+<div class="section" id="example-3">
+<h4>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h4>
+<p>Data set: <span class="math notranslate nohighlight">\(2, 6, 3, 7, 5, 8, 9, 4 \)</span>
+<br> Sorted data set: <span class="math notranslate nohighlight">\(2, 3, 4, 5, 6, 7, 8, 9\)</span>
+<br>There are no value that repeats.
+<br> So, there is no mode.</p>
+<p>Picture from <a class="reference external" href="https://zookyworld.wordpress.com/2013/03/26/stop-repeating/">zooky world</a></p>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>Try for yourself!<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>A student recorded her scores on weekly math quizzes that were marked out of a possible 10 points. Her scores were as follows: <br>
+5, 6, 9, 8, 9, 10, 7, 6, 8, 7, 6, 7</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer641</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;6&#39;</span><span class="p">,</span> <span class="s1">&#39; 7&#39;</span><span class="p">,</span> <span class="s1">&#39;6 and 7&#39;</span><span class="p">,</span> <span class="s1">&#39;8 and 9&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+                              <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="n">question641</span> <span class="o">=</span> <span class="s2">&quot;What is/are the mode of her records?&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">checkAnswer641</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question641</span><span class="p">,</span> <span class="n">answer641</span> <span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer641</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;6 and 7&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong answer! Try again.&quot;</span><span class="p">)</span>
+
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question641</span><span class="p">,</span> <span class="n">answer641</span><span class="p">)</span>
+<span class="n">answer641</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">checkAnswer641</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is/are the mode of her records?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "af328f903f164d228bc5f4f1bccfe402", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question641&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;641&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer641&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer641&quot;</span><span class="p">&gt;</span>
+At first, let sort the scores on weekly math quizzes: <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    $ 5, 6, 6, 6, 7, 7, 7, 8, 8, 9, 9, 10$ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+From the sorted points, we can imply, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+5 only apears once, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    6 and 7 repeat three times, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    8 and 9 repeat two times, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
+    and 10 only appears once. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+    Therefore, the mode of her scores are: 6 and 7 <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+   
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><html>
+<head>
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="question641">
+ <button id = "641"
+onclick="toggle('answer641');">Solution</button> 
+</div>
+<div style="display:none" id="answer641">
+At first, let sort the scores on weekly math quizzes: <br/>
+    $ 5, 6, 6, 6, 7, 7, 7, 8, 8, 9, 9, 10$ <br/>
+From the sorted points, we can imply, <br/>
+5 only apears once, <br/>
+    6 and 7 repeat three times, <br/>
+    8 and 9 repeat two times, <br/> 
+    and 10 only appears once. <br/>
+    Therefore, the mode of her scores are: 6 and 7 <br/>
+
+</div>
+
+</body>
+</html>
+</div></div>
+</div>
+</div>
+</div>
+<div class="section" id="interactive-bar-graph">
+<h2>2. Interactive bar graph<a class="headerlink" href="#interactive-bar-graph" title="Permalink to this headline">¶</a></h2>
+<p>Now you can play with a bar graph and examine how to calculate mean, median, and mode by changing values of the dataset.</p>
+<div class="section" id="instructions">
+<h3>Instructions:<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Step 1: enter how many data points you have in “Enter the numbers of the dataset.” <strong>Max of 10</strong> <br></p>
+<ul>
+<li><p>based on your input in step 1, sliders will be available (one for each data point). <br></p></li>
+</ul>
+</li>
+<li><p>Step 2: change the value of sliders and see the associated changes in the bar graph.<br></p></li>
+<li><p>Step 3: to show the breakdown for calculating mean check the box Mean, for median check Median and so on.<br></p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;CentralTendancy&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.geogebra.org/material/iframe/id/fnx4j7yg/width/1010/height/476/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;1010px&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;476px&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border:0px;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe scrolling="no" title="CentralTendancy" src="https://www.geogebra.org/material/iframe/id/fnx4j7yg/width/1010/height/476/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1010px" height="476px" style="border:0px;"> </iframe>
+</div></div>
+</div>
+</div>
+</div>
+<div class="section" id="example-using-a-large-dataset">
+<h2>Example Using A Large Dataset<a class="headerlink" href="#example-using-a-large-dataset" title="Permalink to this headline">¶</a></h2>
+<p>We will be using a computer to calculate the mean, median, and mode for both the x and y values of this graph.</p>
+<a class="reference internal image-reference" href="../../../_images/JustTRex.png"><img alt="../../../_images/JustTRex.png" class="align-center" src="../../../_images/JustTRex.png" style="width: 400px; height: 400px;" /></a>
+<p>This dataset was originally created by <a class="reference external" href="http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html">Alberto Cairo</a> which is named “Datasaurus” (for obvious reasons). It was made to show how we shouldn’t blindly trust only central tendency to tell the full picture of the data.</p>
+<p>He also made this data free for everyone to use!</p>
+<p>There are 142 values in this dataset! If you want to compute mean, median, or mode by hand, feel free to display the whole dataset using the button below.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;sources/Datasaurus.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">ToggleButton</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Show dataset&#39;</span><span class="p">,</span><span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">display_data</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">show</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">142</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">show</span><span class="p">)</span>
+
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">show</span><span class="p">)</span>
+<span class="n">show</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">display_data</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "502de61ccebc4a8486450669486b4ee1", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="section" id="mean">
+<h3>Mean<a class="headerlink" href="#mean" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mean </span>
+<span class="n">fullDataframeMean</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fullDataframeMean</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">fullDataframeMean</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x    54.263
+y    47.832
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>What does this tell us?</p>
+<p>We now know that the average of the x values is larger than 50 which means there are <strong>more</strong> dots on the <strong>right</strong> than the left. We also know the average of the y values is less than 50 which means there are <strong>more</strong> dots on the <strong>bottom</strong> than the top.</p>
+<p>We can see this as the T-Rex is on the right of the graph and it took lots of dots to make the details of the claws and bottom jaw compared to the top of the head.</p>
+</div>
+<div class="section" id="median">
+<h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Median</span>
+<span class="n">fullDataframeMedian</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fullDataframeMedian</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">fullDataframeMedian</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x    53.333
+y    46.026
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>What does this tell us?</p>
+<p>We now know what the middles values are so we can find the middle of the T-Rex at this location.</p>
+</div>
+<div class="section" id="mode">
+<h3>Mode<a class="headerlink" href="#mode" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mode</span>
+<span class="n">fullDataFrameMode</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fullDataFrameMode</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">fullDataFrameMode</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  dataset       x       y
+0    dino  29.744  10.641
+</pre></div>
+</div>
+</div>
+</div>
+<p>What does this tell us?</p>
+<p>The mode tells us where to find the straightest line up and down by the x value and the straightest line left to right by the y value.</p>
+<p><a class="reference external" href="https://www.autodeskresearch.com/publications/samestats">Autodesk Research</a> used this dataset to create the “Datasaurus Dozen”. They created 12 new graphs with the same x and y mean as “Datasaurus”.</p>
+<a class="reference internal image-reference" href="../../../_images/DinoSequential.gif"><img alt="../../../_images/DinoSequential.gif" class="align-center" src="../../../_images/DinoSequential.gif" style="width: 400px; height: 400px;" /></a>
+</div>
+</div>
+<div class="section" id="create-your-own-data-set">
+<h2>Create Your Own Data Set<a class="headerlink" href="#create-your-own-data-set" title="Permalink to this headline">¶</a></h2>
+<p>You can click “Show/hide next box” and change the numbers in “YourDataSet”. You can even add new ones or take away some. Try making a set with small numbers and one with large numbers. Try to make sets with an even amount of numbers and an odd amount of numbers.</p>
+<p><em>Just make sure there’s a comma ( , ) between each number.</em></p>
+<p>Then we tell the computer to compute the mean, then the median, then the mode. It’s important to know how to calculate these by hand, but computers are very smart now. We have these tools to help us calculate things like mean, median, and mode once we understand what they mean.</p>
+<p>After making your changes, to run the cell with code below click on the “Run” button at the top or hit “Ctrl+Enter/Return” key.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#found on https://stackoverflow.com/questions/31517194/how-to-hide-one-specific-cell-input-or-output-in-ipython-notebook</span>
+
+<span class="k">def</span> <span class="nf">hide_toggle</span><span class="p">():</span>
+    <span class="n">this_cell</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;$(&#39;div.cell.code_cell.rendered.selected&#39;)&quot;&quot;&quot;</span>
+
+    <span class="n">toggle_text</span> <span class="o">=</span> <span class="s1">&#39;Show/hide next box&#39;</span>  <span class="c1"># text shown on toggle link</span>
+    
+    <span class="n">target_cell</span> <span class="o">=</span> <span class="n">this_cell</span> <span class="o">+</span> <span class="s1">&#39;.next()&#39;</span>
+
+    <span class="n">js_f_name</span> <span class="o">=</span> <span class="s1">&#39;code_toggle_</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="o">**</span><span class="mi">64</span><span class="p">)))</span>
+
+    <span class="n">html</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        &lt;script&gt;</span>
+<span class="s2">            function </span><span class="si">{f_name}</span><span class="s2">() {{</span>
+<span class="s2">                </span><span class="si">{cell_selector}</span><span class="s2">.find(&#39;div.input&#39;).toggle();</span>
+<span class="s2">            }}</span>
+
+<span class="s2">        &lt;/script&gt;</span>
+
+<span class="s2">        &lt;a href=&quot;javascript:</span><span class="si">{f_name}</span><span class="s2">()&quot;&gt;</span><span class="si">{toggle_text}</span><span class="s2">&lt;/a&gt;</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">f_name</span><span class="o">=</span><span class="n">js_f_name</span><span class="p">,</span>
+        <span class="n">cell_selector</span><span class="o">=</span><span class="n">target_cell</span><span class="p">,</span>
+        <span class="n">toggle_text</span><span class="o">=</span><span class="n">toggle_text</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">HTML</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hide_toggle</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+    function code_toggle_270951390898056329() {
+        $('div.cell.code_cell.rendered.selected').next().find('div.input').toggle();
+    }
+
+</script>
+
+<a href="javascript:code_toggle_270951390898056329()">Show/hide next box</a>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">YourDataSet</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="c1">#don&#39;t forget a comma between each number!</span>
+
+<span class="c1">#the word &quot;print&quot; tells the computer to write it below this block so you can read it!</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your mean is: &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mean</span><span class="p">(</span><span class="n">YourDataSet</span><span class="p">))</span> <span class="c1">#this calculates your mean</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your median is: &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">median</span><span class="p">(</span><span class="n">YourDataSet</span><span class="p">))</span> <span class="c1">#this calculates your median</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your mode is: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">mode</span><span class="p">(</span><span class="n">YourDataSet</span><span class="p">))</span> <span class="c1">#this calculates your mode</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There is no mode in your data set&quot;</span><span class="p">)</span> <span class="c1">#this is incase there is no mode</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your mean is: 
+3
+Your median is: 
+3
+Your mode is: 
+There is no mode in your data set
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="test-yourself">
+<h2>Test yourself<a class="headerlink" href="#test-yourself" title="Permalink to this headline">¶</a></h2>
+<p>Try out some of these harder questions on your own!</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">question611</span> <span class="o">=</span> <span class="s2">&quot;What number would you divide by to calculate the mean of 3, 4, 5, and 6?&quot;</span>
+
+<span class="n">answer611</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;4.5&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+                             <span class="n">value</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">checkAnswer</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question611</span><span class="p">,</span> <span class="n">answer611</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer611</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;4&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong answer! Try again.&quot;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">question611</span><span class="p">,</span> <span class="n">answer611</span><span class="p">)</span>
+
+<span class="n">answer611</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">checkAnswer</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What number would you divide by to calculate the mean of 3, 4, 5, and 6?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "4e09ad9874b24f7db1fd1814177afcae", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question611&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;611&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer611&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer611&quot;</span><span class="p">&gt;</span>
+From the definition of mean, we know that we have to divide by the total number of elements in the data set.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+In this case, that number is 4. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+So, to compute the mean, we have to divide the sum of the data set by 4. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><html>
+<head>
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="question611">
+ <button id = "611"
+onclick="toggle('answer611');">Solution</button> 
+</div>
+<div style="display:none" id="answer611">
+From the definition of mean, we know that we have to divide by the total number of elements in the data set.<br/>
+In this case, that number is 4. <br/>
+So, to compute the mean, we have to divide the sum of the data set by 4. <br/>
+
+</div>
+
+</body>
+</html>
+</div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">question621</span> <span class="o">=</span> <span class="s2">&quot;The mean of four numbers is 71.5. If three of the numbers are 58, 76, and 88, what is the value of the fourth number?&quot;</span>
+
+<span class="n">answer621</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;62&#39;</span><span class="p">,</span> <span class="s1">&#39;73.37&#39;</span><span class="p">,</span> <span class="s1">&#39;64&#39;</span><span class="p">,</span> <span class="s1">&#39;74&#39;</span><span class="p">,</span>  <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+                              <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">check621</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question621</span><span class="p">,</span> <span class="n">answer621</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer621</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;64&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong answer! Try again.&quot;</span><span class="p">)</span>
+        
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question621</span><span class="p">,</span> <span class="n">answer621</span><span class="p">)</span>
+<span class="n">answer621</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check621</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The mean of four numbers is 71.5. If three of the numbers are 58, 76, and 88, what is the value of the fourth number?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "d817329439b2499794a9eee16bf0b442", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question621&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;621&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer621&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer621&quot;</span><span class="p">&gt;</span>
+We are given three numbers but told the mean of four numbers is 71.5. Let assume the fourth number is x. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+So, by the definition of mean, we can write <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+$\frac{58 + 76 + 88 + x}{4} = 71.5 $ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+or, $222 + x = 71.5 \times 4 $ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+or, $x = 286 - 222 $ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+or, $x = 64 $ <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+Therefore, the fourth number is 64. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><html>
+<head>
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="question621">
+ <button id = "621"
+onclick="toggle('answer621');">Solution</button> 
+</div>
+<div style="display:none" id="answer621">
+We are given three numbers but told the mean of four numbers is 71.5. Let assume the fourth number is x. <br/>
+So, by the definition of mean, we can write <br>
+$\frac{58 + 76 + 88 + x}{4} = 71.5 $ <br/>
+
+or, $222 + x = 71.5 \times 4 $ <br/>
+
+or, $x = 286 - 222 $ <br/>
+
+or, $x = 64 $ <br/>
+
+Therefore, the fourth number is 64. <br/>
+
+
+</div>
+
+</body>
+</html>
+</div></div>
+</div>
+<p>Sara tried to compute the mean average of her 8 test scores. She mistakenly divided the correct sum of all her test scores by 7, which yields 96.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer631</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;78&#39;</span><span class="p">,</span> <span class="s1">&#39;83.5&#39;</span><span class="p">,</span> <span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="s1">&#39;84&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+                             <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="n">question631</span> <span class="o">=</span> <span class="s2">&quot;What is Sara&#39;s mean test score? (Source: dummies)&quot;</span>
+
+<span class="k">def</span> <span class="nf">check631</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question631</span><span class="p">,</span> <span class="n">answer631</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer631</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;84&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong answer! Try again.&quot;</span><span class="p">)</span>
+        
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question631</span><span class="p">,</span> <span class="n">answer631</span><span class="p">)</span>
+<span class="n">answer631</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check631</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What is Sara&#39;s mean test score? (Source: dummies)
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0c481c3833944a7784b2ca35da3a70c2", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question631&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;631&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer631&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer631&quot;</span><span class="p">&gt;</span>
+You know the test score mean of Sara when divided by 7, you can determine the sum of her scores. This information will then allow you
+to determine her mean average over eight tests.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+Apply the average formula to her wrong calculation. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+96 = sum of scores ÷ 7 <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+96 × 7 = sum of scores <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+672 = sum of scores <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
+
+Now that you know her test score sum, you can figure her true mean average.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
+
+Mean average = 672 ÷ 8 <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+Mean average = 84 <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+So, the correct answer is D. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><html>
+<head>
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="question631">
+ <button id = "631"
+onclick="toggle('answer631');">Solution</button> 
+</div>
+<div style="display:none" id="answer631">
+You know the test score mean of Sara when divided by 7, you can determine the sum of her scores. This information will then allow you
+to determine her mean average over eight tests.<br/>
+
+Apply the average formula to her wrong calculation. <br/>
+
+96 = sum of scores ÷ 7 <br/>
+
+96 × 7 = sum of scores <br/>
+
+672 = sum of scores <br/> 
+
+Now that you know her test score sum, you can figure her true mean average.<br/> 
+
+Mean average = 672 ÷ 8 <br/>
+
+Mean average = 84 <br/>
+
+So, the correct answer is D. <br/>
+
+</div>
+
+</body>
+</html>
+</div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer632</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;32, 34, 35, 36&#39;</span><span class="p">,</span> <span class="s1">&#39;32, 35, 36, 41&#39;</span><span class="p">,</span> <span class="s1">&#39;32, 34, 40, 44&#39;</span><span class="p">,</span> <span class="s1">&#39;32, 32, 38, 38&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+                             <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="n">question632</span> <span class="o">=</span> <span class="s2">&quot;A set of four numbers that begins with the number 32 is arranged from smallest to largest.</span><span class="se">\n</span><span class="s2"> If the median is 35, which of the following could be the set of numbers?&quot;</span>
+
+<span class="k">def</span> <span class="nf">check632</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question632</span><span class="p">,</span> <span class="n">answer632</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer632</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;32, 32, 38, 38&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong answer! Try again.&quot;</span><span class="p">)</span>
+        
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question632</span><span class="p">,</span> <span class="n">answer632</span><span class="p">)</span>
+<span class="n">answer632</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check632</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A set of four numbers that begins with the number 32 is arranged from smallest to largest.
+ If the median is 35, which of the following could be the set of numbers?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "48cd0aa052aa490a959063935ee9a1a5", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question632&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;632&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer632&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer632&quot;</span><span class="p">&gt;</span>
+We are given the median of four numbers 35. We can imply from the given information is that the sum <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> 
+of the numbers is 140. Now we check all the choices one by one. We add all the numbers of the first choice and get 137. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+So it is not our correct answer. <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+Similarly, for the next choices we get 144, 150, and 140 for second, third and fourth choices, respectively, <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+Therefore, the correct series is: 32, 32, 38, 38.<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><html>
+<head>
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="question632">
+ <button id = "632"
+onclick="toggle('answer632');">Solution</button> 
+</div>
+<div style="display:none" id="answer632">
+We are given the median of four numbers 35. We can imply from the given information is that the sum <br/> 
+of the numbers is 140. Now we check all the choices one by one. We add all the numbers of the first choice and get 137. <br/>
+So it is not our correct answer. <br/>
+Similarly, for the next choices we get 144, 150, and 140 for second, third and fourth choices, respectively, <br/>
+Therefore, the correct series is: 32, 32, 38, 38.<br/>
+
+</div>
+
+</body>
+</html>
+</div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer642</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;19&#39;</span><span class="p">,</span> <span class="s1">&#39;None of the above&#39;</span><span class="p">],</span>
+                             <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>  <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Choices:&#39;</span><span class="p">)</span>
+
+<span class="n">question642</span> <span class="o">=</span> <span class="s2">&quot;The average of five positive integers is less than 20. What is the smallest possible median of this set?&quot;</span>
+
+<span class="k">def</span> <span class="nf">check642</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+    <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">question642</span><span class="p">,</span> <span class="n">answer642</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer642</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct Answer!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong answer! Try again.&quot;</span><span class="p">)</span>
+
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">question642</span><span class="p">,</span> <span class="n">answer642</span><span class="p">)</span>
+<span class="n">answer642</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">check642</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The average of five positive integers is less than 20. What is the smallest possible median of this set?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c213560d3c95446d9d80f5a6dda8f729", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+<span class="k">else</span>
+<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">//--&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;question642&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;642&quot;</span>
+<span class="na">onclick</span><span class="o">=</span><span class="s">&quot;toggle(&#39;answer642&#39;);&quot;</span><span class="p">&gt;</span>Solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;display:none&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;answer642&quot;</span><span class="p">&gt;</span>
+As we are given that the numbers are positive integers that means all numbers should be
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>greater than or equal 1. Let assume the five numbers are 1, 1, 1, 1, 16. The sum is equal
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>to 20, and the average is 20/5 = 4 which is less than 20. All given conditions are satisfied. 
+<span class="p">&lt;</span><span class="nt">br</span> <span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>Therefore, the smallest possible median is 1. <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><html>
+<head>
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="question642">
+ <button id = "642"
+onclick="toggle('answer642');">Solution</button> 
+</div>
+<div style="display:none" id="answer642">
+As we are given that the numbers are positive integers that means all numbers should be
+<br/>greater than or equal 1. Let assume the five numbers are 1, 1, 1, 1, 16. The sum is equal
+<br/>to 20, and the average is 20/5 = 4 which is less than 20. All given conditions are satisfied. 
+<br > <b>Therefore, the smallest possible median is 1. <b> <br/>
+
+</div>
+
+</body>
+</html>
+</div></div>
+</div>
+</div>
+<div class="section" id="let-s-summarize-what-we-have-learned-in-this-notebook">
+<h2>Let’s summarize what we have learned in this notebook:<a class="headerlink" href="#let-s-summarize-what-we-have-learned-in-this-notebook" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Mean is the average and is found by adding all values then dividing my the quantity of values</p></li>
+<li><p>Median is the middle value and is found by sorting the set and finding the middle</p></li>
+<li><p>Mode is the most used value and is found by counting how many times a value is repeated</p></li>
+<li><p>Range is the highest value minus the lowest value</p></li>
+</ul>
+<p>Here is a video made by Dylan Peters EDU that is a parody of the song Lazy Song by Bruno Mars that sums up these 4 concepts.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;560&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;315&quot;</span><span class="p">,</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://www.youtube.com/embed/IHginNwss5c&quot;</span><span class="p">,</span> <span class="n">allow</span><span class="o">=</span><span class="s2">&quot;accelerometer; encrypted-media; gyroscope; picture-in-picture; allowfullscreen&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/IHginNwss5c?allow=accelerometer%3B+encrypted-media%3B+gyroscope%3B+picture-in-picture%3B+allowfullscreen"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./curriculum-notebooks/Mathematics/CentralTendency"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../ProbabilityExperiment/probability-experiment.html" title="previous page">Statistics and Probability</a>
+    <a class='right-next' id="next-link" href="../CentralTendencyAndOutlier/outliers-and-central-tendency.html" title="next page">Central Tendency and Outliers</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Callysto.ca (A joint project of Cybera Inc and the Pacific Institute for the Mathematical Sciences)<br/>
+        
+            &copy; <a href="../../../copyright.html">Copyright</a> 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../../_static/js/index.js"></script>
+    
+  </body>
+</html>
