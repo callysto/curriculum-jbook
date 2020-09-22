@@ -1,1 +1,0 @@
-# English Language Arts Section
