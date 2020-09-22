@@ -561,6 +561,28 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<p> Code is hidden for ease of viewing. Click the Show/Hide button to see. </>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+</div></div>
 </div>
 <div class="section" id="patterns-oral-and-written">
 <h1>Patterns: Oral and written<a class="headerlink" href="#patterns-oral-and-written" title="Permalink to this headline">¶</a></h1>
@@ -617,6 +639,49 @@ Here are some examples of patterns in action:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column">
+    <p style="text-align: center;"> <b>Nature</b></p> 
+<img src="https://i.redd.it/f3y77ihpx5cy.gif" alt="drawing" style="width: 400px;"/>
+  </div>
+  <div class="column">
+    <p style="text-align: center;"><b>Greek Mythology</b>
+<img src="http://www.gifmania.co.uk/Fantasy-Animated-Gifs/Animated-Fantasy-Animals/Hydra/Jason-Vs-Hydra-87071.gif" alt="drawing" style="width: 400px;"/>
+  </div>
+  <div class="column">
+   <p style="text-align: center;"><b>Building</b>
+    <img src="https://media1.giphy.com/media/3o85xkpCruOJPGtBMQ/giphy.gif" alt="drawing" style="width: 400px;"/>
+  </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</html></div></div>
 </div>
 <p>One of the fun parts of math is discovering how we can use math to understand the world around us. Today we’re going to learn how math can help us understand patterns!</p>
 </div>
@@ -703,6 +768,9 @@ Here are some examples of patterns in action:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></div></div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
@@ -738,6 +806,36 @@ Here are some examples of patterns in action:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<form id="frm1_diff" action="/action_page.php">
+    Enter the <b>difference</b> for the arithmetic sequence:
+    <input type="number" name="quantity" value="3" min="1" max="5">
+</form>
+
+<form id="frm2_initArith" action="/action_page.php">
+    Enter the <b>inital value</b> for the arithmetic sequence:
+    <input type="number" name="quantity" value="1" min="0" max="50">
+</form>
+
+<div id="arithButton">
+     <i>Run the cell before plotting</i>
+    <input name="Plot sequence"
+           type="button"
+           value="Plot sequence"
+        />
+</div>
+
+<svg width="1100" height="120" id="ARITH">
+
+    <line x1="0" y1="50" x2="1000" y2="50" stroke="black"/>
+    <rect x="0" y="30" width="2" height="40" fill="black"/>
+    <rect x="983" y="30" width="2" height="40" fill="black"/>
+    <text x="970" y="85" fill="black">50</text>
+    <text x="0" y="85" fill="black">0</text>
+</svg>
+<script src="./scripts/ArithmeticNumberLine.js"</script>
+</div></div>
 </div>
 </div>
 </div>
@@ -829,6 +927,36 @@ Here are some examples of patterns in action:</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+
+<form id="frm1_ratio" action="/action_page.php">
+    Enter the <b>common ratio</b> for the geometric sequence:
+    <input type="number" name="quantity" value="3" min="1" max="5">
+</form>
+
+<form id="frm2_initGeo" action="/action_page.php">
+    Enter the <b>inital value</b> for the geometric sequence:
+    <input type="number" name="quantity" value="1" min="0" max="50">
+</form>
+
+<div id="geoButton">
+    <i>Run the cell before plotting</i>
+    <input name="Plot sequence"
+           type="button"
+           value="Plot sequence"
+        />
+</div>
+
+<svg width="1000" height="120" id="GEO">
+
+    <line x1="0" y1="50" x2="1000" y2="50" stroke="black"/>
+    <rect x="0" y="30" width="2" height="40" fill="black"/>
+    <text x="0" y="85" fill="black">0</text>
+    <rect x="983" y="30" width="2" height="40" fill="black"/>
+    <text x="970" y="85" fill="black">50</text>
+</svg>
+<script src="./scripts/GeometricNumberLine.js"></script></div></div>
 </div>
 </div>
 <div class="section" id="arithmetic-and-geometric-questions">
@@ -867,7 +995,7 @@ Here are some examples of patterns in action:</p>
 </div>
 <div class="section" id="the-fibonacci-sequence">
 <h2>The Fibonacci Sequence<a class="headerlink" href="#the-fibonacci-sequence" title="Permalink to this headline">¶</a></h2>
-<p><img alt="" src="curriculum-notebooks/Mathematics/OralAndWrittenPatterns/img/frazzComic.gif" /></p>
+<p><img alt="" src="../../../_images/frazzComic.gif" /></p>
 <p>We have just scratched the surface of patterns. While arithmetic and geometric sequences are quite useful, there are also other unique patterns which are quite interesting to look at. One of the most famous patterns is called the Fibonacci Sequence. We can find examples of it all throughout nature. That green gif at the beginning of this notebook is a Romanesco Broccoli, and the number of spirals on one head is a Fibonacci number. A <strong>Fibonacci number</strong> is any number which appears in the Fibonacci sequence. More locally, the Fibonacci sequence arises if we look at the cones of a pine tree. The rule for the Fibonacci sequence is a bit more complex than the previous sequences we’ve looked at, as it’s not increasing by a constant or a constant ratio. Instead, to get the next term in the sequence, we add the previous two terms together. Here’s the rule expressed mathematically:</p>
 <p><span class="math notranslate nohighlight">\(x_n = x_{n-1} + x_{n-2} \text{  ( if n is bigger than 2 )}\)</span></p>
 <p><span class="math notranslate nohighlight">\(x_1 = 1 \textit{ and } x_2 = 1\)</span></p>
@@ -921,7 +1049,7 @@ to look at some other pinecones and their spirals.</p></li>
 <li><p>What if we changed the starting two terms in the Fibonacci sequence for other numbers? Try substituting in different numbers and drawing the new sequence in a graph, number line or writing it in table. It won’t be the Fibonacci sequence but a new sequence you came up with, what are you going to name your new discovery?</p></li>
 <li><p>How many dots are in the following triangle? Remember that we can use the rule described above to save a lot of time and frustration counting! (Hint: Start by figuring out what your n value is, what does n mean? )</p></li>
 </ul>
-<p><img alt="" src="curriculum-notebooks/Mathematics/OralAndWrittenPatterns/img/big_triang.svg" /></p>
+<p><img alt="" src="../../../_images/big_triang.svg" /></p>
 </div>
 </div>
 <div class="section" id="conclusion">

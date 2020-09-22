@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -608,8 +606,8 @@ function run_all(){
 <div class="section" id="experimental-probability">
 <h3>Experimental Probability<a class="headerlink" href="#experimental-probability" title="Permalink to this headline">¶</a></h3>
 <p>One way of estimating the probability of an event is to do so experimentally.  If we do an experiment <span class="math notranslate nohighlight">\(x\)</span> times and the event we want occurs <span class="math notranslate nohighlight">\(n\)</span> times, then the <strong>experimental probability</strong> of the event is just:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-448821ab-1efc-4f69-9ecd-3cf52b8a3511">
-<span class="eqno">(101)<a class="headerlink" href="#equation-448821ab-1efc-4f69-9ecd-3cf52b8a3511" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b1e2ffc5-8d82-485e-8636-3d214e73348f">
+<span class="eqno">(89)<a class="headerlink" href="#equation-b1e2ffc5-8d82-485e-8636-3d214e73348f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \text{Probability of an event happening} = \dfrac{\text{Number of occurrences of event}}{\text{Number of experiments done}}=\dfrac{n}{x}
 \end{equation}\]</div>
 <div class="section" id="question">
@@ -899,8 +897,8 @@ function run_all(){
 <div class="section" id="calculating-the-probability-of-independent-events-theoretically">
 <h2>Calculating the Probability of Independent Events Theoretically<a class="headerlink" href="#calculating-the-probability-of-independent-events-theoretically" title="Permalink to this headline">¶</a></h2>
 <p>We have seen how to estimate the probability of an event experimentally.  In many cases we can calculate an exact <strong>theoretical probability</strong> using the following formula:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8bbef7d7-098a-4f3f-b3fb-c1cc5ac555ff">
-<span class="eqno">(102)<a class="headerlink" href="#equation-8bbef7d7-098a-4f3f-b3fb-c1cc5ac555ff" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7d8f6f52-454e-4818-916c-ae6e08c911e2">
+<span class="eqno">(90)<a class="headerlink" href="#equation-7d8f6f52-454e-4818-916c-ae6e08c911e2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \text{Probability of an event happening} = \dfrac{\text{Number of ways it can happen}}{\text{Total number of possible outcomes}}
 \end{equation}\]</div>
 <p><strong>Example:</strong> What is the probability of getting a “Tail” when tossing a coin?</p>
@@ -1057,8 +1055,8 @@ function run_all(){
 <h3>Computing Multiple Independent Event Probabilities Theoretically<a class="headerlink" href="#computing-multiple-independent-event-probabilities-theoretically" title="Permalink to this headline">¶</a></h3>
 <p><strong>Question:</strong> How do we quickly compute the theoretical probability of getting three Heads on a flip of three coins?</p>
 <p><strong>Answer:</strong> We can calculate the chances of two or more <strong>independent</strong> events by <strong>multiplying</strong> the chances. For each toss of a coin, a “Head” has a probability of 0.5. And so the chance of getting <strong>three Heads in a row is</strong>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-db143fb3-f0b9-4412-9938-294acf0b52da">
-<span class="eqno">(103)<a class="headerlink" href="#equation-db143fb3-f0b9-4412-9938-294acf0b52da" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-64c78f1b-1261-4c0d-8b07-f1fe96c41b20">
+<span class="eqno">(91)<a class="headerlink" href="#equation-64c78f1b-1261-4c0d-8b07-f1fe96c41b20" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 0.5 \times 0.5 \times 0.5 = \boldsymbol{0.125}
 \end{equation}\]</div>
 <a class="reference internal image-reference" href="../../../_images/TREEFINAL.svg"><img alt="../../../_images/TREEFINAL.svg" src="../../../_images/TREEFINAL.svg" width="50%" /></a>
@@ -1123,13 +1121,13 @@ function run_all(){
 <div class="section" id="a-cleaner-notation">
 <h3>A Cleaner Notation<a class="headerlink" href="#a-cleaner-notation" title="Permalink to this headline">¶</a></h3>
 <p>Typically, we use “P” to mean “Probability Of”. For Independent Events, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6bf80b06-c7cf-4ea7-9942-0fa57a1c1c5c">
-<span class="eqno">(104)<a class="headerlink" href="#equation-6bf80b06-c7cf-4ea7-9942-0fa57a1c1c5c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b0d23800-ab85-4d6e-90cb-b5ac15c76c6f">
+<span class="eqno">(92)<a class="headerlink" href="#equation-b0d23800-ab85-4d6e-90cb-b5ac15c76c6f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
     \text{P(A and B) = P(A)} \times \text{P(B)}
 \end{equation}\]</div>
 <p>So we denote “the probability of getting 2 heads in a row” by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-35b3cea5-74c8-45f0-a938-89ad9a65fc78">
-<span class="eqno">(105)<a class="headerlink" href="#equation-35b3cea5-74c8-45f0-a938-89ad9a65fc78" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3c10ca93-c081-4ec2-b3cc-73bc97527a1e">
+<span class="eqno">(93)<a class="headerlink" href="#equation-3c10ca93-c081-4ec2-b3cc-73bc97527a1e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
     \text{P(Heads and Heads) = P(Heads)} \times \text{P(Heads) = 0.5} \times \text{0.5 = 0.25}. 
 \end{equation}\]</div>
 </div>

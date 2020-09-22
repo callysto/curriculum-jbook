@@ -148,8 +148,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -424,7 +424,7 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/NonLogarithmicHalfLifeCalculations/non-logarithmic-half-life-calculations.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span>
@@ -453,6 +453,25 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide();
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show();
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form</div></div>
 </div>
 <div class="section" id="half-life-calculations">
 <h1>Half life calculations<a class="headerlink" href="#half-life-calculations" title="Permalink to this headline">¶</a></h1>
@@ -471,7 +490,7 @@ in a sample will decay in a given time.</p>
 <p>This type of relationship results in an <strong>exponential</strong> decay of the sample. If we have an initial number (<span class="math notranslate nohighlight">\(N_0\)</span>) of radioactive nuclei with half-life <span class="math notranslate nohighlight">\(t_{1/2}\)</span>, the number of nuclei remaining (<span class="math notranslate nohighlight">\(N\)</span>) after a time <span class="math notranslate nohighlight">\(t\)</span> is given by the equation:</p>
 <p><img alt="decay eqn" src="../../../_images/decay_eqn.png" /></p>
 <p>Below is the plot of a radiation curve of an imaginary element with a half-life of <strong>4 days</strong>.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">N</span><span class="p">(</span><span class="n">N_0</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">t_hl</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">N_0</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">t_hl</span><span class="p">)</span>
@@ -491,11 +510,14 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/non-logarithmic-half-life-calculations_8_0.png" src="../../../_images/non-logarithmic-half-life-calculations_8_0.png" />
+</div>
 </div>
 <p>We can tell the half-life of the element from the graph quite easily. At time <span class="math notranslate nohighlight">\(t=0\)</span>, we initially have 4 grams of the substance. After a time of <span class="math notranslate nohighlight">\(t_{1/2}\)</span> passes, half of the substance will decay, so there will be 2 grams left. From the graph, we can see that there are 2 grams eft after exactly 4 days. Thus, for this element, <span class="math notranslate nohighlight">\(t_{1/2} = 4\)</span> days.</p>
 <hr class="docutils" />
 <p>Below we will present some more radiation curves. Try to determine the half-life of the element, just as we did here. <strong>To check if your answer is correct, press the Enter key after you type your answer in each text box.</strong></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;images/iodine-131.png&quot;</span><span class="p">,</span><span class="s2">&quot;rb&quot;</span><span class="p">)</span>
 <span class="n">image</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -523,8 +545,14 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a1af6a6be78d4766955bffa14ddb4da6", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "73e2cb5900b748a99536d457604e3174", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;images/caesium-137.png&quot;</span><span class="p">,</span><span class="s2">&quot;rb&quot;</span><span class="p">)</span>
 <span class="n">image</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -552,8 +580,14 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7349d7da5c004901b1ef3437f5bd10db", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "468eff15f86c45beae088728a562dfcd", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;images/curium-245.png&quot;</span><span class="p">,</span><span class="s2">&quot;rb&quot;</span><span class="p">)</span>
 <span class="n">image</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -581,32 +615,43 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "12562abec7754541957cb3e9fd9ff1b9", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "bcbdccb59357474a96c0fd522c9e4fe7", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <hr class="docutils" />
 <p>We can also use the concept of half-life to determine how long it will take for a given element to decay to some fraction of its original amount. This is the basis of radiometric dating. Carbon-14 is frequently used in <strong>radiocarbon dating</strong>, where by measuring the ratio of carbon-12 to carbon-14, scientists can reveal the age of ancient objects. Carbon-14 is created by high-energy cosmic rays interacting with Earth’s atmosphere. The carbon-14 is then absorbed by plants, thus entering the food chain. When living matter dies, it stops absorbing carbon, and the unstable carbon-14 decays, while the stable carbon-12 does not. If the amount of carbon-12 and carbon-14 were initially the same, then by finding the ratio today, we can find how old the object is.</p>
 <p><img alt="carbon-14" src="../../../_images/c14.jpg" /></p>
 <center>http://geologylearn.blogspot.com/2015/09/carbon-dating.html</center>
 <p>(<em>Ex 16.12, Pearson Physics</em>) Consider carbon-14, which has a half-life of 5730 years. How long will it take for there to be 1/8 the original amount of carbon-14 remaining in a sample?</p>
-<blockquote>
-<div><p>We know that the half-life of carbon-14 is 5730 years, and that from the decay equation:
+<p><strong>ANSWER</strong></p>
+<p>We know that the half-life of carbon-14 is 5730 years, and that from the decay equation:
 <span class="math notranslate nohighlight">\(N = N_0\left(\frac{1}{2}\right)^{t/t_{1/2}} = \frac{1}{8}N_0\)</span></p>
-<p>Thus for one-eighth to remain:
-<span class="math notranslate nohighlight">\(\left(\frac{1}{2}\right)^{t/t_{1/2}} = \frac{1}{8}\)</span></p>
-<p>If we think in terms of half-lives, we can see that <strong>three</strong> half-lives will reduce the quantity by one-eighth, since
-<span class="math notranslate nohighlight">\(\frac{1}{2}\times\frac{1}{2}\times\frac{1}{2} = \frac{1}{8}\)</span></p>
+<p>Thus for one-eighth to remain:</p>
+<div class="math notranslate nohighlight">
+\[\left(\frac{1}{2}\right)^{t/t_{1/2}} = \frac{1}{8}\]</div>
+<p>If we think in terms of half-lives, we can see that <strong>three</strong> half-lives will reduce the quantity by one-eighth, since</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2}\times\frac{1}{2}\times\frac{1}{2} = \frac{1}{8}\]</div>
 <p>Thus,</p>
-<center>$\frac{t}{t_{1/2}} = 3$
-<center>$t = 3 \ t_{1/2}$
-<center>$t = 3\times(5730~\text{years})$
-<center>$t = 17 190$ years
+<div class="math notranslate nohighlight">
+\[\frac{t}{t_{1/2}} = 3\]</div>
+<div class="math notranslate nohighlight">
+\[t = 3 \ t_{1/2}\]</div>
+<div class="math notranslate nohighlight">
+\[t = 3\times(5730~\text{ years})\]</div>
+<div class="math notranslate nohighlight">
+\[t = 17,190 \text{ years}\]</div>
 <p>It will take over 17 thousand years for <span class="math notranslate nohighlight">\(7/8\)</span> of carbon-14 to decay!</p>
-</div></blockquote>
 <p>We could also solve this problem by looking at the decay curve of carbon-14.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 
-<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;Here is the decay curve of carbon-14. We will use this graph to roughly determine how long it will take for 1/8 of the original amount to remain, or 12.5%.&#39;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="s1">&#39;Here is the decay curve of carbon-14. We will use this graph to roughly determine how long it will take for 1/8 of the original amount to remain, or 12.5%.&#39;</span><span class="p">)</span>
 
 <span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">40000</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">7</span><span class="p">));</span>
@@ -623,10 +668,16 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Here is the decay curve of carbon-14. We will use this graph to roughly determine how long it will take for 1/8 of the original amount to remain, or 12.5%.&#39;
+</pre></div>
 </div>
-<div class="cell docutils container">
+<img alt="../../../_images/non-logarithmic-half-life-calculations_14_1.png" src="../../../_images/non-logarithmic-half-life-calculations_14_1.png" />
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Let&#39;s pretend we don&#39;t know what the half-life of carbon-14 is. However, we do still know that after one half-life, 50</span><span class="si">% o</span><span class="s2">f our carbon-14 will remain. Let&#39;s mark this point on the graph.&quot;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="s2">&quot;Let&#39;s pretend we don&#39;t know what the half-life of carbon-14 is. However, we do still know that after one half-life, 50</span><span class="si">% o</span><span class="s2">f our carbon-14 will remain. Let&#39;s mark this point on the graph.&quot;</span><span class="p">)</span>
 
 <span class="n">button_1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;First half-life&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;click me to continue&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 
@@ -654,10 +705,17 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;Let&#39;s pretend we don&#39;t know what the half-life of carbon-14 is. However, we do still know that after one half-life, 50% of our carbon-14 will remain. Let&#39;s mark this point on the graph.&quot;
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "570ef8438f62412c9a404568a4eeb5c4", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;After another half-life, another 50</span><span class="si">% o</span><span class="s1">f the remaining carbon-14 will decay. This means we will have 25</span><span class="si">% o</span><span class="s1">f the original amount we started out with.&#39;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="s1">&#39;After another half-life, another 50</span><span class="si">% o</span><span class="s1">f the remaining carbon-14 will decay. This means we will have 25</span><span class="si">% o</span><span class="s1">f the original amount we started out with.&#39;</span><span class="p">)</span>
 
 <span class="n">button_2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Second half-life&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;click me to continue&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 
@@ -687,10 +745,17 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;After another half-life, another 50% of the remaining carbon-14 will decay. This means we will have 25% of the original amount we started out with.&#39;
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "68f6b6d47d4f4d6a8bd6542089055eb0", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;After yet another half-life, another half of the remaining carbon-14 will decay. This means we will have 12.5</span><span class="si">% o</span><span class="s1">f the original amount we started out with - this is the quantity we are looking for!&#39;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="s1">&#39;After yet another half-life, another half of the remaining carbon-14 will decay. This means we will have 12.5</span><span class="si">% o</span><span class="s1">f the original amount we started out with - this is the quantity we are looking for!&#39;</span><span class="p">)</span>
 <span class="n">button_3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Third half-life&#39;</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;click me to continue&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 <span class="n">html_w</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">()</span>
 
@@ -725,13 +790,22 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;After yet another half-life, another half of the remaining carbon-14 will decay. This means we will have 12.5% of the original amount we started out with - this is the quantity we are looking for!&#39;
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "89a58d6ac75b4c80b2affc009b29ee64", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "fd30f1b1974f49729263476e6e910ff6", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="problems">
 <h2>Problems<a class="headerlink" href="#problems" title="Permalink to this headline">¶</a></h2>
 <p>Try the following problems on your own. You can always refer to the above examples if you get stuck!</p>
 <p><strong>1. Uranium-235 has a half-life of 703.8 million years. Suppose you find a large pile of rock containing 1kg of uranium-235 on a treasure hunt. Assume the pile formed at the same time the Earth did, approximately 4.6 billion years ago. How much uranium-235 was initially in the pile?</strong></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">placeholder</span> <span class="o">=</span> <span class="s2">&quot;Submit your answer here&quot;</span><span class="p">)</span>
 <span class="n">counter1</span> <span class="o">=</span> <span class="mi">0</span>
@@ -759,9 +833,13 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7311452bb4e544449358125c2cdb1304", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>2. You are doing an experiment with radon-222. You initially have 6.2 grams of radon-222, and after 15.3 days, you have 0.3875 grams of radon-222 remaining. What is the half-life of radon-222, in seconds?</strong></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">placeholder</span> <span class="o">=</span> <span class="s2">&quot;Submit your answer here&quot;</span><span class="p">)</span>
 <span class="n">counter2</span> <span class="o">=</span> <span class="mi">0</span>
@@ -797,12 +875,16 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6e00aed1b8404ec49b422d4abf492cfb", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>3. On April 26, 1986 the Chernobyl Nuclear Power Plant suffered a catastrophic failure of one of its reactor cores. The disaster scattered deadly radioactive contamination around the globe. Some of the radioactive substances released were iodine-131, caesium-137, strontium-90, and plutonium-241, which in turn decays into americium-241.  A 30 kilometer exclusion zone has been established surrounding the power plant to protect humans from absorbing any of the remaining deadly radiation.</strong></p>
 <p><img alt="chernobyl" src="../../../_images/chernobyl.jpg" /></p>
 <center> Abandoned apartments buildings in the town of Pripyat near Chernobyl, Ukraine,  Mar 23, 2016. https://abcnews.go.com/International/virtual-tour-chernobyl-30-years-worlds-worst-nuclear/story?id=38665693</center>
 <p><strong>Assume that the exclusion zone will be safe to re-enter when the amount of radiation has reduced to <span class="math notranslate nohighlight">\(7\times 10^{-13}\)</span> % of its initial value immediately following the nuclear disaster. Look up the half-lives of the elements mentioned above <a class="reference external" href="https://www.greenfacts.org/en/chernobyl/toolboxes/half-life-radioisotopes.htm">here</a>, and determine how long it will be before humans can safely re-enter this zone.</strong></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">placeholder</span> <span class="o">=</span> <span class="s2">&quot;Submit your answer here&quot;</span><span class="p">)</span>
 <span class="n">counter3</span> <span class="o">=</span> <span class="mi">0</span>
@@ -835,6 +917,10 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b8570d5b909141d296fb6567d911401a", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="graphing-problems">
@@ -880,11 +966,11 @@ in a sample will decay in a given time.</p>
 </tr>
 </tbody>
 </table>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;To make a plot of the data, we need to first enter it in a form python can read. Input the time data with the following syntax:&#39;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="s1">&#39;To make a plot of the data, we need to first enter it in a form python can read. Input the time data with the following syntax:&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;time = [25, 50, ...]&#39;</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;Make sure that you enter the time entries in order from the top of the table to the bottom.&#39;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="s1">&#39;Make sure that you enter the time entries in order from the top of the table to the bottom.&#39;</span><span class="p">)</span>
 <span class="n">time_check</span> <span class="o">=</span> <span class="s1">&#39;time=[25,50,75,100,125,150,175,200]&#39;</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">placeholder</span> <span class="o">=</span> <span class="s2">&quot;Enter the time here&quot;</span><span class="p">)</span>
 <span class="n">counter4</span> <span class="o">=</span> <span class="mi">0</span>
@@ -911,11 +997,24 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;To make a plot of the data, we need to first enter it in a form python can read. Input the time data with the following syntax:&#39;
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>time = [25, 50, ...]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Make sure that you enter the time entries in order from the top of the table to the bottom.&#39;
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "153e137fa73440fab107a92addb10e10", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><em>You’ll use the box below in the next part of the question</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;Next, enter the amount of isotope remaining. Input the data with the following syntax:&#39;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="s1">&#39;Next, enter the amount of isotope remaining. Input the data with the following syntax:&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;amnt = [3.04,2.32, ...]&#39;</span><span class="p">)</span>
 <span class="n">amnt_check</span> <span class="o">=</span> <span class="s1">&#39;amnt=[3.04,2.32,1.76,1.32,1.00,0.76,0.58,0.44]&#39;</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">placeholder</span> <span class="o">=</span> <span class="s2">&quot;Enter the amount here&quot;</span><span class="p">)</span>
@@ -943,14 +1042,24 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Next, enter the amount of isotope remaining. Input the data with the following syntax:&#39;
+</pre></div>
 </div>
-<div class="cell docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>amnt = [3.04,2.32, ...]
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "4ebe13fad7d643c1a4e9092f211dde53", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;Now we can plot the data that you have enterd. We do this with the matplotlib library, which has already been imported into the notebook.&#39;</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;To make a plot, we can call the &quot;plot&quot; function from the matplotlib library with the following command:&#39;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="s1">&#39;Now we can plot the data that you have enterd. We do this with the matplotlib library, which has already been imported into the notebook.&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s1">&#39;To make a plot, we can call the &quot;plot&quot; function from the matplotlib library with the following command:&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;plt.plot(time, amnt, linestyle=&#39;&#39;, marker = &#39;o&#39;, color = &#39;orange&#39;, markersize = 6)&quot;</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Try creating your own plot now with this command. Make sure you enter the correct variable for &#39;x&#39; and &#39;y&#39;! (i.e. &#39;time&#39; and &#39;amnt&#39;)&quot;</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Feel free to try a different color or marker syle.&quot;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="s2">&quot;Try creating your own plot now with this command. Make sure you enter the correct variable for &#39;x&#39; and &#39;y&#39;! (i.e. &#39;time&#39; and &#39;amnt&#39;)&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s2">&quot;Feel free to try a different color or marker syle.&quot;</span><span class="p">)</span>
 <span class="n">P</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">placeholder</span> <span class="o">=</span> <span class="s2">&quot;Define plot style here&quot;</span><span class="p">)</span>
 <span class="n">plot_rendered</span> <span class="o">=</span> <span class="kc">False</span>
 
@@ -983,11 +1092,30 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Now we can plot the data that you have enterd. We do this with the matplotlib library, which has already been imported into the notebook.&#39;
+</pre></div>
 </div>
-<div class="cell docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;To make a plot, we can call the &quot;plot&quot; function from the matplotlib library with the following command:&#39;
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>plt.plot(time, amnt, linestyle=&#39;&#39;, marker = &#39;o&#39;, color = &#39;orange&#39;, markersize = 6)
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;Try creating your own plot now with this command. Make sure you enter the correct variable for &#39;x&#39; and &#39;y&#39;! (i.e. &#39;time&#39; and &#39;amnt&#39;)&quot;
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Feel free to try a different color or marker syle.&#39;
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6281968584b74c1da250ee6863243830", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;You will need to use the plot generated from the example in the cell above this one to answer the following questions. Make sure you go back and complete this question before moving on.&#39;</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;(a) What is the half-life of the sample?&#39;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="s1">&#39;You will need to use the plot generated from the example in the cell above this one to answer the following questions. Make sure you go back and complete this question before moving on.&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s1">&#39;(a) What is the half-life of the sample?&#39;</span><span class="p">)</span>
 
 <span class="n">h</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">placeholder</span> <span class="o">=</span> <span class="s2">&quot;Submit your answer here&quot;</span><span class="p">)</span>
 <span class="n">counter6</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1009,10 +1137,20 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;You will need to use the plot generated from the example in the cell above this one to answer the following questions. Make sure you go back and complete this question before moving on.&#39;
+</pre></div>
 </div>
-<div class="cell docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;(a) What is the half-life of the sample?&#39;
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "cf8226e87a3f465e8233297d2ec1f85e", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s1">&#39;(b) What was the initial quantity of the sample at t=0?&#39;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="s1">&#39;(b) What was the initial quantity of the sample at t=0?&#39;</span><span class="p">)</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">placeholder</span> <span class="o">=</span> <span class="s2">&quot;Submit your answer here&quot;</span><span class="p">)</span>
 <span class="n">counter7</span> <span class="o">=</span> <span class="mi">0</span>
 
@@ -1033,6 +1171,13 @@ in a sample will decay in a given time.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;(b) What was the initial quantity of the sample at t=0?&#39;
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a47b1ccbd7ef4289910923a9afaabbd2", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="conclusion">

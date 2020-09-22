@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -148,8 +146,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -404,7 +402,7 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/LightTransmission/transmission-of-light.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
 
@@ -425,8 +423,23 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+code_show=true; 
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script>
+The raw code for this IPython notebook is by default hidden for easier reading.
+To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>.</div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Modules</span>
 
@@ -458,7 +471,7 @@
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">Button</span> <span class="p">,</span> <span class="n">Layout</span> <span class="p">,</span> <span class="n">interact</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Javascript</span><span class="p">,</span> <span class="n">display</span>
@@ -508,8 +521,11 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<p>For instructors:</p>
 </div>
-<div class="cell docutils container">
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">button_ctr</span> <span class="o">+=</span> <span class="mi">1</span>
 
@@ -528,8 +544,12 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5e8e4643650a4a02a890d886980d335c", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">widgets</span><span class="p">,</span> <span class="n">Button</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Javascript</span><span class="p">,</span> <span class="n">Markdown</span>
@@ -565,7 +585,7 @@
 <p>We begin with a few definitions and interactives to aid our understanding of what light and visible light are.</p>
 <h3 align='center'>Light and Visible Light</h3>
 <p><strong>Light</strong> is a form of energy that can be detected by the human eye. Light is composed of <strong>photons</strong>, and is propagated in the form of <strong>waves</strong> .  By wave, we mean something like this:</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
@@ -596,8 +616,11 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/transmission-of-light_9_0.png" src="../../../_images/transmission-of-light_9_0.png" />
 </div>
-<div class="cell docutils container">
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># equivalent to rcParams[&#39;animation.html&#39;] = &#39;html5&#39;</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -605,11 +628,509 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><video width="864" height="72" controls autoplay loop>
+  <source type="video/mp4" src="data:video/mp4;base64,AAAAHGZ0eXBNNFYgAAACAGlzb21pc28yYXZjMQAAAAhmcmVlAABhH21kYXQAAAKuBgX//6rcRem9
+5tlIt5Ys2CDZI+7veDI2NCAtIGNvcmUgMTUyIHIyODU0IGU5YTU5MDMgLSBILjI2NC9NUEVHLTQg
+QVZDIGNvZGVjIC0gQ29weWxlZnQgMjAwMy0yMDE3IC0gaHR0cDovL3d3dy52aWRlb2xhbi5vcmcv
+eDI2NC5odG1sIC0gb3B0aW9uczogY2FiYWM9MSByZWY9MyBkZWJsb2NrPTE6MDowIGFuYWx5c2U9
+MHgzOjB4MTEzIG1lPWhleCBzdWJtZT03IHBzeT0xIHBzeV9yZD0xLjAwOjAuMDAgbWl4ZWRfcmVm
+PTEgbWVfcmFuZ2U9MTYgY2hyb21hX21lPTEgdHJlbGxpcz0xIDh4OGRjdD0xIGNxbT0wIGRlYWR6
+b25lPTIxLDExIGZhc3RfcHNraXA9MSBjaHJvbWFfcXBfb2Zmc2V0PS0yIHRocmVhZHM9MiBsb29r
+YWhlYWRfdGhyZWFkcz0xIHNsaWNlZF90aHJlYWRzPTAgbnI9MCBkZWNpbWF0ZT0xIGludGVybGFj
+ZWQ9MCBibHVyYXlfY29tcGF0PTAgY29uc3RyYWluZWRfaW50cmE9MCBiZnJhbWVzPTMgYl9weXJh
+bWlkPTIgYl9hZGFwdD0xIGJfYmlhcz0wIGRpcmVjdD0xIHdlaWdodGI9MSBvcGVuX2dvcD0wIHdl
+aWdodHA9MiBrZXlpbnQ9MjUwIGtleWludF9taW49MjUgc2NlbmVjdXQ9NDAgaW50cmFfcmVmcmVz
+aD0wIHJjX2xvb2thaGVhZD00MCByYz1jcmYgbWJ0cmVlPTEgY3JmPTIzLjAgcWNvbXA9MC42MCBx
+cG1pbj0wIHFwbWF4PTY5IHFwc3RlcD00IGlwX3JhdGlvPTEuNDAgYXE9MToxLjAwAIAAAAgeZYiE
+ADP//vbsvgU1/Z/QlxEsxdpKcD4qpICAdzTAAAADAAADAAADAAChIqB7aCWCVefBCJ9DkT3JuLDE
+oj4tUEazNFgBiNQWa4rkKMJejxjsrqMgKuLVm53Ak0QNZSd1zpyqH7faywBOZuIuRvBWTe3y3aa0
+gRdyCgvBSU25q4dYelszgiPWIS35cFAqXSV6Tk6iB2OjB0zBOF7cfBYfcgvr4FoTi1qgkQ571Hk1
+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
+dHRzAAAAAAAAAMQAAAABAAACAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAAAAEAAAEAAAAAAQAA
+BQAAAAABAAACAAAAAAEAAAAAAAAAAQAAAQAAAAABAAAFAAAAAAEAAAIAAAAAAQAAAAAAAAABAAAB
+AAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAAAAEAAAEAAAAAAQAABQAAAAABAAACAAAAAAEAAAAA
+AAAAAQAAAQAAAAABAAAEAAAAAAIAAAEAAAAAAQAABQAAAAABAAACAAAAAAEAAAAAAAAAAQAAAQAA
+AAABAAAFAAAAAAEAAAIAAAAAAQAAAAAAAAABAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAA
+AAEAAAEAAAAAAQAAAwAAAAABAAABAAAAAAEAAAMAAAAAAQAAAQAAAAABAAADAAAAAAEAAAEAAAAA
+AQAAAwAAAAABAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAAAAEAAAEAAAAAAQAABQAAAAAB
+AAACAAAAAAEAAAAAAAAAAQAAAQAAAAABAAAFAAAAAAEAAAIAAAAAAQAAAAAAAAABAAABAAAAAAEA
+AAMAAAAAAQAAAQAAAAABAAAEAAAAAAIAAAEAAAAAAQAABQAAAAABAAACAAAAAAEAAAAAAAAAAQAA
+AQAAAAABAAAFAAAAAAEAAAIAAAAAAQAAAAAAAAABAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAA
+AAAAAAEAAAEAAAAAAQAABQAAAAABAAACAAAAAAEAAAAAAAAAAQAAAQAAAAABAAAFAAAAAAEAAAIA
+AAAAAQAAAAAAAAABAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAAAAEAAAEAAAAAAQAABQAA
+AAABAAACAAAAAAEAAAAAAAAAAQAAAQAAAAABAAAFAAAAAAEAAAIAAAAAAQAAAAAAAAABAAABAAAA
+AAEAAAIAAAAAAQAABQAAAAABAAACAAAAAAEAAAAAAAAAAQAAAQAAAAABAAAFAAAAAAEAAAIAAAAA
+AQAAAAAAAAABAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAAAAEAAAEAAAAAAQAAAgAAAAAB
+AAAFAAAAAAEAAAIAAAAAAQAAAAAAAAABAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAAAAEA
+AAEAAAAAAQAABQAAAAABAAACAAAAAAEAAAAAAAAAAQAAAQAAAAABAAAFAAAAAAEAAAIAAAAAAQAA
+AAAAAAABAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAAAAEAAAEAAAAAAQAABQAAAAABAAAC
+AAAAAAEAAAAAAAAAAQAAAQAAAAABAAAEAAAAAAIAAAEAAAAAAQAAAwAAAAABAAABAAAAAAEAAAMA
+AAAAAQAAAQAAAAABAAADAAAAAAEAAAEAAAAAAQAAAwAAAAABAAABAAAAAAEAAAMAAAAAAQAAAQAA
+AAABAAAFAAAAAAEAAAIAAAAAAQAAAAAAAAABAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAA
+AAEAAAEAAAAAAQAABQAAAAABAAACAAAAAAEAAAAAAAAAAQAAAQAAAAABAAADAAAAAAEAAAEAAAAA
+AQAABAAAAAACAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAAAAAAAAEAAAEAAAAAAQAABQAAAAAB
+AAACAAAAAAEAAAAAAAAAAQAAAQAAAAABAAAFAAAAAAEAAAIAAAAAAQAAAAAAAAABAAABAAAAAAEA
+AAUAAAAAAQAAAgAAAAABAAAAAAAAAAEAAAEAAAAAAQAABQAAAAABAAACAAAAAAEAAAAAAAAAAQAA
+AQAAAAABAAAFAAAAAAEAAAIAAAAAAQAAAAAAAAABAAABAAAAAAEAAAUAAAAAAQAAAgAAAAABAAAA
+AAAAAAEAAAEAAAAAAQAABQAAAAABAAACAAAAAAEAAAAAAAAAAQAAAQAAAAABAAACAAAAAAEAAAUA
+AAAAAQAAAgAAAAABAAAAAAAAAAEAAAEAAAAAAQAAAwAAAAABAAABAAAAABxzdHNjAAAAAAAAAAEA
+AAABAAAAyAAAAAEAAAM0c3RzegAAAAAAAAAAAAAAyAAACtQAAAC1AAAAZwAAAFQAAABTAAAArAAA
+AGwAAABXAAAAWAAAAKkAAABpAAAAVgAAAFYAAACZAAAAawAAAEsAAABYAAAApQAAAHQAAABSAAAA
+UQAAAL4AAABZAAAATgAAAKYAAABfAAAAUQAAAFIAAACRAAAAYwAAAFAAAABNAAAAugAAAFUAAABO
+AAAAQwAAAKkAAABPAAAArAAAAFoAAAC6AAAAVgAAALoAAABSAAAAnAAAAGEAAABSAAAAUgAAAMcA
+AABmAAAAVQAAAFcAAACqAAAAXAAAAFUAAABWAAAAsQAAAFIAAACcAAAAUQAAAFUAAAC+AAAAaAAA
+AFYAAABRAAAAlAAAAGUAAABQAAAATwAAALEAAABmAAAAUQAAAE0AAACwAAAAYAAAAE8AAABNAAAA
+rQAAAFsAAABMAAAAUQAAAMcAAABhAAAATQAAAFQAAADCAAAAawAAAE4AAABUAAAAugAAAGoAAABW
+AAAAXQAAALgAAACpAAAAXwAAAFAAAABXAAAAnwAAAGQAAABQAAAAWwAAAKAAAABUAAAAUQAAAFUA
+AACMAAAApAAAAGkAAABVAAAAWQAAAKEAAABqAAAAUwAAAFUAAAC9AAAAXQAAAFYAAABSAAAA7AAA
+AF0AAABOAAAATwAAAKwAAABnAAAAUgAAAFYAAACzAAAAZAAAAEwAAABQAAAAuwAAAGQAAABOAAAA
+xQAAAFcAAACfAAAATgAAALQAAABNAAAA1wAAAFMAAACtAAAAUAAAANwAAABiAAAAUAAAAE8AAACp
+AAAAZgAAAFAAAABUAAAAmAAAAF4AAABXAAAAVAAAAIgAAABNAAAAoQAAAEkAAABOAAAAtAAAAFgA
+AABMAAAATAAAAJ0AAABYAAAATQAAAE8AAAC+AAAAWQAAAEgAAABDAAAAzAAAAEwAAABGAAAASgAA
+AJoAAABTAAAATQAAAFEAAAChAAAAXgAAAEgAAABQAAAAlAAAAFsAAABQAAAATQAAAJUAAABlAAAA
+UAAAAFMAAABfAAAAdgAAAF0AAABRAAAAVgAAAGsAAABNAAAAFHN0Y28AAAAAAAAAAQAAACwAAABi
+dWR0YQAAAFptZXRhAAAAAAAAACFoZGxyAAAAAAAAAABtZGlyYXBwbAAAAAAAAAAAAAAAAC1pbHN0
+AAAAJal0b28AAAAdZGF0YQAAAAEAAAAATGF2ZjU3LjgzLjEwMA==
+">
+  Your browser does not support the video tag.
+</video></div></div>
 </div>
 <p><strong>Wavelength</strong> is the distance between successive crests of a wave. Light is measured by its wavelength (in nanometres, nm) or frequency (in Hertz). The photons at each wavelength have different energies: the shorter the wavelength (nm) the higher the energy.</p>
 <p><strong>Visible light</strong> consists of wavelengths within a spectrum that the human eye can perceive. Certain wavelengths within the spectrum correspond to a specific colour based upon how humans typically perceive light of that wavelength.</p>
 <p>Interact with the following widget to see the relationship between wavelength and visible light.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">widgets</span><span class="p">,</span> <span class="n">interact</span>
@@ -679,6 +1200,10 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8a0a31fde7dc4757b11c04ae9f23bd7f", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <h3 align='center'>Properties of Visible Light </h3>
 <p>Below we illustrate intuitively the properties of visible light:</p>
@@ -726,7 +1251,7 @@ translucent, transparent and opaque. We will learn more about these materials in
 <h3>Transparent vs translucent vs opaque materials</h3>
 <p>To summarize the information above, materials that absorb light, that is they <strong>do not</strong> allow light to pass through them are <em>opaque</em>.Materials that allow light to pass through them are either <em>transparent</em> or <em>translucent</em>. It is important to notice the distinction between the two. While transparent materials allow light to pass through them <strong>completely</strong>, translucent materials allow light to pass through them <strong>partially</strong>. A phenomenon known as “refraction” occurs when light passes through an object. We will learn more about this in the experiment section of this notebook.</p>
 <p>Press the button below to demonstrate the differences between transparent, translucent and opaque objects.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">patches</span>
@@ -810,6 +1335,10 @@ translucent, transparent and opaque. We will learn more about these materials in
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "ab6d737a9be549cc8858cd2b872fc825", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <h3>Materials that reflect a beam of light as a coherent beam</h3>
 <p>Now that we have learned about the different ways light behaves when in contact with different objects, we will pause and make a distinction between two different types of light: <em>coherent</em> and <em>incoherent</em> light.</p>
@@ -843,7 +1372,7 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 <p>Imagine we place a protractor to help us measure the angles of incidence and reflection. We place the normal at the <span class="math notranslate nohighlight">\(0 ^{\circ}\)</span> mark.</p>
 <p>Using the widget below, choose an initial angle for the incidence ray. Use the degrees on the diagram to help you measure the incidence and reflected angles.</p>
 <p>What is the angle formed between the reflected ray and the normal?</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">division</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">widgets</span><span class="p">,</span><span class="n">interact_manual</span><span class="p">,</span><span class="n">interact</span>
@@ -923,10 +1452,14 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "dcd1320d4ba3417aabdd482287137ee0", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <h3>Questions</h3>
 <p>1.What is the angle of reflection when we assume an initial angle of incidence of <span class="math notranslate nohighlight">\(20 ^{\circ}\)</span>? Assume you are measuring degrees as positive quantities, i.e. the sign does not matter in this case.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact_manual</span><span class="p">,</span><span class="n">widgets</span>
 
@@ -953,8 +1486,12 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "46ccc5092f124f028212f48b501d8332", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">show_angle_true_answer</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The correct answer is: 20</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">Indeed, the Law of Reflection states that the angle between the incident ray and the normal is equal to the angle between the reflected ray and the normal. So, if the angle of incidence is equal to 20</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">, then the Law of Reflection implies the angle of reflection is equal to 20</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">.&quot;</span><span class="p">)</span>
@@ -966,9 +1503,13 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7d4017ac55044d458794f25ef50c72c9", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p>2.What happens when the angle of incidence (i.e. the angle between the incidence ray and the normal) is equal to <span class="math notranslate nohighlight">\(0^{\circ}\)</span>? Enter your answer and press “Run Interact” to save your response.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact_manual</span><span class="p">,</span><span class="n">widgets</span>
 
@@ -982,8 +1523,14 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "724e70a401264189a52d15d1a2f910a2", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "2ee1927d86e84dcea8649e93b69c1779", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">user_input</span> <span class="o">=</span> <span class="n">your_text_box</span><span class="o">.</span><span class="n">value</span>
 <span class="k">if</span><span class="p">(</span><span class="n">user_input</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">):</span>
@@ -996,7 +1543,7 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </div>
 </div>
 <p>3.What happens when the angle of incidence (i.e. the angle between the incidence ray and the normal) is equal to <span class="math notranslate nohighlight">\(90^{\circ}\)</span>?</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact_manual</span><span class="p">,</span><span class="n">widgets</span>
 
@@ -1010,8 +1557,14 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "ab56c04b92524ab3853741afe4f70d6b", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5205b28569c148f9b29705f5b0993c7e", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">user_input</span> <span class="o">=</span> <span class="n">your_text_box</span><span class="o">.</span><span class="n">value</span>
 <span class="k">if</span><span class="p">(</span><span class="n">user_input</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">):</span>
@@ -1073,7 +1626,7 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 <p>Use the widget below to model what would happen if you pointed a ray of light through two different materials. We assume the “top material” is vacuum. You can select the bottom material from the drop down menu. We assume there is a surface between the top material and the bottom material that reflects a portion of the light and refracts another portion. As before, we denote the normal to the surface as N.</p>
 <p>Once you have chosen a bottom material, select an angle of incidence. Press “Run Interact” afterwards.</p>
 <p>Observe the differences between the angle of refraction and the angle of incidence on the different materials provided.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">division</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">widgets</span><span class="p">,</span><span class="n">interact_manual</span>
@@ -1198,12 +1751,16 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7b4e3850b5164c30befea21044dcdc39", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <h3>Questions </h3>
 <ol class="simple">
 <li><p>What is the angle of refraction that is obtained when we pass a ray of light through oil, if we assume an angle of incidence of <span class="math notranslate nohighlight">\(15 ^{\circ}\)</span>? The answer will be printed on our model. Copy and paste the answer on the box below and press “Run Interact” when you are done.</p></li>
 </ol>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact_manual</span><span class="p">,</span><span class="n">widgets</span>
 
@@ -1224,8 +1781,12 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5b75a82badf847e894b7eef93086ef0b", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">show_answer_one_true_answer</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The correct answer is: 11</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">In this widget, we assume first material: Vacuum, second material: oil, and incidence angle: 15</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">After pressing Run Interact, we find</span><span class="se">\n</span><span class="s2">Angle of incidence: 15</span><span class="se">\N{DEGREE SIGN}\n</span><span class="s2">Angle of reflection: 15</span><span class="se">\N{DEGREE SIGN}\n</span><span class="s2">Angle of refraction: 11</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1237,9 +1798,13 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0943c24e99be461eb20cf3105a030168", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p>2.What what is the angle of refraction obtained if we keep oil as the bottom material, but change the angle of incidence to <span class="math notranslate nohighlight">\(90 ^{\circ}\)</span>?. Copy and paste the answer on the box below and press “Run Interact” when you are done.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact_manual</span><span class="p">,</span><span class="n">widgets</span>
 
@@ -1260,8 +1825,12 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "cec7a403d5e943d592bf7812ddfe0830", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">show_answer_two_true_answer</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The correct answer is: 43</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">In this widget, we assume first material is vacuum, the bottom material is oil, vegetable, and incidence angle: 90</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">After pressing Run Interact, we find</span><span class="se">\n</span><span class="s2">Angle of incidence: 90</span><span class="se">\N{DEGREE SIGN}\n</span><span class="s2">Angle of reflection: 90</span><span class="se">\N{DEGREE SIGN}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">Angle of refraction: 43</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1273,6 +1842,10 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6d5a7f95253448a79699064ee6a185bd", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <h2 align='center'>Total Internal Reflection</h2>
 <p>There is an interesting phenomenon that occurs if the angle of incidence is greater than a certain “critical angle”.</p>
@@ -1282,7 +1855,7 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 <h3>Question</h3>
 <p>Assume the material on top of a surface is a diamond. Choose a bottom material from the drop down menu. Use the ball widget to find what the critical angle is for each of the materials in the displayable menu.</p>
 <p>An example has been found when the bottom material is vacuum. We find that the critical angle occurs when the angle of incidence is equal to <span class="math notranslate nohighlight">\(25 ^{\circ}\)</span>.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">division</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">widgets</span><span class="p">,</span><span class="n">interact_manual</span>
@@ -1406,9 +1979,13 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "dcc7bfb06c0f498c813a54b85aba9156", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p>3.Assuming diamond is still the top material we picked and using the widget above, pick salt as the bottom material. What is the critical angle for these two materials?</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact_manual</span><span class="p">,</span><span class="n">widgets</span>
 
@@ -1429,8 +2006,12 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b1b8af19dfe64bc7a0794ddacd57605e", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">show_answer_thr_true_answer</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The correct answer is: 39</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">In this widget, we assume first material: diamond, second material: salt.</span><span class="se">\n</span><span class="s2">Our goal is to find the smallest angle for which we see a legend on the screen &#39;Total Internal Reflection. You are at or past the critical angle.&#39;</span><span class="se">\n</span><span class="s2">Such legend appears first when the angle of incidence is equal to 39</span><span class="se">\N{DEGREE SIGN}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1442,6 +2023,10 @@ Coherent light, on the other hand, is characterized by the fact that its photons
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "9b9605a57f524a4b8ebb00e8aeaa0f27", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <h2 align='center'>Optical Technologies</h2>
 <ol class="simple">

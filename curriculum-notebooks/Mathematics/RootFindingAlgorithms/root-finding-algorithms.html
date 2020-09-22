@@ -319,7 +319,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../TriangleArea/triangle-area.html">
-     Area of a Triangle
+     Triangles: Area
     </a>
    </li>
   </ul>
@@ -1388,21 +1388,21 @@ Learning outcomes:</p>
 s(x) = \frac{f(x_1)-f(x_0)}{x_1-x_0}(x-x_1) + f(x_1)
 \]</div>
 <p>The next step in the algorithm is to find the <span class="math notranslate nohighlight">\(x\)</span> intercept of this line:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dba1cde7-2bd3-455d-b0a0-53f54eeef860">
-<span class="eqno">(47)<a class="headerlink" href="#equation-dba1cde7-2bd3-455d-b0a0-53f54eeef860" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2eec5f13-2371-4a72-bcc0-b7273c3a3898">
+<span class="eqno">(47)<a class="headerlink" href="#equation-2eec5f13-2371-4a72-bcc0-b7273c3a3898" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \begin{split}
 s(x) &amp;= 0 = \frac{f(x_1)-f(x_0)}{x_1-x_0}(x-x_1) + f(x_1)
 \\&amp; \Rightarrow x = x_1 - f(x_1)\frac{x_1-x_0}{f(x_1)-f(x_0)}
 \end{split}
 \end{equation}\]</div>
 <p>This point now becomes our next endpoint, i.e.:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c4b0778a-74e2-4971-b1eb-0faf4f56c650">
-<span class="eqno">(48)<a class="headerlink" href="#equation-c4b0778a-74e2-4971-b1eb-0faf4f56c650" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-24cdbec0-9e37-4513-938d-7c718ba22c81">
+<span class="eqno">(48)<a class="headerlink" href="#equation-24cdbec0-9e37-4513-938d-7c718ba22c81" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 x_2 = x_1 - f(x_1)\frac{x_1-x_0}{f(x_1)-f(x_0)}
 \end{equation}\]</div>
 <p>We now <em>iterate</em> this algorithm, applying the same process successively, until our algorithm yields a value <span class="math notranslate nohighlight">\(f(x_n) \approx 0\)</span> after <em>n</em> iterations.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e1a60eea-7621-49c5-adc2-113a16e07ca8">
-<span class="eqno">(49)<a class="headerlink" href="#equation-e1a60eea-7621-49c5-adc2-113a16e07ca8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-004c13d1-1579-4db4-906f-7128cea0e89b">
+<span class="eqno">(49)<a class="headerlink" href="#equation-004c13d1-1579-4db4-906f-7128cea0e89b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \begin{split}
 x_3 &amp;= x_2 - f(x_2)\frac{x_2-x_1}{f(x_2)-f(x_1)}
 \\ x_4 &amp;= x_3 - f(x_3)\frac{x_3-x_2}{f(x_3)-f(x_2)}

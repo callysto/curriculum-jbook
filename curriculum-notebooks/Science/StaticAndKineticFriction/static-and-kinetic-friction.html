@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -148,8 +146,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -442,7 +440,7 @@
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/StaticAndKineticFriction/StaticAndKineticFriction.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <p>(Click <strong>Cell</strong> &gt; <strong>Run All</strong> before proceeding.)</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 
@@ -546,7 +544,7 @@
 \[F_{f}=\mu F_{n}\]</div>
 <p>where <span class="math notranslate nohighlight">\(F_{f}\)</span> and <span class="math notranslate nohighlight">\(F_{n}\)</span> are the magnitudes of the friction and normal forces respectively, and <span class="math notranslate nohighlight">\(\mu\)</span> is the <strong>coefficient of friction</strong>. Here <span class="math notranslate nohighlight">\(\mu\)</span> is the Greek letter <span class="math notranslate nohighlight">\(mu\)</span>.  The direction of the force of friction is parallel to the surface and opposite to the other forces acting on the object.</p>
 <p>Use the slider below to observe the relationship between the normal force and the friction force. Pick any value for the coefficient of friction. Move the slider for the normal force back and forth to calculate the corresponding force of friction.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import ipywidgets as widgets</span>
 
@@ -567,9 +565,13 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "3fcbaaf9ed5b4fec94ce6d15fefb8950", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Question:</strong> <em>What happens to the friction force when the normal force increases?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import ipywidgets as widgets</span>
 
@@ -581,6 +583,19 @@
 <span class="n">option_4</span> <span class="o">=</span> <span class="s2">&quot;The friction force equals zero.&quot;</span>
 
 <span class="n">multiple_choice</span><span class="p">(</span><span class="n">option_1</span><span class="p">,</span> <span class="n">option_2</span><span class="p">,</span> <span class="n">option_3</span><span class="p">,</span> <span class="n">option_4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>The friction force increases.
+<span class=" -Color -Color-Bold">(B) </span>The friction force equals zero.
+<span class=" -Color -Color-Bold">(C) </span>The friction force remains constant.
+<span class=" -Color -Color-Bold">(D) </span>The friction force decreases.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "62bcc271d8894a5c9240f41e3e7b22c7", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -618,7 +633,7 @@
 </tbody>
 </table>
 <p>Use the slider again to observe the relationship between the coefficient of friction and the friction force. Pick any value for the normal force. Move the slider for the coefficient of friction back and forth to calculate the corresponding force of friction.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import ipywidgets as widgets</span>
 
@@ -639,9 +654,13 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "436a0a9035404da09978a32e7967de3e", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Question:</strong> <em>What happens to the friction force when the coefficient of friction increases?</em></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import ipywidgets as widgets</span>
 
@@ -653,6 +672,19 @@
 <span class="n">option_4</span> <span class="o">=</span> <span class="s2">&quot;The friction force equals zero.&quot;</span>
 
 <span class="n">multiple_choice</span><span class="p">(</span><span class="n">option_1</span><span class="p">,</span> <span class="n">option_2</span><span class="p">,</span> <span class="n">option_3</span><span class="p">,</span> <span class="n">option_4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>The friction force decreases.
+<span class=" -Color -Color-Bold">(B) </span>The friction force equals zero.
+<span class=" -Color -Color-Bold">(C) </span>The friction force increases.
+<span class=" -Color -Color-Bold">(D) </span>The friction force remains constant.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5e8b0b951e73434ba7ef3bd1b5f066ce", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -701,7 +733,7 @@
 <div class="section" id="practice-problems">
 <h2>Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
 <p>(Click <strong>Cell</strong> &gt; <strong>Run Cells</strong> to generate new random values for each question. Refer to the previous table to get the coefficients of friction for specific materials.)</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import random</span>
 <span class="c1">#import ipywidgets as widgets</span>
@@ -739,8 +771,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A 20 kg object is pushed across a flat horizontal surface. The coefficient of kinetic friction between the moving object and the surface is 0.37. What is the magnitude of the friction force?
+<span class=" -Color -Color-Bold">(A) </span>73 N
+<span class=" -Color -Color-Bold">(B) </span>22 N
+<span class=" -Color -Color-Bold">(C) </span>79 N
+<span class=" -Color -Color-Bold">(D) </span>97 N
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5f1d304c3a824714b94b684cc7568970", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import random</span>
 <span class="c1">#import ipywidgets as widgets</span>
@@ -803,8 +849,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>If a 47 kg wood object is pushed across a flat horizontal wood surface with an applied force of 253 N, what is the magnitude of the friction force?
+<span class=" -Color -Color-Bold">(A) </span>90 N
+<span class=" -Color -Color-Bold">(B) </span>92 N
+<span class=" -Color -Color-Bold">(C) </span>101 N
+<span class=" -Color -Color-Bold">(D) </span>97 N
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8e14233232624586962bbb805dd8cafe", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import random</span>
 <span class="c1">#import ipywidgets as widgets</span>
@@ -853,8 +913,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>If a glass object is pushed across a flat horizontal glass surface with an applied force of 70 N, and a friction force of 36 N occurs, what is the magnitude of the normal force?
+<span class=" -Color -Color-Bold">(A) </span>73 N
+<span class=" -Color -Color-Bold">(B) </span>105 N
+<span class=" -Color -Color-Bold">(C) </span>83 N
+<span class=" -Color -Color-Bold">(D) </span>90 N
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8f0c2811cb2446cbb85f77a3e66ba66a", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import random</span>
 <span class="c1">#import ipywidgets as widgets</span>
@@ -900,10 +974,24 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A 5 kg object is pulled across a flat horizontal surface by a force of 71 N. The friction force is 28 N. What is the coefficient of kinetic friction?
+<span class=" -Color -Color-Bold">(A) </span>0.3
+<span class=" -Color -Color-Bold">(B) </span>0.57
+<span class=" -Color -Color-Bold">(C) </span>0.17
+<span class=" -Color -Color-Bold">(D) </span>0.59
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "beb2297ff1a64576b1e3979869a2f105", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 <p>Use the diagram below to answer the following question:</p>
 <a class="reference internal image-reference" href="../../../_images/free_body_diagram_pulley.svg"><img alt="../../../_images/free_body_diagram_pulley.svg" src="../../../_images/free_body_diagram_pulley.svg" width="45%" /></a>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import random</span>
 <span class="c1">#import ipywidgets as widgets</span>
@@ -941,6 +1029,20 @@
 <span class="n">option_4</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">choice_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot; N&quot;</span>
 
 <span class="n">multiple_choice</span><span class="p">(</span><span class="n">option_1</span><span class="p">,</span> <span class="n">option_2</span><span class="p">,</span> <span class="n">option_3</span><span class="p">,</span> <span class="n">option_4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A 27 kg object is suspended by a pulley and connected to an object resting on a flat surface. The friction coefficient between the object and the surface is 0.94. What is the minimum mass required to keep this suspended object stationary?
+<span class=" -Color -Color-Bold">(A) </span>30 N
+<span class=" -Color -Color-Bold">(B) </span>29 N
+<span class=" -Color -Color-Bold">(C) </span>23 N
+<span class=" -Color -Color-Bold">(D) </span>24 N
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "903466d0bfd44758bdd9c9a3581d9a42", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -1014,7 +1116,7 @@
 <div class="section" id="force-diagrams">
 <h2>Force Diagrams<a class="headerlink" href="#force-diagrams" title="Permalink to this headline">¶</a></h2>
 <p>A useful way to visualize the friction forces is to construct a force diagram, as shown below. This diagram depicts the magnitudes of the forces acting on an object as it is pushed across a flat horizontal surface with increasing force. The y-axis depicts the friction force (<span class="math notranslate nohighlight">\(F_{f}\)</span>), and the x-axis depicts the applied force (<span class="math notranslate nohighlight">\(F_{a}\)</span>). The sliders can be manipulated to change the normal force (<span class="math notranslate nohighlight">\(F_{n}\)</span>), the coefficient of static friction (<span class="math notranslate nohighlight">\(\mu_{s}\)</span>), and the coefficient of kinetic friction (<span class="math notranslate nohighlight">\(\mu_{k}\)</span>).</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import ipywidgets as widgets</span>
 <span class="c1">#import matplotlib.pyplot as plt</span>
@@ -1044,11 +1146,15 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "48fd0746ed42458498ac7e101255ce6a", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p><strong>Interpreting the graph</strong></p>
 <p>Read the graph from left to right. As the applied force gradually increases along the x-axis, the friction force also increases. Notice that the magnitude of the friction force is equal to the applied force (<span class="math notranslate nohighlight">\(F_{f} = F_{a}\)</span>) until it reaches the point of maximum static friction. This point is shown on the graph as a <strong>peak</strong>. The point of maximum static friction is determined by the following equation: <span class="math notranslate nohighlight">\(F_{f}=\mu_{s} F_{n}\)</span>. As the applied force continues to increase beyond the peak of maximum static friction, the object begins to move. The friction force is now described by the kinetic friction equation: <span class="math notranslate nohighlight">\(F_{f}=\mu_{k} F_{n}\)</span>.</p>
 <p>Move the slider for the normal force back and forth. As the normal force increases, what happens to the static and kinetic friction forces?</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import ipywidgets as widgets</span>
 
@@ -1063,9 +1169,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>The static and kinetic friction forces both decrease.
+<span class=" -Color -Color-Bold">(B) </span>The static and kinetic friction forces both increase.
+<span class=" -Color -Color-Bold">(C) </span>The static friction force decreases and the kinetic friction force increases.
+<span class=" -Color -Color-Bold">(D) </span>The static friction force increases and the kinetic friction force decreases.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "95ab9f69c2984dd189d214195d1b7d88", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 <p>Move the slider for the static friction coefficient back and forth. As the static friction coefficient increases, what happens to the static and kinetic friction forces?</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import ipywidgets as widgets</span>
 
@@ -1080,9 +1199,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>The static friction force increases and the kinetic friction force decreases.
+<span class=" -Color -Color-Bold">(B) </span>The static friction force decreases and the kinetic friction force increases.
+<span class=" -Color -Color-Bold">(C) </span>The static friction force increases and the kinetic friction force remains constant.
+<span class=" -Color -Color-Bold">(D) </span>The static friction force decreases and the kinetic friction force remains constant.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "02b1f219b26241fc8de7d7fceca43db2", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
+</pre></div>
+</div>
+</div>
 </div>
 <p>Move the slider for the kinetic friction coefficient back and forth. As the kinetic friction coefficient increases, what happens to the static and kinetic friction forces?</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import ipywidgets as widgets</span>
 
@@ -1094,6 +1226,19 @@
 <span class="n">option_4</span> <span class="o">=</span> <span class="s2">&quot;The kinetic friction force decreases and the static friction force increases.&quot;</span>
 
 <span class="n">multiple_choice</span><span class="p">(</span><span class="n">option_1</span><span class="p">,</span> <span class="n">option_2</span><span class="p">,</span> <span class="n">option_3</span><span class="p">,</span> <span class="n">option_4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">(A) </span>The kinetic friction force decreases and the static friction force increases.
+<span class=" -Color -Color-Bold">(B) </span>The kinetic friction force increases and the static friction force remains constant.
+<span class=" -Color -Color-Bold">(C) </span>The kinetic friction force decreases and the static friction force remains constant.
+<span class=" -Color -Color-Bold">(D) </span>The kinetic friction force increases and the static friction force decreases.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "684a104e7dc143e894bf2bf2fafd7d9a", "version_major": 2, "version_minor": 0}
+</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -1115,7 +1260,7 @@
 <li><p><strong>Force diagrams</strong> can be used to visualize the relationship between the friction force, the applied force, the normal force, and the coefficients of static and kinetic friction.</p></li>
 </ul>
 <p>Images in this notebook represent original artwork.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
@@ -1140,6 +1285,27 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+</div></div>
 </div>
 <p><a class="reference external" href="https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md"><img alt="Callysto.ca License" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-bottom.jpg?raw=true" /></a></p>
 </div>

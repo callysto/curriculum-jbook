@@ -319,7 +319,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../TriangleArea/triangle-area.html">
-     Area of a Triangle
+     Triangles: Area
     </a>
    </li>
   </ul>
@@ -530,45 +530,45 @@
 <div class="section" id="compositions-of-univariate-functions">
 <h2>Compositions of Univariate Functions<a class="headerlink" href="#compositions-of-univariate-functions" title="Permalink to this headline">¶</a></h2>
 <p>Compositions of functions sound a lot worse than they are. The most basic way to describe them is as a “function of a function”. As with most mathematical language, that description isn’t particularily enlightening. So, let’s start with an example, an example so simple it risks annoying a pedantic mathematician. Which is how we know that it is an excellent example. Suppose you have two functions <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> defined as follows</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c6aa78fa-a449-4496-8b50-e3cb6f662d7c">
-<span class="eqno">(1)<a class="headerlink" href="#equation-c6aa78fa-a449-4496-8b50-e3cb6f662d7c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-92a2e11a-cef5-4643-82ab-6ea9d2a43b78">
+<span class="eqno">(1)<a class="headerlink" href="#equation-92a2e11a-cef5-4643-82ab-6ea9d2a43b78" title="Permalink to this equation">¶</a></span>\[\begin{equation}
  f(x) = x
 \end{equation}\]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-be617f95-5380-4a68-aab2-a763ebc0e76c">
-<span class="eqno">(2)<a class="headerlink" href="#equation-be617f95-5380-4a68-aab2-a763ebc0e76c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f6117d33-b514-4d02-8d9e-de13c6a8d386">
+<span class="eqno">(2)<a class="headerlink" href="#equation-f6117d33-b514-4d02-8d9e-de13c6a8d386" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g(x) = 1
 \end{equation}\]</div>
 <p>While keeping these simple functions in mind, let’s work our way through a few definitions. A composition of functions defined as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-824066dc-184b-47bf-bbc9-a5dd71495179">
-<span class="eqno">(3)<a class="headerlink" href="#equation-824066dc-184b-47bf-bbc9-a5dd71495179" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dea51345-db2f-4be8-9fcd-78c6d9b022e7">
+<span class="eqno">(3)<a class="headerlink" href="#equation-dea51345-db2f-4be8-9fcd-78c6d9b022e7" title="Permalink to this equation">¶</a></span>\[\begin{equation}
  f \circ g = f[g(x)]
 \end{equation}\]</div>
 <p>where this is read as <span class="math notranslate nohighlight">\(f\)</span> of <span class="math notranslate nohighlight">\(g\)</span> of <span class="math notranslate nohighlight">\(x\)</span>. This notation is telling us to write <span class="math notranslate nohighlight">\(f(x)\)</span> as a function of <span class="math notranslate nohighlight">\(g(x)\)</span>, so rather than a function of a variable, it’s becoming a function of a function. With the functions above however, this works out to be exactly the same as putting a number into your function, which we see as follows</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ae811037-6130-4852-a91d-c25c24a34c40">
-<span class="eqno">(4)<a class="headerlink" href="#equation-ae811037-6130-4852-a91d-c25c24a34c40" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8403103a-d3d6-4377-83de-28e2fced1109">
+<span class="eqno">(4)<a class="headerlink" href="#equation-8403103a-d3d6-4377-83de-28e2fced1109" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f[g(x)] = \underset{\substack{\downarrow \\ \text{Inserted g(x) at x}}}{g(x)} = 1
 \end{equation}\]</div>
 <p>Great, so a composition of functions reduces to the case of inserting a constant in for your variable. But what about if you had more complex functions? Well, consider the functions</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a14c0dce-fd7a-45ab-b2f1-4ce3cc061b18">
-<span class="eqno">(5)<a class="headerlink" href="#equation-a14c0dce-fd7a-45ab-b2f1-4ce3cc061b18" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e38be16e-0c3c-48a2-a372-6db2a91273cf">
+<span class="eqno">(5)<a class="headerlink" href="#equation-e38be16e-0c3c-48a2-a372-6db2a91273cf" title="Permalink to this equation">¶</a></span>\[\begin{equation}
  f(x) = x + 5
 \end{equation}\]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e790dd2a-9978-40d8-a806-31f1aa59a4cf">
-<span class="eqno">(6)<a class="headerlink" href="#equation-e790dd2a-9978-40d8-a806-31f1aa59a4cf" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ad3ac98d-5f03-45a8-a361-3d0fe8abba3d">
+<span class="eqno">(6)<a class="headerlink" href="#equation-ad3ac98d-5f03-45a8-a361-3d0fe8abba3d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g(x) = x^2 -4
 \end{equation}\]</div>
 <p>How will we write <span class="math notranslate nohighlight">\(f \circ g\)</span> with these functions? It’s actually just as simple as putting numbers in for the variables like we saw above, except this time, we’ll put the definitions of functions in for each variable.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-37899489-fae8-4732-81c1-bf4b3ae7b693">
-<span class="eqno">(7)<a class="headerlink" href="#equation-37899489-fae8-4732-81c1-bf4b3ae7b693" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e0053994-9d7a-4e16-ac3a-e8f443dd3835">
+<span class="eqno">(7)<a class="headerlink" href="#equation-e0053994-9d7a-4e16-ac3a-e8f443dd3835" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f[g(x)] =\underset{\substack{\downarrow \\ \text{Inserted g(x) at x}}}{g(x)} + 
 \overset{\substack{\text{Constants just hang out} \\ \uparrow} }{5} = 
 \underbrace{x^2 - 4}_\text{Insert definition of g(x) for x} + 5 = x^2 + 1
 \end{equation}\]</div>
 <p>or going the other direction</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0957a5aa-8ed0-4c44-bd87-c79e724ad874">
-<span class="eqno">(8)<a class="headerlink" href="#equation-0957a5aa-8ed0-4c44-bd87-c79e724ad874" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c2ec420d-1daf-4cce-96b8-e80e840e9999">
+<span class="eqno">(8)<a class="headerlink" href="#equation-c2ec420d-1daf-4cce-96b8-e80e840e9999" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
 \end{equation}\]</div>
 <p>where this applies to any composition of functions. To put it simply, if you have a composition of functions all you need to do is place the “inner” function everywhere you see the variable in the “outer” function exactly as you’d put a number into the formula.</p>
@@ -681,26 +681,26 @@ g[f(x)] = f^2(x) - 4 = (x+5)^2 -4
 <div class="section" id="more-complicated-examples">
 <h2>More Complicated Examples<a class="headerlink" href="#more-complicated-examples" title="Permalink to this headline">¶</a></h2>
 <p>This can also be applied to more complicated compositions of functions. For example, can you have a function of function functions? Absolutely! Like anything in math, you can do whatever you want provided you have the patience to work through it. But just as an example, what if we had three functions, say <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(g(x)\)</span> and <span class="math notranslate nohighlight">\(h(x)\)</span> which are defined as follows</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7728cb81-2e48-4f92-b109-6a4d2d85da44">
-<span class="eqno">(9)<a class="headerlink" href="#equation-7728cb81-2e48-4f92-b109-6a4d2d85da44" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1ebffdf1-0f30-4d5f-8dc3-2257ece671a8">
+<span class="eqno">(9)<a class="headerlink" href="#equation-1ebffdf1-0f30-4d5f-8dc3-2257ece671a8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
  f(x) = 6\sqrt{x^2 + 1}
  \end{equation}\]</div>
-<div class="amsmath math notranslate nohighlight" id="equation-28c0bef6-4edf-4200-a1dc-e2674c6bfebf">
-<span class="eqno">(10)<a class="headerlink" href="#equation-28c0bef6-4edf-4200-a1dc-e2674c6bfebf" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-14f5119d-c1ef-406a-a052-7c280920ee60">
+<span class="eqno">(10)<a class="headerlink" href="#equation-14f5119d-c1ef-406a-a052-7c280920ee60" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g(x) = 3\sin(\pi x - a)
 \end{equation}\]</div>
-<div class="amsmath math notranslate nohighlight" id="equation-264f2ef0-1594-42bd-989f-e2af7376bdba">
-<span class="eqno">(11)<a class="headerlink" href="#equation-264f2ef0-1594-42bd-989f-e2af7376bdba" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-68c599c4-57b7-4c8c-a69a-a2bd14218c57">
+<span class="eqno">(11)<a class="headerlink" href="#equation-68c599c4-57b7-4c8c-a69a-a2bd14218c57" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 h(x) = x^3 + x^2
 \end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(a\)</span> is an arbitrary numerical constant. How would we go about writing <span class="math notranslate nohighlight">\(f \circ g \circ h\)</span> (<span class="math notranslate nohighlight">\(f\)</span> of <span class="math notranslate nohighlight">\(g\)</span> of <span class="math notranslate nohighlight">\(h\)</span>)? It certainly looks intimidating, but I promise you it looks a lot worse than it actually is. Let’s follow our typical PEDMAS rules, in this case, we start with the only thing we have: parenthesis! And, because we have two sets, we start with the inner most set. In this case, let’s solve the smaller problem of <span class="math notranslate nohighlight">\(g[h(x)]\)</span> where we’ll do the same as above, and simply shove <span class="math notranslate nohighlight">\(h(x)\)</span> anywhere we see an <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\(g(x)\)</span>. This is outlined below, however we’ve dropped some of the explaination with the algebra, but, we’re doing absolutely nothing different from what we saw in the previous examples.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-24ef9c95-19b1-4111-aa38-36cc0458386e">
-<span class="eqno">(12)<a class="headerlink" href="#equation-24ef9c95-19b1-4111-aa38-36cc0458386e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-05668cc8-332a-4efd-a151-cb4d39832342">
+<span class="eqno">(12)<a class="headerlink" href="#equation-05668cc8-332a-4efd-a151-cb4d39832342" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g[h(x)] = \sin(\pi h(x) - a) = \sin(\pi(x^3 + x^2) - a)
 \end{equation}\]</div>
 <p>where we notice that the constant term <span class="math notranslate nohighlight">\(a\)</span> simply comes along for the ride. We’re half way done! Now that we have an expression for <span class="math notranslate nohighlight">\(g[h(x)]\)</span>, we can now easily find our complete expression of <span class="math notranslate nohighlight">\(f[g[h(x)]]\)</span> in the <em>exact</em> same way we have been doing.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7613f51e-989f-4249-b173-e45aa696feac">
-<span class="eqno">(13)<a class="headerlink" href="#equation-7613f51e-989f-4249-b173-e45aa696feac" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-44ee0812-9009-4ee8-b3f0-5dfd402a613b">
+<span class="eqno">(13)<a class="headerlink" href="#equation-44ee0812-9009-4ee8-b3f0-5dfd402a613b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f\circ g \circ\ h= f[g[h(x)]] = \sqrt{g^2[h(x)] + 1} = 6\sqrt{\sin^2[\pi (x^3 + x^2) - a] + 1}
 \end{equation}\]</div>
 <p>Where that’s a pretty ugly function, but the process of coming to it was not nearly as horrible as that expression looks.</p>
@@ -727,8 +727,8 @@ f\circ g \circ\ h= f[g[h(x)]] = \sqrt{g^2[h(x)] + 1} = 6\sqrt{\sin^2[\pi (x^3 + 
 <div class="section" id="python-digression">
 <h3>Python Digression<a class="headerlink" href="#python-digression" title="Permalink to this headline">¶</a></h3>
 <p>In order to define a function in Python we use a key word known as <code class="docutils literal notranslate"><span class="pre">def</span></code>, which for us stands for “define a function”. Let’s work through the steps we would go through in order to define the function</p>
-<div class="amsmath math notranslate nohighlight" id="equation-93e9c240-5b95-4235-ad7e-fa11d07edfa3">
-<span class="eqno">(14)<a class="headerlink" href="#equation-93e9c240-5b95-4235-ad7e-fa11d07edfa3" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ec3a6587-6b5a-424e-bfcf-23344bb6d10f">
+<span class="eqno">(14)<a class="headerlink" href="#equation-ec3a6587-6b5a-424e-bfcf-23344bb6d10f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(x) = 6\sqrt{x^2 + 1} 
 \end{equation}\]</div>
 <p>in Python. We can do this using the following snippet of code</p>
@@ -896,39 +896,39 @@ f(x) = 6\sqrt{x^2 + 1}
 <h2>Operations of Functions<a class="headerlink" href="#operations-of-functions" title="Permalink to this headline">¶</a></h2>
 <p>Operations of functions, for practical purposes, mostly a mathematical short hand. It’s easier to see and avoid your mistakes by writing as little possible, so operations of functions are simply a small abstraction which prevents you from having to write as many things down, and reducing the chance of making a silly mistake.</p>
 <p>Suppose you want to add two functions together, with as little writing as possible. Well, let’s introduce the notation of function operations! Suppose we have two functions</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c2e0f7e0-cd8e-4e1e-b786-f86d8916b602">
-<span class="eqno">(15)<a class="headerlink" href="#equation-c2e0f7e0-cd8e-4e1e-b786-f86d8916b602" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a63fe484-f0e0-4d2b-9f7e-01c6aa49e1b9">
+<span class="eqno">(15)<a class="headerlink" href="#equation-a63fe484-f0e0-4d2b-9f7e-01c6aa49e1b9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(x) = x^2
 \end{equation}\]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1b7c65c5-7df5-4c82-95e7-61598417c036">
-<span class="eqno">(16)<a class="headerlink" href="#equation-1b7c65c5-7df5-4c82-95e7-61598417c036" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7b1e2b4a-bb82-4439-9f70-cb3568f152e0">
+<span class="eqno">(16)<a class="headerlink" href="#equation-7b1e2b4a-bb82-4439-9f70-cb3568f152e0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 g(x) = 2x + 10
 \end{equation}\]</div>
 <p>How would we add those together? Certainly we <em>could</em> write</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6336920f-fecb-4f48-a368-d49f3c47366e">
-<span class="eqno">(17)<a class="headerlink" href="#equation-6336920f-fecb-4f48-a368-d49f3c47366e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2079c1d5-eb60-4f24-acbe-293a32f2548d">
+<span class="eqno">(17)<a class="headerlink" href="#equation-2079c1d5-eb60-4f24-acbe-293a32f2548d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(x) + g(x) = x^2 + 2x + 10
 \end{equation}\]</div>
 <p>but what if those functions were gigantic? In this case we have the following short-hand notation:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-adc66700-6c51-4b4d-8323-128a67c846f9">
-<span class="eqno">(18)<a class="headerlink" href="#equation-adc66700-6c51-4b4d-8323-128a67c846f9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b5f1ab67-6430-4236-a069-676b20de2297">
+<span class="eqno">(18)<a class="headerlink" href="#equation-b5f1ab67-6430-4236-a069-676b20de2297" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 (f + g)(x) = f(x) + g(x) = x^2 + 2x + 10 
 \end{equation}\]</div>
 <p>similarly for subtraction:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e5a3f9ed-2560-44ea-8435-ebed04e46b93">
-<span class="eqno">(19)<a class="headerlink" href="#equation-e5a3f9ed-2560-44ea-8435-ebed04e46b93" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-9e0a36a1-fad4-4020-b801-a10c3290e9ce">
+<span class="eqno">(19)<a class="headerlink" href="#equation-9e0a36a1-fad4-4020-b801-a10c3290e9ce" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 (f - g)(x) = f(x) - g(x) = x^2 -2x - 10 
 \end{equation}\]</div>
 <p>I know what you’re thinking: addition and subtraction are great, but I’m a bit of a mathematical sauvant, and I would also like to multiply and divide functions. We’ll I’ve got news for you kiddo: we’ve got a short-hand for that too.</p>
 <p>Multiplication:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-16d767b6-3858-45ce-83a4-870ad4dba57d">
-<span class="eqno">(20)<a class="headerlink" href="#equation-16d767b6-3858-45ce-83a4-870ad4dba57d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-50c54f50-dcdd-447b-81c4-ab640f1a24a6">
+<span class="eqno">(20)<a class="headerlink" href="#equation-50c54f50-dcdd-447b-81c4-ab640f1a24a6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 (f \times g)(x) = f(x)g(x) = x^2(2x + 10)
 \end{equation}\]</div>
 <p>Division:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e80e24b0-7c0b-46a6-9681-f791660072ed">
-<span class="eqno">(21)<a class="headerlink" href="#equation-e80e24b0-7c0b-46a6-9681-f791660072ed" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-075d2631-e8a5-436d-89bc-fdeb79b01d21">
+<span class="eqno">(21)<a class="headerlink" href="#equation-075d2631-e8a5-436d-89bc-fdeb79b01d21" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)} = \frac{x^2}{2x + 10}
 \end{equation}\]</div>
 <p>This shorthand behaves exactly like regular math, but you “map” your variable back onto the function afterwards, certainly you could even stop writing the variable completely. Of course, a natural question now arises: how is this useful? Suppose you have three functions</p>
@@ -963,8 +963,8 @@ h(x) = &amp; x^2\cos^2 + x^2
 </div>
 </div>
 <p>Where those functions seem to be pretty well behaved. However, what if we wanted to find an expression for</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b3eae905-6565-423f-bd65-355d26c6ee81">
-<span class="eqno">(22)<a class="headerlink" href="#equation-b3eae905-6565-423f-bd65-355d26c6ee81" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7b2a2d3f-be12-463a-88be-e3a89e981c64">
+<span class="eqno">(22)<a class="headerlink" href="#equation-7b2a2d3f-be12-463a-88be-e3a89e981c64" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 y=\frac{f(x)g(x) + h(x)g(x)}{g(x) \left([f(x) + 1]^2 + [h(x) +1]^2 - f^2(x) - h^2(x) - 2\right)^2}
 \end{equation}\]</div>
 <p>where that looks pretty intimidating, I certainly wouldn’t want to put the definitions of my functions into the expression for <span class="math notranslate nohighlight">\(y\)</span>. But, let’s use operations of functions to see if we can simplify that expression before we evaluate it.</p>

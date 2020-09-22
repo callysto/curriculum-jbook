@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -148,8 +146,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ConcentrationAndPH/concentration-and-ph.html#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -477,7 +475,7 @@
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/MethodsUsedInStudyingTheEarth/methods-used-in-studying-the-earth.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <div class="section" id="methods-used-in-scientific-study-of-the-earth">
 <h1>Methods used in Scientific Study of the Earth<a class="headerlink" href="#methods-used-in-scientific-study-of-the-earth" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">Image</span>
 
@@ -497,6 +495,20 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script>
+code_show=true; 
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script>
+<form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form></div></div>
 </div>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
@@ -504,7 +516,7 @@
 <div class="section" id="sudden-change">
 <h3>Sudden Change<a class="headerlink" href="#sudden-change" title="Permalink to this headline">¶</a></h3>
 <p>After a change occurs in the subsurface, it is brought to the surface as an event that is commonly classified as a “natural disaster” such as earthquakes and volcanoes. The main cause of these events is plate tectonics. Earth’s crust is divided into many pieces called plates which move in relation to one another. Typically, plates move at a rate of 10cm/yr which seems very slow. As the plates move, they exert pressure on one another can result in earthquakes or volcanic eruptions.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">clear_output</span>
@@ -515,7 +527,7 @@
 </div>
 </div>
 </div>
-<a class="reference internal image-reference" href="https://www.sciencealert.com/images/parks-plates_cascadia_subduction_zone_revised-01.jpg"><img alt="Volcano" src="https://www.sciencealert.com/images/parks-plates_cascadia_subduction_zone_revised-01.jpg" style="width: 420px; height: 200px;" /></a>
+<a class="reference internal image-reference" href="https://www.sciencealert.com/images/parks-plates_cascadia_subduction_zone_revised-01.jpg"><img alt="Volcano" src="https://www.sciencealert.com/images/parks-plates_cascadia_subduction_zone_revised-01.jpg" style="width: 420px;" /></a>
 <p>Figure 1: Cross section of the volcano. One plate is being subducted underneath the other. The subducted plate is melting by the hot mantle which causes lava to reach the surface and escape through the surface in a volcanic eruption. This process can also cause earthquakes. (ScienceAlert)</p>
 </div>
 <div class="section" id="gradual-change">

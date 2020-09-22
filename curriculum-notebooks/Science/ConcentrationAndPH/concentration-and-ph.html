@@ -40,7 +40,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="copyright" title="Copyright" href="../../../copyright.html" />
-    <link rel="next" title="Electrical Conductivity" href="../ElectricalConductivity/electrical-conductivity.html" />
+    <link rel="next" title="COVID-19" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html" />
     <link rel="prev" title="Climatograph" href="../Climatograph/climatograph.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -148,8 +148,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="#acids-and-bases">
-     Acids and Bases
+    <a class="reference internal" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html">
+     COVID-19
     </a>
    </li>
    <li class="toctree-l2">
@@ -407,6 +407,94 @@
    Case Study: DDT
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acids-and-bases">
+   Acids and Bases
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acids">
+   Acids
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bases">
+   Bases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#apply-your-knowledge">
+     Apply your knowledge
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ph-in-the-environment">
+     pH in the Environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-does-changing-the-ph-affect-the-enviroment">
+     How does changing the pH affect the enviroment?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-full-scale">
+     The full scale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-do-we-measure-ph">
+     How do we measure pH?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lab">
+   Lab
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#universal-indicator-solution">
+     Universal indicator solution
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#try-solutions-with-different-phs">
+       Try solutions with different pHs
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#instructions">
+         Instructions
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-measure-water-quality">
+     How to measure water quality
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#water-in-the-edmonton-area">
+     Water in the Edmonton Area
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-measure-air-quality">
+     How to measure air quality
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
 </ul>
 
         </nav>
@@ -419,7 +507,7 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/ConcentrationAndPH/concentration-and-ph.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
@@ -444,8 +532,29 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+</div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">import</span> <span class="nn">IPython</span>
@@ -454,7 +563,7 @@
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%javascript</span>
 
@@ -470,6 +579,18 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/javascript">
+require.config({
+    paths: {
+        d3: "https://d3js.org/d3.v3.min"
+     }
+});
+
+require(["d3"], function(d3) {
+    window.d3 = d3;
+});
+</script></div>
 </div>
 <div class="section" id="concentration-and-ph">
 <h1>Concentration and pH<a class="headerlink" href="#concentration-and-ph" title="Permalink to this headline">¶</a></h1>
@@ -485,8 +606,7 @@
 <p>For many of the products that you use or buy, the manufacturer tells us how much of a substance is present by giving the percentage (%) of weight or volume it represents.</p>
 <p>Take milk for example. The label 1% on a carton of milk tells us that 1% of the milk is milk fat.</p>
 <p>This means that in every 100 mL of milk, there is 1 mL of milk fat, so a 1 litre (1000 mL) carton contains 10 mL of milk fat.</p>
-<p><img alt="milk" src="../../../_images/milktypes.jpg" />
-<a class="reference external" href="https://www.usdairy.com/news-articles/what-do-milk-fat-percentages-mean">source</a></p>
+<a class="reference internal image-reference" href="../../../_images/milktypes.jpg"><img alt="../../../_images/milktypes.jpg" src="../../../_images/milktypes.jpg" style="width: 400px;" /></a>
 <p>When we say how much of one substance is contained in a certain amount of another, we are giving a <strong>concentration</strong>.</p>
 <p>Percentage is actually describing “parts per hundred”. The concentration 10% is the same as 10 parts per hundred or <span class="math notranslate nohighlight">\(\dfrac{10}{100}\)</span>.</p>
 <p>This is very helpful for many everyday substances, but many substances are in much smaller concentrations than 1%.</p>
@@ -576,8 +696,7 @@ This is called the <strong>lethal dose 50</strong> or <strong>LD50</strong>.</p>
 </div>
 <div class="section" id="case-study-ddt">
 <h2>Case Study: DDT<a class="headerlink" href="#case-study-ddt" title="Permalink to this headline">¶</a></h2>
-<p><img alt="" src="../../../_images/biomagnification.jpg" />
-Source: https://iwashkoapes.wordpress.com/2014/06/01/biomagnification/</p>
+<a class="reference internal image-reference" href="../../../_images/biomagnification.jpg"><img alt="../../../_images/biomagnification.jpg" src="../../../_images/biomagnification.jpg" style="width: 400px;" /></a>
 <p>DDT, or dichlorodiphenyltrichloroethane, is a pesticide originally created to kill lice, which spread the disease typhus.
 It was so effective that it was also used to kill mosquitoes to reduce malaria.</p>
 <p>But what people didn’t know when they were using it, was that this pesticide is <em>persistent in the environment</em>, which means that it stays in the environment for really long periods or time.</p>
@@ -588,9 +707,8 @@ Instead of being digested, the pesticide stays in their system and accumulates a
 <p>At each step in the food chain, some of these organisms die because they consumed too much DDT and couldn’t digest it.
 Humans have even been found to have small concentrations of DDT in our systems too, as we eat animals which have ingested DDT. We track the spread of DDT by calculating its concentration in certain areas and species.</p>
 </div>
-</div>
 <div class="section" id="acids-and-bases">
-<h1>Acids and Bases<a class="headerlink" href="#acids-and-bases" title="Permalink to this headline">¶</a></h1>
+<h2>Acids and Bases<a class="headerlink" href="#acids-and-bases" title="Permalink to this headline">¶</a></h2>
 <p>The main factor that defines an acid or a base is its pH. pH stands for “power of hydrogen”, and it measures the concentration of hydrogen ions (H+) in a solution. The more hydrogen ions there are in a solution, the more acidic a solution is. The pH scale is from 0 to 14 to indicate how strong or weak an acid or base is.</p>
 <blockquote>
 <div><p>A solution with a pH between 0 and 6 is considered an acid.</p>
@@ -598,10 +716,11 @@ Humans have even been found to have small concentrations of DDT in our systems t
 <p>A solution with a pH between 8 and 14 is considered a base.</p>
 </div></blockquote>
 <p>This scale is a logarithmic scale, meaning each number is 10 times stronger or weaker than the number next to it. For example: an acid with a pH of 3 is 10 times stronger than one with a pH of 4.</p>
+</div>
 <div class="section" id="acids">
 <h2>Acids<a class="headerlink" href="#acids" title="Permalink to this headline">¶</a></h2>
 <p>An acid is a compound that dissolves in water and forms a solution with pH less than 7. Acids are <strong>sour</strong> and react with bases, neutralizing both to a pH around 7. Acids can be strong like stomach acid, or weak like citric acid (found in sour fruits). You can turn a strong acidic solution into a weak acidic solution by diluting the solution with pure or distilled water (which is a neutral solution).</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answers1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">SelectMultiple</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Vinegar&#39;</span><span class="p">,</span> <span class="s1">&#39;Tums/Antacids&#39;</span><span class="p">,</span> <span class="s1">&#39;Pure Water&#39;</span><span class="p">,</span> <span class="s1">&#39;Tomatoes&#39;</span><span class="p">,</span> <span class="s1">&#39;Soap&#39;</span><span class="p">],</span>
             <span class="n">value</span><span class="o">=</span><span class="p">[],</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Substances&#39;</span><span class="p">)</span>
@@ -629,12 +748,20 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Which of these household substances do you think contain an acid?
+You can select more than one by holding &#39;crtl&#39; while selecting.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "9dddd1dc4d3d463c9787b41aeaf48738", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="bases">
 <h2>Bases<a class="headerlink" href="#bases" title="Permalink to this headline">¶</a></h2>
 <p>A base is a compound that dissolves in water and forms a solution with pH greater than 7. Bases are <strong>bitter and slippery</strong> and react with acids, neutralizing both to a pH around 7. Bases can be strong like many household cleaners such as bleach, or weak like baking soda (used in baking and cleaning). You can turn a strong basic solution into a weak basic solution by diluting the solution with pure or distilled water (which is a neutral solution). A basic solution is also called an <strong>alkaline</strong> solution.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answers2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">SelectMultiple</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Vinegar&#39;</span><span class="p">,</span> <span class="s1">&#39;Tums/Antacids&#39;</span><span class="p">,</span> <span class="s1">&#39;Pure Water&#39;</span><span class="p">,</span> <span class="s1">&#39;Tomatoes&#39;</span><span class="p">,</span> <span class="s1">&#39;Soap&#39;</span><span class="p">],</span>
             <span class="n">value</span><span class="o">=</span><span class="p">[],</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Substances&#39;</span><span class="p">)</span>
@@ -662,11 +789,19 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>From the same list as above, which of these household substances do you think contain a base?
+Once again, you can select more than one by holding down &#39;crtl&#39; while selecting.
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "0eca7d7ddcbb418db0a48b7b1e2f79bc", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <div class="section" id="apply-your-knowledge">
 <h3>Apply your knowledge<a class="headerlink" href="#apply-your-knowledge" title="Permalink to this headline">¶</a></h3>
 <p>Answer the questions below about whether each substance is an acid, a base, or neutral based on their pH.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answers3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;An acid&#39;</span><span class="p">,</span> <span class="s1">&#39;A base&#39;</span><span class="p">,</span> <span class="s1">&#39;Neutral&#39;</span><span class="p">],</span>
             <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -688,8 +823,15 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Orange juice has a pH around 3. What is it?
+</pre></div>
 </div>
-<div class="cell docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a37d6397fa0d44e984dd683cdb858329", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answers5</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;An acid&#39;</span><span class="p">,</span> <span class="s1">&#39;A base&#39;</span><span class="p">,</span> <span class="s1">&#39;Neutral&#39;</span><span class="p">],</span>
             <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -711,20 +853,30 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Baking soda has a pH around 9. What is it?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "38dacb57fdfb475db1f92c0b22ff3437", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="ph-in-the-environment">
 <h3>pH in the Environment<a class="headerlink" href="#ph-in-the-environment" title="Permalink to this headline">¶</a></h3>
 <p>Now that we know a few acids and bases that you can find in your house, let’s extend this to the environment. Normal rain has a pH of around 5.6, while pure water has a pH around 7, and ocean water has a pH around 8. Tap water has a pH around 7.5 to prevent corrosion of pipes, but varies because of human influence and natural processes. But sometimes air pollutants can create more acid when it reacts with water in the air, creating acid rain. Acid rain has a pH less than 5.6 and is not healthy for the environment. This video from National Geographic explains acid rain, its effects, and what we can do to help.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">YouTubeVideo</span>
-<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;1PDjVDIrFec&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;560&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;315&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/embed/1PDjVDIrFec&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allow</span><span class="o">=</span><span class="s">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="na">allowfullscreen</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/1PDjVDIrFec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answers4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Sea water&#39;</span><span class="p">,</span> <span class="s1">&#39;Fresh water&#39;</span><span class="p">,</span> <span class="s1">&#39;Pure/distilled water&#39;</span><span class="p">,</span> <span class="s1">&#39;Acid rain&#39;</span><span class="p">],</span>
             <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -746,6 +898,13 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Which type of water has a neutral pH? (A pH around 7)
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7069f21cd00e434a9ccdbc71104d083b", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="how-does-changing-the-ph-affect-the-enviroment">
@@ -754,7 +913,7 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </div>
 <div class="section" id="the-full-scale">
 <h3>The full scale<a class="headerlink" href="#the-full-scale" title="Permalink to this headline">¶</a></h3>
-<a class="reference internal image-reference" href="http://phhsbiology.weebly.com/uploads/3/0/1/0/30101179/ph_scale.jpg"><img alt="http://phhsbiology.weebly.com/uploads/3/0/1/0/30101179/ph_scale.jpg" src="http://phhsbiology.weebly.com/uploads/3/0/1/0/30101179/ph_scale.jpg" style="width: 500px; height: 600px;" /></a>
+<a class="reference internal image-reference" href="http://phhsbiology.weebly.com/uploads/3/0/1/0/30101179/ph_scale.jpg"><img alt="http://phhsbiology.weebly.com/uploads/3/0/1/0/30101179/ph_scale.jpg" src="http://phhsbiology.weebly.com/uploads/3/0/1/0/30101179/ph_scale.jpg" style="width: 500px;" /></a>
 </div>
 <div class="section" id="how-do-we-measure-ph">
 <h3>How do we measure pH?<a class="headerlink" href="#how-do-we-measure-ph" title="Permalink to this headline">¶</a></h3>
@@ -765,7 +924,7 @@ Humans have even been found to have small concentrations of DDT in our systems t
 <h2>Lab<a class="headerlink" href="#lab" title="Permalink to this headline">¶</a></h2>
 <p>Let’s test a mystery solution with litmus paper to determine if it’s an acid or a base. Drag the red and blue litmus paper strips into the liquid in the beaker one at a time.</p>
 <p>Remember, if the red litmus paper turns blue on the end that was dipped, it’s a base. If the blue litmus paper turns red on the end that was dipped, it’s an acid. If neither change colour when dipped, then it’s neutral.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
@@ -773,8 +932,12 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script type = "text/javascript" src="sources/animation2.js"></script>
+</div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
@@ -789,8 +952,19 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="animation"></div>
+
+<script>
+display(10);
+</script>
+
+<! -- 10 represents the pH of the solution in the beaker. 
+If this is changed then the question below the lab might not have the right answer.-- >
+</div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answers6</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;An acid&#39;</span><span class="p">,</span> <span class="s1">&#39;A base&#39;</span><span class="p">,</span> <span class="s1">&#39;Neutral&#39;</span><span class="p">],</span>
             <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -812,6 +986,13 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Is the solution in the beaker an acid, a base, or neutral?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "3d4d3bf9584e4fffbe7c4ed5a8aeb3bc", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <div class="section" id="universal-indicator-solution">
 <h3>Universal indicator solution<a class="headerlink" href="#universal-indicator-solution" title="Permalink to this headline">¶</a></h3>
@@ -822,7 +1003,7 @@ Humans have even been found to have small concentrations of DDT in our systems t
 <div class="section" id="instructions">
 <h5>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h5>
 <p>Slide the slider to change the pH of the solution in the beaker. Then add the universal indicator solution in the dropper over top the beaker. Then watch what colour the solution in the beaker changes to! If you want to try another pH, pick a new pH and drag the dropper over the beaker again!</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
@@ -831,8 +1012,13 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<link rel="stylesheet" type="text/css" href="sources/dropperstyle.css">
+<script type = "text/javascript" src="sources/dropperAnimation.js"></script>
+</div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
@@ -846,6 +1032,16 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="slider"></div>
+<div id="beaker">
+</div>
+
+<script>
+display2(7);
+</script>
+</div></div>
 </div>
 </div>
 </div>
@@ -854,7 +1050,7 @@ Humans have even been found to have small concentrations of DDT in our systems t
 <h3>How to measure water quality<a class="headerlink" href="#how-to-measure-water-quality" title="Permalink to this headline">¶</a></h3>
 <p>There are many factors that go into determining the quality of fresh and salt water, including acidity (pH), colour, concentration of dissolved oxygen, and turbidity (the amount of suspended particles in the water). Let’s apply our knowledge of concentration and pH to measuring water quality.</p>
 <p>Good quality fresh water usually has a pH around 6-7, and a concentration of dissolved oxygen around 9-10 ppm. Good quality sea water has a pH around 7-8.5, and a concentration of dissolved oxygen around 7-8 ppm. These measurements are taken at room temperature, as the temperature of water affects the amount of dissolved oxygen that can be found in water. <a class="reference external" href="https://www.engineeringtoolbox.com/oxygen-solubility-water-d_841.html">source</a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answers7</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;pH will increase towards 14&#39;</span><span class="p">,</span>
                                          <span class="s1">&#39;pH will decrease towards 1&#39;</span><span class="p">,</span>
@@ -879,13 +1075,20 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What will happen to the pH of a pond if acid rain falls into it?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "72d088fbf14442fdaeb8c73f53aaafdd", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="water-in-the-edmonton-area">
 <h3>Water in the Edmonton Area<a class="headerlink" href="#water-in-the-edmonton-area" title="Permalink to this headline">¶</a></h3>
 <p>Determining the quality of drinking water is a little different than that of fresh or sea water. Drinking water doesn’t need a specific concentration of dissolved oxygen, and is instead tested for things like the concentration of calcium carbonate (CaCO<sub>3</sub>) because it makes the water hard. However, pH is always used for determining the quality of water.</p>
 <p>Let’s compare data from two water treatment plants in Edmonton, Rossdale and E.L. Smith, to the average pH of distilled water, tap water, and salt water that we learned in this notebook. Fill in the values of the average pH of each of these kinds of water by double clicking the appropriate box under Average pH. You can find this information earlier in the notebook.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -898,18 +1101,60 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b88cc8bce06f4464af13224ce5774eb4", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 <p>After you have recorded your observations in the table above, <code class="docutils literal notranslate"><span class="pre">▶Run</span></code> the next cell to save and display your data.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">output_data</span> <span class="o">=</span> <span class="n">data_entry_table</span><span class="o">.</span><span class="n">get_changed_df</span><span class="p">()</span>
 <span class="n">output_data</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Average pH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Distilled Water</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>Tap Water</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>Salt Water</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <p>Now that we have the averages, here is the collected water treatment plant data from the past week. Notice that column 2 is labelled pH. That is what we will be comparing to our averages. Click on the button below to compare the data in a graph.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rossdale</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">&#39;http://apps.epcor.ca/DailyWaterQuality/Default.aspx?zone=Rossdale&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">els</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">&#39;http://apps.epcor.ca/DailyWaterQuality/Default.aspx?zone=ELS&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
@@ -925,8 +1170,68 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-latest.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+</div><div class="output text_html"><div>
+
+
+            <div id="012013ac-2b18-48d1-900f-b254f1c69553" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                require(["plotly"], function(Plotly) {
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    window.PLOTLYENV.BASE_URL='https://plot.ly';
+
+                if (document.getElementById("012013ac-2b18-48d1-900f-b254f1c69553")) {
+                    Plotly.newPlot(
+                        '012013ac-2b18-48d1-900f-b254f1c69553',
+                        [{"line": {"color": "rgba(255, 153, 51, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "Rossdale", "text": "", "type": "scatter", "x": ["SEP-14", "SEP-15", "SEP-16", "SEP-17", "SEP-18", "SEP-19", "SEP-20"], "y": [7.8, 7.8, 7.8, 7.8, 7.8, 7.8, 7.8]}, {"line": {"color": "rgba(55, 128, 191, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "ELS", "text": "", "type": "scatter", "x": ["SEP-14", "SEP-15", "SEP-16", "SEP-17", "SEP-18", "SEP-19", "SEP-20"], "y": ["7.9", "7.9", "7.9", "7.9", "7.9", "7.9", "7.9"]}, {"line": {"color": "rgba(50, 171, 96, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "Distilled Water", "text": "", "type": "scatter", "x": ["SEP-14", "SEP-15", "SEP-16", "SEP-17", "SEP-18", "SEP-19", "SEP-20"], "y": ["", "", "", "", "", "", ""]}, {"line": {"color": "rgba(128, 0, 128, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "Tap Water", "text": "", "type": "scatter", "x": ["SEP-14", "SEP-15", "SEP-16", "SEP-17", "SEP-18", "SEP-19", "SEP-20"], "y": ["", "", "", "", "", "", ""]}, {"line": {"color": "rgba(219, 64, 82, 1.0)", "dash": "solid", "shape": "linear", "width": 1.3}, "mode": "lines", "name": "Salt Water", "text": "", "type": "scatter", "x": ["SEP-14", "SEP-15", "SEP-16", "SEP-17", "SEP-18", "SEP-19", "SEP-20"], "y": ["", "", "", "", "", "", ""]}],
+                        {"legend": {"bgcolor": "#1A1A1C", "font": {"color": "#D9D9D9"}}, "paper_bgcolor": "#1A1A1C", "plot_bgcolor": "#1A1A1C", "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"font": {"color": "#D9D9D9"}, "text": "pH of Solutions Compared to Water Treatment Plant Data"}, "xaxis": {"gridcolor": "#434343", "showgrid": true, "tickfont": {"color": "#C2C2C2"}, "title": {"font": {"color": "#D9D9D9"}, "text": ""}, "zerolinecolor": "#666570"}, "yaxis": {"gridcolor": "#434343", "showgrid": true, "tickfont": {"color": "#C2C2C2"}, "title": {"font": {"color": "#D9D9D9"}, "text": "pH"}, "zerolinecolor": "#666570"}},
+                        {"showLink": true, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly", "responsive": true}
+                    ).then(function(){
+
+var gd = document.getElementById('012013ac-2b18-48d1-900f-b254f1c69553');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                });
+            </script>
+        </div></div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answers8</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;An acid&#39;</span><span class="p">,</span> <span class="s1">&#39;A base&#39;</span><span class="p">,</span> <span class="s1">&#39;Neutral&#39;</span><span class="p">],</span>
             <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -951,17 +1256,28 @@ Humans have even been found to have small concentrations of DDT in our systems t
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>What should be added to Rossdale&#39;s water to make it more like tap water?
+</pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "14620d58107244b9a089df7b90ffe39c", "version_major": 2, "version_minor": 0}
+</script></div>
 </div>
 </div>
 <div class="section" id="how-to-measure-air-quality">
 <h3>How to measure air quality<a class="headerlink" href="#how-to-measure-air-quality" title="Permalink to this headline">¶</a></h3>
 <p>The video below is a company in Victoria, Australia that measures the air quality. Try to find all the substances they measure the concentration of.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;mp3kztZy7ow&#39;</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">19</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;560&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;315&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/embed/mp3kztZy7ow?start=19&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allow</span><span class="o">=</span><span class="s">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="na">allowfullscreen</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/mp3kztZy7ow?start=19" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
 </div>
 <p>They measure the concentration of carbon monoxide (from car exhaust) which is harmful in large amounts. They also measure the amount of ozone close to the earth. Ozone is good for us when it’s 6-10 miles from the ground as it protects us from the sun’s ultraviolet rays. But near the ground, ozone reacts with other chemicals to create harmful substances. If you’ve ever seen smog, ozone is one of its main components.</p>
 <p>Ozone at ground level naturally occurs in concentrations around 10 ppb, but becomes a health concern for sensitive organisms at concentrations higher than 85 ppb.</p>
@@ -1017,7 +1333,7 @@ Humans have even been found to have small concentrations of DDT in our systems t
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../Climatograph/climatograph.html" title="previous page">Climatograph</a>
-    <a class='right-next' id="next-link" href="../ElectricalConductivity/electrical-conductivity.html" title="next page">Electrical Conductivity</a>
+    <a class='right-next' id="next-link" href="../COVID-19/world-cases/COVID-19-world-cases-sunburst.html" title="next page">COVID-19</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
