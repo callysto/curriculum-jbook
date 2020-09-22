@@ -476,7 +476,7 @@
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/NewtonsThirdLaw/NewtonsThirdLaw.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
 <div class="section" id="newton-s-third-law">
 <h1>Newton’s Third Law<a class="headerlink" href="#newton-s-third-law" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 
@@ -502,6 +502,28 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+</div></div>
 </div>
 <div class="section" id="the-third-law">
 <h2>The Third Law<a class="headerlink" href="#the-third-law" title="Permalink to this headline">¶</a></h2>
@@ -565,15 +587,7 @@
 <p>Following is a bouncing ball simulation, based on code by Ziggy Jonsson <a class="reference external" href="http://bl.ocks.org/ZJONSSON/1706849">Click here for the original</a>. Details are in this <a class="reference external" href="http://www.vobarian.com/collisions/2dcollisions2.pdf">paper</a>.</p>
 <p>What we see in the animation is a collection of balls that bounce off each other in elastic collisions. Each ball has a different mass, proportional to the area of the ball.</p>
 <p>So when a small ball hits a big ball, there is a force acting on each ball, in equal and opposite directions. The difference in masses means the velocity of the small ball changes a lot, while the big ball only changes a little.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
-<span class="n">IFrame</span><span class="p">(</span><span class="s1">&#39;C3.html&#39;</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;C3.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">500</span> <span class="na">height</span><span class="o">=</span><span class="s">500</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
