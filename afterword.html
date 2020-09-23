@@ -28,8 +28,6 @@
     <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" type="text/javascript" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script type="text/javascript">
         const thebe_selector = ".thebe"
@@ -234,6 +232,8 @@ how the Geogebra and Javascript are loaded into the notebooks. You can read the 
 <p>Michael Lamoureux</p>
 <p>Some technical notes for future work:</p>
 <ul class="simple">
+<li><p>the notebooks are fragile. When using IFrame, HTML, YouTube for IPython.display, it iteracts badly with %%html command like &lt;iframe…&gt; I don’t know of a fix, so I avoid the IFRAME, HTML, YouTube python calls. (But they do often work.)</p></li>
+<li><p>it is useful to turn off execution in the _config.yml file, so that building the JBook does not re-run all your notebooks. It is faster to build the book, and less likely to introduce strage changes to individual notebooks.</p></li>
 <li><p>try to avoid html formatting commands in Markdown cells. They tend to get messed up in the Jupyter book.</p></li>
 <li><p>avoid Latex-strings in plot headers, and in widgets. Use only regular strings. The Jupyter book will otherwise mess up.</p></li>
 <li><p>when using double dollar signs for indicating display math, it is best to put the stuff in three lines, with blank spaces above and below. Like this</p></li>
@@ -260,7 +260,7 @@ $$
 </div>
 <ul class="simple">
 <li><p>our Creators have several different methods of hiding code. We should choose one way, and be consistent. The cell metadata seems like a good way, can make it compatible with JupyterBooks method.</p></li>
-<li><p>Javascript rarely works!</p></li>
+<li><p>Javascript rarely works! But sometimes it does, which is cool.</p></li>
 <li><p>To insert YouTube videos, copy the embed code from YouTube website. It looks like this:</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">html</span>
