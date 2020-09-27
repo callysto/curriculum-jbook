@@ -82,7 +82,7 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../README_modified.html">
-   About the Notebooks
+   About this Electronic Book
   </a>
  </li>
  <li class="toctree-l1">
@@ -445,7 +445,7 @@
                 
   <p><img alt="Callysto.ca Banner" src="https://github.com/callysto/curriculum-notebooks/blob/master/callysto-notebook-banner-top.jpg?raw=true" /></p>
 <p><a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Science/NewtonsSecondLaw/newtons-second-law.ipynb&depth=1" target="_parent"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a></p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">clear_output</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">IFrame</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -514,7 +514,7 @@
 <p>English Translation: <strong>An object at rest will remain at rest unless acted upon by an external and unbalanced force . An object in motion will remain in motion unless acted upon by an external and unbalanced force.</strong></p>
 <p>Let’s see if we can understand better what this means and checkout a real example.</p>
 <p>Imagine you have a ball floating in space, perfectly still, where Newton’s <span class="math notranslate nohighlight">\(1^{\rm st}\)</span> law tells us it will remain motionless for eternity. It will remain this way unless a force acts on the ball. In the cell below, we can see this happening! The ball sits motionless <em>UNTIL</em> you apply the force. Likewise, once a force is applied and the ball starts to move it will continue to do so forever unless another force opposes this motion. Try it out below!</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Newtons_First.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;920px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;320px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
@@ -559,7 +559,7 @@
 <div class="section" id="net-force">
 <h2>Net Force<a class="headerlink" href="#net-force" title="Permalink to this headline">¶</a></h2>
 <p>A force is merely defined in Physics as something that changes the motion of an object. You’ll often hear it defined as a “push” or a “pull”, which works in the context of 2D problems but doesn’t give as clear of a description in 3D so this notebook will refrain from using that nomenclature. There are many types of forces that we experience and interact with every day. Some of these include applied forces, electric and magnetic forces, gravity, friction, etc. If there are 2 or more of these forces acting on a body, we get a <strong>net</strong> force in the resulting direction. To understand how a net force is quantified here is an image showing the resultant, net force from two individual forces.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&#39;images/Vector_3.png&#39;&gt;&lt;/td&gt;&lt;td&gt;&lt;img src=&#39;images/Vector_4.png&#39;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;</span><span class="p">))</span>
 </pre></div>
@@ -575,7 +575,7 @@
 <p>As we saw in the single body example of the ball experiencing the force of gravity and an applied force (of wind), the net force caused a change in the motion of the ball. If you haven’t guessed it yet, this is because the acceleration is directly proportional to the net force acting on an object with mass. Newton’s Second Law tells us exactly this! If we were to manipulate the law so that we are solving for acceleration instead of the force we get</p>
 <p><span class="math notranslate nohighlight">\(\vec{a} = \frac{\large \vec{F}}{\large m}\)</span></p>
 <p>where now we can see that the acceleration depends linearly on the net force and inversely with mass. <strong>BUT BE CAREFUL!</strong> This does not necessarily mean that if we apply the same force to objects of differing mass that the heavier objects will accelerate slower than the lighter ones. It depends on what type of force is acting on the objects. For example let’s simplify our original case and only induce a force of gravity on several objects of varying mass (<strong>where no air resistance is present, i.e. space</strong>).</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Gravity.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;920px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;420px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
@@ -606,7 +606,7 @@
 <p>Below is a simulation where several balls begin in free fall as a result of gravity acting on them, where they go on to hit a substance (we’ll assume it’s water) which will apply a drag force. <strong>Before</strong> running the simulation ask yourself, will the balls fall at the same rate once they hit the water? Will the heavier balls fall quicker or will the smaller ones? Look again at our final equation for acceleration</p>
 <p><span class="math notranslate nohighlight">\(\vec{a} = -\vec{g} + \frac{1}{m}c_0\vec{v}^2 C_D\)</span></p>
 <p>Now check out what happens!</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Drag.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;900px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;620px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
@@ -627,7 +627,7 @@
 <p><span class="math notranslate nohighlight">\(F_g = \frac{\large GMm}{\large r^2}\)</span></p>
 <p>It is important to realize that the direction of this force is along the distance or separation vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> and is <strong>negatively</strong> oriented. In the environment of standing on Earth this should be intuitive as we are constantly being pushed <em>downwards</em>, back to the surface when we try to jump in the air or send rockets into space. How might this work for an orbiting planet ? And why doesn’t a planet just fall into the Sun, just like how we are brought back to the ground ? A crucial factor for the stability and effectively eternal nature of the planet’s orbits has to do with the orbital velocity they obtained during the Solar System’s creation.</p>
 <p>During the formation of a star, there may exist a Protoplanetary disk that violently orbits around the young star. If conditions are satisfactory for planetary formation, the material in the disk will start to <em>clump</em> and create it’s own gravitational field, which in turn attracts more material, forming gaseous or rock based planets, depending on their distance from the star. Due to conservation of angular momentum and energy, the orbital velocity that this material had while the star was forming, remains long after the star and planets have formed. Thus, as we see in our own Solar System, this is how the planets perpetually orbit around the Sun.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s2">&quot;f9rBJDajwPc&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">560</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">315</span><span class="p">)</span>
 </pre></div>
@@ -645,7 +645,7 @@
 </div></div>
 </div>
 <p>Now back to the gravitational force and its role in all of this. Without the constant gravitational acceleration inwards, the planets would merely fling off their elliptical orbits and off into interstellar space. Let’s see what this looks like with some vectors indicating how all these effects are working together.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Orbit.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;620px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;550px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
@@ -660,7 +660,7 @@
 <div class="section" id="questions">
 <h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
 <p>Q1. By looking at the force body diagram shown below, click on the vector (arrow) at the bottom of the screen that you think represents the net force vector.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
 <span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src </span><span class="o">=</span> <span class="s">&#39;p5_animations/Vector_Q1.html&#39;</span> <span class="na">width </span><span class="o">=</span> <span class="s">&quot;480px&quot;</span> <span class="na">height </span><span class="o">=</span> <span class="s">&quot;430px&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
@@ -673,7 +673,7 @@
 </div>
 <p>Q2. If a force <span class="math notranslate nohighlight">\(F = \frac{\large kq_1q_2}{\large r^2}\)</span> is applied to 2 objects, one with mass <span class="math notranslate nohighlight">\(m_1\)</span> and the other with mass <span class="math notranslate nohighlight">\(m_2\)</span>, where <span class="math notranslate nohighlight">\(m_2 &gt; m_1\)</span>, which object will <strong>accelerate faster</strong>? Object 1 with mass <span class="math notranslate nohighlight">\(m_1\)</span> or object 2 with mass <span class="math notranslate nohighlight">\(m_2\)</span> ? To start off, try equating <span class="math notranslate nohighlight">\(F=ma\)</span> to <span class="math notranslate nohighlight">\(F=\frac{\large kq_1q_2}{\large r^2}\)</span> and then solve for the acceleration and see how it behaves with respect to the mass.</p>
 <p>Click on Run Interact to check your answer.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">}</span>
 
@@ -701,7 +701,7 @@
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "e592d099845b4114ab0728bb9826ede8", "version_major": 2, "version_minor": 0}
+{"model_id": "b3833fa2e20e4e719b810c960f8b6f69", "version_major": 2, "version_minor": 0}
 </script></div>
 </div>
 </div>

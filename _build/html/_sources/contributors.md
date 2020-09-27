@@ -18,7 +18,7 @@ Callysto Developers who contributed to these notebooks include:
 - Laura Gutierrez Funderburk
 - David Hay
 - India Heisz
-- Richard Hosino
+- Richard Hoshino
 - Joel Houle
 - Yiwie Huang
 - Rafat Islam
@@ -40,5 +40,6 @@ Callysto Developers who contributed to these notebooks include:
 - Nathan Tipper
 - Nicole Vachon
 - Ariel van Brummelen
+- Gustaaf Wehnes
 - Lin Zhu
 

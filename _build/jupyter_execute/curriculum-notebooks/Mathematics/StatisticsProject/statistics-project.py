@@ -4,7 +4,7 @@
 
 # Statistics Project
 
-For this project, you will collect numerical data about a topic that interests you. Then you will perform a statistical analysis of your data and report on your findings. You will be expected to present your findings and your predictions using a Jupyter notebook, plus be prepared to explain your results when asked questions. There are a number of starter notebooks in the [AccessingData](AccessingData) folder.
+For this project, you will collect numerical data about a topic that interests you. Then you will perform a statistical analysis of your data and report on your findings. You will be expected to present your findings and your predictions using a Jupyter notebook, plus be prepared to explain your results when asked questions. There are a number of starter notebooks in the [AccessingData](./AccessingData) folder.
 
 For more background on statistics, check out this [Introductory Statistics Textbook](https://openstax.org/books/introductory-statistics/pages/1-introduction), this [online course](http://www.learnalberta.ca/content/t4tes/courses/senior/math20-2/index.html?l1=home&l2=4-m4&l3=4-m4-l01&page=m4/m20_2_m4_l01.html&title=Mathematics%2020-2:%20Module%204:%20Lesson%201), or these [class notes](https://sites.google.com/a/share.epsb.ca/ms-carlson-s-math-site/20-2-class-notes).
 
@@ -55,7 +55,7 @@ If you choose this type of data, please make sure your research question is well
 You may want to do a comparison (e.g. compare climate in provinces, compare career stats of two or more hockey players, etc.) in order to get enough information to perform a statistical analysis.
 
 #### Ideas for Secondary Data Topics:
-You can use the starter notebooks in the [AccessingData folder](AccessingData). Feel free to choose a topic that is not in that list, but keep in mind that you need to be able to find enough data. 
+You can use the starter notebooks in the [AccessingData folder](./AccessingData). Feel free to choose a topic that is not in that list, but keep in mind that you need to be able to find enough data. 
 
 ### Creating Your Research Question or Statement
 A good question requires thought and planning. A well-written research question or statement clarifies exactly what your project is designed to do. It should have the following characteristics:

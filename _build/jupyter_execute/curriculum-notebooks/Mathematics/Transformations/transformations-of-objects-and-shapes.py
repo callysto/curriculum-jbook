@@ -205,7 +205,8 @@ def graph_square():
     display(input_widget)
     
     
-    iplot(fig, filename = 'filename')
+    #iplot(fig, filename = 'filename')
+    return fig
 
 def graph_triangle():
     dataT = []
@@ -348,7 +349,9 @@ square_button.on_click(square_update)
 
 triangle_button.on_click(triangle_update)
 
-graph_square()
+fig = graph_square()
+
+iplot(fig)
 
 The coordinate plane below allows you to translate an object's position on the Y axis by moving the slider. From the object's current Y position you can translate it up or down by adding the value listed on the slider. Each value on the slider is the amount added to the original Y position of the object. The original position of the object will remain highlighted in <span style="color:#00FF00"> green </span> and its translation will be highlighted in <span style="color:#00CED1"> blue</span>.
 
