@@ -702,11 +702,11 @@ These correspond to the white keys on the piano, while sharps and flats are the 
 <h2>Out of tune<a class="headerlink" href="#out-of-tune" title="Permalink to this headline">¶</a></h2>
 <p>Do those notes sound right to you? If you are an experienced musician, they might seem a little off.</p>
 <p>In fact, there is a problem with these notes. Although they are designed to be harmonious (as the ancient Greeks felt they are), there is a problem when a musician starts to transpose notes to different keys. The problem is when you shift all those fractions up by a fixed amount, the new frequencies don’t necessarily align with the old.</p>
-<p>For instance, if we take the C scale and shift to the G scale, we should take the fractions 1, 9/8, 5/4, 4/3, … and multiply them all by 3/2 (making the base frequency 3/2). We end up with the fractions
-$<span class="math notranslate nohighlight">\( \frac{3}{2}\times\left[1, \frac{9}{8}, \frac{5}{4}, \frac{4}{3}, \frac{3}{2}, \frac{5}{3}, \frac{15}{8}, 2\right] = 
-\left[\frac{3}{2}, \frac{27}{16}, \frac{15}{8}, 2, \frac{9}{4}, \frac{15}{6}, \frac{45}{16}, 3\right].\)</span><span class="math notranslate nohighlight">\(
-Now, on the right-hand side, we see the familiar fractions 3/2, 15/8 and 2. But in the middle is that 27/16 where we should be expecting a 5/3, corresponding to the A in our scale. It is out of tune, by quite a bit, because
-\)</span><span class="math notranslate nohighlight">\( \frac{5}{3} = 1.6667  \neq 1.6875 = \frac{27}{16}.\)</span>$</p>
+<p>For instance, if we take the C scale and shift to the G scale, we should take the fractions 1, 9/8, 5/4, 4/3, … and multiply them all by 3/2 (making the base frequency 3/2). We end up with the fractions</p>
+<div class="math notranslate nohighlight">\( \frac{3}{2}\times\left[1, \frac{9}{8}, \frac{5}{4}, \frac{4}{3}, \frac{3}{2}, \frac{5}{3}, \frac{15}{8}, 2\right] = 
+\left[\frac{3}{2}, \frac{27}{16}, \frac{15}{8}, 2, \frac{9}{4}, \frac{15}{6}, \frac{45}{16}, 3\right].\)</div>
+<p>Now, on the right-hand side, we see the familiar fractions 3/2, 15/8 and 2. But in the middle is that 27/16 where we should be expecting a 5/3, corresponding to the A in our scale. It is out of tune, by quite a bit, because</p>
+<div class="math notranslate nohighlight">\( \frac{5}{3} = 1.6667  \neq 1.6875 = \frac{27}{16}.\)</div>
 <p>So this note might sound terribly out of tune.</p>
 <p>Perhaps this is most easily illustrated with the Circle of Fifths idea.</p>
 </div>
@@ -714,7 +714,7 @@ Now, on the right-hand side, we see the familiar fractions 3/2, 15/8 and 2. But 
 <h2>Circle of Fifths<a class="headerlink" href="#circle-of-fifths" title="Permalink to this headline">¶</a></h2>
 <p>Here is an interesting method for creating the notes in our Western scales. The idea is that the interval C to G, can be used to generate all the notes in the Western tonal scale.</p>
 <p>Graphically, we can look at the following picture, which lists all the notes C,D,E,F,G, A, and B, as well as the sharps that can occur. Note that sharps correspond to the black keys on the piano.</p>
-<p><img src="./images/CircleFifths.png" alt="The Circle of Fifths." width="500"/></img></p>
+<p><img src="../../../_images/CircleFifths.png" alt="The Circle of Fifths." width="500"/></img></p>
 <center> The Circle of Fifths. </center>
 <p>The interval from C to G is called a “fifth” in western music, because G is the fifth note in the usual diatonic scale that goes C,D,E,F,G,A,B,C. This fifth is marked on the above circle by the blue arc going from C to G.</p>
 <p>We can also get from C to G on this circle by counting off “ticks” on the circle: it takes 7 ticks to go clockwise from C to G. Each tick corresponds to a semitone in music, so there are seven semitones in a fifth.</p>
@@ -735,15 +735,15 @@ Now, on the right-hand side, we see the familiar fractions 3/2, 15/8 and 2. But 
 <p>We discussed earlier that the jump from C to G corresponds to increasing the frequency of our note by a factor 3/2.  This is true for any leap of a fifth: the frequencies increase by a factor of 3/2.  So, if we think of 1 as our base frequency for C, then 3/2 is the frequency for G, and (3/2)x(3/2) = 9/4 should correspond to the note D.</p>
 <p>But of course, this D is too high – it is an octave higher than what we want, so divide by 2 to bring it down an octave, to get (9/4)/2 = 9/8. This agrees with our fractional scales discussed above.</p>
 <p>To go from D to A, we again multiply by 3/2, so (9/8)x(3/2) = 27/16. This is not quite 5/3 = 1.66667 but pretty close, as 27/16 = 1.6875.</p>
-<p>From A to E, we multiply again by 3/2 to get 81/32 and again this is too high by an octave, so we divide by 2 to get $<span class="math notranslate nohighlight">\(81/64 \approx 80/64 = 5/4.\)</span>$</p>
+<p>From A to E, we multiply again by 3/2 to get 81/32 and again this is too high by an octave, so we divide by 2 to get <span class="math notranslate nohighlight">\(81/64 \approx 80/64 = 5/4.\)</span></p>
 <p>We should be able to continue with these fractions to get all possible frequencies for the notes on the circle. Unfortunately, this is not quite right, as we will see in the next section.</p>
 </div>
 <div class="section" id="well-tempered-tuning-and-roots-of-two">
 <h2>Well-tempered tuning and roots of two<a class="headerlink" href="#well-tempered-tuning-and-roots-of-two" title="Permalink to this headline">¶</a></h2>
 <p>The problem with the fractional tuning is this Circle of Fifths doesn’t bring you back to C, exactly.</p>
 <p>The math behind this is that each time you move by a fifth, the frequency will increase by exactly 3/2. So the frequencies increase like this pattern:
-$<span class="math notranslate nohighlight">\( 1, (3/2), (3/2)^2, (3/2)^3, \ldots, (3/2)^{12}.\)</span><span class="math notranslate nohighlight">\(
-But we can compute \)</span>(3/2)^{12} = 129.746<span class="math notranslate nohighlight">\(. This is just a bit bigger than \)</span>128 = 2^7$, which is a power of two. Remember, powers of 2 give us octave jumps. So the circle of fifth brings us to a note slightly higher than the C which is seven octaves higher.</p>
+<span class="math notranslate nohighlight">\( 1, (3/2), (3/2)^2, (3/2)^3, \ldots, (3/2)^{12}.\)</span>
+But we can compute <span class="math notranslate nohighlight">(3/2)^{12} = 129.746</span>. This is just a bit bigger than <span class="math notranslate nohighlight">128 = 2^7</span>, which is a power of two. Remember, powers of 2 give us octave jumps. So the circle of fifth brings us to a note slightly higher than the C which is seven octaves higher.</p>
 <p>This got to be such a problem for musicians that in Baroque period, various people proposed a “well-tempered” system of tuning for notes where the intervals for frequencies differences are given by powers of the number 2.</p>
 <p>You may have heard of Bach’s composition “The Well Tempered Clavier” which is a collection of 24 pieces in all major and minor keys, demonstrating the utility of the well-tempering system.</p>
 <div class="cell tag_hide-input docutils container">
@@ -761,11 +761,10 @@ But we can compute \)</span>(3/2)^{12} = 129.746<span class="math notranslate no
 <div class="section" id="fixing-the-math">
 <h2>Fixing the math<a class="headerlink" href="#fixing-the-math" title="Permalink to this headline">¶</a></h2>
 <p>The basic idea in well-tempering is to choose an number close to 3/2 = 1.5 so that its twelfth power is exactly 128. In fact, we find
-$<span class="math notranslate nohighlight">\( 1.4983071^{12} = 128.\)</span>$ Now when we go around the circle of fifths, we will come back exactly to C, in exact frequencies.</p>
+<span class="math notranslate nohighlight">\( 1.4983071^{12} = 128.\)</span> Now when we go around the circle of fifths, we will come back exactly to C, in exact frequencies.</p>
 <p>If you know a bit of algebra, you might recognize this number 1.4983071 as the 12-th root of 128.</p>
-<p>Another way to describe the circle of fifths is to measure the size of the semitone. We need a number that solves $<span class="math notranslate nohighlight">\(x^{12} = 2\)</span><span class="math notranslate nohighlight">\(
-which just says we need 12 semitones in an octave. The answer is the twelfth root of two, or approximately
-\)</span><span class="math notranslate nohighlight">\( x= 1.0594631.\)</span>$</p>
+<p>Another way to describe the circle of fifths is to measure the size of the semitone. We need a number that solves <span class="math notranslate nohighlight">\(x^{12} = 2\)</span>
+which just says we need 12 semitones in an octave. The answer is the twelfth root of two, or approximately <span class="math notranslate nohighlight">\( x= 1.0594631.\)</span></p>
 <p>Now this has solved our problem with tuning. All our notes are related to each other by powers of 2. Shifting up and down the scale amounts to multiplying or dividing by some power of two, so every notes stays in the proper relationship to other notes. There are distinct 12 notes in this system. If we play them all, we get the chromatic scale which includes the notes</p>
 <ul class="simple">
 <li><p>C, C#, D, D#, E, F, F#, G, G#, A, A#, B, and back to C.</p></li>
