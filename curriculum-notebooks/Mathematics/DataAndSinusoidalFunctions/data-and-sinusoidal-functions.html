@@ -607,7 +607,7 @@
 <p>In Mathematics, given a set of data points, it is possible to construct a curve, or mathematical function, that has the best fit to those points. This process is called curve fitting.</p>
 <p>In the case that the data are somewhat cyclic, it is possible to sketch a curve of best fit that somehow resembles a sinusoidal function.  The fitting sinusoidal curve is found by determining the specific parameters which makes the curve match your data as closely as possible.</p>
 <p>To better understand what we mean by cyclic data observe the applet below. It shows a pendulum swinging. By toggling the <strong>graph</strong> option, you can see that its movement at the point <span class="math notranslate nohighlight">\(A\)</span> can be modelled by the particle <span class="math notranslate nohighlight">\(A'\)</span> travelling on a sinusoidal function which can be written as</p>
-<p>$<span class="math notranslate nohighlight">\(f(t) = \theta_0 \cos\left(\sqrt{\frac{g}{l}}t\right)\)</span>$.</p>
+<p><span class="math notranslate nohighlight">\(f(t) = \theta_0 \cos\left(\sqrt{\frac{g}{l}}t\right)\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ggb</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="s1">&#39;files/pendulum.ggb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">();</span>
@@ -701,32 +701,32 @@
 <h2>The sinusoidal function<a class="headerlink" href="#the-sinusoidal-function" title="Permalink to this headline">¶</a></h2>
 <p>The key idea behind sinusoidal functions is that they can all be expressed as a sine function.</p>
 <p>The general form of a sinusoidal function can be written as
-$<span class="math notranslate nohighlight">\( y = a \sin (bx-c)+d\)</span>$</p>
+<span class="math notranslate nohighlight">\( y = a \sin (bx-c)+d\)</span></p>
 <p>We can also use the cosine function, but since <span class="math notranslate nohighlight">\(\sin(x) = \cos(\pi/2 - x)\)</span> for every <span class="math notranslate nohighlight">\(x\)</span>, we can express every sinusoidal function using the sine function.</p>
 <hr class="docutils" />
 <p><strong>Features of a sinusoidal function</strong></p>
 <p>Each sinusoidal function can be uniquely determined by four characteristic parameters:</p>
 <ul>
-    <li>$a$ is the *amplitude*. The amplitude describes the vertical footprint of a graph is and can be computed in the following way
-        $$a = \frac{\text{maximum value} - \text{minimum value}}{2}$$ .  
-        As you see, $a$ is always a non-negative quantity -- a large $a$ indicates a graph with wide vertical fluctuations, while a smaller $a$ tells us that the graph is confined to a more narrow horizontal region.
-   <li> $b$ is the *frequency*. The frequency describes the number of cycles that happen in $360^{\circ}$ or $2\pi$ radians. It can be used to compute the period  $T$ as 
-    $$T= \frac{360^{\circ}}{b} \quad\text{  or  } \quad T= \frac{2\pi}{b}$$ .
+    <li> <span class="math notranslate nohighlight">\(a\)</span> is the </em>amplitude</em>. The amplitude describes the vertical footprint of a graph is and can be computed in the following way
+<div class="math notranslate nohighlight">\[a = \frac{\text{maximum value} - \text{minimum value}}{2}\]</div>  
+As you see, <span class="math notranslate nohighlight">\(a\)</span> is always a non-negative quantity -- a large <span class="math notranslate nohighlight">\(a\)</span> indicates a graph with wide vertical fluctuations, while a smaller <span class="math notranslate nohighlight">\(a\)</span> tells us that the graph is confined to a more narrow horizontal region.
+<li> <span class="math notranslate nohighlight">\(b\)</span> is the <em>frequency</em>. The frequency describes the number of cycles that happen in <span class="math notranslate nohighlight">\(360^{\circ}\)</span> or <span class="math notranslate nohighlight">\(2\pi\)</span> radians. It can be used to compute the period  <span class="math notranslate nohighlight">\(T\)</span> as 
+    <div class="math notranslate nohighlight">\[T= \frac{360^{\circ}}{b} \quad\text{  or  } \quad T= \frac{2\pi}{b} \]<div>
     The larger the frequency, the more condensed the waves will be.
-        <li> $c$ is the *phase shift* and it indicates the horizontal translation that has been applied to the graph of 
-    $$y=\sin(x)$$
-    If $c>0$ the graph is shifted to the right, otherwise it is shifted to the left.
-    <li> $d$ is the *midline* and it indicates by how much the function has been translated vertically. It can be computed as
-    $$d = \frac{\text{maximum value} + \text{minimum value}}{2}$$
-    If $d>0$, the graph is shifted up, otherwise it is shifted down.
+    <li> <span class="math notranslate nohighlight">\(c\)</span> is the <em>phase shift</em> and it indicates the horizontal translation that has been applied to the graph of 
+        <span div="math notranslate nohighlight">\[y=\sin(x)\]</div>
+        If <span class="math notranslate nohighlight">\(c>0\)</span> the graph is shifted to the right, otherwise it is shifted to the left.
+        <li> <span class="math notranslate nohighlight">\(d\)</span> is the <em>midline</em> and it indicates by how much the function has been translated vertically. It can be computed as
+            <div class="math notranslate nohighlight">\[d = \frac{\text{maximum value} + \text{minimum value}}{2}\]</div>
+            If <span class="math notranslate nohighlight">\(d>0\)</span>, the graph is shifted up, otherwise it is shifted down.
 <ul>
 <img alt="../../../_images/sine_sinusoidal.jpg" src="../../../_images/sine_sinusoidal.jpg" />
 </div>
 <div class="section" id="matching-the-equation-of-a-sinusoidal-function-to-the-corresponding-graph">
 <h2>Matching the equation of a sinusoidal function to the corresponding graph<a class="headerlink" href="#matching-the-equation-of-a-sinusoidal-function-to-the-corresponding-graph" title="Permalink to this headline">¶</a></h2>
 <p>In this section, we will learn how to describe the characteristics of a sinusoidal function by analyzing its graph.</p>
-<p>The simplest and most basic sinusoidal function we could come across  is $<span class="math notranslate nohighlight">\(y=\sin(x),\)</span>$ whose graph is
-<img src="./figures/sine.jpg" style="width: 700px;"/></p>
+<p>The simplest and most basic sinusoidal function we could come across  is <span class="math notranslate nohighlight">\(y=\sin(x),\)</span> whose graph is
+<img src="../../../_images/sine.jpg" style="width: 700px;"/></p>
 <p>We already leaned that the value of <span class="math notranslate nohighlight">\(a\)</span> changes how tall or short the graph is. The figure below shows you different sinusoidal functions that have different amplitudes.</p>
 <img alt="../../../_images/amplitudes.jpg" src="../../../_images/amplitudes.jpg" />
 <p>By changing the value of <span class="math notranslate nohighlight">\(b\)</span>, we can see whether a graph is more stretched or condensed. The figure below shows you different functions with different periods.</p>
@@ -999,12 +999,12 @@ $<span class="math notranslate nohighlight">\(c =- \frac{\pi}{2} +\frac{\pi}{3}=
 <p><strong>Determine the characteristics parameters of a sinusoidal function</strong></p>
 <p>In the next example, we will learn how to compute the characteristic parameters when we’re given the equation of a sinusoidal function.</p>
 <p>Determine the characteristic parameters from the following equation:
-$<span class="math notranslate nohighlight">\(y = 5\sin(3x) +2\)</span>$</p>
+<span class="math notranslate nohighlight">\(y = 5\sin(3x) +2\)</span></p>
 <ul>
-    <li>$a$ = 5 so the amplitude is 5
-     <li>$b$ = 3 so the period $T$ is $\frac{2\pi}{3}$
-     <li>$c$  = 0 so there is no horizontal translation
-     <li>$d$ = 2 so the equation of the midline is at $y = 2$
+    <li><span class="math notranslate nohighlights">\(a = 5\)</span> so the amplitude is 5
+        <li><span class="math notranslate nohighlights">\(b=3\)</span> so the period  <span class="math notranslate nohighlights">\(T= \frac{2\pi}{3}\)</span>
+            <li><span class="math notranslate nohighlights">\(c  = 0\)</span> so there is no horizontal translation
+                <li><span class="math notranslate nohighlights">\(d = 2\)</span> so the equation of the midline is at <span class="math notranslate nohighlights">\(y = 2\)</span>
 <ul>
 <p>Determine the characteristic parameters from the following equation:</p>
 <div class="math notranslate nohighlight">
