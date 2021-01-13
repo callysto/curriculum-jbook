@@ -546,8 +546,8 @@
 </div>
 </div>
 <p>It’s convenient to label these numbers, so we write <span class="math notranslate nohighlight">\(F_0 = 0\)</span>, <span class="math notranslate nohighlight">\(F_1 = 1\)</span> <span class="math notranslate nohighlight">\(F_2 = 2\)</span> and so on. The list of numbers is thus  defined <strong>recursively</strong>  by the formula
-$<span class="math notranslate nohighlight">\( \qquad\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\( F_n = F_{n-1} + F_{n-2}.\)</span>$</p>
+<span class="math notranslate nohighlight">\( \qquad\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\( F_n = F_{n-1} + F_{n-2}.\)</span></p>
 <p>We can check the few numbers in the Fibonacci sequence are obtained by that formula, by computing:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{eqnarray*}
@@ -665,24 +665,24 @@ F_7/F_6  &amp;=&amp; 13/8 = 1.625
 </div>
 <p>We see the numbers are levelling out at the value 1.6108034…  This number may be familiar to you. It is called the <strong>Golden Ratio.</strong></p>
 <p>We can compute the exact value by observing the ratios satisfy a nice algebraic equation:
-$<span class="math notranslate nohighlight">\(
+<span class="math notranslate nohighlight">\(
 \frac{F_{n+2}}{F_{n+1}}=\frac{F_{n+1}+F_{n}}{F_{n+1}}=1+\frac{F_{n}}{F_{n+1}}=1+\frac{1}{\frac{F_{n+1}}{F_{n}}},
-\)</span><span class="math notranslate nohighlight">\(
-or more simply 
-\)</span><span class="math notranslate nohighlight">\(\frac{F_{n+2}}{F_{n+1}}=1+\frac{1}{\frac{F_{n+1}}{F_{n}}}.\)</span>$</p>
+\)</span><p>
+ or more simply 
+</p><span class="math notranslate nohighlight">\(\frac{F_{n+2}}{F_{n+1}}=1+\frac{1}{\frac{F_{n+1}}{F_{n}}}.\)</span></p>
 <p>As <span class="math notranslate nohighlight">\(n\)</span> gets larger and larger, the ratios <span class="math notranslate nohighlight">\(F_{n+2}/F_{n+1}\)</span> and <span class="math notranslate nohighlight">\(F_{n+1}/F_{n}\)</span> tend toward a final value, say <span class="math notranslate nohighlight">\(x\)</span>. This value must then solve the equation
-$<span class="math notranslate nohighlight">\(x=1+\frac{1}{x}.\)</span>$</p>
+<span class="math notranslate nohighlight">\(x=1+\frac{1}{x}.\)</span></p>
 <p>We rewrite this as a quadratic equation
-$<span class="math notranslate nohighlight">\(x^2=x+1\)</span><span class="math notranslate nohighlight">\( 
+<span class="math notranslate nohighlight">\(x^2=x+1\)</span><span> 
 which we solve from the quadratic formula
-\)</span><span class="math notranslate nohighlight">\( x= \frac{1 \pm \sqrt{1+4}}{2} = \frac{1 \pm \sqrt{5}}{2}.\)</span><span class="math notranslate nohighlight">\(
-It is the positive solution \)</span>x= \frac{1 + \sqrt{5}}{2} = 1.6108034…$ which is called the Golden Ratio.</p>
+</span><span class="math notranslate nohighlight">\( x= \frac{1 \pm \sqrt{1+4}}{2} = \frac{1 \pm \sqrt{5}}{2}.\)</span><span>
+    It is the positive solution </span><span class="math notranslate nohighlight">\(x= \frac{1 + \sqrt{5}}{2} = 1.6108034\)</span>… which is called the Golden Ratio.</p>
 <p>The <strong>Golden ratio</strong> comes up in art, geometry, and  Greek mythology as a perfect ratio that is pleasing to the eye (and to the gods).</p>
 <p>For instance, the rectangle shown below is said to have the dimensions of the Golden ratio, because the big rectangle has the same shape as the smaller rectangle inside. Mathematically, we have the ratios of lengths
-$<span class="math notranslate nohighlight">\( \frac{a+b}{a} = \frac{a}{b}.\)</span>$</p>
+<span class="math notranslate nohighlight">\( \frac{a+b}{a} = \frac{a}{b}.\)</span></p>
 <p><img alt="Golden ratio rectangle" src="../../../_images/Golden2.png" /></p>
 <p>Writing <span class="math notranslate nohighlight">\(x = \frac{a}{b}\)</span>, the above equation simplifies to
-$<span class="math notranslate nohighlight">\( 1 + \frac{1}{x} = x,\)</span>$
+<span class="math notranslate nohighlight">\( 1 + \frac{1}{x} = x,\)</span>
 which is the same quadratic equation we saw for the limit of ratios of Fibonacci numbers.</p>
 <p>For more information about the Golden ratio see
 https://en.wikipedia.org/wiki/Golden_ratio</p>
@@ -690,12 +690,12 @@ https://en.wikipedia.org/wiki/Golden_ratio</p>
 <div class="section" id="a-formula-for-the-fibonacci-sequence-f-n">
 <h2>A Formula for the Fibonacci Sequence <span class="math notranslate nohighlight">\(F_n\)</span><a class="headerlink" href="#a-formula-for-the-fibonacci-sequence-f-n" title="Permalink to this headline">¶</a></h2>
 <p>Let’s give the Golden ratio a special name. In honour of the ancient Greeks who used it so much, we call it `phi:’
-$<span class="math notranslate nohighlight">\( \varphi = \frac{1 + \sqrt{5}}{2}. \)</span><span class="math notranslate nohighlight">\(
+<span class="math notranslate nohighlight">\( \varphi = \frac{1 + \sqrt{5}}{2}. \)</span><span>
 We'll call the other quadratic root 'psi:'
-\)</span><span class="math notranslate nohighlight">\( \psi = \frac{1 - \sqrt{5}}{2}. \)</span><span class="math notranslate nohighlight">\(
-This number \)</span>\psi<span class="math notranslate nohighlight">\( is called the **conjugate** of \)</span>\varphi<span class="math notranslate nohighlight">\( because it looks the same, except for the negative sign in front of the \)</span>\sqrt{5}$.</p>
+</span><span class="math notranslate nohighlight">\( \psi = \frac{1 - \sqrt{5}}{2}. \)</span><span>
+    This number</span><span class="math notranslate nohighlight">\(\psi\)</span><span> is called the <em>conjugate</em> of </span><span class="math notranslate nohighlight">\(\varphi\)</span><span> because it looks the same, except for the negative sign in front of the </span><span class="math notranslate nohighlight">\(\sqrt{5}\)</span>.</p>
 <p>Here’s something <strong>amazing.</strong> It turns out that we have a remarkable formula for the Fibonnaci numbers, in terms of these two Greek numbers. The formula says
-$<span class="math notranslate nohighlight">\(F_n = \frac{\varphi^n - \psi^n}{\sqrt{5}}.\)</span>$</p>
+<span class="math notranslate nohighlight">\(F_n = \frac{\varphi^n - \psi^n}{\sqrt{5}}.\)</span></p>
 <div class="section" id="wow">
 <h3>Wow!<a class="headerlink" href="#wow" title="Permalink to this headline">¶</a></h3>
 <p>Seems amazing. And it is handy because now we can compute, say, the thousandth term in the sequence, <span class="math notranslate nohighlight">\(F_{1000}\)</span> directly, without having to compute all the other terms that come before.</p>
@@ -723,13 +723,13 @@ $<span class="math notranslate nohighlight">\(F_n = \frac{\varphi^n - \psi^n}{\s
 <p>Doing math, though, we like exact answers and we want to know why. So WHY does this formula <span class="math notranslate nohighlight">\((\phi^n - \psi^n)/\sqrt{5}\)</span> give Fibonacci numbers?</p>
 <p>Well, we can check, step by step.</p>
 <p>For <span class="math notranslate nohighlight">\(n=0\)</span>, the formula gives
-$<span class="math notranslate nohighlight">\(\frac{\varphi^0 - \psi^0}{\sqrt{5}} = \frac{1-1}{\sqrt{5}} = 0,\)</span><span class="math notranslate nohighlight">\( which is \)</span>F[0]$, the first Fibonacci number.</p>
+<span class="math notranslate nohighlight">\(\frac{\varphi^0 - \psi^0}{\sqrt{5}} = \frac{1-1}{\sqrt{5}} = 0,\)</span><span> which is </span><span class="math notranslate nohighlight">\(F[0]\)</span>, the first Fibonacci number.</p>
 <p>For <span class="math notranslate nohighlight">\(n=1\)</span>, the formula gives
-$<span class="math notranslate nohighlight">\(\frac{\varphi^1 - \psi^1}{\sqrt{5}} =
-\frac{\frac{1 + \sqrt{5}}{2} - \frac{1 -\sqrt{5}}{2} }{\sqrt{5}} = \frac{\sqrt{5}}{\sqrt{5}} = 1,\)</span><span class="math notranslate nohighlight">\( which is \)</span>F[1]$, the next Fibonacci number.</p>
+<span class="math notranslate nohighlight">\(\frac{\varphi^1 - \psi^1}{\sqrt{5}} =
+\frac{\frac{1 + \sqrt{5}}{2} - \frac{1 -\sqrt{5}}{2} }{\sqrt{5}} = \frac{\sqrt{5}}{\sqrt{5}} = 1,\)</span> which is <span class="math notranslate nohighlight">F[1]</span>, the next Fibonacci number.</p>
 <p>For <span class="math notranslate nohighlight">\(n=2\)</span>, it looks harder because we get the squares <span class="math notranslate nohighlight">\(\varphi^2, \psi^2\)</span> in the formula. But then remember that both <span class="math notranslate nohighlight">\(\varphi\)</span> and <span class="math notranslate nohighlight">\(\psi\)</span> solve the quadratic <span class="math notranslate nohighlight">\(x^2 = x+1\)</span>, so we know <span class="math notranslate nohighlight">\(\varphi^2 = \phi +1\)</span> and <span class="math notranslate nohighlight">\(\psi^2 = \psi +1\)</span>. So we can write
-$<span class="math notranslate nohighlight">\(\frac{\phi^2 - \psi^2}{\sqrt{5}} = \frac{\phi + 1 - \psi -1}{\sqrt{5}} = \frac{\phi - \psi }{\sqrt{5}} = 1,\)</span><span class="math notranslate nohighlight">\(
-since we already calculated this in the \)</span>n=1<span class="math notranslate nohighlight">\( step. So this really is \)</span>F[2]=1$.</p>
+$<span class="math notranslate nohighlight">\(\frac{\phi^2 - \psi^2}{\sqrt{5}} = \frac{\phi + 1 - \psi -1}{\sqrt{5}} = \frac{\phi - \psi }{\sqrt{5}} = 1,\)</span> 
+since we already calculated this in the <span class="math notranslate nohighlight">\(n=1\)</span> step. So this really is </span><span class="math notranslate nohighlight">F[2]=1</span>.</p>
 <p>For <span class="math notranslate nohighlight">\(n=3,4,5,\ldots\)</span> again it might seem like it will be hard because of the higher powers. But multiplying the formulas <span class="math notranslate nohighlight">\(\varphi^2 = \varphi +1\)</span> and <span class="math notranslate nohighlight">\(\psi^2 = \psi +1\)</span> by powers of <span class="math notranslate nohighlight">\(\phi\)</span> and <span class="math notranslate nohighlight">\(\psi\)</span>, we get</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{eqnarray*}
@@ -747,17 +747,16 @@ $<span class="math notranslate nohighlight">\(\frac{\varphi^{n+2} - \psi^{n+2}}{
 </div>
 <div class="section" id="why-did-this-work">
 <h2>Why did this work?<a class="headerlink" href="#why-did-this-work" title="Permalink to this headline">¶</a></h2>
-<p>Well, from the Golden ratio, we have the formula <span class="math notranslate nohighlight">\(\varphi^2 = \varphi + 1\)</span>, which then gives the formula <span class="math notranslate nohighlight">\(\varphi^{n+2} = \varphi^{n+1} + \varphi^n\)</span>.  This looks a lot like the Fibonacci formula $<span class="math notranslate nohighlight">\(F[n+2] = F[n+1] + F[n].\)</span><span class="math notranslate nohighlight">\( Same powers of \)</span>\psi$.</p>
+<p>Well, from the Golden ratio, we have the formula <span class="math notranslate nohighlight">\(\varphi^2 = \varphi + 1\)</span>, which then gives the formula <span class="math notranslate nohighlight">\(\varphi^{n+2} = \varphi^{n+1} + \varphi^n\)</span>.  This looks a lot like the Fibonacci formula <span class="math notranslate nohighlight">\(F[n+2] = F[n+1] + F[n].\)</span> Same powers of </span><span class="math notranslate nohighlight">\( \psi\)</span>.</p>
 <p>If we take ANY linear combination of powers of <span class="math notranslate nohighlight">\(\varphi, \psi\)</span>, such as
-$<span class="math notranslate nohighlight">\(f(n) = 3\varphi^n + 4\psi^n,\)</span><span class="math notranslate nohighlight">\(
-we will get a sequence that behaves like the Fibonacci sequence, with \)</span>f(n+2) = f(n+1) + f(n).$ To get the ‘right’ Fibonacci sequence, we just have to replace the 3 and 4 with the right coefficients.</p>
+<span class="math notranslate nohighlight">\(f(n) = 3\varphi^n + 4\psi^n,\)</span>
+we will get a sequence that behaves like the Fibonacci sequence, with <span class="math notranslate nohighlight">\(f(n+2) = f(n+1) + f(n)\)</span>. To get the ‘right’ Fibonacci sequence, we just have to replace the 3 and 4 with the right coefficients.</p>
 </div>
 <div class="section" id="from-sequences-to-functions">
 <h2>From sequences to functions<a class="headerlink" href="#from-sequences-to-functions" title="Permalink to this headline">¶</a></h2>
 <p>Wouldn’t it be fun to extend Fibonacci numbers to a function, defined for all numbers <span class="math notranslate nohighlight">\(x\)</span>?</p>
 <p>The problems is the function
-$<span class="math notranslate nohighlight">\(F[x] = \frac{\varphi^x - \psi^x}{\sqrt{5}}\)</span><span class="math notranslate nohighlight">\(
-is not defined for values of \)</span>x$ other than integers.</p>
+<span class="math notranslate nohighlight">\(F[x] = \frac{\varphi^x - \psi^x}{\sqrt{5}}\)</span> is not defined for values of </span><span class="math notranslate nohighlight">\(x\)</span> other than integers.</p>
 <p>The issue is the term <span class="math notranslate nohighlight">\(\psi^{x}=\left( \frac{1-\sqrt{5}}{2}\right) ^{x}\)</span>, which is the power of a negative number.
 We don’t really know how to define that. For instance, what is the square root of a negative number?</p>
 <p>To
@@ -776,8 +775,8 @@ continuous function <span class="math notranslate nohighlight">\(m(x)\)</span> s
 <div class="math notranslate nohighlight">
 \[m\left( x\right) =\cos \left( \pi x\right) \qquad \text{does the job.} \]</div>
 <p>That is:
-$<span class="math notranslate nohighlight">\(\cos \left( n\pi \right) =1\quad \text{if }n\text{ is even}\quad\text{ and}\quad %
-\cos \left( n\pi \right) =-1\quad \text{if }n\text{ is odd.}\)</span>$</p>
+<span class="math notranslate nohighlight">\(\cos \left( n\pi \right) =1\quad \text{if }n\text{ is even}\quad\text{ and}\quad %
+\cos \left( n\pi \right) =-1\quad \text{if }n\text{ is odd.}\)</span></p>
 <p>Why this is a <strong>good</strong> choice would lead us to complex numbers and more!</p>
 <p>Hence, we obtain the following closed formula for our function <span class="math notranslate nohighlight">\(F[x]:\)</span></p>
 <div class="math notranslate nohighlight">
