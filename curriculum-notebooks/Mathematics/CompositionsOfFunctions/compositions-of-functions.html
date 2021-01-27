@@ -415,24 +415,17 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/callysto/curriculum-notebooks/master?urlpath=tree/curriculum-notebooks/Mathematics/CompositionsOfFunctions/compositions-of-functions.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../../../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
+        <
         
         
-        <a class="jupyterhub-button" href="https://hub.callysto.ca/hub/user-redirect/git-pull?repo=https://github.com/callysto/curriculum-notebooks&urlpath=tree/curriculum-notebooks/curriculum-notebooks/Mathematics/CompositionsOfFunctions/compositions-of-functions.ipynb&branch=master"><button type="button"
+        <a class="jupyterhub-button" href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fcurriculum-notebooks&branch=master&subPath=Mathematics/CompositionsOfFunctions/compositions-of-functions.ipynb&depth=1" target="_parent"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
                 data-placement="left"><img class="jupyterhub-button-logo"
                     src="../../../_static/images/logo_jupyterhub.svg"
                     alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/callysto/curriculum-notebooks/blob/master/curriculum-notebooks/Mathematics/CompositionsOfFunctions/compositions-of-functions.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
-                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="../../../_static/images/logo_colab.png"
-                    alt="Interact on Colab">Colab</button></a>
+        <
         
         
     </div>
@@ -932,11 +925,12 @@ f(x) + g(x) = x^2 + 2x + 10
 \left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)} = \frac{x^2}{2x + 10}
 \end{equation}\]</div>
 <p>This shorthand behaves exactly like regular math, but you “map” your variable back onto the function afterwards, certainly you could even stop writing the variable completely. Of course, a natural question now arises: how is this useful? Suppose you have three functions</p>
-<p>\begin{aligned}
-f(x) = &amp; x^2 \sin^2(x) + x^2 \
-g(x) = &amp; \frac{x^3\log_{10}(x) + 10^x}{10} \
-h(x) = &amp; x^2\cos^2 + x^2
-\end{aligned}</p>
+<div class="math notranslate nohighlight">\[\begin{split}\hskip-60pt\begin{align*}
+f(x)  &amp;= x^2 \sin^2(x) + x^2 \\
+g(x) &amp;= \frac{x^3\log_{10}(x) + 10^x}{10} \\
+h(x) &amp;= x^2\cos^2 + x^2
+\end{align*}
+\end{split}\]</div>
 <p>First, let’s define them in Python so we can observe how these functions behave</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -968,23 +962,27 @@ h(x) = &amp; x^2\cos^2 + x^2
 y=\frac{f(x)g(x) + h(x)g(x)}{g(x) \left([f(x) + 1]^2 + [h(x) +1]^2 - f^2(x) - h^2(x) - 2\right)^2}
 \end{equation}\]</div>
 <p>where that looks pretty intimidating, I certainly wouldn’t want to put the definitions of my functions into the expression for <span class="math notranslate nohighlight">\(y\)</span>. But, let’s use operations of functions to see if we can simplify that expression before we evaluate it.</p>
-<p>\begin{aligned}
-&amp;\text{Factor the numerator} \
-y &amp;=\frac{g \left(f + h \right)}{g \left([f + 1]^2 + [h +1]^2 - f^2 - h^2 - 2)\right)^2} \
-\
-&amp;\text{Expand denominator} \
-y &amp;=\frac{g \left(f + h \right)}{ g \left(f^2 +2f + 1 + h^2 + 2h + 1 -f^2 -h^2 - 2  \right)^2} \ \
-&amp;\text{Collect terms and simplify} \
-y &amp; = \frac{f + h}{ (2f + 2h) ^2} = \frac{f+h}{4(f+h)^2} \ \
-&amp;\text{Cancel common terms}\
-y &amp; = \frac{1}{4}\frac{1}{f + h} \ \
-&amp;\text{Insert Function definitions}\
-y &amp;= \frac{1}{x^2 \sin^2(x) + x^2 + x^2 \cos^2(x) + x^2} \ \
-&amp;\text{Simplify} \
-y&amp;=\frac{1}{4}\frac{1}{x^2( \sin^2(x) + \cos^2(x) + 2)} \ \
-&amp;\text{Pythagorean Theorem} \
+<div class="math notranslate nohighlight">
+    \[
+    \begin{split}
+    \begin{align*}
+&amp;\text{Factor the numerator} \\
+y &amp;=\frac{g \left(f + h \right)}{g \left([f + 1]^2 + [h +1]^2 - f^2 - h^2 - 2)\right)^2} \\
+&amp;\text{Expand denominator} \\
+y &amp;=\frac{g \left(f + h \right)}{ g \left(f^2 +2f + 1 + h^2 + 2h + 1 -f^2 -h^2 - 2  \right)^2} \\
+&amp;\text{Collect terms and simplify} \\
+y &amp; = \frac{f + h}{ (2f + 2h) ^2} = \frac{f+h}{4(f+h)^2} \\
+&amp;\text{Cancel common terms}\\
+y &amp; = \frac{1}{4}\frac{1}{f + h} \\
+&amp;\text{Insert Function definitions}\\
+y &amp;= \frac{1}{x^2 \sin^2(x) + x^2 + x^2 \cos^2(x) + x^2} \\
+&amp;\text{Simplify} \\
+y&amp;=\frac{1}{4}\frac{1}{x^2( \sin^2(x) + \cos^2(x) + 2)} \\
+&amp;\text{Pythagorean Theorem} \\
 y&amp;= \frac{1}{12x^2}
-\end{aligned}</p>
+\end{align*}
+\end{split}\
+\]</div>
 <p>While we still had to do a little algebra, by using operations of functions we saved ourselves a considerable amount of time working through that simplification, and in fact found that our solution didn’t depend on <span class="math notranslate nohighlight">\(g(x)\)</span> at all! Although that looks all too convenient, let’s test if this lines up using Python to double check our expression. First, let’s define a helper function to handle that nasty composition of functions.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
