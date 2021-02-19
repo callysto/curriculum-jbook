@@ -859,10 +859,11 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Not quite right. </span><span class="se">\n</span><span class="s1">Remember, the answer is just &quot;sqrt(h(x))&quot;&#39;</span><span class="p">)</span>
 
 <span class="c1">#writtenQuestion is the question the user is asked.</span>
-<span class="n">writtenQuestion</span> <span class="o">=</span>  <span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;Using the syntax from above, please enter what the </span><span class="se">\</span>
+<span class="n">writtenQuestion</span> <span class="o">=</span>  <span class="n">Latex</span><span class="p">(</span>
+<span class="s2">&quot;Using the syntax from above, please enter what the </span><span class="se">\</span>
 <span class="s2">square root of $h(x) = (x-5)^2$ is, (Remember to include brackets)&quot;</span><span class="p">)</span>
 
-<span class="n">display</span><span class="p">(</span><span class="n">writtenQuestion</span><span class="p">)</span>
+<span class="n">displayn</span><span class="p">(</span><span class="n">writtenQuestion</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">checkButton</span><span class="p">)</span>
 
@@ -872,7 +873,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[Using the syntax from above, please enter what the square root of $h(x) = (x-5)^2$ is, (Remember to include brackets)\]</div>
+    Using the syntax from above, please enter what the square root of <span="output text_latex math notranslate nohighlight">\(h(x) = (x-5)^2\)</span> is, (Remember to include brackets)</div>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "c07e9e6a5c7b440794af7634efb75271", "version_major": 2, "version_minor": 0}
 </script><script type="application/vnd.jupyter.widget-view+json">
@@ -880,7 +881,7 @@ To toggle on/off the raw code, click <a href="javascript:code_toggle()">here</a>
 </script></div>
 </div>
 <p>To summarize, taking the square root of functions of the form:</p>
-<p><span class="math notranslate nohighlight">\(&gt;\)</span>f(x) = (ax-b)^2$$</p>
+<p><span class="math notranslate nohighlight">\(&gt;\)</span="math notranslate nohighlight">\(f(x) = (ax-b)^2\)</span></p>
 <p>Where <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are constants, will give the result:</p>
 <div class="math notranslate nohighlight">
 \[\sqrt{f(x)} = \lvert ax-b\rvert\]</div>
